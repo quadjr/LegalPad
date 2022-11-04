@@ -94,3 +94,7 @@ function toggleToc(){
         el_body.style.setProperty("display", "none");
     }
 }
+
+function tocClicked(tag_id){
+    document.getElementById("body").scrollTop = document.getElementById(tag_id).offsetTop - document.getElementById("body").offsetTop;
+}

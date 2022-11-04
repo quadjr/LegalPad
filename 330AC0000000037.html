@@ -1,384 +1,388 @@
-<html><head><meta charset='UTF-8'><link rel='stylesheet' href='style.css'><script src='script.js'></script></head><body>
-<div class='pages'><div class='header'>	<div class='logo'></div></div><div class='main'>	<div class='main_header'>		<div class='table_of_contents_icon' onclick='toggleToc()'></div>       <div>		    <div class='law_name'>輸入品に対する内国消費税の徴収等に関する法律（昭和三十年法律第三十七号）</div>		    <div class='enforced_date'>施行日：令和四年四月一日</div>       </div>	</div><div class='main_body'><div class='table_of_contents' id='toc'><div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-MainProvision' onclick="visibilityClicked(this,'root-MainProvision')"></div><div class='title_text'>本則</div></div>
-<div class='table_indent'><div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article1' onclick="visibilityClicked(this,'root-MainProvision-Article1')"></div><div class='title_text'>第一条（趣旨）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article2' onclick="visibilityClicked(this,'root-MainProvision-Article2')"></div><div class='title_text'>第二条（定義）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article2_2' onclick="visibilityClicked(this,'root-MainProvision-Article2_2')"></div><div class='title_text'>第二条の二（関税の簡易税率適用物品に対する内国消費税の非課税）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article3' onclick="visibilityClicked(this,'root-MainProvision-Article3')"></div><div class='title_text'>第三条（課税物品の確定の時期）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article4' onclick="visibilityClicked(this,'root-MainProvision-Article4')"></div><div class='title_text'>第四条（適用法令）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article5' onclick="visibilityClicked(this,'root-MainProvision-Article5')"></div><div class='title_text'>第五条（保税地域からの引取り等とみなす場合）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article6' onclick="visibilityClicked(this,'root-MainProvision-Article6')"></div><div class='title_text'>第六条（引取りに係る課税物品についての申告、納税等の特例）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article7' onclick="visibilityClicked(this,'root-MainProvision-Article7')"></div><div class='title_text'>第七条（郵便物の内国消費税の納付等）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article8' onclick="visibilityClicked(this,'root-MainProvision-Article8')"></div><div class='title_text'>第八条（公売又は売却等の場合における内国消費税の徴収）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article9' onclick="visibilityClicked(this,'root-MainProvision-Article9')"></div><div class='title_text'>第九条（輸入の許可前における引取り）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article10' onclick="visibilityClicked(this,'root-MainProvision-Article10')"></div><div class='title_text'>第十条（保税工場外等における保税作業）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article11' onclick="visibilityClicked(this,'root-MainProvision-Article11')"></div><div class='title_text'>第十一条（保税運送等の場合の免税）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article12' onclick="visibilityClicked(this,'root-MainProvision-Article12')"></div><div class='title_text'>第十二条（船用品又は機用品の積込み等の場合の免税）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article13' onclick="visibilityClicked(this,'root-MainProvision-Article13')"></div><div class='title_text'>第十三条（免税等）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article14' onclick="visibilityClicked(this,'root-MainProvision-Article14')"></div><div class='title_text'>第十四条（相殺関税等が還付される場合の消費税の還付）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article15' onclick="visibilityClicked(this,'root-MainProvision-Article15')"></div><div class='title_text'>第十五条（変質、損傷等の場合の軽減又は還付等）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article15_2' onclick="visibilityClicked(this,'root-MainProvision-Article15_2')"></div><div class='title_text'>第十五条の二（加工又は修繕のため輸出された課税物品に係る消費税の軽減）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article15_3' onclick="visibilityClicked(this,'root-MainProvision-Article15_3')"></div><div class='title_text'>第十五条の三（再輸出される課税物品に係る消費税の軽減）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article16' onclick="visibilityClicked(this,'root-MainProvision-Article16')"></div><div class='title_text'>第十六条（保税工場等において保税作業をする場合等の内国消費税の特例）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article16_2' onclick="visibilityClicked(this,'root-MainProvision-Article16_2')"></div><div class='title_text'>第十六条の二（保税展示場等における使用等の特例）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article16_3' onclick="visibilityClicked(this,'root-MainProvision-Article16_3')"></div><div class='title_text'>第十六条の三（輸入時と同一状態で再輸出される場合の還付等）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article17' onclick="visibilityClicked(this,'root-MainProvision-Article17')"></div><div class='title_text'>第十七条（違約品等の再輸出又は廃棄の場合の還付等）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article17_2' onclick="visibilityClicked(this,'root-MainProvision-Article17_2')"></div><div class='title_text'>第十七条の二（還付加算金の計算期間の特例）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article18' onclick="visibilityClicked(this,'root-MainProvision-Article18')"></div><div class='title_text'>第十八条（引取りに係る内国消費税の延滞税の免除）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article19' onclick="visibilityClicked(this,'root-MainProvision-Article19')"></div><div class='title_text'>第十九条（過少申告加算税等の特例）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article20' onclick="visibilityClicked(this,'root-MainProvision-Article20')"></div><div class='title_text'>第二十条（関税法の準用）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article21' onclick="visibilityClicked(this,'root-MainProvision-Article21')"></div><div class='title_text'>第二十一条（納税地の特例）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article21_2' onclick="visibilityClicked(this,'root-MainProvision-Article21_2')"></div><div class='title_text'>第二十一条の二（保税地域からの引取りに係る納税管理人）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article22' onclick="visibilityClicked(this,'root-MainProvision-Article22')"></div><div class='title_text'>第二十二条（当該職員の権限）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article23' onclick="visibilityClicked(this,'root-MainProvision-Article23')"></div><div class='title_text'>第二十三条（罰則）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article24' onclick="visibilityClicked(this,'root-MainProvision-Article24')"></div><div class='title_text'>第二十四条</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article25' onclick="visibilityClicked(this,'root-MainProvision-Article25')"></div><div class='title_text'>第二十五条</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-MainProvision-Article26' onclick="visibilityClicked(this,'root-MainProvision-Article26')"></div><div class='title_text'>第二十六条（犯則事件の調査及び処分）</div></div>
+<html><head><meta charset='UTF-8'><link rel='stylesheet' href='style.css'><script src='script.js'></script><title>輸入品に対する内国消費税の徴収等に関する法律 | Legal Pad</title></head><body>
+<div class='pages'><div class='header'>	<div class='logo'></div></div><div class='main'>	<div class='main_header'>		<div class='table_of_contents_icon' onclick='toggleToc()'></div>       <div>		    <div class='law_name'>輸入品に対する内国消費税の徴収等に関する法律（昭和三十年法律第三十七号）</div>		    <div class='enforced_date'>施行日：令和四年六月十七日</div>       </div>	</div><div class='main_body'><div class='table_of_contents' id='toc'><div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-MainProvision' onclick="visibilityClicked(this,'root-MainProvision')"></div><a class='title_text' onclick="tocClicked('root-MainProvision')">本則</a></div>
+<div class='table_indent'><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article1' onclick="visibilityClicked(this,'root-MainProvision-Article1')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article1')">第一条（趣旨）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article2' onclick="visibilityClicked(this,'root-MainProvision-Article2')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article2')">第二条（定義）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article2_2' onclick="visibilityClicked(this,'root-MainProvision-Article2_2')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article2_2')">第二条の二（関税の簡易税率適用物品に対する内国消費税の非課税）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article3' onclick="visibilityClicked(this,'root-MainProvision-Article3')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article3')">第三条（課税物品の確定の時期）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article4' onclick="visibilityClicked(this,'root-MainProvision-Article4')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article4')">第四条（適用法令）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article5' onclick="visibilityClicked(this,'root-MainProvision-Article5')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article5')">第五条（保税地域からの引取り等とみなす場合）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article6' onclick="visibilityClicked(this,'root-MainProvision-Article6')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article6')">第六条（引取りに係る課税物品についての申告、納税等の特例）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article7' onclick="visibilityClicked(this,'root-MainProvision-Article7')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article7')">第七条（郵便物の内国消費税の納付等）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article8' onclick="visibilityClicked(this,'root-MainProvision-Article8')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article8')">第八条（公売又は売却等の場合における内国消費税の徴収）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article9' onclick="visibilityClicked(this,'root-MainProvision-Article9')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article9')">第九条（輸入の許可前における引取り）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article10' onclick="visibilityClicked(this,'root-MainProvision-Article10')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article10')">第十条（保税工場外等における保税作業）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article11' onclick="visibilityClicked(this,'root-MainProvision-Article11')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article11')">第十一条（保税運送等の場合の免税）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article12' onclick="visibilityClicked(this,'root-MainProvision-Article12')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article12')">第十二条（船用品又は機用品の積込み等の場合の免税）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article13' onclick="visibilityClicked(this,'root-MainProvision-Article13')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article13')">第十三条（免税等）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article14' onclick="visibilityClicked(this,'root-MainProvision-Article14')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article14')">第十四条（相殺関税等が還付される場合の消費税の還付）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article15' onclick="visibilityClicked(this,'root-MainProvision-Article15')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article15')">第十五条（変質、損傷等の場合の軽減又は還付等）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article15_2' onclick="visibilityClicked(this,'root-MainProvision-Article15_2')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article15_2')">第十五条の二（加工又は修繕のため輸出された課税物品に係る消費税の軽減）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article15_3' onclick="visibilityClicked(this,'root-MainProvision-Article15_3')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article15_3')">第十五条の三（再輸出される課税物品に係る消費税の軽減）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article16' onclick="visibilityClicked(this,'root-MainProvision-Article16')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article16')">第十六条（保税工場等において保税作業をする場合等の内国消費税の特例）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article16_2' onclick="visibilityClicked(this,'root-MainProvision-Article16_2')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article16_2')">第十六条の二（保税展示場等における使用等の特例）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article16_3' onclick="visibilityClicked(this,'root-MainProvision-Article16_3')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article16_3')">第十六条の三（輸入時と同一状態で再輸出される場合の還付等）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article17' onclick="visibilityClicked(this,'root-MainProvision-Article17')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article17')">第十七条（違約品等の再輸出又は廃棄の場合の還付等）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article17_2' onclick="visibilityClicked(this,'root-MainProvision-Article17_2')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article17_2')">第十七条の二（還付加算金の計算期間の特例）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article18' onclick="visibilityClicked(this,'root-MainProvision-Article18')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article18')">第十八条（引取りに係る内国消費税の延滞税の免除）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article19' onclick="visibilityClicked(this,'root-MainProvision-Article19')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article19')">第十九条（過少申告加算税等の特例）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article20' onclick="visibilityClicked(this,'root-MainProvision-Article20')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article20')">第二十条（関税法の準用）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article21' onclick="visibilityClicked(this,'root-MainProvision-Article21')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article21')">第二十一条（納税地の特例）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article21_2' onclick="visibilityClicked(this,'root-MainProvision-Article21_2')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article21_2')">第二十一条の二（保税地域からの引取りに係る納税管理人）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article22' onclick="visibilityClicked(this,'root-MainProvision-Article22')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article22')">第二十二条（当該職員の権限）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article23' onclick="visibilityClicked(this,'root-MainProvision-Article23')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article23')">第二十三条（罰則）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article24' onclick="visibilityClicked(this,'root-MainProvision-Article24')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article24')">第二十四条</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article25' onclick="visibilityClicked(this,'root-MainProvision-Article25')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article25')">第二十五条</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-MainProvision-Article26' onclick="visibilityClicked(this,'root-MainProvision-Article26')"></div><a class='title_text' onclick="tocClicked('root-MainProvision-Article26')">第二十六条（犯則事件の調査及び処分）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision4562703200' onclick="visibilityClicked(this,'root-SupplProvision4562703200')"></div><div class='title_text'>附　則</div></div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision4519947456' onclick="visibilityClicked(this,'root-SupplProvision4519947456')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision4519947456')">附　則</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三〇年六月三〇日法律第三八号' onclick="visibilityClicked(this,'root-SupplProvision昭和三〇年六月三〇日法律第三八号')"></div><div class='title_text'>附　則（昭和三〇年六月三〇日法律第三八号）</div></div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三〇年六月三〇日法律第三八号' onclick="visibilityClicked(this,'root-SupplProvision昭和三〇年六月三〇日法律第三八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三〇年六月三〇日法律第三八号')">附　則（昭和三〇年六月三〇日法律第三八号）</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三二年四月六日法律第五五号' onclick="visibilityClicked(this,'root-SupplProvision昭和三二年四月六日法律第五五号')"></div><div class='title_text'>附　則（昭和三二年四月六日法律第五五号）</div></div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三二年四月六日法律第五五号' onclick="visibilityClicked(this,'root-SupplProvision昭和三二年四月六日法律第五五号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三二年四月六日法律第五五号')">附　則（昭和三二年四月六日法律第五五号）</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三二年五月一日法律第九〇号' onclick="visibilityClicked(this,'root-SupplProvision昭和三二年五月一日法律第九〇号')"></div><div class='title_text'>附　則（昭和三二年五月一日法律第九〇号）</div></div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三二年五月一日法律第九〇号' onclick="visibilityClicked(this,'root-SupplProvision昭和三二年五月一日法律第九〇号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三二年五月一日法律第九〇号')">附　則（昭和三二年五月一日法律第九〇号）</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三二年六月一四日法律第一七三号' onclick="visibilityClicked(this,'root-SupplProvision昭和三二年六月一四日法律第一七三号')"></div><div class='title_text'>附　則（昭和三二年六月一四日法律第一七三号）</div></div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三二年六月一四日法律第一七三号' onclick="visibilityClicked(this,'root-SupplProvision昭和三二年六月一四日法律第一七三号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三二年六月一四日法律第一七三号')">附　則（昭和三二年六月一四日法律第一七三号）</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年三月三一日法律第四八号' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年三月三一日法律第四八号')"></div><div class='title_text'>附　則（昭和三七年三月三一日法律第四八号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年三月三一日法律第四八号' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年三月三一日法律第四八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三七年三月三一日法律第四八号')">附　則（昭和三七年三月三一日法律第四八号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年三月三一日法律第四八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年三月三一日法律第四八号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年三月三一日法律第四八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年三月三一日法律第四八号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三七年三月三一日法律第四八号-Article1')">第一条（施行期日）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号')"></div><div class='title_text'>附　則（昭和三七年四月二日法律第六七号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三七年四月二日法律第六七号')">附　則（昭和三七年四月二日法律第六七号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号-Article18' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号-Article18')"></div><div class='title_text'>第十八条（罰則に係る経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号-Article19' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号-Article19')"></div><div class='title_text'>第十九条（国税に関するその他の経過措置の政令への委任）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三七年四月二日法律第六七号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号-Article18' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号-Article18')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三七年四月二日法律第六七号-Article18')">第十八条（罰則に係る経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和三七年四月二日法律第六七号-Article19' onclick="visibilityClicked(this,'root-SupplProvision昭和三七年四月二日法律第六七号-Article19')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和三七年四月二日法律第六七号-Article19')">第十九条（国税に関するその他の経過措置の政令への委任）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四〇年一二月二九日法律第一五六号' onclick="visibilityClicked(this,'root-SupplProvision昭和四〇年一二月二九日法律第一五六号')"></div><div class='title_text'>附　則（昭和四〇年一二月二九日法律第一五六号）</div></div>
-<div class='table_indent'>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号')"></div><div class='title_text'>附　則（昭和四一年三月三一日法律第三九号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号-Article9' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号-Article9')"></div><div class='title_text'>第九条（政令への委任）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号-Article10' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号-Article10')"></div><div class='title_text'>第十条（罰則に関する経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四二年五月二七日法律第一一号' onclick="visibilityClicked(this,'root-SupplProvision昭和四二年五月二七日法律第一一号')"></div><div class='title_text'>附　則（昭和四二年五月二七日法律第一一号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四二年五月二七日法律第一一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四二年五月二七日法律第一一号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四二年五月二七日法律第一一号-Article7' onclick="visibilityClicked(this,'root-SupplProvision昭和四二年五月二七日法律第一一号-Article7')"></div><div class='title_text'>第七条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四四年三月三一日法律第七号' onclick="visibilityClicked(this,'root-SupplProvision昭和四四年三月三一日法律第七号')"></div><div class='title_text'>附　則（昭和四四年三月三一日法律第七号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四四年三月三一日法律第七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四四年三月三一日法律第七号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四四年三月三一日法律第七号-Article5' onclick="visibilityClicked(this,'root-SupplProvision昭和四四年三月三一日法律第七号-Article5')"></div><div class='title_text'>第五条（罰則に対する経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四五年四月二四日法律第三二号' onclick="visibilityClicked(this,'root-SupplProvision昭和四五年四月二四日法律第三二号')"></div><div class='title_text'>附　則（昭和四五年四月二四日法律第三二号）</div></div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四〇年一二月二九日法律第一五六号' onclick="visibilityClicked(this,'root-SupplProvision昭和四〇年一二月二九日法律第一五六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四〇年一二月二九日法律第一五六号')">附　則（昭和四〇年一二月二九日法律第一五六号）</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四七年三月三一日法律第六号' onclick="visibilityClicked(this,'root-SupplProvision昭和四七年三月三一日法律第六号')"></div><div class='title_text'>附　則（昭和四七年三月三一日法律第六号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四一年三月三一日法律第三九号')">附　則（昭和四一年三月三一日法律第三九号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四一年三月三一日法律第三九号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号-Article9' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号-Article9')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四一年三月三一日法律第三九号-Article9')">第九条（政令への委任）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四一年三月三一日法律第三九号-Article10' onclick="visibilityClicked(this,'root-SupplProvision昭和四一年三月三一日法律第三九号-Article10')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四一年三月三一日法律第三九号-Article10')">第十条（罰則に関する経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四二年五月二七日法律第一一号' onclick="visibilityClicked(this,'root-SupplProvision昭和四二年五月二七日法律第一一号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四二年五月二七日法律第一一号')">附　則（昭和四二年五月二七日法律第一一号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四二年五月二七日法律第一一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四二年五月二七日法律第一一号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四二年五月二七日法律第一一号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四二年五月二七日法律第一一号-Article7' onclick="visibilityClicked(this,'root-SupplProvision昭和四二年五月二七日法律第一一号-Article7')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四二年五月二七日法律第一一号-Article7')">第七条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四四年三月三一日法律第七号' onclick="visibilityClicked(this,'root-SupplProvision昭和四四年三月三一日法律第七号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四四年三月三一日法律第七号')">附　則（昭和四四年三月三一日法律第七号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四四年三月三一日法律第七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四四年三月三一日法律第七号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四四年三月三一日法律第七号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四四年三月三一日法律第七号-Article5' onclick="visibilityClicked(this,'root-SupplProvision昭和四四年三月三一日法律第七号-Article5')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四四年三月三一日法律第七号-Article5')">第五条（罰則に対する経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四五年四月二四日法律第三二号' onclick="visibilityClicked(this,'root-SupplProvision昭和四五年四月二四日法律第三二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四五年四月二四日法律第三二号')">附　則（昭和四五年四月二四日法律第三二号）</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四九年三月三〇日法律第一八号' onclick="visibilityClicked(this,'root-SupplProvision昭和四九年三月三〇日法律第一八号')"></div><div class='title_text'>附　則（昭和四九年三月三〇日法律第一八号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四九年三月三〇日法律第一八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四九年三月三〇日法律第一八号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四九年三月三〇日法律第一八号-Article7' onclick="visibilityClicked(this,'root-SupplProvision昭和四九年三月三〇日法律第一八号-Article7')"></div><div class='title_text'>第七条（罰則に対する経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五三年四月一八日法律第二五号' onclick="visibilityClicked(this,'root-SupplProvision昭和五三年四月一八日法律第二五号')"></div><div class='title_text'>附　則（昭和五三年四月一八日法律第二五号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五三年四月一八日法律第二五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五三年四月一八日法律第二五号-Article1')"></div><div class='title_text'>第一条（施行期日等）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五六年五月二七日法律第五四号' onclick="visibilityClicked(this,'root-SupplProvision昭和五六年五月二七日法律第五四号')"></div><div class='title_text'>附　則（昭和五六年五月二七日法律第五四号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五六年五月二七日法律第五四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五六年五月二七日法律第五四号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五六年五月二七日法律第五四号-Article5' onclick="visibilityClicked(this,'root-SupplProvision昭和五六年五月二七日法律第五四号-Article5')"></div><div class='title_text'>第五条（罰則に関する経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年四月一三日法律第一六号' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年四月一三日法律第一六号')"></div><div class='title_text'>附　則（昭和五九年四月一三日法律第一六号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年四月一三日法律第一六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年四月一三日法律第一六号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一〇日法律第七二号' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一〇日法律第七二号')"></div><div class='title_text'>附　則（昭和五九年八月一〇日法律第七二号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一〇日法律第七二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一〇日法律第七二号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一四日法律第七四号' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一四日法律第七四号')"></div><div class='title_text'>附　則（昭和五九年八月一四日法律第七四号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一四日法律第七四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一四日法律第七四号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六二年六月二〇日法律第八〇号' onclick="visibilityClicked(this,'root-SupplProvision昭和六二年六月二〇日法律第八〇号')"></div><div class='title_text'>附　則（昭和六二年六月二〇日法律第八〇号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六二年六月二〇日法律第八〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六二年六月二〇日法律第八〇号-Article1')"></div><div class='title_text'>第一条（施行期日等）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年三月三一日法律第四号' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年三月三一日法律第四号')"></div><div class='title_text'>附　則（昭和六三年三月三一日法律第四号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年三月三一日法律第四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年三月三一日法律第四号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇八号' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇八号')"></div><div class='title_text'>附　則（昭和六三年一二月三〇日法律第一〇八号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article1')"></div><div class='title_text'>第一条（施行期日等）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article53' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article53')"></div><div class='title_text'>第五十三条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号')"></div><div class='title_text'>附　則（昭和六三年一二月三〇日法律第一〇九号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article102' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article102')"></div><div class='title_text'>第百二条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article103' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article103')"></div><div class='title_text'>第百三条</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成元年三月三一日法律第一三号' onclick="visibilityClicked(this,'root-SupplProvision平成元年三月三一日法律第一三号')"></div><div class='title_text'>附　則（平成元年三月三一日法律第一三号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成元年三月三一日法律第一三号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成元年三月三一日法律第一三号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二年三月三一日法律第一七号' onclick="visibilityClicked(this,'root-SupplProvision平成二年三月三一日法律第一七号')"></div><div class='title_text'>附　則（平成二年三月三一日法律第一七号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二年三月三一日法律第一七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二年三月三一日法律第一七号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成三年五月一五日法律第七三号' onclick="visibilityClicked(this,'root-SupplProvision平成三年五月一五日法律第七三号')"></div><div class='title_text'>附　則（平成三年五月一五日法律第七三号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成三年五月一五日法律第七三号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成三年五月一五日法律第七三号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成四年三月三一日法律第一七号' onclick="visibilityClicked(this,'root-SupplProvision平成四年三月三一日法律第一七号')"></div><div class='title_text'>附　則（平成四年三月三一日法律第一七号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成四年三月三一日法律第一七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成四年三月三一日法律第一七号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成四年三月三一日法律第一七号-Article7' onclick="visibilityClicked(this,'root-SupplProvision平成四年三月三一日法律第一七号-Article7')"></div><div class='title_text'>第七条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号')"></div><div class='title_text'>附　則（平成六年三月三一日法律第二五号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article6' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article6')"></div><div class='title_text'>第六条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article7' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article7')"></div><div class='title_text'>第七条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article8' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article8')"></div><div class='title_text'>第八条（政令への委任）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年一二月二日法律第一一一号' onclick="visibilityClicked(this,'root-SupplProvision平成六年一二月二日法律第一一一号')"></div><div class='title_text'>附　則（平成六年一二月二日法律第一一一号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年一二月二日法律第一一一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成六年一二月二日法律第一一一号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成九年三月二六日法律第五号' onclick="visibilityClicked(this,'root-SupplProvision平成九年三月二六日法律第五号')"></div><div class='title_text'>附　則（平成九年三月二六日法律第五号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成九年三月二六日法律第五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成九年三月二六日法律第五号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成九年三月二六日法律第五号-Article7' onclick="visibilityClicked(this,'root-SupplProvision平成九年三月二六日法律第五号-Article7')"></div><div class='title_text'>第七条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一〇年三月三一日法律第二六号' onclick="visibilityClicked(this,'root-SupplProvision平成一〇年三月三一日法律第二六号')"></div><div class='title_text'>附　則（平成一〇年三月三一日法律第二六号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一〇年三月三一日法律第二六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一〇年三月三一日法律第二六号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一〇年三月三一日法律第二六号-Article5' onclick="visibilityClicked(this,'root-SupplProvision平成一〇年三月三一日法律第二六号-Article5')"></div><div class='title_text'>第五条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一二年三月三一日法律第二六号' onclick="visibilityClicked(this,'root-SupplProvision平成一二年三月三一日法律第二六号')"></div><div class='title_text'>附　則（平成一二年三月三一日法律第二六号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一二年三月三一日法律第二六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一二年三月三一日法律第二六号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一三年三月三一日法律第二一号' onclick="visibilityClicked(this,'root-SupplProvision平成一三年三月三一日法律第二一号')"></div><div class='title_text'>附　則（平成一三年三月三一日法律第二一号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一三年三月三一日法律第二一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一三年三月三一日法律第二一号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年三月三一日法律第一六号' onclick="visibilityClicked(this,'root-SupplProvision平成一四年三月三一日法律第一六号')"></div><div class='title_text'>附　則（平成一四年三月三一日法律第一六号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年三月三一日法律第一六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一四年三月三一日法律第一六号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年三月三一日法律第一六号-Article5' onclick="visibilityClicked(this,'root-SupplProvision平成一四年三月三一日法律第一六号-Article5')"></div><div class='title_text'>第五条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号')"></div><div class='title_text'>附　則（平成一四年七月三一日法律第九八号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article26' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article26')"></div><div class='title_text'>第二十六条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article38' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article38')"></div><div class='title_text'>第三十八条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article39' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article39')"></div><div class='title_text'>第三十九条（その他の経過措置の政令への委任）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号')"></div><div class='title_text'>附　則（平成一四年一二月一三日法律第一五二号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号-Article4' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号-Article4')"></div><div class='title_text'>第四条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号-Article5' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号-Article5')"></div><div class='title_text'>第五条（その他の経過措置の政令への委任）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第八号' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第八号')"></div><div class='title_text'>附　則（平成一五年三月三一日法律第八号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第八号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第八号-Article168' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第八号-Article168')"></div><div class='title_text'>第百六十八条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第一一号' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第一一号')"></div><div class='title_text'>附　則（平成一五年三月三一日法律第一一号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第一一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第一一号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一六年一一月二五日法律第一四二号' onclick="visibilityClicked(this,'root-SupplProvision平成一六年一一月二五日法律第一四二号')"></div><div class='title_text'>附　則（平成一六年一一月二五日法律第一四二号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一六年一一月二五日法律第一四二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一六年一一月二五日法律第一四二号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年三月三一日法律第二二号' onclick="visibilityClicked(this,'root-SupplProvision平成一七年三月三一日法律第二二号')"></div><div class='title_text'>附　則（平成一七年三月三一日法律第二二号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年三月三一日法律第二二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一七年三月三一日法律第二二号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年三月三一日法律第二二号-Article17' onclick="visibilityClicked(this,'root-SupplProvision平成一七年三月三一日法律第二二号-Article17')"></div><div class='title_text'>第十七条（検討）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号')"></div><div class='title_text'>附　則（平成一七年一〇月二一日法律第一〇二号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article89' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article89')"></div><div class='title_text'>第八十九条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article117' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article117')"></div><div class='title_text'>第百十七条（罰則に関する経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号')"></div><div class='title_text'>附　則（平成一八年三月三一日法律第一〇号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号-Article211' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号-Article211')"></div><div class='title_text'>第二百十一条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号-Article212' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号-Article212')"></div><div class='title_text'>第二百十二条（その他の経過措置の政令への委任）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一七号' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一七号')"></div><div class='title_text'>附　則（平成一八年三月三一日法律第一七号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一七号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年一二月八日法律第一〇五号' onclick="visibilityClicked(this,'root-SupplProvision平成一八年一二月八日法律第一〇五号')"></div><div class='title_text'>附　則（平成一八年一二月八日法律第一〇五号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年一二月八日法律第一〇五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一八年一二月八日法律第一〇五号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一九年三月三一日法律第二〇号' onclick="visibilityClicked(this,'root-SupplProvision平成一九年三月三一日法律第二〇号')"></div><div class='title_text'>附　則（平成一九年三月三一日法律第二〇号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成一九年三月三一日法律第二〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一九年三月三一日法律第二〇号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二〇年三月三一日法律第五号' onclick="visibilityClicked(this,'root-SupplProvision平成二〇年三月三一日法律第五号')"></div><div class='title_text'>附　則（平成二〇年三月三一日法律第五号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二〇年三月三一日法律第五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二〇年三月三一日法律第五号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号')"></div><div class='title_text'>附　則（平成二一年三月三一日法律第一三号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article90' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article90')"></div><div class='title_text'>第九十条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article101' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article101')"></div><div class='title_text'>第百一条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article102' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article102')"></div><div class='title_text'>第百二条（その他の経過措置の政令への委任）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article103' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article103')"></div><div class='title_text'>第百三条</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号')"></div><div class='title_text'>附　則（平成二二年三月三一日法律第六号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号-Article146' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号-Article146')"></div><div class='title_text'>第百四十六条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号-Article147' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号-Article147')"></div><div class='title_text'>第百四十七条（その他の経過措置の政令への委任）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第七号' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第七号')"></div><div class='title_text'>附　則（平成二三年三月三一日法律第七号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第七号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第七号-Article2' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第七号-Article2')"></div><div class='title_text'>第二条（関税法の一部改正に伴う経過措置）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第一二号' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第一二号')"></div><div class='title_text'>附　則（平成二三年三月三一日法律第一二号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第一二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第一二号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号')"></div><div class='title_text'>附　則（平成二三年一二月二日法律第一一四号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article91' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article91')"></div><div class='title_text'>第九十一条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article104' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article104')"></div><div class='title_text'>第百四条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article104_2' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article104_2')"></div><div class='title_text'>第百四条の二（この法律の公布の日が平成二十三年四月一日後となる場合における経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article105' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article105')"></div><div class='title_text'>第百五条（その他の経過措置の政令への委任）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article106' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article106')"></div><div class='title_text'>第百六条（納税環境の整備に向けた検討）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号')"></div><div class='title_text'>附　則（平成二四年五月八日法律第三〇号）</div></div>
-<div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article16' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article16')"></div><div class='title_text'>第十六条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article46' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article46')"></div><div class='title_text'>第四十六条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article47' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article47')"></div><div class='title_text'>第四十七条（その他の経過措置の政令への委任）</div></div>
-</div>
-</div>
-<div><div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二六年三月三一日法律第一二号' onclick="visibilityClicked(this,'root-SupplProvision平成二六年三月三一日法律第一二号')"></div><div class='title_text'>附　則（平成二六年三月三一日法律第一二号）</div></div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四七年三月三一日法律第六号' onclick="visibilityClicked(this,'root-SupplProvision昭和四七年三月三一日法律第六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四七年三月三一日法律第六号')">附　則（昭和四七年三月三一日法律第六号）</a></div>
 <div class='table_indent'>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二七年三月三一日法律第九号' onclick="visibilityClicked(this,'root-SupplProvision平成二七年三月三一日法律第九号')"></div><div class='title_text'>附　則（平成二七年三月三一日法律第九号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四九年三月三〇日法律第一八号' onclick="visibilityClicked(this,'root-SupplProvision昭和四九年三月三〇日法律第一八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四九年三月三〇日法律第一八号')">附　則（昭和四九年三月三〇日法律第一八号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二七年三月三一日法律第九号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二七年三月三一日法律第九号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二七年三月三一日法律第九号-Article130' onclick="visibilityClicked(this,'root-SupplProvision平成二七年三月三一日法律第九号-Article130')"></div><div class='title_text'>第百三十条（罰則に関する経過措置）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四九年三月三〇日法律第一八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和四九年三月三〇日法律第一八号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四九年三月三〇日法律第一八号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和四九年三月三〇日法律第一八号-Article7' onclick="visibilityClicked(this,'root-SupplProvision昭和四九年三月三〇日法律第一八号-Article7')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和四九年三月三〇日法律第一八号-Article7')">第七条（罰則に対する経過措置）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号')"></div><div class='title_text'>附　則（平成二八年三月三一日法律第一五号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五三年四月一八日法律第二五号' onclick="visibilityClicked(this,'root-SupplProvision昭和五三年四月一八日法律第二五号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五三年四月一八日法律第二五号')">附　則（昭和五三年四月一八日法律第二五号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号-Article168' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号-Article168')"></div><div class='title_text'>第百六十八条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号-Article169' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号-Article169')"></div><div class='title_text'>第百六十九条（政令への委任）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五三年四月一八日法律第二五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五三年四月一八日法律第二五号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五三年四月一八日法律第二五号-Article1')">第一条（施行期日等）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一六号' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一六号')"></div><div class='title_text'>附　則（平成二八年三月三一日法律第一六号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五六年五月二七日法律第五四号' onclick="visibilityClicked(this,'root-SupplProvision昭和五六年五月二七日法律第五四号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五六年五月二七日法律第五四号')">附　則（昭和五六年五月二七日法律第五四号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一六号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五六年五月二七日法律第五四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五六年五月二七日法律第五四号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五六年五月二七日法律第五四号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五六年五月二七日法律第五四号-Article5' onclick="visibilityClicked(this,'root-SupplProvision昭和五六年五月二七日法律第五四号-Article5')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五六年五月二七日法律第五四号-Article5')">第五条（罰則に関する経過措置）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年一二月一六日法律第一〇八号' onclick="visibilityClicked(this,'root-SupplProvision平成二八年一二月一六日法律第一〇八号')"></div><div class='title_text'>附　則（平成二八年一二月一六日法律第一〇八号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年四月一三日法律第一六号' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年四月一三日法律第一六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五九年四月一三日法律第一六号')">附　則（昭和五九年四月一三日法律第一六号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年一二月一六日法律第一〇八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二八年一二月一六日法律第一〇八号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年四月一三日法律第一六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年四月一三日法律第一六号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五九年四月一三日法律第一六号-Article1')">第一条（施行期日）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号')"></div><div class='title_text'>附　則（平成二九年三月三一日法律第四号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一〇日法律第七二号' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一〇日法律第七二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五九年八月一〇日法律第七二号')">附　則（昭和五九年八月一〇日法律第七二号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article95' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article95')"></div><div class='title_text'>第九十五条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article140' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article140')"></div><div class='title_text'>第百四十条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article141' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article141')"></div><div class='title_text'>第百四十一条（政令への委任）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一〇日法律第七二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一〇日法律第七二号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五九年八月一〇日法律第七二号-Article1')">第一条（施行期日）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成三〇年七月六日法律第七〇号' onclick="visibilityClicked(this,'root-SupplProvision平成三〇年七月六日法律第七〇号')"></div><div class='title_text'>附　則（平成三〇年七月六日法律第七〇号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一四日法律第七四号' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一四日法律第七四号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五九年八月一四日法律第七四号')">附　則（昭和五九年八月一四日法律第七四号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision平成三〇年七月六日法律第七〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成三〇年七月六日法律第七〇号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和五九年八月一四日法律第七四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和五九年八月一四日法律第七四号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和五九年八月一四日法律第七四号-Article1')">第一条（施行期日）</a></div>
 </div>
 </div>
-<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号')"></div><div class='title_text'>附　則（令和四年三月三一日法律第四号）</div></div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六二年六月二〇日法律第八〇号' onclick="visibilityClicked(this,'root-SupplProvision昭和六二年六月二〇日法律第八〇号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六二年六月二〇日法律第八〇号')">附　則（昭和六二年六月二〇日法律第八〇号）</a></div>
 <div class='table_indent'>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号-Article1')"></div><div class='title_text'>第一条（施行期日）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号-Article98' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号-Article98')"></div><div class='title_text'>第九十八条（罰則に関する経過措置）</div></div>
-<div class='table_line'><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号-Article99' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号-Article99')"></div><div class='title_text'>第九十九条（政令への委任）</div></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六二年六月二〇日法律第八〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六二年六月二〇日法律第八〇号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六二年六月二〇日法律第八〇号-Article1')">第一条（施行期日等）</a></div>
 </div>
 </div>
-</div><div class='body'><div id='root-MainProvision'><div id='root-MainProvision-Article1'><b>（趣旨）</b>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年三月三一日法律第四号' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年三月三一日法律第四号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年三月三一日法律第四号')">附　則（昭和六三年三月三一日法律第四号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年三月三一日法律第四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年三月三一日法律第四号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年三月三一日法律第四号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇八号' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年一二月三〇日法律第一〇八号')">附　則（昭和六三年一二月三〇日法律第一〇八号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article1')">第一条（施行期日等）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article53' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article53')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年一二月三〇日法律第一〇八号-Article53')">第五十三条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年一二月三〇日法律第一〇九号')">附　則（昭和六三年一二月三〇日法律第一〇九号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article1' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article102' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article102')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article102')">第百二条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article103' onclick="visibilityClicked(this,'root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article103')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision昭和六三年一二月三〇日法律第一〇九号-Article103')">第百三条</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成元年三月三一日法律第一三号' onclick="visibilityClicked(this,'root-SupplProvision平成元年三月三一日法律第一三号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成元年三月三一日法律第一三号')">附　則（平成元年三月三一日法律第一三号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成元年三月三一日法律第一三号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成元年三月三一日法律第一三号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成元年三月三一日法律第一三号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二年三月三一日法律第一七号' onclick="visibilityClicked(this,'root-SupplProvision平成二年三月三一日法律第一七号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二年三月三一日法律第一七号')">附　則（平成二年三月三一日法律第一七号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二年三月三一日法律第一七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二年三月三一日法律第一七号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二年三月三一日法律第一七号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成三年五月一五日法律第七三号' onclick="visibilityClicked(this,'root-SupplProvision平成三年五月一五日法律第七三号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成三年五月一五日法律第七三号')">附　則（平成三年五月一五日法律第七三号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成三年五月一五日法律第七三号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成三年五月一五日法律第七三号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成三年五月一五日法律第七三号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成四年三月三一日法律第一七号' onclick="visibilityClicked(this,'root-SupplProvision平成四年三月三一日法律第一七号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成四年三月三一日法律第一七号')">附　則（平成四年三月三一日法律第一七号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成四年三月三一日法律第一七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成四年三月三一日法律第一七号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成四年三月三一日法律第一七号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成四年三月三一日法律第一七号-Article7' onclick="visibilityClicked(this,'root-SupplProvision平成四年三月三一日法律第一七号-Article7')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成四年三月三一日法律第一七号-Article7')">第七条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成六年三月三一日法律第二五号')">附　則（平成六年三月三一日法律第二五号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成六年三月三一日法律第二五号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article6' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article6')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成六年三月三一日法律第二五号-Article6')">第六条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article7' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article7')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成六年三月三一日法律第二五号-Article7')">第七条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年三月三一日法律第二五号-Article8' onclick="visibilityClicked(this,'root-SupplProvision平成六年三月三一日法律第二五号-Article8')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成六年三月三一日法律第二五号-Article8')">第八条（政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年一二月二日法律第一一一号' onclick="visibilityClicked(this,'root-SupplProvision平成六年一二月二日法律第一一一号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成六年一二月二日法律第一一一号')">附　則（平成六年一二月二日法律第一一一号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成六年一二月二日法律第一一一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成六年一二月二日法律第一一一号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成六年一二月二日法律第一一一号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成九年三月二六日法律第五号' onclick="visibilityClicked(this,'root-SupplProvision平成九年三月二六日法律第五号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成九年三月二六日法律第五号')">附　則（平成九年三月二六日法律第五号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成九年三月二六日法律第五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成九年三月二六日法律第五号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成九年三月二六日法律第五号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成九年三月二六日法律第五号-Article7' onclick="visibilityClicked(this,'root-SupplProvision平成九年三月二六日法律第五号-Article7')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成九年三月二六日法律第五号-Article7')">第七条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一〇年三月三一日法律第二六号' onclick="visibilityClicked(this,'root-SupplProvision平成一〇年三月三一日法律第二六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一〇年三月三一日法律第二六号')">附　則（平成一〇年三月三一日法律第二六号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一〇年三月三一日法律第二六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一〇年三月三一日法律第二六号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一〇年三月三一日法律第二六号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一〇年三月三一日法律第二六号-Article5' onclick="visibilityClicked(this,'root-SupplProvision平成一〇年三月三一日法律第二六号-Article5')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一〇年三月三一日法律第二六号-Article5')">第五条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一二年三月三一日法律第二六号' onclick="visibilityClicked(this,'root-SupplProvision平成一二年三月三一日法律第二六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一二年三月三一日法律第二六号')">附　則（平成一二年三月三一日法律第二六号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一二年三月三一日法律第二六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一二年三月三一日法律第二六号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一二年三月三一日法律第二六号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一三年三月三一日法律第二一号' onclick="visibilityClicked(this,'root-SupplProvision平成一三年三月三一日法律第二一号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一三年三月三一日法律第二一号')">附　則（平成一三年三月三一日法律第二一号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一三年三月三一日法律第二一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一三年三月三一日法律第二一号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一三年三月三一日法律第二一号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年三月三一日法律第一六号' onclick="visibilityClicked(this,'root-SupplProvision平成一四年三月三一日法律第一六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年三月三一日法律第一六号')">附　則（平成一四年三月三一日法律第一六号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年三月三一日法律第一六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一四年三月三一日法律第一六号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年三月三一日法律第一六号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年三月三一日法律第一六号-Article5' onclick="visibilityClicked(this,'root-SupplProvision平成一四年三月三一日法律第一六号-Article5')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年三月三一日法律第一六号-Article5')">第五条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年七月三一日法律第九八号')">附　則（平成一四年七月三一日法律第九八号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年七月三一日法律第九八号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article26' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article26')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年七月三一日法律第九八号-Article26')">第二十六条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article38' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article38')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年七月三一日法律第九八号-Article38')">第三十八条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年七月三一日法律第九八号-Article39' onclick="visibilityClicked(this,'root-SupplProvision平成一四年七月三一日法律第九八号-Article39')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年七月三一日法律第九八号-Article39')">第三十九条（その他の経過措置の政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年一二月一三日法律第一五二号')">附　則（平成一四年一二月一三日法律第一五二号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年一二月一三日法律第一五二号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号-Article4' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号-Article4')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年一二月一三日法律第一五二号-Article4')">第四条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一四年一二月一三日法律第一五二号-Article5' onclick="visibilityClicked(this,'root-SupplProvision平成一四年一二月一三日法律第一五二号-Article5')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一四年一二月一三日法律第一五二号-Article5')">第五条（その他の経過措置の政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第八号' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一五年三月三一日法律第八号')">附　則（平成一五年三月三一日法律第八号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第八号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一五年三月三一日法律第八号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第八号-Article168' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第八号-Article168')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一五年三月三一日法律第八号-Article168')">第百六十八条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第一一号' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第一一号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一五年三月三一日法律第一一号')">附　則（平成一五年三月三一日法律第一一号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一五年三月三一日法律第一一号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一五年三月三一日法律第一一号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一五年三月三一日法律第一一号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一六年一一月二五日法律第一四二号' onclick="visibilityClicked(this,'root-SupplProvision平成一六年一一月二五日法律第一四二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一六年一一月二五日法律第一四二号')">附　則（平成一六年一一月二五日法律第一四二号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一六年一一月二五日法律第一四二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一六年一一月二五日法律第一四二号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一六年一一月二五日法律第一四二号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年三月三一日法律第二二号' onclick="visibilityClicked(this,'root-SupplProvision平成一七年三月三一日法律第二二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一七年三月三一日法律第二二号')">附　則（平成一七年三月三一日法律第二二号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年三月三一日法律第二二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一七年三月三一日法律第二二号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一七年三月三一日法律第二二号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年三月三一日法律第二二号-Article17' onclick="visibilityClicked(this,'root-SupplProvision平成一七年三月三一日法律第二二号-Article17')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一七年三月三一日法律第二二号-Article17')">第十七条（検討）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一七年一〇月二一日法律第一〇二号')">附　則（平成一七年一〇月二一日法律第一〇二号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article89' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article89')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article89')">第八十九条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article117' onclick="visibilityClicked(this,'root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article117')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一七年一〇月二一日法律第一〇二号-Article117')">第百十七条（罰則に関する経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年三月三一日法律第一〇号')">附　則（平成一八年三月三一日法律第一〇号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年三月三一日法律第一〇号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号-Article211' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号-Article211')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年三月三一日法律第一〇号-Article211')">第二百十一条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一〇号-Article212' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一〇号-Article212')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年三月三一日法律第一〇号-Article212')">第二百十二条（その他の経過措置の政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一七号' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一七号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年三月三一日法律第一七号')">附　則（平成一八年三月三一日法律第一七号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年三月三一日法律第一七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一八年三月三一日法律第一七号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年三月三一日法律第一七号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年一二月八日法律第一〇五号' onclick="visibilityClicked(this,'root-SupplProvision平成一八年一二月八日法律第一〇五号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年一二月八日法律第一〇五号')">附　則（平成一八年一二月八日法律第一〇五号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一八年一二月八日法律第一〇五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一八年一二月八日法律第一〇五号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一八年一二月八日法律第一〇五号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一九年三月三一日法律第二〇号' onclick="visibilityClicked(this,'root-SupplProvision平成一九年三月三一日法律第二〇号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一九年三月三一日法律第二〇号')">附　則（平成一九年三月三一日法律第二〇号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成一九年三月三一日法律第二〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成一九年三月三一日法律第二〇号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成一九年三月三一日法律第二〇号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二〇年三月三一日法律第五号' onclick="visibilityClicked(this,'root-SupplProvision平成二〇年三月三一日法律第五号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二〇年三月三一日法律第五号')">附　則（平成二〇年三月三一日法律第五号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二〇年三月三一日法律第五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二〇年三月三一日法律第五号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二〇年三月三一日法律第五号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二一年三月三一日法律第一三号')">附　則（平成二一年三月三一日法律第一三号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二一年三月三一日法律第一三号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article90' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article90')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二一年三月三一日法律第一三号-Article90')">第九十条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article101' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article101')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二一年三月三一日法律第一三号-Article101')">第百一条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article102' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article102')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二一年三月三一日法律第一三号-Article102')">第百二条（その他の経過措置の政令への委任）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二一年三月三一日法律第一三号-Article103' onclick="visibilityClicked(this,'root-SupplProvision平成二一年三月三一日法律第一三号-Article103')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二一年三月三一日法律第一三号-Article103')">第百三条</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二二年三月三一日法律第六号')">附　則（平成二二年三月三一日法律第六号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二二年三月三一日法律第六号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号-Article146' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号-Article146')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二二年三月三一日法律第六号-Article146')">第百四十六条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二二年三月三一日法律第六号-Article147' onclick="visibilityClicked(this,'root-SupplProvision平成二二年三月三一日法律第六号-Article147')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二二年三月三一日法律第六号-Article147')">第百四十七条（その他の経過措置の政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第七号' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第七号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年三月三一日法律第七号')">附　則（平成二三年三月三一日法律第七号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第七号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第七号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年三月三一日法律第七号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第七号-Article2' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第七号-Article2')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年三月三一日法律第七号-Article2')">第二条（関税法の一部改正に伴う経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第一二号' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第一二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年三月三一日法律第一二号')">附　則（平成二三年三月三一日法律第一二号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年三月三一日法律第一二号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二三年三月三一日法律第一二号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年三月三一日法律第一二号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年一二月二日法律第一一四号')">附　則（平成二三年一二月二日法律第一一四号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年一二月二日法律第一一四号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article91' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article91')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年一二月二日法律第一一四号-Article91')">第九十一条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article104' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article104')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年一二月二日法律第一一四号-Article104')">第百四条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article104_2' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article104_2')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年一二月二日法律第一一四号-Article104_2')">第百四条の二（この法律の公布の日が平成二十三年四月一日後となる場合における経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article105' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article105')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年一二月二日法律第一一四号-Article105')">第百五条（その他の経過措置の政令への委任）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二三年一二月二日法律第一一四号-Article106' onclick="visibilityClicked(this,'root-SupplProvision平成二三年一二月二日法律第一一四号-Article106')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二三年一二月二日法律第一一四号-Article106')">第百六条（納税環境の整備に向けた検討）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二四年五月八日法律第三〇号')">附　則（平成二四年五月八日法律第三〇号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二四年五月八日法律第三〇号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article16' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article16')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二四年五月八日法律第三〇号-Article16')">第十六条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article46' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article46')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二四年五月八日法律第三〇号-Article46')">第四十六条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二四年五月八日法律第三〇号-Article47' onclick="visibilityClicked(this,'root-SupplProvision平成二四年五月八日法律第三〇号-Article47')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二四年五月八日法律第三〇号-Article47')">第四十七条（その他の経過措置の政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二六年三月三一日法律第一二号' onclick="visibilityClicked(this,'root-SupplProvision平成二六年三月三一日法律第一二号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二六年三月三一日法律第一二号')">附　則（平成二六年三月三一日法律第一二号）</a></div>
+<div class='table_indent'>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二七年三月三一日法律第九号' onclick="visibilityClicked(this,'root-SupplProvision平成二七年三月三一日法律第九号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二七年三月三一日法律第九号')">附　則（平成二七年三月三一日法律第九号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二七年三月三一日法律第九号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二七年三月三一日法律第九号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二七年三月三一日法律第九号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二七年三月三一日法律第九号-Article130' onclick="visibilityClicked(this,'root-SupplProvision平成二七年三月三一日法律第九号-Article130')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二七年三月三一日法律第九号-Article130')">第百三十条（罰則に関する経過措置）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年三月三一日法律第一五号')">附　則（平成二八年三月三一日法律第一五号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年三月三一日法律第一五号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号-Article168' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号-Article168')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年三月三一日法律第一五号-Article168')">第百六十八条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一五号-Article169' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一五号-Article169')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年三月三一日法律第一五号-Article169')">第百六十九条（政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一六号' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一六号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年三月三一日法律第一六号')">附　則（平成二八年三月三一日法律第一六号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年三月三一日法律第一六号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二八年三月三一日法律第一六号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年三月三一日法律第一六号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年一二月一六日法律第一〇八号' onclick="visibilityClicked(this,'root-SupplProvision平成二八年一二月一六日法律第一〇八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年一二月一六日法律第一〇八号')">附　則（平成二八年一二月一六日法律第一〇八号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二八年一二月一六日法律第一〇八号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二八年一二月一六日法律第一〇八号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二八年一二月一六日法律第一〇八号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二九年三月三一日法律第四号')">附　則（平成二九年三月三一日法律第四号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二九年三月三一日法律第四号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article95' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article95')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二九年三月三一日法律第四号-Article95')">第九十五条（輸入品に対する内国消費税の徴収等に関する法律の一部改正に伴う経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article140' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article140')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二九年三月三一日法律第四号-Article140')">第百四十条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成二九年三月三一日法律第四号-Article141' onclick="visibilityClicked(this,'root-SupplProvision平成二九年三月三一日法律第四号-Article141')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成二九年三月三一日法律第四号-Article141')">第百四十一条（政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision平成三〇年七月六日法律第七〇号' onclick="visibilityClicked(this,'root-SupplProvision平成三〇年七月六日法律第七〇号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成三〇年七月六日法律第七〇号')">附　則（平成三〇年七月六日法律第七〇号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision平成三〇年七月六日法律第七〇号-Article1' onclick="visibilityClicked(this,'root-SupplProvision平成三〇年七月六日法律第七〇号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision平成三〇年七月六日法律第七〇号-Article1')">第一条（施行期日）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow' onclick='tableArrowClicked(this)'>▼</div><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision令和四年三月三一日法律第四号')">附　則（令和四年三月三一日法律第四号）</a></div>
+<div class='table_indent'>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号-Article1' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号-Article1')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision令和四年三月三一日法律第四号-Article1')">第一条（施行期日）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号-Article98' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号-Article98')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision令和四年三月三一日法律第四号-Article98')">第九十八条（罰則に関する経過措置）</a></div>
+<div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年三月三一日法律第四号-Article99' onclick="visibilityClicked(this,'root-SupplProvision令和四年三月三一日法律第四号-Article99')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision令和四年三月三一日法律第四号-Article99')">第九十九条（政令への委任）</a></div>
+</div>
+</div>
+<div><div class='table_line'><div class='table_arrow_dummy'></div><div class='table_line_visibility' id='visibility-root-SupplProvision令和四年六月一七日法律第六八号' onclick="visibilityClicked(this,'root-SupplProvision令和四年六月一七日法律第六八号')"></div><a class='title_text' onclick="tocClicked('root-SupplProvision令和四年六月一七日法律第六八号')">附　則（令和四年六月一七日法律第六八号）</a></div>
+<div class='table_indent'>
+</div>
+</div>
+</div><div class='body' id='body'><div id='root-MainProvision'><div id='root-MainProvision-Article1'><b>（趣旨）</b>
 <div class='body_indent'><b>第一条</b></div>
 <div id='root-MainProvision-Article1-Paragraph1'><div class='body_indent'><b></b>　この法律は、消費税法（昭和六十三年法律第百八号）、酒税法（昭和二十八年法律第六号）、たばこ税法（昭和五十九年法律第七十二号）、揮発油税法（昭和三十二年法律第五十五号）、地方揮発油税法（昭和三十年法律第百四号）、石油ガス税法（昭和四十年法律第百五十六号）又は石油石炭税法（昭和五十三年法律第二十五号）その他の内国消費税に関する法律（以下「消費税法等」という。）及び国税通則法（昭和三十七年法律第六十六号）の規定において定めるもののほか、輸入する物品に対する内国消費税の確定、納付、徴収及び免除等について定めるものとする。</div></div>
 </div>
@@ -633,11 +637,11 @@
 <div id='root-MainProvision-Article26-Paragraph1'><div class='body_indent'><b></b>　課税物品の輸入に係る内国消費税の犯則事件の調査及び処分については、税関長又は税関職員を国税局長若しくは税務署長又は国税庁、国税局若しくは税務署の当該職員とみなして、国税通則法第十一章（犯則事件の調査及び処分）の規定（同法第百五十三条（調査の管轄及び引継ぎ）及び第百五十四条第一項（管轄区域外における職務の執行等）の規定を除く。）を適用する。</div></div>
 <div id='root-MainProvision-Article26-Paragraph2'><div class='body_indent'><b>２</b>　国税通則法第百五十三条第五項の規定は、前項の犯則事件を国税庁、国税局又は税務署の当該職員及び税関職員が発見した場合について準用する。この場合において、同条第五項中「税務署の当該職員」とあるのは「税務署の当該職員（税関職員が最初に発見したときは、当該発見地又は犯則物件の輸入地若しくは納税地を所轄する税関の税関職員）」と、「国税局の当該職員」とあるのは「国税局の当該職員（税関職員が最初に発見したときは、当該発見地又は犯則物件の輸入地若しくは納税地を所轄する税関の税関職員）」と読み替えるものとする。</div></div>
 </div>
-</div><div id='root-SupplProvision4562703200'><div class='body_indent'><b>附　則　抄</b></div><div id='root-SupplProvision4562703200-Paragraph1'><div class='body_indent'><b>１</b>　この法律は、昭和三十年七月一日から施行する。</div></div>
-<div id='root-SupplProvision4562703200-Paragraph2'><div class='body_indent'><b>２</b>　酒税等ノ徴収ニ関スル法律（明治四十四年法律第四十五号）は、廃止する。</div></div>
-<div id='root-SupplProvision4562703200-Paragraph4'><div class='body_indent'><b>４</b>　旧酒税等ノ徴収ニ関スル法律第二条の規定の適用を受けた運送及び同条の規定により提供された担保は、第五条第一項の規定の適用を受けた運送及び同条第二項の規定により提供された担保とみなす。</div></div>
-<div id='root-SupplProvision4562703200-Paragraph5'><div class='body_indent'><b>５</b>　第六条第二項の規定は、この法律の施行後に関税法第七十三条第一項の規定により引き取る内国消費税課税物品（物品税法第一条に規定する物品を除く。）について適用する。</div></div>
-<div id='root-SupplProvision4562703200-Paragraph6'><div class='body_indent'><b>６</b>　当分の間、第二条第二号及び第十一条第三項第二号に規定する揮発油には、租税特別措置法（昭和三十二年法律第二十六号）第八十八条の六の規定により揮発油とみなされる揮発油類似品を含むものとする。</div></div>
+</div><div id='root-SupplProvision4519947456'><div class='body_indent'><b>附　則　抄</b></div><div id='root-SupplProvision4519947456-Paragraph1'><div class='body_indent'><b>１</b>　この法律は、昭和三十年七月一日から施行する。</div></div>
+<div id='root-SupplProvision4519947456-Paragraph2'><div class='body_indent'><b>２</b>　酒税等ノ徴収ニ関スル法律（明治四十四年法律第四十五号）は、廃止する。</div></div>
+<div id='root-SupplProvision4519947456-Paragraph4'><div class='body_indent'><b>４</b>　旧酒税等ノ徴収ニ関スル法律第二条の規定の適用を受けた運送及び同条の規定により提供された担保は、第五条第一項の規定の適用を受けた運送及び同条第二項の規定により提供された担保とみなす。</div></div>
+<div id='root-SupplProvision4519947456-Paragraph5'><div class='body_indent'><b>５</b>　第六条第二項の規定は、この法律の施行後に関税法第七十三条第一項の規定により引き取る内国消費税課税物品（物品税法第一条に規定する物品を除く。）について適用する。</div></div>
+<div id='root-SupplProvision4519947456-Paragraph6'><div class='body_indent'><b>６</b>　当分の間、第二条第二号及び第十一条第三項第二号に規定する揮発油には、租税特別措置法（昭和三十二年法律第二十六号）第八十八条の六の規定により揮発油とみなされる揮発油類似品を含むものとする。</div></div>
 </div><div id='root-SupplProvision昭和三〇年六月三〇日法律第三八号'><div class='body_indent'><b>附　則（昭和三〇年六月三〇日法律第三八号）　抄</b></div><div id='root-SupplProvision昭和三〇年六月三〇日法律第三八号-Paragraph1'><div class='body_indent'><b>１</b>　この法律は、昭和三十年七月一日から施行する。</div></div>
 </div><div id='root-SupplProvision昭和三二年四月六日法律第五五号'><div class='body_indent'><b>附　則（昭和三二年四月六日法律第五五号）　抄</b></div><div id='root-SupplProvision昭和三二年四月六日法律第五五号-Paragraph1'><div class='body_indent'><b>１</b>　この法律は、公布の日の翌日から施行する。</div></div>
 </div><div id='root-SupplProvision昭和三二年五月一日法律第九〇号'><div class='body_indent'><b>附　則（昭和三二年五月一日法律第九〇号）　抄</b></div><div id='root-SupplProvision昭和三二年五月一日法律第九〇号-Paragraph1'><div class='body_indent'><b>１</b>　この法律は、公布の日から起算して三十日をこえない範囲内で政令で定める日から施行する。</div></div>
@@ -688,7 +692,7 @@
 <div class='body_indent'><b>第五条</b></div>
 <div id='root-SupplProvision昭和四四年三月三一日法律第七号-Article5-Paragraph1'><div class='body_indent'><b></b>　この法律の施行前にした行為及び附則第二条の規定により従前の例によることとされる貨物に係るこの法律の施行後にした行為に対する罰則の適用については、なお従前の例による。</div></div>
 </div>
-</div><div id='root-SupplProvision昭和四五年四月二四日法律第三二号'><div class='body_indent'><b>附　則（昭和四五年四月二四日法律第三二号）　抄</b></div><div id='root-SupplProvision昭和四五年四月二四日法律第三二号-Paragraph1'><div class='body_indent'><b>１</b>　この法律は、昭和四十五年五月一日から施行する。ただし、次の各号に掲げる規定は、当該各号に掲げる日から施行する。<div class='body_indent' id='root-SupplProvision昭和四五年四月二四日法律第三二号-Paragraph1-Item1:2'><b>一および二</b>　略</div>
+</div><div id='root-SupplProvision昭和四五年四月二四日法律第三二号'><div class='body_indent'><b>附　則（昭和四五年四月二四日法律第三二号）　抄</b></div><div id='root-SupplProvision昭和四五年四月二四日法律第三二号-Paragraph1'><div class='body_indent'><b>１</b>　この法律は、昭和四十五年五月一日から施行する。ただし、次の各号に掲げる規定は、当該各号に掲げる日から施行する。<div class='body_indent' id='root-SupplProvision昭和四五年四月二四日法律第三二号-Paragraph1-Item1:2'><b>一及び二</b>　略</div>
 <div class='body_indent' id='root-SupplProvision昭和四五年四月二四日法律第三二号-Paragraph1-Item3'><b>三</b>　第一条中第十四条第三号の二及び第十七号の改正規定並びに次項の規定　教育的、科学的及び文化的資材の輸入に関する協定が日本国について効力を生ずる日　</div>
 </div></div>
 <div id='root-SupplProvision昭和四五年四月二四日法律第三二号-Paragraph3'><div class='body_indent'><b>３</b>　この法律の施行前にした行為に対する罰則の適用については、なお従前の例による。</div></div>
@@ -1139,4 +1143,7 @@
 <div class='body_indent'><b>第九十九条</b></div>
 <div id='root-SupplProvision令和四年三月三一日法律第四号-Article99-Paragraph1'><div class='body_indent'><b></b>　この附則に規定するもののほか、この法律の施行に関し必要な経過措置は、政令で定める。</div></div>
 </div>
+</div><div id='root-SupplProvision令和四年六月一七日法律第六八号'><div class='body_indent'><b>附　則（令和四年六月一七日法律第六八号）　抄</b></div><div id='root-SupplProvision令和四年六月一七日法律第六八号-Paragraph1'><b>（施行期日）</b>
+<div class='body_indent'><b>１</b>　この法律は、刑法等一部改正法施行日から施行する。ただし、次の各号に掲げる規定は、当該各号に定める日から施行する。<div class='body_indent' id='root-SupplProvision令和四年六月一七日法律第六八号-Paragraph1-Item1'><b>一</b>　第五百九条の規定　公布の日　</div>
+</div></div>
 </div></div></div></div></div></body></html>
