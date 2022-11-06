@@ -6,7 +6,7 @@
 	<script src='script.js'></script>
 	<script>
 		var law_tables = [];
-		window.addEventListener("load", function() {let fileReader = new FileReader();
+		window.addEventListener("load", function() {
 			const xhr = new XMLHttpRequest();
 			xhr.open('get', './index.csv');
 			xhr.send();
@@ -21,15 +21,40 @@
 			};
 		});
 
-		function search(text){
+		function search(){
+			const text = document.getElementById('searchTextBox').value;
 			const search_results = document.getElementById('search_results');
+			const search_result_num = document.getElementById('search_result_num');
+			const search_filter = document.getElementById('search_filter');
 			search_results.innerHTML = "";
 
+			const filter = {
+				"憲法": document.getElementById('filter_type1').checked,
+				"法律": document.getElementById('filter_type2').checked,
+				"政令": document.getElementById('filter_type3').checked,
+				"勅令": document.getElementById('filter_type4').checked,
+				"府省令": document.getElementById('filter_type5').checked,
+				"規則": document.getElementById('filter_type6').checked,
+			}
+			let filter_checked = false;
+			for(let key in filter){
+				filter_checked = (filter_checked || filter[key]);
+			}
+			if(!filter_checked){
+				for(let key in filter){
+					filter[key] = true;
+				}
+			}
+
 			let count = 0;
-			if(text.length > 0){
+			if(text.length > 1){
 				for(let i = 0; i < law_tables.length; i++){
+					if(!filter[law_tables[i][0]])
+						continue;
+
 					let found = false;
-					for(let j = 0; j < law_tables[i].length; j++){
+					for(let j = 1; j < law_tables[i].length; j++){
+						if(j == 4)continue;
 						if(law_tables[i][j].indexOf(text) >= 0){
 							found = true;
 							break;
@@ -39,15 +64,18 @@
 						const res = document.createElement('div');
 						res.className = 'search_result';
 						res.innerHTML = (
-							"<div class='search_type'>" + law_tables[i][0] + "</div><div class='search_title'><a href='./" + law_tables[i][4] +  ".html'>" + law_tables[i][2] + "</a></div>\n"
+							"<div class='search_type'>" + law_tables[i][0] + "</div><div class='search_title'><a href='./L_" + law_tables[i][4] +  ".html'>" + law_tables[i][2] + "</a></div>\n"
 						);
 						search_results.appendChild(res);
 						count += 1;
 					}
 				}
+				search_result_num.innerText = String(count) + " 件";
+				search_filter.style.display = "inline";
+			}else{
+				search_result_num.innerText = "こちらから法令を検索できます　↑";
+				search_filter.style.display = "none";
 			}
-			const search_result_num = document.getElementById('search_result_num');
-			search_result_num.innerText = String(count) + " 件";
 		}
 	</script>
 </head>
@@ -55,11 +83,22 @@
 	<div class="pages">
 		<div class="header">
 			<a href="./" class="logo"></a>
-			<input type="text" placeholder="Search Text" value="" class="search_box" id="searchTextBox" onInput="search(this.value)"/>
+			<input type="text" placeholder="Search Text" value="" class="search_box" id="searchTextBox" onInput="search()"/>
 		</div>
 		<div class="main">
 			<div class="main_body">
 				<div class="search_list">
+					<div>
+						<span class="search_filter" id="search_filter" style="display: none;">
+							フィルタ：
+							<input type="checkbox" id="filter_type1" onchange="search()">憲法
+							<input type="checkbox" id="filter_type2" onchange="search()">法律
+							<input type="checkbox" id="filter_type3" onchange="search()">政令
+							<input type="checkbox" id="filter_type4" onchange="search()">勅令
+							<input type="checkbox" id="filter_type5" onchange="search()">府省令
+							<input type="checkbox" id="filter_type6" onchange="search()">規則
+						</span>
+					</div>
 					<div class="search_result_num" id="search_result_num">こちらから法令を検索できます　↑</div>
 					<div class="search_results" id="search_results">						
 					</div>
