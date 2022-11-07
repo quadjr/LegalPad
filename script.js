@@ -128,6 +128,7 @@ function refClicked(ref_id){
     if(el_body.length > 0){
         history.replaceState(document.getElementById("body").scrollTop, null)
         history.pushState(el_body[0].offsetTop - document.getElementById("body").offsetTop, null);
+        document.getElementById("body").scrollTop = el_body[0].offsetTop - document.getElementById("body").offsetTop;
     }else{
         console.log("ref_" + ref_id)
         console.log(el_body)
