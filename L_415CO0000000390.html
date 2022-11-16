@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Es" onclick="visibilityClicked(this,'Es')"></div>
+                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,21 +31,21 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_visibility" id="visibility-Mp-Ch_1" onclick="visibilityClicked(this,'Mp-Ch_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1')"></div>
                     <a class="title_text" href="#Mp-Ch_1">第一章　関係政令の整備</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                        <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                         <a class="title_text" href="#Mp-At_1">第一条（生物系特定産業技術研究推進機構法第二条第三号の業種を定める政令の廃止）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -53,7 +53,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_visibility" id="visibility-Mp-At_8" onclick="visibilityClicked(this,'Mp-At_8')"></div>
+                        <div class="table_line_toggle" id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8')"></div>
                         <a class="title_text" href="#Mp-At_8">第八条（特許法施行令及び商標法施行令の一部改正に伴う経過措置）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -63,14 +63,14 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_visibility" id="visibility-Mp-Ch_2" onclick="visibilityClicked(this,'Mp-Ch_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2')"></div>
                     <a class="title_text" href="#Mp-Ch_2">第二章　経過措置</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_visibility" id="visibility-Mp-At_18" onclick="visibilityClicked(this,'Mp-At_18')"></div>
+                        <div class="table_line_toggle" id="toggle-Mp-At_18" onclick="toggleClicked(this,'Mp-At_18')"></div>
                         <a class="title_text" href="#Mp-At_18">第十八条（評価委員の任命等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -78,7 +78,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_visibility" id="visibility-Mp-At_19" onclick="visibilityClicked(this,'Mp-At_19')"></div>
+                        <div class="table_line_toggle" id="toggle-Mp-At_19" onclick="toggleClicked(this,'Mp-At_19')"></div>
                         <a class="title_text" href="#Mp-At_19">第十九条（生物系特定産業技術研究推進機構の解散の登記の嘱託等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -86,7 +86,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_visibility" id="visibility-Mp-At_20" onclick="visibilityClicked(this,'Mp-At_20')"></div>
+                        <div class="table_line_toggle" id="toggle-Mp-At_20" onclick="toggleClicked(this,'Mp-At_20')"></div>
                         <a class="title_text" href="#Mp-At_20">第二十条（独立行政法人等の保有する情報の公開に関する法律の適用に関する経過措置）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -98,7 +98,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -164,7 +164,8 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_334AC0000000127.html">商標法</a>（<a class="reference_link" href="L_334AC0000000127.html">昭和三十四年法律第百二十七号</a>）<a class="reference_link" href="L_334AC0000000127.html#Mp-At_40-Pr_3">第四十条第三項</a>（<a class="reference_link" href="#Mp-At_41_2-Pr_5">同法第四十一条の二第五項</a>において準用する場合を含む。）</div>
+                            <a class="reference_link" href="L_334AC0000000127.html">商標法</a>（<a class="reference_link" href="L_334AC0000000127.html">昭和三十四年法律第百二十七号</a>）<a class="reference_link" href="L_334AC0000000127.html#Mp-At_40-Pr_3">第四十条第三項</a>（<a class="reference_link" href="L_334AC0000000127.html">同法</a>
+                            <a class="reference_link" href="L_334AC0000000127.html#Mp-At_41_2-Pr_5">第四十一条の二第五項</a>において準用する場合を含む。）</div>
                         </div>
                       </div>
                     </div>
@@ -261,7 +262,8 @@
                   <div id="Mp-At_20-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">改正法の施行前に<a class="reference_link" href="L_413AC0000000140.html">独立行政法人等の保有する情報の公開に関する法律</a>（<a class="reference_link" href="L_413AC0000000140.html">平成十三年法律第百四十号</a>）の規定に基づき推進機構がした行為及び推進機構に対してされた行為は、<a class="reference_link" href="#Mp-At_2-Pr_2">同法第二条第二項</a>に規定する法人文書の開示に関する同法の規定の適用については、研究機構がした行為及び研究機構に対してされた行為とみなす。</div>
+                      <div class="Sentence">改正法の施行前に<a class="reference_link" href="L_413AC0000000140.html">独立行政法人等の保有する情報の公開に関する法律</a>（<a class="reference_link" href="L_413AC0000000140.html">平成十三年法律第百四十号</a>）の規定に基づき推進機構がした行為及び推進機構に対してされた行為は、<a class="reference_link" href="L_413AC0000000140.html">同法</a>
+                        <a class="reference_link" href="L_413AC0000000140.html#Mp-At_2-Pr_2">第二条第二項</a>に規定する法人文書の開示に関する<a class="reference_link" href="L_413AC0000000140.html">同法</a>の規定の適用については、研究機構がした行為及び研究機構に対してされた行為とみなす。</div>
                     </div>
                   </div>
                 </div>

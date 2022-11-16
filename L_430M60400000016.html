@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Es" onclick="visibilityClicked(this,'Es')"></div>
+                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（目的）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条（定義）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条（合衆国連絡部局から追加の情報の提供の要請を受けなかった場合の措置）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_4" onclick="visibilityClicked(this,'Mp-At_4')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
                     <a class="title_text" href="#Mp-At_4">第四条（法第五条の規定による同意をする旨の通知をしようとするときの国家公安委員会への報告）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -70,7 +70,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_5" onclick="visibilityClicked(this,'Mp-At_5')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
                     <a class="title_text" href="#Mp-At_5">第五条（追加の情報の提供後に無罪の判決が確定した場合等の措置）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -78,7 +78,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_6" onclick="visibilityClicked(this,'Mp-At_6')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6')"></div>
                     <a class="title_text" href="#Mp-At_6">第六条（情報の適切な管理のための措置）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -86,7 +86,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_7" onclick="visibilityClicked(this,'Mp-At_7')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7')"></div>
                     <a class="title_text" href="#Mp-At_7">第七条（国家公安委員会への報告）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -96,7 +96,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -132,7 +132,7 @@
                 <div id="Mp-At_3-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">警察庁長官（以下「長官」という。）は、法第三条の規定により、特定の者に係る指紋情報が照合用電子計算機に記録されている旨（<a class="reference_link" href="#Mp-At_3-Pr_1">同条第一項</a>の場合にあっては、その者に係る指紋情報が照合用電子計算機に記録されており、かつ、その者が<a class="reference_link" href="#Mp-At_3-Pr_1-It_1">同項各号</a>のいずれかに該当する者である旨）を回答した場合において、合衆国連絡部局から、協定<a class="reference_link" href="#Mp-At_5">第五条</a>１の規定によるその者に係る追加の情報の提供の要請（<a class="reference_link" href="#Mp-At_7-Pr_1-It_3">第七条第一項第三号</a>において「追加情報提供要請」という。）を受けなかったときは、合衆国連絡部局に対し、当該回答に係る照会の目的について説明を要請するものとする。</div>
+                    <div class="Sentence">警察庁長官（以下「長官」という。）は、法<a class="reference_link" href="#Mp-At_3">第三条</a>の規定により、特定の者に係る指紋情報が照合用電子計算機に記録されている旨（<a class="reference_link" href="#Mp-At_3-Pr_1">同条第一項</a>の場合にあっては、その者に係る指紋情報が照合用電子計算機に記録されており、かつ、その者が<a class="reference_link" href="#Mp-At_3-Pr_1-It_1">同項各号</a>のいずれかに該当する者である旨）を回答した場合において、合衆国連絡部局から、協定<a class="reference_link" href="#Mp-At_5">第五条</a>１の規定によるその者に係る追加の情報の提供の要請（<a class="reference_link" href="#Mp-At_7-Pr_1-It_3">第七条第一項第三号</a>において「追加情報提供要請」という。）を受けなかったときは、合衆国連絡部局に対し、当該回答に係る照会の目的について説明を要請するものとする。</div>
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@
                 <div id="Mp-At_4-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">長官は、法第五条の規定による同意をする旨の通知をしようとするときは、あらかじめ、当該同意の内容その他の必要な事項を国家公安委員会に報告するものとする。</div>
+                    <div class="Sentence" Num="1">長官は、法<a class="reference_link" href="#Mp-At_5">第五条</a>の規定による同意をする旨の通知をしようとするときは、あらかじめ、当該同意の内容その他の必要な事項を国家公安委員会に報告するものとする。</div>
                     <div class="Sentence" Num="2">ただし、緊急を要する場合で、あらかじめ、国家公安委員会に報告するいとまのないときは、事後速やかに、当該報告をするものとする。</div>
                   </div>
                 </div>
@@ -153,7 +153,7 @@
                 <div id="Mp-At_5-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">長官は、法第四条第一項の規定により合衆国連絡部局に対し情報を提供した後、当該情報に係る者について、当該情報に係る刑事事件につき無罪の判決が確定した場合その他これに準ずる場合において、必要かつ相当と認められるときは、その旨を合衆国連絡部局に通報するものとする。</div>
+                    <div class="Sentence">長官は、法<a class="reference_link" href="#Mp-At_4-Pr_1">第四条第一項</a>の規定により合衆国連絡部局に対し情報を提供した後、当該情報に係る者について、当該情報に係る刑事事件につき無罪の判決が確定した場合その他これに準ずる場合において、必要かつ相当と認められるときは、その旨を合衆国連絡部局に通報するものとする。</div>
                   </div>
                 </div>
               </div>
@@ -163,7 +163,7 @@
                 <div id="Mp-At_6-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">長官は、協定に基づく措置に係る情報（法第三条から第五条までの措置に係るものを除く。）の漏えい、滅失又は毀損の防止その他これらの情報の適切な管理のために、長官の使用に係る電子計算機に係るアクセス制御機能（<a class="reference_link" href="L_411AC0000000128.html">不正アクセス行為の禁止等に関する法律</a>（<a class="reference_link" href="L_411AC0000000128.html">平成十一年法律第百二十八号</a>）<a class="reference_link" href="L_411AC0000000128.html#Mp-At_2-Pr_3">第二条第三項</a>に規定するアクセス制御機能をいう。）の高度化その他の必要な措置を講ずるものとする。</div>
+                    <div class="Sentence">長官は、協定に基づく措置に係る情報（法<a class="reference_link" href="#Mp-At_3">第三条から第五条まで</a>の措置に係るものを除く。）の漏えい、滅失又は毀損の防止その他これらの情報の適切な管理のために、長官の使用に係る電子計算機に係るアクセス制御機能（<a class="reference_link" href="L_411AC0000000128.html">不正アクセス行為の禁止等に関する法律</a>（<a class="reference_link" href="L_411AC0000000128.html">平成十一年法律第百二十八号</a>）<a class="reference_link" href="L_411AC0000000128.html#Mp-At_2-Pr_3">第二条第三項</a>に規定するアクセス制御機能をいう。）の高度化その他の必要な措置を講ずるものとする。</div>
                   </div>
                 </div>
               </div>
@@ -178,7 +178,7 @@
                   <div id="Mp-At_7-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">法第三条の規定による特定の者に係る指紋情報が照合用電子計算機に記録されている旨（<a class="reference_link" href="#Mp-At_3-Pr_1">同条第一項</a>の場合にあっては、その者に係る指紋情報が照合用電子計算機に記録されており、かつ、その者が<a class="reference_link" href="#Mp-At_7-Pr_1-It_1">同項各号</a>のいずれかに該当する者である旨）の回答の件数</div>
+                      <div class="Sentence">法<a class="reference_link" href="#Mp-At_3">第三条</a>の規定による特定の者に係る指紋情報が照合用電子計算機に記録されている旨（<a class="reference_link" href="#Mp-At_3-Pr_1">同条第一項</a>の場合にあっては、その者に係る指紋情報が照合用電子計算機に記録されており、かつ、その者が<a class="reference_link" href="#Mp-At_3-Pr_1-It_1">同項各号</a>のいずれかに該当する者である旨）の回答の件数</div>
                     </div>
                   </div>
                   <div id="Mp-At_7-Pr_1-It_2" class="Item" Num="2">

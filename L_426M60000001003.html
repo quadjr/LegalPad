@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Es" onclick="visibilityClicked(this,'Es')"></div>
+                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（係長又は課長補佐の官職に準ずる官職）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条（実務経験等活用官職）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条（一定の範囲の知識等を有する者の定め）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_4" onclick="visibilityClicked(this,'Mp-At_4')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
                     <a class="title_text" href="#Mp-At_4">第四条（経験者採用試験の種類ごとに内閣官房令で定める知識、能力等）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -80,7 +80,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp_平成二九年七月三日内閣官房令第六号" onclick="visibilityClicked(this,'Sp_平成二九年七月三日内閣官房令第六号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_平成二九年七月三日内閣官房令第六号" onclick="toggleClicked(this,'Sp_平成二九年七月三日内閣官房令第六号')"></div>
                 <a class="title_text" href="#Sp_平成二九年七月三日内閣官房令第六号">附　則（平成二九年七月三日内閣官房令第六号）</a>
               </div>
               <div class="table_indent"></div>
@@ -88,7 +88,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp_平成三〇年七月二日内閣官房令第四号" onclick="visibilityClicked(this,'Sp_平成三〇年七月二日内閣官房令第四号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_平成三〇年七月二日内閣官房令第四号" onclick="toggleClicked(this,'Sp_平成三〇年七月二日内閣官房令第四号')"></div>
                 <a class="title_text" href="#Sp_平成三〇年七月二日内閣官房令第四号">附　則（平成三〇年七月二日内閣官房令第四号）</a>
               </div>
               <div class="table_indent"></div>
@@ -96,7 +96,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Apt" onclick="visibilityClicked(this,'Apt')"></div>
+                <div class="table_line_toggle" id="toggle-Apt" onclick="toggleClicked(this,'Apt')"></div>
                 <a class="title_text" href="#Apt">別表（第四条関係）</a>
               </div>
               <div class="table_indent"></div>
@@ -273,9 +273,9 @@
                     </td>
                     <td>
                       <div class="Sentence">一　困難な課題を解決できる論理的な思考力、判断力、表現力その他総合的な能力又は適切かつ効果的に説明及び討議を行う能力</div>
-                      <div class="Sentence">二　<a class="reference_link" href="#Mp-It_9">前号</a>に掲げる事項の基盤となる基礎的な外国語の能力</div>
-                      <div class="Sentence">三　<a class="reference_link" href="#Mp-It_8">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">四　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">二　<a class="reference_link" href="#Mp">前号</a>に掲げる事項の基盤となる基礎的な外国語の能力</div>
+                      <div class="Sentence">三　<a class="reference_link" href="#Mp">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">四　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -288,8 +288,8 @@
                     <td>
                       <div class="Sentence">一　会計に関する分野における知識</div>
                       <div class="Sentence">二　課題を解決できる論理的な思考力、判断力及び表現力</div>
-                      <div class="Sentence">三　<a class="reference_link" href="#Mp-It_8">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">四　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">三　<a class="reference_link" href="#Mp">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">四　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -302,8 +302,8 @@
                     <td>
                       <div class="Sentence">一　自然科学の分野における特定の専門領域に関する知識及びその関連領域における知識</div>
                       <div class="Sentence">二　課題を解決できる論理的な思考力、判断力及び表現力</div>
-                      <div class="Sentence">三　<a class="reference_link" href="#Mp-It_8">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">四　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">三　<a class="reference_link" href="#Mp">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">四　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -316,8 +316,8 @@
                     <td>
                       <div class="Sentence">一　外交領事事務に関する分野における社会経済情勢に関する知識並びに国際法規に関する知識及びこれに関連する知識</div>
                       <div class="Sentence">二　特定の外国語の能力並びに課題を解決できる論理的な思考力、判断力及び表現力</div>
-                      <div class="Sentence">三　<a class="reference_link" href="#Mp-It_8">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">四　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">三　<a class="reference_link" href="#Mp">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">四　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                       <div class="Sentence">五　<a class="reference_link" href="#Mp-It_2">第二号</a>の特定の外国語以外の外国語の能力を必要に応じて習得する意欲</div>
                     </td>
                   </tr>
@@ -330,8 +330,8 @@
                     </td>
                     <td>
                       <div class="Sentence">一　課題を解決できる論理的な思考力、判断力及び表現力</div>
-                      <div class="Sentence">二　<a class="reference_link" href="#Mp-It_9">前号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">三　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_8">前二号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">二　<a class="reference_link" href="#Mp">前号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">三　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp">前二号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -344,9 +344,9 @@
                     <td>
                       <div class="Sentence">一　自然科学の分野における特定の専門領域に関する知識及びその関連領域における知識</div>
                       <div class="Sentence">二　困難な課題を解決できる論理的な思考力、判断力、表現力その他総合的な能力又は適切かつ効果的に説明及び討議を行う能力</div>
-                      <div class="Sentence">三　<a class="reference_link" href="#Mp-It_8">前二号</a>に掲げる事項の基盤となる基礎的な外国語の能力</div>
-                      <div class="Sentence">四　前<a class="reference_link" href="#Mp-It_1">各号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">五　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">三　<a class="reference_link" href="#Mp">前二号</a>に掲げる事項の基盤となる基礎的な外国語の能力</div>
+                      <div class="Sentence">四　<a class="reference_link" href="#Mp-It_1">前各号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">五　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -358,9 +358,9 @@
                     </td>
                     <td>
                       <div class="Sentence">一　困難な課題を解決できる論理的な思考力、判断力、表現力その他総合的な能力又は適切かつ効果的に説明及び討議を行う能力</div>
-                      <div class="Sentence">二　<a class="reference_link" href="#Mp-It_9">前号</a>に掲げる事項の基盤となる基礎的な外国語の能力</div>
-                      <div class="Sentence">三　<a class="reference_link" href="#Mp-It_8">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">四　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">二　<a class="reference_link" href="#Mp">前号</a>に掲げる事項の基盤となる基礎的な外国語の能力</div>
+                      <div class="Sentence">三　<a class="reference_link" href="#Mp">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">四　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -374,10 +374,10 @@
                       <div class="Sentence">一　自然科学の分野における特定の専門領域に関する知識及びその関連領域における知識</div>
                       <div class="Sentence">二　<a class="reference_link" href="#Mp-At_2-Pr_1-It_8">第二条第八号</a>イの官職にあっては、次に掲げる能力</div>
                       <div class="Sentence">イ　困難な課題を解決できる論理的な思考力、判断力、表現力その他総合的な能力又は適切かつ効果的に説明及び討議を行う能力</div>
-                      <div class="Sentence">ロ　<a class="reference_link" href="#Mp-It_9">前号</a>及びイに掲げる事項の基盤となる基礎的な外国語の能力</div>
+                      <div class="Sentence">ロ　<a class="reference_link" href="#Mp">前号</a>及びイに掲げる事項の基盤となる基礎的な外国語の能力</div>
                       <div class="Sentence">三　<a class="reference_link" href="#Mp-At_2-Pr_1-It_8">第二条第八号</a>ロの官職にあっては、課題を解決できる論理的な思考力、判断力及び表現力</div>
-                      <div class="Sentence">四　前<a class="reference_link" href="#Mp-It_1">各号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">五　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">四　<a class="reference_link" href="#Mp-It_1">前各号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">五　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -389,8 +389,8 @@
                     </td>
                     <td>
                       <div class="Sentence">一　課題を解決できる論理的な思考力、判断力及び表現力</div>
-                      <div class="Sentence">二　<a class="reference_link" href="#Mp-It_9">前号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">三　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_8">前二号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">二　<a class="reference_link" href="#Mp">前号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">三　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp">前二号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>
@@ -403,8 +403,8 @@
                     <td>
                       <div class="Sentence">一　自然科学の分野における特定の専門領域に関する知識及びその関連領域における知識</div>
                       <div class="Sentence">二　課題を解決できる論理的な思考力、判断力及び表現力</div>
-                      <div class="Sentence">三　<a class="reference_link" href="#Mp-It_8">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
-                      <div class="Sentence">四　採用後の研修又は職務経験を通じて前<a class="reference_link" href="#Mp-It_1">各号</a>の知識及び能力の向上が見込まれる資質</div>
+                      <div class="Sentence">三　<a class="reference_link" href="#Mp">前二号</a>に掲げるもののほか、民間企業における実務の経験その他これに類する経験を通じて体得した効率的かつ機動的な業務遂行の手法その他の知識及び能力</div>
+                      <div class="Sentence">四　採用後の研修又は職務経験を通じて<a class="reference_link" href="#Mp-It_1">前各号</a>の知識及び能力の向上が見込まれる資質</div>
                     </td>
                   </tr>
                   <tr>

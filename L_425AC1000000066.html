@@ -23,14 +23,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（趣旨）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -38,7 +38,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条（国民年金の給付を行うための国民年金の保険料の納付の特例）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条（特別給付金の支給）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_4" onclick="visibilityClicked(this,'Mp-At_4')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
                     <a class="title_text" href="#Mp-At_4">第四条（譲渡等の禁止等）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_5" onclick="visibilityClicked(this,'Mp-At_5')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
                     <a class="title_text" href="#Mp-At_5">第五条（情報の提供）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -72,14 +72,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Sp-At_1" onclick="visibilityClicked(this,'Sp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Sp-At_1" onclick="toggleClicked(this,'Sp-At_1')"></div>
                     <a class="title_text" href="#Sp-At_1">第一条（施行期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -87,7 +87,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Sp-At_2" onclick="visibilityClicked(this,'Sp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Sp-At_2" onclick="toggleClicked(this,'Sp-At_2')"></div>
                     <a class="title_text" href="#Sp-At_2">第二条（経過措置）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -95,7 +95,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Sp-At_3" onclick="visibilityClicked(this,'Sp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Sp-At_3" onclick="toggleClicked(this,'Sp-At_3')"></div>
                     <a class="title_text" href="#Sp-At_3">第三条（矯正施設に収容中の者に対する国民年金の保険料の納付等の手続に関する指導）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -121,7 +121,7 @@
                 <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">死刑再審無罪者は、死刑の判決が確定した日から死刑に処せられた罪について再審において無罪の言渡しを受けてその判決が確定した日（以下「無罪判決確定日」という。）の前日までの期間（<a class="reference_link" href="#Mp-At_3-Pr_1">次条第一項</a>において「対象期間」という。）のうち国民年金法等の一部を改正する法律（昭和六十年法律第三十四号）第一条の規定による改正前の<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>（<a class="reference_link" href="L_334AC0000000141.html">昭和三十四年法律第百四十一号</a>）（以下この項において「旧<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>」という。）による被保険者期間（<a class="reference_link" href="#Mp-At_3-Pr_1">次条第一項</a>において「旧被保険者期間」という。）又は<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>
+                    <div class="Sentence">死刑再審無罪者は、死刑の判決が確定した日から死刑に処せられた罪について再審において無罪の言渡しを受けてその判決が確定した日（以下「無罪判決確定日」という。）の前日までの期間（<a class="reference_link" href="#Mp-At_3-Pr_1">次条第一項</a>において「対象期間」という。）のうち国民年金法等の一部を改正する法律（昭和六十年法律第三十四号）第一条の規定による改正前の<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>（<a class="reference_link" href="L_334AC0000000141.html">昭和三十四年法律第百四十一号</a>）（以下この項において「旧国民年金法」という。）による被保険者期間（<a class="reference_link" href="#Mp-At_3-Pr_1">次条第一項</a>において「旧被保険者期間」という。）又は<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>
                       <a class="reference_link" href="L_334AC0000000141.html#Mp-At_7-Pr_1-It_1">第七条第一項第一号</a>に規定する<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">第一号</a>被保険者としての国民年金の被保険者期間（<a class="reference_link" href="#Mp-At_3-Pr_1">次条第一項</a>において「新被保険者期間」という。）であるもの（旧<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>
                       <a class="reference_link" href="L_334AC0000000141.html#Mp-At_5-Pr_3">第五条第三項</a>に規定する保険料納付済期間、<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>
                       <a class="reference_link" href="L_334AC0000000141.html#Mp-At_5-Pr_2">第五条第二項</a>に規定する保険料納付済期間その他の政令で定める期間を除く。）に係る保険料を納付することができる。</div>
@@ -144,7 +144,7 @@
                 <div id="Mp-At_2-Pr_4" class="Paragraph" Num="4">
                   <div class="ParagraphNum">４</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">死刑再審無罪者に係る国民年金法に規定する事項及び<a class="reference_link" href="#Mp-At_2-Pr_1">前三項</a>の規定の適用に関し必要な事項については、同法その他の法令の規定にかかわらず、政令で特別の定めをすることができる。</div>
+                    <div class="Sentence">死刑再審無罪者に係る<a class="reference_link" href="L_334AC0000000141.html">国民年金法</a>に規定する事項及び<a class="reference_link" href="#Mp-At_2-Pr_1">前三項</a>の規定の適用に関し必要な事項については、<a class="reference_link" href="L_334AC0000000141.html">同法</a>その他の法令の規定にかかわらず、政令で特別の定めをすることができる。</div>
                   </div>
                 </div>
               </div>

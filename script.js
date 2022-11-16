@@ -12,7 +12,7 @@ function tableArrowClicked(el) {
     }
 }
 
-function visibilityClicked(el, tag_id) {
+function toggleClicked(el, tag_id) {
     var el_body;
     if(tag_id == "EnactStatement"){
         el_body = document.getElementsByClassName(tag_id)[0];
@@ -21,7 +21,7 @@ function visibilityClicked(el, tag_id) {
     }
     if (el_body.style.getPropertyValue("display")){
         el.style.removeProperty("background-color");
-        elements = document.querySelectorAll('[id^=visibility-' + tag_id + '-]');
+        elements = document.querySelectorAll('[id^=toggle-' + tag_id + '-]');
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.removeProperty("background-color");
         }
@@ -48,7 +48,7 @@ function visibilityClicked(el, tag_id) {
             if(element){
                 element.style.removeProperty("display");
             }
-            element = document.getElementById("visibility-" + tag_id.substr(0, pos));
+            element = document.getElementById("toggle-" + tag_id.substr(0, pos));
             if(element){
                 element.style.removeProperty("background-color");
             }
@@ -57,7 +57,7 @@ function visibilityClicked(el, tag_id) {
         }
     }else{
         el.style.setProperty("background-color", "black");
-        elements = document.querySelectorAll('[id^=visibility-' + tag_id + '-]');
+        elements = document.querySelectorAll('[id^=toggle-' + tag_id + '-]');
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.setProperty("background-color", "black");
         }
@@ -84,3 +84,16 @@ function toggleToc(){
         el_body.style.setProperty("display", "none");
     }
 }
+
+function loadFinished(){
+    // 削除された条文が指定された場合、直近の上位を表示
+    var urlHash = location.hash.substring(1);
+    for(let i = urlHash.length; i > 0; i--){
+        if(document.getElementById(urlHash.substr(0, i))){
+            location.hash = "#" + urlHash.substr(0, i);
+            break;
+        }
+    }
+}
+
+window.addEventListener('load', loadFinished);

@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Es" onclick="visibilityClicked(this,'Es')"></div>
+                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（目的）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条（電気通信業務を行う特定無線局）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条（その他の特定無線局）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp_平成二三年三月一日総務省令第一三号" onclick="visibilityClicked(this,'Sp_平成二三年三月一日総務省令第一三号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_平成二三年三月一日総務省令第一三号" onclick="toggleClicked(this,'Sp_平成二三年三月一日総務省令第一三号')"></div>
                 <a class="title_text" href="#Sp_平成二三年三月一日総務省令第一三号">附　則（平成二三年三月一日総務省令第一三号）</a>
               </div>
               <div class="table_indent"></div>
@@ -109,7 +109,7 @@
                   <div id="Mp-At_2-Pr_1-It_2" class="Item" Num="2">
                     <div class="ItemTitle">二</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">包括免許を受けようとする者は、それらの局の運用（特定無線局（法第二十七条の二第一号に掲げる無線局に係るものに限る。）にあっては、それらの局の最大運用数による運用）による電気通信事業の実施について適切な計画を有し、かつ、当該計画を確実に実施するに足りる能力を有するものであること。</div>
+                      <div class="Sentence">包括免許を受けようとする者は、それらの局の運用（特定無線局（法<a class="reference_link" href="#Mp-At_27_2-Pr_1-It_1">第二十七条の二第一号</a>に掲げる無線局に係るものに限る。）にあっては、それらの局の最大運用数による運用）による電気通信事業の実施について適切な計画を有し、かつ、当該計画を確実に実施するに足りる能力を有するものであること。</div>
                     </div>
                   </div>
                   <div id="Mp-At_2-Pr_1-It_3" class="Item" Num="3">
@@ -121,7 +121,7 @@
                   <div id="Mp-At_2-Pr_1-It_4" class="Item" Num="4">
                     <div class="ItemTitle">四</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">それらの局が法第二十七条の十二第一項に規定する特定基地局であるときは、当該特定基地局の開設指針の規定に基づくものであること。</div>
+                      <div class="Sentence">それらの局が法<a class="reference_link" href="#Mp-At_27_12-Pr_1">第二十七条の十二第一項</a>に規定する特定基地局であるときは、当該特定基地局の開設指針の規定に基づくものであること。</div>
                     </div>
                   </div>
                   <div id="Mp-At_2-Pr_1-It_5" class="Item" Num="5">
@@ -190,7 +190,7 @@
               <div id="Sp-Pr_1" class="Paragraph" Num="1">
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省令は、<a class="reference_link" href="L_325AC0000000131.html">電波法</a>の一部を改正する法律（平成九年法律第四十七号）の施行の日から施行する。</div>
+                  <div class="Sentence">この省令は、電波法の一部を改正する法律（平成九年法律第四十七号）の施行の日から施行する。</div>
                 </div>
               </div>
             </div>

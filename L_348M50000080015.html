@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Es" onclick="visibilityClicked(this,'Es')"></div>
+                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（市町村の廃置分合等があつた場合における児童又は生徒の数の算定方法）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条（市町村の廃置分合等があつた場合における基準財政収入額等の算定方法）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条（市町村の廃置分合等があつた場合における財政力指数）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp_昭和四九年五月一六日文部省令第一八号" onclick="visibilityClicked(this,'Sp_昭和四九年五月一六日文部省令第一八号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_昭和四九年五月一六日文部省令第一八号" onclick="toggleClicked(this,'Sp_昭和四九年五月一六日文部省令第一八号')"></div>
                 <a class="title_text" href="#Sp_昭和四九年五月一六日文部省令第一八号">附　則（昭和四九年五月一六日文部省令第一八号）</a>
               </div>
               <div class="table_indent"></div>
@@ -80,7 +80,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp_昭和五五年四月一八日文部省令第一六号" onclick="visibilityClicked(this,'Sp_昭和五五年四月一八日文部省令第一六号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_昭和五五年四月一八日文部省令第一六号" onclick="toggleClicked(this,'Sp_昭和五五年四月一八日文部省令第一六号')"></div>
                 <a class="title_text" href="#Sp_昭和五五年四月一八日文部省令第一六号">附　則（昭和五五年四月一八日文部省令第一六号）</a>
               </div>
               <div class="table_indent"></div>
@@ -88,7 +88,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp_昭和五八年四月二八日文部省令第二〇号" onclick="visibilityClicked(this,'Sp_昭和五八年四月二八日文部省令第二〇号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_昭和五八年四月二八日文部省令第二〇号" onclick="toggleClicked(this,'Sp_昭和五八年四月二八日文部省令第二〇号')"></div>
                 <a class="title_text" href="#Sp_昭和五八年四月二八日文部省令第二〇号">附　則（昭和五八年四月二八日文部省令第二〇号）</a>
               </div>
               <div class="table_indent"></div>
@@ -142,7 +142,8 @@
                   <div id="Mp-At_2-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">廃置分合によつて二以上の市町村の区域をそのまま市町村の区域とした市町村については、当該廃置分合前の各市町村の変更年度に係る<a class="reference_link" href="L_325AC0000000211.html">地方交付税法</a>（<a class="reference_link" href="L_325AC0000000211.html">昭和二十五年法律第二百十一号</a>）<a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>の規定により算定した基準財政収入額又は<a class="reference_link" href="#Mp-At_11">同法第十一条</a>の規定により算定した基準財政需要額をそれぞれ合算するものとする。</div>
+                      <div class="Sentence">廃置分合によつて二以上の市町村の区域をそのまま市町村の区域とした市町村については、当該廃置分合前の各市町村の変更年度に係る<a class="reference_link" href="L_325AC0000000211.html">地方交付税法</a>（<a class="reference_link" href="L_325AC0000000211.html">昭和二十五年法律第二百十一号</a>）<a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>の規定により算定した基準財政収入額又は<a class="reference_link" href="L_325AC0000000211.html">同法</a>
+                        <a class="reference_link" href="L_325AC0000000211.html#Mp-At_11">第十一条</a>の規定により算定した基準財政需要額をそれぞれ合算するものとする。</div>
                     </div>
                   </div>
                   <div id="Mp-At_2-Pr_1-It_2" class="Item" Num="2">
@@ -156,7 +157,8 @@
                     <div class="ItemTitle">三</div>
                     <div class="ItemSentence">
                       <div class="Sentence">境界変更によつて区域を増した市町村については、当該市町村の変更年度における<a class="reference_link" href="L_325AC0000000211.html">地方交付税法</a>
-                        <a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>の規定により算定した基準財政収入額又は<a class="reference_link" href="#Mp-At_11">同法第十一条</a>の規定により算定した基準財政需要額に当該境界変更に係る区域を基礎とする独立の市町村が変更年度の四月一日に存在したものと仮定して<a class="reference_link" href="L_325AC0000000211.html">地方交付税法</a>
+                        <a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>の規定により算定した基準財政収入額又は<a class="reference_link" href="L_325AC0000000211.html">同法</a>
+                        <a class="reference_link" href="L_325AC0000000211.html#Mp-At_11">第十一条</a>の規定により算定した基準財政需要額に当該境界変更に係る区域を基礎とする独立の市町村が変更年度の四月一日に存在したものと仮定して<a class="reference_link" href="L_325AC0000000211.html">地方交付税法</a>
                         <a class="reference_link" href="L_325AC0000000211.html#Mp-At_9-Pr_1-It_2">第九条第二号</a>の規定の例によつて計算した基準財政収入額又は基準財政需要額をそれぞれ合算するものとする。</div>
                     </div>
                   </div>
@@ -185,7 +187,8 @@
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence">当該市町村の変更年度の<a class="reference_link" href="L_325AC0000000211.html">地方交付税法</a>
-                          <a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>又は<a class="reference_link" href="L_325AC0000000211.html#Mp-At_2">前条</a>の規定により算定した基準財政収入額を変更年度の<a class="reference_link" href="#Mp-At_11">同法第十一条</a>又は<a class="reference_link" href="#Mp-At_2">前条</a>の規定により算定した基準財政需要額で除して得た数値</div>
+                          <a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>又は<a class="reference_link" href="L_325AC0000000211.html#Mp-At_2">前条</a>の規定により算定した基準財政収入額を変更年度の<a class="reference_link" href="L_325AC0000000211.html">同法</a>
+                          <a class="reference_link" href="L_325AC0000000211.html#Mp-At_11">第十一条</a>又は<a class="reference_link" href="L_325AC0000000211.html#Mp-At_2">前条</a>の規定により算定した基準財政需要額で除して得た数値</div>
                       </div>
                     </div>
                   </div>
@@ -198,7 +201,8 @@
                       <div class="Column" Num="2">
                         <div class="Sentence">
                           <a class="reference_link" href="#Mp-At_3-Pr_1-It_1">前号</a>の数値及び当該市町村の変更年度の翌年度の<a class="reference_link" href="L_325AC0000000211.html">地方交付税法</a>
-                          <a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>の規定により算定した基準財政収入額を変更年度の翌年度の<a class="reference_link" href="#Mp-At_11">同法第十一条</a>の規定により算定した基準財政需要額で除して得た数値を合算したものの二分の一の数値</div>
+                          <a class="reference_link" href="L_325AC0000000211.html#Mp-At_14">第十四条</a>の規定により算定した基準財政収入額を変更年度の翌年度の<a class="reference_link" href="L_325AC0000000211.html">同法</a>
+                          <a class="reference_link" href="L_325AC0000000211.html#Mp-At_11">第十一条</a>の規定により算定した基準財政需要額で除して得た数値を合算したものの二分の一の数値</div>
                       </div>
                     </div>
                   </div>

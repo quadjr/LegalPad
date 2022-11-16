@@ -23,14 +23,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（昭和六十二年度における年金の額の改定の特例）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -38,7 +38,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条（昭和六十三年度における年金の額の改定の特例）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_4" onclick="visibilityClicked(this,'Mp-At_4')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
                     <a class="title_text" href="#Mp-At_4">第四条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp_昭和六三年五月二七日法律第六八号" onclick="visibilityClicked(this,'Sp_昭和六三年五月二七日法律第六八号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_昭和六三年五月二七日法律第六八号" onclick="toggleClicked(this,'Sp_昭和六三年五月二七日法律第六八号')"></div>
                 <a class="title_text" href="#Sp_昭和六三年五月二七日法律第六八号">附　則（昭和六三年五月二七日法律第六八号）</a>
               </div>
               <div class="table_indent"></div>
@@ -113,7 +113,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">前条第一項</a>及び<a class="reference_link" href="#Mp-At_1-Pr_2">第二項</a>の規定は、地方公務員等共済組合法等の一部を改正する法律（昭和六十年法律第百八号。<a class="reference_link" href="#Mp-At_2-Pr_2">次項</a>及び<a class="reference_link" href="#Mp-At_4-Pr_2">第四条第二項</a>において「昭和六十年改正法」という。）附則第九十五条<a class="reference_link" href="#Mp-At_2-Pr_1">第一項</a>に規定する旧共済法による年金である給付（<a class="reference_link" href="#Mp-At_4-Pr_1">第四条第一項</a>において「旧共済法による年金である給付」という。）について準用する。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1">前条第一項</a>及び<a class="reference_link" href="#Mp-At_1-Pr_2">第二項</a>の規定は、地方公務員等共済組合法等の一部を改正する法律（昭和六十年法律第百八号。<a class="reference_link" href="#Mp-At_2-Pr_2">次項</a>及び<a class="reference_link" href="#Mp-At_4-Pr_2">第四条第二項</a>において「昭和六十年改正法」という。）附則第九十五条<a class="reference_link" href="#Mp-At_2-Pr_1">第一項</a>に規定する旧<a class="reference_link" href="L_337AC0000000152.html">共済法</a>による年金である給付（<a class="reference_link" href="#Mp-At_4-Pr_1">第四条第一項</a>において「旧共済法による年金である給付」という。）について準用する。</div>
                   </div>
                 </div>
                 <div id="Mp-At_2-Pr_2" class="Paragraph" Num="2">
@@ -130,7 +130,8 @@
                 <div id="Mp-At_3-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">共済法による年金である給付については、昭和六十一年の年平均の物価指数に対する昭和六十二年の年平均の物価指数の比率を基準として、昭和六十三年四月分以後の当該年金である給付の額を改定する。</div>
+                    <div class="Sentence">
+                      <a class="reference_link" href="L_337AC0000000152.html">共済法</a>による年金である給付については、昭和六十一年の年平均の物価指数に対する昭和六十二年の年平均の物価指数の比率を基準として、昭和六十三年四月分以後の当該年金である給付の額を改定する。</div>
                   </div>
                 </div>
                 <div id="Mp-At_3-Pr_2" class="Paragraph" Num="2">
@@ -145,7 +146,7 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence">
                       <a class="reference_link" href="#Mp-At_3-Pr_1">前二項</a>の規定により年金である給付の額の改定の措置が講じられたときは、<a class="reference_link" href="L_337AC0000000152.html">共済法</a>
-                      <a class="reference_link" href="L_337AC0000000152.html#Mp-At_74_2">第七十四条の二</a>の規定の適用については、<a class="reference_link" href="#Mp-At_74_2">同条</a>の規定による年金である給付の額の改定の措置が講じられたものとみなす。</div>
+                      <a class="reference_link" href="L_337AC0000000152.html#Mp-At_74_2">第七十四条の二</a>の規定の適用については、<a class="reference_link" href="L_337AC0000000152.html#Mp-At_74_2">同条</a>の規定による年金である給付の額の改定の措置が講じられたものとみなす。</div>
                   </div>
                 </div>
               </div>
@@ -155,14 +156,14 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_3-Pr_1">前条第一項</a>及び<a class="reference_link" href="#Mp-At_3-Pr_2">第二項</a>の規定は、旧共済法による年金である給付について準用する。</div>
+                      <a class="reference_link" href="#Mp-At_3-Pr_1">前条第一項</a>及び<a class="reference_link" href="#Mp-At_3-Pr_2">第二項</a>の規定は、旧<a class="reference_link" href="L_337AC0000000152.html">共済法</a>による年金である給付について準用する。</div>
                   </div>
                 </div>
                 <div id="Mp-At_4-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_4-Pr_1">前項</a>の規定により年金の額の改定の措置が講じられたときは、昭和六十年改正法附則第九十五条の規定の適用については、<a class="reference_link" href="#Mp-At_3">同条</a>の規定による年金の額の改定の措置が講じられたものとみなす。</div>
+                      <a class="reference_link" href="#Mp-At_4-Pr_1">前項</a>の規定により年金の額の改定の措置が講じられたときは、昭和六十年改正法附則第九十五条の規定の適用については、<a class="reference_link" href="#Mp-At_4">同条</a>の規定による年金の額の改定の措置が講じられたものとみなす。</div>
                   </div>
                 </div>
               </div>

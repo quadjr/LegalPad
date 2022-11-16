@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Es" onclick="visibilityClicked(this,'Es')"></div>
+                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（国共済法の死亡に係る給付の決定の請求の特例）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条（継続長期組合員に係る組合員期間の通算の特例）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -72,14 +72,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Sp_平成二七年九月三〇日財務省令第七三号" onclick="visibilityClicked(this,'Sp_平成二七年九月三〇日財務省令第七三号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_平成二七年九月三〇日財務省令第七三号" onclick="toggleClicked(this,'Sp_平成二七年九月三〇日財務省令第七三号')"></div>
                 <a class="title_text" href="#Sp_平成二七年九月三〇日財務省令第七三号">附　則（平成二七年九月三〇日財務省令第七三号）</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Sp_平成二七年九月三〇日財務省令第七三号-At_1" onclick="visibilityClicked(this,'Sp_平成二七年九月三〇日財務省令第七三号-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Sp_平成二七年九月三〇日財務省令第七三号-At_1" onclick="toggleClicked(this,'Sp_平成二七年九月三〇日財務省令第七三号-At_1')"></div>
                     <a class="title_text" href="#Sp_平成二七年九月三〇日財務省令第七三号-At_1">第一条（施行期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -87,7 +87,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Sp_平成二七年九月三〇日財務省令第七三号-At_4" onclick="visibilityClicked(this,'Sp_平成二七年九月三〇日財務省令第七三号-At_4')"></div>
+                    <div class="table_line_toggle" id="toggle-Sp_平成二七年九月三〇日財務省令第七三号-At_4" onclick="toggleClicked(this,'Sp_平成二七年九月三〇日財務省令第七三号-At_4')"></div>
                     <a class="title_text" href="#Sp_平成二七年九月三〇日財務省令第七三号-At_4">第四条（経過措置に関する委任）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -105,31 +105,48 @@
                 <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">被用者年金制度の一元化等を図るための厚生年金<a class="reference_link" href="L_420AC0000000056.html">保険法</a>等の一部を改正する法律（平成二十四年法律第六十三号。以下「平成二十四年一元化法」という。）附則第三十七条<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>の規定によりなおその効力を有するものとされた<a class="reference_link" href="L_333M50000040054.html">国家公務員共済組合法施行規則</a>等の一部を改正する省令（平成二十七年財務省令第七十三号）第一条の規定による改正前の<a class="reference_link" href="L_333M50000040054.html">国家公務員共済組合法施行規則</a>（<a class="reference_link" href="L_333M50000040054.html">昭和三十三年大蔵省令第五十四号</a>。以下「国共済規則」という。）<a class="reference_link" href="L_333M50000040054.html#Mp-At_97">第九十七条</a>の規定により行う支払未済の給付の請求は、平成二十四年一元化法第二条の規定による改正前の<a class="reference_link" href="L_333AC0000000128.html">国家公務員共済組合法</a>による給付の支払を受けるべきであった者でその支払を受けなかったものが<a class="reference_link" href="L_423AC0000000040.html">東日本大震災に対処するための特別の財政援助及び助成に関する法律</a>（以下「法」という。）<a class="reference_link" href="L_423AC0000000040.html#Mp-At_32">第三十二条</a>に規定する状態に該当するものであるときは、国共済規則第九十七条第二項第二号に掲げる書類に代えて、その者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
+                    <div class="Sentence">被用者年金制度の一元化等を図るための厚生年金保険法等の一部を改正する法律（平成二十四年法律第六十三号。以下「平成二十四年一元化法」という。）附則第三十七条<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>の規定によりなおその効力を有するものとされた国家公務員共済組合法施行規則等の一部を改正する省令（平成二十七年財務省令第七十三号）第一条の規定による改正前の<a class="reference_link" href="L_333M50000040054.html">国家公務員共済組合法施行規則</a>（<a class="reference_link" href="L_333M50000040054.html">昭和三十三年大蔵省令第五十四号</a>。以下「国共済規則」という。）<a class="reference_link" href="L_333M50000040054.html#Mp-At_97">第九十七条</a>の規定により行う支払未済の給付の請求は、平成二十四年一元化法<a class="reference_link" href="#Mp-At_2">第二条</a>の規定による改正前の<a class="reference_link" href="L_333AC0000000128.html">国家公務員共済組合法</a>による給付の支払を受けるべきであった者でその支払を受けなかったものが<a class="reference_link" href="L_423AC0000000040.html">東日本大震災に対処するための特別の財政援助及び助成に関する法律</a>（以下「法」という。）<a class="reference_link" href="L_423AC0000000040.html#Mp-At_32">第三十二条</a>に規定する状態に該当するものであるときは、<a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_97-Pr_2-It_2">第九十七条第二項第二号</a>に掲げる書類に代えて、その者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">国共済規則第百八条の規定により行う埋葬料及び家族埋葬料の請求は、組合員若しくは組合員であった者又は組合員の被扶養者が法第三十二条に規定する状態に該当するものであるときは、国共済規則第百八条ただし書に規定する死亡の事実を証明する書類に代えて、これらの者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
+                    <div class="Sentence">
+                      <a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_108">第百八条</a>の規定により行う埋葬料及び家族埋葬料の請求は、組合員若しくは組合員であった者又は組合員の被扶養者が<a class="reference_link" href="L_423AC0000000040.html">法</a>
+                      <a class="reference_link" href="L_423AC0000000040.html#Mp-At_32">第三十二条</a>に規定する状態に該当するものであるときは、<a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_108">第百八条</a>ただし書に規定する死亡の事実を証明する書類に代えて、これらの者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_3" class="Paragraph" Num="3">
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">国共済規則第百十二条の規定により行う弔慰金及び家族弔慰金の請求は、組合員又はその被扶養者が法第三十二条に規定する状態に該当するものであるときは、国共済規則第百十二条に規定する市町村長又は警察署長による当該死亡に関する事実を証明する証拠書類に代えて、これらの者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
+                    <div class="Sentence">
+                      <a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_112">第百十二条</a>の規定により行う弔慰金及び家族弔慰金の請求は、組合員又はその被扶養者が<a class="reference_link" href="L_423AC0000000040.html">法</a>
+                      <a class="reference_link" href="L_423AC0000000040.html#Mp-At_32">第三十二条</a>に規定する状態に該当するものであるときは、<a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_112">第百十二条</a>に規定する市町村長又は警察署長による当該死亡に関する事実を証明する証拠書類に代えて、これらの者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_4" class="Paragraph" Num="4">
                   <div class="ParagraphNum">４</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">国共済規則第百十四条の二十六の規定により行う遺族共済年金の決定の請求は、組合員又は組合員であった者が法第三十二条に規定する状態に該当するものであるときは、国共済規則第百十四条の二十六第二項第一号に掲げる書類に代えて、これらの者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
+                    <div class="Sentence">
+                      <a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_114_26">第百十四条の二十六</a>の規定により行う遺族共済年金の決定の請求は、組合員又は組合員であった者が<a class="reference_link" href="L_423AC0000000040.html">法</a>
+                      <a class="reference_link" href="L_423AC0000000040.html#Mp-At_32">第三十二条</a>に規定する状態に該当するものであるときは、<a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_114_26-Pr_2-It_1">第百十四条の二十六第二項第一号</a>に掲げる書類に代えて、これらの者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_5" class="Paragraph" Num="5">
                   <div class="ParagraphNum">５</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">国共済規則第百十四条の二十九第三項において読み替えて準用する<a class="reference_link" href="#Mp-At_114_29-Pr_1">同条第一項</a>の規定により行う遺族共済年金の転給の申請は、遺族共済年金の受給権者が法第三十二条に規定する状態に該当するものであるときは、国共済規則第百十四条の二十九第三項において読み替えて準用する<a class="reference_link" href="#Mp-At_114_29-Pr_2">同条第二項</a>に規定する事実を証する書類に代えて、その者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
+                    <div class="Sentence">
+                      <a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_114_29-Pr_3">第百十四条の二十九第三項</a>において読み替えて準用する<a class="reference_link" href="L_333M50000040054.html#Mp-At_114_29-Pr_1">同条第一項</a>の規定により行う遺族共済年金の転給の申請は、遺族共済年金の受給権者が<a class="reference_link" href="L_423AC0000000040.html">法</a>
+                      <a class="reference_link" href="L_423AC0000000040.html#Mp-At_32">第三十二条</a>に規定する状態に該当するものであるときは、<a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_114_29-Pr_3">第百十四条の二十九第三項</a>において読み替えて準用する<a class="reference_link" href="L_333M50000040054.html#Mp-At_114_29-Pr_2">同条第二項</a>に規定する事実を証する書類に代えて、その者が行方不明となった事実又は死亡した事実を明らかにすることができる書類を併せて提出しなければならない。</div>
                   </div>
                 </div>
               </div>
@@ -148,7 +165,11 @@
                 <div id="Mp-At_3-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">公庫等職員（国家公務員共済組合法第百二十四条の二第一項に規定する公庫等職員をいう。以下この条において同じ。）として在職していた継続長期組合員（<a class="reference_link" href="#Mp-At_124_2-Pr_2">同条第二項</a>に規定する継続長期組合員をいう。）が、東日本大震災（法第二条に規定する東日本大震災をいう。）に対処するため、引き続き再び組合員の資格を取得した後、その者が引き続き再び同一の公庫等（国家公務員共済組合法第百二十四条の二第一項に規定する公庫等をいう。）に公庫等職員として転出をしたときは、国共済規則第百二十八条の三の規定中「六月」とあるのは、「一月」とする。</div>
+                    <div class="Sentence">公庫等職員（<a class="reference_link" href="L_333AC0000000128.html">国家公務員共済組合法</a>
+                      <a class="reference_link" href="L_333AC0000000128.html#Mp-At_124_2-Pr_1">第百二十四条の二第一項</a>に規定する公庫等職員をいう。以下この条において同じ。）として在職していた継続長期組合員（<a class="reference_link" href="L_333AC0000000128.html#Mp-At_124_2-Pr_2">同条第二項</a>に規定する継続長期組合員をいう。）が、東日本大震災（<a class="reference_link" href="L_423AC0000000040.html">法</a>
+                      <a class="reference_link" href="L_423AC0000000040.html#Mp-At_2">第二条</a>に規定する東日本大震災をいう。）に対処するため、引き続き再び組合員の資格を取得した後、その者が引き続き再び同一の公庫等（<a class="reference_link" href="L_333AC0000000128.html">国家公務員共済組合法</a>
+                      <a class="reference_link" href="L_333AC0000000128.html#Mp-At_124_2-Pr_1">第百二十四条の二第一項</a>に規定する公庫等をいう。）に公庫等職員として転出をしたときは、<a class="reference_link" href="L_333M50000040054.html">国共済規則</a>
+                      <a class="reference_link" href="L_333M50000040054.html#Mp-At_128_3">第百二十八条の三</a>の規定中「六月」とあるのは、「一月」とする。</div>
                   </div>
                 </div>
               </div>

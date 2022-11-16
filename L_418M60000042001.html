@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Es" onclick="visibilityClicked(this,'Es')"></div>
+                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Mp" onclick="visibilityClicked(this,'Mp')"></div>
+                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_1" onclick="visibilityClicked(this,'Mp-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
                     <a class="title_text" href="#Mp-At_1">第一条（届出事項）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_2" onclick="visibilityClicked(this,'Mp-At_2')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
                     <a class="title_text" href="#Mp-At_2">第二条（少額短期保険業者の保険金等の支払能力の充実の状況に係る区分に応じた命令）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_3" onclick="visibilityClicked(this,'Mp-At_3')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
                     <a class="title_text" href="#Mp-At_3">第三条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Mp-At_4" onclick="visibilityClicked(this,'Mp-At_4')"></div>
+                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
                     <a class="title_text" href="#Mp-At_4">第四条（財務大臣への通知）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_visibility" id="visibility-Sp" onclick="visibilityClicked(this,'Sp')"></div>
+                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -80,14 +80,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_visibility" id="visibility-Sp_平成一八年四月二六日内閣府・財務省令第六号" onclick="visibilityClicked(this,'Sp_平成一八年四月二六日内閣府・財務省令第六号')"></div>
+                <div class="table_line_toggle" id="toggle-Sp_平成一八年四月二六日内閣府・財務省令第六号" onclick="toggleClicked(this,'Sp_平成一八年四月二六日内閣府・財務省令第六号')"></div>
                 <a class="title_text" href="#Sp_平成一八年四月二六日内閣府・財務省令第六号">附　則（平成一八年四月二六日内閣府・財務省令第六号）</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_visibility" id="visibility-Sp_平成一八年四月二六日内閣府・財務省令第六号-At_1" onclick="visibilityClicked(this,'Sp_平成一八年四月二六日内閣府・財務省令第六号-At_1')"></div>
+                    <div class="table_line_toggle" id="toggle-Sp_平成一八年四月二六日内閣府・財務省令第六号-At_1" onclick="toggleClicked(this,'Sp_平成一八年四月二六日内閣府・財務省令第六号-At_1')"></div>
                     <a class="title_text" href="#Sp_平成一八年四月二六日内閣府・財務省令第六号-At_1">第一条（施行期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -185,15 +185,15 @@
                           <div class="Sentence">一　保険金等の支払能力の充実に係る合理的と認められる計画の提出及びその実行</div>
                           <div class="Sentence">二　配当の禁止又はその額の抑制</div>
                           <div class="Sentence">三　契約者配当又は社員に対する剰余金の分配の禁止又はその額の抑制</div>
-                          <div class="Sentence">四　新規に締結しようとする保険契約に係る保険料の計算の方法（その計算の基礎となる係数を要する場合においては、その係数を含む。）の変更</div>
+                          <div class="Sentence">四　新規に締結しようとする保険契約に係る保険料の計算の方<a class="reference_link" href="L_407AC0000000105.html">法</a>（その計算の基礎となる係数を要する場合においては、その係数を含む。）の変更</div>
                           <div class="Sentence">五　役員賞与の禁止又はその額の抑制その他の事業費の抑制</div>
-                          <div class="Sentence">六　一部の方法による資産の運用の禁止又はその額の抑制</div>
+                          <div class="Sentence">六　一部の方<a class="reference_link" href="L_407AC0000000105.html">法</a>による資産の運用の禁止又はその額の抑制</div>
                           <div class="Sentence">七　一部の営業所又は事務所における業務の縮小</div>
                           <div class="Sentence">八　本店又は主たる事務所を除く一部の営業所又は事務所の廃止</div>
                           <div class="Sentence">九　子会社等の業務の縮小</div>
                           <div class="Sentence">十　子会社等の株式又は持分の処分</div>
                           <div class="Sentence">十一　<a class="reference_link" href="L_407AC0000000105.html">法</a>
-                            <a class="reference_link" href="L_407AC0000000105.html#Mp-At_272_11-Pr_1">第二百七十二条の十一第一項</a>の規定により行う少額短期保険業に付随する業務、<a class="reference_link" href="#Mp-At_272_11-Pr_2">同条第二項</a>ただし書の規定により行う金融庁長官、財務局長又は福岡財務支局長（以下「金融庁長官等」という。）の承認を受けた業務の縮小又は新規の取扱いの禁止</div>
+                            <a class="reference_link" href="L_407AC0000000105.html#Mp-At_272_11-Pr_1">第二百七十二条の十一第一項</a>の規定により行う少額短期保険業に付随する業務、<a class="reference_link" href="L_407AC0000000105.html#Mp-At_272_11-Pr_2">同条第二項</a>ただし書の規定により行う金融庁長官、財務局長又は福岡財務支局長（以下「金融庁長官等」という。）の承認を受けた業務の縮小又は新規の取扱いの禁止</div>
                           <div class="Sentence">十二　その他金融庁長官等が必要と認める措置</div>
                         </td>
                       </tr>
@@ -233,7 +233,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">少額短期保険業者が、その保険金等の支払能力の充実の状況を示す比率（<a class="reference_link" href="#Mp-At_2-Pr_2">前条第二項</a>に規定する保険金等の支払能力の充実の状況を示す比率をいう。以下この条において同じ。）が当該少額短期保険業者が従前に該当していた<a class="reference_link" href="#Mp-At_2-Pr_1">前条第一項</a>の表の区分に係る保険金等の支払能力の充実の状況を示す比率の範囲を超えて低下したことを知った後、速やかに、その保険金等の支払能力の充実の状況を示す比率を当該少額短期保険業者が該当する同表の区分に係る保険金等の支払能力の充実の状況を示す比率の範囲を超えて確実に改善するための合理的と認められる計画を金融庁長官等に提出した場合には、当該少額短期保険業者について、当該区分に応じた命令は、当該少額短期保険業者の保険金等の支払能力の充実の状況を示す比率以上で当該計画の実施後に見込まれる当該少額短期保険業者の保険金等の支払能力の充実の状況を示す比率以下の保険金等の支払能力の充実の状況を示す比率に係る同表の区分（非対象区分を除く。）に掲げる命令とする。</div>
-                    <div class="Sentence" Num="2">ただし、当該計画が合理的でないことが明らかになった場合には、当該少額短期保険業者について、当該少額短期保険業者が該当する同表の区分に係る命令は、<a class="reference_link" href="#Mp-At_3-Pr_1">同項</a>のとおりとする。</div>
+                    <div class="Sentence" Num="2">ただし、当該計画が合理的でないことが明らかになった場合には、当該少額短期保険業者について、当該少額短期保険業者が該当する同表の区分に係る命令は、<a class="reference_link" href="#Mp-At_2-Pr_1">同項</a>のとおりとする。</div>
                   </div>
                 </div>
               </div>
@@ -245,7 +245,7 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence">
                       <a class="reference_link" href="L_407AC0000000105.html">法</a>
-                      <a class="reference_link" href="L_407AC0000000105.html#Mp-At_311_3-Pr_2">第三百十一条の三第二項</a>に規定する内閣府令・財務省令で定めるもの（<a class="reference_link" href="#Mp-At_4-Pr_2-It_4">同項第四号</a>に掲げる規定による届出に限る。）は、<a class="reference_link" href="#Mp-At_1-Pr_1-It_1">第一条各号</a>に掲げる場合に該当するときにする届出とする。</div>
+                      <a class="reference_link" href="L_407AC0000000105.html#Mp-At_311_3-Pr_2">第三百十一条の三第二項</a>に規定する内閣府令・財務省令で定めるもの（<a class="reference_link" href="L_407AC0000000105.html#Mp-At_311_3-Pr_2-It_4">同項第四号</a>に掲げる規定による届出に限る。）は、<a class="reference_link" href="#Mp-At_1-Pr_1-It_1">第一条各号</a>に掲げる場合に該当するときにする届出とする。</div>
                   </div>
                 </div>
               </div>
@@ -267,7 +267,7 @@
                 <div id="Sp_平成一八年四月二六日内閣府・財務省令第六号-At_1-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">この命令は、会社法の施行の日から施行する。</div>
+                    <div class="Sentence">この命令は、<a class="reference_link" href="L_417AC0000000086.html">会社法</a>の施行の日から施行する。</div>
                   </div>
                 </div>
               </div>
