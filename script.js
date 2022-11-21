@@ -94,6 +94,79 @@ function loadFinished(){
             break;
         }
     }
+
+    var ref_file = window.location.href.split('/').pop();
+    ref_file = "./" + ref_file.split('.')[0] + '.ref';
+    console.log(ref_file)
+
+    // Fetch APIの実行
+    fetch(ref_file)
+    // 通信が成功したとき
+    .then(function(response) {
+        return response.text();
+    })
+    .then(function(data) {
+        let refs = {};
+        let rows = data.split("\n");
+        let linked_label = {};
+        for(var i=0;i<rows.length;++i){
+            let values = rows[i].split(',');
+            if(values[0] != ""){
+                var sp = values[3].match(/Sp/);
+                if(sp)continue;
+
+                let key = values[2] + values[3];
+                if(!(key in linked_label)){
+                    var article = values[0].match(/Mp-At[_\d]+/);
+                    if(!(article in refs)){
+                        refs[article] = [];
+                    }
+                    refs[article].push(values);
+                    linked_label[key] = true;
+                }
+            }
+        }
+        for (let key in refs) {
+            el = document.getElementById(key);
+            if(el){
+                title = el.getElementsByClassName("ArticleTitle");
+                if(title.length > 0){
+                    const div = document.createElement("div");
+                    div.className = "ref_box";
+                    div.innerHTML = "委任/被引用 " + refs[key].length + " 件";
+                    div.onclick = function () {
+                        console.log(div.children);
+                        if(div.children.length > 0){
+                            while (div.lastElementChild) {
+                                div.removeChild(div.lastElementChild);
+                            }
+                        }else{
+                            const ref_div = document.createElement("div");
+                            let str = "";
+                            refs[key].forEach(ref => {
+                                let label = ref[3];
+                                label = label.replace('Mp', "");
+                                label = label.replace('Sp', "");
+                                label = label.replace(/-At_([_\d]+)/, '第$1条');
+                                label = label.replace(/-Pr_([_\d]+)/, '第$1項');
+                                label = label.replace(/-It_([_\d]+)/, '第$1号');
+                                label = label.replace(/_/g, 'の');
+                                str += "<a class='ref_links' href='L_" + ref[2] + ".html#" + ref[3] + "'>" + ref[1] + " " + label + "</a><br/>";
+                            });
+                            ref_div.innerHTML = str;
+                            div.appendChild(ref_div);
+                        }
+                    };
+                    title[0].before(div);
+                }
+            }
+        }
+        console.log(refs);
+    })
+    // 通信が失敗したとき
+    .catch(function(error) {
+        console.error('Error:', error);
+    });
 }
 
 window.addEventListener('load', loadFinished);
