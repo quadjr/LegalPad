@@ -97,7 +97,6 @@ function loadFinished(){
 
     var ref_file = window.location.href.split('/').pop();
     ref_file = "./" + ref_file.split('.')[0] + '.ref';
-    console.log(ref_file)
 
     // Fetch APIの実行
     fetch(ref_file)
@@ -115,9 +114,9 @@ function loadFinished(){
                 var sp = values[3].match(/Sp/);
                 if(sp)continue;
 
-                let key = values[2] + values[3];
+                var article = values[0].match(/Mp-At[_\d]+/);
+                let key = article + values[2] + values[3];
                 if(!(key in linked_label)){
-                    var article = values[0].match(/Mp-At[_\d]+/);
                     if(!(article in refs)){
                         refs[article] = [];
                     }
@@ -134,11 +133,14 @@ function loadFinished(){
                     const div = document.createElement("div");
                     div.className = "ref_box";
                     div.innerHTML = "委任/被引用 " + refs[key].length + " 件";
+                    const refs_div = document.createElement("div");
+                    refs_div.className = "refs_box";
+                    div.appendChild(refs_div);
+
                     div.onclick = function () {
-                        console.log(div.children);
-                        if(div.children.length > 0){
-                            while (div.lastElementChild) {
-                                div.removeChild(div.lastElementChild);
+                        if(refs_div.children.length > 0){
+                            while (refs_div.lastElementChild) {
+                                refs_div.removeChild(refs_div.lastElementChild);
                             }
                         }else{
                             const ref_div = document.createElement("div");
@@ -146,7 +148,18 @@ function loadFinished(){
                             refs[key].forEach(ref => {
                                 let label = ref[3];
                                 label = label.replace('Mp', "");
-                                label = label.replace('Sp', "");
+                                label = label.replace('Apn', "別記");
+                                label = label.replace('Apt', "別表");
+                                label = label.replace('Apg', "別図");
+                                label = label.replace('Apf', "別記書式");
+                                label = label.replace('Aps', "別記様式");
+                                label = label.replace('Ap', "付録");
+                                label = label.replace('Spa', "附則付録");
+                                label = label.replace('Spt', "附則別表");
+                                label = label.replace('Sps', "附則様式");
+                                label = label.replace('Sp', "附則");
+                                label = label.replace('Es', "制定文");
+                                label = label.replace('Pm', "前文");
                                 label = label.replace(/-At_([_\d]+)/, '第$1条');
                                 label = label.replace(/-Pr_([_\d]+)/, '第$1項');
                                 label = label.replace(/-It_([_\d]+)/, '第$1号');
@@ -154,7 +167,7 @@ function loadFinished(){
                                 str += "<a class='ref_links' href='L_" + ref[2] + ".html#" + ref[3] + "'>" + ref[1] + " " + label + "</a><br/>";
                             });
                             ref_div.innerHTML = str;
-                            div.appendChild(ref_div);
+                            refs_div.appendChild(ref_div);
                         }
                     };
                     title[0].before(div);
