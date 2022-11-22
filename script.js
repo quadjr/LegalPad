@@ -217,7 +217,7 @@ function linkMouseOver(el){
     const preview_el = document.createElement("iframe");
     preview_el.id = "preview_el";
     preview_el.className = "preview_el";
-    preview_el.style.setProperty("top", (el.getBoundingClientRect().top - el_body.getBoundingClientRect().top) + el_body.scrollTop + 20);
+    preview_el.style.setProperty("top", (el.getBoundingClientRect().bottom - el_body.getBoundingClientRect().top) + el_body.scrollTop);
     preview_el.setAttribute('sandbox', "allow-scripts");
     preview_el.src = el.href;
 
