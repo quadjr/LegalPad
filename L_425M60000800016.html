@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（趣旨）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（定義）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（耐震補強の実施）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -72,7 +72,7 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_133AC0000000065.html">鉄道営業法</a>（<a class="reference_link" href="L_133AC0000000065.html">明治三十三年法律第六十五号</a>）<a class="reference_link" href="L_133AC0000000065.html#Mp-At_1">第一条</a>及び<a class="reference_link" href="L_210AC0000000076.html">軌道法</a>（<a class="reference_link" href="L_210AC0000000076.html">大正十年法律第七十六号</a>）<a class="reference_link" href="L_210AC0000000076.html#Mp-At_14">第十四条</a>の規定を実施するため、<a class="reference_link" href="L_425M60000800016.html">特定鉄道等施設に係る耐震補強に関する省令</a>を次のように定める。</div>
+              <a class="reference_link" href="L_133AC0000000065.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">鉄道営業法</a>（<a class="reference_link" href="L_133AC0000000065.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">明治三十三年法律第六十五号</a>）<a class="reference_link" href="L_133AC0000000065.html#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>及び<a class="reference_link" href="L_210AC0000000076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">軌道法</a>（<a class="reference_link" href="L_210AC0000000076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">大正十年法律第七十六号</a>）<a class="reference_link" href="L_210AC0000000076.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定を実施するため、<a class="reference_link" href="L_425M60000800016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定鉄道等施設に係る耐震補強に関する省令</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleCaption">（趣旨）</div>
@@ -90,19 +90,19 @@
                 <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">この省令において「特定鉄道等施設」とは、<a class="reference_link" href="L_361AC0000000092.html">鉄道事業法</a>（<a class="reference_link" href="L_361AC0000000092.html">昭和六十一年法律第九十二号</a>）<a class="reference_link" href="L_361AC0000000092.html#Mp-At_8-Pr_1">第八条第一項</a>に規定する鉄道施設又は<a class="reference_link" href="L_210AC0000000076.html">軌道法</a>による軌道施設であって、次に掲げるものをいう。</div>
+                    <div class="Sentence">この省令において「特定鉄道等施設」とは、<a class="reference_link" href="L_361AC0000000092.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">鉄道事業法</a>（<a class="reference_link" href="L_361AC0000000092.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和六十一年法律第九十二号</a>）<a class="reference_link" href="L_361AC0000000092.html#Mp-At_8-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第一項</a>に規定する鉄道施設又は<a class="reference_link" href="L_210AC0000000076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">軌道法</a>による軌道施設であって、次に掲げるものをいう。</div>
                   </div>
                   <div id="Mp-At_2-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">大規模な地震が発生するおそれ、旅客輸送量その他の事情を勘案して国土交通大臣が告示で定める要件に該当する線区における<a class="reference_link" href="L_362M50000800006.html">鉄道事業法施行規則</a>（<a class="reference_link" href="L_362M50000800006.html">昭和六十二年運輸省令第六号</a>）<a class="reference_link" href="L_362M50000800006.html#Mp-At_4">第四条</a>に規定する普通鉄道（<a class="reference_link" href="L_345AC1000000071.html">全国新幹線鉄道整備法</a>（<a class="reference_link" href="L_345AC1000000071.html">昭和四十五年法律第七十一号</a>）<a class="reference_link" href="L_345AC1000000071.html#Mp-At_2">第二条</a>に規定する新幹線鉄道を除く。）、懸垂式鉄道、<ruby>跨<rt>こ</rt>
+                      <div class="Sentence">大規模な地震が発生するおそれ、旅客輸送量その他の事情を勘案して国土交通大臣が告示で定める要件に該当する線区における<a class="reference_link" href="L_362M50000800006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">鉄道事業法施行規則</a>（<a class="reference_link" href="L_362M50000800006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和六十二年運輸省令第六号</a>）<a class="reference_link" href="L_362M50000800006.html#Mp-At_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条</a>に規定する普通鉄道（<a class="reference_link" href="L_345AC1000000071.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">全国新幹線鉄道整備法</a>（<a class="reference_link" href="L_345AC1000000071.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十五年法律第七十一号</a>）<a class="reference_link" href="L_345AC1000000071.html#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>に規定する新幹線鉄道を除く。）、懸垂式鉄道、<ruby>跨<rt>こ</rt>
                         </ruby>座式鉄道又は案内軌条式鉄道（第三号において「普通鉄道等」という。）の輸送の用に供する橋りょう及びトンネルであって、国土交通大臣が告示で定めるもの（鉄道に関する技術上の基準を定める省令の施行及びこれに伴う国土交通省関係省令の整備等に関する省令（平成十四年国土交通省令第十九号。）第一条の規定による廃止前の普通鉄道構造規則（昭和六十二年運輸省令第十四号）及び特殊鉄道構造規則（昭和六十二年運輸省令第十九号）（第三号において「旧普通鉄道構造規則等」という。）の施行の前に工事に着手し、又は完成したものに限り、同条の規定による廃止前の特定鉄道施設に係る耐震補強に関する省令（平成八年運輸省令第十六号）第三条に基づき耐震性の向上を図るための補強工事を実施したものを除く。）</div>
                     </div>
                   </div>
                   <div id="Mp-At_2-Pr_1-It_2" class="Item" Num="2">
                     <div class="ItemTitle">二</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">大規模な地震が発生するおそれ、旅客輸送量その他の事情を勘案して国土交通大臣が告示で定める要件に該当する線区における軌道の輸送の用に供する橋りょう及びトンネルであって、国土交通大臣が告示で定めるもの（<a class="reference_link" href="L_212M10000808001.html">軌道建設規程</a>（大正十二年内務・鉄道省令<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">第一号</a>）<a class="reference_link" href="L_212M10000808001.html#Mp-At_3">第三条</a>に規定する新設軌道におけるものに限る。）</div>
+                      <div class="Sentence">大規模な地震が発生するおそれ、旅客輸送量その他の事情を勘案して国土交通大臣が告示で定める要件に該当する線区における軌道の輸送の用に供する橋りょう及びトンネルであって、国土交通大臣が告示で定めるもの（<a class="reference_link" href="L_212M10000808001.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">軌道建設規程</a>（大正十二年内務・鉄道省令<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>）<a class="reference_link" href="L_212M10000808001.html#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>に規定する新設軌道におけるものに限る。）</div>
                     </div>
                   </div>
                   <div id="Mp-At_2-Pr_1-It_3" class="Item" Num="3">
@@ -120,8 +120,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_361AC0000000092.html">鉄道事業法</a>
-                      <a class="reference_link" href="L_361AC0000000092.html#Mp-At_7-Pr_1">第七条第一項</a>に規定する鉄道事業者及び<a class="reference_link" href="L_210AC0000000076.html">軌道法</a>による軌道経営者は、特定鉄道等施設の地震に対する安全性の向上を図るため、国土交通大臣が告示で定める指針に従って耐震性の向上を図るための補強工事を実施するよう努めなければならない。</div>
+                      <a class="reference_link" href="L_361AC0000000092.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">鉄道事業法</a>
+                      <a class="reference_link" href="L_361AC0000000092.html#Mp-At_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第一項</a>に規定する鉄道事業者及び<a class="reference_link" href="L_210AC0000000076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">軌道法</a>による軌道経営者は、特定鉄道等施設の地震に対する安全性の向上を図るため、国土交通大臣が告示で定める指針に従って耐震性の向上を図るための補強工事を実施するよう努めなければならない。</div>
                   </div>
                 </div>
               </div>

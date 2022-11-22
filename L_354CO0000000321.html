@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（申出をすることができる者の範囲）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（申出の期限等）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（申出をした場合における長期給付に関する措置等）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
                     <a class="title_text" href="#Mp-At_4">第四条（申出をしなかつた場合における普通恩給等に関する措置）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -80,14 +80,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_昭和五七年九月二五日政令第二六六号" onclick="toggleClicked(this,'Sp_昭和五七年九月二五日政令第二六六号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五七年九月二五日政令第二六六号" data-id="toggle-Sp_昭和五七年九月二五日政令第二六六号" onclick="toggleClicked(this,'Sp_昭和五七年九月二五日政令第二六六号', 'Sp_昭和五七年九月二五日政令第二六六号')">
                 <a class="title_text" href="#Sp_昭和五七年九月二五日政令第二六六号">附　則（昭和五七年九月二五日政令第二六六号）</a>
               </div>
               <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
-            <div id="Es" class="EnactStatement">内閣は、昭和四十二年度以後における地方公務員等共済組合法の年金の額の改定等に関する法律等の一部を改正する法律（昭和五十四年法律第七十三号）附則第二十条及び<a class="reference_link" href="#Mp-At_21">第二十一条</a>の規定に基づき、この政令を制定する。</div>
+            <div id="Es" class="EnactStatement">内閣は、昭和四十二年度以後における地方公務員等共済組合法の年金の額の改定等に関する法律等の一部を改正する法律（昭和五十四年法律第七十三号）附則第二十条及び<a class="reference_link" href="#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の規定に基づき、この政令を制定する。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleCaption">（申出をすることができる者の範囲）</div>
@@ -95,26 +95,26 @@
                 <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">昭和四十二年度以後における地方公務員等共済組合法の年金の額の改定等に関する法律等の一部を改正する法律（昭和五十四年法律第七十三号。以下「昭和五十四年改正法」という。）附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>に規定する政令で定めるものは、更新組合員等（<a class="reference_link" href="#Mp-At_1-Pr_1">同項</a>に規定する更新組合員等をいう。以下同じ。）若しくは更新組合員等であつた者又はこれらの者の遺族（<a class="reference_link" href="L_337AC0000000152.html">地方公務員等共済組合法</a>（<a class="reference_link" href="L_337AC0000000152.html">昭和三十七年法律第百五十二号</a>。以下「法」という。）<a class="reference_link" href="L_337AC0000000152.html#Mp-At_2-Pr_1-It_3">第二条第一項第三号</a>に規定する遺族をいう。以下同じ。）のうち、昭和五十四年九月三十日において昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>に規定する退職年金、減額退職年金又は遺族年金（以下「退職年金等」という。）を受ける権利を有する者で、これらの者に係る退職年金等の給付事由が生じた日において恩給法等の一部を改正する法律（昭和五十四年法律第五十四号）による改正後の恩給法の一部を改正する法律（昭和二十八年法律第百五十五号。<a class="reference_link" href="#Mp-At_1-Pr_2">次項</a>及び<a class="reference_link" href="#Mp-At_4">第四条</a>において「改正後の法律第百五十五号」という。）附則第四十四条の三の規定又はこれに相当する退職年金条例の規定及び昭和五十四年改正法による改正後の<a class="reference_link" href="L_337AC0000000153.html">地方公務員等共済組合法の長期給付等に関する施行法</a>（<a class="reference_link" href="L_337AC0000000153.html">昭和三十七年法律第百五十三号</a>。以下「施行法」という。）の規定を適用するとしたならば退職年金等を受ける権利を有しないこととなるものとする。</div>
+                    <div class="Sentence">昭和四十二年度以後における地方公務員等共済組合法の年金の額の改定等に関する法律等の一部を改正する法律（昭和五十四年法律第七十三号。以下「昭和五十四年改正法」という。）附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する政令で定めるものは、更新組合員等（<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する更新組合員等をいう。以下同じ。）若しくは更新組合員等であつた者又はこれらの者の遺族（<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方公務員等共済組合法</a>（<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十七年法律第百五十二号</a>。以下「法」という。）<a class="reference_link" href="L_337AC0000000152.html#Mp-At_2-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項第三号</a>に規定する遺族をいう。以下同じ。）のうち、昭和五十四年九月三十日において昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する退職年金、減額退職年金又は遺族年金（以下「退職年金等」という。）を受ける権利を有する者で、これらの者に係る退職年金等の給付事由が生じた日において恩給法等の一部を改正する法律（昭和五十四年法律第五十四号）による改正後の恩給法の一部を改正する法律（昭和二十八年法律第百五十五号。<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>及び<a class="reference_link" href="#Mp-At_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条</a>において「改正後の法律第百五十五号」という。）附則第四十四条の三の規定又はこれに相当する退職年金条例の規定及び昭和五十四年改正法による改正後の<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方公務員等共済組合法の長期給付等に関する施行法</a>（<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十七年法律第百五十三号</a>。以下「施行法」という。）の規定を適用するとしたならば退職年金等を受ける権利を有しないこととなるものとする。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>に規定する政令で定める者は、更新組合員等のうち、昭和五十四年九月三十日において<a class="reference_link" href="L_337AC0000000152.html">法</a>又は<a class="reference_link" href="L_337AC0000000153.html">施行法</a>の規定による退職年金、減額退職年金又は障害年金を受ける権利を有しない者で次に掲げるものとする。</div>
+                    <div class="Sentence">昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する政令で定める者は、更新組合員等のうち、昭和五十四年九月三十日において<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>又は<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>の規定による退職年金、減額退職年金又は障害年金を受ける権利を有しない者で次に掲げるものとする。</div>
                   </div>
                   <div id="Mp-At_1-Pr_2-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">昭和五十四年九月三十日において退職したものとする場合においても<a class="reference_link" href="L_337AC0000000152.html">法</a>又は<a class="reference_link" href="L_337AC0000000153.html">施行法</a>の規定による退職年金又は障害年金を受ける権利を有しない者</div>
+                      <div class="Sentence">昭和五十四年九月三十日において退職したものとする場合においても<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>又は<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>の規定による退職年金又は障害年金を受ける権利を有しない者</div>
                     </div>
                   </div>
                   <div id="Mp-At_1-Pr_2-It_2" class="Item" Num="2">
                     <div class="ItemTitle">二</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">昭和五十四年九月三十日において退職したものとするならば昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>に規定する退職年金を受ける権利を有することとなる者のうち、<a class="reference_link" href="L_337AC0000000153.html">施行法</a>
-                        <a class="reference_link" href="L_337AC0000000153.html#Mp-At_7-Pr_3">第七条第三項</a>又は<a class="reference_link" href="L_337AC0000000153.html#Mp-At_10-Pr_1-It_1">第十条第一項第一号</a>の期間（<a class="reference_link" href="L_337AC0000000153.html">施行法</a>
-                        <a class="reference_link" href="L_337AC0000000153.html#Mp-At_131-Pr_1">第百三十一条第一項</a>の規定により職員であつたものとみなされる期間のうちこれらの期間に該当するものとされる期間を含む。以下この号において「施行法による算入期間」という。）で改正後の<a class="reference_link" href="L_337AC0000000152.html">法</a>律<a class="reference_link" href="#Mp-At_1-Pr_2-It_155">第百五十五号</a>附則第四十四条の三の規定又はこれに相当する退職年金条例の規定の適用によりその全部又は一部が<a class="reference_link" href="L_337AC0000000153.html">施行法</a>による算入期間に該当しないこととなる期間（<a class="reference_link" href="#Mp-At_3">第三条</a>において「代用教員等の期間」という。）をその者に係る<a class="reference_link" href="L_337AC0000000153.html">施行法</a>による算入期間に算入しないとしたならば当該退職年金を受ける権利を有しないこととなる者</div>
+                      <div class="Sentence">昭和五十四年九月三十日において退職したものとするならば昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する退職年金を受ける権利を有することとなる者のうち、<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>
+                        <a class="reference_link" href="L_337AC0000000153.html#Mp-At_7-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第三項</a>又は<a class="reference_link" href="L_337AC0000000153.html#Mp-At_10-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第一項第一号</a>の期間（<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>
+                        <a class="reference_link" href="L_337AC0000000153.html#Mp-At_131-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十一条第一項</a>の規定により職員であつたものとみなされる期間のうちこれらの期間に該当するものとされる期間を含む。以下この号において「施行法による算入期間」という。）で改正後の<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律<a class="reference_link" href="#Mp-At_1-Pr_2-It_155" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百五十五号</a>附則第四十四条の三の規定又はこれに相当する退職年金条例の規定の適用によりその全部又は一部が<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>による算入期間に該当しないこととなる期間（<a class="reference_link" href="#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>において「代用教員等の期間」という。）をその者に係る<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>による算入期間に算入しないとしたならば当該退職年金を受ける権利を有しないこととなる者</div>
                     </div>
                   </div>
                 </div>
@@ -125,20 +125,20 @@
                 <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_2-Pr_1">第一項</a>に規定する申出（以下「申出」という。）は、<a class="reference_link" href="#Mp-At_2">同条</a>の施行の日から六十日以内に、自治省令で定めるところにより、地方公務員共済組合（以下「組合」という。）にしなければならない。</div>
+                    <div class="Sentence">昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する申出（以下「申出」という。）は、<a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>の施行の日から六十日以内に、自治省令で定めるところにより、地方公務員共済組合（以下「組合」という。）にしなければならない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_2-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">前条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2">第二項</a>に規定する者が<a class="reference_link" href="#Mp-At_2-Pr_1">前項</a>の申出の期限前に死亡した場合には、その申出は、これらの者（遺族にあつては、その者に係る更新組合員等であつた者）の遺族がすることができる。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>に規定する者が<a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の申出の期限前に死亡した場合には、その申出は、これらの者（遺族にあつては、その者に係る更新組合員等であつた者）の遺族がすることができる。</div>
                   </div>
                 </div>
                 <div id="Mp-At_2-Pr_3" class="Paragraph" Num="3">
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">組合は、<a class="reference_link" href="#Mp-At_1-Pr_1">前条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2">第二項</a>に規定する者（<a class="reference_link" href="#Mp-At_2-Pr_2">前項</a>に規定する遺族を含む。）が申出をしたときは、その旨をその者の普通恩給等（昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_2-Pr_1">第一項</a>に規定する普通恩給等をいう。以下同じ。）を受ける権利の裁定を行つた者に通知しなければならない。</div>
+                    <div class="Sentence">組合は、<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>に規定する者（<a class="reference_link" href="#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>に規定する遺族を含む。）が申出をしたときは、その旨をその者の普通恩給等（昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する普通恩給等をいう。以下同じ。）を受ける権利の裁定を行つた者に通知しなければならない。</div>
                   </div>
                 </div>
               </div>
@@ -149,15 +149,15 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">第一条第一項</a>に規定する者（その者に係る<a class="reference_link" href="#Mp-At_2-Pr_2">前条第二項</a>に規定する遺族を含む。）が申出をしたときは、その者に係る退職年金等を受ける権利は、昭和五十四年九月三十日において消滅する。</div>
-                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_3-Pr_1-It_1">第一号</a>に掲げる金額が<a class="reference_link" href="#Mp-At_3-Pr_1-It_2">第二号</a>に掲げる金額より多いときは、その差額に相当する金額を一時金としてその者に支給し、<a class="reference_link" href="#Mp-At_3-Pr_1-It_1">第一号</a>に掲げる金額が<a class="reference_link" href="#Mp-At_3-Pr_1-It_2">第二号</a>に掲げる金額より少ないときは、その者は、その差額に相当する金額を申出をした日の属する月の翌月から一年以内に、一時に又は分割して、組合に返還しなければならない。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項</a>に規定する者（その者に係る<a class="reference_link" href="#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第二項</a>に規定する遺族を含む。）が申出をしたときは、その者に係る退職年金等を受ける権利は、昭和五十四年九月三十日において消滅する。</div>
+                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>に掲げる金額が<a class="reference_link" href="#Mp-At_3-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に掲げる金額より多いときは、その差額に相当する金額を一時金としてその者に支給し、<a class="reference_link" href="#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>に掲げる金額が<a class="reference_link" href="#Mp-At_3-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に掲げる金額より少ないときは、その者は、その差額に相当する金額を申出をした日の属する月の翌月から一年以内に、一時に又は分割して、組合に返還しなければならない。</div>
                   </div>
                   <div id="Mp-At_3-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">申出をした者（遺族にあつては、その者に係る更新組合員等であつた者）がその者に係る退職年金等の給付事由が生じた日において代用教員等の期間を有していなかつたものとみなした場合に受けるべきこととなる昭和五十四年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html">法</a>若しくは<a class="reference_link" href="L_337AC0000000153.html">施行法</a>の退職一時金又は昭和四十二年度以後における地方公務員等共済組合法の年金の額の改定等に関する法律等の一部を改正する法律（昭和四十八年法律第八十七号。以下この号において「昭和四十八年改正法」という。）による改正前の<a class="reference_link" href="L_337AC0000000152.html">法</a>若しくは<a class="reference_link" href="L_337AC0000000153.html">施行法</a>の遺族一時金に係る昭和五十四年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html">法</a>
-                        <a class="reference_link" href="L_337AC0000000152.html#Mp-At_83-Pr_2-It_1">第八十三条第二項第一号</a>又は昭和四十八年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html">法</a>
-                        <a class="reference_link" href="L_337AC0000000152.html#Mp-At_98-Pr_2">第九十八条第二項</a>に規定する金額</div>
+                      <div class="Sentence">申出をした者（遺族にあつては、その者に係る更新組合員等であつた者）がその者に係る退職年金等の給付事由が生じた日において代用教員等の期間を有していなかつたものとみなした場合に受けるべきこととなる昭和五十四年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>若しくは<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>の退職一時金又は昭和四十二年度以後における地方公務員等共済組合法の年金の額の改定等に関する法律等の一部を改正する法律（昭和四十八年法律第八十七号。以下この号において「昭和四十八年改正法」という。）による改正前の<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>若しくは<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>の遺族一時金に係る昭和五十四年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_337AC0000000152.html#Mp-At_83-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八十三条第二項第一号</a>又は昭和四十八年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_337AC0000000152.html#Mp-At_98-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九十八条第二項</a>に規定する金額</div>
                     </div>
                   </div>
                   <div id="Mp-At_3-Pr_1-It_2" class="Item" Num="2">
@@ -171,7 +171,7 @@
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">第一条第一項</a>に規定する更新組合員等で申出をしたもの又は<a class="reference_link" href="#Mp-At_1-Pr_1">同項</a>に規定する更新組合員等であつた者のうち申出をした者で再び組合員となつたものが退職し、又は死亡した場合において、<a class="reference_link" href="L_337AC0000000152.html">法</a>又は<a class="reference_link" href="L_337AC0000000153.html">施行法</a>の規定による退職年金、減額退職年金、障害年金又は遺族年金を支給するときは、これらの者は、<a class="reference_link" href="L_337AC0000000152.html">法</a>及び<a class="reference_link" href="L_337AC0000000153.html">施行法</a>の規定の適用については、これらの者に係る退職年金等の給付事由が生じた日において代用教員等の期間を有していなかつたものとみなした場合に受けるべきこととなる昭和五十四年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html">法</a>又は<a class="reference_link" href="L_337AC0000000153.html">施行法</a>の退職一時金の支給を受けた者であつたものとみなす。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項</a>に規定する更新組合員等で申出をしたもの又は<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する更新組合員等であつた者のうち申出をした者で再び組合員となつたものが退職し、又は死亡した場合において、<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>又は<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>の規定による退職年金、減額退職年金、障害年金又は遺族年金を支給するときは、これらの者は、<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>の規定の適用については、これらの者に係る退職年金等の給付事由が生じた日において代用教員等の期間を有していなかつたものとみなした場合に受けるべきこととなる昭和五十四年改正法による改正前の<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>又は<a class="reference_link" href="L_337AC0000000153.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施行法</a>の退職一時金の支給を受けた者であつたものとみなす。</div>
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@
                 <div id="Mp-At_4-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_4-Pr_1">第一項</a>に規定する代用教員期間等を有する者（その者に係る<a class="reference_link" href="#Mp-At_2-Pr_2">第二条第二項</a>に規定する遺族を含む。）が昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_4-Pr_1">第一項</a>に規定する別段の申出をしなかつた場合において、当該代用教員期間等を有する者は、普通恩給等を受ける権利の裁定を行つた者から改正後の<a class="reference_link" href="L_337AC0000000152.html">法</a>律<a class="reference_link" href="#Mp-At_4-Pr_1-It_155">第百五十五号</a>附則第四十四条の三の規定の適用により増額されて支給された普通恩給等の額のうち当該増額された部分に相当する額を返還すべき旨の通知を受けたときは、その額を、<a class="reference_link" href="#Mp-At_2-Pr_1">第二条第一項</a>に規定する申出の期限の属する月の翌月から一年以内に、一時に又は分割して、これを支給した国、地方公共団体又は市町村職員共済組合に返還しなければならない。</div>
+                    <div class="Sentence">昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する代用教員期間等を有する者（その者に係る<a class="reference_link" href="#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二項</a>に規定する遺族を含む。）が昭和五十四年改正法附則第二十条<a class="reference_link" href="#Mp-At_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する別段の申出をしなかつた場合において、当該代用教員期間等を有する者は、普通恩給等を受ける権利の裁定を行つた者から改正後の<a class="reference_link" href="L_337AC0000000152.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律<a class="reference_link" href="#Mp-At_4-Pr_1-It_155" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百五十五号</a>附則第四十四条の三の規定の適用により増額されて支給された普通恩給等の額のうち当該増額された部分に相当する額を返還すべき旨の通知を受けたときは、その額を、<a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項</a>に規定する申出の期限の属する月の翌月から一年以内に、一時に又は分割して、これを支給した国、地方公共団体又は市町村職員共済組合に返還しなければならない。</div>
                   </div>
                 </div>
               </div>

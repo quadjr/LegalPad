@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（特例郵便等投票における投票用紙及び投票用封筒の請求書の様式）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（特例郵便等投票における投票用封筒の様式）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（不在者投票に関する調書の様式の特例）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
                     <a class="title_text" href="#Mp-At_4">第四条（指定投票区等について繰延投票が行われた場合の取扱いの特例）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -80,7 +80,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Apn" onclick="toggleClicked(this,'Apn')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Apn" data-id="toggle-Apn" onclick="toggleClicked(this,'Apn', 'Apn')">
                 <a class="title_text" href="#Apn">別記</a>
               </div>
               <div class="table_indent"></div>
@@ -88,7 +88,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Aps" onclick="toggleClicked(this,'Aps')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
                 <a class="title_text" href="#Aps">第一号様式（特例郵便等投票における投票用紙及び投票用封筒の請求書の様式）（第一条関係）</a>
               </div>
               <div class="table_indent"></div>
@@ -96,7 +96,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Aps" onclick="toggleClicked(this,'Aps')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
                 <a class="title_text" href="#Aps">第二号様式（不在者投票に関する調書の特例様式）（第三条関係）</a>
               </div>
               <div class="table_indent"></div>
@@ -104,7 +104,7 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_503AC0000000082.html">特定患者等の郵便等を用いて行う投票方法の特例に関する法律</a>（<a class="reference_link" href="L_503AC0000000082.html">令和三年法律第八十二号</a>）<a class="reference_link" href="L_503AC0000000082.html#Mp-At_10">第十条</a>の規定に基づき、<a class="reference_link" href="L_503M60000008061.html">特定患者等の郵便等を用いて行う投票方法の特例に関する法律施行規則</a>を次のように定める。</div>
+              <a class="reference_link" href="L_503AC0000000082.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定患者等の郵便等を用いて行う投票方法の特例に関する法律</a>（<a class="reference_link" href="L_503AC0000000082.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令和三年法律第八十二号</a>）<a class="reference_link" href="L_503AC0000000082.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>の規定に基づき、<a class="reference_link" href="L_503M60000008061.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定患者等の郵便等を用いて行う投票方法の特例に関する法律施行規則</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleCaption">（特例郵便等投票における投票用紙及び投票用封筒の請求書の様式）</div>
@@ -113,7 +113,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_503CO0000000175.html">特定患者等の郵便等を用いて行う投票方法の特例に関する法律施行令</a>（<a class="reference_link" href="L_503CO0000000175.html">令和三年政令第百七十五号</a>。以下「令」という。）<a class="reference_link" href="L_503CO0000000175.html#Mp-At_1-Pr_1">第一条第一項</a>の規定による請求書は、別記<a class="reference_link" href="#Mp-At_1-Pr_1-It_1">第一号</a>様式に準じて作成しなければならない。</div>
+                      <a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定患者等の郵便等を用いて行う投票方法の特例に関する法律施行令</a>（<a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令和三年政令第百七十五号</a>。以下「令」という。）<a class="reference_link" href="L_503CO0000000175.html#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項</a>の規定による請求書は、別記<a class="reference_link" href="#Mp-At_1-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>様式に準じて作成しなければならない。</div>
                   </div>
                 </div>
               </div>
@@ -124,8 +124,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_503CO0000000175.html">令</a>
-                      <a class="reference_link" href="L_503CO0000000175.html#Mp-At_1-Pr_3">第一条第三項</a>の規定による投票用封筒は、<a class="reference_link" href="L_325M50000002013.html">公職選挙法施行規則</a>（<a class="reference_link" href="L_325M50000002013.html">昭和二十五年総理府令第十三号</a>）別記<a class="reference_link" href="#Mp-At_2-Pr_1-It_13">第十三号</a>様式の七（外封筒（<a class="reference_link" href="L_325CO0000000089.html">公職選挙法施行令</a>（<a class="reference_link" href="L_325CO0000000089.html">昭和二十五年政令第八十九号</a>）<a class="reference_link" href="L_325CO0000000089.html#Mp-At_59_4-Pr_2">第五十九条の四第二項</a>の規定により請求を受けた場合）に係る部分を除く。）に準じて調製しなければならない。</div>
+                      <a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                      <a class="reference_link" href="L_503CO0000000175.html#Mp-At_1-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第三項</a>の規定による投票用封筒は、<a class="reference_link" href="L_325M50000002013.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法施行規則</a>（<a class="reference_link" href="L_325M50000002013.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年総理府令第十三号</a>）別記<a class="reference_link" href="#Mp-At_2-Pr_1-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三号</a>様式の七（外封筒（<a class="reference_link" href="L_325CO0000000089.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法施行令</a>（<a class="reference_link" href="L_325CO0000000089.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年政令第八十九号</a>）<a class="reference_link" href="L_325CO0000000089.html#Mp-At_59_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十九条の四第二項</a>の規定により請求を受けた場合）に係る部分を除く。）に準じて調製しなければならない。</div>
                   </div>
                 </div>
               </div>
@@ -136,8 +136,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_503AC0000000082.html">特定患者等の郵便等を用いて行う投票方法の特例に関する法律</a>（以下「法」という。）の規定の適用を受ける選挙の投票に係る不在者投票に関する調書は、<a class="reference_link" href="L_325M50000002013.html">公職選挙法施行規則</a>
-                      <a class="reference_link" href="L_325M50000002013.html#Mp-At_14">第十四条</a>の規定にかかわらず、別記<a class="reference_link" href="#Mp-At_3-Pr_1-It_2">第二号</a>様式に準じて調製しなければならない。</div>
+                      <a class="reference_link" href="L_503AC0000000082.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定患者等の郵便等を用いて行う投票方法の特例に関する法律</a>（以下「法」という。）の規定の適用を受ける選挙の投票に係る不在者投票に関する調書は、<a class="reference_link" href="L_325M50000002013.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法施行規則</a>
+                      <a class="reference_link" href="L_325M50000002013.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定にかかわらず、別記<a class="reference_link" href="#Mp-At_3-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>様式に準じて調製しなければならない。</div>
                   </div>
                 </div>
               </div>
@@ -148,11 +148,11 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_503AC0000000082.html">法</a>
-                      <a class="reference_link" href="L_503AC0000000082.html#Mp-At_3-Pr_2">第三条第二項</a>に規定する特例郵便等投票について、<a class="reference_link" href="L_325M50000002013.html">公職選挙法施行規則</a>
-                      <a class="reference_link" href="L_325M50000002013.html#Mp-At_15_2-Pr_1">第十五条の二第一項</a>及び<a class="reference_link" href="L_325M50000002013.html#Mp-At_15_2-Pr_3">第三項</a>並びに<a class="reference_link" href="L_325M50000002013.html#Mp-At_15_3-Pr_1">第十五条の三第一項</a>の規定を適用する場合には、同<a class="reference_link" href="L_503CO0000000175.html">令</a>
-                      <a class="reference_link" href="L_503CO0000000175.html#Mp-At_15_2-Pr_1">第十五条の二第一項</a>中「投票が」とあるのは「投票又は<a class="reference_link" href="L_503AC0000000082.html">特定患者等の郵便等を用いて行う投票方法の特例に関する法律</a>（<a class="reference_link" href="L_503AC0000000082.html">令和三年法律第八十二号</a>）<a class="reference_link" href="L_503AC0000000082.html#Mp-At_3-Pr_2">第三条第二項</a>に規定する特例郵便等投票（以下「特例郵便等投票」という。）が」と、<a class="reference_link" href="L_503AC0000000082.html#Mp-At_3-Pr_3">同条第三項</a>中「投票を」とあるのは「投票又は特例郵便等投票を」と、同<a class="reference_link" href="L_503CO0000000175.html">令</a>
-                      <a class="reference_link" href="L_503CO0000000175.html#Mp-At_15_3-Pr_1">第十五条の三第一項</a>中「投票が」とあるのは「投票又は特例郵便等投票が」とする。</div>
+                      <a class="reference_link" href="L_503AC0000000082.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <a class="reference_link" href="L_503AC0000000082.html#Mp-At_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第二項</a>に規定する特例郵便等投票について、<a class="reference_link" href="L_325M50000002013.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法施行規則</a>
+                      <a class="reference_link" href="L_325M50000002013.html#Mp-At_15_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条の二第一項</a>及び<a class="reference_link" href="L_325M50000002013.html#Mp-At_15_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>並びに<a class="reference_link" href="L_325M50000002013.html#Mp-At_15_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条の三第一項</a>の規定を適用する場合には、同<a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                      <a class="reference_link" href="L_503CO0000000175.html#Mp-At_15_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条の二第一項</a>中「投票が」とあるのは「投票又は<a class="reference_link" href="L_503AC0000000082.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定患者等の郵便等を用いて行う投票方法の特例に関する法律</a>（<a class="reference_link" href="L_503AC0000000082.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令和三年法律第八十二号</a>）<a class="reference_link" href="L_503AC0000000082.html#Mp-At_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第二項</a>に規定する特例郵便等投票（以下「特例郵便等投票」という。）が」と、<a class="reference_link" href="L_503AC0000000082.html#Mp-At_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>中「投票を」とあるのは「投票又は特例郵便等投票を」と、同<a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                      <a class="reference_link" href="L_503CO0000000175.html#Mp-At_15_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条の三第一項</a>中「投票が」とあるのは「投票又は特例郵便等投票が」とする。</div>
                   </div>
                 </div>
               </div>
@@ -163,14 +163,14 @@
                 <div class="ParagraphCaption">（施行期日）</div>
                 <div class="ParagraphNum">１</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_503CO0000000175.html">令</a>は、<a class="reference_link" href="L_503AC0000000082.html">法</a>の施行の日から施行する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、<a class="reference_link" href="L_503AC0000000082.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の施行の日から施行する。</div>
                 </div>
               </div>
               <div id="Sp-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphCaption">（適用区分）</div>
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_503CO0000000175.html">令</a>の規定は、この省<a class="reference_link" href="L_503CO0000000175.html">令</a>の施行の日以後その期日を公示され又は告示される選挙について適用する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>の規定は、この省<a class="reference_link" href="L_503CO0000000175.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>の施行の日以後その期日を公示され又は告示される選挙について適用する。</div>
                 </div>
               </div>
             </div>

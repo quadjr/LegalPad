@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -56,7 +56,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_昭和二七年三月三一日法律第四三号" onclick="toggleClicked(this,'Sp_昭和二七年三月三一日法律第四三号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二七年三月三一日法律第四三号" data-id="toggle-Sp_昭和二七年三月三一日法律第四三号" onclick="toggleClicked(this,'Sp_昭和二七年三月三一日法律第四三号', 'Sp_昭和二七年三月三一日法律第四三号')">
                 <a class="title_text" href="#Sp_昭和二七年三月三一日法律第四三号">附　則（昭和二七年三月三一日法律第四三号）</a>
               </div>
               <div class="table_indent"></div>
@@ -72,14 +72,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_昭和二八年八月一日法律第一三三号" onclick="toggleClicked(this,'Sp_昭和二八年八月一日法律第一三三号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二八年八月一日法律第一三三号" data-id="toggle-Sp_昭和二八年八月一日法律第一三三号" onclick="toggleClicked(this,'Sp_昭和二八年八月一日法律第一三三号', 'Sp_昭和二八年八月一日法律第一三三号')">
                 <a class="title_text" href="#Sp_昭和二八年八月一日法律第一三三号">附　則（昭和二八年八月一日法律第一三三号）</a>
               </div>
               <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
-            <div id="Es" class="EnactStatement">内閣は、ポツダム宣言の受諾に伴い発する命令に関する件（昭和二十年勅令第五百四十二号）に基き、ここに<a class="reference_link" href="L_323CO0000000264.html">閉鎖機関に関する債権の時効等の特例に関する政令</a>を制定する。</div>
+            <div id="Es" class="EnactStatement">内閣は、ポツダム宣言の受諾に伴い発する命令に関する件（昭和二十年勅令第五百四十二号）に基き、ここに<a class="reference_link" href="L_323CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">閉鎖機関に関する債権の時効等の特例に関する政令</a>を制定する。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleTitle">第一条</div>
@@ -87,8 +87,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_322IO0000000074.html">閉鎖機関令</a>（<a class="reference_link" href="L_322IO0000000074.html">昭和二十二年勅令第七十四号</a>）<a class="reference_link" href="L_322IO0000000074.html#Mp-At_1">第一条</a>に規定する閉鎖機関の債権又は閉鎖機関に対する債権でその履行期が昭和六年一月一日以後のもののうち、同令<a class="reference_link" href="#Mp-At_3">第三条</a>に規定する指定日（以下指定日という。）までに既に時効の完成していたものについては、その時効は、完成しなかつたものとし、指定日においてまだ時効の完成していないものについては、<a class="reference_link" href="L_322IO0000000074.html">閉鎖機関令</a>
-                      <a class="reference_link" href="L_322IO0000000074.html#Mp-At_19_22">第十九条の二十二</a>の規定により特殊清算人が特殊清算結了の公告をした日まで（閉鎖機関の新会社が成立したときは、その設立の登記をした日から二月以内）又は同令<a class="reference_link" href="#Mp-At_20">第二十条</a>に規定する閉鎖機関の指定の解除の告示があつた日から二月以内は、その時効は、完成しないものとする。</div>
+                      <a class="reference_link" href="L_322IO0000000074.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">閉鎖機関令</a>（<a class="reference_link" href="L_322IO0000000074.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十二年勅令第七十四号</a>）<a class="reference_link" href="L_322IO0000000074.html#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>に規定する閉鎖機関の債権又は閉鎖機関に対する債権でその履行期が昭和六年一月一日以後のもののうち、同令<a class="reference_link" href="#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>に規定する指定日（以下指定日という。）までに既に時効の完成していたものについては、その時効は、完成しなかつたものとし、指定日においてまだ時効の完成していないものについては、<a class="reference_link" href="L_322IO0000000074.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">閉鎖機関令</a>
+                      <a class="reference_link" href="L_322IO0000000074.html#Mp-At_19_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の二十二</a>の規定により特殊清算人が特殊清算結了の公告をした日まで（閉鎖機関の新会社が成立したときは、その設立の登記をした日から二月以内）又は同令<a class="reference_link" href="#Mp-At_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条</a>に規定する閉鎖機関の指定の解除の告示があつた日から二月以内は、その時効は、完成しないものとする。</div>
                   </div>
                 </div>
               </div>
@@ -97,8 +97,8 @@
                 <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">閉鎖機関の債権又は閉鎖機関に対する債権でその履行期が昭和六年一月一日以後のものについては、指定日までに既に他の法令に定める権利保存のための行為をすべき期間が経過していた場合においては、当該期間は、経過していなかつたものとし、指定日において当該期間がまだ経過していない場合においては、当該行為は、<a class="reference_link" href="L_322IO0000000074.html">閉鎖機関令</a>
-                      <a class="reference_link" href="L_322IO0000000074.html#Mp-At_19_22">第十九条の二十二</a>の規定により特殊清算人が特殊清算結了の公告をした日まで（閉鎖機関の新会社が成立したときは、その設立の登記をした日から二月以内）又は同令<a class="reference_link" href="#Mp-At_20">第二十条</a>に規定する閉鎖機関の指定の解除の告示があつた日から二月以内は、これをすることができるものとする。</div>
+                    <div class="Sentence">閉鎖機関の債権又は閉鎖機関に対する債権でその履行期が昭和六年一月一日以後のものについては、指定日までに既に他の法令に定める権利保存のための行為をすべき期間が経過していた場合においては、当該期間は、経過していなかつたものとし、指定日において当該期間がまだ経過していない場合においては、当該行為は、<a class="reference_link" href="L_322IO0000000074.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">閉鎖機関令</a>
+                      <a class="reference_link" href="L_322IO0000000074.html#Mp-At_19_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の二十二</a>の規定により特殊清算人が特殊清算結了の公告をした日まで（閉鎖機関の新会社が成立したときは、その設立の登記をした日から二月以内）又は同令<a class="reference_link" href="#Mp-At_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条</a>に規定する閉鎖機関の指定の解除の告示があつた日から二月以内は、これをすることができるものとする。</div>
                   </div>
                 </div>
               </div>

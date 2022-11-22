@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,21 +31,21 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1" data-id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1', 'Mp-Ch_1')">
                     <a class="title_text" href="#Mp-Ch_1">第一章　総則</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-Ch_1-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-Ch_1-At_1')">
                         <a class="title_text" href="#Mp-At_1">第一条（立木の登記記録）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -53,7 +53,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-Ch_1-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-Ch_1-At_2')">
                         <a class="title_text" href="#Mp-At_2">第二条（不動産登記規則の適用関係）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -63,14 +63,14 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_2" data-id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2', 'Mp-Ch_2')">
                     <a class="title_text" href="#Mp-Ch_2">第二章　樹種の記録の方法等</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-Ch_2-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-Ch_2-At_3')">
                         <a class="title_text" href="#Mp-At_3">第三条（調査した年度の記録）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -78,7 +78,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-Ch_2-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-Ch_2-At_4')">
                         <a class="title_text" href="#Mp-At_4">第四条（樹種の記録の方法）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -86,7 +86,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-Ch_2-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-Ch_2-At_5')">
                         <a class="title_text" href="#Mp-At_5">第五条（樹木の数量の記録等の方法）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -94,7 +94,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-Ch_2-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-Ch_2-At_6')">
                         <a class="title_text" href="#Mp-At_6">第六条（樹齢の記録の方法）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -104,21 +104,21 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3" data-id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3', 'Mp-Ch_3')">
                     <a class="title_text" href="#Mp-Ch_3">第三章　立木の登記手続</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_1')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1" data-id="toggle-Mp-Ch_3-Se_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_1', 'Mp-Ch_3-Se_1')">
                         <a class="title_text" href="#Mp-Ch_3-Se_1">第一節　通則</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-Ch_3-Se_1-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-Ch_3-Se_1-At_7')">
                             <a class="title_text" href="#Mp-At_7">第七条（申請情報）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -126,7 +126,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-Ch_3-Se_1-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-Ch_3-Se_1-At_8')">
                             <a class="title_text" href="#Mp-At_8">第八条（登記の更正）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -136,14 +136,14 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_2')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2" data-id="toggle-Mp-Ch_3-Se_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_2', 'Mp-Ch_3-Se_2')">
                         <a class="title_text" href="#Mp-Ch_3-Se_2">第二節　所有権の保存の登記</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_9" onclick="toggleClicked(this,'Mp-At_9')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-Ch_3-Se_2-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-Ch_3-Se_2-At_9')">
                             <a class="title_text" href="#Mp-At_9">第九条（所有権の保存の登記の添付情報）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -151,7 +151,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_10" onclick="toggleClicked(this,'Mp-At_10')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-Ch_3-Se_2-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-Ch_3-Se_2-At_10')">
                             <a class="title_text" href="#Mp-At_10">第十条（立木図面）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -159,7 +159,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_11" onclick="toggleClicked(this,'Mp-At_11')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-Ch_3-Se_2-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-Ch_3-Se_2-At_11')">
                             <a class="title_text" href="#Mp-At_11">第十一条（立木図面の管理）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -167,7 +167,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_12" onclick="toggleClicked(this,'Mp-At_12')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-Ch_3-Se_2-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-Ch_3-Se_2-At_12')">
                             <a class="title_text" href="#Mp-At_12">第十二条（立木図面つづり込み帳の冊数等の記録）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -177,14 +177,14 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_3')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_3" data-id="toggle-Mp-Ch_3-Se_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_3', 'Mp-Ch_3-Se_3')">
                         <a class="title_text" href="#Mp-Ch_3-Se_3">第三節　抵当権に関する登記</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_13" onclick="toggleClicked(this,'Mp-At_13')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-Ch_3-Se_3-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-Ch_3-Se_3-At_13')">
                             <a class="title_text" href="#Mp-At_13">第十三条（抵当権に関する登記の申請情報）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -192,7 +192,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_14" onclick="toggleClicked(this,'Mp-At_14')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-Ch_3-Se_3-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-Ch_3-Se_3-At_14')">
                             <a class="title_text" href="#Mp-At_14">第十四条（施業方法書の提出）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -200,7 +200,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_15" onclick="toggleClicked(this,'Mp-At_15')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-Ch_3-Se_3-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-Ch_3-Se_3-At_15')">
                             <a class="title_text" href="#Mp-At_15">第十五条（施業方法書の管理）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -208,7 +208,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_16" onclick="toggleClicked(this,'Mp-At_16')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-Ch_3-Se_3-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-Ch_3-Se_3-At_16')">
                             <a class="title_text" href="#Mp-At_16">第十六条（施業方法書の提出があった旨の記録等）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -216,7 +216,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_17" onclick="toggleClicked(this,'Mp-At_17')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-Ch_3-Se_3-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-Ch_3-Se_3-At_17')">
                             <a class="title_text" href="#Mp-At_17">第十七条（施業方法の変更の登記又は更正の登記）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -226,14 +226,14 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_4" onclick="toggleClicked(this,'Mp-Ch_3-Se_4')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_4" data-id="toggle-Mp-Ch_3-Se_4" onclick="toggleClicked(this,'Mp-Ch_3-Se_4', 'Mp-Ch_3-Se_4')">
                         <a class="title_text" href="#Mp-Ch_3-Se_4">第四節　表題部の変更の登記等</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_18" onclick="toggleClicked(this,'Mp-At_18')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-Ch_3-Se_4-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-Ch_3-Se_4-At_18')">
                             <a class="title_text" href="#Mp-At_18">第十八条（表題部の変更の登記の申請情報等）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -241,7 +241,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_19" onclick="toggleClicked(this,'Mp-At_19')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-Ch_3-Se_4-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-Ch_3-Se_4-At_19')">
                             <a class="title_text" href="#Mp-At_19">第十九条（樹種の変更の登記の添付情報等）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -249,7 +249,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_20" onclick="toggleClicked(this,'Mp-At_20')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-Ch_3-Se_4-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-Ch_3-Se_4-At_20')">
                             <a class="title_text" href="#Mp-At_20">第二十条（分割の登記の申請情報等）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -257,7 +257,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_21" onclick="toggleClicked(this,'Mp-At_21')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-Ch_3-Se_4-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-Ch_3-Se_4-At_21')">
                             <a class="title_text" href="#Mp-At_21">第二十一条（分割の登記における表題部の記録方法）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -265,7 +265,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_22" onclick="toggleClicked(this,'Mp-At_22')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-Ch_3-Se_4-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-Ch_3-Se_4-At_22')">
                             <a class="title_text" href="#Mp-At_22">第二十二条（分割の登記における権利部の記録方法等）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -273,7 +273,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_23" onclick="toggleClicked(this,'Mp-At_23')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-Ch_3-Se_4-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-Ch_3-Se_4-At_23')">
                             <a class="title_text" href="#Mp-At_23">第二十三条（合併の登記の申請情報等）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -281,7 +281,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_24" onclick="toggleClicked(this,'Mp-At_24')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-Ch_3-Se_4-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-Ch_3-Se_4-At_24')">
                             <a class="title_text" href="#Mp-At_24">第二十四条（合併の登記の添付情報）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -289,7 +289,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_25" onclick="toggleClicked(this,'Mp-At_25')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-Ch_3-Se_4-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-Ch_3-Se_4-At_25')">
                             <a class="title_text" href="#Mp-At_25">第二十五条（合併の登記における登記記録の記録方法）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -297,7 +297,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_26" onclick="toggleClicked(this,'Mp-At_26')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-Ch_3-Se_4-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-Ch_3-Se_4-At_26')">
                             <a class="title_text" href="#Mp-At_26">第二十六条（分割及び合併の登記における登記記録の記録方法）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -305,7 +305,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_27" onclick="toggleClicked(this,'Mp-At_27')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-Ch_3-Se_4-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-Ch_3-Se_4-At_27')">
                             <a class="title_text" href="#Mp-At_27">第二十七条（滅失の登記）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -317,14 +317,14 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4" data-id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4', 'Mp-Ch_4')">
                     <a class="title_text" href="#Mp-Ch_4">第四章　雑則</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_28" onclick="toggleClicked(this,'Mp-At_28')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_28" data-id="toggle-Mp-Ch_4-At_28" onclick="toggleClicked(this,'Mp-At_28', 'Mp-Ch_4-At_28')">
                         <a class="title_text" href="#Mp-At_28">第二十八条（土地の登記記録への記録方法）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -332,7 +332,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_29" onclick="toggleClicked(this,'Mp-At_29')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_29" data-id="toggle-Mp-Ch_4-At_29" onclick="toggleClicked(this,'Mp-At_29', 'Mp-Ch_4-At_29')">
                         <a class="title_text" href="#Mp-At_29">第二十九条（土地の登記記録の転写等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -340,7 +340,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_30" onclick="toggleClicked(this,'Mp-At_30')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_30" data-id="toggle-Mp-Ch_4-At_30" onclick="toggleClicked(this,'Mp-At_30', 'Mp-Ch_4-At_30')">
                         <a class="title_text" href="#Mp-At_30">第三十条（立木図面つづり込み帳等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -348,7 +348,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_31" onclick="toggleClicked(this,'Mp-At_31')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_31" data-id="toggle-Mp-Ch_4-At_31" onclick="toggleClicked(this,'Mp-At_31', 'Mp-Ch_4-At_31')">
                         <a class="title_text" href="#Mp-At_31">第三十一条（保存期間）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -356,7 +356,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_32" onclick="toggleClicked(this,'Mp-At_32')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_32" data-id="toggle-Mp-Ch_4-At_32" onclick="toggleClicked(this,'Mp-At_32', 'Mp-Ch_4-At_32')">
                         <a class="title_text" href="#Mp-At_32">第三十二条（登記識別情報の通知等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -364,7 +364,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_33" onclick="toggleClicked(this,'Mp-At_33')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_33" data-id="toggle-Mp-Ch_4-At_33" onclick="toggleClicked(this,'Mp-At_33', 'Mp-Ch_4-At_33')">
                         <a class="title_text" href="#Mp-At_33">第三十三条（登記事項証明書の交付の請求情報等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -372,7 +372,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_34" onclick="toggleClicked(this,'Mp-At_34')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_34" data-id="toggle-Mp-Ch_4-At_34" onclick="toggleClicked(this,'Mp-At_34', 'Mp-Ch_4-At_34')">
                         <a class="title_text" href="#Mp-At_34">第三十四条（登記事項証明書の作成及び交付）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -380,7 +380,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_35" onclick="toggleClicked(this,'Mp-At_35')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_35" data-id="toggle-Mp-Ch_4-At_35" onclick="toggleClicked(this,'Mp-At_35', 'Mp-Ch_4-At_35')">
                         <a class="title_text" href="#Mp-At_35">第三十五条（立木図面の写しの交付）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -388,7 +388,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_36" onclick="toggleClicked(this,'Mp-At_36')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_36" data-id="toggle-Mp-Ch_4-At_36" onclick="toggleClicked(this,'Mp-At_36', 'Mp-Ch_4-At_36')">
                         <a class="title_text" href="#Mp-At_36">第三十六条（登記の嘱託）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -400,14 +400,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_1" onclick="toggleClicked(this,'Sp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_1" data-id="toggle-Sp-At_1" onclick="toggleClicked(this,'Sp-At_1', 'Sp-At_1')">
                     <a class="title_text" href="#Sp-At_1">第一条（施行期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -415,7 +415,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_2" onclick="toggleClicked(this,'Sp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_2" data-id="toggle-Sp-At_2" onclick="toggleClicked(this,'Sp-At_2', 'Sp-At_2')">
                     <a class="title_text" href="#Sp-At_2">第二条（経過措置の原則）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -423,7 +423,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_3" onclick="toggleClicked(this,'Sp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_3" data-id="toggle-Sp-At_3" onclick="toggleClicked(this,'Sp-At_3', 'Sp-At_3')">
                     <a class="title_text" href="#Sp-At_3">第三条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -431,7 +431,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_4" onclick="toggleClicked(this,'Sp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_4" data-id="toggle-Sp-At_4" onclick="toggleClicked(this,'Sp-At_4', 'Sp-At_4')">
                     <a class="title_text" href="#Sp-At_4">第四条（未指定事務に係る旧登記簿）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -439,7 +439,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_5" onclick="toggleClicked(this,'Sp-At_5')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_5" data-id="toggle-Sp-At_5" onclick="toggleClicked(this,'Sp-At_5', 'Sp-At_5')">
                     <a class="title_text" href="#Sp-At_5">第五条（第三条指定を受けている登記所からの移送）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -447,7 +447,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_6" onclick="toggleClicked(this,'Sp-At_6')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_6" data-id="toggle-Sp-At_6" onclick="toggleClicked(this,'Sp-At_6', 'Sp-At_6')">
                     <a class="title_text" href="#Sp-At_6">第六条（第三条指定を受けていない登記所からの移送）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -455,7 +455,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_7" onclick="toggleClicked(this,'Sp-At_7')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_7" data-id="toggle-Sp-At_7" onclick="toggleClicked(this,'Sp-At_7', 'Sp-At_7')">
                     <a class="title_text" href="#Sp-At_7">第七条（不動産登記法附則第六条の指定前の登記手続）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -463,7 +463,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp-At_8" onclick="toggleClicked(this,'Sp-At_8')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_8" data-id="toggle-Sp-At_8" onclick="toggleClicked(this,'Sp-At_8', 'Sp-At_8')">
                     <a class="title_text" href="#Sp-At_8">第八条（民法の一部改正に伴う経過措置）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -473,7 +473,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成一七年四月二〇日法務省令第六三号" onclick="toggleClicked(this,'Sp_平成一七年四月二〇日法務省令第六三号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年四月二〇日法務省令第六三号" data-id="toggle-Sp_平成一七年四月二〇日法務省令第六三号" onclick="toggleClicked(this,'Sp_平成一七年四月二〇日法務省令第六三号', 'Sp_平成一七年四月二〇日法務省令第六三号')">
                 <a class="title_text" href="#Sp_平成一七年四月二〇日法務省令第六三号">附　則（平成一七年四月二〇日法務省令第六三号）</a>
               </div>
               <div class="table_indent"></div>
@@ -481,14 +481,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Sp_平成一七年一一月一一日法務省令第一〇六号" onclick="toggleClicked(this,'Sp_平成一七年一一月一一日法務省令第一〇六号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年一一月一一日法務省令第一〇六号" data-id="toggle-Sp_平成一七年一一月一一日法務省令第一〇六号" onclick="toggleClicked(this,'Sp_平成一七年一一月一一日法務省令第一〇六号', 'Sp_平成一七年一一月一一日法務省令第一〇六号')">
                 <a class="title_text" href="#Sp_平成一七年一一月一一日法務省令第一〇六号">附　則（平成一七年一一月一一日法務省令第一〇六号）</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp_平成一七年一一月一一日法務省令第一〇六号-At_1" onclick="toggleClicked(this,'Sp_平成一七年一一月一一日法務省令第一〇六号-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年一一月一一日法務省令第一〇六号-At_1" data-id="toggle-Sp_平成一七年一一月一一日法務省令第一〇六号-At_1" onclick="toggleClicked(this,'Sp_平成一七年一一月一一日法務省令第一〇六号-At_1', 'Sp_平成一七年一一月一一日法務省令第一〇六号-At_1')">
                     <a class="title_text" href="#Sp_平成一七年一一月一一日法務省令第一〇六号-At_1">第一条（施行期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -498,14 +498,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Sp_平成二三年三月二五日法務省令第五号" onclick="toggleClicked(this,'Sp_平成二三年三月二五日法務省令第五号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二三年三月二五日法務省令第五号" data-id="toggle-Sp_平成二三年三月二五日法務省令第五号" onclick="toggleClicked(this,'Sp_平成二三年三月二五日法務省令第五号', 'Sp_平成二三年三月二五日法務省令第五号')">
                 <a class="title_text" href="#Sp_平成二三年三月二五日法務省令第五号">附　則（平成二三年三月二五日法務省令第五号）</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Sp_平成二三年三月二五日法務省令第五号-At_1" onclick="toggleClicked(this,'Sp_平成二三年三月二五日法務省令第五号-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二三年三月二五日法務省令第五号-At_1" data-id="toggle-Sp_平成二三年三月二五日法務省令第五号-At_1" onclick="toggleClicked(this,'Sp_平成二三年三月二五日法務省令第五号-At_1', 'Sp_平成二三年三月二五日法務省令第五号-At_1')">
                     <a class="title_text" href="#Sp_平成二三年三月二五日法務省令第五号-At_1">第一条（施行期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -515,7 +515,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成二八年三月二四日法務省令第一二号" onclick="toggleClicked(this,'Sp_平成二八年三月二四日法務省令第一二号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二八年三月二四日法務省令第一二号" data-id="toggle-Sp_平成二八年三月二四日法務省令第一二号" onclick="toggleClicked(this,'Sp_平成二八年三月二四日法務省令第一二号', 'Sp_平成二八年三月二四日法務省令第一二号')">
                 <a class="title_text" href="#Sp_平成二八年三月二四日法務省令第一二号">附　則（平成二八年三月二四日法務省令第一二号）</a>
               </div>
               <div class="table_indent"></div>
@@ -523,7 +523,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Apn" onclick="toggleClicked(this,'Apn')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Apn" data-id="toggle-Apn" onclick="toggleClicked(this,'Apn', 'Apn')">
                 <a class="title_text" href="#Apn">別記第一号（第十四条第一項及び第三十四条第一項第二号関係）</a>
               </div>
               <div class="table_indent"></div>
@@ -531,7 +531,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Apn" onclick="toggleClicked(this,'Apn')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Apn" data-id="toggle-Apn" onclick="toggleClicked(this,'Apn', 'Apn')">
                 <a class="title_text" href="#Apn">別記第二号（第三十四条第一項第一号関係）</a>
               </div>
               <div class="table_indent"></div>
@@ -539,7 +539,7 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>（<a class="reference_link" href="L_416AC0000000123.html">平成十六年法律第百二十三号</a>）及び不動産登記法の施行に伴う関係法律の整備等に関する法律（平成十六年法律第百二十四号）の施行に伴い、並びに立木に関する法律（<a class="reference_link" href="L_142AC0000000022.html">明治四十二年法律第二十二号</a>）<a class="reference_link" href="#Mp-At_15-Pr_2">第十五条第二項</a>、<a class="reference_link" href="#Mp-At_20-Pr_3">第二十条第三項</a>及び<a class="reference_link" href="#Mp-At_21-Pr_2">第二十一条第二項</a>並びに<a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>（<a class="reference_link" href="L_416CO0000000379.html">平成十六年政令第三百七十九号</a>）<a class="reference_link" href="L_416CO0000000379.html#Mp-At_24">第二十四条</a>の規定に基づき、並びに<a class="reference_link" href="L_416CO0000000379.html">同法</a>の規定を実施するため、<a class="reference_link" href="L_417M60000010026.html">立木登記規則</a>（明治四十三年司法省令第五号）の全部を改正する省令を次のように定める。</div>
+              <a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>（<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年法律第百二十三号</a>）及び不動産登記法の施行に伴う関係法律の整備等に関する法律（平成十六年法律第百二十四号）の施行に伴い、並びに立木に関する法律（<a class="reference_link" href="L_142AC0000000022.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">明治四十二年法律第二十二号</a>）<a class="reference_link" href="#Mp-At_15-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第二項</a>、<a class="reference_link" href="#Mp-At_20-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第三項</a>及び<a class="reference_link" href="#Mp-At_21-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第二項</a>並びに<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>（<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年政令第三百七十九号</a>）<a class="reference_link" href="L_416CO0000000379.html#Mp-At_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条</a>の規定に基づき、並びに<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>の規定を実施するため、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">立木登記規則</a>（明治四十三年司法省令第五号）の全部を改正する省令を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-Ch_1" class="Chapter" Num="1">
                 <div class="ChapterTitle">第一章　総則</div>
@@ -549,8 +549,8 @@
                   <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">登記官は、立木について初めて登記をし、又は管轄転属によって移送を受けたときは、立木の登記記録の表題部に、これらの順序に従って<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                        <a class="reference_link" href="L_416AC0000000123.html#Mp-At_35">第三十五条</a>に規定する地番区域ごとに登記番号を記録しなければならない。</div>
+                      <div class="Sentence">登記官は、立木について初めて登記をし、又は管轄転属によって移送を受けたときは、立木の登記記録の表題部に、これらの順序に従って<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                        <a class="reference_link" href="L_416AC0000000123.html#Mp-At_35" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条</a>に規定する地番区域ごとに登記番号を記録しなければならない。</div>
                     </div>
                   </div>
                   <div id="Mp-At_1-Pr_2" class="Paragraph" Num="2">
@@ -566,7 +566,7 @@
                   <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">立木の登記に係る<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>（<a class="reference_link" href="L_417M60000010018.html">平成十七年法務省令第十八号</a>）の規定の適用については、同令の規定（同令<a class="reference_link" href="#Mp-At_1-Pr_1-It_9">第一条第九号</a>を除く。）中「不動産所在事項」とあり、及び同令<a class="reference_link" href="#Mp-At_181-Pr_2-It_4">第百八十一条第二項第四号</a>中「法第三十四条第一項各号及び第四十四条第一項各号（第六号及び第九号を除く。）に掲げる事項」とあるのは、「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」とする。</div>
+                      <div class="Sentence">立木の登記に係る<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>（<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十七年法務省令第十八号</a>）の規定の適用については、同令の規定（同令<a class="reference_link" href="#Mp-At_1-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第九号</a>を除く。）中「不動産所在事項」とあり、及び同令<a class="reference_link" href="#Mp-At_181-Pr_2-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百八十一条第二項第四号</a>中「法第三十四条第一項各号及び第四十四条第一項各号（第六号及び第九号を除く。）に掲げる事項」とあるのは、「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」とする。</div>
                     </div>
                   </div>
                 </div>
@@ -607,7 +607,7 @@
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="#Mp-At_5-Pr_1">前項</a>の材積の単位、呼称及び測定方法は、各地方の慣習に従うものとする。</div>
+                        <a class="reference_link" href="#Mp-At_5-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の材積の単位、呼称及び測定方法は、各地方の慣習に従うものとする。</div>
                     </div>
                   </div>
                 </div>
@@ -633,13 +633,13 @@
                     <div id="Mp-At_7-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">立木に関する法律（以下「法」という。）<a class="reference_link" href="#Mp-At_15-Pr_2">第十五条第二項</a>の法務省令で定める事項は、この省令に特別の定めがある場合を除き、次に掲げる事項とする。</div>
+                        <div class="Sentence">立木に関する法律（以下「法」という。）<a class="reference_link" href="#Mp-At_15-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第二項</a>の法務省令で定める事項は、この省令に特別の定めがある場合を除き、次に掲げる事項とする。</div>
                       </div>
                       <div id="Mp-At_7-Pr_1-It_1" class="Item" Num="1">
                         <div class="ItemTitle">一</div>
                         <div class="ItemSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>（<a class="reference_link" href="L_416CO0000000379.html">平成十六年政令第三百七十九号</a>）<a class="reference_link" href="L_416CO0000000379.html#Mp-At_3-Pr_1-It_1">第三条各号</a>（<a class="reference_link" href="#Mp-At_7-Pr_1-It_8">第八号</a>及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_11">第十一号</a>ヘを除く。）に掲げる事項</div>
+                            <a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>（<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年政令第三百七十九号</a>）<a class="reference_link" href="L_416CO0000000379.html#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条各号</a>（<a class="reference_link" href="#Mp-At_7-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号</a>及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号</a>ヘを除く。）に掲げる事項</div>
                         </div>
                       </div>
                       <div id="Mp-At_7-Pr_1-It_2" class="Item" Num="2">
@@ -652,14 +652,14 @@
                     <div id="Mp-At_7-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">立木の登記に係る<a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>の規定の適用については、同令本則中「第三条第七号及び第八号に掲げる事項」とあるのは、「立木の所在する市、区、郡、町、村及び字並びに土地の地番、地目及び地積並びに樹木が一筆の土地の一部に生立するときは当該部分」とする。</div>
+                        <div class="Sentence">立木の登記に係る<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>の規定の適用については、同令本則中「第三条第七号及び第八号に掲げる事項」とあるのは、「立木の所在する市、区、郡、町、村及び字並びに土地の地番、地目及び地積並びに樹木が一筆の土地の一部に生立するときは当該部分」とする。</div>
                       </div>
                     </div>
                     <div id="Mp-At_7-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_3">第三条から前条まで</a>の規定は、法<a class="reference_link" href="#Mp-At_15-Pr_2">第十五条第二項</a>の規定により<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">同条第一項第一号</a>に掲げる事項を申請情報の内容とする場合について準用する。</div>
+                          <a class="reference_link" href="#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条から前条まで</a>の規定は、法<a class="reference_link" href="#Mp-At_15-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第二項</a>の規定により<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第一項第一号</a>に掲げる事項を申請情報の内容とする場合について準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -669,8 +669,8 @@
                     <div id="Mp-At_8-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">立木の登記における<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_67">第六十七条</a>の規定の適用については、<a class="reference_link" href="L_416AC0000000123.html#Mp-At_67-Pr_1">同条第一項</a>中「権利に関する登記」とあるのは、「登記」とする。</div>
+                        <div class="Sentence">立木の登記における<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_67" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十七条</a>の規定の適用については、<a class="reference_link" href="L_416AC0000000123.html#Mp-At_67-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第一項</a>中「権利に関する登記」とあるのは、「登記」とする。</div>
                       </div>
                     </div>
                   </div>
@@ -683,19 +683,19 @@
                     <div id="Mp-At_9-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">立木について所有権の保存の登記の申請をする場合には、<a class="reference_link" href="#Mp-At_10">次条</a>に規定する立木図面をその申請情報と併せて登記所に提供しなければならない。</div>
+                        <div class="Sentence">立木について所有権の保存の登記の申請をする場合には、<a class="reference_link" href="#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条</a>に規定する立木図面をその申請情報と併せて登記所に提供しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_9-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">樹木の集団の範囲を定める件（<a class="reference_link" href="L_307IO0000000012.html">昭和七年勅令第十二号</a>）別表において掲げられていない樹種又は七種を超える種類の樹木をもって組成される樹木の集団について所有権の保存の登記の申請をする場合には、その集団が植栽によって生立させられた樹木の集団であることを証する主務官庁が作成した情報をその申請情報と併せて登記所に提供しなければならない。</div>
+                        <div class="Sentence">樹木の集団の範囲を定める件（<a class="reference_link" href="L_307IO0000000012.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和七年勅令第十二号</a>）別表において掲げられていない樹種又は七種を超える種類の樹木をもって組成される樹木の集団について所有権の保存の登記の申請をする場合には、その集団が植栽によって生立させられた樹木の集団であることを証する主務官庁が作成した情報をその申請情報と併せて登記所に提供しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_9-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">法<a class="reference_link" href="#Mp-At_16-Pr_1-It_2">第十六条第一項第二号</a>（土地の登記記録の表題部に自己が立木の所在する土地の所有者として記録されている者に係る部分を除く。）、<a class="reference_link" href="#Mp-At_16-Pr_1-It_3">第三号</a>及び<a class="reference_link" href="#Mp-At_16-Pr_1-It_4">第四号</a>に掲げる者が所有権の保存の登記を申請する場合には、当該<a class="reference_link" href="#Mp-At_9-Pr_3-It_1">各号</a>に該当する者であることを証する情報をその申請情報と併せて登記所に提供しなければならない。</div>
+                        <div class="Sentence">法<a class="reference_link" href="#Mp-At_16-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第一項第二号</a>（土地の登記記録の表題部に自己が立木の所在する土地の所有者として記録されている者に係る部分を除く。）、<a class="reference_link" href="#Mp-At_16-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>及び<a class="reference_link" href="#Mp-At_16-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>に掲げる者が所有権の保存の登記を申請する場合には、当該<a class="reference_link" href="#Mp-At_9-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に該当する者であることを証する情報をその申請情報と併せて登記所に提供しなければならない。</div>
                       </div>
                     </div>
                   </div>
@@ -742,8 +742,8 @@
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_73">第七十三条</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_74-Pr_2">第七十四条第二項</a>の規定は、立木図面について準用する。</div>
+                          <a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_73" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十三条</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_74-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十四条第二項</a>の規定は、立木図面について準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -753,8 +753,8 @@
                     <div id="Mp-At_11-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">登記官は、所有権の保存の登記をするときは、受付番号の順序に従って、立木図面つづり込み帳に立木図面（<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_18-Pr_1-It_1">第十八条第一号</a>の方法により提供された立木図面を用紙に出力したものを含む。以下同じ。）をつづり込み、これに申請の受付の年月日及び受付番号並びに登記番号を記載し、かつ、丁数を付すものとする。</div>
+                        <div class="Sentence">登記官は、所有権の保存の登記をするときは、受付番号の順序に従って、立木図面つづり込み帳に立木図面（<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_18-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十八条第一号</a>の方法により提供された立木図面を用紙に出力したものを含む。以下同じ。）をつづり込み、これに申請の受付の年月日及び受付番号並びに登記番号を記載し、かつ、丁数を付すものとする。</div>
                       </div>
                     </div>
                   </div>
@@ -777,22 +777,22 @@
                     <div id="Mp-At_13-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">法<a class="reference_link" href="#Mp-At_21-Pr_2">第二十一条第二項</a>の法務省令で定める事項は、<a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>
-                          <a class="reference_link" href="L_416CO0000000379.html#Mp-At_3-Pr_1-It_1">第三条各号</a>（<a class="reference_link" href="#Mp-At_13-Pr_1-It_8">第八号</a>、<a class="reference_link" href="#Mp-At_13-Pr_1-It_10">第十号</a>及び<a class="reference_link" href="#Mp-At_13-Pr_1-It_11">第十一号</a>ヘを除く。）に掲げる事項とする。</div>
+                        <div class="Sentence">法<a class="reference_link" href="#Mp-At_21-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第二項</a>の法務省令で定める事項は、<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>
+                          <a class="reference_link" href="L_416CO0000000379.html#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条各号</a>（<a class="reference_link" href="#Mp-At_13-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号</a>、<a class="reference_link" href="#Mp-At_13-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十号</a>及び<a class="reference_link" href="#Mp-At_13-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号</a>ヘを除く。）に掲げる事項とする。</div>
                       </div>
                     </div>
                     <div id="Mp-At_13-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">立木について抵当権に関する登記の申請をする場合には、<a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>
-                          <a class="reference_link" href="L_416CO0000000379.html#Mp-At_3-Pr_1-It_13">第三条第十三号</a>に掲げる事項（<a class="reference_link" href="#Mp-At_13-Pr_2-It_1">次の各号</a>に掲げる部分に限る。）に代えて、それぞれ当該<a class="reference_link" href="#Mp-At_13-Pr_2-It_1">各号</a>に定める事項を申請情報の内容とする。</div>
+                        <div class="Sentence">立木について抵当権に関する登記の申請をする場合には、<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>
+                          <a class="reference_link" href="L_416CO0000000379.html#Mp-At_3-Pr_1-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第十三号</a>に掲げる事項（<a class="reference_link" href="#Mp-At_13-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる部分に限る。）に代えて、それぞれ当該<a class="reference_link" href="#Mp-At_13-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める事項を申請情報の内容とする。</div>
                       </div>
                       <div id="Mp-At_13-Pr_2-It_1" class="Item" Num="1">
                         <div class="ItemTitle">一</div>
                         <div class="ItemSentence">
                           <div class="Column" Num="1">
                             <div class="Sentence">
-                              <a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>別表の五十五の項申請情報欄ハ</div>
+                              <a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>別表の五十五の項申請情報欄ハ</div>
                           </div>
                           <div class="Column" Num="2">
                             <div class="Sentence">一又は二以上の立木に関する権利を目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以上の立木に関する権利を目的とする抵当権の設定の登記を申請する場合は、前の登記に係る登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目録がある場合にあっては、共同担保目録の記号及び目録番号）</div>
@@ -804,11 +804,11 @@
                         <div class="ItemSentence">
                           <div class="Column" Num="1">
                             <div class="Sentence">
-                              <a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>別表の五十六の項申請情報欄ニ</div>
+                              <a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>別表の五十六の項申請情報欄ニ</div>
                           </div>
                           <div class="Column" Num="2">
-                            <div class="Sentence">一の立木に関する権利を目的とする根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登記（<a class="reference_link" href="L_129AC0000000089.html">民法</a>
-                              <a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16">第三百九十八条の十六</a>の登記をしたものに限る。）をした後、同一の債権の担保として他の一又は二以上の立木に関する権利を目的とする根抵当権の設定の登記及び<a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16">同条</a>の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録番号</div>
+                            <div class="Sentence">一の立木に関する権利を目的とする根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登記（<a class="reference_link" href="L_129AC0000000089.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">民法</a>
+                              <a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三百九十八条の十六</a>の登記をしたものに限る。）をした後、同一の債権の担保として他の一又は二以上の立木に関する権利を目的とする根抵当権の設定の登記及び<a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録番号</div>
                           </div>
                         </div>
                       </div>
@@ -817,7 +817,7 @@
                         <div class="ItemSentence">
                           <div class="Column" Num="1">
                             <div class="Sentence">
-                              <a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>別表の五十八の項申請情報欄ハ</div>
+                              <a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>別表の五十八の項申請情報欄ハ</div>
                           </div>
                           <div class="Column" Num="2">
                             <div class="Sentence">一又は二以上の立木に関する権利を目的とする抵当権の設定の登記をした後、同一の債権の担保として他の一又は二以上の立木に関する権利を目的とする抵当権の処分の登記を申請する場合は、前の登記に係る登記番号及び順位番号（申請を受ける登記所に当該前の登記に係る共同担保目録がある場合にあっては、共同担保目録の記号及び目録番号）</div>
@@ -829,11 +829,11 @@
                         <div class="ItemSentence">
                           <div class="Column" Num="1">
                             <div class="Sentence">
-                              <a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>別表の五十八の項申請情報欄ヘ</div>
+                              <a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>別表の五十八の項申請情報欄ヘ</div>
                           </div>
                           <div class="Column" Num="2">
-                            <div class="Sentence">一の立木に関する権利を目的とする根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登記（<a class="reference_link" href="L_129AC0000000089.html">民法</a>
-                              <a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16">第三百九十八条の十六</a>の登記をしたものに限る。）をした後、同一の債権の担保として他の一又は二以上の立木に関する権利を目的とする根抵当権の処分の登記及び<a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16">同条</a>の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録番号</div>
+                            <div class="Sentence">一の立木に関する権利を目的とする根抵当権の設定の登記又は二以上の立木に関する権利を目的とする根抵当権の設定の登記（<a class="reference_link" href="L_129AC0000000089.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">民法</a>
+                              <a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三百九十八条の十六</a>の登記をしたものに限る。）をした後、同一の債権の担保として他の一又は二以上の立木に関する権利を目的とする根抵当権の処分の登記及び<a class="reference_link" href="L_129AC0000000089.html#Mp-At_398_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>の登記を申請する場合は、前の登記に係る登記番号及び順位番号並びに申請を受ける登記所に当該前の登記に係る共同担保目録があるときは共同担保目録の記号及び目録番号</div>
                           </div>
                         </div>
                       </div>
@@ -845,13 +845,13 @@
                     <div id="Mp-At_14-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">抵当権の設定の登記の申請を書面申請によりするときは、申請人は、法<a class="reference_link" href="#Mp-At_3">第三条</a>の施業方法を記載した別記<a class="reference_link" href="#Mp-At_14-Pr_1-It_1">第一号</a>様式の書面（以下「施業方法書」という。）を提出することができる。</div>
+                        <div class="Sentence">抵当権の設定の登記の申請を書面申請によりするときは、申請人は、法<a class="reference_link" href="#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>の施業方法を記載した別記<a class="reference_link" href="#Mp-At_14-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>様式の書面（以下「施業方法書」という。）を提出することができる。</div>
                       </div>
                     </div>
                     <div id="Mp-At_14-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">施業方法書には、申請人又はその代表者若しくは代理人（委任による代理人を除く。<a class="reference_link" href="#Mp-At_14-Pr_3">次項</a>において同じ。）が記名押印しなければならない。</div>
+                        <div class="Sentence">施業方法書には、申請人又はその代表者若しくは代理人（委任による代理人を除く。<a class="reference_link" href="#Mp-At_14-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>において同じ。）が記名押印しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_14-Pr_3" class="Paragraph" Num="3">
@@ -884,7 +884,7 @@
                     <div id="Mp-At_16-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">登記官が<a class="reference_link" href="#Mp-At_16-Pr_1">前項</a>の記録をしたときは、当該記録に係る施業方法書の記載は、乙区にされたものとみなす。</div>
+                        <div class="Sentence">登記官が<a class="reference_link" href="#Mp-At_16-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の記録をしたときは、当該記録に係る施業方法書の記載は、乙区にされたものとみなす。</div>
                       </div>
                     </div>
                   </div>
@@ -894,14 +894,14 @@
                     <div id="Mp-At_17-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_16">前条</a>の場合において、施業方法の変更の登記又は更正の登記をしたときは、変更前又は更正前の施業方法書の変更又は更正に係る記載を朱抹し、かつ、これに変更後又は更正後の施業方法書をつづり込んだ施業方法書つづり込み簿の冊数及び丁数を記載しなければならない。</div>
+                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条</a>の場合において、施業方法の変更の登記又は更正の登記をしたときは、変更前又は更正前の施業方法書の変更又は更正に係る記載を朱抹し、かつ、これに変更後又は更正後の施業方法書をつづり込んだ施業方法書つづり込み簿の冊数及び丁数を記載しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_17-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_14">前三条</a>の規定は、施業方法の変更の登記又は更正の登記について準用する。</div>
+                          <a class="reference_link" href="#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前三条</a>の規定は、施業方法の変更の登記又は更正の登記について準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -915,21 +915,21 @@
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_34-Pr_1-It_1">第三十四条第一項各号</a>又は法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項各号</a>に掲げる登記事項に関する変更の登記又は更正の登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項各号</a>に掲げる事項及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_1">第七条第一項第一号</a>に掲げる事項のほか、変更後又は更正後の登記事項とする。</div>
+                          <a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_34-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第一項各号</a>又は法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項各号</a>に掲げる登記事項に関する変更の登記又は更正の登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項各号</a>に掲げる事項及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第一項第一号</a>に掲げる事項のほか、変更後又は更正後の登記事項とする。</div>
                       </div>
                     </div>
                     <div id="Mp-At_18-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項第一号</a>に掲げる事項についての変更の登記又は更正の登記の申請をする場合には、その申請情報と併せて変更後又は更正後の立木図面を登記所に提供しなければならない。</div>
+                        <div class="Sentence">法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項第一号</a>に掲げる事項についての変更の登記又は更正の登記の申請をする場合には、その申請情報と併せて変更後又は更正後の立木図面を登記所に提供しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_18-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_11">第十一条</a>及び<a class="reference_link" href="#Mp-At_12">第十二条</a>の規定は、<a class="reference_link" href="#Mp-At_18-Pr_2">前項</a>の登記をする場合について準用する。</div>
+                          <a class="reference_link" href="#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>及び<a class="reference_link" href="#Mp-At_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条</a>の規定は、<a class="reference_link" href="#Mp-At_18-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の登記をする場合について準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -949,8 +949,8 @@
                     <div id="Mp-At_20-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">立木の分割の登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項各号</a>に掲げる事項及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_1">第七条第一項第一号</a>に掲げる事項のほか、分割後の立木に係る<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_34-Pr_1-It_1">第三十四条第一項各号</a>に掲げる事項及び法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項各号</a>に掲げる事項とする。</div>
+                        <div class="Sentence">立木の分割の登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項各号</a>に掲げる事項及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第一項第一号</a>に掲げる事項のほか、分割後の立木に係る<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_34-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第一項各号</a>に掲げる事項及び法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項各号</a>に掲げる事項とする。</div>
                       </div>
                     </div>
                   </div>
@@ -966,7 +966,7 @@
                     <div id="Mp-At_21-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_21-Pr_1">前項</a>の場合には、甲立木の登記記録に、立木の表題部の登記事項、登記第何号の立木を分割した旨及び従前の立木の表題部の登記事項の変更部分を抹消する記号を記録しなければならない。</div>
+                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の場合には、甲立木の登記記録に、立木の表題部の登記事項、登記第何号の立木を分割した旨及び従前の立木の表題部の登記事項の変更部分を抹消する記号を記録しなければならない。</div>
                       </div>
                     </div>
                   </div>
@@ -976,29 +976,29 @@
                     <div id="Mp-At_22-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence" Num="1">登記官は、<a class="reference_link" href="#Mp-At_21">前条</a>の場合において、乙立木の登記記録の権利部の相当区に甲立木の登記記録から権利に関する登記を転写し、分割の登記に係る申請の受付の年月日及び受付番号を記録しなければならない。</div>
+                        <div class="Sentence" Num="1">登記官は、<a class="reference_link" href="#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条</a>の場合において、乙立木の登記記録の権利部の相当区に甲立木の登記記録から権利に関する登記を転写し、分割の登記に係る申請の受付の年月日及び受付番号を記録しなければならない。</div>
                         <div class="Sentence" Num="2">この場合において、抵当権又は先取特権（以下「担保権」と総称する。）について既にその担保権についての共同担保目録が作成されているときを除き共同担保目録を作成し、転写した担保権の登記の末尾にその共同担保目録の記号及び目録番号を記録しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_22-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_22-Pr_1">前項</a>の場合において、転写する登記に係る権利が担保権であり、かつ、既に当該担保権についての共同担保目録が作成されているときは、<a class="reference_link" href="#Mp-At_22-Pr_1">同項</a>の規定により転写された登記に係る乙立木に関する担保権を当該共同担保目録に記録しなければならない。</div>
+                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_22-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の場合において、転写する登記に係る権利が担保権であり、かつ、既に当該担保権についての共同担保目録が作成されているときは、<a class="reference_link" href="#Mp-At_22-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の規定により転写された登記に係る乙立木に関する担保権を当該共同担保目録に記録しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_22-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">登記官は、甲立木の登記記録から乙立木の登記記録に担保権に関する登記を転写したときは、分割後の甲立木の登記記録の当該担保権に関する登記に、既に当該担保権についての共同担保目録が作成されているときを除き<a class="reference_link" href="#Mp-At_22-Pr_1">第一項</a>の規定により作成した共同担保目録の記号及び目録番号を記録しなければならない。</div>
+                        <div class="Sentence">登記官は、甲立木の登記記録から乙立木の登記記録に担保権に関する登記を転写したときは、分割後の甲立木の登記記録の当該担保権に関する登記に、既に当該担保権についての共同担保目録が作成されているときを除き<a class="reference_link" href="#Mp-At_22-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の規定により作成した共同担保目録の記号及び目録番号を記録しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_22-Pr_4" class="Paragraph" Num="4">
                       <div class="ParagraphNum">４</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_40">第四十条</a>及び<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_104-Pr_1">第百四条第一項から第三項まで</a>の規定は、立木の分割の登記について準用する。</div>
+                          <a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>及び<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_104-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四条第一項から第三項まで</a>の規定は、立木の分割の登記について準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -1008,8 +1008,8 @@
                     <div id="Mp-At_23-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">立木の合併の登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項各号</a>に掲げる事項及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_1">第七条第一項第一号</a>に掲げる事項のほか、合併後の立木に係る<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_34-Pr_1-It_1">第三十四条第一項各号</a>に掲げる事項及び法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項各号</a>に掲げる事項とする。</div>
+                        <div class="Sentence">立木の合併の登記の申請をする場合に登記所に提供しなければならない申請情報の内容は、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項各号</a>に掲げる事項及び<a class="reference_link" href="#Mp-At_7-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第一項第一号</a>に掲げる事項のほか、合併後の立木に係る<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                          <a class="reference_link" href="L_416AC0000000123.html#Mp-At_34-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第一項各号</a>に掲げる事項及び法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項各号</a>に掲げる事項とする。</div>
                       </div>
                     </div>
                     <div id="Mp-At_23-Pr_2" class="Paragraph" Num="2">
@@ -1026,7 +1026,7 @@
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_19">第十九条</a>の規定は、合併により立木が七種を超える種類の樹木をもって組成される樹木の集団となった場合において合併の登記の申請をするときについて準用する。</div>
+                          <a class="reference_link" href="#Mp-At_19" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条</a>の規定は、合併により立木が七種を超える種類の樹木をもって組成される樹木の集団となった場合において合併の登記の申請をするときについて準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -1042,15 +1042,15 @@
                     <div id="Mp-At_25-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_25-Pr_1">前項</a>の場合には、甲立木の登記記録の表題部に登記第何号の立木に合併した旨及び従前の立木の表題部の登記事項を抹消する記号を記録し、当該登記記録を閉鎖しなければならない。</div>
+                        <div class="Sentence">登記官は、<a class="reference_link" href="#Mp-At_25-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の場合には、甲立木の登記記録の表題部に登記第何号の立木に合併した旨及び従前の立木の表題部の登記事項を抹消する記号を記録し、当該登記記録を閉鎖しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_25-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_107-Pr_1">第百七条第一項</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_107-Pr_6">第六項</a>の規定は、<a class="reference_link" href="#Mp-At_25-Pr_1">第一項</a>の場合について準用する。</div>
+                          <a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_107-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百七条第一項</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_107-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六項</a>の規定は、<a class="reference_link" href="#Mp-At_25-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の場合について準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -1061,21 +1061,21 @@
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
                         <div class="Sentence" Num="1">登記官は、甲立木の一部を分割して、これを乙立木に合併する場合において、分割の登記及び合併の登記をするときは、乙立木の登記記録の表題部に、合併後の立木の表題部の登記事項及び登記第何号の立木の一部を合併した旨並びに従前の立木の表題部の登記事項の変更部分を抹消する記号を記録しなければならない。</div>
-                        <div class="Sentence" Num="2">この場合には、<a class="reference_link" href="#Mp-At_25-Pr_1">前条第一項</a>及び<a class="reference_link" href="#Mp-At_25-Pr_2">第二項</a>の規定は、適用しない。</div>
+                        <div class="Sentence" Num="2">この場合には、<a class="reference_link" href="#Mp-At_25-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第一項</a>及び<a class="reference_link" href="#Mp-At_25-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の規定は、適用しない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_26-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence" Num="1">登記官は、<a class="reference_link" href="#Mp-At_26-Pr_1">前項</a>に規定する登記をするときは、甲立木の登記記録の表題部に、残余部分の立木の表題部の登記事項、登記第何号の立木に一部を合併した旨及び従前の立木の表題部の登記事項の変更部分を抹消する記号を記録しなければならない。</div>
-                        <div class="Sentence" Num="2">この場合には、<a class="reference_link" href="#Mp-At_21">第二十一条</a>の規定は、適用しない。</div>
+                        <div class="Sentence" Num="1">登記官は、<a class="reference_link" href="#Mp-At_26-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>に規定する登記をするときは、甲立木の登記記録の表題部に、残余部分の立木の表題部の登記事項、登記第何号の立木に一部を合併した旨及び従前の立木の表題部の登記事項の変更部分を抹消する記号を記録しなければならない。</div>
+                        <div class="Sentence" Num="2">この場合には、<a class="reference_link" href="#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の規定は、適用しない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_26-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_22-Pr_4">第二十二条第四項</a>及び<a class="reference_link" href="#Mp-At_25-Pr_3">前条第三項</a>の規定は、<a class="reference_link" href="#Mp-At_26-Pr_1">第一項</a>の場合について準用する。</div>
+                          <a class="reference_link" href="#Mp-At_22-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第四項</a>及び<a class="reference_link" href="#Mp-At_25-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第三項</a>の規定は、<a class="reference_link" href="#Mp-At_26-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の場合について準用する。</div>
                       </div>
                     </div>
                   </div>
@@ -1086,9 +1086,9 @@
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
                         <div class="Sentence" Num="1">
-                          <a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_109">第百九条</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_110">第百十条</a>の規定は、立木の滅失の登記について準用する。</div>
-                        <div class="Sentence" Num="2">この場合において、これらの規定中「土地」とあるのは「立木」と、同令<a class="reference_link" href="#Mp-At_110">第百十条</a>中「不動産所在事項」とあるのは「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」と読み替えるものとする。</div>
+                          <a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_109" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百九条</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_110" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十条</a>の規定は、立木の滅失の登記について準用する。</div>
+                        <div class="Sentence" Num="2">この場合において、これらの規定中「土地」とあるのは「立木」と、同令<a class="reference_link" href="#Mp-At_110" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十条</a>中「不動産所在事項」とあるのは「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」と読み替えるものとする。</div>
                       </div>
                     </div>
                   </div>
@@ -1102,13 +1102,13 @@
                   <div id="Mp-At_28-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">法<a class="reference_link" href="#Mp-At_19-Pr_1">第十九条第一項</a>の規定により立木の登記記録を表示するには、立木の登記の登記番号を記録する方法によってする。</div>
+                      <div class="Sentence">法<a class="reference_link" href="#Mp-At_19-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条第一項</a>の規定により立木の登記記録を表示するには、立木の登記の登記番号を記録する方法によってする。</div>
                     </div>
                   </div>
                   <div id="Mp-At_28-Pr_2" class="Paragraph" Num="2">
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">法<a class="reference_link" href="#Mp-At_19-Pr_1">第十九条第一項</a>及び<a class="reference_link" href="#Mp-At_19-Pr_2">第二項</a>の登記官を明らかにする措置は、登記記録に登記官の識別番号を記録する措置とする。</div>
+                      <div class="Sentence">法<a class="reference_link" href="#Mp-At_19-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条第一項</a>及び<a class="reference_link" href="#Mp-At_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の登記官を明らかにする措置は、登記記録に登記官の識別番号を記録する措置とする。</div>
                     </div>
                   </div>
                 </div>
@@ -1119,8 +1119,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_102">第百二条</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_168">第百六十八条</a>（<a class="reference_link" href="#Mp-At_29-Pr_1">第一項</a>を除く。）の規定は、法<a class="reference_link" href="#Mp-At_18">第十八条</a>の場合について準用する。</div>
+                        <a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_102" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二条</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_168" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百六十八条</a>（<a class="reference_link" href="#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>を除く。）の規定は、法<a class="reference_link" href="#Mp-At_18" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十八条</a>の場合について準用する。</div>
                     </div>
                   </div>
                 </div>
@@ -1141,7 +1141,7 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="#Mp-At_31-Pr_1-It_1">次の各号</a>に掲げる書面又は情報の保存期間は、当該<a class="reference_link" href="#Mp-At_31-Pr_1-It_1">各号</a>に定めるとおりとする。</div>
+                        <a class="reference_link" href="#Mp-At_31-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる書面又は情報の保存期間は、当該<a class="reference_link" href="#Mp-At_31-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定めるとおりとする。</div>
                     </div>
                     <div id="Mp-At_31-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -1174,9 +1174,9 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                        <a class="reference_link" href="L_416AC0000000123.html#Mp-At_21">第二十一条</a>本文の規定により登記識別情報を通知するとき又は<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_181-Pr_1">第百八十一条第一項</a>の規定により登記が完了した旨を通知するときは、登記番号も通知するものとする。</div>
+                        <a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                        <a class="reference_link" href="L_416AC0000000123.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>本文の規定により登記識別情報を通知するとき又は<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_181-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百八十一条第一項</a>の規定により登記が完了した旨を通知するときは、登記番号も通知するものとする。</div>
                     </div>
                   </div>
                 </div>
@@ -1186,15 +1186,15 @@
                   <div id="Mp-At_33-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">立木の登記記録についての登記事項証明書若しくは登記事項要約書の交付又は登記簿の附属書類の閲覧を請求する場合において、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">第十五条第一項第一号</a>に規定する名称又は番号が登記されているときは、<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_193-Pr_1-It_1">第百九十三条第一項各号</a>又は<a class="reference_link" href="L_417M60000010018.html#Mp-At_193-Pr_2-It_1">第二項各号</a>に掲げる事項のほか、当該名称又は番号を請求情報の内容としなければならない。</div>
+                      <div class="Sentence">立木の登記記録についての登記事項証明書若しくは登記事項要約書の交付又は登記簿の附属書類の閲覧を請求する場合において、法<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項第一号</a>に規定する名称又は番号が登記されているときは、<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_193-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百九十三条第一項各号</a>又は<a class="reference_link" href="L_417M60000010018.html#Mp-At_193-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項各号</a>に掲げる事項のほか、当該名称又は番号を請求情報の内容としなければならない。</div>
                     </div>
                   </div>
                   <div id="Mp-At_33-Pr_2" class="Paragraph" Num="2">
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">立木の登記記録について登記事項証明書の交付の請求をする場合において、施業方法書に記載された事項について証明を求めるときは、<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_193-Pr_1-It_1">第百九十三条第一項各号</a>に掲げる事項のほか、当該証明を求める旨を請求情報の内容としなければならない。</div>
+                      <div class="Sentence">立木の登記記録について登記事項証明書の交付の請求をする場合において、施業方法書に記載された事項について証明を求めるときは、<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                        <a class="reference_link" href="L_417M60000010018.html#Mp-At_193-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百九十三条第一項各号</a>に掲げる事項のほか、当該証明を求める旨を請求情報の内容としなければならない。</div>
                     </div>
                   </div>
                 </div>
@@ -1204,7 +1204,7 @@
                   <div id="Mp-At_34-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence" Num="1">立木の登記記録について作成する登記事項証明書は、<a class="reference_link" href="#Mp-At_34-Pr_1-It_1">次の各号</a>の区分に応じ、当該<a class="reference_link" href="#Mp-At_34-Pr_1-It_1">各号</a>に定める様式によるものとする。</div>
+                      <div class="Sentence" Num="1">立木の登記記録について作成する登記事項証明書は、<a class="reference_link" href="#Mp-At_34-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>の区分に応じ、当該<a class="reference_link" href="#Mp-At_34-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める様式によるものとする。</div>
                       <div class="Sentence" Num="2">ただし、登記記録に記録した事項の一部についての登記事項証明書については適宜の様式によるものとする。</div>
                     </div>
                     <div id="Mp-At_34-Pr_1-It_1" class="Item" Num="1">
@@ -1214,7 +1214,7 @@
                           <div class="Sentence">立木の登記記録</div>
                         </div>
                         <div class="Column" Num="2">
-                          <div class="Sentence">別記<a class="reference_link" href="#Mp-At_34-Pr_1-It_2">第二号</a>様式</div>
+                          <div class="Sentence">別記<a class="reference_link" href="#Mp-At_34-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>様式</div>
                         </div>
                       </div>
                     </div>
@@ -1225,7 +1225,7 @@
                           <div class="Sentence">施業方法書</div>
                         </div>
                         <div class="Column" Num="2">
-                          <div class="Sentence">別記<a class="reference_link" href="#Mp-At_34-Pr_1-It_1">第一号</a>様式</div>
+                          <div class="Sentence">別記<a class="reference_link" href="#Mp-At_34-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>様式</div>
                         </div>
                       </div>
                     </div>
@@ -1243,9 +1243,9 @@
                   <div id="Mp-At_35-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">立木の登記に関する<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>
-                        <a class="reference_link" href="L_416AC0000000123.html#Mp-At_121">第百二十一条</a>及び<a class="reference_link" href="L_416CO0000000379.html">不動産登記令</a>
-                        <a class="reference_link" href="L_416CO0000000379.html#Mp-At_21-Pr_1">第二十一条第一項</a>の規定の適用については、<a class="reference_link" href="L_416CO0000000379.html#Mp-At_21-Pr_1">同項中</a>「土地所在図」とあるのは、「立木図面」とする。</div>
+                      <div class="Sentence">立木の登記に関する<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>
+                        <a class="reference_link" href="L_416AC0000000123.html#Mp-At_121" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二十一条</a>及び<a class="reference_link" href="L_416CO0000000379.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記令</a>
+                        <a class="reference_link" href="L_416CO0000000379.html#Mp-At_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第一項</a>の規定の適用については、<a class="reference_link" href="L_416CO0000000379.html#Mp-At_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項中</a>「土地所在図」とあるのは、「立木図面」とする。</div>
                     </div>
                   </div>
                 </div>
@@ -1269,7 +1269,7 @@
                 <div id="Sp-At_1-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">この省令は、<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>の施行の日（平成十七年三月七日）から施行する。</div>
+                    <div class="Sentence">この省令は、<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>の施行の日（平成十七年三月七日）から施行する。</div>
                   </div>
                 </div>
               </div>
@@ -1279,14 +1279,14 @@
                 <div id="Sp-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">改正後の<a class="reference_link" href="L_417M60000010026.html">立木登記規則</a>（以下「新令」という。）の規定は、この附則に特別の定めがある場合を除き、この省令の施行前に生じた事項にも適用する。</div>
-                    <div class="Sentence" Num="2">ただし、改正前の<a class="reference_link" href="L_417M60000010026.html">立木登記規則</a>（以下「旧令」という。）の規定により生じた効力を妨げない。</div>
+                    <div class="Sentence" Num="1">改正後の<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">立木登記規則</a>（以下「新令」という。）の規定は、この附則に特別の定めがある場合を除き、この省令の施行前に生じた事項にも適用する。</div>
+                    <div class="Sentence" Num="2">ただし、改正前の<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">立木登記規則</a>（以下「旧令」という。）の規定により生じた効力を妨げない。</div>
                   </div>
                 </div>
                 <div id="Sp-At_2-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">この省令の施行前にした<a class="reference_link" href="L_417M60000010026.html">旧令</a>の規定による処分、手続その他の行為は、この附則に特別の定めがある場合を除き、<a class="reference_link" href="L_417M60000010026.html">新令</a>の相当規定によってしたものとみなす。</div>
+                    <div class="Sentence">この省令の施行前にした<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧令</a>の規定による処分、手続その他の行為は、この附則に特別の定めがある場合を除き、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>の相当規定によってしたものとみなす。</div>
                   </div>
                 </div>
               </div>
@@ -1301,8 +1301,8 @@
                 <div id="Sp-At_3-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">登記所において現に保存する<a class="reference_link" href="L_417M60000010026.html">旧令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_14">第十四条</a>ノ二の実測図面の謄本に係る<a class="reference_link" href="L_417M60000010026.html#Mp-At_14">同条</a>の規定の適用については、なお従前の例による。</div>
+                    <div class="Sentence">登記所において現に保存する<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>ノ二の実測図面の謄本に係る<a class="reference_link" href="L_417M60000010026.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>の規定の適用については、なお従前の例による。</div>
                   </div>
                 </div>
               </div>
@@ -1313,24 +1313,24 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_417M60000010026.html">新令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_1">第一条</a>及び<a class="reference_link" href="L_417M60000010026.html#Mp-At_34">第三十四条</a>の規定は、<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>附則第三条第一項の規定による指定（<a class="reference_link" href="L_417M60000010026.html#Mp-At_34-Pr_3">同条第三項</a>の規定により指定を受けたものとみなされるものを含む。以下「第三条指定」という。）を受けた事務について、その第三条指定の日から適用する。</div>
+                      <a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>及び<a class="reference_link" href="L_417M60000010026.html#Mp-At_34" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条</a>の規定は、<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>附則第三条第一項の規定による指定（<a class="reference_link" href="L_417M60000010026.html#Mp-At_34-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>の規定により指定を受けたものとみなされるものを含む。以下「第三条指定」という。）を受けた事務について、その第三条指定の日から適用する。</div>
                   </div>
                 </div>
                 <div id="Sp-At_4-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">第三条指定がされるまでの間は、第三条指定を受けていない事務（<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>附則第三条第一項ただし書に規定する登記簿に関する事務を含む。）に係る旧登記簿（不動産登記法の施行に伴う関係法律の整備等に関する法律（以下「整備法」という。）第十二条第二項の規定によりなおその効力を有することとされる整備法第十一条の規定による改正前の法第十四条に規定する立木登記簿をいい、<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>附則第三条第四項の規定によりなおその効力を有することとされる改正前の<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>（明治三十二年法律第二十四号）<a class="reference_link" href="L_416AC0000000123.html#Mp-At_24">第二十四条</a>ノ二第一項に規定する閉鎖登記簿（立木登記簿に係る部分に限る。）を含む。以下同じ。）については、<a class="reference_link" href="L_417M60000010026.html">旧令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_2">第二条から第六条まで</a>、<a class="reference_link" href="L_417M60000010026.html#Mp-At_17">第十七条</a>ノ二及び第二十四条ノ三の規定は、なおその効力を有する。</div>
-                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="L_417M60000010026.html">旧令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_3-Pr_2">第三条第二項</a>中「不動産登記法施行細則第五十二条」とあるのは「<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>（<a class="reference_link" href="L_417M60000010018.html">平成十七年法務省令第十八号</a>）附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル不動産登記法施行細則（明治三十二年司法省令第十一号。以下「旧細則」ト称ス）第五十二条」と、<a class="reference_link" href="L_417M60000010026.html">旧令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_5">第五条</a>ノ四第二項中「不動産登記法施行細則第七条第二項及第三項」とあるのは「不動産登記規則附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル旧細則第七条第二項及第三項」とする。</div>
+                    <div class="Sentence" Num="1">第三条指定がされるまでの間は、第三条指定を受けていない事務（<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>附則第三条第一項ただし書に規定する登記簿に関する事務を含む。）に係る旧登記簿（不動産登記法の施行に伴う関係法律の整備等に関する法律（以下「整備法」という。）第十二条第二項の規定によりなおその効力を有することとされる整備法第十一条の規定による改正前の法第十四条に規定する立木登記簿をいい、<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>附則第三条第四項の規定によりなおその効力を有することとされる改正前の<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>（明治三十二年法律第二十四号）<a class="reference_link" href="L_416AC0000000123.html#Mp-At_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条</a>ノ二第一項に規定する閉鎖登記簿（立木登記簿に係る部分に限る。）を含む。以下同じ。）については、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条から第六条まで</a>、<a class="reference_link" href="L_417M60000010026.html#Mp-At_17" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条</a>ノ二及び第二十四条ノ三の規定は、なおその効力を有する。</div>
+                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第二項</a>中「不動産登記法施行細則第五十二条」とあるのは「<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>（<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十七年法務省令第十八号</a>）附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル不動産登記法施行細則（明治三十二年司法省令第十一号。以下「旧細則」ト称ス）第五十二条」と、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条</a>ノ四第二項中「不動産登記法施行細則第七条第二項及第三項」とあるのは「不動産登記規則附則第四条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトサレタル旧細則第七条第二項及第三項」とする。</div>
                   </div>
                 </div>
                 <div id="Sp-At_4-Pr_3" class="Paragraph" Num="3">
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">第三条指定がされるまでの間における前項の事務についての<a class="reference_link" href="L_417M60000010026.html">新令</a>の適用については、<a class="reference_link" href="L_417M60000010026.html">新令</a>本則中「登記記録」とあるのは、「登記用紙」とする。</div>
+                    <div class="Sentence">第三条指定がされるまでの間における前項の事務についての<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>の適用については、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>本則中「登記記録」とあるのは、「登記用紙」とする。</div>
                   </div>
                 </div>
                 <div id="Sp-At_4-Pr_4" class="Paragraph" Num="4">
@@ -1353,7 +1353,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>附則第七条の規定は、立木の所在地が当該立木に係る事務について第三条指定を受けている甲登記所の管轄から当該事務について第三条指定を受けていない乙登記所の管轄に転属した場合について準用する。</div>
+                      <a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>附則第七条の規定は、立木の所在地が当該立木に係る事務について第三条指定を受けている甲登記所の管轄から当該事務について第三条指定を受けていない乙登記所の管轄に転属した場合について準用する。</div>
                   </div>
                 </div>
               </div>
@@ -1364,8 +1364,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                      <a class="reference_link" href="L_417M60000010018.html#Mp-At_8">第八条</a>の規定は、立木の所在地が当該立木に係る事務について第三条指定を受けていない甲登記所の管轄から当該事務について第三条指定を受けている乙登記所の管轄に転属した場合について準用する。</div>
+                      <a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                      <a class="reference_link" href="L_417M60000010018.html#Mp-At_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条</a>の規定は、立木の所在地が当該立木に係る事務について第三条指定を受けていない甲登記所の管轄から当該事務について第三条指定を受けている乙登記所の管轄に転属した場合について準用する。</div>
                   </div>
                 </div>
               </div>
@@ -1375,23 +1375,23 @@
                 <div id="Sp-At_7-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">立木の登記の事務について<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>附則第六条の指定（以下「第六条指定」という。）を受けていない登記所の登記手続に係る登記の申請をする場合における<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>附則第十五条第二項の適用については、同項中「不動産所在事項」とあるのは、「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」とする。</div>
+                    <div class="Sentence">立木の登記の事務について<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>附則第六条の指定（以下「第六条指定」という。）を受けていない登記所の登記手続に係る登記の申請をする場合における<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>附則第十五条第二項の適用については、同項中「不動産所在事項」とあるのは、「立木の所在する市、区、郡、町、村、字及び土地の地番並びに樹木が一筆の土地の一部に生立するときは当該部分」とする。</div>
                   </div>
                 </div>
                 <div id="Sp-At_7-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">
-                      <a class="reference_link" href="L_417M60000010026.html">旧令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_14">第十四条</a>ノ三第五項の規定は、第六条指定がされるまでの間は、第六条指定を受けていない登記手続について、なおその効力を有する。</div>
+                      <a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>ノ三第五項の規定は、第六条指定がされるまでの間は、第六条指定を受けていない登記手続について、なおその効力を有する。</div>
                     <div class="Sentence" Num="2">この場合において、同項中「申請書ノ副本」とあるのは、「不動産登記規則附則第十五条第二項ノ規定ニ依リ提出サレタル書面」とする。</div>
                   </div>
                 </div>
                 <div id="Sp-At_7-Pr_3" class="Paragraph" Num="3">
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">第六条指定がされるまでの間、各登記所の登記手続についての<a class="reference_link" href="L_417M60000010026.html">新令</a>の規定の適用については、<a class="reference_link" href="L_417M60000010026.html">新令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_32">第三十二条</a>中「不動産登記法第二十一条本文」とあるのは「不動産登記法附則第六条第三項の規定により読み替えて適用される同法第二十一条本文」と、「登記識別情報を通知するとき又は不動産登記規則第百八十一条第一項の規定により登記が完了した旨を通知する」とあるのは「登記済証を交付する」と、「登記番号も通知する」とあるのは「これに登記番号も記載する」とする。</div>
+                    <div class="Sentence">第六条指定がされるまでの間、各登記所の登記手続についての<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>の規定の適用については、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_32" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十二条</a>中「不動産登記法第二十一条本文」とあるのは「不動産登記法附則第六条第三項の規定により読み替えて適用される同法第二十一条本文」と、「登記識別情報を通知するとき又は不動産登記規則第百八十一条第一項の規定により登記が完了した旨を通知する」とあるのは「登記済証を交付する」と、「登記番号も通知する」とあるのは「これに登記番号も記載する」とする。</div>
                   </div>
                 </div>
               </div>
@@ -1401,8 +1401,8 @@
                 <div id="Sp-At_8-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">民法の一部を改正する法律（平成十六年法律第百四十七号）の施行の日の前日までの間における<a class="reference_link" href="L_417M60000010026.html">新令</a>
-                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_13-Pr_2-It_2">第十三条第二項第二号</a>及び<a class="reference_link" href="L_417M60000010026.html#Mp-At_13-Pr_2-It_4">第四号</a>の規定の適用については、<a class="reference_link" href="L_417M60000010026.html">新令</a>中「第三百九十八条の十六」とあるのは、「第三百九十八条ノ十六」とする。</div>
+                    <div class="Sentence">民法の一部を改正する法律（平成十六年法律第百四十七号）の施行の日の前日までの間における<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>
+                      <a class="reference_link" href="L_417M60000010026.html#Mp-At_13-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条第二項第二号</a>及び<a class="reference_link" href="L_417M60000010026.html#Mp-At_13-Pr_2-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>の規定の適用については、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新令</a>中「第三百九十八条の十六」とあるのは、「第三百九十八条ノ十六」とする。</div>
                   </div>
                 </div>
               </div>
@@ -1418,7 +1418,7 @@
               <div id="Sp_平成一七年四月二〇日法務省令第六三号-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省令による改正後の<a class="reference_link" href="L_333M50000010038.html">企業担保登記規則</a>、不動産等の管轄登記所の指定に関する省令、独立行政法人緑資源機構法による不動産登記の手続に関する省令、<a class="reference_link" href="L_417M60000010023.html">工場抵当登記規則</a>、<a class="reference_link" href="L_417M60000010026.html">立木登記規則</a>、<a class="reference_link" href="L_417M60000010027.html">船舶登記規則</a>、<a class="reference_link" href="L_417M60000010029.html">農業用動産抵当登記規則</a>、<a class="reference_link" href="L_417M60000010030.html">建設機械登記規則</a>並びに不動産登記法及び不動産登記法の施行に伴う関係法律の整備等に関する法律の施行に伴う法務省関係省令の整備等に関する省令の規定は、<a class="reference_link" href="L_416AC0000000123.html">不動産登記法</a>（<a class="reference_link" href="L_416AC0000000123.html">平成十六年法律第百二十三号</a>）の施行の日（平成十七年三月七日）から適用する。</div>
+                  <div class="Sentence">この省令による改正後の<a class="reference_link" href="L_333M50000010038.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">企業担保登記規則</a>、不動産等の管轄登記所の指定に関する省令、独立行政法人緑資源機構法による不動産登記の手続に関する省令、<a class="reference_link" href="L_417M60000010023.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">工場抵当登記規則</a>、<a class="reference_link" href="L_417M60000010026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">立木登記規則</a>、<a class="reference_link" href="L_417M60000010027.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶登記規則</a>、<a class="reference_link" href="L_417M60000010029.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">農業用動産抵当登記規則</a>、<a class="reference_link" href="L_417M60000010030.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建設機械登記規則</a>並びに不動産登記法及び不動産登記法の施行に伴う関係法律の整備等に関する法律の施行に伴う法務省関係省令の整備等に関する省令の規定は、<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>（<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年法律第百二十三号</a>）の施行の日（平成十七年三月七日）から適用する。</div>
                 </div>
               </div>
             </div>
@@ -1450,10 +1450,10 @@
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
-                        <div class="Sentence">第一条中<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_64">第六十四条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_69">第六十九条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_181-Pr_2">第百八十一条第二項</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_182">第百八十二条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_182_2">第百八十二条の二</a>及び別記第六号の改正規定、第八条の規定、第九条の規定、第十条中<a class="reference_link" href="L_417M60000010027.html">船舶登記規則</a>
-                          <a class="reference_link" href="L_417M60000010027.html#Mp-At_49">第四十九条</a>の改正規定（同令第百九十五条を削る改正規定を除く。）、第十一条中<a class="reference_link" href="L_417M60000010029.html">農業用動産抵当登記規則</a>
-                          <a class="reference_link" href="L_417M60000010029.html#Mp-At_40">第四十条</a>の改正規定（同令第百九十五条を削る改正規定を除く。）、第十二条の規定並びに第十四条の規定</div>
+                        <div class="Sentence">第一条中<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                          <a class="reference_link" href="L_417M60000010018.html#Mp-At_64" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十四条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_69" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十九条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_181-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百八十一条第二項</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_182" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百八十二条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_182_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百八十二条の二</a>及び別記第六号の改正規定、第八条の規定、第九条の規定、第十条中<a class="reference_link" href="L_417M60000010027.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶登記規則</a>
+                          <a class="reference_link" href="L_417M60000010027.html#Mp-At_49" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十九条</a>の改正規定（同令第百九十五条を削る改正規定を除く。）、第十一条中<a class="reference_link" href="L_417M60000010029.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">農業用動産抵当登記規則</a>
+                          <a class="reference_link" href="L_417M60000010029.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>の改正規定（同令第百九十五条を削る改正規定を除く。）、第十二条の規定並びに第十四条の規定</div>
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence">平成二十三年六月二十七日</div>
@@ -1469,8 +1469,8 @@
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
                   <div class="Sentence" Num="1">この省令は、地方自治法の一部を改正する法律の施行の日（平成二十八年四月一日）から施行する。</div>
-                  <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_417M60000010018.html">不動産登記規則</a>
-                    <a class="reference_link" href="L_417M60000010018.html#Mp-At_107">第百七条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_134-Pr_1">第百三十四条第一項</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_139">第百三十九条</a>の改正規定並びに第三条の規定は、公布の日から施行する。</div>
+                  <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_417M60000010018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記規則</a>
+                    <a class="reference_link" href="L_417M60000010018.html#Mp-At_107" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百七条</a>、<a class="reference_link" href="L_417M60000010018.html#Mp-At_134-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十四条第一項</a>及び<a class="reference_link" href="L_417M60000010018.html#Mp-At_139" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十九条</a>の改正規定並びに第三条の規定は、公布の日から施行する。</div>
                 </div>
               </div>
             </div>

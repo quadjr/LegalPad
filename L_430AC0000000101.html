@@ -23,14 +23,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（選挙の期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -38,7 +38,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（告示の期日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（同一の地方公共団体における任期満了選挙の同時選挙の取扱い）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
                     <a class="title_text" href="#Mp-At_4">第四条（同時選挙）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
                     <a class="title_text" href="#Mp-At_5">第五条（立候補の禁止）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -70,7 +70,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
                     <a class="title_text" href="#Mp-At_6">第六条（寄附等の禁止期間）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -78,7 +78,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-At_7')">
                     <a class="title_text" href="#Mp-At_7">第七条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -86,7 +86,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-At_8')">
                     <a class="title_text" href="#Mp-At_8">第八条（政令への委任）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -96,7 +96,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -110,43 +110,43 @@
                 <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">平成三十一年三月一日から同年五月三十一日までの間に任期が満了することとなる地方公共団体（都道府県、市町村及び特別区に限る。以下同じ。）の議会の議員又は長の任期満了による選挙の期日は、当該選挙を同年二月二十八日以前に行う場合及び<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>（<a class="reference_link" href="L_325AC1000000100.html">昭和二十五年法律第百号</a>）<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_1">第三十四条の二第一項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_3">第三項</a>（これらの規定を<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_4">同条第四項</a>において準用する場合を含む。）の規定により行う場合を除き、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_1">第三十三条第一項</a>の規定にかかわらず、都道府県及び<a class="reference_link" href="L_322AC0000000067.html">地方自治法</a>（<a class="reference_link" href="L_322AC0000000067.html">昭和二十二年法律第六十七号</a>）<a class="reference_link" href="L_322AC0000000067.html#Mp-At_252_19-Pr_1">第二百五十二条の十九第一項</a>の指定都市（以下「指定都市」という。）の議会の議員及び長の選挙にあっては平成三十一年四月七日、指定都市以外の市、町村及び特別区（<a class="reference_link" href="#Mp-At_1-Pr_2">次項</a>及び<a class="reference_link" href="#Mp-At_7-Pr_1">第七条第一項</a>において「市区町村」という。）の議会の議員及び長の選挙にあっては同月二十一日とする。</div>
+                    <div class="Sentence">平成三十一年三月一日から同年五月三十一日までの間に任期が満了することとなる地方公共団体（都道府県、市町村及び特別区に限る。以下同じ。）の議会の議員又は長の任期満了による選挙の期日は、当該選挙を同年二月二十八日以前に行う場合及び<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>（<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年法律第百号</a>）<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条の二第一項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>（これらの規定を<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>において準用する場合を含む。）の規定により行う場合を除き、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第一項</a>の規定にかかわらず、都道府県及び<a class="reference_link" href="L_322AC0000000067.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方自治法</a>（<a class="reference_link" href="L_322AC0000000067.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十二年法律第六十七号</a>）<a class="reference_link" href="L_322AC0000000067.html#Mp-At_252_19-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百五十二条の十九第一項</a>の指定都市（以下「指定都市」という。）の議会の議員及び長の選挙にあっては平成三十一年四月七日、指定都市以外の市、町村及び特別区（<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>及び<a class="reference_link" href="#Mp-At_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第一項</a>において「市区町村」という。）の議会の議員及び長の選挙にあっては同月二十一日とする。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">平成三十一年六月一日から同月十日までの間に任期が満了することとなる地方公共団体の議会の議員又は長の任期満了による選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_1">第三十三条第一項</a>の規定にかかわらず、それぞれ<a class="reference_link" href="#Mp-At_1-Pr_1">前項</a>に規定する期日とすることができる。</div>
-                    <div class="Sentence" Num="2">この場合において、当該選挙に関する事務を管理する選挙管理委員会は、都道府県又は指定都市（<a class="reference_link" href="#Mp-At_2-Pr_1-It_3">次条第一項第三号</a>及び<a class="reference_link" href="#Mp-At_7-Pr_2">第七条第二項</a>において「都道府県等」という。）の選挙管理委員会にあっては同年一月六日までに、市区町村の選挙管理委員会にあっては同月二十日までに、その旨を告示しなければならない。</div>
+                    <div class="Sentence" Num="1">平成三十一年六月一日から同月十日までの間に任期が満了することとなる地方公共団体の議会の議員又は長の任期満了による選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第一項</a>の規定にかかわらず、それぞれ<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>に規定する期日とすることができる。</div>
+                    <div class="Sentence" Num="2">この場合において、当該選挙に関する事務を管理する選挙管理委員会は、都道府県又は指定都市（<a class="reference_link" href="#Mp-At_2-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条第一項第三号</a>及び<a class="reference_link" href="#Mp-At_7-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第二項</a>において「都道府県等」という。）の選挙管理委員会にあっては同年一月六日までに、市区町村の選挙管理委員会にあっては同月二十日までに、その旨を告示しなければならない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_3" class="Paragraph" Num="3">
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">統一選挙の対象の地方公共団体の議会の議員又は長（<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>の地方公共団体の議会の議員又は長であって当該地方公共団体の議会の議員又は長の任期満了による選挙について<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_2">第三十四条の二第二項</a>（<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_4">同条第四項</a>において準用する場合を含む。）の規定による告示がなされていないもの及び<a class="reference_link" href="#Mp-At_1-Pr_2">前項</a>前段の地方公共団体の議会の議員又は長であって当該地方公共団体の議会の議員又は長の任期満了による選挙について<a class="reference_link" href="#Mp-At_1-Pr_2">同項</a>後段の規定による告示がなされているものをいう。<a class="reference_link" href="#Mp-At_1-Pr_4">次項</a>において同じ。）について、任期満了による選挙以外の選挙を行うべき事由が生じた場合において、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1">第三十四条第一項</a>の規定により当該選挙を行うべき期間が平成三十一年四月一日以後にかかり、かつ、当該期間が<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">次条第一項各号</a>に掲げる選挙の区分に応じ当該<a class="reference_link" href="#Mp-At_1-Pr_3-It_1">各号</a>に定める日前五日までに始まるときは、当該選挙を同年二月二十八日以前に行うときを除き、当該選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1">第三十四条第一項</a>の規定にかかわらず、それぞれ<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>に規定する期日とする。</div>
+                    <div class="Sentence">統一選挙の対象の地方公共団体の議会の議員又は長（<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の地方公共団体の議会の議員又は長であって当該地方公共団体の議会の議員又は長の任期満了による選挙について<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条の二第二項</a>（<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>において準用する場合を含む。）の規定による告示がなされていないもの及び<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>前段の地方公共団体の議会の議員又は長であって当該地方公共団体の議会の議員又は長の任期満了による選挙について<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>後段の規定による告示がなされているものをいう。<a class="reference_link" href="#Mp-At_1-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>において同じ。）について、任期満了による選挙以外の選挙を行うべき事由が生じた場合において、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第一項</a>の規定により当該選挙を行うべき期間が平成三十一年四月一日以後にかかり、かつ、当該期間が<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条第一項各号</a>に掲げる選挙の区分に応じ当該<a class="reference_link" href="#Mp-At_1-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める日前五日までに始まるときは、当該選挙を同年二月二十八日以前に行うときを除き、当該選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第一項</a>の規定にかかわらず、それぞれ<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する期日とする。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_4" class="Paragraph" Num="4">
                   <div class="ParagraphNum">４</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">統一選挙の対象の地方公共団体の議会の議員又は長以外の地方公共団体の議会の議員又は長（当該地方公共団体の議会の議員又は長の任期満了による選挙について、<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_2">第三十四条の二第二項</a>（<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_4">同条第四項</a>において準用する場合を含む。）の規定による告示がなされているものを除く。）について、任期満了による選挙以外の選挙を行うべき事由が生じた場合（<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_117">第百十七条</a>の規定により選挙を行うべき事由が生じた場合を除く。）において、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1">第三十四条第一項</a>の規定により当該選挙を行うべき期間が平成三十一年四月一日以後にかかり、かつ、当該期間が<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">次条第一項各号</a>に掲げる選挙の区分に応じ当該<a class="reference_link" href="#Mp-At_1-Pr_4-It_1">各号</a>に定める日前十日までに始まるときは、当該選挙を同年二月二十八日以前に行うときを除き、当該選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1">第三十四条第一項</a>の規定にかかわらず、それぞれ<a class="reference_link" href="#Mp-At_1-Pr_1">第一項</a>に規定する期日とする。</div>
+                    <div class="Sentence">統一選挙の対象の地方公共団体の議会の議員又は長以外の地方公共団体の議会の議員又は長（当該地方公共団体の議会の議員又は長の任期満了による選挙について、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条の二第二項</a>（<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>において準用する場合を含む。）の規定による告示がなされているものを除く。）について、任期満了による選挙以外の選挙を行うべき事由が生じた場合（<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_117" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十七条</a>の規定により選挙を行うべき事由が生じた場合を除く。）において、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第一項</a>の規定により当該選挙を行うべき期間が平成三十一年四月一日以後にかかり、かつ、当該期間が<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条第一項各号</a>に掲げる選挙の区分に応じ当該<a class="reference_link" href="#Mp-At_1-Pr_4-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める日前十日までに始まるときは、当該選挙を同年二月二十八日以前に行うときを除き、当該選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第二項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第一項</a>の規定にかかわらず、それぞれ<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>に規定する期日とする。</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_5" class="Paragraph" Num="5">
                   <div class="ParagraphNum">５</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">衆議院議員又は参議院議員の<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_2">第三十三条の二第二項</a>に規定する統一対象再選挙（<a class="reference_link" href="#Mp-At_2-Pr_2-It_1">次条第二項各号</a>において「統一対象再選挙」という。）又は補欠選挙のうち、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_2">第三十三条の二第二項</a>の規定により選挙を行うべき期日が平成三十一年四月二十八日となるものの期日は、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_2">同項</a>の規定にかかわらず、同月二十一日とする。</div>
+                    <div class="Sentence">衆議院議員又は参議院議員の<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条の二第二項</a>に規定する統一対象再選挙（<a class="reference_link" href="#Mp-At_2-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条第二項各号</a>において「統一対象再選挙」という。）又は補欠選挙のうち、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条の二第二項</a>の規定により選挙を行うべき期日が平成三十一年四月二十八日となるものの期日は、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の規定にかかわらず、同月二十一日とする。</div>
                   </div>
                 </div>
               </div>
@@ -157,8 +157,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">前条第一項から第四項まで</a>の規定により行われる選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_5">第三十三条第五項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_6">第三十四条第六項</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">次の各号</a>に掲げる選挙の区分に応じ、当該<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">各号</a>に定める日に告示しなければならない。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第一項から第四項まで</a>の規定により行われる選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第五項</a>又は<a class="reference_link" href="L_325AC1000000100.html#Mp-At_34-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第六項</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる選挙の区分に応じ、当該<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める日に告示しなければならない。</div>
                   </div>
                   <div id="Mp-At_2-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
@@ -220,8 +220,8 @@
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_5">前条第五項</a>の規定により行われる選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_8">第三十三条の二第八項</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_2-Pr_2-It_1">次の各号</a>に掲げる選挙の区分に応じ、当該<a class="reference_link" href="#Mp-At_2-Pr_2-It_1">各号</a>に定める日に告示しなければならない。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第五項</a>の規定により行われる選挙の期日は、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_33_2-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条の二第八項</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_2-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる選挙の区分に応じ、当該<a class="reference_link" href="#Mp-At_2-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める日に告示しなければならない。</div>
                   </div>
                   <div id="Mp-At_2-Pr_2-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
@@ -254,8 +254,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2">第三十四条の二</a>の規定は、地方公共団体の議会の議員の任期及び当該地方公共団体の長の任期がいずれも平成三十一年三月一日から同年五月三十一日までの間に満了する場合には、適用しない。</div>
+                      <a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_34_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条の二</a>の規定は、地方公共団体の議会の議員の任期及び当該地方公共団体の長の任期がいずれも平成三十一年三月一日から同年五月三十一日までの間に満了する場合には、適用しない。</div>
                   </div>
                 </div>
               </div>
@@ -266,25 +266,25 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">第一条第一項から第四項まで</a>の規定により行われる都道府県の議会の議員の選挙及び当該都道府県の知事の選挙又は市町村若しくは特別区の議会の議員の選挙及び当該市町村若しくは特別区の長の選挙は、それぞれ<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_119-Pr_1">第百十九条第一項</a>の規定により同時に行う。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項から第四項まで</a>の規定により行われる都道府県の議会の議員の選挙及び当該都道府県の知事の選挙又は市町村若しくは特別区の議会の議員の選挙及び当該市町村若しくは特別区の長の選挙は、それぞれ<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_119-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十九条第一項</a>の規定により同時に行う。</div>
                   </div>
                 </div>
                 <div id="Mp-At_4-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">第一条第一項から第四項まで</a>の規定により行われる指定都市の議会の議員又は長の選挙及び当該指定都市の区域を包括する都道府県の議会の議員又は長の選挙は、<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_119-Pr_2">第百十九条第二項</a>の規定により同時に行う。</div>
-                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_120-Pr_3">第百二十条第三項</a>及び<a class="reference_link" href="L_325AC1000000100.html#Mp-At_121">第百二十一条</a>の規定は、適用しない。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項から第四項まで</a>の規定により行われる指定都市の議会の議員又は長の選挙及び当該指定都市の区域を包括する都道府県の議会の議員又は長の選挙は、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_119-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十九条第二項</a>の規定により同時に行う。</div>
+                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_120-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二十条第三項</a>及び<a class="reference_link" href="L_325AC1000000100.html#Mp-At_121" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二十一条</a>の規定は、適用しない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_4-Pr_3" class="Paragraph" Num="3">
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_4-Pr_1">前二項</a>の規定は、<a class="reference_link" href="L_413AC0000000147.html">地方公共団体の議会の議員及び長の選挙に係る電磁的記録式投票機を用いて行う投票方法等の特例に関する法律</a>（<a class="reference_link" href="L_413AC0000000147.html">平成十三年法律第百四十七号</a>）<a class="reference_link" href="L_413AC0000000147.html#Mp-At_14-Pr_1">第十四条第一項</a>の規定により<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>第十二章の規定を適用しないこととされる選挙については、適用しない。</div>
+                      <a class="reference_link" href="#Mp-At_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前二項</a>の規定は、<a class="reference_link" href="L_413AC0000000147.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方公共団体の議会の議員及び長の選挙に係る電磁的記録式投票機を用いて行う投票方法等の特例に関する法律</a>（<a class="reference_link" href="L_413AC0000000147.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十三年法律第百四十七号</a>）<a class="reference_link" href="L_413AC0000000147.html#Mp-At_14-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第一項</a>の規定により<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>第十二章の規定を適用しないこととされる選挙については、適用しない。</div>
                   </div>
                 </div>
               </div>
@@ -295,21 +295,21 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">第一条第一項から第四項まで</a>の規定により平成三十一年四月七日に行われる選挙（以下この項において「第一統一選挙」という。）又は<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_110-Pr_4">第百十条第四項</a>の規定により第一統一選挙と同時に行われる地方公共団体の議会の議員の再選挙若しくは<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_113-Pr_3">第百十三条第三項</a>の規定により第一統一選挙と同時に行われる地方公共団体の議会の議員の補欠選挙において公職の候補者となった者は、当該選挙に係る選挙区（選挙区がないときは、選挙の行われる区域。以下この項において同じ。）の全部又は一部を含む区域を区域とする選挙区において、<a class="reference_link" href="#Mp-At_1">第一条</a>の規定により同月二十一日に行われる選挙（以下この項において「第二統一選挙」という。）又は<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_110-Pr_4">第百十条第四項</a>の規定により第二統一選挙と同時に行われる地方公共団体の議会の議員の再選挙若しくは<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_113-Pr_3">第百十三条第三項</a>の規定により第二統一選挙と同時に行われる地方公共団体の議会の議員の補欠選挙における公職の候補者となることができない。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項から第四項まで</a>の規定により平成三十一年四月七日に行われる選挙（以下この項において「第一統一選挙」という。）又は<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_110-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十条第四項</a>の規定により第一統一選挙と同時に行われる地方公共団体の議会の議員の再選挙若しくは<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_113-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十三条第三項</a>の規定により第一統一選挙と同時に行われる地方公共団体の議会の議員の補欠選挙において公職の候補者となった者は、当該選挙に係る選挙区（選挙区がないときは、選挙の行われる区域。以下この項において同じ。）の全部又は一部を含む区域を区域とする選挙区において、<a class="reference_link" href="#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>の規定により同月二十一日に行われる選挙（以下この項において「第二統一選挙」という。）又は<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_110-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十条第四項</a>の規定により第二統一選挙と同時に行われる地方公共団体の議会の議員の再選挙若しくは<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_113-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百十三条第三項</a>の規定により第二統一選挙と同時に行われる地方公共団体の議会の議員の補欠選挙における公職の候補者となることができない。</div>
                   </div>
                 </div>
                 <div id="Mp-At_5-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_5-Pr_1">前項</a>の規定により公職の候補者となることができない者は、<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_68-Pr_1">第六十八条第一項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_2">第二号</a>に係る部分に限る。）及び<a class="reference_link" href="L_325AC1000000100.html#Mp-At_68-Pr_3">第三項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_2">第二号</a>に係る部分に限る。）、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_86-Pr_9">第八十六条第九項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_3">第三号</a>に係る部分に限る。）、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_86_2-Pr_7">第八十六条の二第七項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_2">第二号</a>に係る部分に限り、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_86_3-Pr_2">第八十六条の三第二項</a>において準用する場合を含む。）並びに<a class="reference_link" href="L_325AC1000000100.html#Mp-At_86_4-Pr_9">第八十六条の四第九項</a>の規定の適用については、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_87-Pr_1">第八十七条第一項</a>の規定により公職の候補者となることができない者とみなす。</div>
+                      <a class="reference_link" href="#Mp-At_5-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の規定により公職の候補者となることができない者は、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に係る部分に限る。）及び<a class="reference_link" href="L_325AC1000000100.html#Mp-At_68-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に係る部分に限る。）、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_86-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八十六条第九項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>に係る部分に限る。）、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_86_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八十六条の二第七項</a>（<a class="reference_link" href="#Mp-At_5-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に係る部分に限り、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_86_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八十六条の三第二項</a>において準用する場合を含む。）並びに<a class="reference_link" href="L_325AC1000000100.html#Mp-At_86_4-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八十六条の四第九項</a>の規定の適用については、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_87-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八十七条第一項</a>の規定により公職の候補者となることができない者とみなす。</div>
                   </div>
                 </div>
               </div>
@@ -320,10 +320,10 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_1-Pr_1">第一条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2">第二項</a>の規定により行われる選挙について、<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_2">第百九十九条の二</a>及び<a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_5">第百九十九条の五</a>の規定を適用する場合には、<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_2-Pr_1">第百九十九条の二第一項</a>に規定する期間及び<a class="reference_link" href="L_325AC1000000100.html">同法</a>
-                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_5-Pr_1">第百九十九条の五第一項から第三項まで</a>に規定する一定期間とは、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_5-Pr_4">同条第四項</a>（<a class="reference_link" href="#Mp-At_6-Pr_1-It_3">第三号</a>に係る部分に限る。）の規定にかかわらず、<a class="reference_link" href="#Mp-At_1-Pr_1">第一条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2">第二項</a>の規定によるそれぞれの選挙の期日前九十日に当たる日から当該選挙の期日までの間とする。</div>
+                      <a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の規定により行われる選挙について、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百九十九条の二</a>及び<a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百九十九条の五</a>の規定を適用する場合には、<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百九十九条の二第一項</a>に規定する期間及び<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_5-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百九十九条の五第一項から第三項まで</a>に規定する一定期間とは、<a class="reference_link" href="L_325AC1000000100.html#Mp-At_199_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>（<a class="reference_link" href="#Mp-At_6-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>に係る部分に限る。）の規定にかかわらず、<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第一項</a>又は<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の規定によるそれぞれの選挙の期日前九十日に当たる日から当該選挙の期日までの間とする。</div>
                   </div>
                 </div>
               </div>
@@ -333,7 +333,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_6">前条</a>の規定は、次に掲げる市区町村の議会の議員又は長の任期満了による選挙については、適用しない。</div>
+                      <a class="reference_link" href="#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条</a>の規定は、次に掲げる市区町村の議会の議員又は長の任期満了による選挙については、適用しない。</div>
                   </div>
                   <div id="Mp-At_7-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
@@ -344,13 +344,13 @@
                   <div id="Mp-At_7-Pr_1-It_2" class="Item" Num="2">
                     <div class="ItemTitle">二</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">平成三十一年三月三十一日から同年五月三十一日までの間に任期が満了することとなる市区町村の議会の議員の任期満了による選挙（市区町村であって、当該市区町村の議会の議員の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において現に在職する当該市区町村の長の任期満了の日が同年六月一日以後の日であり、かつ、当該任期満了の日前九十日に当たる日から当該任期満了の日の前日までの間に当該市区町村の議会の議員の任期満了の日があるもの（市区町村であって、当該市区町村の議会の議員の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において、当該市区町村の長の任期満了による選挙について<a class="reference_link" href="#Mp-At_1-Pr_2">第一条第二項</a>後段の規定による告示がなされているものを除く。）の議会の議員の任期満了による選挙に限る。）</div>
+                      <div class="Sentence">平成三十一年三月三十一日から同年五月三十一日までの間に任期が満了することとなる市区町村の議会の議員の任期満了による選挙（市区町村であって、当該市区町村の議会の議員の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において現に在職する当該市区町村の長の任期満了の日が同年六月一日以後の日であり、かつ、当該任期満了の日前九十日に当たる日から当該任期満了の日の前日までの間に当該市区町村の議会の議員の任期満了の日があるもの（市区町村であって、当該市区町村の議会の議員の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において、当該市区町村の長の任期満了による選挙について<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第二項</a>後段の規定による告示がなされているものを除く。）の議会の議員の任期満了による選挙に限る。）</div>
                     </div>
                   </div>
                   <div id="Mp-At_7-Pr_1-It_3" class="Item" Num="3">
                     <div class="ItemTitle">三</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">平成三十一年三月三十一日から同年五月三十一日までの間に任期が満了することとなる市区町村の長の任期満了による選挙（市区町村であって、当該市区町村の長の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において現に在職する当該市区町村の議会の議員の任期満了の日が同年六月一日以後の日であり、かつ、当該任期満了の日前九十日に当たる日から当該任期満了の日の前日までの間に当該市区町村の長の任期満了の日があるもの（市区町村であって、当該市区町村の長の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において、当該市区町村の議会の議員の任期満了による選挙について<a class="reference_link" href="#Mp-At_1-Pr_2">第一条第二項</a>後段の規定による告示がなされているものを除く。）の長の任期満了による選挙に限る。）</div>
+                      <div class="Sentence">平成三十一年三月三十一日から同年五月三十一日までの間に任期が満了することとなる市区町村の長の任期満了による選挙（市区町村であって、当該市区町村の長の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において現に在職する当該市区町村の議会の議員の任期満了の日が同年六月一日以後の日であり、かつ、当該任期満了の日前九十日に当たる日から当該任期満了の日の前日までの間に当該市区町村の長の任期満了の日があるもの（市区町村であって、当該市区町村の長の任期満了の日前九十一日に当たる日又は同年一月二十日のいずれか早い日において、当該市区町村の議会の議員の任期満了による選挙について<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第二項</a>後段の規定による告示がなされているものを除く。）の長の任期満了による選挙に限る。）</div>
                     </div>
                   </div>
                 </div>
@@ -358,8 +358,8 @@
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">
-                      <a class="reference_link" href="#Mp-At_7-Pr_1">前項</a>（<a class="reference_link" href="#Mp-At_7-Pr_2-It_2">第二号</a>に係る部分に限る。）の規定は、都道府県等の議会の議員の任期満了による選挙について準用する。</div>
-                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_7-Pr_2-It_2">同号中</a>「同年一月二十日」とあるのは、「同年一月六日」と読み替えるものとする。</div>
+                      <a class="reference_link" href="#Mp-At_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>（<a class="reference_link" href="#Mp-At_7-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に係る部分に限る。）の規定は、都道府県等の議会の議員の任期満了による選挙について準用する。</div>
+                    <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_7-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号中</a>「同年一月二十日」とあるのは、「同年一月六日」と読み替えるものとする。</div>
                   </div>
                 </div>
               </div>
@@ -370,7 +370,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_2">第二条から前条まで</a>に定めるもののほか、<a class="reference_link" href="#Mp-At_1">第一条</a>の規定により行われる選挙に係る<a class="reference_link" href="L_325AC1000000100.html">公職選挙法</a>その他の法令の規定に関する技術的読替えその他この法律の規定の適用に関し必要な事項は、政令で定める。</div>
+                      <a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条から前条まで</a>に定めるもののほか、<a class="reference_link" href="#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>の規定により行われる選挙に係る<a class="reference_link" href="L_325AC1000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公職選挙法</a>その他の法令の規定に関する技術的読替えその他この法律の規定の適用に関し必要な事項は、政令で定める。</div>
                   </div>
                 </div>
               </div>

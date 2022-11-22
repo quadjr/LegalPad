@@ -12,66 +12,72 @@ function tableArrowClicked(el) {
     }
 }
 
-function toggleClicked(el, tag_id) {
-    var el_body;
-    if(tag_id == "EnactStatement"){
-        el_body = document.getElementsByClassName(tag_id)[0];
-    }else{
-        el_body = document.getElementById(tag_id);
+function toggleClicked(el, tag_id, tag_id_full) {
+    let elements = document.querySelectorAll('[data-id^=toggle-' + tag_id + '-]');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].checked = el.checked;
     }
-    if (el_body.style.getPropertyValue("display")){
-        el.style.removeProperty("background-color");
-        elements = document.querySelectorAll('[id^=toggle-' + tag_id + '-]');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].style.removeProperty("background-color");
-        }
 
-        if(tag_id == "EnactStatement"){
-            var elements = document.getElementsByClassName("EnactStatement")
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.removeProperty("display");
-            }
-        }else{
-            el_body.style.removeProperty("display");
-            var elements = document.querySelectorAll('[id^=' + tag_id + '-]');
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.removeProperty("display");
-            }
-        }
-
+    if (el.checked){
         var next_pos = 0;
         while(true){
             pos = tag_id.indexOf("-", next_pos);
             if(pos < 0)break;
 
-            var element = document.getElementById(tag_id.substr(0, pos));
-            if(element){
-                element.style.removeProperty("display");
-            }
             element = document.getElementById("toggle-" + tag_id.substr(0, pos));
             if(element){
-                element.style.removeProperty("background-color");
+                element.checked = true;
             }
 
             next_pos = pos + 1
         }
-    }else{
-        el.style.setProperty("background-color", "black");
-        elements = document.querySelectorAll('[id^=toggle-' + tag_id + '-]');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].style.setProperty("background-color", "black");
+        next_pos = 0;
+        while(true){
+            pos = tag_id_full.indexOf("-", next_pos);
+            if(pos < 0)break;
+
+            element = document.getElementById("toggle-" + tag_id_full.substr(0, pos));
+            if(element){
+                element.checked = true;
+            }
+
+            next_pos = pos + 1
         }
-        if(tag_id == "EnactStatement"){
-            var elements = document.getElementsByClassName("EnactStatement")
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.setProperty("display", "none");
+    }
+
+    elements = document.querySelectorAll('[data-id^=toggle-]');
+    let all_off = true;
+    for (var i = 0; i < elements.length; i++) {
+        if(elements[i].checked && !elements[i].id.match(/((Pa)|(Ch)|(Se)|(Ss)|(Di))/) && elements[i].id != "toggle-Mp"){
+            all_off = false;
+            break;
+        }
+    }
+    if(all_off){
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].checked = false;
+        }
+    }
+
+    for (var i = 0; i < elements.length; i++) {
+        tag = elements[i].id.replace("toggle-", "");
+
+        if(tag == "Es"){
+            enacts = document.getElementsByClassName("EnactStatement")
+            for (var j = 0; j < enacts.length; j++) {
+                if(all_off || elements[i].checked){
+                    enacts[j].style.removeProperty("display");
+                }else{
+                    enacts[j].style.setProperty("display", "none");
+                }
             }
         }else{
-            el_body.style.setProperty("display", "none");
-            var elements = document.querySelectorAll('[id^=' + tag_id + '-]');
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.setProperty("display", "none");
-            }
+            let element = document.getElementById(elements[i].id.replace("toggle-", ""));
+            if(all_off || elements[i].checked){
+                element.style.removeProperty("display");
+            }else{
+                element.style.setProperty("display", "none");
+            }    
         }
     }
 }
@@ -148,6 +154,18 @@ function loadFinished(){
                             refs[key].forEach(ref => {
                                 let label = ref[3];
                                 label = label.replace('Mp', "");
+                                label = label.replace('Apn_', "別記");
+                                label = label.replace('Apt_', "別表");
+                                label = label.replace('Apg_', "別図");
+                                label = label.replace('Apf_', "別記書式");
+                                label = label.replace('Aps_', "別記様式");
+                                label = label.replace('Ap_', "付録");
+                                label = label.replace('Spa_', "附則付録");
+                                label = label.replace('Spt_', "附則別表");
+                                label = label.replace('Sps_', "附則様式");
+                                label = label.replace('Sp_', "附則");
+                                label = label.replace('Es_', "制定文");
+                                label = label.replace('Pm_', "前文");
                                 label = label.replace('Apn', "別記");
                                 label = label.replace('Apt', "別表");
                                 label = label.replace('Apg', "別図");
@@ -160,11 +178,11 @@ function loadFinished(){
                                 label = label.replace('Sp', "附則");
                                 label = label.replace('Es', "制定文");
                                 label = label.replace('Pm', "前文");
-                                label = label.replace(/-At_([_\d]+)/, '第$1条');
-                                label = label.replace(/-Pr_([_\d]+)/, '第$1項');
-                                label = label.replace(/-It_([_\d]+)/, '第$1号');
+                                label = label.replace(/-At_([_\d]+)/, '$1条');
+                                label = label.replace(/-Pr_([_\d]+)/, '$1項');
+                                label = label.replace(/-It_([_\d]+)/, '$1号');
                                 label = label.replace(/_/g, 'の');
-                                str += "<a class='ref_links' href='L_" + ref[2] + ".html#" + ref[3] + "'>" + ref[1] + " " + label + "</a><br/>";
+                                str += "<a class='ref_links' href='L_" + ref[2] + ".html#" + ref[3] + "' onmouseover='linkMouseOver(this)' onmouseout='linkMouseOut(this)'>" + ref[1] + "　" + label + "</a><br/>";
                             });
                             ref_div.innerHTML = str;
                             refs_div.appendChild(ref_div);
@@ -174,12 +192,41 @@ function loadFinished(){
                 }
             }
         }
-        console.log(refs);
     })
     // 通信が失敗したとき
     .catch(function(error) {
         console.error('Error:', error);
     });
+
+    if(window != window.parent){
+        toggleToc();
+        
+        let enacts = document.getElementsByClassName("header")
+        for (var j = 0; j < enacts.length; j++) {
+            enacts[j].style.setProperty("display", "none");
+        }
+        enacts = document.getElementsByClassName("table_of_contents_icon")
+        for (var j = 0; j < enacts.length; j++) {
+            enacts[j].style.setProperty("display", "none");
+        }
+    }
 }
+
+function linkMouseOver(el){
+    var el_body = document.getElementById("body");
+    const preview_el = document.createElement("iframe");
+    preview_el.id = "preview_el";
+    preview_el.className = "preview_el";
+    preview_el.style.setProperty("top", (el.getBoundingClientRect().top - el_body.getBoundingClientRect().top) + el_body.scrollTop + 20);
+    preview_el.setAttribute('sandbox', "allow-scripts");
+    preview_el.src = el.href;
+
+    el_body.appendChild(preview_el);
+}
+function linkMouseOut(el){
+    var preview_el = document.getElementById("preview_el");
+    preview_el.remove();
+}
+
 
 window.addEventListener('load', loadFinished);

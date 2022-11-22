@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
                     <a class="title_text" href="#Mp-At_4">第四条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -70,7 +70,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
                     <a class="title_text" href="#Mp-At_5">第五条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -80,7 +80,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -88,7 +88,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_令和二年一二月二二日内閣府令第七四号" onclick="toggleClicked(this,'Sp_令和二年一二月二二日内閣府令第七四号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二二日内閣府令第七四号" data-id="toggle-Sp_令和二年一二月二二日内閣府令第七四号" onclick="toggleClicked(this,'Sp_令和二年一二月二二日内閣府令第七四号', 'Sp_令和二年一二月二二日内閣府令第七四号')">
                 <a class="title_text" href="#Sp_令和二年一二月二二日内閣府令第七四号">附　則（令和二年一二月二二日内閣府令第七四号）</a>
               </div>
               <div class="table_indent"></div>
@@ -96,7 +96,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Aps_0" onclick="toggleClicked(this,'Aps_0')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Aps_0" data-id="toggle-Aps_0" onclick="toggleClicked(this,'Aps_0', 'Aps_0')">
                 <a class="title_text" href="#Aps_0">別紙（請願書様式）</a>
               </div>
               <div class="table_indent"></div>
@@ -104,21 +104,21 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_320IO0000000699.html">昭和二十年勅令第六百九十九号</a>
-              <a class="reference_link" href="L_320M30000001068.html">位、勲章等ノ返上ノ請願ニ関スル件施行ノ件</a>左ノ通定ム</div>
+              <a class="reference_link" href="L_320IO0000000699.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十年勅令第六百九十九号</a>
+              <a class="reference_link" href="L_320M30000001068.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">位、勲章等ノ返上ノ請願ニ関スル件施行ノ件</a>左ノ通定ム</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleTitle">第一条</div>
                 <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">有位者又ハ勲章、記章若ハ褒章ヲ有スル者ニシテ<a class="reference_link" href="L_320IO0000000699.html">昭和二十年勅令第六百九十九号</a>ニ基キ位又ハ勲章、記章若ハ褒章ノ返上ヲ請願セントスルモノ（以下請願者ト称ス）ハ別紙様式ニ依ル請願書ニ理由ヲ具シ位記、勲記、功記及年金証書其ノ他ノ証状並ニ章牌（以下賞賜物件ト称ス）ヲ添ヘ内閣総理大臣ニ提出スヘシ</div>
+                    <div class="Sentence" Num="1">有位者又ハ勲章、記章若ハ褒章ヲ有スル者ニシテ<a class="reference_link" href="L_320IO0000000699.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十年勅令第六百九十九号</a>ニ基キ位又ハ勲章、記章若ハ褒章ノ返上ヲ請願セントスルモノ（以下請願者ト称ス）ハ別紙様式ニ依ル請願書ニ理由ヲ具シ位記、勲記、功記及年金証書其ノ他ノ証状並ニ章牌（以下賞賜物件ト称ス）ヲ添ヘ内閣総理大臣ニ提出スヘシ</div>
                   </div>
                 </div>
                 <div id="Mp-At_1-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">②</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">請願者在官又ハ在職中ノ者ナルトキハ<a class="reference_link" href="#Mp-At_1-Pr_1">前項</a>ノ手続ハ本属長官ヲ経テ之ヲ為スベシ</div>
+                    <div class="Sentence" Num="1">請願者在官又ハ在職中ノ者ナルトキハ<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>ノ手続ハ本属長官ヲ経テ之ヲ為スベシ</div>
                   </div>
                 </div>
               </div>
@@ -136,7 +136,7 @@
                 <div id="Mp-At_3-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">請願者有爵者若ハ爵ヲ襲グコトヲ得ベキ相続人又ハ宮内職員ナルトキハ<a class="reference_link" href="#Mp-At_1">第一条</a>ノ規定ニ拘ラズ位ノ返上ノ請願書及位記ハ之ヲ宮内大臣ニ提出スベシ</div>
+                    <div class="Sentence" Num="1">請願者有爵者若ハ爵ヲ襲グコトヲ得ベキ相続人又ハ宮内職員ナルトキハ<a class="reference_link" href="#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>ノ規定ニ拘ラズ位ノ返上ノ請願書及位記ハ之ヲ宮内大臣ニ提出スベシ</div>
                   </div>
                 </div>
               </div>
@@ -151,7 +151,7 @@
                 <div id="Mp-At_4-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">②</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">請願者<a class="reference_link" href="#Mp-At_1-Pr_2">第一条第二項</a>ニ該当スル者ナルトキハ<a class="reference_link" href="#Mp-At_4-Pr_1">前項</a>ノ指令ハ本属長官ヲ通ジテ之ヲ行フ</div>
+                    <div class="Sentence" Num="1">請願者<a class="reference_link" href="#Mp-At_1-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第二項</a>ニ該当スル者ナルトキハ<a class="reference_link" href="#Mp-At_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>ノ指令ハ本属長官ヲ通ジテ之ヲ行フ</div>
                   </div>
                 </div>
               </div>

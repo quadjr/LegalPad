@@ -23,14 +23,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（趣旨）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -38,7 +38,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（委任による臨時代行）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（委任の解除）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
                     <a class="title_text" href="#Mp-At_4">第四条（委任の終了）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
                     <a class="title_text" href="#Mp-At_5">第五条（公示）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -70,7 +70,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
                     <a class="title_text" href="#Mp-At_6">第六条（訴追の制限）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -80,7 +80,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -95,8 +95,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_321CONSTITUTION.html">日本国憲法</a>
-                      <a class="reference_link" href="L_321CONSTITUTION.html#Mp-At_4-Pr_2">第四条第二項</a>の規定に基づく天皇の国事に関する行為の委任による臨時代行については、この法律の定めるところによる。</div>
+                      <a class="reference_link" href="L_321CONSTITUTION.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本国憲法</a>
+                      <a class="reference_link" href="L_321CONSTITUTION.html#Mp-At_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第二項</a>の規定に基づく天皇の国事に関する行為の委任による臨時代行については、この法律の定めるところによる。</div>
                   </div>
                 </div>
               </div>
@@ -106,15 +106,15 @@
                 <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">天皇は、精神若しくは身体の疾患又は事故があるときは、摂政を置くべき場合を除き、内閣の助言と承認により、国事に関する行為を<a class="reference_link" href="L_322AC0000000003.html">皇室典範</a>（<a class="reference_link" href="L_322AC0000000003.html">昭和二十二年法律第三号</a>）<a class="reference_link" href="L_322AC0000000003.html#Mp-At_17">第十七条</a>の規定により摂政となる順位にあたる皇族に委任して臨時に代行させることができる。</div>
+                    <div class="Sentence">天皇は、精神若しくは身体の疾患又は事故があるときは、摂政を置くべき場合を除き、内閣の助言と承認により、国事に関する行為を<a class="reference_link" href="L_322AC0000000003.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">皇室典範</a>（<a class="reference_link" href="L_322AC0000000003.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十二年法律第三号</a>）<a class="reference_link" href="L_322AC0000000003.html#Mp-At_17" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条</a>の規定により摂政となる順位にあたる皇族に委任して臨時に代行させることができる。</div>
                   </div>
                 </div>
                 <div id="Mp-At_2-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_2-Pr_1">前項</a>の場合において、<a class="reference_link" href="#Mp-At_2-Pr_1">同項</a>の皇族が成年に達しないとき、又はその皇族に精神若しくは身体の疾患若しくは事故があるときは、天皇は、内閣の助言と承認により、<a class="reference_link" href="L_322AC0000000003.html">皇室典範</a>
-                      <a class="reference_link" href="L_322AC0000000003.html#Mp-At_17">第十七条</a>に定める順序に従つて、成年に達し、かつ、故障がない他の皇族に<a class="reference_link" href="#Mp-At_2-Pr_1">同項</a>の委任をするものとする。</div>
+                      <a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の場合において、<a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の皇族が成年に達しないとき、又はその皇族に精神若しくは身体の疾患若しくは事故があるときは、天皇は、内閣の助言と承認により、<a class="reference_link" href="L_322AC0000000003.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">皇室典範</a>
+                      <a class="reference_link" href="L_322AC0000000003.html#Mp-At_17" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条</a>に定める順序に従つて、成年に達し、かつ、故障がない他の皇族に<a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の委任をするものとする。</div>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
                 <div id="Mp-At_3-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">天皇は、その故障がなくなつたとき、<a class="reference_link" href="#Mp-At_2">前条</a>の規定による委任を受けた皇族に故障が生じたとき、又は<a class="reference_link" href="#Mp-At_2">同条</a>の規定による委任をした場合において、先順位にあたる皇族が成年に達し、若しくはその皇族に故障がなくなつたときは、内閣の助言と承認により、<a class="reference_link" href="#Mp-At_2">同条</a>の規定による委任を解除する。</div>
+                    <div class="Sentence">天皇は、その故障がなくなつたとき、<a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条</a>の規定による委任を受けた皇族に故障が生じたとき、又は<a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>の規定による委任をした場合において、先順位にあたる皇族が成年に達し、若しくはその皇族に故障がなくなつたときは、内閣の助言と承認により、<a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>の規定による委任を解除する。</div>
                   </div>
                 </div>
               </div>
@@ -135,7 +135,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_2">第二条</a>の規定による委任は、皇位の継承、摂政の設置又はその委任を受けた皇族の皇族たる身分の離脱によつて終了する。</div>
+                      <a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>の規定による委任は、皇位の継承、摂政の設置又はその委任を受けた皇族の皇族たる身分の離脱によつて終了する。</div>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">
-                      <a class="reference_link" href="#Mp-At_2">第二条</a>の規定による委任を受けた皇族は、その委任がされている間、訴追されない。</div>
+                      <a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>の規定による委任を受けた皇族は、その委任がされている間、訴追されない。</div>
                     <div class="Sentence" Num="2">ただし、このため、訴追の権利は、害されない。</div>
                   </div>
                 </div>

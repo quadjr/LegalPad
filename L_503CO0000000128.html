@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（定義）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（軽減された過少申告加算税の対象となる国税関係帳簿に係る電磁的記録等の備付け等が行われる日）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（軽減された過少申告加算税を課さない部分の税額の計算）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
                     <a class="title_text" href="#Mp-At_4">第四条（加重された重加算税が課される部分の税額の計算）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -70,7 +70,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
                     <a class="title_text" href="#Mp-At_5">第五条（国税通則法等の規定の適用）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -78,7 +78,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
                     <a class="title_text" href="#Mp-At_6">第六条（財務省令への委任）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -88,14 +88,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
-            <div id="Es" class="EnactStatement">内閣は、<a class="reference_link" href="L_410AC0000000025.html">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html">平成十年法律第二十五号</a>）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">第八条第四項から第六項まで</a>の規定に基づき、この政令を制定する。</div>
+            <div id="Es" class="EnactStatement">内閣は、<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十年法律第二十五号</a>）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第四項から第六項まで</a>の規定に基づき、この政令を制定する。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleCaption">（定義）</div>
@@ -103,7 +103,7 @@
                 <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">この政令において「保存義務者」とは、<a class="reference_link" href="L_410AC0000000025.html">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（以下「法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_2-Pr_1-It_4">第二条第四号</a>に規定する保存義務者をいう。</div>
+                    <div class="Sentence">この政令において「保存義務者」とは、<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（以下「法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第四号</a>に規定する保存義務者をいう。</div>
                   </div>
                 </div>
               </div>
@@ -114,8 +114,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_410AC0000000025.html">法</a>
-                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">第八条第四項</a>に規定する政令で定める日は、<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">同項</a>の修正申告書又は更正に係る課税期間（<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>（<a class="reference_link" href="L_337AC0000000066.html">昭和三十七年法律第六十六号</a>）<a class="reference_link" href="L_337AC0000000066.html#Mp-At_2-Pr_1-It_9">第二条第九号</a>（定義）に規定する課税期間をいう。以下この条において同じ。）の初日（新たに業務を開始した個人の当該業務を開始した日の属する課税期間については、同日）とする。</div>
+                      <a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第四項</a>に規定する政令で定める日は、<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の修正申告書又は更正に係る課税期間（<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>（<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十七年法律第六十六号</a>）<a class="reference_link" href="L_337AC0000000066.html#Mp-At_2-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第九号</a>（定義）に規定する課税期間をいう。以下この条において同じ。）の初日（新たに業務を開始した個人の当該業務を開始した日の属する課税期間については、同日）とする。</div>
                   </div>
                 </div>
               </div>
@@ -126,10 +126,10 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_410AC0000000025.html">法</a>
-                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">第八条第四項</a>に規定する電磁的記録等に記録された事項に係るもの以外の事実に基づく税額として政令で定めるところにより計算した金額は、<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                      <a class="reference_link" href="L_337AC0000000066.html#Mp-At_65">第六十五条</a>（過少申告加算税）の過少申告加算税の額の計算の基礎となるべき税額のうち<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">同項</a>に規定する税額の計算の基礎となるべき事実で<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">同項</a>に規定する電磁的記録等に記録された事項に係るもの以外の事実のみに基づいて<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">同項</a>に規定する修正申告等があったものとした場合における当該修正申告等に基づき<a class="reference_link" href="L_337AC0000000066.html">同法</a>
-                      <a class="reference_link" href="L_337AC0000000066.html#Mp-At_35-Pr_2">第三十五条第二項</a>（申告納税方式による国税等の納付）の規定により納付すべき税額とする。</div>
+                      <a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第四項</a>に規定する電磁的記録等に記録された事項に係るもの以外の事実に基づく税額として政令で定めるところにより計算した金額は、<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                      <a class="reference_link" href="L_337AC0000000066.html#Mp-At_65" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条</a>（過少申告加算税）の過少申告加算税の額の計算の基礎となるべき税額のうち<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する税額の計算の基礎となるべき事実で<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する電磁的記録等に記録された事項に係るもの以外の事実のみに基づいて<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する修正申告等があったものとした場合における当該修正申告等に基づき<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_337AC0000000066.html#Mp-At_35-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第二項</a>（申告納税方式による国税等の納付）の規定により納付すべき税額とする。</div>
                   </div>
                 </div>
               </div>
@@ -140,30 +140,30 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_410AC0000000025.html">法</a>
-                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>に規定する電磁的記録に記録された事項に係る事実に基づく税額として政令で定めるところにより計算した金額は、<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                      <a class="reference_link" href="L_337AC0000000066.html#Mp-At_65">第六十五条から第六十七条まで</a>（過少申告加算税等）の過少申告加算税の額、無申告加算税の額又は不納付加算税の額の計算の基礎となるべき税額のうち<a class="reference_link" href="#Mp-At_4-Pr_1-It_1">次の各号</a>に掲げる場合の区分に応じ当該<a class="reference_link" href="#Mp-At_4-Pr_1-It_1">各号</a>に定める税額とする。</div>
+                      <a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>に規定する電磁的記録に記録された事項に係る事実に基づく税額として政令で定めるところにより計算した金額は、<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                      <a class="reference_link" href="L_337AC0000000066.html#Mp-At_65" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条から第六十七条まで</a>（過少申告加算税等）の過少申告加算税の額、無申告加算税の額又は不納付加算税の額の計算の基礎となるべき税額のうち<a class="reference_link" href="#Mp-At_4-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる場合の区分に応じ当該<a class="reference_link" href="#Mp-At_4-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める税額とする。</div>
                   </div>
                   <div id="Mp-At_4-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence">
-                          <a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1">第六十八条第一項から第三項まで</a>（重加算税）に規定する隠蔽し、又は仮装されていない事実（以下この号において「隠蔽仮装されていない事実」という。）がある場合</div>
+                          <a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項から第三項まで</a>（重加算税）に規定する隠蔽し、又は仮装されていない事実（以下この号において「隠蔽仮装されていない事実」という。）がある場合</div>
                       </div>
                       <div class="Column" Num="2">
-                        <div class="Sentence">当該隠蔽仮装されていない事実及び<a class="reference_link" href="L_410AC0000000025.html">法</a>
-                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>に規定する電磁的記録に記録された事項に係る事実（以下この号において「隠蔽仮装されていない事実等」という。）のみに基づいて<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_18-Pr_2">第十八条第二項</a>（期限後申告）に規定する期限後申告書若しくは<a class="reference_link" href="L_337AC0000000066.html">同法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_19-Pr_3">第十九条第三項</a>（修正申告）に規定する修正申告書の提出又は<a class="reference_link" href="L_337AC0000000066.html">同法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_24">第二十四条</a>（更正）若しくは<a class="reference_link" href="L_337AC0000000066.html#Mp-At_26">第二十六条</a>（再更正）の規定による更正若しくは<a class="reference_link" href="L_337AC0000000066.html">同法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_25">第二十五条</a>（決定）の規定による決定（以下この条において「期限後申告等」という。）があったものとした場合における当該期限後申告等に基づき<a class="reference_link" href="L_337AC0000000066.html">同法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_35-Pr_2">第三十五条第二項</a>（申告納税方式による国税等の納付）の規定により納付すべき税額又は<a class="reference_link" href="L_410AC0000000025.html">法</a>
-                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>の国税関係書類の保存義務者が当該隠蔽仮装されていない事実等のみに基づいてその<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_2-Pr_1-It_2">第二条第二号</a>（定義）に規定する源泉徴収等による国税（以下この条において「源泉徴収等による国税」という。）の<a class="reference_link" href="L_337AC0000000066.html">同法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_2-Pr_1-It_8">第二条第八号</a>に規定する<a class="reference_link" href="L_410AC0000000025.html">法</a>定納期限（以下この条において「法定納期限」という。）までに納付しなかった税額から当該隠蔽仮装されていない事実のみに基づいて期限後申告等があったものとした場合における当該期限後申告等に基づき<a class="reference_link" href="L_410AC0000000025.html">同法</a>
-                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_35-Pr_2">第三十五条第二項</a>の規定により納付すべき税額又は当該保存義務者が当該隠蔽仮装されていない事実のみに基づいてその源泉徴収等による国税の<a class="reference_link" href="L_410AC0000000025.html">法</a>定納期限までに納付しなかった税額を控除した税額</div>
+                        <div class="Sentence">当該隠蔽仮装されていない事実及び<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>に規定する電磁的記録に記録された事項に係る事実（以下この号において「隠蔽仮装されていない事実等」という。）のみに基づいて<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_18-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十八条第二項</a>（期限後申告）に規定する期限後申告書若しくは<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_19-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条第三項</a>（修正申告）に規定する修正申告書の提出又は<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条</a>（更正）若しくは<a class="reference_link" href="L_337AC0000000066.html#Mp-At_26" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条</a>（再更正）の規定による更正若しくは<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_25" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条</a>（決定）の規定による決定（以下この条において「期限後申告等」という。）があったものとした場合における当該期限後申告等に基づき<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_35-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第二項</a>（申告納税方式による国税等の納付）の規定により納付すべき税額又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>の国税関係書類の保存義務者が当該隠蔽仮装されていない事実等のみに基づいてその<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_2-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二号</a>（定義）に規定する源泉徴収等による国税（以下この条において「源泉徴収等による国税」という。）の<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_2-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第八号</a>に規定する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>定納期限（以下この条において「法定納期限」という。）までに納付しなかった税額から当該隠蔽仮装されていない事実のみに基づいて期限後申告等があったものとした場合における当該期限後申告等に基づき<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_35-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第二項</a>の規定により納付すべき税額又は当該保存義務者が当該隠蔽仮装されていない事実のみに基づいてその源泉徴収等による国税の<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>定納期限までに納付しなかった税額を控除した税額</div>
                       </div>
                     </div>
                   </div>
@@ -172,13 +172,13 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_4-Pr_1-It_1">前号</a>に掲げる場合以外の場合</div>
+                          <a class="reference_link" href="#Mp-At_4-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>に掲げる場合以外の場合</div>
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence">
-                          <a class="reference_link" href="L_410AC0000000025.html">法</a>
-                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>に規定する電磁的記録に記録された事項に係る事実のみに基づいて期限後申告等があったものとした場合における当該期限後申告等に基づき<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_35-Pr_2">第三十五条第二項</a>の規定により納付すべき税額又は<a class="reference_link" href="#Mp-At_4-Pr_1-It_1">同号</a>の保存義務者が当該電磁的記録に記録された事項に係る事実のみに基づいてその源泉徴収等による国税の<a class="reference_link" href="L_410AC0000000025.html">法</a>定納期限までに納付しなかった税額</div>
+                          <a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>に規定する電磁的記録に記録された事項に係る事実のみに基づいて期限後申告等があったものとした場合における当該期限後申告等に基づき<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                          <a class="reference_link" href="L_337AC0000000066.html#Mp-At_35-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第二項</a>の規定により納付すべき税額又は<a class="reference_link" href="#Mp-At_4-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>の保存義務者が当該電磁的記録に記録された事項に係る事実のみに基づいてその源泉徴収等による国税の<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>定納期限までに納付しなかった税額</div>
                       </div>
                     </div>
                   </div>
@@ -191,8 +191,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_410AC0000000025.html">法</a>
-                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>の規定の適用がある場合における次の表の第一欄に掲げる<a class="reference_link" href="L_410AC0000000025.html">法</a>令の適用については、同表の第二欄に掲げる規定中同表の第三欄に掲げる字句は、同表の第四欄に掲げる字句とする。</div>
+                      <a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>の規定の適用がある場合における次の表の第一欄に掲げる<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>令の適用については、同表の第二欄に掲げる規定中同表の第三欄に掲げる字句は、同表の第四欄に掲げる字句とする。</div>
                   </div>
                   <div class="TableStruct">
                     <table>
@@ -213,61 +213,61 @@
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
+                            <a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_15-Pr_2-It_14">第十五条第二項第十四号</a>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="Sentence">）の</div>
-                        </td>
-                        <td>
-                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html">平成十年法律第二十五号</a>。以下「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_1">第六十八条第一項</a>又は<a class="reference_link" href="#Mp-At_68-Pr_2">第二項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）の</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_15-Pr_2-It_15">第十五条第二項第十五号</a>
+                            <a class="reference_link" href="#Mp-At_15-Pr_2-It_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第二項第十四号</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">）の</div>
                         </td>
                         <td>
-                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_3">第六十八条第三項</a>の重加算税に係る部分に限る。）の</div>
+                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十年法律第二十五号</a>。以下「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>又は<a class="reference_link" href="#Mp-At_68-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）の</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_33-Pr_3">第三十三条第三項</a>
+                            <a class="reference_link" href="#Mp-At_15-Pr_2-It_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第二項第十五号</a>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="Sentence">）の</div>
+                        </td>
+                        <td>
+                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第三項</a>の重加算税に係る部分に限る。）の</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="Sentence">
+                            <a class="reference_link" href="#Mp-At_33-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第三項</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">）の重加算税</div>
                         </td>
                         <td>
-                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_3">第六十八条第三項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）の重加算税</div>
+                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第三項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）の重加算税</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_35-Pr_3">第三十五条第三項</a>及び<a class="reference_link" href="#Mp-At_73-Pr_1-It_2">第七十三条第一項第二号</a>
+                            <a class="reference_link" href="#Mp-At_35-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第三項</a>及び<a class="reference_link" href="#Mp-At_73-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十三条第一項第二号</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>
+                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>
+                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>
                           </div>
                         </td>
                       </tr>
@@ -276,22 +276,22 @@
                           <div class="Sentence">）の</div>
                         </td>
                         <td>
-                          <div class="Sentence">）又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_1">第六十八条第一項</a>又は<a class="reference_link" href="#Mp-At_68-Pr_2">第二項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）の</div>
+                          <div class="Sentence">）又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>又は<a class="reference_link" href="#Mp-At_68-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）の</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_85-Pr_1">第八十五条第一項</a>
+                            <a class="reference_link" href="#Mp-At_85-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八十五条第一項</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>
+                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>
+                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>
                           </div>
                         </td>
                       </tr>
@@ -300,18 +300,18 @@
                           <div class="Sentence">）の重加算税</div>
                         </td>
                         <td>
-                          <div class="Sentence">）又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_3">第六十八条第三項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）の重加算税</div>
+                          <div class="Sentence">）又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第三項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）の重加算税</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="L_337CO0000000135.html">国税通則法施行令</a>（<a class="reference_link" href="L_337CO0000000135.html">昭和三十七年政令第百三十五号</a>）</div>
+                            <a class="reference_link" href="L_337CO0000000135.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法施行令</a>（<a class="reference_link" href="L_337CO0000000135.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十七年政令第百三十五号</a>）</div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_27_3-Pr_1">第二十七条の三第一項</a>
+                            <a class="reference_link" href="#Mp-At_27_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条の三第一項</a>
                           </div>
                         </td>
                         <td>
@@ -326,14 +326,14 @@
                           <div class="Sentence">重加算税）</div>
                         </td>
                         <td>
-                          <div class="Sentence">重加算税）又は<a class="reference_link" href="L_410AC0000000025.html">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html">平成十年法律第二十五号</a>。<a class="reference_link" href="#Mp-At_5-Pr_1">次項</a>及び<a class="reference_link" href="#Mp-At_6">次条</a>において「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="L_410AC0000000025.html">法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_68-Pr_1">第六十八条第一項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）</div>
+                          <div class="Sentence">重加算税）又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十年法律第二十五号</a>。<a class="reference_link" href="#Mp-At_5-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>及び<a class="reference_link" href="#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条</a>において「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_27_3-Pr_2">第二十七条の三第二項</a>
+                            <a class="reference_link" href="#Mp-At_27_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条の三第二項</a>
                           </div>
                         </td>
                         <td>
@@ -348,130 +348,130 @@
                           <div class="Sentence">限る</div>
                         </td>
                         <td>
-                          <div class="Sentence">限る。）又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="L_410AC0000000025.html">法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_68-Pr_2">第六十八条第二項</a>の重加算税に係る部分に限る</div>
+                          <div class="Sentence">限る。）又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_68-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第二項</a>の重加算税に係る部分に限る</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_28-Pr_1">第二十八条第一項</a>
+                            <a class="reference_link" href="#Mp-At_28-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第一項</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_28-Pr_4">同条第四項</a>
+                            <a class="reference_link" href="#Mp-At_28-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_28-Pr_4">同条第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）</div>
+                            <a class="reference_link" href="#Mp-At_28-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_28-Pr_2">第二十八条第二項</a>及び<a class="reference_link" href="#Mp-At_28-Pr_3">第三項</a>
+                            <a class="reference_link" href="#Mp-At_28-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第二項</a>及び<a class="reference_link" href="#Mp-At_28-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_28-Pr_4">同条第四項</a>
+                            <a class="reference_link" href="#Mp-At_28-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_28-Pr_4">同条第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>
+                            <a class="reference_link" href="#Mp-At_28-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="L_330AC0000000037.html">輸入品に対する内国消費税の徴収等に関する法律</a>（<a class="reference_link" href="L_330AC0000000037.html">昭和三十年法律第三十七号</a>）</div>
+                            <a class="reference_link" href="L_330AC0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">輸入品に対する内国消費税の徴収等に関する法律</a>（<a class="reference_link" href="L_330AC0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十年法律第三十七号</a>）</div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_6-Pr_5">第六条第五項</a>
+                            <a class="reference_link" href="#Mp-At_6-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第五項</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">）の重加算税</div>
                         </td>
                         <td>
-                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_1">第六十八条第一項</a>の重加算税に係る部分に限る。）の重加算税</div>
+                          <div class="Sentence">）若しくは<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>の重加算税に係る部分に限る。）の重加算税</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="L_330CO0000000100.html">輸入品に対する内国消費税の徴収等に関する法律施行令</a>（<a class="reference_link" href="L_330CO0000000100.html">昭和三十年政令第百号</a>）</div>
+                            <a class="reference_link" href="L_330CO0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">輸入品に対する内国消費税の徴収等に関する法律施行令</a>（<a class="reference_link" href="L_330CO0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十年政令第百号</a>）</div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_16_2-Pr_1-It_1">第十六条の二第一項第一号</a>
+                            <a class="reference_link" href="#Mp-At_16_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条の二第一項第一号</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">）の重加算税</div>
                         </td>
                         <td>
-                          <div class="Sentence">）並びに<a class="reference_link" href="L_410AC0000000025.html">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html">平成十年法律第二十五号</a>。<a class="reference_link" href="#Mp-At_26_6">第二十六条の六</a>において「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1">第六十八条第一項</a>又は<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_2">第二項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）の重加算税</div>
+                          <div class="Sentence">）並びに<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十年法律第二十五号</a>。<a class="reference_link" href="#Mp-At_26_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条の六</a>において「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>又は<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）の重加算税</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_26_6">第二十六条の六</a>
+                            <a class="reference_link" href="#Mp-At_26_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条の六</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">）の</div>
                         </td>
                         <td>
-                          <div class="Sentence">）並びに<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1">第六十八条第一項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html">法</a>律の規定の適用）の</div>
+                          <div class="Sentence">）並びに<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>の重加算税に係る部分に限る。）（他の国税に関する<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定の適用）の</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="L_409CO0000000363.html">内国税の適正な課税の確保を図るための国外送金等に係る調書の提出等に関する法律施行令</a>（<a class="reference_link" href="L_409CO0000000363.html">平成九年政令第三百六十三号</a>）</div>
+                            <a class="reference_link" href="L_409CO0000000363.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">内国税の適正な課税の確保を図るための国外送金等に係る調書の提出等に関する法律施行令</a>（<a class="reference_link" href="L_409CO0000000363.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成九年政令第三百六十三号</a>）</div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_11-Pr_2-It_1">第十一条第二項第一号</a>
+                            <a class="reference_link" href="#Mp-At_11-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第二項第一号</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_11-Pr_4">同条第四項</a>
+                            <a class="reference_link" href="#Mp-At_11-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_11-Pr_4">同条第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html">平成十年法律第二十五号</a>。<a class="reference_link" href="#Mp-At_5-Pr_1">次号</a>及び<a class="reference_link" href="#Mp-At_6-Pr_2">次条第二項</a>において「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>
+                            <a class="reference_link" href="#Mp-At_11-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子計算機を使用して作成する国税関係帳簿書類の保存方法等の特例に関する法律</a>（<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十年法律第二十五号</a>。<a class="reference_link" href="#Mp-At_5-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次号</a>及び<a class="reference_link" href="#Mp-At_6-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条第二項</a>において「電子帳簿保存法」という。）<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_11-Pr_2-It_2">第十一条第二項第二号</a>
+                            <a class="reference_link" href="#Mp-At_11-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第二項第二号</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>
+                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>
+                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>
                           </div>
                         </td>
                       </tr>
@@ -480,40 +480,40 @@
                           <div class="Sentence">の規定</div>
                         </td>
                         <td>
-                          <div class="Sentence">又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>（<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1">第六十八条第一項</a>又は<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_2">第二項</a>の重加算税に係る部分に限る。<a class="reference_link" href="#Mp-At_6-Pr_2">次条第二項</a>において同じ。）の規定</div>
+                          <div class="Sentence">又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>（<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>又は<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の重加算税に係る部分に限る。<a class="reference_link" href="#Mp-At_6-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条第二項</a>において同じ。）の規定</div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_12-Pr_2">第十二条第二項</a>
+                            <a class="reference_link" href="#Mp-At_12-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第二項</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>の規定の適用があり、<a class="reference_link" href="#Mp-At_12-Pr_1">同条第一項</a>、<a class="reference_link" href="#Mp-At_12-Pr_2">第二項</a>又は<a class="reference_link" href="#Mp-At_12-Pr_4">第四項</a>
+                          <div class="Sentence">又は<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>の規定の適用があり、<a class="reference_link" href="#Mp-At_12-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第一項</a>、<a class="reference_link" href="#Mp-At_12-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>又は<a class="reference_link" href="#Mp-At_12-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>
                           </div>
                         </td>
                         <td>
-                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4">第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>の規定の適用があり、<a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1">第六十八条第一項</a>、<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_2">第二項</a>若しくは<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_4">第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html">電子帳簿保存法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第八条第五項</a>
+                          <div class="Sentence">若しくは<a class="reference_link" href="#Mp-At_5-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>の規定の適用があり、<a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>、<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>若しくは<a class="reference_link" href="L_337AC0000000066.html#Mp-At_68-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>又は<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電子帳簿保存法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="L_410AC0000000025.html">同法</a>
-                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_65">第六十五条</a>
+                            <a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                            <a class="reference_link" href="L_410AC0000000025.html#Mp-At_65" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条</a>
                           </div>
                         </td>
                         <td>
                           <div class="Sentence">
-                            <a class="reference_link" href="L_337AC0000000066.html">国税通則法</a>
-                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_65">第六十五条</a>
+                            <a class="reference_link" href="L_337AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法</a>
+                            <a class="reference_link" href="L_337AC0000000066.html#Mp-At_65" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条</a>
                           </div>
                         </td>
                       </tr>
@@ -527,8 +527,8 @@
                 <div id="Mp-At_6-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">この政令に定めるもののほか、<a class="reference_link" href="L_410AC0000000025.html">法</a>
-                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4">第八条第四項</a>及び<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5">第五項</a>の規定の適用に関し必要な事項は、財務省令で定める。</div>
+                    <div class="Sentence">この政令に定めるもののほか、<a class="reference_link" href="L_410AC0000000025.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第四項</a>及び<a class="reference_link" href="L_410AC0000000025.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五項</a>の規定の適用に関し必要な事項は、財務省令で定める。</div>
                   </div>
                 </div>
               </div>

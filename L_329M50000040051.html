@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,7 +31,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent"></div>
@@ -39,7 +39,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -47,7 +47,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成元年四月六日大蔵省令第四三号" onclick="toggleClicked(this,'Sp_平成元年四月六日大蔵省令第四三号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成元年四月六日大蔵省令第四三号" data-id="toggle-Sp_平成元年四月六日大蔵省令第四三号" onclick="toggleClicked(this,'Sp_平成元年四月六日大蔵省令第四三号', 'Sp_平成元年四月六日大蔵省令第四三号')">
                 <a class="title_text" href="#Sp_平成元年四月六日大蔵省令第四三号">附　則（平成元年四月六日大蔵省令第四三号）</a>
               </div>
               <div class="table_indent"></div>
@@ -55,7 +55,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_令和元年五月七日財務省令第一号" onclick="toggleClicked(this,'Sp_令和元年五月七日財務省令第一号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和元年五月七日財務省令第一号" data-id="toggle-Sp_令和元年五月七日財務省令第一号" onclick="toggleClicked(this,'Sp_令和元年五月七日財務省令第一号', 'Sp_令和元年五月七日財務省令第一号')">
                 <a class="title_text" href="#Sp_令和元年五月七日財務省令第一号">附　則（令和元年五月七日財務省令第一号）</a>
               </div>
               <div class="table_indent"></div>
@@ -63,7 +63,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Aps" onclick="toggleClicked(this,'Aps')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
                 <a class="title_text" href="#Aps">（別紙第一様式）</a>
               </div>
               <div class="table_indent"></div>
@@ -71,7 +71,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Aps" onclick="toggleClicked(this,'Aps')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
                 <a class="title_text" href="#Aps">（別紙第二様式）</a>
               </div>
               <div class="table_indent"></div>
@@ -79,7 +79,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Aps" onclick="toggleClicked(this,'Aps')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
                 <a class="title_text" href="#Aps">（別紙第三様式）</a>
               </div>
               <div class="table_indent"></div>
@@ -87,7 +87,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Aps" onclick="toggleClicked(this,'Aps')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
                 <a class="title_text" href="#Aps">（別紙第四様式）</a>
               </div>
               <div class="table_indent"></div>
@@ -95,18 +95,18 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_329AC0000000066.html">日本銀行券預入令等を廃止する法律</a>附則第四項の規定に基き、<a class="reference_link" href="L_329M50000040051.html">引揚者の携帯した旧日本銀行券の立証手続に関する省令</a>を次のように定める。</div>
+              <a class="reference_link" href="L_329AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本銀行券預入令等を廃止する法律</a>附則第四項の規定に基き、<a class="reference_link" href="L_329M50000040051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">引揚者の携帯した旧日本銀行券の立証手続に関する省令</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-Pr_1" class="Paragraph" Num="1">
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
                   <div class="Sentence">
-                    <a class="reference_link" href="L_329AC0000000066.html">日本銀行券預入令等を廃止する法律</a>（<a class="reference_link" href="L_329AC0000000066.html">昭和二十九年法律第六十六号</a>。以下「法」という。）附則第二項の規定により旧日本銀行券の引換を請求しようとする者は、当該旧日本銀行券に、左の<a class="reference_link" href="#Mp-Pr_1-It_1">各号</a>に掲げる書類を添え、日本銀行の本店、支店又は<a class="reference_link" href="L_329CO0000000136.html">日本銀行券預入令等を廃止する法律施行令</a>（<a class="reference_link" href="L_329CO0000000136.html">昭和二十九年政令第百三十六号</a>）<a class="reference_link" href="L_329CO0000000136.html#Mp-At_3">第三条</a>の規定により引換事務を取り扱う日本銀行の代理店に提出し、自己又はその被相続人が引揚者であり、且つ、その引揚の際当該旧日本銀行券を携帯したことを立証しなければならない。</div>
+                    <a class="reference_link" href="L_329AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本銀行券預入令等を廃止する法律</a>（<a class="reference_link" href="L_329AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年法律第六十六号</a>。以下「法」という。）附則第二項の規定により旧日本銀行券の引換を請求しようとする者は、当該旧日本銀行券に、左の<a class="reference_link" href="#Mp-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に掲げる書類を添え、日本銀行の本店、支店又は<a class="reference_link" href="L_329CO0000000136.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本銀行券預入令等を廃止する法律施行令</a>（<a class="reference_link" href="L_329CO0000000136.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年政令第百三十六号</a>）<a class="reference_link" href="L_329CO0000000136.html#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>の規定により引換事務を取り扱う日本銀行の代理店に提出し、自己又はその被相続人が引揚者であり、且つ、その引揚の際当該旧日本銀行券を携帯したことを立証しなければならない。</div>
                 </div>
                 <div id="Mp-Pr_1-It_1" class="Item" Num="1">
                   <div class="ItemTitle">一</div>
                   <div class="ItemSentence">
-                    <div class="Sentence">昭和二十八年八月三十一日以前に本邦に到着した引揚者（<a class="reference_link" href="L_329AC0000000066.html">法</a>附則第二項に規定する引揚者をいう。以下同じ。）については、左に掲げる書類</div>
+                    <div class="Sentence">昭和二十八年八月三十一日以前に本邦に到着した引揚者（<a class="reference_link" href="L_329AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第二項に規定する引揚者をいう。以下同じ。）については、左に掲げる書類</div>
                   </div>
                   <div class="Subitem1" Num="1">
                     <div class="Subitem1Title">イ</div>
@@ -124,7 +124,7 @@
                 <div id="Mp-Pr_1-It_2" class="Item" Num="2">
                   <div class="ItemTitle">二</div>
                   <div class="ItemSentence">
-                    <div class="Sentence">昭和二十八年九月一日以後<a class="reference_link" href="L_329AC0000000066.html">法</a>の施行の日前に本邦に到着した引揚者については、左に掲げる書類</div>
+                    <div class="Sentence">昭和二十八年九月一日以後<a class="reference_link" href="L_329AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の施行の日前に本邦に到着した引揚者については、左に掲げる書類</div>
                   </div>
                   <div class="Subitem1" Num="1">
                     <div class="Subitem1Title">イ</div>
@@ -143,7 +143,7 @@
                   <div class="ItemTitle">三</div>
                   <div class="ItemSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_329AC0000000066.html">法</a>の施行の日以後に本邦に到着した引揚者については、別紙第四様式による旧円引換書</div>
+                      <a class="reference_link" href="L_329AC0000000066.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の施行の日以後に本邦に到着した引揚者については、別紙第四様式による旧円引換書</div>
                   </div>
                 </div>
               </div>

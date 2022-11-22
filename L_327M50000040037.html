@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（分割の一部停止）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（登録金額の制限）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（除却の場合の額面金額の制限）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -72,14 +72,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成一九年九月一四日財務省令第四八号" onclick="toggleClicked(this,'Sp_平成一九年九月一四日財務省令第四八号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一九年九月一四日財務省令第四八号" data-id="toggle-Sp_平成一九年九月一四日財務省令第四八号" onclick="toggleClicked(this,'Sp_平成一九年九月一四日財務省令第四八号', 'Sp_平成一九年九月一四日財務省令第四八号')">
                 <a class="title_text" href="#Sp_平成一九年九月一四日財務省令第四八号">附　則（平成一九年九月一四日財務省令第四八号）</a>
               </div>
               <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
-            <div id="Es" class="EnactStatement">国債に関する法律（<a class="reference_link" href="L_139AC0000000034.html">明治三十九年法律第三十四号</a>）<a class="reference_link" href="#Mp-At_1">第一条</a>の規定に基き、<a class="reference_link" href="L_327M50000040037.html">国債証券の分割の一部停止等に関する省令</a>を次のように定める。</div>
+            <div id="Es" class="EnactStatement">国債に関する法律（<a class="reference_link" href="L_139AC0000000034.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">明治三十九年法律第三十四号</a>）<a class="reference_link" href="#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>の規定に基き、<a class="reference_link" href="L_327M50000040037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国債証券の分割の一部停止等に関する省令</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleCaption">（分割の一部停止）</div>
@@ -88,7 +88,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_211M10000040031.html">国債規則</a>（<a class="reference_link" href="L_211M10000040031.html">大正十一年大蔵省令第三十一号</a>）<a class="reference_link" href="L_211M10000040031.html#Mp-At_15-Pr_1">第十五条第一項</a>の規定にかかわらず、当分の間、無記名国債証券について額面金額の種類が千円未満となる分割の請求は、することができない。</div>
+                      <a class="reference_link" href="L_211M10000040031.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国債規則</a>（<a class="reference_link" href="L_211M10000040031.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">大正十一年大蔵省令第三十一号</a>）<a class="reference_link" href="L_211M10000040031.html#Mp-At_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項</a>の規定にかかわらず、当分の間、無記名国債証券について額面金額の種類が千円未満となる分割の請求は、することができない。</div>
                   </div>
                 </div>
               </div>
@@ -98,8 +98,8 @@
                 <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">当分の間、<a class="reference_link" href="L_211M10000040031.html">国債規則</a>
-                      <a class="reference_link" href="L_211M10000040031.html#Mp-At_25">第二十五条</a>（<a class="reference_link" href="#Mp-At_37-Pr_2">第三十七条第二項</a>、<a class="reference_link" href="#Mp-At_38">第三十八条</a>、<a class="reference_link" href="#Mp-At_39-Pr_2">第三十九条第二項</a>及び<a class="reference_link" href="#Mp-At_40">第四十条</a>において準用する場合を含む。）の規定による国債の登録金額は、当該国債証券の額面金額の種類が千円以上で、且つ、千円に分割することができるものに限る。</div>
+                    <div class="Sentence">当分の間、<a class="reference_link" href="L_211M10000040031.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国債規則</a>
+                      <a class="reference_link" href="L_211M10000040031.html#Mp-At_25" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条</a>（<a class="reference_link" href="#Mp-At_37-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第二項</a>、<a class="reference_link" href="#Mp-At_38" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条</a>、<a class="reference_link" href="#Mp-At_39-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条第二項</a>及び<a class="reference_link" href="#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>において準用する場合を含む。）の規定による国債の登録金額は、当該国債証券の額面金額の種類が千円以上で、且つ、千円に分割することができるものに限る。</div>
                   </div>
                 </div>
               </div>
@@ -109,8 +109,8 @@
                 <div id="Mp-At_3-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">当分の間、<a class="reference_link" href="L_211M10000040031.html">国債規則</a>
-                      <a class="reference_link" href="L_211M10000040031.html#Mp-At_34">第三十四条</a>の規定により国債登録の除却を請求する場合における無記名国債証券の額面金額の種類は、千円未満とすることができない。</div>
+                    <div class="Sentence">当分の間、<a class="reference_link" href="L_211M10000040031.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国債規則</a>
+                      <a class="reference_link" href="L_211M10000040031.html#Mp-At_34" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条</a>の規定により国債登録の除却を請求する場合における無記名国債証券の額面金額の種類は、千円未満とすることができない。</div>
                   </div>
                 </div>
               </div>
@@ -126,8 +126,8 @@
               <div id="Sp-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">第二条の規定は、この省令施行前に<a class="reference_link" href="L_211M10000040031.html">国債規則</a>
-                    <a class="reference_link" href="L_211M10000040031.html#Mp-At_28">第二十八条</a>、<a class="reference_link" href="L_211M10000040031.html#Mp-At_30">第三十条</a>、<a class="reference_link" href="L_211M10000040031.html#Mp-At_32">第三十二条</a>又は<a class="reference_link" href="L_211M10000040031.html#Mp-At_37">第三十七条から第四十条まで</a>の規定による請求があつた場合については、適用しない。</div>
+                  <div class="Sentence">第二条の規定は、この省令施行前に<a class="reference_link" href="L_211M10000040031.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国債規則</a>
+                    <a class="reference_link" href="L_211M10000040031.html#Mp-At_28" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条</a>、<a class="reference_link" href="L_211M10000040031.html#Mp-At_30" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十条</a>、<a class="reference_link" href="L_211M10000040031.html#Mp-At_32" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十二条</a>又は<a class="reference_link" href="L_211M10000040031.html#Mp-At_37" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条から第四十条まで</a>の規定による請求があつた場合については、適用しない。</div>
                 </div>
               </div>
               <div id="Sp-Pr_3" class="Paragraph" Num="3">
@@ -142,7 +142,7 @@
               <div id="Sp_平成一九年九月一四日財務省令第四八号-Pr_1" class="Paragraph" Num="1">
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省令は、<a class="reference_link" href="L_418AC0000000108.html">信託法</a>の施行の日（平成十九年九月三十日）から施行する。</div>
+                  <div class="Sentence">この省令は、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">信託法</a>の施行の日（平成十九年九月三十日）から施行する。</div>
                 </div>
               </div>
             </div>

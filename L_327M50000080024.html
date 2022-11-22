@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,7 +31,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent"></div>
@@ -39,7 +39,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -47,7 +47,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_昭和三〇年九月二日文部省令第二〇号" onclick="toggleClicked(this,'Sp_昭和三〇年九月二日文部省令第二〇号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三〇年九月二日文部省令第二〇号" data-id="toggle-Sp_昭和三〇年九月二日文部省令第二〇号" onclick="toggleClicked(this,'Sp_昭和三〇年九月二日文部省令第二〇号', 'Sp_昭和三〇年九月二日文部省令第二〇号')">
                 <a class="title_text" href="#Sp_昭和三〇年九月二日文部省令第二〇号">附　則（昭和三〇年九月二日文部省令第二〇号）</a>
               </div>
               <div class="table_indent"></div>
@@ -55,7 +55,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_昭和四〇年九月三日文部省令第三五号" onclick="toggleClicked(this,'Sp_昭和四〇年九月三日文部省令第三五号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四〇年九月三日文部省令第三五号" data-id="toggle-Sp_昭和四〇年九月三日文部省令第三五号" onclick="toggleClicked(this,'Sp_昭和四〇年九月三日文部省令第三五号', 'Sp_昭和四〇年九月三日文部省令第三五号')">
                 <a class="title_text" href="#Sp_昭和四〇年九月三日文部省令第三五号">附　則（昭和四〇年九月三日文部省令第三五号）</a>
               </div>
               <div class="table_indent"></div>
@@ -63,7 +63,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_昭和四六年二月一六日文部省令第四号" onclick="toggleClicked(this,'Sp_昭和四六年二月一六日文部省令第四号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四六年二月一六日文部省令第四号" data-id="toggle-Sp_昭和四六年二月一六日文部省令第四号" onclick="toggleClicked(this,'Sp_昭和四六年二月一六日文部省令第四号', 'Sp_昭和四六年二月一六日文部省令第四号')">
                 <a class="title_text" href="#Sp_昭和四六年二月一六日文部省令第四号">附　則（昭和四六年二月一六日文部省令第四号）</a>
               </div>
               <div class="table_indent"></div>
@@ -71,7 +71,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_令和二年一二月一日文部科学省令第四一号" onclick="toggleClicked(this,'Sp_令和二年一二月一日文部科学省令第四一号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月一日文部科学省令第四一号" data-id="toggle-Sp_令和二年一二月一日文部科学省令第四一号" onclick="toggleClicked(this,'Sp_令和二年一二月一日文部科学省令第四一号', 'Sp_令和二年一二月一日文部科学省令第四一号')">
                 <a class="title_text" href="#Sp_令和二年一二月一日文部科学省令第四一号">附　則（令和二年一二月一日文部科学省令第四一号）</a>
               </div>
               <div class="table_indent"></div>
@@ -79,7 +79,7 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_327CO0000000212.html">ユネスコ活動に関する法律施行令</a>（<a class="reference_link" href="L_327CO0000000212.html">昭和二十七年政令第二百十二号</a>）<a class="reference_link" href="L_327CO0000000212.html#Mp-At_8-Pr_5">第八条第五項</a>の規定に基き、<a class="reference_link" href="L_327M50000080024.html">日本ユネスコ国内委員会専門小委員会組織規程</a>を次のように定める。</div>
+              <a class="reference_link" href="L_327CO0000000212.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">ユネスコ活動に関する法律施行令</a>（<a class="reference_link" href="L_327CO0000000212.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十七年政令第二百十二号</a>）<a class="reference_link" href="L_327CO0000000212.html#Mp-At_8-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第五項</a>の規定に基き、<a class="reference_link" href="L_327M50000080024.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本ユネスコ国内委員会専門小委員会組織規程</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-Pr_1" class="Paragraph" Num="1">
                 <div class="ParagraphNum"></div>

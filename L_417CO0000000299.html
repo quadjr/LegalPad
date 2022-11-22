@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（連携会員の任期等）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（連携会員の辞職）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（連携会員の退職）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -62,7 +62,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
                     <a class="title_text" href="#Mp-At_4">第四条（雑則）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -72,14 +72,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
-            <div id="Es" class="EnactStatement">内閣は、<a class="reference_link" href="L_323AC0000000121.html">日本学術会議法</a>（<a class="reference_link" href="L_323AC0000000121.html">昭和二十三年法律第百二十一号</a>）<a class="reference_link" href="L_323AC0000000121.html#Mp-At_15-Pr_4">第十五条第四項</a>の規定に基づき、<a class="reference_link" href="L_417CO0000000299.html">日本学術会議法施行令</a>（昭和五十九年政令第百六十号）の全部を改正するこの政令を制定する。</div>
+            <div id="Es" class="EnactStatement">内閣は、<a class="reference_link" href="L_323AC0000000121.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本学術会議法</a>（<a class="reference_link" href="L_323AC0000000121.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十三年法律第百二十一号</a>）<a class="reference_link" href="L_323AC0000000121.html#Mp-At_15-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第四項</a>の規定に基づき、<a class="reference_link" href="L_417CO0000000299.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本学術会議法施行令</a>（昭和五十九年政令第百六十号）の全部を改正するこの政令を制定する。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleCaption">（連携会員の任期等）</div>
@@ -114,8 +114,8 @@
                 <div id="Mp-At_3-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">会長は、連携会員に連携会員として不適当な行為があるときは、<a class="reference_link" href="L_323AC0000000121.html">日本学術会議法</a>
-                      <a class="reference_link" href="L_323AC0000000121.html#Mp-At_28">第二十八条</a>の規定による規則（以下単に「規則」という。）で定めるところにより、当該連携会員を退職させることができる。</div>
+                    <div class="Sentence">会長は、連携会員に連携会員として不適当な行為があるときは、<a class="reference_link" href="L_323AC0000000121.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本学術会議法</a>
+                      <a class="reference_link" href="L_323AC0000000121.html#Mp-At_28" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条</a>の規定による規則（以下単に「規則」という。）で定めるところにより、当該連携会員を退職させることができる。</div>
                   </div>
                 </div>
               </div>

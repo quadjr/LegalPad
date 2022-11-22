@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,21 +31,21 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1" data-id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1', 'Mp-Ch_1')">
                     <a class="title_text" href="#Mp-Ch_1">第一章　総則</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-Ch_1-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-Ch_1-At_1')">
                         <a class="title_text" href="#Mp-At_1">第一条（趣旨）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -53,7 +53,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-Ch_1-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-Ch_1-At_2')">
                         <a class="title_text" href="#Mp-At_2">第二条（定義）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -63,14 +63,14 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_2" data-id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2', 'Mp-Ch_2')">
                     <a class="title_text" href="#Mp-Ch_2">第二章　対象火気設備等に関する基準</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-Ch_2-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-Ch_2-At_3')">
                         <a class="title_text" href="#Mp-At_3">第三条（対象火気設備等の種類）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -78,7 +78,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-Ch_2-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-Ch_2-At_4')">
                         <a class="title_text" href="#Mp-At_4">第四条（火災予防上安全な距離を保つことを要しない場合）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -86,7 +86,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-Ch_2-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-Ch_2-At_5')">
                         <a class="title_text" href="#Mp-At_5">第五条（火災予防上安全な距離）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -94,7 +94,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-Ch_2-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-Ch_2-At_6')">
                         <a class="title_text" href="#Mp-At_6">第六条（屋内において総務省令で定める不燃性の床等の上に設けることを要しない場合）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -102,7 +102,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-Ch_2-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-Ch_2-At_7')">
                         <a class="title_text" href="#Mp-At_7">第七条（不燃性の床等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -110,7 +110,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-Ch_2-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-Ch_2-At_8')">
                         <a class="title_text" href="#Mp-At_8">第八条（消費熱量）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -118,7 +118,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_9" onclick="toggleClicked(this,'Mp-At_9')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-Ch_2-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-Ch_2-At_9')">
                         <a class="title_text" href="#Mp-At_9">第九条（延焼防止の措置を要しない場合）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -126,7 +126,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_10" onclick="toggleClicked(this,'Mp-At_10')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-Ch_2-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-Ch_2-At_10')">
                         <a class="title_text" href="#Mp-At_10">第十条（火災の発生のおそれのある部分に係る防火上有効な構造）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -134,7 +134,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_11" onclick="toggleClicked(this,'Mp-At_11')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-Ch_2-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-Ch_2-At_11')">
                         <a class="title_text" href="#Mp-At_11">第十一条（周囲に火災が発生するおそれが少ない構造）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -142,7 +142,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_12" onclick="toggleClicked(this,'Mp-At_12')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-Ch_2-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-Ch_2-At_12')">
                         <a class="title_text" href="#Mp-At_12">第十二条（振動又は衝撃に対する構造）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -150,7 +150,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_13" onclick="toggleClicked(this,'Mp-At_13')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-Ch_2-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-Ch_2-At_13')">
                         <a class="title_text" href="#Mp-At_13">第十三条（燃料タンク及び配管の構造）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -158,7 +158,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_14" onclick="toggleClicked(this,'Mp-At_14')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-Ch_2-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-Ch_2-At_14')">
                         <a class="title_text" href="#Mp-At_14">第十四条（風道、燃料タンク等の構造）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -166,7 +166,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_15" onclick="toggleClicked(this,'Mp-At_15')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-Ch_2-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-Ch_2-At_15')">
                         <a class="title_text" href="#Mp-At_15">第十五条（安全を確保する装置等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -174,7 +174,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_16" onclick="toggleClicked(this,'Mp-At_16')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-Ch_2-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-Ch_2-At_16')">
                         <a class="title_text" href="#Mp-At_16">第十六条（その他の基準）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -182,7 +182,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_17" onclick="toggleClicked(this,'Mp-At_17')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-Ch_2-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-Ch_2-At_17')">
                         <a class="title_text" href="#Mp-At_17">第十七条（基準の特例）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -192,14 +192,14 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3" data-id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3', 'Mp-Ch_3')">
                     <a class="title_text" href="#Mp-Ch_3">第三章　対象火気器具等に関する基準</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_18" onclick="toggleClicked(this,'Mp-At_18')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-Ch_3-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-Ch_3-At_18')">
                         <a class="title_text" href="#Mp-At_18">第十八条（対象火気器具等の種類）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -207,7 +207,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_19" onclick="toggleClicked(this,'Mp-At_19')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-Ch_3-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-Ch_3-At_19')">
                         <a class="title_text" href="#Mp-At_19">第十九条（火災予防上安全な距離を保つことを要しない場合）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -215,7 +215,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_20" onclick="toggleClicked(this,'Mp-At_20')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-Ch_3-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-Ch_3-At_20')">
                         <a class="title_text" href="#Mp-At_20">第二十条（火災予防上安全な距離）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -223,7 +223,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_21" onclick="toggleClicked(this,'Mp-At_21')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-Ch_3-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-Ch_3-At_21')">
                         <a class="title_text" href="#Mp-At_21">第二十一条（不燃性の床、台等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -235,7 +235,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -243,7 +243,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成一七年三月二二日総務省令第三四号" onclick="toggleClicked(this,'Sp_平成一七年三月二二日総務省令第三四号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年三月二二日総務省令第三四号" data-id="toggle-Sp_平成一七年三月二二日総務省令第三四号" onclick="toggleClicked(this,'Sp_平成一七年三月二二日総務省令第三四号', 'Sp_平成一七年三月二二日総務省令第三四号')">
                 <a class="title_text" href="#Sp_平成一七年三月二二日総務省令第三四号">附　則（平成一七年三月二二日総務省令第三四号）</a>
               </div>
               <div class="table_indent"></div>
@@ -251,7 +251,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成二二年三月三〇日総務省令第二六号" onclick="toggleClicked(this,'Sp_平成二二年三月三〇日総務省令第二六号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二二年三月三〇日総務省令第二六号" data-id="toggle-Sp_平成二二年三月三〇日総務省令第二六号" onclick="toggleClicked(this,'Sp_平成二二年三月三〇日総務省令第二六号', 'Sp_平成二二年三月三〇日総務省令第二六号')">
                 <a class="title_text" href="#Sp_平成二二年三月三〇日総務省令第二六号">附　則（平成二二年三月三〇日総務省令第二六号）</a>
               </div>
               <div class="table_indent"></div>
@@ -259,7 +259,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成二四年三月二七日総務省令第一七号" onclick="toggleClicked(this,'Sp_平成二四年三月二七日総務省令第一七号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二四年三月二七日総務省令第一七号" data-id="toggle-Sp_平成二四年三月二七日総務省令第一七号" onclick="toggleClicked(this,'Sp_平成二四年三月二七日総務省令第一七号', 'Sp_平成二四年三月二七日総務省令第一七号')">
                 <a class="title_text" href="#Sp_平成二四年三月二七日総務省令第一七号">附　則（平成二四年三月二七日総務省令第一七号）</a>
               </div>
               <div class="table_indent"></div>
@@ -267,7 +267,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成二七年一一月一三日総務省令第九三号" onclick="toggleClicked(this,'Sp_平成二七年一一月一三日総務省令第九三号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一一月一三日総務省令第九三号" data-id="toggle-Sp_平成二七年一一月一三日総務省令第九三号" onclick="toggleClicked(this,'Sp_平成二七年一一月一三日総務省令第九三号', 'Sp_平成二七年一一月一三日総務省令第九三号')">
                 <a class="title_text" href="#Sp_平成二七年一一月一三日総務省令第九三号">附　則（平成二七年一一月一三日総務省令第九三号）</a>
               </div>
               <div class="table_indent"></div>
@@ -275,7 +275,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_令和二年八月二七日総務省令第七七号" onclick="toggleClicked(this,'Sp_令和二年八月二七日総務省令第七七号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年八月二七日総務省令第七七号" data-id="toggle-Sp_令和二年八月二七日総務省令第七七号" onclick="toggleClicked(this,'Sp_令和二年八月二七日総務省令第七七号', 'Sp_令和二年八月二七日総務省令第七七号')">
                 <a class="title_text" href="#Sp_令和二年八月二七日総務省令第七七号">附　則（令和二年八月二七日総務省令第七七号）</a>
               </div>
               <div class="table_indent"></div>
@@ -283,7 +283,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Apt" onclick="toggleClicked(this,'Apt')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Apt" data-id="toggle-Apt" onclick="toggleClicked(this,'Apt', 'Apt')">
                 <a class="title_text" href="#Apt">別表第一（第五条、第二十条関係）</a>
               </div>
               <div class="table_indent"></div>
@@ -291,7 +291,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Apt" onclick="toggleClicked(this,'Apt')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Apt" data-id="toggle-Apt" onclick="toggleClicked(this,'Apt', 'Apt')">
                 <a class="title_text" href="#Apt">別表第二（第五条、第二十条関係）</a>
               </div>
               <div class="table_indent"></div>
@@ -299,7 +299,7 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_336CO0000000037.html">消防法施行令</a>（<a class="reference_link" href="L_336CO0000000037.html">昭和三十六年政令第三十七号</a>）<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5">第五条</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2">第五条の二</a>の規定に基づき、<a class="reference_link" href="L_414M60000008024.html">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>を次のように定める。</div>
+              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>（<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十六年政令第三十七号</a>）<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条の二</a>の規定に基づき、<a class="reference_link" href="L_414M60000008024.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-Ch_1" class="Chapter" Num="1">
                 <div class="ChapterTitle">第一章　総則</div>
@@ -309,7 +309,7 @@
                   <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">この省令は、<a class="reference_link" href="L_336CO0000000037.html">消防法施行令</a>（以下「令」という。）<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5">第五条</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2">第五条の二</a>の規定に基づき、対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定めるものとする。</div>
+                      <div class="Sentence">この省令は、<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>（以下「令」という。）<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条の二</a>の規定に基づき、対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定めるものとする。</div>
                     </div>
                   </div>
                 </div>
@@ -319,7 +319,7 @@
                   <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>において、<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">次の各号</a>に掲げる用語の意義は、当該<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">各号</a>に定めるところによる。</div>
+                      <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>において、<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる用語の意義は、当該<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定めるところによる。</div>
                     </div>
                     <div id="Mp-At_2-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -329,7 +329,7 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_323AC1000000186.html">消防法</a>（<a class="reference_link" href="L_323AC1000000186.html">昭和二十三年法律第百八十六号</a>。以下「法」という。）<a class="reference_link" href="L_323AC1000000186.html#Mp-At_9">第九条</a>に規定する火を使用する設備又はその使用に際し、火災の発生のおそれのある設備であって、<a class="reference_link" href="#Mp-At_3">次条</a>に定めるものをいう。</div>
+                            <a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法</a>（<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十三年法律第百八十六号</a>。以下「法」という。）<a class="reference_link" href="L_323AC1000000186.html#Mp-At_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条</a>に規定する火を使用する設備又はその使用に際し、火災の発生のおそれのある設備であって、<a class="reference_link" href="#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条</a>に定めるものをいう。</div>
                         </div>
                       </div>
                     </div>
@@ -341,8 +341,8 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_323AC1000000186.html">法</a>
-                            <a class="reference_link" href="L_323AC1000000186.html#Mp-At_9">第九条</a>に規定する火を使用する器具又はその使用に際し、火災の発生のおそれのある器具であって、<a class="reference_link" href="#Mp-At_18-Pr_1-It_1">第十八条各号</a>に掲げるものをいう。</div>
+                            <a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_323AC1000000186.html#Mp-At_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条</a>に規定する火を使用する器具又はその使用に際し、火災の発生のおそれのある器具であって、<a class="reference_link" href="#Mp-At_18-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十八条各号</a>に掲げるものをいう。</div>
                         </div>
                       </div>
                     </div>
@@ -354,7 +354,7 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_325AC0000000201.html">建築基準法</a>（<a class="reference_link" href="L_325AC0000000201.html">昭和二十五年法律第二百一号</a>）<a class="reference_link" href="L_325AC0000000201.html#Mp-At_2-Pr_1-It_9">第二条第九号</a>に規定する不燃材料をいう。</div>
+                            <a class="reference_link" href="L_325AC0000000201.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建築基準法</a>（<a class="reference_link" href="L_325AC0000000201.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年法律第二百一号</a>）<a class="reference_link" href="L_325AC0000000201.html#Mp-At_2-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第九号</a>に規定する不燃材料をいう。</div>
                         </div>
                       </div>
                     </div>
@@ -366,7 +366,7 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_325CO0000000338.html">建築基準法施行令</a>（<a class="reference_link" href="L_325CO0000000338.html">昭和二十五年政令第三百三十八号</a>）<a class="reference_link" href="L_325CO0000000338.html#Mp-At_1-Pr_1-It_5">第一条第五号</a>に規定する準不燃材料をいう。</div>
+                            <a class="reference_link" href="L_325CO0000000338.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建築基準法施行令</a>（<a class="reference_link" href="L_325CO0000000338.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年政令第三百三十八号</a>）<a class="reference_link" href="L_325CO0000000338.html#Mp-At_1-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第五号</a>に規定する準不燃材料をいう。</div>
                         </div>
                       </div>
                     </div>
@@ -378,8 +378,8 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_325AC0000000201.html">建築基準法</a>
-                            <a class="reference_link" href="L_325AC0000000201.html#Mp-At_2-Pr_1-It_7">第二条第七号</a>に規定する耐火構造をいう。</div>
+                            <a class="reference_link" href="L_325AC0000000201.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建築基準法</a>
+                            <a class="reference_link" href="L_325AC0000000201.html#Mp-At_2-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第七号</a>に規定する耐火構造をいう。</div>
                         </div>
                       </div>
                     </div>
@@ -391,8 +391,8 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                            <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号</a>に規定する建築物等をいう。</div>
+                            <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                            <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号</a>に規定する建築物等をいう。</div>
                         </div>
                       </div>
                     </div>
@@ -404,8 +404,8 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_325AC0000000201.html">建築基準法</a>
-                            <a class="reference_link" href="L_325AC0000000201.html#Mp-At_2-Pr_1-It_3">第二条第三号</a>に規定する建築設備をいう。</div>
+                            <a class="reference_link" href="L_325AC0000000201.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建築基準法</a>
+                            <a class="reference_link" href="L_325AC0000000201.html#Mp-At_2-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第三号</a>に規定する建築設備をいう。</div>
                         </div>
                       </div>
                     </div>
@@ -443,8 +443,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項各号</a>列記以外の部分の総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定めるものは、<a class="reference_link" href="#Mp-At_3-Pr_1-It_1">第一号から第十二号まで</a>に掲げる設備から配管設備等を除いたもの及び<a class="reference_link" href="#Mp-At_3-Pr_1-It_13">第十三号から第二十号まで</a>に掲げる設備とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項各号</a>列記以外の部分の総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定めるものは、<a class="reference_link" href="#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第十二号まで</a>に掲げる設備から配管設備等を除いたもの及び<a class="reference_link" href="#Mp-At_3-Pr_1-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三号から第二十号まで</a>に掲げる設備とする。</div>
                     </div>
                     <div id="Mp-At_3-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -509,7 +509,7 @@
                     <div id="Mp-At_3-Pr_1-It_11" class="Item" Num="11">
                       <div class="ItemTitle">十一</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">燃料電池発電設備（固体高分子型燃料電池、リン酸型燃料電池、溶融炭酸塩型燃料電池又は固体酸化物型燃料電池による発電設備であって火を使用するものに限る。<a class="reference_link" href="#Mp-At_16-Pr_1-It_4">第十六条第四号</a>イを除き、以下同じ。）</div>
+                        <div class="Sentence">燃料電池発電設備（固体高分子型燃料電池、リン酸型燃料電池、溶融炭酸塩型燃料電池又は固体酸化物型燃料電池による発電設備であって火を使用するものに限る。<a class="reference_link" href="#Mp-At_16-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第四号</a>イを除き、以下同じ。）</div>
                       </div>
                     </div>
                     <div id="Mp-At_3-Pr_1-It_12" class="Item" Num="12">
@@ -527,14 +527,14 @@
                     <div id="Mp-At_3-Pr_1-It_14" class="Item" Num="14">
                       <div class="ItemTitle">十四</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">放電加工機（加工液として<a class="reference_link" href="L_323AC1000000186.html">法</a>
-                          <a class="reference_link" href="L_323AC1000000186.html#Mp-At_2-Pr_7">第二条第七項</a>に規定する危険物を用いるものに限る。以下同じ。）</div>
+                        <div class="Sentence">放電加工機（加工液として<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_323AC1000000186.html#Mp-At_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第七項</a>に規定する危険物を用いるものに限る。以下同じ。）</div>
                       </div>
                     </div>
                     <div id="Mp-At_3-Pr_1-It_15" class="Item" Num="15">
                       <div class="ItemTitle">十五</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">変電設備（全出力二十キロワット以下のもの及び<a class="reference_link" href="#Mp-At_3-Pr_1-It_20">第二十号</a>に掲げるものを除く。以下同じ。）</div>
+                        <div class="Sentence">変電設備（全出力二十キロワット以下のもの及び<a class="reference_link" href="#Mp-At_3-Pr_1-It_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十号</a>に掲げるものを除く。以下同じ。）</div>
                       </div>
                     </div>
                     <div id="Mp-At_3-Pr_1-It_16" class="Item" Num="16">
@@ -564,7 +564,7 @@
                     <div id="Mp-At_3-Pr_1-It_20" class="Item" Num="20">
                       <div class="ItemTitle">二十</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">急速充電設備（電気を設備内部で変圧して、電気自動車等（電気を動力源とする自動車等（<a class="reference_link" href="L_335AC0000000105.html">道路交通法</a>（<a class="reference_link" href="L_335AC0000000105.html">昭和三十五年法律第百五号</a>）<a class="reference_link" href="L_335AC0000000105.html#Mp-At_2-Pr_1-It_9">第二条第一項第九号</a>に規定する自動車又は<a class="reference_link" href="L_335AC0000000105.html#Mp-At_2-Pr_1-It_10">同項第十号</a>に規定する原動機付自転車をいう。<a class="reference_link" href="#Mp-At_16-Pr_1-It_9">第十六条第九号</a>チにおいて同じ。）をいう。以下同じ。）に充電する設備（全出力二十キロワット以下のもの及び全出力二百キロワットを超えるものを除く。）をいう。以下同じ。）</div>
+                        <div class="Sentence">急速充電設備（電気を設備内部で変圧して、電気自動車等（電気を動力源とする自動車等（<a class="reference_link" href="L_335AC0000000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">道路交通法</a>（<a class="reference_link" href="L_335AC0000000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十五年法律第百五号</a>）<a class="reference_link" href="L_335AC0000000105.html#Mp-At_2-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項第九号</a>に規定する自動車又は<a class="reference_link" href="L_335AC0000000105.html#Mp-At_2-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第十号</a>に規定する原動機付自転車をいう。<a class="reference_link" href="#Mp-At_16-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第九号</a>チにおいて同じ。）をいう。以下同じ。）に充電する設備（全出力二十キロワット以下のもの及び全出力二百キロワットを超えるものを除く。）をいう。以下同じ。）</div>
                       </div>
                     </div>
                   </div>
@@ -576,8 +576,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める場合は、不燃材料で有効に仕上げをした建築物等の部分の構造が耐火構造であって、間柱、下地その他主要な部分を準不燃材料で造ったものである場合又は当該建築物等の部分の構造が耐火構造以外の構造であって、間柱、下地その他主要な部分を不燃材料で造ったもの（有効に遮熱できるものに限る。）である場合とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める場合は、不燃材料で有効に仕上げをした建築物等の部分の構造が耐火構造であって、間柱、下地その他主要な部分を準不燃材料で造ったものである場合又は当該建築物等の部分の構造が耐火構造以外の構造であって、間柱、下地その他主要な部分を不燃材料で造ったもの（有効に遮熱できるものに限る。）である場合とする。</div>
                     </div>
                   </div>
                 </div>
@@ -588,8 +588,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める火災予防上安全な距離は、<a class="reference_link" href="#Mp-At_5-Pr_1-It_1">次の各号</a>に掲げる距離のうち、消防長（消防本部を置かない市町村においては、市町村長。以下同じ。）又は消防署長が認める距離以上の距離とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める火災予防上安全な距離は、<a class="reference_link" href="#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる距離のうち、消防長（消防本部を置かない市町村においては、市町村長。以下同じ。）又は消防署長が認める距離以上の距離とする。</div>
                     </div>
                     <div id="Mp-At_5-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -618,8 +618,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3">第五条第一項第三号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める場合は、<a class="reference_link" href="#Mp-At_6-Pr_1-It_1">次の各号</a>に掲げる場合とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第三号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める場合は、<a class="reference_link" href="#Mp-At_6-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる場合とする。</div>
                     </div>
                     <div id="Mp-At_6-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -642,8 +642,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3">第五条第一項第三号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める不燃性の床等は、不燃材料のうち金属以外のもので造られた床若しくは台又は土間とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第三号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める不燃性の床等は、不燃材料のうち金属以外のもので造られた床若しくは台又は土間とする。</div>
                     </div>
                   </div>
                 </div>
@@ -654,8 +654,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4">第五条第一項第四号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める消費熱量は、三百五十キロワット（厨房設備にあっては、同一室内に設ける全ての厨房設備の入力の合計が三百五十キロワット）とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第四号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める消費熱量は、三百五十キロワット（厨房設備にあっては、同一室内に設ける全ての厨房設備の入力の合計が三百五十キロワット）とする。</div>
                     </div>
                   </div>
                 </div>
@@ -666,8 +666,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4">第五条第一項第四号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める場合は、対象火気設備等の周囲に有効な空間を保有する等、外部に熱が伝わらないための措置を講じた場合とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第四号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める場合は、対象火気設備等の周囲に有効な空間を保有する等、外部に熱が伝わらないための措置を講じた場合とする。</div>
                     </div>
                   </div>
                 </div>
@@ -678,8 +678,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_5">第五条第一項第五号</a>の規定により、対象火気設備等は、<a class="reference_link" href="#Mp-At_10-Pr_1-It_1">次の各号</a>に定めるところにより、その使用に際し、火災の発生のおそれのある部分について、防火上有効な措置が講じられた構造としなければならない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第五号</a>の規定により、対象火気設備等は、<a class="reference_link" href="#Mp-At_10-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定めるところにより、その使用に際し、火災の発生のおそれのある部分について、防火上有効な措置が講じられた構造としなければならない。</div>
                     </div>
                     <div id="Mp-At_10-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -696,7 +696,7 @@
                     <div id="Mp-At_10-Pr_1-It_3" class="Item" Num="3">
                       <div class="ItemTitle">三</div>
                       <div class="ItemSentence">
-                        <div class="Sentence" Num="1">燃料タンク（液体燃料を使用するものに係るものに限る。<a class="reference_link" href="#Mp-At_16">第十六条</a>を除き、以下同じ。）とたき口（内燃機関を原動力とする発電設備にあっては、内燃機関。以下同じ。）との間には、二メートル以上の水平距離を保つか、又は防火上有効な遮へいを設けること。</div>
+                        <div class="Sentence" Num="1">燃料タンク（液体燃料を使用するものに係るものに限る。<a class="reference_link" href="#Mp-At_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条</a>を除き、以下同じ。）とたき口（内燃機関を原動力とする発電設備にあっては、内燃機関。以下同じ。）との間には、二メートル以上の水平距離を保つか、又は防火上有効な遮へいを設けること。</div>
                         <div class="Sentence" Num="2">ただし、油温が著しく上昇するおそれのない燃料タンクにあっては、この限りでない。</div>
                       </div>
                     </div>
@@ -800,8 +800,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_6">第五条第一項第六号</a>の規定により、対象火気設備等は、<a class="reference_link" href="#Mp-At_11-Pr_1-It_1">次の各号</a>に定めるところにより、その周囲において火災が発生するおそれが少ないよう防火上有効な措置が講じられた構造としなければならない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第六号</a>の規定により、対象火気設備等は、<a class="reference_link" href="#Mp-At_11-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定めるところにより、その周囲において火災が発生するおそれが少ないよう防火上有効な措置が講じられた構造としなければならない。</div>
                     </div>
                     <div id="Mp-At_11-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -825,7 +825,7 @@
                       <div class="ItemTitle">四</div>
                       <div class="ItemSentence">
                         <div class="Sentence" Num="1">
-                          <a class="reference_link" href="#Mp-At_11-Pr_1-It_3">前号</a>の風道にあっては、火を使用する部分から防火ダンパーまで及び防火ダンパーから二メートル以内の部分を厚さ十センチメートル以上の金属以外の不燃材料で被覆すること。</div>
+                          <a class="reference_link" href="#Mp-At_11-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>の風道にあっては、火を使用する部分から防火ダンパーまで及び防火ダンパーから二メートル以内の部分を厚さ十センチメートル以上の金属以外の不燃材料で被覆すること。</div>
                         <div class="Sentence" Num="2">ただし、建築物等の可燃性の部分及び可燃性の物品との間に十五センチメートル以上の距離を有する部分にあっては、この限りでない。</div>
                       </div>
                     </div>
@@ -853,13 +853,13 @@
                       <div class="ItemTitle">八</div>
                       <div class="ItemSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_11-Pr_1-It_7">前号</a>ただし書の規定にかかわらず、次に掲げる厨房設備には、自動消火装置を設けること。</div>
+                          <a class="reference_link" href="#Mp-At_11-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>ただし書の規定にかかわらず、次に掲げる厨房設備には、自動消火装置を設けること。</div>
                       </div>
                       <div class="Subitem1" Num="1">
                         <div class="Subitem1Title">イ</div>
                         <div class="Subitem1Sentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_336CO0000000037.html">令</a>別表第一（一）項から（四）項まで、（五）項イ、（六）項、（九）項イ、（十六）項イ、（十六の二）項及び（十六の三）項に掲げる防火対象物の地階に設ける厨房設備にあっては、同一室内に設ける全ての厨房設備の入力の合計が三百五十キロワット以上のもの</div>
+                            <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第一（一）項から（四）項まで、（五）項イ、（六）項、（九）項イ、（十六）項イ、（十六の二）項及び（十六の三）項に掲げる防火対象物の地階に設ける厨房設備にあっては、同一室内に設ける全ての厨房設備の入力の合計が三百五十キロワット以上のもの</div>
                         </div>
                       </div>
                       <div class="Subitem1" Num="2">
@@ -896,8 +896,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_7">第五条第一項第七号</a>の規定により、対象火気設備等（建築設備を除く。）は、<a class="reference_link" href="#Mp-At_12-Pr_1-It_1">次の各号</a>に定めるところにより、振動又は衝撃により、容易に転倒し、落下し、破損し、又はき裂を生じず、かつ、その配線、配管等の接続部が容易に緩まない構造としなければならない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第七号</a>の規定により、対象火気設備等（建築設備を除く。）は、<a class="reference_link" href="#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定めるところにより、振動又は衝撃により、容易に転倒し、落下し、破損し、又はき裂を生じず、かつ、その配線、配管等の接続部が容易に緩まない構造としなければならない。</div>
                     </div>
                     <div id="Mp-At_12-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -970,8 +970,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_8">第五条第一項第八号</a>の規定により、対象火気設備等の配管（建築設備を除く。以下この条において同じ。）及び燃料タンクは、<a class="reference_link" href="#Mp-At_13-Pr_1-It_1">次の各号</a>に定めるところにより、燃料の漏れを防止し、かつ、異物を除去する措置が講じられた構造としなければならない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第八号</a>の規定により、対象火気設備等の配管（建築設備を除く。以下この条において同じ。）及び燃料タンクは、<a class="reference_link" href="#Mp-At_13-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定めるところにより、燃料の漏れを防止し、かつ、異物を除去する措置が講じられた構造としなければならない。</div>
                     </div>
                     <div id="Mp-At_13-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -1106,8 +1106,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_9">第五条第一項第九号</a>の規定により、対象火気設備等は、<a class="reference_link" href="#Mp-At_14-Pr_1-It_1">次の各号</a>に定めるところにより、ほこり、雨水その他当該対象火気設備等の機能に支障を及ぼすおそれのあるものが入らないようにするための措置が講じられた構造としなければならない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第九号</a>の規定により、対象火気設備等は、<a class="reference_link" href="#Mp-At_14-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定めるところにより、ほこり、雨水その他当該対象火気設備等の機能に支障を及ぼすおそれのあるものが入らないようにするための措置が講じられた構造としなければならない。</div>
                     </div>
                     <div id="Mp-At_14-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -1160,8 +1160,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_10">第五条第一項第十号</a>の規定により、対象火気設備等には、必要に応じ、<a class="reference_link" href="#Mp-At_15-Pr_1-It_1">次の各号</a>に定めるところにより、その使用に際し異常が生じた場合において安全を確保するために必要な装置を設けなければならない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第十号</a>の規定により、対象火気設備等には、必要に応じ、<a class="reference_link" href="#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定めるところにより、その使用に際し異常が生じた場合において安全を確保するために必要な装置を設けなければならない。</div>
                     </div>
                     <div id="Mp-At_15-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -1275,8 +1275,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_2">第五条第二項</a>の規定により、<a class="reference_link" href="#Mp-At_4">第四条から前条まで</a>に規定するもののほか、対象火気設備等の位置、構造及び管理に関し火災の予防のために必要な事項に係る条例は、<a class="reference_link" href="#Mp-At_16-Pr_1-It_1">次の各号</a>に定めるところにより制定されなければならない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第二項</a>の規定により、<a class="reference_link" href="#Mp-At_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条から前条まで</a>に規定するもののほか、対象火気設備等の位置、構造及び管理に関し火災の予防のために必要な事項に係る条例は、<a class="reference_link" href="#Mp-At_16-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定めるところにより制定されなければならない。</div>
                     </div>
                     <div id="Mp-At_16-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -1425,7 +1425,7 @@
                     <div id="Mp-At_16-Pr_1-It_10" class="Item" Num="10">
                       <div class="ItemTitle">十</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">急速充電設備のうち蓄電池を内蔵しているものにあっては、<a class="reference_link" href="#Mp-At_16-Pr_1-It_9">前号</a>に掲げる規定のほか、当該蓄電池について次に掲げる措置を講ずること。</div>
+                        <div class="Sentence">急速充電設備のうち蓄電池を内蔵しているものにあっては、<a class="reference_link" href="#Mp-At_16-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>に掲げる規定のほか、当該蓄電池について次に掲げる措置を講ずること。</div>
                       </div>
                       <div class="Subitem1" Num="1">
                         <div class="Subitem1Title">イ</div>
@@ -1461,8 +1461,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_3">第五条第三項</a>の規定により、次の表の上欄に掲げる対象火気設備等については、それぞれ同表の下欄に掲げる規定は適用しない。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第三項</a>の規定により、次の表の上欄に掲げる対象火気設備等については、それぞれ同表の下欄に掲げる規定は適用しない。</div>
                     </div>
                     <div class="TableStruct">
                       <table>
@@ -1480,8 +1480,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号から第四号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10">第十条から第十五条まで</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号から第四号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条から第十五条まで</a>
                             </div>
                           </td>
                         </tr>
@@ -1491,8 +1491,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1">第十二条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_7">第七号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13">第十三条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14">第十四条</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15-Pr_1-It_1">第十五条第一号から第七号まで</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一号から第七号まで</a>
                             </div>
                           </td>
                         </tr>
@@ -1502,8 +1502,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3">第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1">第十二条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2">第二号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_4">第四号から第十号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13">第十三条から第十五条まで</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号から第十号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条から第十五条まで</a>
                             </div>
                           </td>
                         </tr>
@@ -1513,12 +1513,12 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="#Mp-At_16-Pr_1-It_4">第十六条第四号</a>イに規定するものであって屋外に設けられるもの</div>
+                              <a class="reference_link" href="#Mp-At_16-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第四号</a>イに規定するものであって屋外に設けられるもの</div>
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3">第五条第一項第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1">第十条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_2">第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_6">第六号から第九号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_11">第十一号から第十三号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_1">第十一条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_7">第七号から第九号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2">第十二条第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_5">第五号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_6">第六号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_8">第八号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13-Pr_1-It_6">第十三条第六号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_2">第十四条第二号から第七号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15-Pr_1-It_2">第十五条第二号から第八号まで</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号から第九号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号から第十三号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号から第九号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条第六号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第二号から第七号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第二号から第八号まで</a>
                             </div>
                           </td>
                         </tr>
@@ -1528,8 +1528,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3">第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1">第十条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_2">第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_6">第六号から第九号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_11">第十一号から第十三号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_1">第十一条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_7">第七号から第九号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2">第十二条第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_5">第五号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_6">第六号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_8">第八号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13-Pr_1-It_6">第十三条第六号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_2">第十四条第二号から第七号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15-Pr_1-It_2">第十五条第二号から第八号まで</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号から第九号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号から第十三号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号から第九号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条第六号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第二号から第七号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第二号から第八号まで</a>
                             </div>
                           </td>
                         </tr>
@@ -1539,8 +1539,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1">第十二条第一号から第七号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_9">第九号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_10">第十号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13">第十三条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_1">第十四条第一号から第四号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_6">第六号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_7">第七号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15">第十五条</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号から第七号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第一号から第四号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条</a>
                             </div>
                           </td>
                         </tr>
@@ -1550,8 +1550,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1">第十条第一号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_12">第十二号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_13">第十三号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11">第十一条から第十三条まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_1">第十四条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_7">第七号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15">第十五条</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第一号から第十号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条から第十三条まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第一号から第五号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条</a>
                             </div>
                           </td>
                         </tr>
@@ -1561,8 +1561,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1">第十条第一号から第十一号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_13">第十三号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1">第十二条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2">第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_4">第四号から第八号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_10">第十号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13">第十三条から第十五条まで</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号から第四号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第一号から第十一号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号から第八号まで</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条から第十五条まで</a>
                             </div>
                           </td>
                         </tr>
@@ -1572,8 +1572,8 @@
                           </td>
                           <td>
                             <div class="Sentence">
-                              <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1">第五条第一項第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3">第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1">第十条第一号から第十二号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1">第十二条第一号から第九号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13">第十三条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_1">第十四条第一号から第六号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15">第十五条</a>
+                              <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                              <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項第一号</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_5-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第一号から第十二号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号から第九号まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_14-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第一号から第六号まで</a>並びに<a class="reference_link" href="L_336CO0000000037.html#Mp-At_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条</a>
                             </div>
                           </td>
                         </tr>
@@ -1591,8 +1591,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1">第五条の二第一項</a>の総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定めるものは、<a class="reference_link" href="#Mp-At_18-Pr_1-It_1">次の各号</a>に掲げる器具とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条の二第一項</a>の総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定めるものは、<a class="reference_link" href="#Mp-At_18-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる器具とする。</div>
                     </div>
                     <div id="Mp-At_18-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -1627,8 +1627,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1-It_1">第五条の二第一項第一号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める場合は、不燃材料で有効に仕上げをした建築物等の部分の構造が耐火構造であって、間柱、下地その他主要な部分を準不燃材料で造ったものである場合又は当該建築物等の部分の構造が耐火構造以外の構造であって、間柱、下地その他主要な部分を不燃材料で造ったもの（有効に遮熱できるものに限る。）である場合とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条の二第一項第一号</a>の防火上支障がないものとして総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める場合は、不燃材料で有効に仕上げをした建築物等の部分の構造が耐火構造であって、間柱、下地その他主要な部分を準不燃材料で造ったものである場合又は当該建築物等の部分の構造が耐火構造以外の構造であって、間柱、下地その他主要な部分を不燃材料で造ったもの（有効に遮熱できるものに限る。）である場合とする。</div>
                     </div>
                   </div>
                 </div>
@@ -1639,8 +1639,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1-It_1">第五条の二第一項第一号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める火災予防上安全な距離は、<a class="reference_link" href="#Mp-At_20-Pr_1-It_1">次の各号</a>に掲げる距離のうち、消防長又は消防署長が認める距離以上の距離とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条の二第一項第一号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める火災予防上安全な距離は、<a class="reference_link" href="#Mp-At_20-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる距離のうち、消防長又は消防署長が認める距離以上の距離とする。</div>
                     </div>
                     <div id="Mp-At_20-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
@@ -1669,8 +1669,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence" Num="1">
-                        <a class="reference_link" href="L_336CO0000000037.html">令</a>
-                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1-It_4">第五条の二第一項第四号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html">令</a>で定める不燃性の床、台等は、不燃性の床又は台とする。</div>
+                        <a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                        <a class="reference_link" href="L_336CO0000000037.html#Mp-At_5_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条の二第一項第四号</a>の総務省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める不燃性の床、台等は、不燃性の床又は台とする。</div>
                       <div class="Sentence" Num="2">ただし、対象火気器具等が置きごたつの火入れ容器である場合にあっては、金属以外の不燃材料で造った台とする。</div>
                     </div>
                   </div>
@@ -1682,7 +1682,7 @@
               <div id="Sp-Pr_1" class="Paragraph" Num="1">
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>は、消防法施行令の一部を改正する政令の施行の日（平成十五年一月一日）から施行する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、消防法施行令の一部を改正する政令の施行の日（平成十五年一月一日）から施行する。</div>
                 </div>
               </div>
             </div>
@@ -1692,14 +1692,14 @@
                 <div class="ParagraphCaption">（施行期日）</div>
                 <div class="ParagraphNum">１</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>は、平成十七年十月一日から施行する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、平成十七年十月一日から施行する。</div>
                 </div>
               </div>
               <div id="Sp_平成一七年三月二二日総務省令第三四号-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphCaption">（経過措置）</div>
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>の施行の際現に設置され、又は設置の工事がされている燃料電池発電設備のうち、この省<a class="reference_link" href="L_336CO0000000037.html">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>第二章の規定に適合しないものについては、当該規定は、適用しない。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>の施行の際現に設置され、又は設置の工事がされている燃料電池発電設備のうち、この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>第二章の規定に適合しないものについては、当該規定は、適用しない。</div>
                 </div>
               </div>
             </div>
@@ -1709,14 +1709,14 @@
                 <div class="ParagraphCaption">（施行期日）</div>
                 <div class="ParagraphNum">１</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>は、平成二十二年十二月一日から施行する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、平成二十二年十二月一日から施行する。</div>
                 </div>
               </div>
               <div id="Sp_平成二二年三月三〇日総務省令第二六号-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphCaption">（経過措置）</div>
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>の施行の際現に設置され、又は設置の工事がされている燃料電池発電設備（固体酸化物型燃料電池による発電設備に限る。）のうち、この省<a class="reference_link" href="L_336CO0000000037.html">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>第二章の規定に適合しないものについては、当該規定は、適用しない。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>の施行の際現に設置され、又は設置の工事がされている燃料電池発電設備（固体酸化物型燃料電池による発電設備に限る。）のうち、この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>第二章の規定に適合しないものについては、当該規定は、適用しない。</div>
                 </div>
               </div>
             </div>
@@ -1726,14 +1726,14 @@
                 <div class="ParagraphCaption">（施行期日）</div>
                 <div class="ParagraphNum">１</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>は、平成二十四年十二月一日から施行する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、平成二十四年十二月一日から施行する。</div>
                 </div>
               </div>
               <div id="Sp_平成二四年三月二七日総務省令第一七号-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphCaption">（経過措置）</div>
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>の施行の際現に設置され、又は設置の工事がされている急速充電設備のうち、この省<a class="reference_link" href="L_336CO0000000037.html">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>第二章の規定に適合しないものについては、当該規定は、適用しない。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>の施行の際現に設置され、又は設置の工事がされている急速充電設備のうち、この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>第二章の規定に適合しないものについては、当該規定は、適用しない。</div>
                 </div>
               </div>
             </div>
@@ -1742,7 +1742,7 @@
               <div id="Sp_平成二七年一一月一三日総務省令第九三号-Pr_1" class="Paragraph" Num="1">
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>は、平成二十八年四月一日から施行する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、平成二十八年四月一日から施行する。</div>
                 </div>
               </div>
             </div>
@@ -1752,15 +1752,15 @@
                 <div class="ParagraphCaption">（施行期日）</div>
                 <div class="ParagraphNum">１</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>は、<a class="reference_link" href="L_336CO0000000037.html">令</a>和三年四月一日から施行する。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>和三年四月一日から施行する。</div>
                 </div>
               </div>
               <div id="Sp_令和二年八月二七日総務省令第七七号-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphCaption">（経過措置）</div>
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html">令</a>の施行の際現に設置され、又は設置の工事がされているこの省<a class="reference_link" href="L_336CO0000000037.html">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>
-                    <a class="reference_link" href="L_414M60000008024.html#Mp-At_3-Pr_1-It_20">第三条第二十号</a>に規定する急速充電設備に係る位置、構造及び管理に関する基準の適用については、なお従前の例による。</div>
+                  <div class="Sentence">この省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>の施行の際現に設置され、又は設置の工事がされているこの省<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>による改正後の<a class="reference_link" href="L_414M60000008024.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">対象火気設備等の位置、構造及び管理並びに対象火気器具等の取扱いに関する条例の制定に関する基準を定める省令</a>
+                    <a class="reference_link" href="L_414M60000008024.html#Mp-At_3-Pr_1-It_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第二十号</a>に規定する急速充電設備に係る位置、構造及び管理に関する基準の適用については、なお従前の例による。</div>
                 </div>
               </div>
             </div>

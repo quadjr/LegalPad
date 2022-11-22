@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,21 +31,21 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1" data-id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1', 'Mp-Ch_1')">
                     <a class="title_text" href="#Mp-Ch_1">第一章　総則</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-Ch_1-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-Ch_1-At_1')">
                         <a class="title_text" href="#Mp-At_1">第一条（目的）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -53,7 +53,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-Ch_1-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-Ch_1-At_2')">
                         <a class="title_text" href="#Mp-At_2">第二条（定義）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -61,7 +61,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-Ch_1-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-Ch_1-At_3')">
                         <a class="title_text" href="#Mp-At_3">第三条（会計慣行のしん酌）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -71,14 +71,14 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_2" data-id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2', 'Mp-Ch_2')">
                     <a class="title_text" href="#Mp-Ch_2">第二章　信託帳簿及び財産状況開示資料の作成</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-Ch_2-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-Ch_2-At_4')">
                         <a class="title_text" href="#Mp-At_4">第四条（信託帳簿等の作成）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -86,7 +86,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-Ch_2-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-Ch_2-At_5')">
                         <a class="title_text" href="#Mp-At_5">第五条（会計帳簿等を作成すべき信託の特例）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -96,28 +96,28 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3" data-id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3', 'Mp-Ch_3')">
                     <a class="title_text" href="#Mp-Ch_3">第三章　限定責任信託の計算</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_1')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1" data-id="toggle-Mp-Ch_3-Se_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_1', 'Mp-Ch_3-Se_1')">
                         <a class="title_text" href="#Mp-Ch_3-Se_1">第一節　会計帳簿</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1-Ss_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_1-Ss_1')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1-Ss_1" data-id="toggle-Mp-Ch_3-Se_1-Ss_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_1-Ss_1', 'Mp-Ch_3-Se_1-Ss_1')">
                             <a class="title_text" href="#Mp-Ch_3-Se_1-Ss_1">第一款　総則</a>
                           </div>
                           <div class="table_indent">
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-Ch_3-Se_1-Ss_1-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-Ch_3-Se_1-Ss_1-At_6')">
                                 <a class="title_text" href="#Mp-At_6">第六条</a>
                               </div>
                               <div class="table_indent"></div>
@@ -127,14 +127,14 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1-Ss_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_1-Ss_2')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1-Ss_2" data-id="toggle-Mp-Ch_3-Se_1-Ss_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_1-Ss_2', 'Mp-Ch_3-Se_1-Ss_2')">
                             <a class="title_text" href="#Mp-Ch_3-Se_1-Ss_2">第二款　資産及び負債</a>
                           </div>
                           <div class="table_indent">
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-Ch_3-Se_1-Ss_2-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-Ch_3-Se_1-Ss_2-At_7')">
                                 <a class="title_text" href="#Mp-At_7">第七条（資産の評価）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -142,7 +142,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-Ch_3-Se_1-Ss_2-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-Ch_3-Se_1-Ss_2-At_8')">
                                 <a class="title_text" href="#Mp-At_8">第八条（負債の評価）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -150,7 +150,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_9" onclick="toggleClicked(this,'Mp-At_9')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-Ch_3-Se_1-Ss_2-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-Ch_3-Se_1-Ss_2-At_9')">
                                 <a class="title_text" href="#Mp-At_9">第九条（のれんの評価）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -160,14 +160,14 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1-Ss_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_1-Ss_3')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_1-Ss_3" data-id="toggle-Mp-Ch_3-Se_1-Ss_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_1-Ss_3', 'Mp-Ch_3-Se_1-Ss_3')">
                             <a class="title_text" href="#Mp-Ch_3-Se_1-Ss_3">第三款　金銭以外の当初拠出財産等の評価</a>
                           </div>
                           <div class="table_indent">
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_10" onclick="toggleClicked(this,'Mp-At_10')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-Ch_3-Se_1-Ss_3-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-Ch_3-Se_1-Ss_3-At_10')">
                                 <a class="title_text" href="#Mp-At_10">第十条（当初拠出財産の評価）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -175,7 +175,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_11" onclick="toggleClicked(this,'Mp-At_11')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-Ch_3-Se_1-Ss_3-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-Ch_3-Se_1-Ss_3-At_11')">
                                 <a class="title_text" href="#Mp-At_11">第十一条（金銭以外の信託財産に属する財産を受益者に給付する場合の評価）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -187,21 +187,21 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_2')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2" data-id="toggle-Mp-Ch_3-Se_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_2', 'Mp-Ch_3-Se_2')">
                         <a class="title_text" href="#Mp-Ch_3-Se_2">第二節　計算関係書類等</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2-Ss_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_2-Ss_1')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2-Ss_1" data-id="toggle-Mp-Ch_3-Se_2-Ss_1" onclick="toggleClicked(this,'Mp-Ch_3-Se_2-Ss_1', 'Mp-Ch_3-Se_2-Ss_1')">
                             <a class="title_text" href="#Mp-Ch_3-Se_2-Ss_1">第一款　総則</a>
                           </div>
                           <div class="table_indent">
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_12" onclick="toggleClicked(this,'Mp-At_12')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-Ch_3-Se_2-Ss_1-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-Ch_3-Se_2-Ss_1-At_12')">
                                 <a class="title_text" href="#Mp-At_12">第十二条（計算関係書類等）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -209,7 +209,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_13" onclick="toggleClicked(this,'Mp-At_13')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-Ch_3-Se_2-Ss_1-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-Ch_3-Se_2-Ss_1-At_13')">
                                 <a class="title_text" href="#Mp-At_13">第十三条（表示の原則）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -217,7 +217,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_14" onclick="toggleClicked(this,'Mp-At_14')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-Ch_3-Se_2-Ss_1-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-Ch_3-Se_2-Ss_1-At_14')">
                                 <a class="title_text" href="#Mp-At_14">第十四条（重要な会計方針に係る事項に関する注記）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -225,7 +225,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_15" onclick="toggleClicked(this,'Mp-At_15')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-Ch_3-Se_2-Ss_1-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-Ch_3-Se_2-Ss_1-At_15')">
                                 <a class="title_text" href="#Mp-At_15">第十五条（追加情報の注記）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -233,7 +233,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_16" onclick="toggleClicked(this,'Mp-At_16')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-Ch_3-Se_2-Ss_1-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-Ch_3-Se_2-Ss_1-At_16')">
                                 <a class="title_text" href="#Mp-At_16">第十六条（効力発生日の貸借対照表）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -241,7 +241,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_17" onclick="toggleClicked(this,'Mp-At_17')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-Ch_3-Se_2-Ss_1-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-Ch_3-Se_2-Ss_1-At_17')">
                                 <a class="title_text" href="#Mp-At_17">第十七条（各信託事務年度に係る計算書類）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -251,14 +251,14 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2-Ss_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_2-Ss_2')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2-Ss_2" data-id="toggle-Mp-Ch_3-Se_2-Ss_2" onclick="toggleClicked(this,'Mp-Ch_3-Se_2-Ss_2', 'Mp-Ch_3-Se_2-Ss_2')">
                             <a class="title_text" href="#Mp-Ch_3-Se_2-Ss_2">第二款　計算書類等</a>
                           </div>
                           <div class="table_indent">
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_18" onclick="toggleClicked(this,'Mp-At_18')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-Ch_3-Se_2-Ss_2-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-Ch_3-Se_2-Ss_2-At_18')">
                                 <a class="title_text" href="#Mp-At_18">第十八条（貸借対照表の区分）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -266,7 +266,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_19" onclick="toggleClicked(this,'Mp-At_19')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-Ch_3-Se_2-Ss_2-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-Ch_3-Se_2-Ss_2-At_19')">
                                 <a class="title_text" href="#Mp-At_19">第十九条（受益債権に係る債務の額の計上の禁止）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -274,7 +274,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_20" onclick="toggleClicked(this,'Mp-At_20')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-Ch_3-Se_2-Ss_2-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-Ch_3-Se_2-Ss_2-At_20')">
                                 <a class="title_text" href="#Mp-At_20">第二十条（給付可能額の注記）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -282,7 +282,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_21" onclick="toggleClicked(this,'Mp-At_21')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-Ch_3-Se_2-Ss_2-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-Ch_3-Se_2-Ss_2-At_21')">
                                 <a class="title_text" href="#Mp-At_21">第二十一条（損益計算書）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -290,7 +290,7 @@
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_22" onclick="toggleClicked(this,'Mp-At_22')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-Ch_3-Se_2-Ss_2-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-Ch_3-Se_2-Ss_2-At_22')">
                                 <a class="title_text" href="#Mp-At_22">第二十二条（附属明細書）</a>
                               </div>
                               <div class="table_indent"></div>
@@ -300,14 +300,14 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2-Ss_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_2-Ss_3')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_2-Ss_3" data-id="toggle-Mp-Ch_3-Se_2-Ss_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_2-Ss_3', 'Mp-Ch_3-Se_2-Ss_3')">
                             <a class="title_text" href="#Mp-Ch_3-Se_2-Ss_3">第三款　信託概況報告</a>
                           </div>
                           <div class="table_indent">
                             <div>
                               <div class="table_line">
                                 <div class="table_arrow_dummy"></div>
-                                <div class="table_line_toggle" id="toggle-Mp-At_23" onclick="toggleClicked(this,'Mp-At_23')"></div>
+                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-Ch_3-Se_2-Ss_3-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-Ch_3-Se_2-Ss_3-At_23')">
                                 <a class="title_text" href="#Mp-At_23">第二十三条</a>
                               </div>
                               <div class="table_indent"></div>
@@ -319,14 +319,14 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_3')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_3" data-id="toggle-Mp-Ch_3-Se_3" onclick="toggleClicked(this,'Mp-Ch_3-Se_3', 'Mp-Ch_3-Se_3')">
                         <a class="title_text" href="#Mp-Ch_3-Se_3">第三節　給付可能額の算定方法</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_24" onclick="toggleClicked(this,'Mp-At_24')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-Ch_3-Se_3-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-Ch_3-Se_3-At_24')">
                             <a class="title_text" href="#Mp-At_24">第二十四条</a>
                           </div>
                           <div class="table_indent"></div>
@@ -336,14 +336,14 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <div class="table_line_toggle" id="toggle-Mp-Ch_3-Se_4" onclick="toggleClicked(this,'Mp-Ch_3-Se_4')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3-Se_4" data-id="toggle-Mp-Ch_3-Se_4" onclick="toggleClicked(this,'Mp-Ch_3-Se_4', 'Mp-Ch_3-Se_4')">
                         <a class="title_text" href="#Mp-Ch_3-Se_4">第四節　清算中の信託の特例</a>
                       </div>
                       <div class="table_indent">
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_25" onclick="toggleClicked(this,'Mp-At_25')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-Ch_3-Se_4-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-Ch_3-Se_4-At_25')">
                             <a class="title_text" href="#Mp-At_25">第二十五条（総則）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -351,7 +351,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_26" onclick="toggleClicked(this,'Mp-At_26')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-Ch_3-Se_4-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-Ch_3-Se_4-At_26')">
                             <a class="title_text" href="#Mp-At_26">第二十六条（財産目録）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -359,7 +359,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_27" onclick="toggleClicked(this,'Mp-At_27')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-Ch_3-Se_4-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-Ch_3-Se_4-At_27')">
                             <a class="title_text" href="#Mp-At_27">第二十七条（清算開始時の貸借対照表）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -367,7 +367,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_28" onclick="toggleClicked(this,'Mp-At_28')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_28" data-id="toggle-Mp-Ch_3-Se_4-At_28" onclick="toggleClicked(this,'Mp-At_28', 'Mp-Ch_3-Se_4-At_28')">
                             <a class="title_text" href="#Mp-At_28">第二十八条（各清算事務年度に係る貸借対照表）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -375,7 +375,7 @@
                         <div>
                           <div class="table_line">
                             <div class="table_arrow_dummy"></div>
-                            <div class="table_line_toggle" id="toggle-Mp-At_29" onclick="toggleClicked(this,'Mp-At_29')"></div>
+                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_29" data-id="toggle-Mp-Ch_3-Se_4-At_29" onclick="toggleClicked(this,'Mp-At_29', 'Mp-Ch_3-Se_4-At_29')">
                             <a class="title_text" href="#Mp-At_29">第二十九条（各清算事務年度に係る事務報告）</a>
                           </div>
                           <div class="table_indent"></div>
@@ -387,14 +387,14 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <div class="table_line_toggle" id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4" data-id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4', 'Mp-Ch_4')">
                     <a class="title_text" href="#Mp-Ch_4">第四章　受益証券発行限定責任信託の会計監査</a>
                   </div>
                   <div class="table_indent">
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_30" onclick="toggleClicked(this,'Mp-At_30')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_30" data-id="toggle-Mp-Ch_4-At_30" onclick="toggleClicked(this,'Mp-At_30', 'Mp-Ch_4-At_30')">
                         <a class="title_text" href="#Mp-At_30">第三十条（会計監査報告の作成）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -402,7 +402,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_31" onclick="toggleClicked(this,'Mp-At_31')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_31" data-id="toggle-Mp-Ch_4-At_31" onclick="toggleClicked(this,'Mp-At_31', 'Mp-Ch_4-At_31')">
                         <a class="title_text" href="#Mp-At_31">第三十一条（計算関係書類の会計監査）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -410,7 +410,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_32" onclick="toggleClicked(this,'Mp-At_32')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_32" data-id="toggle-Mp-Ch_4-At_32" onclick="toggleClicked(this,'Mp-At_32', 'Mp-Ch_4-At_32')">
                         <a class="title_text" href="#Mp-At_32">第三十二条（会計監査報告）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -418,7 +418,7 @@
                     <div>
                       <div class="table_line">
                         <div class="table_arrow_dummy"></div>
-                        <div class="table_line_toggle" id="toggle-Mp-At_33" onclick="toggleClicked(this,'Mp-At_33')"></div>
+                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_33" data-id="toggle-Mp-Ch_4-At_33" onclick="toggleClicked(this,'Mp-At_33', 'Mp-Ch_4-At_33')">
                         <a class="title_text" href="#Mp-At_33">第三十三条（会計監査報告の通知期限等）</a>
                       </div>
                       <div class="table_indent"></div>
@@ -430,7 +430,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -438,7 +438,7 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_418AC0000000108.html">信託法</a>（<a class="reference_link" href="L_418AC0000000108.html">平成十八年法律第百八号</a>）の規定に基づき、<a class="reference_link" href="L_419M60000010042.html">信託計算規則</a>を次のように定める。</div>
+              <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">信託法</a>（<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十八年法律第百八号</a>）の規定に基づき、<a class="reference_link" href="L_419M60000010042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">信託計算規則</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-Ch_1" class="Chapter" Num="1">
                 <div class="ChapterTitle">第一章　総則</div>
@@ -448,7 +448,7 @@
                   <div id="Mp-At_1-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">この省令は、<a class="reference_link" href="L_418AC0000000108.html">信託法</a>（<a class="reference_link" href="L_418AC0000000108.html">平成十八年法律第百八号</a>。以下「法」という。）の規定により委任された信託の計算に関する事項その他の事項について、必要な事項を定めることを目的とする。</div>
+                      <div class="Sentence">この省令は、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">信託法</a>（<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十八年法律第百八号</a>。以下「法」という。）の規定により委任された信託の計算に関する事項その他の事項について、必要な事項を定めることを目的とする。</div>
                     </div>
                   </div>
                 </div>
@@ -458,14 +458,14 @@
                   <div id="Mp-At_2-Pr_1" class="Paragraph" Num="1">
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">この省令において使用する用語は、<a class="reference_link" href="L_418AC0000000108.html">法</a>において使用する用語の例による。</div>
+                      <div class="Sentence">この省令において使用する用語は、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>において使用する用語の例による。</div>
                     </div>
                   </div>
                   <div id="Mp-At_2-Pr_2" class="Paragraph" Num="2">
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">この省令において「電磁的記録」とは、<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_3-Pr_1-It_3">第三条第三号</a>に規定する電磁的記録をいう。</div>
+                      <div class="Sentence">この省令において「電磁的記録」とは、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_3-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第三号</a>に規定する電磁的記録をいう。</div>
                     </div>
                   </div>
                 </div>
@@ -489,9 +489,9 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_1">第三十七条第一項</a>の規定による信託財産に係る帳簿その他の書類又は電磁的記録（以下この条及び<a class="reference_link" href="#Mp-At_5">次条</a>において「信託帳簿」という。）の作成及び<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_2">第三十七条第二項</a>の規定による<a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_2">同項</a>の書類又は電磁的記録の作成については、この条に定めるところによる。</div>
+                        <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第一項</a>の規定による信託財産に係る帳簿その他の書類又は電磁的記録（以下この条及び<a class="reference_link" href="#Mp-At_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条</a>において「信託帳簿」という。）の作成及び<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第二項</a>の規定による<a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の書類又は電磁的記録の作成については、この条に定めるところによる。</div>
                     </div>
                   </div>
                   <div id="Mp-At_4-Pr_2" class="Paragraph" Num="2">
@@ -504,8 +504,8 @@
                     <div class="ParagraphNum">３</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_2">第三十七条第二項</a>に規定する<a class="reference_link" href="L_418AC0000000108.html">法</a>務省令で定める書類又は電磁的記録は、この条の規定により作成される財産状況開示資料とする。</div>
+                        <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_37-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第二項</a>に規定する<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>務省令で定める書類又は電磁的記録は、この条の規定により作成される財産状況開示資料とする。</div>
                     </div>
                   </div>
                   <div id="Mp-At_4-Pr_4" class="Paragraph" Num="4">
@@ -534,14 +534,14 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="#Mp-At_4">前条</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_5-Pr_1-It_1">次の各号</a>に掲げる要件のいずれにも該当する信託については、<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_2">第二百二十二条第二項</a>の会計帳簿を受託者が作成すべき信託帳簿とし、<a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4">同条第四項</a>の規定により作成すべき書類又は電磁的記録を受託者が作成すべき財産状況開示資料とする。</div>
+                        <a class="reference_link" href="#Mp-At_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_5-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる要件のいずれにも該当する信託については、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第二項</a>の会計帳簿を受託者が作成すべき信託帳簿とし、<a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第四項</a>の規定により作成すべき書類又は電磁的記録を受託者が作成すべき財産状況開示資料とする。</div>
                     </div>
                     <div id="Mp-At_5-Pr_1-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">当該信託の受益権（二以上の受益権がある場合にあっては、そのすべての受益権）について<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_93-Pr_1">第九十三条第一項</a>ただし書の規定の適用がなく、かつ、当該受益権について譲渡の制限がないこと。</div>
+                        <div class="Sentence">当該信託の受益権（二以上の受益権がある場合にあっては、そのすべての受益権）について<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_93-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九十三条第一項</a>ただし書の規定の適用がなく、かつ、当該受益権について譲渡の制限がないこと。</div>
                       </div>
                     </div>
                     <div id="Mp-At_5-Pr_1-It_2" class="Item" Num="2">
@@ -555,7 +555,7 @@
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="#Mp-At_4">前条</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_5-Pr_1">前項</a>に規定する信託においては、信託帳簿及び財産状況開示資料の作成は、次章（<a class="reference_link" href="#Mp-At_20">第二十条</a>及び第三節を除く。）の規定に従って行わなければならない。</div>
+                        <a class="reference_link" href="#Mp-At_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条</a>の規定にかかわらず、<a class="reference_link" href="#Mp-At_5-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>に規定する信託においては、信託帳簿及び財産状況開示資料の作成は、次章（<a class="reference_link" href="#Mp-At_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条</a>及び第三節を除く。）の規定に従って行わなければならない。</div>
                     </div>
                   </div>
                 </div>
@@ -572,8 +572,8 @@
                         <div class="ParagraphNum"></div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_2">第二百二十二条第二項</a>の規定による会計帳簿の作成については、他の<a class="reference_link" href="L_418AC0000000108.html">法</a>令に別段の定めがある場合を除き、この節に定めるところによる。</div>
+                            <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第二項</a>の規定による会計帳簿の作成については、他の<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>令に別段の定めがある場合を除き、この節に定めるところによる。</div>
                         </div>
                       </div>
                       <div id="Mp-At_6-Pr_2" class="Paragraph" Num="2">
@@ -598,14 +598,14 @@
                       <div id="Mp-At_7-Pr_2" class="Paragraph" Num="2">
                         <div class="ParagraphNum">２</div>
                         <div class="ParagraphSentence">
-                          <div class="Sentence">償却すべき資産については、信託事務年度の末日（信託事務年度の末日以外の日において評価すべき場合にあっては、その日。以下この条及び<a class="reference_link" href="#Mp-At_8">次条</a>において同じ。）において、相当の償却をしなければならない。</div>
+                          <div class="Sentence">償却すべき資産については、信託事務年度の末日（信託事務年度の末日以外の日において評価すべき場合にあっては、その日。以下この条及び<a class="reference_link" href="#Mp-At_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条</a>において同じ。）において、相当の償却をしなければならない。</div>
                         </div>
                       </div>
                       <div id="Mp-At_7-Pr_3" class="Paragraph" Num="3">
                         <div class="ParagraphNum">３</div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_7-Pr_3-It_1">次の各号</a>に掲げる資産については、信託事務年度の末日において当該<a class="reference_link" href="#Mp-At_7-Pr_3-It_1">各号</a>に定める価格を付すべき場合には、当該<a class="reference_link" href="#Mp-At_7-Pr_3-It_1">各号</a>に定める価格を付さなければならない。</div>
+                            <a class="reference_link" href="#Mp-At_7-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる資産については、信託事務年度の末日において当該<a class="reference_link" href="#Mp-At_7-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める価格を付すべき場合には、当該<a class="reference_link" href="#Mp-At_7-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める価格を付さなければならない。</div>
                         </div>
                         <div id="Mp-At_7-Pr_3-It_1" class="Item" Num="1">
                           <div class="ItemTitle">一</div>
@@ -657,7 +657,7 @@
                           <div class="ItemTitle">二</div>
                           <div class="ItemSentence">
                             <div class="Sentence">
-                              <a class="reference_link" href="#Mp-At_7-Pr_6-It_1">前号</a>に掲げる資産のほか、信託事務年度の末日においてその時の時価又は適正な価格を付すことが適当な資産</div>
+                              <a class="reference_link" href="#Mp-At_7-Pr_6-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>に掲げる資産のほか、信託事務年度の末日においてその時の時価又は適正な価格を付すことが適当な資産</div>
                           </div>
                         </div>
                       </div>
@@ -686,7 +686,7 @@
                           <div class="ItemTitle">二</div>
                           <div class="ItemSentence">
                             <div class="Sentence">
-                              <a class="reference_link" href="#Mp-At_8-Pr_2-It_1">前号</a>に掲げる負債のほか、信託事務年度の末日においてその時の時価又は適正な価格を付すことが適当な負債</div>
+                              <a class="reference_link" href="#Mp-At_8-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>に掲げる負債のほか、信託事務年度の末日においてその時の時価又は適正な価格を付すことが適当な負債</div>
                           </div>
                         </div>
                       </div>
@@ -715,7 +715,7 @@
                           <div class="ItemTitle">三</div>
                           <div class="ItemSentence">
                             <div class="Sentence">
-                              <a class="reference_link" href="#Mp-At_9-Pr_1-It_1">前二号</a>に掲げる場合のほか、のれんを計上しなければならない正当な理由がある場合において、適正なのれんを計上するとき。</div>
+                              <a class="reference_link" href="#Mp-At_9-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前二号</a>に掲げる場合のほか、のれんを計上しなければならない正当な理由がある場合において、適正なのれんを計上するとき。</div>
                           </div>
                         </div>
                       </div>
@@ -736,7 +736,7 @@
                         <div class="ParagraphNum">２</div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_10-Pr_1">前項</a>の規定にかかわらず、当該当初拠出財産の取得原価を当該当初拠出財産の市場価格（市場価格がない場合にあっては、一般に合理的と認められる評価慣行により算定された価額。以下この項において同じ。）をもって測定することとすべき場合には、当該市場価格を付さなければならない。</div>
+                            <a class="reference_link" href="#Mp-At_10-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の規定にかかわらず、当該当初拠出財産の取得原価を当該当初拠出財産の市場価格（市場価格がない場合にあっては、一般に合理的と認められる評価慣行により算定された価額。以下この項において同じ。）をもって測定することとすべき場合には、当該市場価格を付さなければならない。</div>
                         </div>
                       </div>
                     </div>
@@ -746,7 +746,7 @@
                       <div id="Mp-At_11-Pr_1" class="Paragraph" Num="1">
                         <div class="ParagraphNum"></div>
                         <div class="ParagraphSentence">
-                          <div class="Sentence">金銭以外の信託財産に属する財産を受益者に給付するときは、当該財産については、<a class="reference_link" href="#Mp-At_11-Pr_1-It_1">次の各号</a>に掲げる財産の区分に応じ、当該<a class="reference_link" href="#Mp-At_11-Pr_1-It_1">各号</a>に定める価額を付さなければならない。</div>
+                          <div class="Sentence">金銭以外の信託財産に属する財産を受益者に給付するときは、当該財産については、<a class="reference_link" href="#Mp-At_11-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる財産の区分に応じ、当該<a class="reference_link" href="#Mp-At_11-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める価額を付さなければならない。</div>
                         </div>
                         <div id="Mp-At_11-Pr_1-It_1" class="Item" Num="1">
                           <div class="ItemTitle">一</div>
@@ -786,7 +786,7 @@
                         <div class="ParagraphNum">２</div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_11-Pr_1">前項</a>の規定にかかわらず、給付の直前における当該財産の適正な帳簿価額を付すべき場合には、当該帳簿価額を付さなければならない。</div>
+                            <a class="reference_link" href="#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の規定にかかわらず、給付の直前における当該財産の適正な帳簿価額を付すべき場合には、当該帳簿価額を付さなければならない。</div>
                         </div>
                       </div>
                     </div>
@@ -803,30 +803,30 @@
                         <div class="ParagraphNum"></div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_3">第二百二十二条第三項</a>及び<a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4">第四項</a>の規定により作成すべきものについては、他の<a class="reference_link" href="L_418AC0000000108.html">法</a>令に別段の定めがある場合を除き、この節に定めるところによる。</div>
+                            <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第三項</a>及び<a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>の規定により作成すべきものについては、他の<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>令に別段の定めがある場合を除き、この節に定めるところによる。</div>
                         </div>
                       </div>
                       <div id="Mp-At_12-Pr_2" class="Paragraph" Num="2">
                         <div class="ParagraphNum">２</div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4">第二百二十二条第四項</a>に規定する<a class="reference_link" href="L_418AC0000000108.html">法</a>務省令で定める書類又は電磁的記録は、貸借対照表、損益計算書（損益計算書を電磁的記録をもって作成した場合における当該電磁的記録を含む。以下同じ。）及び信託概況報告並びにこれらの附属明細書（附属明細書を電磁的記録をもって作成した場合における当該電磁的記録を含む。以下同じ。）とする。</div>
+                            <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第四項</a>に規定する<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>務省令で定める書類又は電磁的記録は、貸借対照表、損益計算書（損益計算書を電磁的記録をもって作成した場合における当該電磁的記録を含む。以下同じ。）及び信託概況報告並びにこれらの附属明細書（附属明細書を電磁的記録をもって作成した場合における当該電磁的記録を含む。以下同じ。）とする。</div>
                         </div>
                       </div>
                       <div id="Mp-At_12-Pr_3" class="Paragraph" Num="3">
                         <div class="ParagraphNum">３</div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="#Mp-At_12-Pr_2">前項</a>に規定する書類又は電磁的記録は、信託事務年度の経過後、三月以内に作成しなければならない。</div>
+                            <a class="reference_link" href="#Mp-At_12-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>に規定する書類又は電磁的記録は、信託事務年度の経過後、三月以内に作成しなければならない。</div>
                         </div>
                       </div>
                       <div id="Mp-At_12-Pr_4" class="Paragraph" Num="4">
                         <div class="ParagraphNum">４</div>
                         <div class="ParagraphSentence">
-                          <div class="Sentence">会計監査人設置信託（<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_248-Pr_3">第二百四十八条第三項</a>に規定する会計監査人設置信託をいう。）における<a class="reference_link" href="#Mp-At_12-Pr_3">前項</a>の規定の適用については、<a class="reference_link" href="#Mp-At_12-Pr_3">同項中</a>「作成しなければ」とあるのは、「作成し、法第二百五十二条第一項の会計監査を受けなければ」とする。</div>
+                          <div class="Sentence">会計監査人設置信託（<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_248-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百四十八条第三項</a>に規定する会計監査人設置信託をいう。）における<a class="reference_link" href="#Mp-At_12-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の規定の適用については、<a class="reference_link" href="#Mp-At_12-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項中</a>「作成しなければ」とあるのは、「作成し、法第二百五十二条第一項の会計監査を受けなければ」とする。</div>
                         </div>
                       </div>
                     </div>
@@ -837,8 +837,8 @@
                         <div class="ParagraphNum"></div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_3">第二百二十二条第三項</a>及び<a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4">第四項</a>の規定により作成すべきもの（信託概況報告及びその附属明細書を除く。）に係る事項の金額は、一円単位、千円単位又は百万円単位をもって表示するものとする。</div>
+                            <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第三項</a>及び<a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>の規定により作成すべきもの（信託概況報告及びその附属明細書を除く。）に係る事項の金額は、一円単位、千円単位又は百万円単位をもって表示するものとする。</div>
                         </div>
                       </div>
                     </div>
@@ -848,19 +848,19 @@
                       <div id="Mp-At_14-Pr_1" class="Paragraph" Num="1">
                         <div class="ParagraphNum"></div>
                         <div class="ParagraphSentence">
-                          <div class="Sentence">貸借対照表又は損益計算書（以下「計算書類」という。）には、計算書類の作成のために採用している会計処理の原則及び手続並びに表示方<a class="reference_link" href="L_418AC0000000108.html">法</a>その他計算書類作成のための基本となる事項（<a class="reference_link" href="#Mp-At_14-Pr_2">次項</a>において「会計方針」という。）であって、次に掲げる事項（重要性の乏しいものを除く。）を注記しなければならない。</div>
+                          <div class="Sentence">貸借対照表又は損益計算書（以下「計算書類」という。）には、計算書類の作成のために採用している会計処理の原則及び手続並びに表示方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>その他計算書類作成のための基本となる事項（<a class="reference_link" href="#Mp-At_14-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>において「会計方針」という。）であって、次に掲げる事項（重要性の乏しいものを除く。）を注記しなければならない。</div>
                         </div>
                         <div id="Mp-At_14-Pr_1-It_1" class="Item" Num="1">
                           <div class="ItemTitle">一</div>
                           <div class="ItemSentence">
-                            <div class="Sentence">資産の評価基準及び評価方<a class="reference_link" href="L_418AC0000000108.html">法</a>
+                            <div class="Sentence">資産の評価基準及び評価方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             </div>
                           </div>
                         </div>
                         <div id="Mp-At_14-Pr_1-It_2" class="Item" Num="2">
                           <div class="ItemTitle">二</div>
                           <div class="ItemSentence">
-                            <div class="Sentence">固定資産の減価償却の方<a class="reference_link" href="L_418AC0000000108.html">法</a>
+                            <div class="Sentence">固定資産の減価償却の方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             </div>
                           </div>
                         </div>
@@ -897,7 +897,7 @@
                         <div id="Mp-At_14-Pr_2-It_2" class="Item" Num="2">
                           <div class="ItemTitle">二</div>
                           <div class="ItemSentence">
-                            <div class="Sentence">表示方<a class="reference_link" href="L_418AC0000000108.html">法</a>を変更したときは、その内容</div>
+                            <div class="Sentence">表示方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>を変更したときは、その内容</div>
                           </div>
                         </div>
                       </div>
@@ -919,8 +919,8 @@
                         <div class="ParagraphNum"></div>
                         <div class="ParagraphSentence">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_3">第二百二十二条第三項</a>の規定により作成すべき貸借対照表は、限定責任信託の効力が生じた日における会計帳簿に基づき作成しなければならない。</div>
+                            <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第三項</a>の規定により作成すべき貸借対照表は、限定責任信託の効力が生じた日における会計帳簿に基づき作成しなければならない。</div>
                         </div>
                       </div>
                     </div>
@@ -1006,8 +1006,8 @@
                       <div id="Mp-At_20-Pr_1" class="Paragraph" Num="1">
                         <div class="ParagraphNum"></div>
                         <div class="ParagraphSentence">
-                          <div class="Sentence">貸借対照表には、給付可能額（<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_225">第二百二十五条</a>に規定する給付可能額をいう。以下この章において同じ。）を注記しなければならない。</div>
+                          <div class="Sentence">貸借対照表には、給付可能額（<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <a class="reference_link" href="L_418AC0000000108.html#Mp-At_225" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十五条</a>に規定する給付可能額をいう。以下この章において同じ。）を注記しなければならない。</div>
                         </div>
                       </div>
                     </div>
@@ -1059,13 +1059,13 @@
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_225">第二百二十五条</a>に規定する<a class="reference_link" href="L_418AC0000000108.html">法</a>務省令で定める方<a class="reference_link" href="L_418AC0000000108.html">法</a>は、信託財産に係る給付（当該信託の受益権を当該信託の信託財産に帰属させることに代えて当該受益権を有する者に信託財産に属する財産を交付する行為を含む。以下この項において同じ。）の日の属する信託事務年度の前信託事務年度の末日における純資産額から<a class="reference_link" href="#Mp-At_24-Pr_1-It_1">次の各号</a>に掲げる額の合計額を控除する方<a class="reference_link" href="L_418AC0000000108.html">法</a>とする。</div>
+                          <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_225" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十五条</a>に規定する<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>務省令で定める方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>は、信託財産に係る給付（当該信託の受益権を当該信託の信託財産に帰属させることに代えて当該受益権を有する者に信託財産に属する財産を交付する行為を含む。以下この項において同じ。）の日の属する信託事務年度の前信託事務年度の末日における純資産額から<a class="reference_link" href="#Mp-At_24-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる額の合計額を控除する方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>とする。</div>
                       </div>
                       <div id="Mp-At_24-Pr_1-It_1" class="Item" Num="1">
                         <div class="ItemTitle">一</div>
                         <div class="ItemSentence">
-                          <div class="Sentence">百万円（信託行為において、信託留保金の額を定め、又はこれを算定する方<a class="reference_link" href="L_418AC0000000108.html">法</a>を定めた場合において、当該信託留保金の額又は当該方<a class="reference_link" href="L_418AC0000000108.html">法</a>により算定された信託留保金の額が百万円を超えるときにあっては、当該信託留保金の額）</div>
+                          <div class="Sentence">百万円（信託行為において、信託留保金の額を定め、又はこれを算定する方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>を定めた場合において、当該信託留保金の額又は当該方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により算定された信託留保金の額が百万円を超えるときにあっては、当該信託留保金の額）</div>
                         </div>
                       </div>
                       <div id="Mp-At_24-Pr_1-It_2" class="Item" Num="2">
@@ -1079,13 +1079,13 @@
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_24-Pr_1">前項</a>の純資産額の計算上、自己受益権（受益権が当該受益権に係る信託の信託財産に属する場合における当該受益権をいう。）は、資産として計上されていないものとする。</div>
+                          <a class="reference_link" href="#Mp-At_24-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の純資産額の計算上、自己受益権（受益権が当該受益権に係る信託の信託財産に属する場合における当該受益権をいう。）は、資産として計上されていないものとする。</div>
                       </div>
                     </div>
                     <div id="Mp-At_24-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">限定責任信託においては、<a class="reference_link" href="#Mp-At_24-Pr_1">第一項</a>の信託行為において定めた給付可能額又は給付可能額を算定する方<a class="reference_link" href="L_418AC0000000108.html">法</a>は、信託の変更によって変更することができない。</div>
+                        <div class="Sentence">限定責任信託においては、<a class="reference_link" href="#Mp-At_24-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の信託行為において定めた給付可能額又は給付可能額を算定する方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>は、信託の変更によって変更することができない。</div>
                       </div>
                     </div>
                   </div>
@@ -1099,9 +1099,9 @@
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_12-Pr_1">第十二条第一項</a>の規定にかかわらず、<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4">第二百二十二条第四項</a>の規定により清算受託者（<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_177">第百七十七条</a>に規定する清算受託者をいう。以下この節において同じ。）が作成すべきものについては、この節に定めるところによる。</div>
+                          <a class="reference_link" href="#Mp-At_12-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一項</a>の規定にかかわらず、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第四項</a>の規定により清算受託者（<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_177" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百七十七条</a>に規定する清算受託者をいう。以下この節において同じ。）が作成すべきものについては、この節に定めるところによる。</div>
                       </div>
                     </div>
                   </div>
@@ -1111,15 +1111,15 @@
                     <div id="Mp-At_26-Pr_1" class="Paragraph" Num="1">
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">清算受託者は、信託の清算が開始したときは、遅滞なく、<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_175">第百七十五条</a>に規定する場合に該当することとなった日（以下この節において「清算開始の日」という。）における財産目録を作成しなければならない。</div>
+                        <div class="Sentence">清算受託者は、信託の清算が開始したときは、遅滞なく、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_418AC0000000108.html#Mp-At_175" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百七十五条</a>に規定する場合に該当することとなった日（以下この節において「清算開始の日」という。）における財産目録を作成しなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_26-Pr_2" class="Paragraph" Num="2">
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence" Num="1">
-                          <a class="reference_link" href="#Mp-At_26-Pr_1">前項</a>の財産目録に計上すべき財産については、その処分価格を付すことが困難な場合を除き、清算開始の日における処分価格を付さなければならない。</div>
+                          <a class="reference_link" href="#Mp-At_26-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の財産目録に計上すべき財産については、その処分価格を付すことが困難な場合を除き、清算開始の日における処分価格を付さなければならない。</div>
                         <div class="Sentence" Num="2">この場合において、清算中の信託の会計帳簿については、財産目録に付された価格を取得価額とみなす。</div>
                       </div>
                     </div>
@@ -1127,8 +1127,8 @@
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence" Num="1">
-                          <a class="reference_link" href="#Mp-At_26-Pr_1">第一項</a>の財産目録は、次に掲げる部に区分して表示しなければならない。</div>
-                        <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_26-Pr_3-It_1">第一号</a>及び<a class="reference_link" href="#Mp-At_26-Pr_3-It_2">第二号</a>に掲げる部は、その内容を示す適当な名称を付した項目に細分することができる。</div>
+                          <a class="reference_link" href="#Mp-At_26-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の財産目録は、次に掲げる部に区分して表示しなければならない。</div>
+                        <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_26-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>及び<a class="reference_link" href="#Mp-At_26-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に掲げる部は、その内容を示す適当な名称を付した項目に細分することができる。</div>
                       </div>
                       <div id="Mp-At_26-Pr_3-It_1" class="Item" Num="1">
                         <div class="ItemTitle">一</div>
@@ -1163,8 +1163,8 @@
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence" Num="1">
-                          <a class="reference_link" href="#Mp-At_27-Pr_1">前項</a>の貸借対照表は、次に掲げる部に区分して表示しなければならない。</div>
-                        <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_27-Pr_2-It_1">第一号</a>及び<a class="reference_link" href="#Mp-At_27-Pr_2-It_2">第二号</a>に掲げる部は、その内容を示す適当な名称を付した項目に細分することができる。</div>
+                          <a class="reference_link" href="#Mp-At_27-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の貸借対照表は、次に掲げる部に区分して表示しなければならない。</div>
+                        <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="#Mp-At_27-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>及び<a class="reference_link" href="#Mp-At_27-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>に掲げる部は、その内容を示す適当な名称を付した項目に細分することができる。</div>
                       </div>
                       <div id="Mp-At_27-Pr_2-It_1" class="Item" Num="1">
                         <div class="ItemTitle">一</div>
@@ -1188,7 +1188,7 @@
                     <div id="Mp-At_27-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
-                        <div class="Sentence">処分価格を付すことが困難な資産がある場合には、<a class="reference_link" href="#Mp-At_27-Pr_1">第一項</a>の貸借対照表には、当該資産に係る財産評価の方針を注記しなければならない。</div>
+                        <div class="Sentence">処分価格を付すことが困難な資産がある場合には、<a class="reference_link" href="#Mp-At_27-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の貸借対照表には、当該資産に係る財産評価の方針を注記しなければならない。</div>
                       </div>
                     </div>
                   </div>
@@ -1205,7 +1205,7 @@
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_27-Pr_2">前条第二項</a>の規定は、<a class="reference_link" href="#Mp-At_28-Pr_1">前項</a>の貸借対照表について準用する。</div>
+                          <a class="reference_link" href="#Mp-At_27-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前条第二項</a>の規定は、<a class="reference_link" href="#Mp-At_28-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の貸借対照表について準用する。</div>
                       </div>
                     </div>
                     <div id="Mp-At_28-Pr_3" class="Paragraph" Num="3">
@@ -1218,7 +1218,7 @@
                       <div class="ParagraphNum">４</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_28-Pr_3">前項</a>の附属明細書は、貸借対照表の内容を補足する重要な事項をその内容としなければならない。</div>
+                          <a class="reference_link" href="#Mp-At_28-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の附属明細書は、貸借対照表の内容を補足する重要な事項をその内容としなければならない。</div>
                       </div>
                     </div>
                   </div>
@@ -1235,14 +1235,14 @@
                       <div class="ParagraphNum">２</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_29-Pr_1">前項</a>の事務報告は、清算に関する事務の執行の状況に係る重要な事項をその内容としなければならない。</div>
+                          <a class="reference_link" href="#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の事務報告は、清算に関する事務の執行の状況に係る重要な事項をその内容としなければならない。</div>
                       </div>
                     </div>
                     <div id="Mp-At_29-Pr_3" class="Paragraph" Num="3">
                       <div class="ParagraphNum">３</div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_29-Pr_1">第一項</a>の附属明細書は、<a class="reference_link" href="#Mp-At_29-Pr_1">同項</a>の事務報告の内容を補足する重要な事項をその内容としなければならない。</div>
+                          <a class="reference_link" href="#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の附属明細書は、<a class="reference_link" href="#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の事務報告の内容を補足する重要な事項をその内容としなければならない。</div>
                       </div>
                     </div>
                   </div>
@@ -1257,8 +1257,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_252-Pr_1">第二百五十二条第一項</a>の規定により<a class="reference_link" href="L_418AC0000000108.html">法</a>務省令で定める事項については、この条に定めるところによる。</div>
+                        <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_252-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百五十二条第一項</a>の規定により<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>務省令で定める事項については、この条に定めるところによる。</div>
                     </div>
                   </div>
                   <div id="Mp-At_30-Pr_2" class="Paragraph" Num="2">
@@ -1270,7 +1270,7 @@
                     <div id="Mp-At_30-Pr_2-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">当該受益証券発行限定責任信託の受託者、信託財産管理者、<a class="reference_link" href="L_401AC0000000091.html">民事保全法</a>（<a class="reference_link" href="L_401AC0000000091.html">平成元年法律第九十一号</a>）<a class="reference_link" href="L_401AC0000000091.html#Mp-At_56">第五十六条</a>に規定する仮処分命令により選任された受託者の職務を代行する者及び信託財産<a class="reference_link" href="L_418AC0000000108.html">法</a>人管理人（以下これらの者を「受託者等」という。）</div>
+                        <div class="Sentence">当該受益証券発行限定責任信託の受託者、信託財産管理者、<a class="reference_link" href="L_401AC0000000091.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">民事保全法</a>（<a class="reference_link" href="L_401AC0000000091.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成元年法律第九十一号</a>）<a class="reference_link" href="L_401AC0000000091.html#Mp-At_56" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十六条</a>に規定する仮処分命令により選任された受託者の職務を代行する者及び信託財産<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人管理人（以下これらの者を「受託者等」という。）</div>
                       </div>
                     </div>
                     <div id="Mp-At_30-Pr_2-It_2" class="Item" Num="2">
@@ -1288,9 +1288,9 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_252-Pr_4">第二百五十二条第四項</a>において読み替えて適用する<a class="reference_link" href="L_418AC0000000108.html">法</a>
-                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4">第二百二十二条第四項</a>の規定による会計監査については、<a class="reference_link" href="#Mp-At_32">次条</a>及び<a class="reference_link" href="#Mp-At_33">第三十三条</a>に定めるところによる。</div>
+                        <a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_252-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百五十二条第四項</a>において読み替えて適用する<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_418AC0000000108.html#Mp-At_222-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百二十二条第四項</a>の規定による会計監査については、<a class="reference_link" href="#Mp-At_32" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次条</a>及び<a class="reference_link" href="#Mp-At_33" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条</a>に定めるところによる。</div>
                     </div>
                   </div>
                 </div>
@@ -1311,7 +1311,7 @@
                     <div id="Mp-At_32-Pr_2-It_1" class="Item" Num="1">
                       <div class="ItemTitle">一</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">会計監査人の会計監査の方<a class="reference_link" href="L_418AC0000000108.html">法</a>及びその内容</div>
+                        <div class="Sentence">会計監査人の会計監査の方<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及びその内容</div>
                       </div>
                     </div>
                     <div id="Mp-At_32-Pr_2-It_2" class="Item" Num="2">
@@ -1357,7 +1357,7 @@
                       <div class="ItemTitle">三</div>
                       <div class="ItemSentence">
                         <div class="Sentence">
-                          <a class="reference_link" href="#Mp-At_32-Pr_2-It_2">前号</a>の意見がないときは、その旨及びその理由</div>
+                          <a class="reference_link" href="#Mp-At_32-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>の意見がないときは、その旨及びその理由</div>
                       </div>
                     </div>
                     <div id="Mp-At_32-Pr_2-It_4" class="Item" Num="4">
@@ -1377,7 +1377,7 @@
                     <div class="ParagraphNum">３</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="#Mp-At_32-Pr_2-It_4">前項第四号</a>に規定する「追記情報」とは、会計監査人の判断に関して説明を付す必要がある事項又は計算関係書類の内容のうち強調する必要がある事項とする。</div>
+                        <a class="reference_link" href="#Mp-At_32-Pr_2-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項第四号</a>に規定する「追記情報」とは、会計監査人の判断に関して説明を付す必要がある事項又は計算関係書類の内容のうち強調する必要がある事項とする。</div>
                     </div>
                   </div>
                 </div>
@@ -1405,21 +1405,21 @@
                     <div id="Mp-At_33-Pr_1-It_3" class="Item" Num="3">
                       <div class="ItemTitle">三</div>
                       <div class="ItemSentence">
-                        <div class="Sentence">信託行為で定めた日又は受託者等（この項ただし書に規定する場合にあっては、指定された者。<a class="reference_link" href="#Mp-At_33-Pr_2">次項</a>において同じ。）及び会計監査人の間で合意により定めた日があるときは、その日</div>
+                        <div class="Sentence">信託行為で定めた日又は受託者等（この項ただし書に規定する場合にあっては、指定された者。<a class="reference_link" href="#Mp-At_33-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>において同じ。）及び会計監査人の間で合意により定めた日があるときは、その日</div>
                       </div>
                     </div>
                   </div>
                   <div id="Mp-At_33-Pr_2" class="Paragraph" Num="2">
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
-                      <div class="Sentence">計算関係書類については、受託者等が<a class="reference_link" href="#Mp-At_33-Pr_1">前項</a>の規定による会計監査報告の内容の通知を受けた日に、会計監査人の監査を受けたものとする。</div>
+                      <div class="Sentence">計算関係書類については、受託者等が<a class="reference_link" href="#Mp-At_33-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の規定による会計監査報告の内容の通知を受けた日に、会計監査人の監査を受けたものとする。</div>
                     </div>
                   </div>
                   <div id="Mp-At_33-Pr_3" class="Paragraph" Num="3">
                     <div class="ParagraphNum">３</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="#Mp-At_33-Pr_2">前項</a>の規定にかかわらず、会計監査人が<a class="reference_link" href="#Mp-At_33-Pr_1">第一項</a>の規定により通知をすべき日までに<a class="reference_link" href="#Mp-At_33-Pr_1">同項</a>の規定による会計監査報告の内容の通知をしない場合には、当該通知をすべき日に、計算関係書類について会計監査人の監査を受けたものとみなす。</div>
+                        <a class="reference_link" href="#Mp-At_33-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の規定にかかわらず、会計監査人が<a class="reference_link" href="#Mp-At_33-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の規定により通知をすべき日までに<a class="reference_link" href="#Mp-At_33-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の規定による会計監査報告の内容の通知をしない場合には、当該通知をすべき日に、計算関係書類について会計監査人の監査を受けたものとみなす。</div>
                     </div>
                   </div>
                 </div>
@@ -1430,7 +1430,7 @@
               <div id="Sp-Pr_1" class="Paragraph" Num="1">
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省令は、<a class="reference_link" href="L_418AC0000000108.html">法</a>の施行の日から施行する。</div>
+                  <div class="Sentence">この省令は、<a class="reference_link" href="L_418AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の施行の日から施行する。</div>
                 </div>
               </div>
             </div>

@@ -23,14 +23,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（将来存続すべき命令）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -38,7 +38,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（命令の廃止）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（廃止した命令に関する経過規定）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -56,7 +56,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -75,7 +75,7 @@
                   <div id="Mp-At_1-Pr_1-It_1" class="Item" Num="1">
                     <div class="ItemTitle">一</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">政治犯人等の資格回復に関する件（<a class="reference_link" href="L_320IO0000000730.html">昭和二十年勅令第七百三十号</a>）</div>
+                      <div class="Sentence">政治犯人等の資格回復に関する件（<a class="reference_link" href="L_320IO0000000730.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十年勅令第七百三十号</a>）</div>
                     </div>
                   </div>
                   <div id="Mp-At_1-Pr_1-It_2" class="Item" Num="2">
@@ -87,14 +87,14 @@
                   <div id="Mp-At_1-Pr_1-It_3" class="Item" Num="3">
                     <div class="ItemTitle">三</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">沖縄関係事務整理に伴う戸籍、恩給等の特別措置に関する政令（<a class="reference_link" href="L_323CO0000000306.html">昭和二十三年政令第三百六号</a>）</div>
+                      <div class="Sentence">沖縄関係事務整理に伴う戸籍、恩給等の特別措置に関する政令（<a class="reference_link" href="L_323CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十三年政令第三百六号</a>）</div>
                     </div>
                   </div>
                   <div id="Mp-At_1-Pr_1-It_4" class="Item" Num="4">
                     <div class="ItemTitle">四</div>
                     <div class="ItemSentence">
                       <div class="Sentence">
-                        <a class="reference_link" href="L_323CO0000000402.html">会社等臨時措置法等を廃止する政令</a>（<a class="reference_link" href="L_323CO0000000402.html">昭和二十三年政令第四百二号</a>）附則第五条、<a class="reference_link" href="#Mp-At_7">第七条</a>及び<a class="reference_link" href="#Mp-At_9">第九条</a>
+                        <a class="reference_link" href="L_323CO0000000402.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">会社等臨時措置法等を廃止する政令</a>（<a class="reference_link" href="L_323CO0000000402.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十三年政令第四百二号</a>）附則第五条、<a class="reference_link" href="#Mp-At_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条</a>及び<a class="reference_link" href="#Mp-At_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条</a>
                       </div>
                     </div>
                   </div>
@@ -153,7 +153,7 @@
                   <div id="Mp-At_2-Pr_1-It_8" class="Item" Num="8">
                     <div class="ItemTitle">八</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">出生、死亡及び死産の報告に関する件（昭和二十二年司法省令厚生省令<a class="reference_link" href="#Mp-At_2-Pr_1-It_1">第一号</a>）</div>
+                      <div class="Sentence">出生、死亡及び死産の報告に関する件（昭和二十二年司法省令厚生省令<a class="reference_link" href="#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>）</div>
                     </div>
                   </div>
                 </div>
@@ -177,7 +177,7 @@
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_3-Pr_1">前二項</a>に規定するものを除く外、この法律の施行に伴い必要な経過的措置は、政令で定める。</div>
+                      <a class="reference_link" href="#Mp-At_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前二項</a>に規定するものを除く外、この法律の施行に伴い必要な経過的措置は、政令で定める。</div>
                   </div>
                 </div>
               </div>

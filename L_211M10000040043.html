@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Pm" onclick="toggleClicked(this,'Pm')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Pm" data-id="toggle-Pm" onclick="toggleClicked(this,'Pm', 'Pm')">
                 <a class="title_text" href="#Pm">前文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条</a>
                   </div>
                   <div class="table_indent"></div>
@@ -56,7 +56,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_昭和二五年五月二二日大蔵省令第五三号" onclick="toggleClicked(this,'Sp_昭和二五年五月二二日大蔵省令第五三号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二五年五月二二日大蔵省令第五三号" data-id="toggle-Sp_昭和二五年五月二二日大蔵省令第五三号" onclick="toggleClicked(this,'Sp_昭和二五年五月二二日大蔵省令第五三号', 'Sp_昭和二五年五月二二日大蔵省令第五三号')">
                 <a class="title_text" href="#Sp_昭和二五年五月二二日大蔵省令第五三号">附　則（昭和二五年五月二二日大蔵省令第五三号）</a>
               </div>
               <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_令和二年一二月四日財務省令第七三号" onclick="toggleClicked(this,'Sp_令和二年一二月四日財務省令第七三号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月四日財務省令第七三号" data-id="toggle-Sp_令和二年一二月四日財務省令第七三号" onclick="toggleClicked(this,'Sp_令和二年一二月四日財務省令第七三号', 'Sp_令和二年一二月四日財務省令第七三号')">
                 <a class="title_text" href="#Sp_令和二年一二月四日財務省令第七三号">附　則（令和二年一二月四日財務省令第七三号）</a>
               </div>
               <div class="table_indent"></div>
@@ -84,7 +84,7 @@
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
                   <div class="Sentence">
-                    <a class="reference_link" href="L_211M10000040043.html">会計法規ニ基ク出納計算ノ数字及記載事項ノ訂正ニ関スル件</a>左ノ通之ヲ定ム</div>
+                    <a class="reference_link" href="L_211M10000040043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">会計法規ニ基ク出納計算ノ数字及記載事項ノ訂正ニ関スル件</a>左ノ通之ヲ定ム</div>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_322AC0000000035.html">会計法</a>規ニ基ク出納計算ニ関スル諸書類帳簿ニ記載スル金額其ノ他ノ数量ニシテ「一」、「二」、「三」、「十」、「廿」、「卅」ノ数字ハ「壱」、「弐」、「参」、「拾」、「弐拾」、「参拾」ノ字体ヲ用ユヘシ但横書ヲ為ストキハ「アラビア」数字ヲ用ユルコトヲ得</div>
+                      <a class="reference_link" href="L_322AC0000000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">会計法</a>規ニ基ク出納計算ニ関スル諸書類帳簿ニ記載スル金額其ノ他ノ数量ニシテ「一」、「二」、「三」、「十」、「廿」、「卅」ノ数字ハ「壱」、「弐」、「参」、「拾」、「弐拾」、「参拾」ノ字体ヲ用ユヘシ但横書ヲ為ストキハ「アラビア」数字ヲ用ユルコトヲ得</div>
                   </div>
                 </div>
               </div>
@@ -105,14 +105,14 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_322AC0000000035.html">会計法</a>規ニ基ク出納計算ニ関スル諸書類帳簿ノ記載事項ハ之ヲ改竄スルコトヲ得ス</div>
+                      <a class="reference_link" href="L_322AC0000000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">会計法</a>規ニ基ク出納計算ニ関スル諸書類帳簿ノ記載事項ハ之ヲ改竄スルコトヲ得ス</div>
                   </div>
                 </div>
                 <div id="Mp-At_2-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">②</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="#Mp-At_2-Pr_1">前項</a>ニ規定スル諸書類帳簿ノ記載事項ニ付訂正、挿入又ハ削除ヲ為サムトスルトキハ二線ヲ画シテ其ノ右側又ハ上位ニ正書シ其ノ削除ニ係ル文字ハ仍明ニ読得ヘキ為字体ヲ存スルコトヲ要ス但シ金銭又ハ物品ノ受授ニ関スル諸証書ノ数字ハ之カ訂正ヲ為スコトヲ得ス数字以外ノ事項ニ付訂正、挿入又ハ削除ヲ為シタルトキハ其ノ字数ヲ欄外ニ記載シ作製者之ニ押印シ又ハ署名スルコトヲ要ス</div>
+                      <a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>ニ規定スル諸書類帳簿ノ記載事項ニ付訂正、挿入又ハ削除ヲ為サムトスルトキハ二線ヲ画シテ其ノ右側又ハ上位ニ正書シ其ノ削除ニ係ル文字ハ仍明ニ読得ヘキ為字体ヲ存スルコトヲ要ス但シ金銭又ハ物品ノ受授ニ関スル諸証書ノ数字ハ之カ訂正ヲ為スコトヲ得ス数字以外ノ事項ニ付訂正、挿入又ハ削除ヲ為シタルトキハ其ノ字数ヲ欄外ニ記載シ作製者之ニ押印シ又ハ署名スルコトヲ要ス</div>
                   </div>
                 </div>
               </div>

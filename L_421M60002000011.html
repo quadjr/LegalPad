@@ -23,7 +23,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Es" onclick="toggleClicked(this,'Es')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
                 <a class="title_text" href="#Es">制定文</a>
               </div>
               <div class="table_indent"></div>
@@ -31,14 +31,14 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <div class="table_line_toggle" id="toggle-Mp" onclick="toggleClicked(this,'Mp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
                 <a class="title_text" href="#Mp">本則</a>
               </div>
               <div class="table_indent">
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
                     <a class="title_text" href="#Mp-At_1">第一条（議長）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -46,7 +46,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
                     <a class="title_text" href="#Mp-At_2">第二条（庶務）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -54,7 +54,7 @@
                 <div>
                   <div class="table_line">
                     <div class="table_arrow_dummy"></div>
-                    <div class="table_line_toggle" id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3')"></div>
+                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
                     <a class="title_text" href="#Mp-At_3">第三条（雑則）</a>
                   </div>
                   <div class="table_indent"></div>
@@ -64,7 +64,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp" onclick="toggleClicked(this,'Sp')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
                 <a class="title_text" href="#Sp">附　則</a>
               </div>
               <div class="table_indent"></div>
@@ -72,7 +72,7 @@
             <div>
               <div class="table_line">
                 <div class="table_arrow_dummy"></div>
-                <div class="table_line_toggle" id="toggle-Sp_平成二七年一〇月一日防衛省令第一七号" onclick="toggleClicked(this,'Sp_平成二七年一〇月一日防衛省令第一七号')"></div>
+                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一〇月一日防衛省令第一七号" data-id="toggle-Sp_平成二七年一〇月一日防衛省令第一七号" onclick="toggleClicked(this,'Sp_平成二七年一〇月一日防衛省令第一七号', 'Sp_平成二七年一〇月一日防衛省令第一七号')">
                 <a class="title_text" href="#Sp_平成二七年一〇月一日防衛省令第一七号">附　則（平成二七年一〇月一日防衛省令第一七号）</a>
               </div>
               <div class="table_indent"></div>
@@ -80,7 +80,7 @@
           </div>
           <div class="body" id="body">
             <div id="Es" class="EnactStatement">
-              <a class="reference_link" href="L_329AC0000000164.html">防衛省設置法</a>（<a class="reference_link" href="L_329AC0000000164.html">昭和二十九年法律第百六十四号</a>）<a class="reference_link" href="L_329AC0000000164.html#Mp-At_19_2-Pr_6">第十九条の二第六項</a>の規定に基づき、<a class="reference_link" href="L_421M60002000011.html">防衛会議の組織及び運営に関する省令</a>を次のように定める。</div>
+              <a class="reference_link" href="L_329AC0000000164.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">防衛省設置法</a>（<a class="reference_link" href="L_329AC0000000164.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年法律第百六十四号</a>）<a class="reference_link" href="L_329AC0000000164.html#Mp-At_19_2-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の二第六項</a>の規定に基づき、<a class="reference_link" href="L_421M60002000011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">防衛会議の組織及び運営に関する省令</a>を次のように定める。</div>
             <div id="Mp" class="MainProvision">
               <div id="Mp-At_1" class="Article" Num="1">
                 <div class="ArticleCaption">（議長）</div>
@@ -99,7 +99,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">会議の庶務は、防衛省大臣官房企画評価課において総括し、及び処理する。</div>
-                    <div class="Sentence" Num="2">ただし、<a class="reference_link" href="L_329CO0000000178.html">防衛省組織令</a>（<a class="reference_link" href="L_329CO0000000178.html">昭和二十九年政令第百七十八号</a>）<a class="reference_link" href="L_329CO0000000178.html#Mp-At_6-Pr_1-It_1">第六条第一号から第八号まで</a>に掲げる事務に係るものについては、防衛省防衛政策局防衛政策課において処理する。</div>
+                    <div class="Sentence" Num="2">ただし、<a class="reference_link" href="L_329CO0000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">防衛省組織令</a>（<a class="reference_link" href="L_329CO0000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年政令第百七十八号</a>）<a class="reference_link" href="L_329CO0000000178.html#Mp-At_6-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一号から第八号まで</a>に掲げる事務に係るものについては、防衛省防衛政策局防衛政策課において処理する。</div>
                   </div>
                 </div>
               </div>
