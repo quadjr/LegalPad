@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>軌道法 | Legal Pad</title>
   </head>
   <body>
@@ -12,717 +11,722 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">軌道法（大正十年法律第七十六号）</div>
             <div class="enforced_date">施行日：令和四年四月一日</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
-                    <a class="title_text" href="#Mp-At_1">第一条</a>
-                  </div>
-                  <div class="table_indent"></div>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
-                    <a class="title_text" href="#Mp-At_2">第二条</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
+                      <a class="title_text" href="#Mp-At_1">第一条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
-                    <a class="title_text" href="#Mp-At_3">第三条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
+                      <a class="title_text" href="#Mp-At_2">第二条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
-                    <a class="title_text" href="#Mp-At_4">第四条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
+                      <a class="title_text" href="#Mp-At_3">第三条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
-                    <a class="title_text" href="#Mp-At_5">第五条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
+                      <a class="title_text" href="#Mp-At_4">第四条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
-                    <a class="title_text" href="#Mp-At_6">第六条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
+                      <a class="title_text" href="#Mp-At_5">第五条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-At_7')">
-                    <a class="title_text" href="#Mp-At_7">第七条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
+                      <a class="title_text" href="#Mp-At_6">第六条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-At_8')">
-                    <a class="title_text" href="#Mp-At_8">第八条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-At_7')">
+                      <a class="title_text" href="#Mp-At_7">第七条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-At_9')">
-                    <a class="title_text" href="#Mp-At_9">第九条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-At_8')">
+                      <a class="title_text" href="#Mp-At_8">第八条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-At_10')">
-                    <a class="title_text" href="#Mp-At_10">第十条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-At_9')">
+                      <a class="title_text" href="#Mp-At_9">第九条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-At_11')">
-                    <a class="title_text" href="#Mp-At_11">第十一条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-At_10')">
+                      <a class="title_text" href="#Mp-At_10">第十条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-At_12')">
-                    <a class="title_text" href="#Mp-At_12">第十二条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-At_11')">
+                      <a class="title_text" href="#Mp-At_11">第十一条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-At_13')">
-                    <a class="title_text" href="#Mp-At_13">第十三条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-At_12')">
+                      <a class="title_text" href="#Mp-At_12">第十二条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-At_14')">
-                    <a class="title_text" href="#Mp-At_14">第十四条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-At_13')">
+                      <a class="title_text" href="#Mp-At_13">第十三条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-At_15')">
-                    <a class="title_text" href="#Mp-At_15">第十五条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-At_14')">
+                      <a class="title_text" href="#Mp-At_14">第十四条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-At_16')">
-                    <a class="title_text" href="#Mp-At_16">第十六条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-At_15')">
+                      <a class="title_text" href="#Mp-At_15">第十五条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17:21" data-id="toggle-Mp-At_17:21" onclick="toggleClicked(this,'Mp-At_17:21', 'Mp-At_17:21')">
-                    <a class="title_text" href="#Mp-At_17:21">第十七条乃至第二十一条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-At_16')">
+                      <a class="title_text" href="#Mp-At_16">第十六条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-At_22')">
-                    <a class="title_text" href="#Mp-At_22">第二十二条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17:21" data-id="toggle-Mp-At_17:21" onclick="toggleClicked(this,'Mp-At_17:21', 'Mp-At_17:21')">
+                      <a class="title_text" href="#Mp-At_17:21">第十七条乃至第二十一条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22_2" data-id="toggle-Mp-At_22_2" onclick="toggleClicked(this,'Mp-At_22_2', 'Mp-At_22_2')">
-                    <a class="title_text" href="#Mp-At_22_2">第二十二条ノ二</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-At_22')">
+                      <a class="title_text" href="#Mp-At_22">第二十二条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-At_23')">
-                    <a class="title_text" href="#Mp-At_23">第二十三条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22_2" data-id="toggle-Mp-At_22_2" onclick="toggleClicked(this,'Mp-At_22_2', 'Mp-At_22_2')">
+                      <a class="title_text" href="#Mp-At_22_2">第二十二条ノ二</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-At_24')">
-                    <a class="title_text" href="#Mp-At_24">第二十四条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-At_23')">
+                      <a class="title_text" href="#Mp-At_23">第二十三条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-At_25')">
-                    <a class="title_text" href="#Mp-At_25">第二十五条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-At_24')">
+                      <a class="title_text" href="#Mp-At_24">第二十四条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-At_26')">
-                    <a class="title_text" href="#Mp-At_26">第二十六条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-At_25')">
+                      <a class="title_text" href="#Mp-At_25">第二十五条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-At_27')">
-                    <a class="title_text" href="#Mp-At_27">第二十七条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-At_26')">
+                      <a class="title_text" href="#Mp-At_26">第二十六条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27_2" data-id="toggle-Mp-At_27_2" onclick="toggleClicked(this,'Mp-At_27_2', 'Mp-At_27_2')">
-                    <a class="title_text" href="#Mp-At_27_2">第二十七条ノ二</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-At_27')">
+                      <a class="title_text" href="#Mp-At_27">第二十七条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27_3" data-id="toggle-Mp-At_27_3" onclick="toggleClicked(this,'Mp-At_27_3', 'Mp-At_27_3')">
-                    <a class="title_text" href="#Mp-At_27_3">第二十七条ノ三</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27_2" data-id="toggle-Mp-At_27_2" onclick="toggleClicked(this,'Mp-At_27_2', 'Mp-At_27_2')">
+                      <a class="title_text" href="#Mp-At_27_2">第二十七条ノ二</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27_4" data-id="toggle-Mp-At_27_4" onclick="toggleClicked(this,'Mp-At_27_4', 'Mp-At_27_4')">
-                    <a class="title_text" href="#Mp-At_27_4">第二十七条ノ四</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27_3" data-id="toggle-Mp-At_27_3" onclick="toggleClicked(this,'Mp-At_27_3', 'Mp-At_27_3')">
+                      <a class="title_text" href="#Mp-At_27_3">第二十七条ノ三</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_28" data-id="toggle-Mp-At_28" onclick="toggleClicked(this,'Mp-At_28', 'Mp-At_28')">
-                    <a class="title_text" href="#Mp-At_28">第二十八条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27_4" data-id="toggle-Mp-At_27_4" onclick="toggleClicked(this,'Mp-At_27_4', 'Mp-At_27_4')">
+                      <a class="title_text" href="#Mp-At_27_4">第二十七条ノ四</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_29" data-id="toggle-Mp-At_29" onclick="toggleClicked(this,'Mp-At_29', 'Mp-At_29')">
-                    <a class="title_text" href="#Mp-At_29">第二十九条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_28" data-id="toggle-Mp-At_28" onclick="toggleClicked(this,'Mp-At_28', 'Mp-At_28')">
+                      <a class="title_text" href="#Mp-At_28">第二十八条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_30" data-id="toggle-Mp-At_30" onclick="toggleClicked(this,'Mp-At_30', 'Mp-At_30')">
-                    <a class="title_text" href="#Mp-At_30">第三十条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_29" data-id="toggle-Mp-At_29" onclick="toggleClicked(this,'Mp-At_29', 'Mp-At_29')">
+                      <a class="title_text" href="#Mp-At_29">第二十九条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_31" data-id="toggle-Mp-At_31" onclick="toggleClicked(this,'Mp-At_31', 'Mp-At_31')">
-                    <a class="title_text" href="#Mp-At_31">第三十一条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_30" data-id="toggle-Mp-At_30" onclick="toggleClicked(this,'Mp-At_30', 'Mp-At_30')">
+                      <a class="title_text" href="#Mp-At_30">第三十条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_32" data-id="toggle-Mp-At_32" onclick="toggleClicked(this,'Mp-At_32', 'Mp-At_32')">
-                    <a class="title_text" href="#Mp-At_32">第三十二条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_31" data-id="toggle-Mp-At_31" onclick="toggleClicked(this,'Mp-At_31', 'Mp-At_31')">
+                      <a class="title_text" href="#Mp-At_31">第三十一条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_33" data-id="toggle-Mp-At_33" onclick="toggleClicked(this,'Mp-At_33', 'Mp-At_33')">
-                    <a class="title_text" href="#Mp-At_33">第三十三条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_32" data-id="toggle-Mp-At_32" onclick="toggleClicked(this,'Mp-At_32', 'Mp-At_32')">
+                      <a class="title_text" href="#Mp-At_32">第三十二条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_34" data-id="toggle-Mp-At_34" onclick="toggleClicked(this,'Mp-At_34', 'Mp-At_34')">
-                    <a class="title_text" href="#Mp-At_34">第三十四条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_33" data-id="toggle-Mp-At_33" onclick="toggleClicked(this,'Mp-At_33', 'Mp-At_33')">
+                      <a class="title_text" href="#Mp-At_33">第三十三条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四年四月一八日法律第六一号" data-id="toggle-Sp_昭和四年四月一八日法律第六一号" onclick="toggleClicked(this,'Sp_昭和四年四月一八日法律第六一号', 'Sp_昭和四年四月一八日法律第六一号')">
-                <a class="title_text" href="#Sp_昭和四年四月一八日法律第六一号">附　則（昭和四年四月一八日法律第六一号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和一四年三月二三日法律第二〇号" data-id="toggle-Sp_昭和一四年三月二三日法律第二〇号" onclick="toggleClicked(this,'Sp_昭和一四年三月二三日法律第二〇号', 'Sp_昭和一四年三月二三日法律第二〇号')">
-                <a class="title_text" href="#Sp_昭和一四年三月二三日法律第二〇号">附　則（昭和一四年三月二三日法律第二〇号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二四年五月三一日法律第一五七号" data-id="toggle-Sp_昭和二四年五月三一日法律第一五七号" onclick="toggleClicked(this,'Sp_昭和二四年五月三一日法律第一五七号', 'Sp_昭和二四年五月三一日法律第一五七号')">
-                <a class="title_text" href="#Sp_昭和二四年五月三一日法律第一五七号">附　則（昭和二四年五月三一日法律第一五七号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二六年六月八日法律第二一一号" data-id="toggle-Sp_昭和二六年六月八日法律第二一一号" onclick="toggleClicked(this,'Sp_昭和二六年六月八日法律第二一一号', 'Sp_昭和二六年六月八日法律第二一一号')">
-                <a class="title_text" href="#Sp_昭和二六年六月八日法律第二一一号">附　則（昭和二六年六月八日法律第二一一号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二八年八月五日法律第一六九号" data-id="toggle-Sp_昭和二八年八月五日法律第一六九号" onclick="toggleClicked(this,'Sp_昭和二八年八月五日法律第一六九号', 'Sp_昭和二八年八月五日法律第一六九号')">
-                <a class="title_text" href="#Sp_昭和二八年八月五日法律第一六九号">附　則（昭和二八年八月五日法律第一六九号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二八年八月一五日法律第二一三号" data-id="toggle-Sp_昭和二八年八月一五日法律第二一三号" onclick="toggleClicked(this,'Sp_昭和二八年八月一五日法律第二一三号', 'Sp_昭和二八年八月一五日法律第二一三号')">
-                <a class="title_text" href="#Sp_昭和二八年八月一五日法律第二一三号">附　則（昭和二八年八月一五日法律第二一三号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三三年四月一五日法律第六二号" data-id="toggle-Sp_昭和三三年四月一五日法律第六二号" onclick="toggleClicked(this,'Sp_昭和三三年四月一五日法律第六二号', 'Sp_昭和三三年四月一五日法律第六二号')">
-                <a class="title_text" href="#Sp_昭和三三年四月一五日法律第六二号">附　則（昭和三三年四月一五日法律第六二号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三七年五月一六日法律第一四〇号" data-id="toggle-Sp_昭和三七年五月一六日法律第一四〇号" onclick="toggleClicked(this,'Sp_昭和三七年五月一六日法律第一四〇号', 'Sp_昭和三七年五月一六日法律第一四〇号')">
-                <a class="title_text" href="#Sp_昭和三七年五月一六日法律第一四〇号">附　則（昭和三七年五月一六日法律第一四〇号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号" data-id="toggle-Sp_昭和五九年五月八日法律第二五号" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号', 'Sp_昭和五九年五月八日法律第二五号')">
-                <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号">附　則（昭和五九年五月八日法律第二五号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_1" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_1" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_1', 'Sp_昭和五九年五月八日法律第二五号-At_1')">
-                    <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_1">第一条（施行期日）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_34" data-id="toggle-Mp-At_34" onclick="toggleClicked(this,'Mp-At_34', 'Mp-At_34')">
+                      <a class="title_text" href="#Mp-At_34">第三十四条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_23" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_23" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_23', 'Sp_昭和五九年五月八日法律第二五号-At_23')">
-                    <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_23">第二十三条（経過措置）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_24" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_24" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_24', 'Sp_昭和五九年五月八日法律第二五号-At_24')">
-                    <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_24">第二十四条</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_25" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_25" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_25', 'Sp_昭和五九年五月八日法律第二五号-At_25')">
-                    <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_25">第二十五条</a>
-                  </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号', 'Sp_昭和六一年一二月四日法律第九三号')">
-                <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号">附　則（昭和六一年一二月四日法律第九三号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_1" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_1" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号-At_1', 'Sp_昭和六一年一二月四日法律第九三号-At_1')">
-                    <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号-At_1">第一条（施行期日）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四年四月一八日法律第六一号" data-id="toggle-Sp_昭和四年四月一八日法律第六一号" onclick="toggleClicked(this,'Sp_昭和四年四月一八日法律第六一号', 'Sp_昭和四年四月一八日法律第六一号')">
+                  <a class="title_text" href="#Sp_昭和四年四月一八日法律第六一号">附　則（昭和四年四月一八日法律第六一号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_41" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_41" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号-At_41', 'Sp_昭和六一年一二月四日法律第九三号-At_41')">
-                    <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号-At_41">第四十一条（罰則の適用に関する経過措置）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_42" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_42" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号-At_42', 'Sp_昭和六一年一二月四日法律第九三号-At_42')">
-                    <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号-At_42">第四十二条（政令への委任）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
+                <div class="table_indent"></div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号" data-id="toggle-Sp_平成六年一一月一一日法律第九七号" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号', 'Sp_平成六年一一月一一日法律第九七号')">
-                <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号">附　則（平成六年一一月一一日法律第九七号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和一四年三月二三日法律第二〇号" data-id="toggle-Sp_昭和一四年三月二三日法律第二〇号" onclick="toggleClicked(this,'Sp_昭和一四年三月二三日法律第二〇号', 'Sp_昭和一四年三月二三日法律第二〇号')">
+                  <a class="title_text" href="#Sp_昭和一四年三月二三日法律第二〇号">附　則（昭和一四年三月二三日法律第二〇号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_1" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_1" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_1', 'Sp_平成六年一一月一一日法律第九七号-At_1')">
-                    <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_1">第一条（施行期日）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二四年五月三一日法律第一五七号" data-id="toggle-Sp_昭和二四年五月三一日法律第一五七号" onclick="toggleClicked(this,'Sp_昭和二四年五月三一日法律第一五七号', 'Sp_昭和二四年五月三一日法律第一五七号')">
+                  <a class="title_text" href="#Sp_昭和二四年五月三一日法律第一五七号">附　則（昭和二四年五月三一日法律第一五七号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_14" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_14" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_14', 'Sp_平成六年一一月一一日法律第九七号-At_14')">
-                    <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_14">第十四条（軌道法の一部改正に伴う経過措置）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_20" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_20" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_20', 'Sp_平成六年一一月一一日法律第九七号-At_20')">
-                    <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_20">第二十条（罰則に関する経過措置）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_21" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_21" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_21', 'Sp_平成六年一一月一一日法律第九七号-At_21')">
-                    <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_21">第二十一条（政令への委任）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
+                <div class="table_indent"></div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年五月二一日法律第四九号" data-id="toggle-Sp_平成一一年五月二一日法律第四九号" onclick="toggleClicked(this,'Sp_平成一一年五月二一日法律第四九号', 'Sp_平成一一年五月二一日法律第四九号')">
-                <a class="title_text" href="#Sp_平成一一年五月二一日法律第四九号">附　則（平成一一年五月二一日法律第四九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二六年六月八日法律第二一一号" data-id="toggle-Sp_昭和二六年六月八日法律第二一一号" onclick="toggleClicked(this,'Sp_昭和二六年六月八日法律第二一一号', 'Sp_昭和二六年六月八日法律第二一一号')">
+                  <a class="title_text" href="#Sp_昭和二六年六月八日法律第二一一号">附　則（昭和二六年六月八日法律第二一一号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年五月二一日法律第四九号-At_1" data-id="toggle-Sp_平成一一年五月二一日法律第四九号-At_1" onclick="toggleClicked(this,'Sp_平成一一年五月二一日法律第四九号-At_1', 'Sp_平成一一年五月二一日法律第四九号-At_1')">
-                    <a class="title_text" href="#Sp_平成一一年五月二一日法律第四九号-At_1">第一条（施行期日）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二八年八月五日法律第一六九号" data-id="toggle-Sp_昭和二八年八月五日法律第一六九号" onclick="toggleClicked(this,'Sp_昭和二八年八月五日法律第一六九号', 'Sp_昭和二八年八月五日法律第一六九号')">
+                  <a class="title_text" href="#Sp_昭和二八年八月五日法律第一六九号">附　則（昭和二八年八月五日法律第一六九号）</a>
                 </div>
+                <div class="table_indent"></div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号" data-id="toggle-Sp_平成一一年七月一六日法律第八七号" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号', 'Sp_平成一一年七月一六日法律第八七号')">
-                <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号">附　則（平成一一年七月一六日法律第八七号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和二八年八月一五日法律第二一三号" data-id="toggle-Sp_昭和二八年八月一五日法律第二一三号" onclick="toggleClicked(this,'Sp_昭和二八年八月一五日法律第二一三号', 'Sp_昭和二八年八月一五日法律第二一三号')">
+                  <a class="title_text" href="#Sp_昭和二八年八月一五日法律第二一三号">附　則（昭和二八年八月一五日法律第二一三号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_1" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_1" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_1', 'Sp_平成一一年七月一六日法律第八七号-At_1')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_1">第一条（施行期日）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三三年四月一五日法律第六二号" data-id="toggle-Sp_昭和三三年四月一五日法律第六二号" onclick="toggleClicked(this,'Sp_昭和三三年四月一五日法律第六二号', 'Sp_昭和三三年四月一五日法律第六二号')">
+                  <a class="title_text" href="#Sp_昭和三三年四月一五日法律第六二号">附　則（昭和三三年四月一五日法律第六二号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_111" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_111" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_111', 'Sp_平成一一年七月一六日法律第八七号-At_111')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_111">第百十一条（軌道法の一部改正に伴う経過措置）</a>
-                  </div>
-                  <div class="table_indent"></div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三七年五月一六日法律第一四〇号" data-id="toggle-Sp_昭和三七年五月一六日法律第一四〇号" onclick="toggleClicked(this,'Sp_昭和三七年五月一六日法律第一四〇号', 'Sp_昭和三七年五月一六日法律第一四〇号')">
+                  <a class="title_text" href="#Sp_昭和三七年五月一六日法律第一四〇号">附　則（昭和三七年五月一六日法律第一四〇号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_159" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_159" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_159', 'Sp_平成一一年七月一六日法律第八七号-At_159')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_159">第百五十九条（国等の事務）</a>
-                  </div>
-                  <div class="table_indent"></div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号" data-id="toggle-Sp_昭和五九年五月八日法律第二五号" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号', 'Sp_昭和五九年五月八日法律第二五号')">
+                  <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号">附　則（昭和五九年五月八日法律第二五号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_160" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_160" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_160', 'Sp_平成一一年七月一六日法律第八七号-At_160')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_160">第百六十条（処分、申請等に関する経過措置）</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_1" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_1" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_1', 'Sp_昭和五九年五月八日法律第二五号-At_1')">
+                      <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_161" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_161" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_161', 'Sp_平成一一年七月一六日法律第八七号-At_161')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_161">第百六十一条（不服申立てに関する経過措置）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_23" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_23" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_23', 'Sp_昭和五九年五月八日法律第二五号-At_23')">
+                      <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_23">第二十三条（経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_162" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_162" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_162', 'Sp_平成一一年七月一六日法律第八七号-At_162')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_162">第百六十二条（手数料に関する経過措置）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_24" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_24" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_24', 'Sp_昭和五九年五月八日法律第二五号-At_24')">
+                      <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_24">第二十四条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_163" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_163" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_163', 'Sp_平成一一年七月一六日法律第八七号-At_163')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_163">第百六十三条（罰則に関する経過措置）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年五月八日法律第二五号-At_25" data-id="toggle-Sp_昭和五九年五月八日法律第二五号-At_25" onclick="toggleClicked(this,'Sp_昭和五九年五月八日法律第二五号-At_25', 'Sp_昭和五九年五月八日法律第二五号-At_25')">
+                      <a class="title_text" href="#Sp_昭和五九年五月八日法律第二五号-At_25">第二十五条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_164" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_164" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_164', 'Sp_平成一一年七月一六日法律第八七号-At_164')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_164">第百六十四条（その他の経過措置の政令への委任）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_250" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_250" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_250', 'Sp_平成一一年七月一六日法律第八七号-At_250')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_250">第二百五十条（検討）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_251" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_251" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_251', 'Sp_平成一一年七月一六日法律第八七号-At_251')">
-                    <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_251">第二百五十一条</a>
-                  </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年一二月二二日法律第一六〇号" data-id="toggle-Sp_平成一一年一二月二二日法律第一六〇号" onclick="toggleClicked(this,'Sp_平成一一年一二月二二日法律第一六〇号', 'Sp_平成一一年一二月二二日法律第一六〇号')">
-                <a class="title_text" href="#Sp_平成一一年一二月二二日法律第一六〇号">附　則（平成一一年一二月二二日法律第一六〇号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年一二月二二日法律第一六〇号-At_1" data-id="toggle-Sp_平成一一年一二月二二日法律第一六〇号-At_1" onclick="toggleClicked(this,'Sp_平成一一年一二月二二日法律第一六〇号-At_1', 'Sp_平成一一年一二月二二日法律第一六〇号-At_1')">
-                    <a class="title_text" href="#Sp_平成一一年一二月二二日法律第一六〇号-At_1">第一条（施行期日）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号', 'Sp_昭和六一年一二月四日法律第九三号')">
+                  <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号">附　則（昭和六一年一二月四日法律第九三号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_1" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_1" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号-At_1', 'Sp_昭和六一年一二月四日法律第九三号-At_1')">
+                      <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_41" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_41" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号-At_41', 'Sp_昭和六一年一二月四日法律第九三号-At_41')">
+                      <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号-At_41">第四十一条（罰則の適用に関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_42" data-id="toggle-Sp_昭和六一年一二月四日法律第九三号-At_42" onclick="toggleClicked(this,'Sp_昭和六一年一二月四日法律第九三号-At_42', 'Sp_昭和六一年一二月四日法律第九三号-At_42')">
+                      <a class="title_text" href="#Sp_昭和六一年一二月四日法律第九三号-At_42">第四十二条（政令への委任）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年五月三一日法律第九一号" data-id="toggle-Sp_平成一二年五月三一日法律第九一号" onclick="toggleClicked(this,'Sp_平成一二年五月三一日法律第九一号', 'Sp_平成一二年五月三一日法律第九一号')">
-                <a class="title_text" href="#Sp_平成一二年五月三一日法律第九一号">附　則（平成一二年五月三一日法律第九一号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年二月八日法律第一号" data-id="toggle-Sp_平成一四年二月八日法律第一号" onclick="toggleClicked(this,'Sp_平成一四年二月八日法律第一号', 'Sp_平成一四年二月八日法律第一号')">
-                <a class="title_text" href="#Sp_平成一四年二月八日法律第一号">附　則（平成一四年二月八日法律第一号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年二月八日法律第一号-At_1" data-id="toggle-Sp_平成一四年二月八日法律第一号-At_1" onclick="toggleClicked(this,'Sp_平成一四年二月八日法律第一号-At_1', 'Sp_平成一四年二月八日法律第一号-At_1')">
-                    <a class="title_text" href="#Sp_平成一四年二月八日法律第一号-At_1">第一条（施行期日）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号" data-id="toggle-Sp_平成六年一一月一一日法律第九七号" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号', 'Sp_平成六年一一月一一日法律第九七号')">
+                  <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号">附　則（平成六年一一月一一日法律第九七号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_1" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_1" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_1', 'Sp_平成六年一一月一一日法律第九七号-At_1')">
+                      <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_14" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_14" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_14', 'Sp_平成六年一一月一一日法律第九七号-At_14')">
+                      <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_14">第十四条（軌道法の一部改正に伴う経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_20" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_20" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_20', 'Sp_平成六年一一月一一日法律第九七号-At_20')">
+                      <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_20">第二十条（罰則に関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成六年一一月一一日法律第九七号-At_21" data-id="toggle-Sp_平成六年一一月一一日法律第九七号-At_21" onclick="toggleClicked(this,'Sp_平成六年一一月一一日法律第九七号-At_21', 'Sp_平成六年一一月一一日法律第九七号-At_21')">
+                      <a class="title_text" href="#Sp_平成六年一一月一一日法律第九七号-At_21">第二十一条（政令への委任）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号" data-id="toggle-Sp_平成一八年三月三一日法律第一九号" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号', 'Sp_平成一八年三月三一日法律第一九号')">
-                <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号">附　則（平成一八年三月三一日法律第一九号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_1" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_1" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_1', 'Sp_平成一八年三月三一日法律第一九号-At_1')">
-                    <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_1">第一条（施行期日）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年五月二一日法律第四九号" data-id="toggle-Sp_平成一一年五月二一日法律第四九号" onclick="toggleClicked(this,'Sp_平成一一年五月二一日法律第四九号', 'Sp_平成一一年五月二一日法律第四九号')">
+                  <a class="title_text" href="#Sp_平成一一年五月二一日法律第四九号">附　則（平成一一年五月二一日法律第四九号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_2" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_2" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_2', 'Sp_平成一八年三月三一日法律第一九号-At_2')">
-                    <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_2">第二条（運輸審議会への諮問に関する経過措置）</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年五月二一日法律第四九号-At_1" data-id="toggle-Sp_平成一一年五月二一日法律第四九号-At_1" onclick="toggleClicked(this,'Sp_平成一一年五月二一日法律第四九号-At_1', 'Sp_平成一一年五月二一日法律第四九号-At_1')">
+                      <a class="title_text" href="#Sp_平成一一年五月二一日法律第四九号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_6" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_6" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_6', 'Sp_平成一八年三月三一日法律第一九号-At_6')">
-                    <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_6">第六条（罰則に関する経過措置）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_7" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_7" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_7', 'Sp_平成一八年三月三一日法律第一九号-At_7')">
-                    <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_7">第七条（政令への委任）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_8" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_8" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_8', 'Sp_平成一八年三月三一日法律第一九号-At_8')">
-                    <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_8">第八条（検討）</a>
-                  </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年六月二日法律第四五号" data-id="toggle-Sp_平成二九年六月二日法律第四五号" onclick="toggleClicked(this,'Sp_平成二九年六月二日法律第四五号', 'Sp_平成二九年六月二日法律第四五号')">
-                <a class="title_text" href="#Sp_平成二九年六月二日法律第四五号">附　則（平成二九年六月二日法律第四五号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号" data-id="toggle-Sp_令和二年六月一〇日法律第四一号" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号', 'Sp_令和二年六月一〇日法律第四一号')">
-                <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号">附　則（令和二年六月一〇日法律第四一号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号-At_1" data-id="toggle-Sp_令和二年六月一〇日法律第四一号-At_1" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号-At_1', 'Sp_令和二年六月一〇日法律第四一号-At_1')">
-                    <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号-At_1">第一条（施行期日）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号" data-id="toggle-Sp_平成一一年七月一六日法律第八七号" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号', 'Sp_平成一一年七月一六日法律第八七号')">
+                  <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号">附　則（平成一一年七月一六日法律第八七号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号-At_5" data-id="toggle-Sp_令和二年六月一〇日法律第四一号-At_5" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号-At_5', 'Sp_令和二年六月一〇日法律第四一号-At_5')">
-                    <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号-At_5">第五条（軌道法の一部改正に伴う経過措置）</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_1" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_1" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_1', 'Sp_平成一一年七月一六日法律第八七号-At_1')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_111" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_111" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_111', 'Sp_平成一一年七月一六日法律第八七号-At_111')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_111">第百十一条（軌道法の一部改正に伴う経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_159" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_159" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_159', 'Sp_平成一一年七月一六日法律第八七号-At_159')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_159">第百五十九条（国等の事務）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_160" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_160" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_160', 'Sp_平成一一年七月一六日法律第八七号-At_160')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_160">第百六十条（処分、申請等に関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_161" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_161" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_161', 'Sp_平成一一年七月一六日法律第八七号-At_161')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_161">第百六十一条（不服申立てに関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_162" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_162" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_162', 'Sp_平成一一年七月一六日法律第八七号-At_162')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_162">第百六十二条（手数料に関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_163" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_163" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_163', 'Sp_平成一一年七月一六日法律第八七号-At_163')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_163">第百六十三条（罰則に関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_164" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_164" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_164', 'Sp_平成一一年七月一六日法律第八七号-At_164')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_164">第百六十四条（その他の経過措置の政令への委任）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_250" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_250" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_250', 'Sp_平成一一年七月一六日法律第八七号-At_250')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_250">第二百五十条（検討）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年七月一六日法律第八七号-At_251" data-id="toggle-Sp_平成一一年七月一六日法律第八七号-At_251" onclick="toggleClicked(this,'Sp_平成一一年七月一六日法律第八七号-At_251', 'Sp_平成一一年七月一六日法律第八七号-At_251')">
+                      <a class="title_text" href="#Sp_平成一一年七月一六日法律第八七号-At_251">第二百五十一条</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号-At_6" data-id="toggle-Sp_令和二年六月一〇日法律第四一号-At_6" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号-At_6', 'Sp_令和二年六月一〇日法律第四一号-At_6')">
-                    <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号-At_6">第六条（政令への委任）</a>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年一二月二二日法律第一六〇号" data-id="toggle-Sp_平成一一年一二月二二日法律第一六〇号" onclick="toggleClicked(this,'Sp_平成一一年一二月二二日法律第一六〇号', 'Sp_平成一一年一二月二二日法律第一六〇号')">
+                  <a class="title_text" href="#Sp_平成一一年一二月二二日法律第一六〇号">附　則（平成一一年一二月二二日法律第一六〇号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一一年一二月二二日法律第一六〇号-At_1" data-id="toggle-Sp_平成一一年一二月二二日法律第一六〇号-At_1" onclick="toggleClicked(this,'Sp_平成一一年一二月二二日法律第一六〇号-At_1', 'Sp_平成一一年一二月二二日法律第一六〇号-At_1')">
+                      <a class="title_text" href="#Sp_平成一一年一二月二二日法律第一六〇号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
+                </div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年五月三一日法律第九一号" data-id="toggle-Sp_平成一二年五月三一日法律第九一号" onclick="toggleClicked(this,'Sp_平成一二年五月三一日法律第九一号', 'Sp_平成一二年五月三一日法律第九一号')">
+                  <a class="title_text" href="#Sp_平成一二年五月三一日法律第九一号">附　則（平成一二年五月三一日法律第九一号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年二月八日法律第一号" data-id="toggle-Sp_平成一四年二月八日法律第一号" onclick="toggleClicked(this,'Sp_平成一四年二月八日法律第一号', 'Sp_平成一四年二月八日法律第一号')">
+                  <a class="title_text" href="#Sp_平成一四年二月八日法律第一号">附　則（平成一四年二月八日法律第一号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年二月八日法律第一号-At_1" data-id="toggle-Sp_平成一四年二月八日法律第一号-At_1" onclick="toggleClicked(this,'Sp_平成一四年二月八日法律第一号-At_1', 'Sp_平成一四年二月八日法律第一号-At_1')">
+                      <a class="title_text" href="#Sp_平成一四年二月八日法律第一号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号" data-id="toggle-Sp_平成一八年三月三一日法律第一九号" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号', 'Sp_平成一八年三月三一日法律第一九号')">
+                  <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号">附　則（平成一八年三月三一日法律第一九号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_1" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_1" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_1', 'Sp_平成一八年三月三一日法律第一九号-At_1')">
+                      <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_2" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_2" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_2', 'Sp_平成一八年三月三一日法律第一九号-At_2')">
+                      <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_2">第二条（運輸審議会への諮問に関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_6" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_6" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_6', 'Sp_平成一八年三月三一日法律第一九号-At_6')">
+                      <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_6">第六条（罰則に関する経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_7" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_7" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_7', 'Sp_平成一八年三月三一日法律第一九号-At_7')">
+                      <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_7">第七条（政令への委任）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年三月三一日法律第一九号-At_8" data-id="toggle-Sp_平成一八年三月三一日法律第一九号-At_8" onclick="toggleClicked(this,'Sp_平成一八年三月三一日法律第一九号-At_8', 'Sp_平成一八年三月三一日法律第一九号-At_8')">
+                      <a class="title_text" href="#Sp_平成一八年三月三一日法律第一九号-At_8">第八条（検討）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年六月二日法律第四五号" data-id="toggle-Sp_平成二九年六月二日法律第四五号" onclick="toggleClicked(this,'Sp_平成二九年六月二日法律第四五号', 'Sp_平成二九年六月二日法律第四五号')">
+                  <a class="title_text" href="#Sp_平成二九年六月二日法律第四五号">附　則（平成二九年六月二日法律第四五号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号" data-id="toggle-Sp_令和二年六月一〇日法律第四一号" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号', 'Sp_令和二年六月一〇日法律第四一号')">
+                  <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号">附　則（令和二年六月一〇日法律第四一号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号-At_1" data-id="toggle-Sp_令和二年六月一〇日法律第四一号-At_1" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号-At_1', 'Sp_令和二年六月一〇日法律第四一号-At_1')">
+                      <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号-At_5" data-id="toggle-Sp_令和二年六月一〇日法律第四一号-At_5" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号-At_5', 'Sp_令和二年六月一〇日法律第四一号-At_5')">
+                      <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号-At_5">第五条（軌道法の一部改正に伴う経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年六月一〇日法律第四一号-At_6" data-id="toggle-Sp_令和二年六月一〇日法律第四一号-At_6" onclick="toggleClicked(this,'Sp_令和二年六月一〇日法律第四一号-At_6', 'Sp_令和二年六月一〇日法律第四一号-At_6')">
+                      <a class="title_text" href="#Sp_令和二年六月一〇日法律第四一号-At_6">第六条（政令への委任）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1957,6 +1961,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

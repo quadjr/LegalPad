@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>信託法施行規則 | Legal Pad</title>
   </head>
   <body>
@@ -12,451 +11,456 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">信託法施行規則（平成十九年法務省令第四十一号）</div>
             <div class="enforced_date">施行日：</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
-                <a class="title_text" href="#Es">制定文</a>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
+                  <a class="title_text" href="#Es">制定文</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1" data-id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1', 'Mp-Ch_1')">
-                    <a class="title_text" href="#Mp-Ch_1">第一章　総則</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1-Se_1" data-id="toggle-Mp-Ch_1-Se_1" onclick="toggleClicked(this,'Mp-Ch_1-Se_1', 'Mp-Ch_1-Se_1')">
-                        <a class="title_text" href="#Mp-Ch_1-Se_1">第一節　通則</a>
-                      </div>
-                      <div class="table_indent">
-                        <div>
-                          <div class="table_line">
-                            <div class="table_arrow_dummy"></div>
-                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-Ch_1-Se_1-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-Ch_1-Se_1-At_1')">
-                            <a class="title_text" href="#Mp-At_1">第一条（目的）</a>
-                          </div>
-                          <div class="table_indent"></div>
-                        </div>
-                        <div>
-                          <div class="table_line">
-                            <div class="table_arrow_dummy"></div>
-                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-Ch_1-Se_1-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-Ch_1-Se_1-At_2')">
-                            <a class="title_text" href="#Mp-At_2">第二条（定義）</a>
-                          </div>
-                          <div class="table_indent"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1-Se_2" data-id="toggle-Mp-Ch_1-Se_2" onclick="toggleClicked(this,'Mp-Ch_1-Se_2', 'Mp-Ch_1-Se_2')">
-                        <a class="title_text" href="#Mp-Ch_1-Se_2">第二節　自己信託に係る公正証書等の記載事項等</a>
-                      </div>
-                      <div class="table_indent">
-                        <div>
-                          <div class="table_line">
-                            <div class="table_arrow_dummy"></div>
-                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-Ch_1-Se_2-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-Ch_1-Se_2-At_3')">
-                            <a class="title_text" href="#Mp-At_3">第三条</a>
-                          </div>
-                          <div class="table_indent"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_2" data-id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2', 'Mp-Ch_2')">
-                    <a class="title_text" href="#Mp-Ch_2">第二章　受託者等</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-Ch_2-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-Ch_2-At_4')">
-                        <a class="title_text" href="#Mp-At_4">第四条（分別管理の方法）</a>
-                      </div>
-                      <div class="table_indent"></div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1" data-id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1', 'Mp-Ch_1')">
+                      <a class="title_text" href="#Mp-Ch_1">第一章　総則</a>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-Ch_2-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-Ch_2-At_5')">
-                        <a class="title_text" href="#Mp-At_5">第五条（前受託者が破産管財人に通知すべき事項）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3" data-id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3', 'Mp-Ch_3')">
-                    <a class="title_text" href="#Mp-Ch_3">第三章　受益者集会</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-Ch_3-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-Ch_3-At_6')">
-                        <a class="title_text" href="#Mp-At_6">第六条（受益者集会の招集の場合における決定事項）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-Ch_3-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-Ch_3-At_7')">
-                        <a class="title_text" href="#Mp-At_7">第七条（受益者集会参考書類）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-Ch_3-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-Ch_3-At_8')">
-                        <a class="title_text" href="#Mp-At_8">第八条（議決権行使書面）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-Ch_3-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-Ch_3-At_9')">
-                        <a class="title_text" href="#Mp-At_9">第九条（書面による議決権行使の期限）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-Ch_3-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-Ch_3-At_10')">
-                        <a class="title_text" href="#Mp-At_10">第十条（電磁的方法による議決権行使の期限）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-Ch_3-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-Ch_3-At_11')">
-                        <a class="title_text" href="#Mp-At_11">第十一条（受益者集会の議事録）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4" data-id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4', 'Mp-Ch_4')">
-                    <a class="title_text" href="#Mp-Ch_4">第四章　信託の併合及び分割</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_1" data-id="toggle-Mp-Ch_4-Se_1" onclick="toggleClicked(this,'Mp-Ch_4-Se_1', 'Mp-Ch_4-Se_1')">
-                        <a class="title_text" href="#Mp-Ch_4-Se_1">第一節　信託の併合</a>
-                      </div>
-                      <div class="table_indent">
-                        <div>
-                          <div class="table_line">
-                            <div class="table_arrow_dummy"></div>
-                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-Ch_4-Se_1-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-Ch_4-Se_1-At_12')">
-                            <a class="title_text" href="#Mp-At_12">第十二条（信託の併合に当たり明らかにすべき事項）</a>
-                          </div>
-                          <div class="table_indent"></div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1-Se_1" data-id="toggle-Mp-Ch_1-Se_1" onclick="toggleClicked(this,'Mp-Ch_1-Se_1', 'Mp-Ch_1-Se_1')">
+                          <a class="title_text" href="#Mp-Ch_1-Se_1">第一節　通則</a>
                         </div>
-                        <div>
-                          <div class="table_line">
-                            <div class="table_arrow_dummy"></div>
-                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-Ch_4-Se_1-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-Ch_4-Se_1-At_13')">
-                            <a class="title_text" href="#Mp-At_13">第十三条（債権者の異議に関する公告事項）</a>
+                        <div class="table_indent">
+                          <div>
+                            <div class="table_line">
+                              <div class="table_arrow_dummy"></div>
+                              <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-Ch_1-Se_1-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-Ch_1-Se_1-At_1')">
+                              <a class="title_text" href="#Mp-At_1">第一条（目的）</a>
+                            </div>
+                            <div class="table_indent"></div>
                           </div>
-                          <div class="table_indent"></div>
+                          <div>
+                            <div class="table_line">
+                              <div class="table_arrow_dummy"></div>
+                              <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-Ch_1-Se_1-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-Ch_1-Se_1-At_2')">
+                              <a class="title_text" href="#Mp-At_2">第二条（定義）</a>
+                            </div>
+                            <div class="table_indent"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1-Se_2" data-id="toggle-Mp-Ch_1-Se_2" onclick="toggleClicked(this,'Mp-Ch_1-Se_2', 'Mp-Ch_1-Se_2')">
+                          <a class="title_text" href="#Mp-Ch_1-Se_2">第二節　自己信託に係る公正証書等の記載事項等</a>
+                        </div>
+                        <div class="table_indent">
+                          <div>
+                            <div class="table_line">
+                              <div class="table_arrow_dummy"></div>
+                              <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-Ch_1-Se_2-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-Ch_1-Se_2-At_3')">
+                              <a class="title_text" href="#Mp-At_3">第三条</a>
+                            </div>
+                            <div class="table_indent"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_2" data-id="toggle-Mp-Ch_4-Se_2" onclick="toggleClicked(this,'Mp-Ch_4-Se_2', 'Mp-Ch_4-Se_2')">
-                        <a class="title_text" href="#Mp-Ch_4-Se_2">第二節　信託の分割</a>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_2" data-id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2', 'Mp-Ch_2')">
+                      <a class="title_text" href="#Mp-Ch_2">第二章　受託者等</a>
+                    </div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-Ch_2-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-Ch_2-At_4')">
+                          <a class="title_text" href="#Mp-At_4">第四条（分別管理の方法）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent">
-                        <div>
-                          <div class="table_line">
-                            <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_2-Ss_1" data-id="toggle-Mp-Ch_4-Se_2-Ss_1" onclick="toggleClicked(this,'Mp-Ch_4-Se_2-Ss_1', 'Mp-Ch_4-Se_2-Ss_1')">
-                            <a class="title_text" href="#Mp-Ch_4-Se_2-Ss_1">第一款　吸収信託分割</a>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-Ch_2-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-Ch_2-At_5')">
+                          <a class="title_text" href="#Mp-At_5">第五条（前受託者が破産管財人に通知すべき事項）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3" data-id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3', 'Mp-Ch_3')">
+                      <a class="title_text" href="#Mp-Ch_3">第三章　受益者集会</a>
+                    </div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-Ch_3-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-Ch_3-At_6')">
+                          <a class="title_text" href="#Mp-At_6">第六条（受益者集会の招集の場合における決定事項）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-Ch_3-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-Ch_3-At_7')">
+                          <a class="title_text" href="#Mp-At_7">第七条（受益者集会参考書類）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-Ch_3-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-Ch_3-At_8')">
+                          <a class="title_text" href="#Mp-At_8">第八条（議決権行使書面）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-Ch_3-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-Ch_3-At_9')">
+                          <a class="title_text" href="#Mp-At_9">第九条（書面による議決権行使の期限）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-Ch_3-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-Ch_3-At_10')">
+                          <a class="title_text" href="#Mp-At_10">第十条（電磁的方法による議決権行使の期限）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-Ch_3-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-Ch_3-At_11')">
+                          <a class="title_text" href="#Mp-At_11">第十一条（受益者集会の議事録）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4" data-id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4', 'Mp-Ch_4')">
+                      <a class="title_text" href="#Mp-Ch_4">第四章　信託の併合及び分割</a>
+                    </div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_1" data-id="toggle-Mp-Ch_4-Se_1" onclick="toggleClicked(this,'Mp-Ch_4-Se_1', 'Mp-Ch_4-Se_1')">
+                          <a class="title_text" href="#Mp-Ch_4-Se_1">第一節　信託の併合</a>
+                        </div>
+                        <div class="table_indent">
+                          <div>
+                            <div class="table_line">
+                              <div class="table_arrow_dummy"></div>
+                              <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-Ch_4-Se_1-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-Ch_4-Se_1-At_12')">
+                              <a class="title_text" href="#Mp-At_12">第十二条（信託の併合に当たり明らかにすべき事項）</a>
+                            </div>
+                            <div class="table_indent"></div>
                           </div>
-                          <div class="table_indent">
-                            <div>
-                              <div class="table_line">
-                                <div class="table_arrow_dummy"></div>
-                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-Ch_4-Se_2-Ss_1-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-Ch_4-Se_2-Ss_1-At_14')">
-                                <a class="title_text" href="#Mp-At_14">第十四条（吸収信託分割に当たり明らかにすべき事項）</a>
-                              </div>
-                              <div class="table_indent"></div>
+                          <div>
+                            <div class="table_line">
+                              <div class="table_arrow_dummy"></div>
+                              <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-Ch_4-Se_1-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-Ch_4-Se_1-At_13')">
+                              <a class="title_text" href="#Mp-At_13">第十三条（債権者の異議に関する公告事項）</a>
                             </div>
-                            <div>
-                              <div class="table_line">
-                                <div class="table_arrow_dummy"></div>
-                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-Ch_4-Se_2-Ss_1-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-Ch_4-Se_2-Ss_1-At_15')">
-                                <a class="title_text" href="#Mp-At_15">第十五条（債権者の異議に関する公告事項）</a>
-                              </div>
-                              <div class="table_indent"></div>
-                            </div>
+                            <div class="table_indent"></div>
                           </div>
                         </div>
-                        <div>
-                          <div class="table_line">
-                            <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                            <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_2-Ss_2" data-id="toggle-Mp-Ch_4-Se_2-Ss_2" onclick="toggleClicked(this,'Mp-Ch_4-Se_2-Ss_2', 'Mp-Ch_4-Se_2-Ss_2')">
-                            <a class="title_text" href="#Mp-Ch_4-Se_2-Ss_2">第二款　新規信託分割</a>
-                          </div>
-                          <div class="table_indent">
-                            <div>
-                              <div class="table_line">
-                                <div class="table_arrow_dummy"></div>
-                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-Ch_4-Se_2-Ss_2-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-Ch_4-Se_2-Ss_2-At_16')">
-                                <a class="title_text" href="#Mp-At_16">第十六条（新規信託分割に当たり明らかにすべき事項）</a>
-                              </div>
-                              <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_2" data-id="toggle-Mp-Ch_4-Se_2" onclick="toggleClicked(this,'Mp-Ch_4-Se_2', 'Mp-Ch_4-Se_2')">
+                          <a class="title_text" href="#Mp-Ch_4-Se_2">第二節　信託の分割</a>
+                        </div>
+                        <div class="table_indent">
+                          <div>
+                            <div class="table_line">
+                              <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                              <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_2-Ss_1" data-id="toggle-Mp-Ch_4-Se_2-Ss_1" onclick="toggleClicked(this,'Mp-Ch_4-Se_2-Ss_1', 'Mp-Ch_4-Se_2-Ss_1')">
+                              <a class="title_text" href="#Mp-Ch_4-Se_2-Ss_1">第一款　吸収信託分割</a>
                             </div>
-                            <div>
-                              <div class="table_line">
-                                <div class="table_arrow_dummy"></div>
-                                <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-Ch_4-Se_2-Ss_2-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-Ch_4-Se_2-Ss_2-At_17')">
-                                <a class="title_text" href="#Mp-At_17">第十七条（債権者の異議に関する公告事項）</a>
+                            <div class="table_indent">
+                              <div>
+                                <div class="table_line">
+                                  <div class="table_arrow_dummy"></div>
+                                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-Ch_4-Se_2-Ss_1-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-Ch_4-Se_2-Ss_1-At_14')">
+                                  <a class="title_text" href="#Mp-At_14">第十四条（吸収信託分割に当たり明らかにすべき事項）</a>
+                                </div>
+                                <div class="table_indent"></div>
                               </div>
-                              <div class="table_indent"></div>
+                              <div>
+                                <div class="table_line">
+                                  <div class="table_arrow_dummy"></div>
+                                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-Ch_4-Se_2-Ss_1-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-Ch_4-Se_2-Ss_1-At_15')">
+                                  <a class="title_text" href="#Mp-At_15">第十五条（債権者の異議に関する公告事項）</a>
+                                </div>
+                                <div class="table_indent"></div>
+                              </div>
                             </div>
                           </div>
+                          <div>
+                            <div class="table_line">
+                              <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                              <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4-Se_2-Ss_2" data-id="toggle-Mp-Ch_4-Se_2-Ss_2" onclick="toggleClicked(this,'Mp-Ch_4-Se_2-Ss_2', 'Mp-Ch_4-Se_2-Ss_2')">
+                              <a class="title_text" href="#Mp-Ch_4-Se_2-Ss_2">第二款　新規信託分割</a>
+                            </div>
+                            <div class="table_indent">
+                              <div>
+                                <div class="table_line">
+                                  <div class="table_arrow_dummy"></div>
+                                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-Ch_4-Se_2-Ss_2-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-Ch_4-Se_2-Ss_2-At_16')">
+                                  <a class="title_text" href="#Mp-At_16">第十六条（新規信託分割に当たり明らかにすべき事項）</a>
+                                </div>
+                                <div class="table_indent"></div>
+                              </div>
+                              <div>
+                                <div class="table_line">
+                                  <div class="table_arrow_dummy"></div>
+                                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-Ch_4-Se_2-Ss_2-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-Ch_4-Se_2-Ss_2-At_17')">
+                                  <a class="title_text" href="#Mp-At_17">第十七条（債権者の異議に関する公告事項）</a>
+                                </div>
+                                <div class="table_indent"></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_5" data-id="toggle-Mp-Ch_5" onclick="toggleClicked(this,'Mp-Ch_5', 'Mp-Ch_5')">
-                    <a class="title_text" href="#Mp-Ch_5">第五章　受益証券発行信託の特例</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-Ch_5-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-Ch_5-At_18')">
-                        <a class="title_text" href="#Mp-At_18">第十八条（受益権原簿記載事項）</a>
-                      </div>
-                      <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_5" data-id="toggle-Mp-Ch_5" onclick="toggleClicked(this,'Mp-Ch_5', 'Mp-Ch_5')">
+                      <a class="title_text" href="#Mp-Ch_5">第五章　受益証券発行信託の特例</a>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-Ch_5-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-Ch_5-At_19')">
-                        <a class="title_text" href="#Mp-At_19">第十九条</a>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-Ch_5-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-Ch_5-At_18')">
+                          <a class="title_text" href="#Mp-At_18">第十八条（受益権原簿記載事項）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-Ch_5-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-Ch_5-At_20')">
-                        <a class="title_text" href="#Mp-At_20">第二十条（受益証券発行信託の受託者が受益権を取得した場合の特例）</a>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-Ch_5-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-Ch_5-At_19')">
+                          <a class="title_text" href="#Mp-At_19">第十九条</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-Ch_5-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-Ch_5-At_21')">
-                        <a class="title_text" href="#Mp-At_21">第二十一条（受益権原簿記載事項の記載等の請求）</a>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-Ch_5-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-Ch_5-At_20')">
+                          <a class="title_text" href="#Mp-At_20">第二十条（受益証券発行信託の受託者が受益権を取得した場合の特例）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-Ch_5-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-Ch_5-At_22')">
-                        <a class="title_text" href="#Mp-At_22">第二十二条（受益証券記載事項）</a>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-Ch_5-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-Ch_5-At_21')">
+                          <a class="title_text" href="#Mp-At_21">第二十一条（受益権原簿記載事項の記載等の請求）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-Ch_5-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-Ch_5-At_23')">
-                        <a class="title_text" href="#Mp-At_23">第二十三条</a>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-Ch_5-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-Ch_5-At_22')">
+                          <a class="title_text" href="#Mp-At_22">第二十二条（受益証券記載事項）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_6" data-id="toggle-Mp-Ch_6" onclick="toggleClicked(this,'Mp-Ch_6', 'Mp-Ch_6')">
-                    <a class="title_text" href="#Mp-Ch_6">第六章　限定責任信託の特例</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-Ch_6-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-Ch_6-At_24')">
-                        <a class="title_text" href="#Mp-At_24">第二十四条</a>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-Ch_5-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-Ch_5-At_23')">
+                          <a class="title_text" href="#Mp-At_23">第二十三条</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
                     </div>
                   </div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_7" data-id="toggle-Mp-Ch_7" onclick="toggleClicked(this,'Mp-Ch_7', 'Mp-Ch_7')">
-                    <a class="title_text" href="#Mp-Ch_7">第七章　電磁的記録等</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-Ch_7-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-Ch_7-At_25')">
-                        <a class="title_text" href="#Mp-At_25">第二十五条（電磁的記録）</a>
-                      </div>
-                      <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_6" data-id="toggle-Mp-Ch_6" onclick="toggleClicked(this,'Mp-Ch_6', 'Mp-Ch_6')">
+                      <a class="title_text" href="#Mp-Ch_6">第六章　限定責任信託の特例</a>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-Ch_7-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-Ch_7-At_26')">
-                        <a class="title_text" href="#Mp-At_26">第二十六条（電磁的記録の作成）</a>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-Ch_6-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-Ch_6-At_24')">
+                          <a class="title_text" href="#Mp-At_24">第二十四条</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-Ch_7-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-Ch_7-At_27')">
-                        <a class="title_text" href="#Mp-At_27">第二十七条（電磁的記録に記録された事項の提供の方法）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_28" data-id="toggle-Mp-Ch_7-At_28" onclick="toggleClicked(this,'Mp-At_28', 'Mp-Ch_7-At_28')">
-                        <a class="title_text" href="#Mp-At_28">第二十八条（電磁的記録に記録された事項を表示する方法）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_29" data-id="toggle-Mp-Ch_7-At_29" onclick="toggleClicked(this,'Mp-At_29', 'Mp-Ch_7-At_29')">
-                        <a class="title_text" href="#Mp-At_29">第二十九条（検査役が提供する電磁的記録等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_30" data-id="toggle-Mp-Ch_7-At_30" onclick="toggleClicked(this,'Mp-At_30', 'Mp-Ch_7-At_30')">
-                        <a class="title_text" href="#Mp-At_30">第三十条（電磁的方法）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_31" data-id="toggle-Mp-Ch_7-At_31" onclick="toggleClicked(this,'Mp-At_31', 'Mp-Ch_7-At_31')">
-                        <a class="title_text" href="#Mp-At_31">第三十一条（電子署名）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_32" data-id="toggle-Mp-Ch_7-At_32" onclick="toggleClicked(this,'Mp-At_32', 'Mp-Ch_7-At_32')">
-                        <a class="title_text" href="#Mp-At_32">第三十二条（信託法施行令に係る電磁的方法）</a>
-                      </div>
-                      <div class="table_indent"></div>
                     </div>
                   </div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_8" data-id="toggle-Mp-Ch_8" onclick="toggleClicked(this,'Mp-Ch_8', 'Mp-Ch_8')">
-                    <a class="title_text" href="#Mp-Ch_8">第八章　計算</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_33" data-id="toggle-Mp-Ch_8-At_33" onclick="toggleClicked(this,'Mp-At_33', 'Mp-Ch_8-At_33')">
-                        <a class="title_text" href="#Mp-At_33">第三十三条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_7" data-id="toggle-Mp-Ch_7" onclick="toggleClicked(this,'Mp-Ch_7', 'Mp-Ch_7')">
+                      <a class="title_text" href="#Mp-Ch_7">第七章　電磁的記録等</a>
+                    </div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-Ch_7-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-Ch_7-At_25')">
+                          <a class="title_text" href="#Mp-At_25">第二十五条（電磁的記録）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-Ch_7-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-Ch_7-At_26')">
+                          <a class="title_text" href="#Mp-At_26">第二十六条（電磁的記録の作成）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-Ch_7-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-Ch_7-At_27')">
+                          <a class="title_text" href="#Mp-At_27">第二十七条（電磁的記録に記録された事項の提供の方法）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_28" data-id="toggle-Mp-Ch_7-At_28" onclick="toggleClicked(this,'Mp-At_28', 'Mp-Ch_7-At_28')">
+                          <a class="title_text" href="#Mp-At_28">第二十八条（電磁的記録に記録された事項を表示する方法）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_29" data-id="toggle-Mp-Ch_7-At_29" onclick="toggleClicked(this,'Mp-At_29', 'Mp-Ch_7-At_29')">
+                          <a class="title_text" href="#Mp-At_29">第二十九条（検査役が提供する電磁的記録等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_30" data-id="toggle-Mp-Ch_7-At_30" onclick="toggleClicked(this,'Mp-At_30', 'Mp-Ch_7-At_30')">
+                          <a class="title_text" href="#Mp-At_30">第三十条（電磁的方法）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_31" data-id="toggle-Mp-Ch_7-At_31" onclick="toggleClicked(this,'Mp-At_31', 'Mp-Ch_7-At_31')">
+                          <a class="title_text" href="#Mp-At_31">第三十一条（電子署名）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_32" data-id="toggle-Mp-Ch_7-At_32" onclick="toggleClicked(this,'Mp-At_32', 'Mp-Ch_7-At_32')">
+                          <a class="title_text" href="#Mp-At_32">第三十二条（信託法施行令に係る電磁的方法）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_8" data-id="toggle-Mp-Ch_8" onclick="toggleClicked(this,'Mp-Ch_8', 'Mp-Ch_8')">
+                      <a class="title_text" href="#Mp-Ch_8">第八章　計算</a>
+                    </div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_33" data-id="toggle-Mp-Ch_8-At_33" onclick="toggleClicked(this,'Mp-At_33', 'Mp-Ch_8-At_33')">
+                          <a class="title_text" href="#Mp-At_33">第三十三条</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二一年三月一六日法務省令第五号" data-id="toggle-Sp_平成二一年三月一六日法務省令第五号" onclick="toggleClicked(this,'Sp_平成二一年三月一六日法務省令第五号', 'Sp_平成二一年三月一六日法務省令第五号')">
-                <a class="title_text" href="#Sp_平成二一年三月一六日法務省令第五号">附　則（平成二一年三月一六日法務省令第五号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二一年三月一六日法務省令第五号" data-id="toggle-Sp_平成二一年三月一六日法務省令第五号" onclick="toggleClicked(this,'Sp_平成二一年三月一六日法務省令第五号', 'Sp_平成二一年三月一六日法務省令第五号')">
+                  <a class="title_text" href="#Sp_平成二一年三月一六日法務省令第五号">附　則（平成二一年三月一六日法務省令第五号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一二月二八日法務省令第六一号" data-id="toggle-Sp_平成二七年一二月二八日法務省令第六一号" onclick="toggleClicked(this,'Sp_平成二七年一二月二八日法務省令第六一号', 'Sp_平成二七年一二月二八日法務省令第六一号')">
-                <a class="title_text" href="#Sp_平成二七年一二月二八日法務省令第六一号">附　則（平成二七年一二月二八日法務省令第六一号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一二月二八日法務省令第六一号-At_1" data-id="toggle-Sp_平成二七年一二月二八日法務省令第六一号-At_1" onclick="toggleClicked(this,'Sp_平成二七年一二月二八日法務省令第六一号-At_1', 'Sp_平成二七年一二月二八日法務省令第六一号-At_1')">
-                    <a class="title_text" href="#Sp_平成二七年一二月二八日法務省令第六一号-At_1">第一条（施行期日）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一二月二八日法務省令第六一号" data-id="toggle-Sp_平成二七年一二月二八日法務省令第六一号" onclick="toggleClicked(this,'Sp_平成二七年一二月二八日法務省令第六一号', 'Sp_平成二七年一二月二八日法務省令第六一号')">
+                  <a class="title_text" href="#Sp_平成二七年一二月二八日法務省令第六一号">附　則（平成二七年一二月二八日法務省令第六一号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一二月二八日法務省令第六一号-At_1" data-id="toggle-Sp_平成二七年一二月二八日法務省令第六一号-At_1" onclick="toggleClicked(this,'Sp_平成二七年一二月二八日法務省令第六一号-At_1', 'Sp_平成二七年一二月二八日法務省令第六一号-At_1')">
+                      <a class="title_text" href="#Sp_平成二七年一二月二八日法務省令第六一号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
             </div>
@@ -2249,6 +2253,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

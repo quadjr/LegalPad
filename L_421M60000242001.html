@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>米穀等の産地情報の伝達に関する命令 | Legal Pad</title>
   </head>
   <body>
@@ -12,127 +11,132 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">米穀等の産地情報の伝達に関する命令（平成二十一年内閣府・財務省・農林水産省令第一号）</div>
             <div class="enforced_date">施行日：令和二年十二月二十八日</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
-                <a class="title_text" href="#Es">制定文</a>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
+                  <a class="title_text" href="#Es">制定文</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
-                    <a class="title_text" href="#Mp-At_1">第一条（原材料である米穀の産地が明らかでない指定米穀等の産地）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
-                    <a class="title_text" href="#Mp-At_2">第二条（米穀事業者間における産地情報の伝達方法）</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
+                      <a class="title_text" href="#Mp-At_1">第一条（原材料である米穀の産地が明らかでない指定米穀等の産地）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
-                    <a class="title_text" href="#Mp-At_3">第三条（一般消費者に対する産地情報の伝達方法）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
+                      <a class="title_text" href="#Mp-At_2">第二条（米穀事業者間における産地情報の伝達方法）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
-                    <a class="title_text" href="#Mp-At_4">第四条（産地の情報を一般消費者が知ることができるようにする措置等）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
+                      <a class="title_text" href="#Mp-At_3">第三条（一般消費者に対する産地情報の伝達方法）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
-                    <a class="title_text" href="#Mp-At_5">第五条（一般消費者に対する産地情報の伝達の適用除外）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
+                      <a class="title_text" href="#Mp-At_4">第四条（産地の情報を一般消費者が知ることができるようにする措置等）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
-                    <a class="title_text" href="#Mp-At_6">第六条（身分を示す証明書の様式）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
+                      <a class="title_text" href="#Mp-At_5">第五条（一般消費者に対する産地情報の伝達の適用除外）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号" data-id="toggle-Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号" onclick="toggleClicked(this,'Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号', 'Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号')">
-                <a class="title_text" href="#Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号">附　則（令和元年六月二四日内閣府・財務省・農林水産省令第一号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号" data-id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号" onclick="toggleClicked(this,'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号', 'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号')">
-                <a class="title_text" href="#Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号">附　則（令和二年一二月二八日内閣府・財務省・農林水産省令第二号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1" data-id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1" onclick="toggleClicked(this,'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1', 'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1')">
-                    <a class="title_text" href="#Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1">第一条（施行期日）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
+                      <a class="title_text" href="#Mp-At_6">第六条（身分を示す証明書の様式）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2" data-id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2" onclick="toggleClicked(this,'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2', 'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2')">
-                    <a class="title_text" href="#Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2">第二条（経過措置）</a>
-                  </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">別記様式（第６条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号" data-id="toggle-Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号" onclick="toggleClicked(this,'Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号', 'Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号')">
+                  <a class="title_text" href="#Sp_令和元年六月二四日内閣府・財務省・農林水産省令第一号">附　則（令和元年六月二四日内閣府・財務省・農林水産省令第一号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号" data-id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号" onclick="toggleClicked(this,'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号', 'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号')">
+                  <a class="title_text" href="#Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号">附　則（令和二年一二月二八日内閣府・財務省・農林水産省令第二号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1" data-id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1" onclick="toggleClicked(this,'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1', 'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1')">
+                      <a class="title_text" href="#Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2" data-id="toggle-Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2" onclick="toggleClicked(this,'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2', 'Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2')">
+                      <a class="title_text" href="#Sp_令和二年一二月二八日内閣府・財務省・農林水産省令第二号-At_2">第二条（経過措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">別記様式（第６条関係）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
             </div>
           </div>
           <div class="body" id="body">
@@ -401,6 +405,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

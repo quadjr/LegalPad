@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>検疫所長等服制 | Legal Pad</title>
   </head>
   <body>
@@ -12,141 +11,146 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">検疫所長等服制（昭和二十七年厚生省令第四十四号）</div>
             <div class="enforced_date">施行日：令和四年四月一日</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
-                <a class="title_text" href="#Es">制定文</a>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
+                  <a class="title_text" href="#Es">制定文</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三一年六月二二日厚生省令第二一号" data-id="toggle-Sp_昭和三一年六月二二日厚生省令第二一号" onclick="toggleClicked(this,'Sp_昭和三一年六月二二日厚生省令第二一号', 'Sp_昭和三一年六月二二日厚生省令第二一号')">
-                <a class="title_text" href="#Sp_昭和三一年六月二二日厚生省令第二一号">附　則（昭和三一年六月二二日厚生省令第二一号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三一年六月二二日厚生省令第二一号" data-id="toggle-Sp_昭和三一年六月二二日厚生省令第二一号" onclick="toggleClicked(this,'Sp_昭和三一年六月二二日厚生省令第二一号', 'Sp_昭和三一年六月二二日厚生省令第二一号')">
+                  <a class="title_text" href="#Sp_昭和三一年六月二二日厚生省令第二一号">附　則（昭和三一年六月二二日厚生省令第二一号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三四年九月九日厚生省令第二七号" data-id="toggle-Sp_昭和三四年九月九日厚生省令第二七号" onclick="toggleClicked(this,'Sp_昭和三四年九月九日厚生省令第二七号', 'Sp_昭和三四年九月九日厚生省令第二七号')">
-                <a class="title_text" href="#Sp_昭和三四年九月九日厚生省令第二七号">附　則（昭和三四年九月九日厚生省令第二七号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和三四年九月九日厚生省令第二七号" data-id="toggle-Sp_昭和三四年九月九日厚生省令第二七号" onclick="toggleClicked(this,'Sp_昭和三四年九月九日厚生省令第二七号', 'Sp_昭和三四年九月九日厚生省令第二七号')">
+                  <a class="title_text" href="#Sp_昭和三四年九月九日厚生省令第二七号">附　則（昭和三四年九月九日厚生省令第二七号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五一年一二月二八日厚生省令第五四号" data-id="toggle-Sp_昭和五一年一二月二八日厚生省令第五四号" onclick="toggleClicked(this,'Sp_昭和五一年一二月二八日厚生省令第五四号', 'Sp_昭和五一年一二月二八日厚生省令第五四号')">
-                <a class="title_text" href="#Sp_昭和五一年一二月二八日厚生省令第五四号">附　則（昭和五一年一二月二八日厚生省令第五四号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五一年一二月二八日厚生省令第五四号" data-id="toggle-Sp_昭和五一年一二月二八日厚生省令第五四号" onclick="toggleClicked(this,'Sp_昭和五一年一二月二八日厚生省令第五四号', 'Sp_昭和五一年一二月二八日厚生省令第五四号')">
+                  <a class="title_text" href="#Sp_昭和五一年一二月二八日厚生省令第五四号">附　則（昭和五一年一二月二八日厚生省令第五四号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五四年四月四日厚生省令第一五号" data-id="toggle-Sp_昭和五四年四月四日厚生省令第一五号" onclick="toggleClicked(this,'Sp_昭和五四年四月四日厚生省令第一五号', 'Sp_昭和五四年四月四日厚生省令第一五号')">
-                <a class="title_text" href="#Sp_昭和五四年四月四日厚生省令第一五号">附　則（昭和五四年四月四日厚生省令第一五号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五四年四月四日厚生省令第一五号" data-id="toggle-Sp_昭和五四年四月四日厚生省令第一五号" onclick="toggleClicked(this,'Sp_昭和五四年四月四日厚生省令第一五号', 'Sp_昭和五四年四月四日厚生省令第一五号')">
+                  <a class="title_text" href="#Sp_昭和五四年四月四日厚生省令第一五号">附　則（昭和五四年四月四日厚生省令第一五号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五七年一〇月一日厚生省令第四七号" data-id="toggle-Sp_昭和五七年一〇月一日厚生省令第四七号" onclick="toggleClicked(this,'Sp_昭和五七年一〇月一日厚生省令第四七号', 'Sp_昭和五七年一〇月一日厚生省令第四七号')">
-                <a class="title_text" href="#Sp_昭和五七年一〇月一日厚生省令第四七号">附　則（昭和五七年一〇月一日厚生省令第四七号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五七年一〇月一日厚生省令第四七号" data-id="toggle-Sp_昭和五七年一〇月一日厚生省令第四七号" onclick="toggleClicked(this,'Sp_昭和五七年一〇月一日厚生省令第四七号', 'Sp_昭和五七年一〇月一日厚生省令第四七号')">
+                  <a class="title_text" href="#Sp_昭和五七年一〇月一日厚生省令第四七号">附　則（昭和五七年一〇月一日厚生省令第四七号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年八月二日厚生省令第三八号" data-id="toggle-Sp_昭和五九年八月二日厚生省令第三八号" onclick="toggleClicked(this,'Sp_昭和五九年八月二日厚生省令第三八号', 'Sp_昭和五九年八月二日厚生省令第三八号')">
-                <a class="title_text" href="#Sp_昭和五九年八月二日厚生省令第三八号">附　則（昭和五九年八月二日厚生省令第三八号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五九年八月二日厚生省令第三八号" data-id="toggle-Sp_昭和五九年八月二日厚生省令第三八号" onclick="toggleClicked(this,'Sp_昭和五九年八月二日厚生省令第三八号', 'Sp_昭和五九年八月二日厚生省令第三八号')">
+                  <a class="title_text" href="#Sp_昭和五九年八月二日厚生省令第三八号">附　則（昭和五九年八月二日厚生省令第三八号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一〇月二〇日厚生省令第一二七号" data-id="toggle-Sp_平成一二年一〇月二〇日厚生省令第一二七号" onclick="toggleClicked(this,'Sp_平成一二年一〇月二〇日厚生省令第一二七号', 'Sp_平成一二年一〇月二〇日厚生省令第一二七号')">
-                <a class="title_text" href="#Sp_平成一二年一〇月二〇日厚生省令第一二七号">附　則（平成一二年一〇月二〇日厚生省令第一二七号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一〇月二〇日厚生省令第一二七号" data-id="toggle-Sp_平成一二年一〇月二〇日厚生省令第一二七号" onclick="toggleClicked(this,'Sp_平成一二年一〇月二〇日厚生省令第一二七号', 'Sp_平成一二年一〇月二〇日厚生省令第一二七号')">
+                  <a class="title_text" href="#Sp_平成一二年一〇月二〇日厚生省令第一二七号">附　則（平成一二年一〇月二〇日厚生省令第一二七号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年三月二二日厚生労働省令第二九号" data-id="toggle-Sp_平成一四年三月二二日厚生労働省令第二九号" onclick="toggleClicked(this,'Sp_平成一四年三月二二日厚生労働省令第二九号', 'Sp_平成一四年三月二二日厚生労働省令第二九号')">
-                <a class="title_text" href="#Sp_平成一四年三月二二日厚生労働省令第二九号">附　則（平成一四年三月二二日厚生労働省令第二九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年三月二二日厚生労働省令第二九号" data-id="toggle-Sp_平成一四年三月二二日厚生労働省令第二九号" onclick="toggleClicked(this,'Sp_平成一四年三月二二日厚生労働省令第二九号', 'Sp_平成一四年三月二二日厚生労働省令第二九号')">
+                  <a class="title_text" href="#Sp_平成一四年三月二二日厚生労働省令第二九号">附　則（平成一四年三月二二日厚生労働省令第二九号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年一二月二五日厚生労働省令第一六六号" data-id="toggle-Sp_平成一四年一二月二五日厚生労働省令第一六六号" onclick="toggleClicked(this,'Sp_平成一四年一二月二五日厚生労働省令第一六六号', 'Sp_平成一四年一二月二五日厚生労働省令第一六六号')">
-                <a class="title_text" href="#Sp_平成一四年一二月二五日厚生労働省令第一六六号">附　則（平成一四年一二月二五日厚生労働省令第一六六号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年一二月二五日厚生労働省令第一六六号" data-id="toggle-Sp_平成一四年一二月二五日厚生労働省令第一六六号" onclick="toggleClicked(this,'Sp_平成一四年一二月二五日厚生労働省令第一六六号', 'Sp_平成一四年一二月二五日厚生労働省令第一六六号')">
+                  <a class="title_text" href="#Sp_平成一四年一二月二五日厚生労働省令第一六六号">附　則（平成一四年一二月二五日厚生労働省令第一六六号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和四年三月三一日厚生労働省令第五九号" data-id="toggle-Sp_令和四年三月三一日厚生労働省令第五九号" onclick="toggleClicked(this,'Sp_令和四年三月三一日厚生労働省令第五九号', 'Sp_令和四年三月三一日厚生労働省令第五九号')">
-                <a class="title_text" href="#Sp_令和四年三月三一日厚生労働省令第五九号">附　則（令和四年三月三一日厚生労働省令第五九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和四年三月三一日厚生労働省令第五九号" data-id="toggle-Sp_令和四年三月三一日厚生労働省令第五九号" onclick="toggleClicked(this,'Sp_令和四年三月三一日厚生労働省令第五九号', 'Sp_令和四年三月三一日厚生労働省令第五九号')">
+                  <a class="title_text" href="#Sp_令和四年三月三一日厚生労働省令第五九号">附　則（令和四年三月三一日厚生労働省令第五九号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Apt_0" data-id="toggle-Apt_0" onclick="toggleClicked(this,'Apt_0', 'Apt_0')">
-                <a class="title_text" href="#Apt_0">別表</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Apt_0" data-id="toggle-Apt_0" onclick="toggleClicked(this,'Apt_0', 'Apt_0')">
+                  <a class="title_text" href="#Apt_0">別表</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Apg" data-id="toggle-Apg" onclick="toggleClicked(this,'Apg', 'Apg')">
-                <a class="title_text" href="#Apg">一　男子（図中の数字は、ミリメートルを単位とする寸法を示す。）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Apg" data-id="toggle-Apg" onclick="toggleClicked(this,'Apg', 'Apg')">
+                  <a class="title_text" href="#Apg">一　男子（図中の数字は、ミリメートルを単位とする寸法を示す。）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Apg" data-id="toggle-Apg" onclick="toggleClicked(this,'Apg', 'Apg')">
-                <a class="title_text" href="#Apg">二　女子（図中の数字は、ミリメートルを単位とする寸法を示す。）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Apg" data-id="toggle-Apg" onclick="toggleClicked(this,'Apg', 'Apg')">
+                  <a class="title_text" href="#Apg">二　女子（図中の数字は、ミリメートルを単位とする寸法を示す。）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
@@ -913,6 +917,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>国立研究開発法人日本医療研究開発機構法施行令 | Legal Pad</title>
   </head>
   <body>
@@ -12,127 +11,132 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">国立研究開発法人日本医療研究開発機構法施行令（平成二十六年政令第二百六十一号）</div>
             <div class="enforced_date">施行日：令和三年四月一日</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
-                <a class="title_text" href="#Es">制定文</a>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
+                  <a class="title_text" href="#Es">制定文</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
-                    <a class="title_text" href="#Mp-At_1">第一条（教育公務員の範囲）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
-                    <a class="title_text" href="#Mp-At_2">第二条（研究公務員の範囲）</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
+                      <a class="title_text" href="#Mp-At_1">第一条（教育公務員の範囲）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_1" data-id="toggle-Sp-At_1" onclick="toggleClicked(this,'Sp-At_1', 'Sp-At_1')">
-                    <a class="title_text" href="#Sp-At_1">第一条（施行期日）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
+                      <a class="title_text" href="#Mp-At_2">第二条（研究公務員の範囲）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_2" data-id="toggle-Sp-At_2" onclick="toggleClicked(this,'Sp-At_2', 'Sp-At_2')">
-                    <a class="title_text" href="#Sp-At_2">第二条（国立研究開発法人日本医療研究開発機構の成立の時において承継される国の権利及び義務）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_3" data-id="toggle-Sp-At_3" onclick="toggleClicked(this,'Sp-At_3', 'Sp-At_3')">
-                    <a class="title_text" href="#Sp-At_3">第三条（国の有する権利及び義務の承継の際出資があったものとされる財産）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_4" data-id="toggle-Sp-At_4" onclick="toggleClicked(this,'Sp-At_4', 'Sp-At_4')">
-                    <a class="title_text" href="#Sp-At_4">第四条（国立研究開発法人日本医療研究開発機構が承継する資産に係る評価委員の任命等）</a>
-                  </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_5" data-id="toggle-Sp-At_5" onclick="toggleClicked(this,'Sp-At_5', 'Sp-At_5')">
-                    <a class="title_text" href="#Sp-At_5">第五条（国立研究開発法人日本医療研究開発機構の成立の時において承継される国立研究開発法人医薬基盤・健康・栄養研究所の権利及び義務）</a>
-                  </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年二月四日政令第三五号" data-id="toggle-Sp_平成二七年二月四日政令第三五号" onclick="toggleClicked(this,'Sp_平成二七年二月四日政令第三五号', 'Sp_平成二七年二月四日政令第三五号')">
-                <a class="title_text" href="#Sp_平成二七年二月四日政令第三五号">附　則（平成二七年二月四日政令第三五号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_1" data-id="toggle-Sp-At_1" onclick="toggleClicked(this,'Sp-At_1', 'Sp-At_1')">
+                      <a class="title_text" href="#Sp-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_2" data-id="toggle-Sp-At_2" onclick="toggleClicked(this,'Sp-At_2', 'Sp-At_2')">
+                      <a class="title_text" href="#Sp-At_2">第二条（国立研究開発法人日本医療研究開発機構の成立の時において承継される国の権利及び義務）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_3" data-id="toggle-Sp-At_3" onclick="toggleClicked(this,'Sp-At_3', 'Sp-At_3')">
+                      <a class="title_text" href="#Sp-At_3">第三条（国の有する権利及び義務の承継の際出資があったものとされる財産）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_4" data-id="toggle-Sp-At_4" onclick="toggleClicked(this,'Sp-At_4', 'Sp-At_4')">
+                      <a class="title_text" href="#Sp-At_4">第四条（国立研究開発法人日本医療研究開発機構が承継する資産に係る評価委員の任命等）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_5" data-id="toggle-Sp-At_5" onclick="toggleClicked(this,'Sp-At_5', 'Sp-At_5')">
+                      <a class="title_text" href="#Sp-At_5">第五条（国立研究開発法人日本医療研究開発機構の成立の時において承継される国立研究開発法人医薬基盤・健康・栄養研究所の権利及び義務）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                </div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年三月一八日政令第七四号" data-id="toggle-Sp_平成二七年三月一八日政令第七四号" onclick="toggleClicked(this,'Sp_平成二七年三月一八日政令第七四号', 'Sp_平成二七年三月一八日政令第七四号')">
-                <a class="title_text" href="#Sp_平成二七年三月一八日政令第七四号">附　則（平成二七年三月一八日政令第七四号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年二月四日政令第三五号" data-id="toggle-Sp_平成二七年二月四日政令第三五号" onclick="toggleClicked(this,'Sp_平成二七年二月四日政令第三五号', 'Sp_平成二七年二月四日政令第三五号')">
+                  <a class="title_text" href="#Sp_平成二七年二月四日政令第三五号">附　則（平成二七年二月四日政令第三五号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成三一年一月一七日政令第四号" data-id="toggle-Sp_平成三一年一月一七日政令第四号" onclick="toggleClicked(this,'Sp_平成三一年一月一七日政令第四号', 'Sp_平成三一年一月一七日政令第四号')">
-                <a class="title_text" href="#Sp_平成三一年一月一七日政令第四号">附　則（平成三一年一月一七日政令第四号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年三月一八日政令第七四号" data-id="toggle-Sp_平成二七年三月一八日政令第七四号" onclick="toggleClicked(this,'Sp_平成二七年三月一八日政令第七四号', 'Sp_平成二七年三月一八日政令第七四号')">
+                  <a class="title_text" href="#Sp_平成二七年三月一八日政令第七四号">附　則（平成二七年三月一八日政令第七四号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一一月一一日政令第三一九号" data-id="toggle-Sp_令和二年一一月一一日政令第三一九号" onclick="toggleClicked(this,'Sp_令和二年一一月一一日政令第三一九号', 'Sp_令和二年一一月一一日政令第三一九号')">
-                <a class="title_text" href="#Sp_令和二年一一月一一日政令第三一九号">附　則（令和二年一一月一一日政令第三一九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成三一年一月一七日政令第四号" data-id="toggle-Sp_平成三一年一月一七日政令第四号" onclick="toggleClicked(this,'Sp_平成三一年一月一七日政令第四号', 'Sp_平成三一年一月一七日政令第四号')">
+                  <a class="title_text" href="#Sp_平成三一年一月一七日政令第四号">附　則（平成三一年一月一七日政令第四号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一一月一一日政令第三一九号" data-id="toggle-Sp_令和二年一一月一一日政令第三一九号" onclick="toggleClicked(this,'Sp_令和二年一一月一一日政令第三一九号', 'Sp_令和二年一一月一一日政令第三一九号')">
+                  <a class="title_text" href="#Sp_令和二年一一月一一日政令第三一九号">附　則（令和二年一一月一一日政令第三一九号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
             </div>
           </div>
           <div class="body" id="body">
@@ -364,6 +368,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

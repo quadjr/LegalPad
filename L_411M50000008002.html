@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>在外選挙執行規則 | Legal Pad</title>
   </head>
   <body>
@@ -12,803 +11,808 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">在外選挙執行規則（平成十一年自治省令第二号）</div>
             <div class="enforced_date">施行日：令和元年六月一日</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
-                <a class="title_text" href="#Es">制定文</a>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
+                  <a class="title_text" href="#Es">制定文</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1" data-id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1', 'Mp-Ch_1')">
-                    <a class="title_text" href="#Mp-Ch_1">第一章　在外選挙人名簿</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_1" data-id="toggle-Mp-Ch_1" onclick="toggleClicked(this,'Mp-Ch_1', 'Mp-Ch_1')">
+                      <a class="title_text" href="#Mp-Ch_1">第一章　在外選挙人名簿</a>
+                    </div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-Ch_1-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-Ch_1-At_1')">
+                          <a class="title_text" href="#Mp-At_1">第一条（在外選挙人名簿の様式等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-Ch_1-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-Ch_1-At_2')">
+                          <a class="title_text" href="#Mp-At_2">第二条</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2_2" data-id="toggle-Mp-Ch_1-At_2_2" onclick="toggleClicked(this,'Mp-At_2_2', 'Mp-Ch_1-At_2_2')">
+                          <a class="title_text" href="#Mp-At_2_2">第二条の二（在外選挙人名簿の抄本の閲覧等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-Ch_1-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-Ch_1-At_3')">
+                          <a class="title_text" href="#Mp-At_3">第三条（在外選挙人名簿が磁気ディスクをもつて調製されている場合に閲覧させる事項）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-Ch_1-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-Ch_1-At_1')">
-                        <a class="title_text" href="#Mp-At_1">第一条（在外選挙人名簿の様式等）</a>
-                      </div>
-                      <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_2" data-id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2', 'Mp-Ch_2')">
+                      <a class="title_text" href="#Mp-Ch_2">第二章　在外選挙人名簿の登録等</a>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-Ch_1-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-Ch_1-At_2')">
-                        <a class="title_text" href="#Mp-At_2">第二条</a>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-Ch_2-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-Ch_2-At_4')">
+                          <a class="title_text" href="#Mp-At_4">第四条（在外選挙人名簿登録申請書の様式等）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4_2" data-id="toggle-Mp-Ch_2-At_4_2" onclick="toggleClicked(this,'Mp-At_4_2', 'Mp-Ch_2-At_4_2')">
+                          <a class="title_text" href="#Mp-At_4_2">第四条の二（同居家族等を通じて行う旅券等の提示）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-Ch_2-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-Ch_2-At_5')">
+                          <a class="title_text" href="#Mp-At_5">第五条（在外選挙人名簿の登録の申請のときに提示する書類）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-Ch_2-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-Ch_2-At_6')">
+                          <a class="title_text" href="#Mp-At_6">第六条（住所を有することを証するに足りる文書の提示の特例）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6_2" data-id="toggle-Mp-Ch_2-At_6_2" onclick="toggleClicked(this,'Mp-At_6_2', 'Mp-Ch_2-At_6_2')">
+                          <a class="title_text" href="#Mp-At_6_2">第六条の二（在外選挙人名簿登録申請書提出後の変更の届出書の様式等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6_3" data-id="toggle-Mp-Ch_2-At_6_3" onclick="toggleClicked(this,'Mp-At_6_3', 'Mp-Ch_2-At_6_3')">
+                          <a class="title_text" href="#Mp-At_6_3">第六条の三（変更の事実を証するに足りる文書の添付の特例等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-Ch_2-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-Ch_2-At_7')">
+                          <a class="title_text" href="#Mp-At_7">第七条（在外選挙人名簿登録申請者の資格に関する意見書の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_2" data-id="toggle-Mp-Ch_2-At_7_2" onclick="toggleClicked(this,'Mp-At_7_2', 'Mp-Ch_2-At_7_2')">
+                          <a class="title_text" href="#Mp-At_7_2">第七条の二（在外選挙人名簿登録移転申請書の様式等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_3" data-id="toggle-Mp-Ch_2-At_7_3" onclick="toggleClicked(this,'Mp-At_7_3', 'Mp-Ch_2-At_7_3')">
+                          <a class="title_text" href="#Mp-At_7_3">第七条の三（受任者を通じて行う旅券等の提示）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_4" data-id="toggle-Mp-Ch_2-At_7_4" onclick="toggleClicked(this,'Mp-At_7_4', 'Mp-Ch_2-At_7_4')">
+                          <a class="title_text" href="#Mp-At_7_4">第七条の四（在外選挙人名簿への登録の移転の申請のときに提示する書類）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_5" data-id="toggle-Mp-Ch_2-At_7_5" onclick="toggleClicked(this,'Mp-At_7_5', 'Mp-Ch_2-At_7_5')">
+                          <a class="title_text" href="#Mp-At_7_5">第七条の五（在外選挙人名簿登録移転申請書提出後の変更の届出書の様式等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_6" data-id="toggle-Mp-Ch_2-At_7_6" onclick="toggleClicked(this,'Mp-At_7_6', 'Mp-Ch_2-At_7_6')">
+                          <a class="title_text" href="#Mp-At_7_6">第七条の六（変更の事実を証するに足りる文書の添付の特例等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_7" data-id="toggle-Mp-Ch_2-At_7_7" onclick="toggleClicked(this,'Mp-At_7_7', 'Mp-Ch_2-At_7_7')">
+                          <a class="title_text" href="#Mp-At_7_7">第七条の七（在外選挙人名簿登録移転申請者の国外における住所に関する意見を求める方法）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_8" data-id="toggle-Mp-Ch_2-At_7_8" onclick="toggleClicked(this,'Mp-At_7_8', 'Mp-Ch_2-At_7_8')">
+                          <a class="title_text" href="#Mp-At_7_8">第七条の八（在外選挙人名簿登録移転申請者に係る通知事項）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_9" data-id="toggle-Mp-Ch_2-At_7_9" onclick="toggleClicked(this,'Mp-At_7_9', 'Mp-Ch_2-At_7_9')">
+                          <a class="title_text" href="#Mp-At_7_9">第七条の九（在外選挙人名簿登録移転申請者の国外における住所に関する意見を述べる方法）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-Ch_2-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-Ch_2-At_8')">
+                          <a class="title_text" href="#Mp-At_8">第八条（在外選挙人証の記載事項等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-Ch_2-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-Ch_2-At_9')">
+                          <a class="title_text" href="#Mp-At_9">第九条（在外選挙人証の記載事項の変更等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-Ch_2-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-Ch_2-At_10')">
+                          <a class="title_text" href="#Mp-At_10">第十条（職権による在外選挙人証の記載事項の変更）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-Ch_2-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-Ch_2-At_11')">
+                          <a class="title_text" href="#Mp-At_11">第十一条（在外選挙人証の再交付等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11_2" data-id="toggle-Mp-Ch_2-At_11_2" onclick="toggleClicked(this,'Mp-At_11_2', 'Mp-Ch_2-At_11_2')">
+                          <a class="title_text" href="#Mp-At_11_2">第十一条の二（帰国後の在外選挙人の在外選挙人証の再交付）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-Ch_2-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-Ch_2-At_12')">
+                          <a class="title_text" href="#Mp-At_12">第十二条（職権による在外選挙人証の再交付）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-Ch_2-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-Ch_2-At_13')">
+                          <a class="title_text" href="#Mp-At_13">第十三条（在外選挙人証等受渡簿の記載事項等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-Ch_2-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-Ch_2-At_14')">
+                          <a class="title_text" href="#Mp-At_14">第十四条（在外選挙人名簿の記載事項の修正に関し通知すべき事項）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-Ch_2-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-Ch_2-At_15')">
+                          <a class="title_text" href="#Mp-At_15">第十五条（在外選挙人証交付記録簿の様式等）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15_2" data-id="toggle-Mp-Ch_2-At_15_2" onclick="toggleClicked(this,'Mp-At_15_2', 'Mp-Ch_2-At_15_2')">
+                          <a class="title_text" href="#Mp-At_15_2">第十五条の二（在外選挙人証交付記録簿の閲覧の申出）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2_2" data-id="toggle-Mp-Ch_1-At_2_2" onclick="toggleClicked(this,'Mp-At_2_2', 'Mp-Ch_1-At_2_2')">
-                        <a class="title_text" href="#Mp-At_2_2">第二条の二（在外選挙人名簿の抄本の閲覧等）</a>
-                      </div>
-                      <div class="table_indent"></div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3" data-id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3', 'Mp-Ch_3')">
+                      <a class="title_text" href="#Mp-Ch_3">第三章　在外投票</a>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-Ch_1-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-Ch_1-At_3')">
-                        <a class="title_text" href="#Mp-At_3">第三条（在外選挙人名簿が磁気ディスクをもつて調製されている場合に閲覧させる事項）</a>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15_3" data-id="toggle-Mp-Ch_3-At_15_3" onclick="toggleClicked(this,'Mp-At_15_3', 'Mp-Ch_3-At_15_3')">
+                          <a class="title_text" href="#Mp-At_15_3">第十五条の三（在外選挙人名簿の表示を消除された後に再び国内に住所を移した者のうち選挙人名簿の表示を消除されたものであって総務省令で定める者）</a>
+                        </div>
+                        <div class="table_indent"></div>
                       </div>
-                      <div class="table_indent"></div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-Ch_3-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-Ch_3-At_16')">
+                          <a class="title_text" href="#Mp-At_16">第十六条（在外投票用投票用紙の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16_2" data-id="toggle-Mp-Ch_3-At_16_2" onclick="toggleClicked(this,'Mp-At_16_2', 'Mp-Ch_3-At_16_2')">
+                          <a class="title_text" href="#Mp-At_16_2">第十六条の二（在外投票用封筒の記載）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-Ch_3-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-Ch_3-At_17')">
+                          <a class="title_text" href="#Mp-At_17">第十七条（在外投票用封筒の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-Ch_3-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-Ch_3-At_18')">
+                          <a class="title_text" href="#Mp-At_18">第十八条（投票用紙等請求書の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-Ch_3-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-Ch_3-At_19')">
+                          <a class="title_text" href="#Mp-At_19">第十九条（点字投票である旨の表示）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-Ch_3-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-Ch_3-At_20')">
+                          <a class="title_text" href="#Mp-At_20">第二十条（在外公館等における在外投票をしようとする場合に提示する書類）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-Ch_3-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-Ch_3-At_21')">
+                          <a class="title_text" href="#Mp-At_21">第二十一条（在外公館等における在外投票の送付用封筒の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-Ch_3-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-Ch_3-At_22')">
+                          <a class="title_text" href="#Mp-At_22">第二十二条（在外公館等における在外投票に関する調書の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-Ch_3-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-Ch_3-At_23')">
+                          <a class="title_text" href="#Mp-At_23">第二十三条（投票用紙及び投票用封筒を発送する日）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-Ch_3-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-Ch_3-At_24')">
+                          <a class="title_text" href="#Mp-At_24">第二十四条（投票用紙及び投票用封筒の返還があった旨の投票用封筒の記載）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-Ch_3-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-Ch_3-At_25')">
+                          <a class="title_text" href="#Mp-At_25">第二十五条（在外投票に関する調書の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25_2" data-id="toggle-Mp-Ch_3-At_25_2" onclick="toggleClicked(this,'Mp-At_25_2', 'Mp-Ch_3-At_25_2')">
+                          <a class="title_text" href="#Mp-At_25_2">第二十五条の二（在外選挙人の不在者投票に関する調書の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-Ch_3-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-Ch_3-At_26')">
+                          <a class="title_text" href="#Mp-At_26">第二十六条（指定在外選挙投票区等における投票録の様式）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4" data-id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4', 'Mp-Ch_4')">
+                      <a class="title_text" href="#Mp-Ch_4">第四章　補則</a>
+                    </div>
+                    <div class="table_indent">
+                      <div>
+                        <div class="table_line">
+                          <div class="table_arrow_dummy"></div>
+                          <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-Ch_4-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-Ch_4-At_27')">
+                          <a class="title_text" href="#Mp-At_27">第二十七条（公職選挙法施行規則の適用）</a>
+                        </div>
+                        <div class="table_indent"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_2" data-id="toggle-Mp-Ch_2" onclick="toggleClicked(this,'Mp-Ch_2', 'Mp-Ch_2')">
-                    <a class="title_text" href="#Mp-Ch_2">第二章　在外選挙人名簿の登録等</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-Ch_2-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-Ch_2-At_4')">
-                        <a class="title_text" href="#Mp-At_4">第四条（在外選挙人名簿登録申請書の様式等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4_2" data-id="toggle-Mp-Ch_2-At_4_2" onclick="toggleClicked(this,'Mp-At_4_2', 'Mp-Ch_2-At_4_2')">
-                        <a class="title_text" href="#Mp-At_4_2">第四条の二（同居家族等を通じて行う旅券等の提示）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-Ch_2-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-Ch_2-At_5')">
-                        <a class="title_text" href="#Mp-At_5">第五条（在外選挙人名簿の登録の申請のときに提示する書類）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-Ch_2-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-Ch_2-At_6')">
-                        <a class="title_text" href="#Mp-At_6">第六条（住所を有することを証するに足りる文書の提示の特例）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6_2" data-id="toggle-Mp-Ch_2-At_6_2" onclick="toggleClicked(this,'Mp-At_6_2', 'Mp-Ch_2-At_6_2')">
-                        <a class="title_text" href="#Mp-At_6_2">第六条の二（在外選挙人名簿登録申請書提出後の変更の届出書の様式等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6_3" data-id="toggle-Mp-Ch_2-At_6_3" onclick="toggleClicked(this,'Mp-At_6_3', 'Mp-Ch_2-At_6_3')">
-                        <a class="title_text" href="#Mp-At_6_3">第六条の三（変更の事実を証するに足りる文書の添付の特例等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-Ch_2-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-Ch_2-At_7')">
-                        <a class="title_text" href="#Mp-At_7">第七条（在外選挙人名簿登録申請者の資格に関する意見書の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_2" data-id="toggle-Mp-Ch_2-At_7_2" onclick="toggleClicked(this,'Mp-At_7_2', 'Mp-Ch_2-At_7_2')">
-                        <a class="title_text" href="#Mp-At_7_2">第七条の二（在外選挙人名簿登録移転申請書の様式等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_3" data-id="toggle-Mp-Ch_2-At_7_3" onclick="toggleClicked(this,'Mp-At_7_3', 'Mp-Ch_2-At_7_3')">
-                        <a class="title_text" href="#Mp-At_7_3">第七条の三（受任者を通じて行う旅券等の提示）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_4" data-id="toggle-Mp-Ch_2-At_7_4" onclick="toggleClicked(this,'Mp-At_7_4', 'Mp-Ch_2-At_7_4')">
-                        <a class="title_text" href="#Mp-At_7_4">第七条の四（在外選挙人名簿への登録の移転の申請のときに提示する書類）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_5" data-id="toggle-Mp-Ch_2-At_7_5" onclick="toggleClicked(this,'Mp-At_7_5', 'Mp-Ch_2-At_7_5')">
-                        <a class="title_text" href="#Mp-At_7_5">第七条の五（在外選挙人名簿登録移転申請書提出後の変更の届出書の様式等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_6" data-id="toggle-Mp-Ch_2-At_7_6" onclick="toggleClicked(this,'Mp-At_7_6', 'Mp-Ch_2-At_7_6')">
-                        <a class="title_text" href="#Mp-At_7_6">第七条の六（変更の事実を証するに足りる文書の添付の特例等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_7" data-id="toggle-Mp-Ch_2-At_7_7" onclick="toggleClicked(this,'Mp-At_7_7', 'Mp-Ch_2-At_7_7')">
-                        <a class="title_text" href="#Mp-At_7_7">第七条の七（在外選挙人名簿登録移転申請者の国外における住所に関する意見を求める方法）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_8" data-id="toggle-Mp-Ch_2-At_7_8" onclick="toggleClicked(this,'Mp-At_7_8', 'Mp-Ch_2-At_7_8')">
-                        <a class="title_text" href="#Mp-At_7_8">第七条の八（在外選挙人名簿登録移転申請者に係る通知事項）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_9" data-id="toggle-Mp-Ch_2-At_7_9" onclick="toggleClicked(this,'Mp-At_7_9', 'Mp-Ch_2-At_7_9')">
-                        <a class="title_text" href="#Mp-At_7_9">第七条の九（在外選挙人名簿登録移転申請者の国外における住所に関する意見を述べる方法）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-Ch_2-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-Ch_2-At_8')">
-                        <a class="title_text" href="#Mp-At_8">第八条（在外選挙人証の記載事項等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-Ch_2-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-Ch_2-At_9')">
-                        <a class="title_text" href="#Mp-At_9">第九条（在外選挙人証の記載事項の変更等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-Ch_2-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-Ch_2-At_10')">
-                        <a class="title_text" href="#Mp-At_10">第十条（職権による在外選挙人証の記載事項の変更）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-Ch_2-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-Ch_2-At_11')">
-                        <a class="title_text" href="#Mp-At_11">第十一条（在外選挙人証の再交付等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11_2" data-id="toggle-Mp-Ch_2-At_11_2" onclick="toggleClicked(this,'Mp-At_11_2', 'Mp-Ch_2-At_11_2')">
-                        <a class="title_text" href="#Mp-At_11_2">第十一条の二（帰国後の在外選挙人の在外選挙人証の再交付）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-Ch_2-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-Ch_2-At_12')">
-                        <a class="title_text" href="#Mp-At_12">第十二条（職権による在外選挙人証の再交付）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-Ch_2-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-Ch_2-At_13')">
-                        <a class="title_text" href="#Mp-At_13">第十三条（在外選挙人証等受渡簿の記載事項等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-Ch_2-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-Ch_2-At_14')">
-                        <a class="title_text" href="#Mp-At_14">第十四条（在外選挙人名簿の記載事項の修正に関し通知すべき事項）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-Ch_2-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-Ch_2-At_15')">
-                        <a class="title_text" href="#Mp-At_15">第十五条（在外選挙人証交付記録簿の様式等）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15_2" data-id="toggle-Mp-Ch_2-At_15_2" onclick="toggleClicked(this,'Mp-At_15_2', 'Mp-Ch_2-At_15_2')">
-                        <a class="title_text" href="#Mp-At_15_2">第十五条の二（在外選挙人証交付記録簿の閲覧の申出）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                  </div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_3" data-id="toggle-Mp-Ch_3" onclick="toggleClicked(this,'Mp-Ch_3', 'Mp-Ch_3')">
-                    <a class="title_text" href="#Mp-Ch_3">第三章　在外投票</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_1" data-id="toggle-Sp-At_1" onclick="toggleClicked(this,'Sp-At_1', 'Sp-At_1')">
+                      <a class="title_text" href="#Sp-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15_3" data-id="toggle-Mp-Ch_3-At_15_3" onclick="toggleClicked(this,'Mp-At_15_3', 'Mp-Ch_3-At_15_3')">
-                        <a class="title_text" href="#Mp-At_15_3">第十五条の三（在外選挙人名簿の表示を消除された後に再び国内に住所を移した者のうち選挙人名簿の表示を消除されたものであって総務省令で定める者）</a>
-                      </div>
-                      <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_2" data-id="toggle-Sp-At_2" onclick="toggleClicked(this,'Sp-At_2', 'Sp-At_2')">
+                      <a class="title_text" href="#Sp-At_2">第二条（適用区分）</a>
                     </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-Ch_3-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-Ch_3-At_16')">
-                        <a class="title_text" href="#Mp-At_16">第十六条（在外投票用投票用紙の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16_2" data-id="toggle-Mp-Ch_3-At_16_2" onclick="toggleClicked(this,'Mp-At_16_2', 'Mp-Ch_3-At_16_2')">
-                        <a class="title_text" href="#Mp-At_16_2">第十六条の二（在外投票用封筒の記載）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-Ch_3-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-Ch_3-At_17')">
-                        <a class="title_text" href="#Mp-At_17">第十七条（在外投票用封筒の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-Ch_3-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-Ch_3-At_18')">
-                        <a class="title_text" href="#Mp-At_18">第十八条（投票用紙等請求書の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-Ch_3-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-Ch_3-At_19')">
-                        <a class="title_text" href="#Mp-At_19">第十九条（点字投票である旨の表示）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-Ch_3-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-Ch_3-At_20')">
-                        <a class="title_text" href="#Mp-At_20">第二十条（在外公館等における在外投票をしようとする場合に提示する書類）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-Ch_3-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-Ch_3-At_21')">
-                        <a class="title_text" href="#Mp-At_21">第二十一条（在外公館等における在外投票の送付用封筒の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-Ch_3-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-Ch_3-At_22')">
-                        <a class="title_text" href="#Mp-At_22">第二十二条（在外公館等における在外投票に関する調書の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_23" data-id="toggle-Mp-Ch_3-At_23" onclick="toggleClicked(this,'Mp-At_23', 'Mp-Ch_3-At_23')">
-                        <a class="title_text" href="#Mp-At_23">第二十三条（投票用紙及び投票用封筒を発送する日）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_24" data-id="toggle-Mp-Ch_3-At_24" onclick="toggleClicked(this,'Mp-At_24', 'Mp-Ch_3-At_24')">
-                        <a class="title_text" href="#Mp-At_24">第二十四条（投票用紙及び投票用封筒の返還があった旨の投票用封筒の記載）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25" data-id="toggle-Mp-Ch_3-At_25" onclick="toggleClicked(this,'Mp-At_25', 'Mp-Ch_3-At_25')">
-                        <a class="title_text" href="#Mp-At_25">第二十五条（在外投票に関する調書の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_25_2" data-id="toggle-Mp-Ch_3-At_25_2" onclick="toggleClicked(this,'Mp-At_25_2', 'Mp-Ch_3-At_25_2')">
-                        <a class="title_text" href="#Mp-At_25_2">第二十五条の二（在外選挙人の不在者投票に関する調書の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_26" data-id="toggle-Mp-Ch_3-At_26" onclick="toggleClicked(this,'Mp-At_26', 'Mp-Ch_3-At_26')">
-                        <a class="title_text" href="#Mp-At_26">第二十六条（指定在外選挙投票区等における投票録の様式）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-Ch_4" data-id="toggle-Mp-Ch_4" onclick="toggleClicked(this,'Mp-Ch_4', 'Mp-Ch_4')">
-                    <a class="title_text" href="#Mp-Ch_4">第四章　補則</a>
-                  </div>
-                  <div class="table_indent">
-                    <div>
-                      <div class="table_line">
-                        <div class="table_arrow_dummy"></div>
-                        <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_27" data-id="toggle-Mp-Ch_4-At_27" onclick="toggleClicked(this,'Mp-At_27', 'Mp-Ch_4-At_27')">
-                        <a class="title_text" href="#Mp-At_27">第二十七条（公職選挙法施行規則の適用）</a>
-                      </div>
-                      <div class="table_indent"></div>
-                    </div>
+                    <div class="table_indent"></div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_1" data-id="toggle-Sp-At_1" onclick="toggleClicked(this,'Sp-At_1', 'Sp-At_1')">
-                    <a class="title_text" href="#Sp-At_1">第一条（施行期日）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年三月一〇日自治省令第七号" data-id="toggle-Sp_平成一二年三月一〇日自治省令第七号" onclick="toggleClicked(this,'Sp_平成一二年三月一〇日自治省令第七号', 'Sp_平成一二年三月一〇日自治省令第七号')">
+                  <a class="title_text" href="#Sp_平成一二年三月一〇日自治省令第七号">附　則（平成一二年三月一〇日自治省令第七号）</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp-At_2" data-id="toggle-Sp-At_2" onclick="toggleClicked(this,'Sp-At_2', 'Sp-At_2')">
-                    <a class="title_text" href="#Sp-At_2">第二条（適用区分）</a>
-                  </div>
-                  <div class="table_indent"></div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年九月一四日自治省令第四四号" data-id="toggle-Sp_平成一二年九月一四日自治省令第四四号" onclick="toggleClicked(this,'Sp_平成一二年九月一四日自治省令第四四号', 'Sp_平成一二年九月一四日自治省令第四四号')">
+                  <a class="title_text" href="#Sp_平成一二年九月一四日自治省令第四四号">附　則（平成一二年九月一四日自治省令第四四号）</a>
                 </div>
+                <div class="table_indent"></div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年三月一〇日自治省令第七号" data-id="toggle-Sp_平成一二年三月一〇日自治省令第七号" onclick="toggleClicked(this,'Sp_平成一二年三月一〇日自治省令第七号', 'Sp_平成一二年三月一〇日自治省令第七号')">
-                <a class="title_text" href="#Sp_平成一二年三月一〇日自治省令第七号">附　則（平成一二年三月一〇日自治省令第七号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一二月二七日自治省令第五六号" data-id="toggle-Sp_平成一二年一二月二七日自治省令第五六号" onclick="toggleClicked(this,'Sp_平成一二年一二月二七日自治省令第五六号', 'Sp_平成一二年一二月二七日自治省令第五六号')">
+                  <a class="title_text" href="#Sp_平成一二年一二月二七日自治省令第五六号">附　則（平成一二年一二月二七日自治省令第五六号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年九月一四日自治省令第四四号" data-id="toggle-Sp_平成一二年九月一四日自治省令第四四号" onclick="toggleClicked(this,'Sp_平成一二年九月一四日自治省令第四四号', 'Sp_平成一二年九月一四日自治省令第四四号')">
-                <a class="title_text" href="#Sp_平成一二年九月一四日自治省令第四四号">附　則（平成一二年九月一四日自治省令第四四号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年二月三日総務省令第二八号" data-id="toggle-Sp_平成一五年二月三日総務省令第二八号" onclick="toggleClicked(this,'Sp_平成一五年二月三日総務省令第二八号', 'Sp_平成一五年二月三日総務省令第二八号')">
+                  <a class="title_text" href="#Sp_平成一五年二月三日総務省令第二八号">附　則（平成一五年二月三日総務省令第二八号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一二月二七日自治省令第五六号" data-id="toggle-Sp_平成一二年一二月二七日自治省令第五六号" onclick="toggleClicked(this,'Sp_平成一二年一二月二七日自治省令第五六号', 'Sp_平成一二年一二月二七日自治省令第五六号')">
-                <a class="title_text" href="#Sp_平成一二年一二月二七日自治省令第五六号">附　則（平成一二年一二月二七日自治省令第五六号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年三月二八日総務省令第五五号" data-id="toggle-Sp_平成一五年三月二八日総務省令第五五号" onclick="toggleClicked(this,'Sp_平成一五年三月二八日総務省令第五五号', 'Sp_平成一五年三月二八日総務省令第五五号')">
+                  <a class="title_text" href="#Sp_平成一五年三月二八日総務省令第五五号">附　則（平成一五年三月二八日総務省令第五五号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年二月三日総務省令第二八号" data-id="toggle-Sp_平成一五年二月三日総務省令第二八号" onclick="toggleClicked(this,'Sp_平成一五年二月三日総務省令第二八号', 'Sp_平成一五年二月三日総務省令第二八号')">
-                <a class="title_text" href="#Sp_平成一五年二月三日総務省令第二八号">附　則（平成一五年二月三日総務省令第二八号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年七月二四日総務省令第一〇〇号" data-id="toggle-Sp_平成一五年七月二四日総務省令第一〇〇号" onclick="toggleClicked(this,'Sp_平成一五年七月二四日総務省令第一〇〇号', 'Sp_平成一五年七月二四日総務省令第一〇〇号')">
+                  <a class="title_text" href="#Sp_平成一五年七月二四日総務省令第一〇〇号">附　則（平成一五年七月二四日総務省令第一〇〇号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年三月二八日総務省令第五五号" data-id="toggle-Sp_平成一五年三月二八日総務省令第五五号" onclick="toggleClicked(this,'Sp_平成一五年三月二八日総務省令第五五号', 'Sp_平成一五年三月二八日総務省令第五五号')">
-                <a class="title_text" href="#Sp_平成一五年三月二八日総務省令第五五号">附　則（平成一五年三月二八日総務省令第五五号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年一〇月一日総務省令第一三〇号" data-id="toggle-Sp_平成一五年一〇月一日総務省令第一三〇号" onclick="toggleClicked(this,'Sp_平成一五年一〇月一日総務省令第一三〇号', 'Sp_平成一五年一〇月一日総務省令第一三〇号')">
+                  <a class="title_text" href="#Sp_平成一五年一〇月一日総務省令第一三〇号">附　則（平成一五年一〇月一日総務省令第一三〇号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年七月二四日総務省令第一〇〇号" data-id="toggle-Sp_平成一五年七月二四日総務省令第一〇〇号" onclick="toggleClicked(this,'Sp_平成一五年七月二四日総務省令第一〇〇号', 'Sp_平成一五年七月二四日総務省令第一〇〇号')">
-                <a class="title_text" href="#Sp_平成一五年七月二四日総務省令第一〇〇号">附　則（平成一五年七月二四日総務省令第一〇〇号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年一〇月一日総務省令第一三一号" data-id="toggle-Sp_平成一五年一〇月一日総務省令第一三一号" onclick="toggleClicked(this,'Sp_平成一五年一〇月一日総務省令第一三一号', 'Sp_平成一五年一〇月一日総務省令第一三一号')">
+                  <a class="title_text" href="#Sp_平成一五年一〇月一日総務省令第一三一号">附　則（平成一五年一〇月一日総務省令第一三一号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年一〇月一日総務省令第一三〇号" data-id="toggle-Sp_平成一五年一〇月一日総務省令第一三〇号" onclick="toggleClicked(this,'Sp_平成一五年一〇月一日総務省令第一三〇号', 'Sp_平成一五年一〇月一日総務省令第一三〇号')">
-                <a class="title_text" href="#Sp_平成一五年一〇月一日総務省令第一三〇号">附　則（平成一五年一〇月一日総務省令第一三〇号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年一〇月二七日総務省令第一二二号" data-id="toggle-Sp_平成一八年一〇月二七日総務省令第一二二号" onclick="toggleClicked(this,'Sp_平成一八年一〇月二七日総務省令第一二二号', 'Sp_平成一八年一〇月二七日総務省令第一二二号')">
+                  <a class="title_text" href="#Sp_平成一八年一〇月二七日総務省令第一二二号">附　則（平成一八年一〇月二七日総務省令第一二二号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一五年一〇月一日総務省令第一三一号" data-id="toggle-Sp_平成一五年一〇月一日総務省令第一三一号" onclick="toggleClicked(this,'Sp_平成一五年一〇月一日総務省令第一三一号', 'Sp_平成一五年一〇月一日総務省令第一三一号')">
-                <a class="title_text" href="#Sp_平成一五年一〇月一日総務省令第一三一号">附　則（平成一五年一〇月一日総務省令第一三一号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二〇年一〇月三日総務省令第一一四号" data-id="toggle-Sp_平成二〇年一〇月三日総務省令第一一四号" onclick="toggleClicked(this,'Sp_平成二〇年一〇月三日総務省令第一一四号', 'Sp_平成二〇年一〇月三日総務省令第一一四号')">
+                  <a class="title_text" href="#Sp_平成二〇年一〇月三日総務省令第一一四号">附　則（平成二〇年一〇月三日総務省令第一一四号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一八年一〇月二七日総務省令第一二二号" data-id="toggle-Sp_平成一八年一〇月二七日総務省令第一二二号" onclick="toggleClicked(this,'Sp_平成一八年一〇月二七日総務省令第一二二号', 'Sp_平成一八年一〇月二七日総務省令第一二二号')">
-                <a class="title_text" href="#Sp_平成一八年一〇月二七日総務省令第一二二号">附　則（平成一八年一〇月二七日総務省令第一二二号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二八年五月二七日総務省令第六二号" data-id="toggle-Sp_平成二八年五月二七日総務省令第六二号" onclick="toggleClicked(this,'Sp_平成二八年五月二七日総務省令第六二号', 'Sp_平成二八年五月二七日総務省令第六二号')">
+                  <a class="title_text" href="#Sp_平成二八年五月二七日総務省令第六二号">附　則（平成二八年五月二七日総務省令第六二号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二〇年一〇月三日総務省令第一一四号" data-id="toggle-Sp_平成二〇年一〇月三日総務省令第一一四号" onclick="toggleClicked(this,'Sp_平成二〇年一〇月三日総務省令第一一四号', 'Sp_平成二〇年一〇月三日総務省令第一一四号')">
-                <a class="title_text" href="#Sp_平成二〇年一〇月三日総務省令第一一四号">附　則（平成二〇年一〇月三日総務省令第一一四号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年五月三一日総務省令第四一号" data-id="toggle-Sp_平成二九年五月三一日総務省令第四一号" onclick="toggleClicked(this,'Sp_平成二九年五月三一日総務省令第四一号', 'Sp_平成二九年五月三一日総務省令第四一号')">
+                  <a class="title_text" href="#Sp_平成二九年五月三一日総務省令第四一号">附　則（平成二九年五月三一日総務省令第四一号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二八年五月二七日総務省令第六二号" data-id="toggle-Sp_平成二八年五月二七日総務省令第六二号" onclick="toggleClicked(this,'Sp_平成二八年五月二七日総務省令第六二号', 'Sp_平成二八年五月二七日総務省令第六二号')">
-                <a class="title_text" href="#Sp_平成二八年五月二七日総務省令第六二号">附　則（平成二八年五月二七日総務省令第六二号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成三〇年五月二三日総務省令第二九号" data-id="toggle-Sp_平成三〇年五月二三日総務省令第二九号" onclick="toggleClicked(this,'Sp_平成三〇年五月二三日総務省令第二九号', 'Sp_平成三〇年五月二三日総務省令第二九号')">
+                  <a class="title_text" href="#Sp_平成三〇年五月二三日総務省令第二九号">附　則（平成三〇年五月二三日総務省令第二九号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年五月三一日総務省令第四一号" data-id="toggle-Sp_平成二九年五月三一日総務省令第四一号" onclick="toggleClicked(this,'Sp_平成二九年五月三一日総務省令第四一号', 'Sp_平成二九年五月三一日総務省令第四一号')">
-                <a class="title_text" href="#Sp_平成二九年五月三一日総務省令第四一号">附　則（平成二九年五月三一日総務省令第四一号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和元年五月三一日総務省令第一二号" data-id="toggle-Sp_令和元年五月三一日総務省令第一二号" onclick="toggleClicked(this,'Sp_令和元年五月三一日総務省令第一二号', 'Sp_令和元年五月三一日総務省令第一二号')">
+                  <a class="title_text" href="#Sp_令和元年五月三一日総務省令第一二号">附　則（令和元年五月三一日総務省令第一二号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成三〇年五月二三日総務省令第二九号" data-id="toggle-Sp_平成三〇年五月二三日総務省令第二九号" onclick="toggleClicked(this,'Sp_平成三〇年五月二三日総務省令第二九号', 'Sp_平成三〇年五月二三日総務省令第二九号')">
-                <a class="title_text" href="#Sp_平成三〇年五月二三日総務省令第二九号">附　則（平成三〇年五月二三日総務省令第二九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和元年五月三一日総務省令第一三号" data-id="toggle-Sp_令和元年五月三一日総務省令第一三号" onclick="toggleClicked(this,'Sp_令和元年五月三一日総務省令第一三号', 'Sp_令和元年五月三一日総務省令第一三号')">
+                  <a class="title_text" href="#Sp_令和元年五月三一日総務省令第一三号">附　則（令和元年五月三一日総務省令第一三号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和元年五月三一日総務省令第一二号" data-id="toggle-Sp_令和元年五月三一日総務省令第一二号" onclick="toggleClicked(this,'Sp_令和元年五月三一日総務省令第一二号', 'Sp_令和元年五月三一日総務省令第一二号')">
-                <a class="title_text" href="#Sp_令和元年五月三一日総務省令第一二号">附　則（令和元年五月三一日総務省令第一二号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Apn" data-id="toggle-Apn" onclick="toggleClicked(this,'Apn', 'Apn')">
+                  <a class="title_text" href="#Apn">別記</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和元年五月三一日総務省令第一三号" data-id="toggle-Sp_令和元年五月三一日総務省令第一三号" onclick="toggleClicked(this,'Sp_令和元年五月三一日総務省令第一三号', 'Sp_令和元年五月三一日総務省令第一三号')">
-                <a class="title_text" href="#Sp_令和元年五月三一日総務省令第一三号">附　則（令和元年五月三一日総務省令第一三号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第一号様式（在外選挙人名簿等の様式）（第一条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Apn" data-id="toggle-Apn" onclick="toggleClicked(this,'Apn', 'Apn')">
-                <a class="title_text" href="#Apn">別記</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第二号様式（在外選挙人名簿の抄本等の様式）（第一条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第一号様式（在外選挙人名簿等の様式）（第一条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第二号様式の二（登録の確認及び政治活動を目的とした在外選挙人名簿の抄本の閲覧の申出書等の様式）（第二条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第二号様式（在外選挙人名簿の抄本等の様式）（第一条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第二号様式の三（政治又は選挙に関する調査研究を目的とした在外選挙人名簿の抄本の閲覧の申出書等の様式）（第二条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第二号様式の二（登録の確認及び政治活動を目的とした在外選挙人名簿の抄本の閲覧の申出書等の様式）（第二条の二関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第三号様式　削除</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第二号様式の三（政治又は選挙に関する調査研究を目的とした在外選挙人名簿の抄本の閲覧の申出書等の様式）（第二条の二関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第四号様式（在外選挙人名簿登録申請書の様式）（第四条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第三号様式　削除</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第四号様式の二（在外選挙人名簿登録申請事項等変更届出書の様式）（第六条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第四号様式（在外選挙人名簿登録申請書の様式）（第四条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第四号様式の三（在外選挙人名簿登録移転申請書の様式）（第七条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第四号様式の二（在外選挙人名簿登録申請事項等変更届出書の様式）（第六条の二関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第四号様式の四（在外選挙人名簿登録移転申請書記載事項等変更届出書）（第七条の五関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第四号様式の三（在外選挙人名簿登録移転申請書の様式）（第七条の二関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第五号様式（在外選挙人名簿登録申請者の資格に関する意見書の様式）（第七条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第四号様式の四（在外選挙人名簿登録移転申請書記載事項等変更届出書）（第七条の五関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第五号様式の二（申出書の様式）（第四条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第五号様式（在外選挙人名簿登録申請者の資格に関する意見書の様式）（第七条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第五号様式の三（申出書の様式）（第七条の三関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第五号様式の二（申出書の様式）（第四条の二関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第六号様式（在外選挙人証の様式）（第八条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第五号様式の三（申出書の様式）（第七条の三関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第七号様式（在外選挙人証記載事項変更届出書の様式）（第九条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第六号様式（在外選挙人証の様式）（第八条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第八号様式（領事官の付す書類の様式）（第九条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第七号様式（在外選挙人証記載事項変更届出書の様式）（第九条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第九号様式（在外選挙人証再交付申請書及び領事官の付す書類の様式）（第十一条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第八号様式（領事官の付す書類の様式）（第九条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第九号様式の二（帰国在外選挙人に係る在外選挙人証再交付申請書の様式）（第十一条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第九号様式（在外選挙人証再交付申請書及び領事官の付す書類の様式）（第十一条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十号様式（在外選挙人証等受渡簿の様式）（第十三条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第九号様式の二（帰国在外選挙人に係る在外選挙人証再交付申請書の様式）（第十一条の二関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十一号様式（在外選挙人証交付記録簿の様式）（第十五条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十号様式（在外選挙人証等受渡簿の様式）（第十三条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十一号様式の二（在外選挙人証交付記録簿の閲覧の申出書等の様式）（第十五条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十一号様式（在外選挙人証交付記録簿の様式）（第十五条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十二号様式（在外投票用投票用紙の様式）（第十六条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十一号様式の二（在外選挙人証交付記録簿の閲覧の申出書等の様式）（第十五条の二関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十三号様式（令第六十五条の三第一項の規定による在外投票用封筒の様式）（第十七条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十二号様式（在外投票用投票用紙の様式）（第十六条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十四号様式（令第六十五条の十一第一項の規定による在外投票用封筒の様式）（第十七条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十三号様式（令第六十五条の三第一項の規定による在外投票用封筒の様式）（第十七条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十五号様式（令第六十五条の三第一項及び令第六十五条の十一第一項の規定による投票用紙等請求書の様式）（第十八条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十四号様式（令第六十五条の十一第一項の規定による在外投票用封筒の様式）（第十七条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十六号様式（令第六十五条の七第一項に規定する他の適当な封筒（送付用封筒）の様式）（第二十一条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十五号様式（令第六十五条の三第一項及び令第六十五条の十一第一項の規定による投票用紙等請求書の様式）（第十八条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十七号様式（在外公館等における在外投票に関する調書の様式）（第二十二条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十六号様式（令第六十五条の七第一項に規定する他の適当な封筒（送付用封筒）の様式）（第二十一条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十八号様式（在外投票に関する調書の様式）（第二十五条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十七号様式（在外公館等における在外投票に関する調書の様式）（第二十二条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十八号様式の二（在外選挙人の不在者投票に関する調書の様式）（第二十五条の二関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十八号様式（在外投票に関する調書の様式）（第二十五条関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">第十九号様式（指定在外選挙投票区等における投票録の様式）（第二十六条関係）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十八号様式の二（在外選挙人の不在者投票に関する調書の様式）（第二十五条の二関係）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">第十九号様式（指定在外選挙投票区等における投票録の様式）（第二十六条関係）</a>
-              </div>
-              <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
@@ -2538,6 +2542,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

@@ -64,18 +64,7 @@
 }
 
 .table_of_contents_icon{
-    width: 32px;
-    height: 32px;
-    margin: auto 0px auto 10px;
     background-image: url(img/icon_table_of_content.svg);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-}
-
-.table_of_contents_icon:hover{
-    background-color: lightblue;
 }
 
 .law_name{
@@ -102,11 +91,15 @@
     margin: auto 10px auto 0px;
 }
 
-.table_of_contents{
+.side_panel{
     width: 400px;
-    padding: 5px;
     font-size: 15px;
     overflow-y: scroll;
+}
+
+.table_of_contents{
+    padding: 5px;
+    font-size: 15px;
 }
 
 .table_line{
@@ -134,7 +127,8 @@
     box-shadow:0px 0px 8px 0px #aaa inset;
     padding: 10px;
     overflow-y: scroll;
-    padding-left: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .toolbar{
@@ -144,12 +138,19 @@
 }
 
 .toolbar .icon{
-    margin: 5px 5px 25px 5px;
+    margin: 0 0 10px 0;
+    padding: 5px;
     width: 24px;
     height: 24px;
-    background-size: contain;
+    background-size: 70%;
+    background-position: center;
     background-repeat: no-repeat;
 	opacity: 0.7;
+    border-radius: 5px;
+}
+
+.toolbar .icon:hover{
+    background-color: lightblue;
 }
 
 .toolbar .search{
@@ -175,6 +176,9 @@
 }
 .toolbar .news{
     background-image: url(img/icon_news.svg);
+}
+.toolbar .link{
+    background-image: url(img/icon_link.svg);
 }
 
 .table_arrow{
@@ -344,10 +348,19 @@ table td{
 
 .ref_box{
     position: absolute;
-    right: 10px;
-    margin-top: -2.0em;
-    text-align: right;
-    background-color: lightgray;
+    left: -3em;
+    padding-left: 0 5px 0 5px;
+    width: 20px;
+    height: 20px;
+    text-align: left;
+    border-radius: 0 5px 5px 0;
+    border-color: lightgray;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    background-image: url(img/icon_link.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .refs_box{
@@ -371,9 +384,35 @@ table td{
     margin-top: 10px;
 }
 
+.ref_line{
+    background-color: white;
+}
+
+.ref_title{
+    border-top: 1px solid lightgray;
+    font-weight: bold;
+    width: 100%;
+}
+
+.ref_law{
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.ref_title a{
+    color: black;
+    text-decoration: none;
+}
+
+.ref_title a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .ref_links{
     position: relative;
-    margin: 10px;
+    color: black;
+    padding-left: 40px;
 }
 
 .preview_el{

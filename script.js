@@ -12,6 +12,43 @@ function tableArrowClicked(el) {
     }
 }
 
+let highlighted_article = null;
+
+function refArrowClicked(key, force = false) {
+    let elements = document.getElementsByClassName("ref_line");
+    for (let i=0 ; i< elements.length; i=i+1) {
+        elements[i].style.backgroundColor = "white";
+    }
+    let pre_highlighted_article = highlighted_article;
+    if(highlighted_article){
+        highlighted_article.style.removeProperty("background-color");
+        highlighted_article = null;
+    }
+
+    let ref_box = document.getElementById("ref_box_" + key);
+
+    let arrow = document.getElementById("ref_arrow_" + key);
+    if(arrow.textContent == "▼" && ((force && ref_box == pre_highlighted_article) || !force)){
+        arrow.textContent = "▶︎";
+        for (let i=1 ; i< arrow.parentNode.parentNode.children.length; i=i+1) {
+            arrow.parentNode.parentNode.children[i].style.setProperty("display", "none");
+        }
+        return false;
+    }else{
+        arrow.textContent = "▼";
+        for (let i=1 ; i< arrow.parentNode.parentNode.children.length; i=i+1) {
+            arrow.parentNode.parentNode.children[i].style.removeProperty("display");
+        }
+
+        let line = document.getElementById("ref_line_" + key);
+        line.style.backgroundColor = "#E0E0E0";
+        ref_box.style.backgroundColor = "#A0A0A0";
+        highlighted_article = ref_box;
+        return true;
+    }
+}
+
+
 function toggleClicked(el, tag_id, tag_id_full) {
     let elements = document.querySelectorAll('[data-id^=toggle-' + tag_id + '-]');
     for (var i = 0; i < elements.length; i++) {
@@ -82,12 +119,28 @@ function toggleClicked(el, tag_id, tag_id_full) {
     }
 }
 
-function toggleToc(){
-    var el_body = document.getElementById("toc");
-    if (el_body.style.getPropertyValue("display")){
-        el_body.style.removeProperty("display");
-    }else{
+var toolbar_mode = 'toc';
+
+function toolbarClick(mode, force = false){
+    var el_body = document.getElementById("side_panel");
+
+    if (mode == '' || (!force && mode == toolbar_mode)){
         el_body.style.setProperty("display", "none");
+        toolbar_mode = '';
+    }else{
+        el_body.style.removeProperty("display");
+        if(mode == 'toc'){
+            let toc = document.getElementById("toc");
+            toc.style.removeProperty("display");
+            let refs = document.getElementById("refs");
+            refs.style.setProperty("display", "none");
+        }else{
+            let toc = document.getElementById("toc");
+            toc.style.setProperty("display", "none");
+            let refs = document.getElementById("refs");
+            refs.style.removeProperty("display");
+        }
+        toolbar_mode = mode;
     }
 }
 
@@ -101,132 +154,234 @@ function loadFinished(){
         }
     }
 
-    var ref_file = window.location.href.split('/').pop();
-    ref_file = "./" + ref_file.split('.')[0] + '.ref';
+    if(window == window.parent){
+        var ref_file = window.location.href.split('/').pop();
+        ref_file = "./" + ref_file.split('.')[0] + '.ref';
 
-    // Fetch APIの実行
-    fetch(ref_file)
-    // 通信が成功したとき
-    .then(function(response) {
-        return response.text();
-    })
-    .then(function(data) {
-        let refs = {};
-        let rows = data.split("\n");
-        let linked_label = {};
-        for(var i=0;i<rows.length;++i){
-            let values = rows[i].split(',');
-            if(values[0] != ""){
-                var sp = values[3].match(/Sp/);
-                if(sp)continue;
+        // Fetch APIの実行
+        fetch(ref_file)
+        // 通信が成功したとき
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(data) {
+            let refs = {};
+            let rows = data.split("\n");
+            let linked_label = {};
+            for(var i=0;i<rows.length;++i){
+                let values = rows[i].split(',');
+                if(values[0] != ""){
+                    var sp = values[3].match(/Sp/);
+                    if(sp)continue;
 
-                var article = values[0].match(/Mp-At[_\d]+/);
-                let key = article + values[2] + values[3];
-                if(!(key in linked_label)){
-                    if(!(article in refs)){
-                        refs[article] = [];
+                    var article = values[0].match(/Mp(-At[_\d]+)(-Pr[_\d]+)*(-It[_\d]+)*/);
+                    let key = article[0] + values[2] + values[3];
+                    if(!(key in linked_label)){
+                        if(!(article[0] in refs)){
+                            refs[article[0]] = [];
+                        }
+                        refs[article[0]].push(values);
+                        linked_label[key] = true;
                     }
-                    refs[article].push(values);
-                    linked_label[key] = true;
                 }
             }
-        }
-        for (let key in refs) {
-            el = document.getElementById(key);
-            if(el){
-                title = el.getElementsByClassName("ArticleTitle");
-                if(title.length > 0){
-                    const div = document.createElement("div");
+
+            let side_panel = document.getElementById("side_panel");
+
+            var keys = Object.keys(refs);
+            keys.sort(function (val1, val2) {
+                let val1_split = val1.split('-');
+                let val2_split = val2.split('-');
+                for(let i = 0; i < Math.min(val1_split.length, val2_split.length); i++){
+                    let val1_sub = val1_split[i].split('_');
+                    let val2_sub = val2_split[i].split('_');
+                    for(let j = 0; j < Math.min(val1_sub.length, val2_sub.length); j++){
+                        let num1, num2;
+                        if (isNaN(val1_sub[j])){
+                            num1 = val1_sub[j];
+                        }else{
+                            num1 = Number(val1_sub[j]);
+                        }
+                        if (isNaN(val2_sub[j])){
+                            num2 = val2_sub[j];
+                        }else{
+                            num2 = Number(val2_sub[j]);
+                        }
+                        if(num1 < num2){
+                            return -1;
+                        }else if(num1 > num2){
+                            return 1;
+                        }
+                    }
+                }
+                if(val1.length > val2.length){
+                    return 1;
+                }else{
+                    return -1;
+                }
+            });
+
+            for (let key of keys) {
+                el = document.getElementById(key);
+                if(el){
+                    const div = document.createElement("a");
                     div.className = "ref_box";
-                    div.innerHTML = "委任/被引用 " + refs[key].length + " 件";
+                    div.id = "ref_box_" + key;
+                    div.href = "#ref_" + key;
+                    div.onclick = function(){
+                        if(refArrowClicked(key, true)){
+                            toolbarClick("link", true);
+                        }
+                    }
+                    // div.innerHTML = refs[key].length;
                     const refs_div = document.createElement("div");
                     refs_div.className = "refs_box";
                     div.appendChild(refs_div);
 
-                    div.onclick = function () {
-                        if(refs_div.children.length > 0){
-                            while (refs_div.lastElementChild) {
-                                refs_div.removeChild(refs_div.lastElementChild);
-                            }
+                    let replaces = [
+                        ['Mp', ""], ['Apn_', "別記"], ['Apt_', "別表"], ['Apg_', "別図"], ['Apf_', "別記書式"],
+                        ['Aps_', "別記様式"], ['Ap_', "付録"], ['Spa_', "附則付録"],
+                        ['Spt_', "附則別表"], ['Sps_', "附則様式"], ['Sp_', "附則"],
+                        ['Es_', "制定文"], ['Pm_', "前文"], ['Apn', "別記"], ['Apt', "別表"], ['Apg', "別図"], ['Apf', "別記書式"], ['Aps', "別記様式"],
+                        ['Ap', "付録"], ['Spa', "附則付録"], ['Spt', "附則別表"], ['Sps', "附則様式"], ['Sp', "附則"], ['Es', "制定文"], ['Pm', "前文"],
+                        [/-At_([_\d]+)/, '$1条'], [/-Pr_([_\d]+)/, '$1項'], [/-It_([_\d]+)/, '$1号'], [/_/g, 'の']
+                    ];
+
+                    let title = key;
+                    for(let i = 0; i < replaces.length; i++){
+                        title = title.replace(replaces[i][0], replaces[i][1]);
+                    }
+                    let str = "";
+                    str += "<div class='ref_line' id='ref_line_" + key + "'><div class='ref_title' id='ref_" + key + "'>"
+                    str += "<div class='table_arrow' id='ref_arrow_" + key + "' onclick='refArrowClicked(\"" + key + "\")'>▶︎</div>\n" 
+                    str += "<a href='#" + key + "' onclick='refArrowClicked(\"" + key + "\")'>" + title + "</a>（" + refs[key].length + "件）</div>";
+
+                    const ref_div = document.createElement("div");
+                    ref_div.id = "refs"
+                    refs[key].sort(function (a, b) {
+                        if(a[2] == b[2]){
+                            return a[3] > b[3];
                         }else{
-                            const ref_div = document.createElement("div");
-                            let str = "";
-                            refs[key].forEach(ref => {
-                                let label = ref[3];
-                                label = label.replace('Mp', "");
-                                label = label.replace('Apn_', "別記");
-                                label = label.replace('Apt_', "別表");
-                                label = label.replace('Apg_', "別図");
-                                label = label.replace('Apf_', "別記書式");
-                                label = label.replace('Aps_', "別記様式");
-                                label = label.replace('Ap_', "付録");
-                                label = label.replace('Spa_', "附則付録");
-                                label = label.replace('Spt_', "附則別表");
-                                label = label.replace('Sps_', "附則様式");
-                                label = label.replace('Sp_', "附則");
-                                label = label.replace('Es_', "制定文");
-                                label = label.replace('Pm_', "前文");
-                                label = label.replace('Apn', "別記");
-                                label = label.replace('Apt', "別表");
-                                label = label.replace('Apg', "別図");
-                                label = label.replace('Apf', "別記書式");
-                                label = label.replace('Aps', "別記様式");
-                                label = label.replace('Ap', "付録");
-                                label = label.replace('Spa', "附則付録");
-                                label = label.replace('Spt', "附則別表");
-                                label = label.replace('Sps', "附則様式");
-                                label = label.replace('Sp', "附則");
-                                label = label.replace('Es', "制定文");
-                                label = label.replace('Pm', "前文");
-                                label = label.replace(/-At_([_\d]+)/, '$1条');
-                                label = label.replace(/-Pr_([_\d]+)/, '$1項');
-                                label = label.replace(/-It_([_\d]+)/, '$1号');
-                                label = label.replace(/_/g, 'の');
-                                str += "<a class='ref_links' href='L_" + ref[2] + ".html#" + ref[3] + "' onmouseover='linkMouseOver(this)' onmouseout='linkMouseOut(this)'>" + ref[1] + "　" + label + "</a><br/>";
-                            });
-                            ref_div.innerHTML = str;
-                            refs_div.appendChild(ref_div);
+                            return a[2] > b[2];
                         }
-                    };
-                    title[0].before(div);
+                    });
+
+                    str += "<div style='display: none'>"
+                    pre_law = ""
+                    refs[key].forEach(ref => {
+                        let label = ref[3];
+                        for(let i = 0; i < replaces.length; i++){
+                            label = label.replace(replaces[i][0], replaces[i][1]);
+                        }
+
+                        if(pre_law != ref[2]){
+                            str += "<div class='ref_law'>" + ref[1] + "</div>";
+                            str += "<a class='ref_links' data-key='" + key + "' href='L_" + ref[2] + ".html#" + ref[3] + "' onmouseover='linkMouseOver(this)' onmouseout='linkMouseOut(this)'>" + label + "</a><br/>";
+                            pre_law = ref[2];
+                        }else{
+                            str += "<a class='ref_links' data-key='" + key + "' href='L_" + ref[2] + ".html#" + ref[3] + "' onmouseover='linkMouseOver(this)' onmouseout='linkMouseOut(this)'>" + label + "</a><br/>";
+                        }
+                    });
+                    str += "</div></div>"
+
+                    ref_div.innerHTML = str;
+                    side_panel.appendChild(ref_div);
+
+                    el.insertBefore(div, el.firstChild);
                 }
             }
-        }
-    })
-    // 通信が失敗したとき
-    .catch(function(error) {
-        console.error('Error:', error);
-    });
-
-    if(window != window.parent){
-        toggleToc();
-        
-        let enacts = document.getElementsByClassName("header")
-        for (var j = 0; j < enacts.length; j++) {
-            enacts[j].style.setProperty("display", "none");
-        }
-        enacts = document.getElementsByClassName("table_of_contents_icon")
-        for (var j = 0; j < enacts.length; j++) {
-            enacts[j].style.setProperty("display", "none");
-        }
+        })
+        // 通信が失敗したとき
+        .catch(function(error) {
+            console.error('Error:', error);
+        });
     }
+}
+
+var preview_el = null;
+
+function respondToVisibility(element, callback) {
+    var options = {
+      root: document.documentElement,
+    };
+  
+    var observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        callback(entry.intersectionRatio > 0);
+      });
+    }, options);
+  
+    observer.observe(element);
 }
 
 function linkMouseOver(el){
     var el_body = document.getElementById("body");
-    const preview_el = document.createElement("iframe");
+    if(preview_el)
+        preview_el.remove();
+    preview_el = document.createElement("iframe");
     preview_el.id = "preview_el";
     preview_el.className = "preview_el";
     preview_el.style.setProperty("top", (el.getBoundingClientRect().bottom - el_body.getBoundingClientRect().top) + el_body.scrollTop);
-    preview_el.setAttribute('sandbox', "allow-scripts");
+    preview_el.setAttribute('sandbox', "allow-scripts allow-same-origin");
     preview_el.src = el.href;
+
+    // Some tricks to prevent scroll of parent window
+    preview_el.style.setProperty("display", "none");
+    preview_el.onload = function(){
+        preview_el.contentWindow.document.getElementById('body').scrollTop = 0;
+        let splits = el.href.split('#');
+        if(splits.length > 1){
+            respondToVisibility(preview_el, function(event){
+                if(event){
+                    preview_el.contentWindow.document.getElementById('body').scrollTop = 
+                        preview_el.contentWindow.document.getElementById(splits[1]).getBoundingClientRect().top - preview_el.contentWindow.document.getElementById('body').getBoundingClientRect().top;
+                }
+            })
+        }
+
+        if(el.className == "ref_links"){
+            let links = preview_el.contentWindow.document.getElementsByClassName('reference_link');
+            for(let i = 0; i < links.length; i++){
+                let href = location.href.split('#')[0];
+                if(links[i].href == href + "#" + el.dataset.key){
+                    console.log(links[i].href);
+                    links[i].style.backgroundColor = "yellow";
+                }
+            }
+        }
+
+        preview_el.style.removeProperty("display");
+    }
 
     el_body.appendChild(preview_el);
 }
 function linkMouseOut(el){
-    var preview_el = document.getElementById("preview_el");
-    preview_el.remove();
+    if(preview_el){
+        preview_el.remove();
+        preview_el = null;
+    }
 }
 
+if(window != window.parent){
+    toolbarClick('');
+    let enacts = document.getElementsByClassName("toolbar")
+    for (var j = 0; j < enacts.length; j++) {
+        enacts[j].style.setProperty("display", "none");
+    }
+    enacts = document.getElementsByClassName("header")
+    for (var j = 0; j < enacts.length; j++) {
+        enacts[j].style.setProperty("display", "none");
+    }
+}
 
+function notscroll(event) {
+    if(preview_el){
+        event.preventDefault();
+        preview_el.contentWindow.document.getElementById('body').scrollTop += event.deltaY;
+    }
+}
+
+if(window == window.parent){
+    document.addEventListener("wheel", notscroll, { passive: false });
+}
 window.addEventListener('load', loadFinished);

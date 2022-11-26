@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>外国人漁業の規制に関する法律施行規則 | Legal Pad</title>
   </head>
   <body>
@@ -12,184 +11,189 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">外国人漁業の規制に関する法律施行規則（昭和四十二年農林省令第五十号）</div>
             <div class="enforced_date">施行日：令和四年八月三日</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
-                <a class="title_text" href="#Es">制定文</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
-                    <a class="title_text" href="#Mp-At_1">第一条（本邦に含まれる附属の島）</a>
-                  </div>
-                  <div class="table_indent"></div>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
+                  <a class="title_text" href="#Es">制定文</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
-                    <a class="title_text" href="#Mp-At_2">第二条（軽易な水産動植物の採捕）</a>
-                  </div>
-                  <div class="table_indent"></div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
-                    <a class="title_text" href="#Mp-At_3">第三条（寄港の許可の申請）</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
+                      <a class="title_text" href="#Mp-At_1">第一条（本邦に含まれる附属の島）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
-                    <a class="title_text" href="#Mp-At_4">第四条（漁獲物等の転載等の許可の申請）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
+                      <a class="title_text" href="#Mp-At_2">第二条（軽易な水産動植物の採捕）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
-                    <a class="title_text" href="#Mp-At_5">第五条（停船命令）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
+                      <a class="title_text" href="#Mp-At_3">第三条（寄港の許可の申請）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四三年五月一日農林省令第二六号" data-id="toggle-Sp_昭和四三年五月一日農林省令第二六号" onclick="toggleClicked(this,'Sp_昭和四三年五月一日農林省令第二六号', 'Sp_昭和四三年五月一日農林省令第二六号')">
-                <a class="title_text" href="#Sp_昭和四三年五月一日農林省令第二六号">附　則（昭和四三年五月一日農林省令第二六号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四三年六月二六日農林省令第四六号" data-id="toggle-Sp_昭和四三年六月二六日農林省令第四六号" onclick="toggleClicked(this,'Sp_昭和四三年六月二六日農林省令第四六号', 'Sp_昭和四三年六月二六日農林省令第四六号')">
-                <a class="title_text" href="#Sp_昭和四三年六月二六日農林省令第四六号">附　則（昭和四三年六月二六日農林省令第四六号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四七年五月一三日農林省令第二九号" data-id="toggle-Sp_昭和四七年五月一三日農林省令第二九号" onclick="toggleClicked(this,'Sp_昭和四七年五月一三日農林省令第二九号', 'Sp_昭和四七年五月一三日農林省令第二九号')">
-                <a class="title_text" href="#Sp_昭和四七年五月一三日農林省令第二九号">附　則（昭和四七年五月一三日農林省令第二九号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五二年六月一七日農林省令第二八号" data-id="toggle-Sp_昭和五二年六月一七日農林省令第二八号" onclick="toggleClicked(this,'Sp_昭和五二年六月一七日農林省令第二八号', 'Sp_昭和五二年六月一七日農林省令第二八号')">
-                <a class="title_text" href="#Sp_昭和五二年六月一七日農林省令第二八号">附　則（昭和五二年六月一七日農林省令第二八号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五三年七月五日農林省令第四九号" data-id="toggle-Sp_昭和五三年七月五日農林省令第四九号" onclick="toggleClicked(this,'Sp_昭和五三年七月五日農林省令第四九号', 'Sp_昭和五三年七月五日農林省令第四九号')">
-                <a class="title_text" href="#Sp_昭和五三年七月五日農林省令第四九号">附　則（昭和五三年七月五日農林省令第四九号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五三年七月五日農林省令第四九号-At_1" data-id="toggle-Sp_昭和五三年七月五日農林省令第四九号-At_1" onclick="toggleClicked(this,'Sp_昭和五三年七月五日農林省令第四九号-At_1', 'Sp_昭和五三年七月五日農林省令第四九号-At_1')">
-                    <a class="title_text" href="#Sp_昭和五三年七月五日農林省令第四九号-At_1">第一条</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
+                      <a class="title_text" href="#Mp-At_4">第四条（漁獲物等の転載等の許可の申請）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
+                      <a class="title_text" href="#Mp-At_5">第五条（停船命令）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一月三一日農林水産省令第五号" data-id="toggle-Sp_平成一二年一月三一日農林水産省令第五号" onclick="toggleClicked(this,'Sp_平成一二年一月三一日農林水産省令第五号', 'Sp_平成一二年一月三一日農林水産省令第五号')">
-                <a class="title_text" href="#Sp_平成一二年一月三一日農林水産省令第五号">附　則（平成一二年一月三一日農林水産省令第五号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一月三一日農林水産省令第五号-At_1" data-id="toggle-Sp_平成一二年一月三一日農林水産省令第五号-At_1" onclick="toggleClicked(this,'Sp_平成一二年一月三一日農林水産省令第五号-At_1', 'Sp_平成一二年一月三一日農林水産省令第五号-At_1')">
-                    <a class="title_text" href="#Sp_平成一二年一月三一日農林水産省令第五号-At_1">第一条（施行期日）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四三年五月一日農林省令第二六号" data-id="toggle-Sp_昭和四三年五月一日農林省令第二六号" onclick="toggleClicked(this,'Sp_昭和四三年五月一日農林省令第二六号', 'Sp_昭和四三年五月一日農林省令第二六号')">
+                  <a class="title_text" href="#Sp_昭和四三年五月一日農林省令第二六号">附　則（昭和四三年五月一日農林省令第二六号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四三年六月二六日農林省令第四六号" data-id="toggle-Sp_昭和四三年六月二六日農林省令第四六号" onclick="toggleClicked(this,'Sp_昭和四三年六月二六日農林省令第四六号', 'Sp_昭和四三年六月二六日農林省令第四六号')">
+                  <a class="title_text" href="#Sp_昭和四三年六月二六日農林省令第四六号">附　則（昭和四三年六月二六日農林省令第四六号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和四七年五月一三日農林省令第二九号" data-id="toggle-Sp_昭和四七年五月一三日農林省令第二九号" onclick="toggleClicked(this,'Sp_昭和四七年五月一三日農林省令第二九号', 'Sp_昭和四七年五月一三日農林省令第二九号')">
+                  <a class="title_text" href="#Sp_昭和四七年五月一三日農林省令第二九号">附　則（昭和四七年五月一三日農林省令第二九号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五二年六月一七日農林省令第二八号" data-id="toggle-Sp_昭和五二年六月一七日農林省令第二八号" onclick="toggleClicked(this,'Sp_昭和五二年六月一七日農林省令第二八号', 'Sp_昭和五二年六月一七日農林省令第二八号')">
+                  <a class="title_text" href="#Sp_昭和五二年六月一七日農林省令第二八号">附　則（昭和五二年六月一七日農林省令第二八号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五三年七月五日農林省令第四九号" data-id="toggle-Sp_昭和五三年七月五日農林省令第四九号" onclick="toggleClicked(this,'Sp_昭和五三年七月五日農林省令第四九号', 'Sp_昭和五三年七月五日農林省令第四九号')">
+                  <a class="title_text" href="#Sp_昭和五三年七月五日農林省令第四九号">附　則（昭和五三年七月五日農林省令第四九号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和五三年七月五日農林省令第四九号-At_1" data-id="toggle-Sp_昭和五三年七月五日農林省令第四九号-At_1" onclick="toggleClicked(this,'Sp_昭和五三年七月五日農林省令第四九号-At_1', 'Sp_昭和五三年七月五日農林省令第四九号-At_1')">
+                      <a class="title_text" href="#Sp_昭和五三年七月五日農林省令第四九号-At_1">第一条</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年二月四日農林水産省令第四号" data-id="toggle-Sp_平成二七年二月四日農林水産省令第四号" onclick="toggleClicked(this,'Sp_平成二七年二月四日農林水産省令第四号', 'Sp_平成二七年二月四日農林水産省令第四号')">
-                <a class="title_text" href="#Sp_平成二七年二月四日農林水産省令第四号">附　則（平成二七年二月四日農林水産省令第四号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一月三一日農林水産省令第五号" data-id="toggle-Sp_平成一二年一月三一日農林水産省令第五号" onclick="toggleClicked(this,'Sp_平成一二年一月三一日農林水産省令第五号', 'Sp_平成一二年一月三一日農林水産省令第五号')">
+                  <a class="title_text" href="#Sp_平成一二年一月三一日農林水産省令第五号">附　則（平成一二年一月三一日農林水産省令第五号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一二年一月三一日農林水産省令第五号-At_1" data-id="toggle-Sp_平成一二年一月三一日農林水産省令第五号-At_1" onclick="toggleClicked(this,'Sp_平成一二年一月三一日農林水産省令第五号-At_1', 'Sp_平成一二年一月三一日農林水産省令第五号-At_1')">
+                      <a class="title_text" href="#Sp_平成一二年一月三一日農林水産省令第五号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                </div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二八年七月二一日農林水産省令第五〇号" data-id="toggle-Sp_平成二八年七月二一日農林水産省令第五〇号" onclick="toggleClicked(this,'Sp_平成二八年七月二一日農林水産省令第五〇号', 'Sp_平成二八年七月二一日農林水産省令第五〇号')">
-                <a class="title_text" href="#Sp_平成二八年七月二一日農林水産省令第五〇号">附　則（平成二八年七月二一日農林水産省令第五〇号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年二月四日農林水産省令第四号" data-id="toggle-Sp_平成二七年二月四日農林水産省令第四号" onclick="toggleClicked(this,'Sp_平成二七年二月四日農林水産省令第四号', 'Sp_平成二七年二月四日農林水産省令第四号')">
+                  <a class="title_text" href="#Sp_平成二七年二月四日農林水産省令第四号">附　則（平成二七年二月四日農林水産省令第四号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年一月五日農林水産省令第一号" data-id="toggle-Sp_平成二九年一月五日農林水産省令第一号" onclick="toggleClicked(this,'Sp_平成二九年一月五日農林水産省令第一号', 'Sp_平成二九年一月五日農林水産省令第一号')">
-                <a class="title_text" href="#Sp_平成二九年一月五日農林水産省令第一号">附　則（平成二九年一月五日農林水産省令第一号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二八年七月二一日農林水産省令第五〇号" data-id="toggle-Sp_平成二八年七月二一日農林水産省令第五〇号" onclick="toggleClicked(this,'Sp_平成二八年七月二一日農林水産省令第五〇号', 'Sp_平成二八年七月二一日農林水産省令第五〇号')">
+                  <a class="title_text" href="#Sp_平成二八年七月二一日農林水産省令第五〇号">附　則（平成二八年七月二一日農林水産省令第五〇号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年七月八日農林水産省令第四九号" data-id="toggle-Sp_令和二年七月八日農林水産省令第四九号" onclick="toggleClicked(this,'Sp_令和二年七月八日農林水産省令第四九号', 'Sp_令和二年七月八日農林水産省令第四九号')">
-                <a class="title_text" href="#Sp_令和二年七月八日農林水産省令第四九号">附　則（令和二年七月八日農林水産省令第四九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年一月五日農林水産省令第一号" data-id="toggle-Sp_平成二九年一月五日農林水産省令第一号" onclick="toggleClicked(this,'Sp_平成二九年一月五日農林水産省令第一号', 'Sp_平成二九年一月五日農林水産省令第一号')">
+                  <a class="title_text" href="#Sp_平成二九年一月五日農林水産省令第一号">附　則（平成二九年一月五日農林水産省令第一号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和四年八月三日農林水産省令第四六号" data-id="toggle-Sp_令和四年八月三日農林水産省令第四六号" onclick="toggleClicked(this,'Sp_令和四年八月三日農林水産省令第四六号', 'Sp_令和四年八月三日農林水産省令第四六号')">
-                <a class="title_text" href="#Sp_令和四年八月三日農林水産省令第四六号">附　則（令和四年八月三日農林水産省令第四六号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年七月八日農林水産省令第四九号" data-id="toggle-Sp_令和二年七月八日農林水産省令第四九号" onclick="toggleClicked(this,'Sp_令和二年七月八日農林水産省令第四九号', 'Sp_令和二年七月八日農林水産省令第四九号')">
+                  <a class="title_text" href="#Sp_令和二年七月八日農林水産省令第四九号">附　則（令和二年七月八日農林水産省令第四九号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和四年八月三日農林水産省令第四六号" data-id="toggle-Sp_令和四年八月三日農林水産省令第四六号" onclick="toggleClicked(this,'Sp_令和四年八月三日農林水産省令第四六号', 'Sp_令和四年八月三日農林水産省令第四六号')">
+                  <a class="title_text" href="#Sp_令和四年八月三日農林水産省令第四六号">附　則（令和四年八月三日農林水産省令第四六号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
             </div>
           </div>
           <div class="body" id="body">
@@ -697,6 +701,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

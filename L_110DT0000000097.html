@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>明治十年太政官達第九十七号（大勲位菊花大綬章及副章製式ノ件） | Legal Pad</title>
   </head>
   <body>
@@ -12,37 +11,42 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">明治十年太政官達第九十七号（大勲位菊花大綬章及副章製式ノ件）（明治十年太政官達第九十七号）</div>
             <div class="enforced_date">施行日：</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和一一年五月一九日勅令第六五号" data-id="toggle-Sp_昭和一一年五月一九日勅令第六五号" onclick="toggleClicked(this,'Sp_昭和一一年五月一九日勅令第六五号', 'Sp_昭和一一年五月一九日勅令第六五号')">
-                <a class="title_text" href="#Sp_昭和一一年五月一九日勅令第六五号">附　則（昭和一一年五月一九日勅令第六五号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_昭和一一年五月一九日勅令第六五号" data-id="toggle-Sp_昭和一一年五月一九日勅令第六五号" onclick="toggleClicked(this,'Sp_昭和一一年五月一九日勅令第六五号', 'Sp_昭和一一年五月一九日勅令第六五号')">
+                  <a class="title_text" href="#Sp_昭和一一年五月一九日勅令第六五号">附　則（昭和一一年五月一九日勅令第六五号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年八月一二日政令第二七七号" data-id="toggle-Sp_平成一四年八月一二日政令第二七七号" onclick="toggleClicked(this,'Sp_平成一四年八月一二日政令第二七七号', 'Sp_平成一四年八月一二日政令第二七七号')">
-                <a class="title_text" href="#Sp_平成一四年八月一二日政令第二七七号">附　則（平成一四年八月一二日政令第二七七号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一四年八月一二日政令第二七七号" data-id="toggle-Sp_平成一四年八月一二日政令第二七七号" onclick="toggleClicked(this,'Sp_平成一四年八月一二日政令第二七七号', 'Sp_平成一四年八月一二日政令第二七七号')">
+                  <a class="title_text" href="#Sp_平成一四年八月一二日政令第二七七号">附　則（平成一四年八月一二日政令第二七七号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
             </div>
           </div>
           <div class="body" id="body">
@@ -134,6 +138,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

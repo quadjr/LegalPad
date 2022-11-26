@@ -2,7 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>水防法施行規則 | Legal Pad</title>
   </head>
   <body>
@@ -12,409 +11,414 @@
       </div>
       <div class="main">
         <div class="main_header">
-          <div class="table_of_contents_icon" onclick="toggleToc()"></div>
           <div>
             <div class="law_name">水防法施行規則（平成十二年建設省令第四十四号）</div>
             <div class="enforced_date">施行日：令和三年十一月一日</div>
           </div>
         </div>
         <div class="main_body">
-          <div class="table_of_contents" id="toc">
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
-                <a class="title_text" href="#Es">制定文</a>
+          <div class="toolbar">
+            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+          </div>
+          <div class="side_panel" id="side_panel">
+            <div class="table_of_contents" id="toc">
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Es" data-id="toggle-Es" onclick="toggleClicked(this,'Es', 'Es')">
+                  <a class="title_text" href="#Es">制定文</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
-                <a class="title_text" href="#Mp">本則</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
-                    <a class="title_text" href="#Mp-At_1">第一条（洪水浸水想定区域の指定）</a>
-                  </div>
-                  <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Mp" data-id="toggle-Mp" onclick="toggleClicked(this,'Mp', 'Mp')">
+                  <a class="title_text" href="#Mp">本則</a>
                 </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1_2" data-id="toggle-Mp-At_1_2" onclick="toggleClicked(this,'Mp-At_1_2', 'Mp-At_1_2')">
-                    <a class="title_text" href="#Mp-At_1_2">第一条の二（洪水による災害の発生を警戒すべき河川の基準）</a>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1" data-id="toggle-Mp-At_1" onclick="toggleClicked(this,'Mp-At_1', 'Mp-At_1')">
+                      <a class="title_text" href="#Mp-At_1">第一条（洪水浸水想定区域の指定）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
-                    <a class="title_text" href="#Mp-At_2">第二条（洪水浸水想定区域の指定の際の明示事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_1_2" data-id="toggle-Mp-At_1_2" onclick="toggleClicked(this,'Mp-At_1_2', 'Mp-At_1_2')">
+                      <a class="title_text" href="#Mp-At_1_2">第一条の二（洪水による災害の発生を警戒すべき河川の基準）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
-                    <a class="title_text" href="#Mp-At_3">第三条（洪水浸水想定区域等の公表）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_2" data-id="toggle-Mp-At_2" onclick="toggleClicked(this,'Mp-At_2', 'Mp-At_2')">
+                      <a class="title_text" href="#Mp-At_2">第二条（洪水浸水想定区域の指定の際の明示事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
-                    <a class="title_text" href="#Mp-At_4">第四条（雨水出水浸水想定区域の指定）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_3" data-id="toggle-Mp-At_3" onclick="toggleClicked(this,'Mp-At_3', 'Mp-At_3')">
+                      <a class="title_text" href="#Mp-At_3">第三条（洪水浸水想定区域等の公表）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4_2" data-id="toggle-Mp-At_4_2" onclick="toggleClicked(this,'Mp-At_4_2', 'Mp-At_4_2')">
-                    <a class="title_text" href="#Mp-At_4_2">第四条の二（雨水出水による災害の発生を警戒すべき公共下水道等の排水施設の基準）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4" data-id="toggle-Mp-At_4" onclick="toggleClicked(this,'Mp-At_4', 'Mp-At_4')">
+                      <a class="title_text" href="#Mp-At_4">第四条（雨水出水浸水想定区域の指定）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
-                    <a class="title_text" href="#Mp-At_5">第五条（雨水出水浸水想定区域の指定の際の明示事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_4_2" data-id="toggle-Mp-At_4_2" onclick="toggleClicked(this,'Mp-At_4_2', 'Mp-At_4_2')">
+                      <a class="title_text" href="#Mp-At_4_2">第四条の二（雨水出水による災害の発生を警戒すべき公共下水道等の排水施設の基準）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
-                    <a class="title_text" href="#Mp-At_6">第六条（雨水出水浸水想定区域等の公表）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_5" data-id="toggle-Mp-At_5" onclick="toggleClicked(this,'Mp-At_5', 'Mp-At_5')">
+                      <a class="title_text" href="#Mp-At_5">第五条（雨水出水浸水想定区域の指定の際の明示事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-At_7')">
-                    <a class="title_text" href="#Mp-At_7">第七条（高潮浸水想定区域の指定）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_6" data-id="toggle-Mp-At_6" onclick="toggleClicked(this,'Mp-At_6', 'Mp-At_6')">
+                      <a class="title_text" href="#Mp-At_6">第六条（雨水出水浸水想定区域等の公表）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_2" data-id="toggle-Mp-At_7_2" onclick="toggleClicked(this,'Mp-At_7_2', 'Mp-At_7_2')">
-                    <a class="title_text" href="#Mp-At_7_2">第七条の二（高潮による災害の発生を警戒すべき海岸の基準）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7" data-id="toggle-Mp-At_7" onclick="toggleClicked(this,'Mp-At_7', 'Mp-At_7')">
+                      <a class="title_text" href="#Mp-At_7">第七条（高潮浸水想定区域の指定）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-At_8')">
-                    <a class="title_text" href="#Mp-At_8">第八条（高潮浸水想定区域の指定の際の明示事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_7_2" data-id="toggle-Mp-At_7_2" onclick="toggleClicked(this,'Mp-At_7_2', 'Mp-At_7_2')">
+                      <a class="title_text" href="#Mp-At_7_2">第七条の二（高潮による災害の発生を警戒すべき海岸の基準）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-At_9')">
-                    <a class="title_text" href="#Mp-At_9">第九条（高潮浸水想定区域等の公表）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_8" data-id="toggle-Mp-At_8" onclick="toggleClicked(this,'Mp-At_8', 'Mp-At_8')">
+                      <a class="title_text" href="#Mp-At_8">第八条（高潮浸水想定区域の指定の際の明示事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-At_10')">
-                    <a class="title_text" href="#Mp-At_10">第十条（大規模な工場その他の施設の用途及び規模の基準）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_9" data-id="toggle-Mp-At_9" onclick="toggleClicked(this,'Mp-At_9', 'Mp-At_9')">
+                      <a class="title_text" href="#Mp-At_9">第九条（高潮浸水想定区域等の公表）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-At_11')">
-                    <a class="title_text" href="#Mp-At_11">第十一条（市町村地域防災計画において定められた事項を住民等に周知させるための必要な措置）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_10" data-id="toggle-Mp-At_10" onclick="toggleClicked(this,'Mp-At_10', 'Mp-At_10')">
+                      <a class="title_text" href="#Mp-At_10">第十条（大規模な工場その他の施設の用途及び規模の基準）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-At_12')">
-                    <a class="title_text" href="#Mp-At_12">第十二条（地下街等の利用者の避難の確保及び浸水の防止のための措置に関する計画に定めるべき事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_11" data-id="toggle-Mp-At_11" onclick="toggleClicked(this,'Mp-At_11', 'Mp-At_11')">
+                      <a class="title_text" href="#Mp-At_11">第十一条（市町村地域防災計画において定められた事項を住民等に周知させるための必要な措置）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-At_13')">
-                    <a class="title_text" href="#Mp-At_13">第十三条（統括管理者の設置等）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_12" data-id="toggle-Mp-At_12" onclick="toggleClicked(this,'Mp-At_12', 'Mp-At_12')">
+                      <a class="title_text" href="#Mp-At_12">第十二条（地下街等の利用者の避難の確保及び浸水の防止のための措置に関する計画に定めるべき事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-At_14')">
-                    <a class="title_text" href="#Mp-At_14">第十四条（連続する二以上の地下街等の所有者又は管理者による地下街等の自衛水防組織の設置）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_13" data-id="toggle-Mp-At_13" onclick="toggleClicked(this,'Mp-At_13', 'Mp-At_13')">
+                      <a class="title_text" href="#Mp-At_13">第十三条（統括管理者の設置等）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-At_15')">
-                    <a class="title_text" href="#Mp-At_15">第十五条（地下街等の自衛水防組織の設置に係る報告事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_14" data-id="toggle-Mp-At_14" onclick="toggleClicked(this,'Mp-At_14', 'Mp-At_14')">
+                      <a class="title_text" href="#Mp-At_14">第十四条（連続する二以上の地下街等の所有者又は管理者による地下街等の自衛水防組織の設置）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-At_16')">
-                    <a class="title_text" href="#Mp-At_16">第十六条（要配慮者利用施設の利用者の避難の確保のための措置に関する計画に定めるべき事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_15" data-id="toggle-Mp-At_15" onclick="toggleClicked(this,'Mp-At_15', 'Mp-At_15')">
+                      <a class="title_text" href="#Mp-At_15">第十五条（地下街等の自衛水防組織の設置に係る報告事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-At_17')">
-                    <a class="title_text" href="#Mp-At_17">第十七条（自衛水防組織に関する規定の要配慮者利用施設についての準用）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_16" data-id="toggle-Mp-At_16" onclick="toggleClicked(this,'Mp-At_16', 'Mp-At_16')">
+                      <a class="title_text" href="#Mp-At_16">第十六条（要配慮者利用施設の利用者の避難の確保のための措置に関する計画に定めるべき事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-At_18')">
-                    <a class="title_text" href="#Mp-At_18">第十八条（大規模工場等における浸水の防止のための措置に関する計画に定めるべき事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_17" data-id="toggle-Mp-At_17" onclick="toggleClicked(this,'Mp-At_17', 'Mp-At_17')">
+                      <a class="title_text" href="#Mp-At_17">第十七条（自衛水防組織に関する規定の要配慮者利用施設についての準用）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-At_19')">
-                    <a class="title_text" href="#Mp-At_19">第十九条（自衛水防組織に関する規定の大規模工場等についての準用）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_18" data-id="toggle-Mp-At_18" onclick="toggleClicked(this,'Mp-At_18', 'Mp-At_18')">
+                      <a class="title_text" href="#Mp-At_18">第十八条（大規模工場等における浸水の防止のための措置に関する計画に定めるべき事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_2" data-id="toggle-Mp-At_19_2" onclick="toggleClicked(this,'Mp-At_19_2', 'Mp-At_19_2')">
-                    <a class="title_text" href="#Mp-At_19_2">第十九条の二（その状況が帯状の盛土構造物が存する土地に類する土地）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19" data-id="toggle-Mp-At_19" onclick="toggleClicked(this,'Mp-At_19', 'Mp-At_19')">
+                      <a class="title_text" href="#Mp-At_19">第十九条（自衛水防組織に関する規定の大規模工場等についての準用）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_3" data-id="toggle-Mp-At_19_3" onclick="toggleClicked(this,'Mp-At_19_3', 'Mp-At_19_3')">
-                    <a class="title_text" href="#Mp-At_19_3">第十九条の三（浸水被害軽減地区の指定の公示）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_2" data-id="toggle-Mp-At_19_2" onclick="toggleClicked(this,'Mp-At_19_2', 'Mp-At_19_2')">
+                      <a class="title_text" href="#Mp-At_19_2">第十九条の二（その状況が帯状の盛土構造物が存する土地に類する土地）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_4" data-id="toggle-Mp-At_19_4" onclick="toggleClicked(this,'Mp-At_19_4', 'Mp-At_19_4')">
-                    <a class="title_text" href="#Mp-At_19_4">第十九条の四（浸水被害軽減地区の標識の設置の基準）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_3" data-id="toggle-Mp-At_19_3" onclick="toggleClicked(this,'Mp-At_19_3', 'Mp-At_19_3')">
+                      <a class="title_text" href="#Mp-At_19_3">第十九条の三（浸水被害軽減地区の指定の公示）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_5" data-id="toggle-Mp-At_19_5" onclick="toggleClicked(this,'Mp-At_19_5', 'Mp-At_19_5')">
-                    <a class="title_text" href="#Mp-At_19_5">第十九条の五（浸水被害軽減地区内の土地における行為の届出）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_4" data-id="toggle-Mp-At_19_4" onclick="toggleClicked(this,'Mp-At_19_4', 'Mp-At_19_4')">
+                      <a class="title_text" href="#Mp-At_19_4">第十九条の四（浸水被害軽減地区の標識の設置の基準）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_6" data-id="toggle-Mp-At_19_6" onclick="toggleClicked(this,'Mp-At_19_6', 'Mp-At_19_6')">
-                    <a class="title_text" href="#Mp-At_19_6">第十九条の六（浸水被害軽減地区内の土地における行為の届出書の記載事項）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_5" data-id="toggle-Mp-At_19_5" onclick="toggleClicked(this,'Mp-At_19_5', 'Mp-At_19_5')">
+                      <a class="title_text" href="#Mp-At_19_5">第十九条の五（浸水被害軽減地区内の土地における行為の届出）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_7" data-id="toggle-Mp-At_19_7" onclick="toggleClicked(this,'Mp-At_19_7', 'Mp-At_19_7')">
-                    <a class="title_text" href="#Mp-At_19_7">第十九条の七（浸水被害軽減地区内の土地における行為の届出の内容の通知）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_6" data-id="toggle-Mp-At_19_6" onclick="toggleClicked(this,'Mp-At_19_6', 'Mp-At_19_6')">
+                      <a class="title_text" href="#Mp-At_19_6">第十九条の六（浸水被害軽減地区内の土地における行為の届出書の記載事項）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-At_20')">
-                    <a class="title_text" href="#Mp-At_20">第二十条（氾濫による被害の拡大を防止するための作業）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_19_7" data-id="toggle-Mp-At_19_7" onclick="toggleClicked(this,'Mp-At_19_7', 'Mp-At_19_7')">
+                      <a class="title_text" href="#Mp-At_19_7">第十九条の七（浸水被害軽減地区内の土地における行為の届出の内容の通知）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-At_21')">
-                    <a class="title_text" href="#Mp-At_21">第二十一条（水防協力団体として指定することができる法人に準ずる団体）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_20" data-id="toggle-Mp-At_20" onclick="toggleClicked(this,'Mp-At_20', 'Mp-At_20')">
+                      <a class="title_text" href="#Mp-At_20">第二十条（氾濫による被害の拡大を防止するための作業）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-At_22')">
-                    <a class="title_text" href="#Mp-At_22">第二十二条（権限の委任）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_21" data-id="toggle-Mp-At_21" onclick="toggleClicked(this,'Mp-At_21', 'Mp-At_21')">
+                      <a class="title_text" href="#Mp-At_21">第二十一条（水防協力団体として指定することができる法人に準ずる団体）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
-                <a class="title_text" href="#Sp">附　則</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一三年六月二六日国土交通省令第一〇二号" data-id="toggle-Sp_平成一三年六月二六日国土交通省令第一〇二号" onclick="toggleClicked(this,'Sp_平成一三年六月二六日国土交通省令第一〇二号', 'Sp_平成一三年六月二六日国土交通省令第一〇二号')">
-                <a class="title_text" href="#Sp_平成一三年六月二六日国土交通省令第一〇二号">附　則（平成一三年六月二六日国土交通省令第一〇二号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年六月一日国土交通省令第六二号" data-id="toggle-Sp_平成一七年六月一日国土交通省令第六二号" onclick="toggleClicked(this,'Sp_平成一七年六月一日国土交通省令第六二号', 'Sp_平成一七年六月一日国土交通省令第六二号')">
-                <a class="title_text" href="#Sp_平成一七年六月一日国土交通省令第六二号">附　則（平成一七年六月一日国土交通省令第六二号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年六月一日国土交通省令第六二号-At_1" data-id="toggle-Sp_平成一七年六月一日国土交通省令第六二号-At_1" onclick="toggleClicked(this,'Sp_平成一七年六月一日国土交通省令第六二号-At_1', 'Sp_平成一七年六月一日国土交通省令第六二号-At_1')">
-                    <a class="title_text" href="#Sp_平成一七年六月一日国土交通省令第六二号-At_1">第一条（施行期日）</a>
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Mp-At_22" data-id="toggle-Mp-At_22" onclick="toggleClicked(this,'Mp-At_22', 'Mp-At_22')">
+                      <a class="title_text" href="#Mp-At_22">第二十二条（権限の委任）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二三年一二月二六日国土交通省令第一〇〇号" data-id="toggle-Sp_平成二三年一二月二六日国土交通省令第一〇〇号" onclick="toggleClicked(this,'Sp_平成二三年一二月二六日国土交通省令第一〇〇号', 'Sp_平成二三年一二月二六日国土交通省令第一〇〇号')">
-                <a class="title_text" href="#Sp_平成二三年一二月二六日国土交通省令第一〇〇号">附　則（平成二三年一二月二六日国土交通省令第一〇〇号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp" data-id="toggle-Sp" onclick="toggleClicked(this,'Sp', 'Sp')">
+                  <a class="title_text" href="#Sp">附　則</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二五年七月五日国土交通省令第五九号" data-id="toggle-Sp_平成二五年七月五日国土交通省令第五九号" onclick="toggleClicked(this,'Sp_平成二五年七月五日国土交通省令第五九号', 'Sp_平成二五年七月五日国土交通省令第五九号')">
-                <a class="title_text" href="#Sp_平成二五年七月五日国土交通省令第五九号">附　則（平成二五年七月五日国土交通省令第五九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一三年六月二六日国土交通省令第一〇二号" data-id="toggle-Sp_平成一三年六月二六日国土交通省令第一〇二号" onclick="toggleClicked(this,'Sp_平成一三年六月二六日国土交通省令第一〇二号', 'Sp_平成一三年六月二六日国土交通省令第一〇二号')">
+                  <a class="title_text" href="#Sp_平成一三年六月二六日国土交通省令第一〇二号">附　則（平成一三年六月二六日国土交通省令第一〇二号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二五年九月一三日国土交通省令第七六号" data-id="toggle-Sp_平成二五年九月一三日国土交通省令第七六号" onclick="toggleClicked(this,'Sp_平成二五年九月一三日国土交通省令第七六号', 'Sp_平成二五年九月一三日国土交通省令第七六号')">
-                <a class="title_text" href="#Sp_平成二五年九月一三日国土交通省令第七六号">附　則（平成二五年九月一三日国土交通省令第七六号）</a>
-              </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一月一六日国土交通省令第二号" data-id="toggle-Sp_平成二七年一月一六日国土交通省令第二号" onclick="toggleClicked(this,'Sp_平成二七年一月一六日国土交通省令第二号', 'Sp_平成二七年一月一六日国土交通省令第二号')">
-                <a class="title_text" href="#Sp_平成二七年一月一六日国土交通省令第二号">附　則（平成二七年一月一六日国土交通省令第二号）</a>
-              </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一月一六日国土交通省令第二号-At_1" data-id="toggle-Sp_平成二七年一月一六日国土交通省令第二号-At_1" onclick="toggleClicked(this,'Sp_平成二七年一月一六日国土交通省令第二号-At_1', 'Sp_平成二七年一月一六日国土交通省令第二号-At_1')">
-                    <a class="title_text" href="#Sp_平成二七年一月一六日国土交通省令第二号-At_1">第一条（施行期日）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年六月一日国土交通省令第六二号" data-id="toggle-Sp_平成一七年六月一日国土交通省令第六二号" onclick="toggleClicked(this,'Sp_平成一七年六月一日国土交通省令第六二号', 'Sp_平成一七年六月一日国土交通省令第六二号')">
+                  <a class="title_text" href="#Sp_平成一七年六月一日国土交通省令第六二号">附　則（平成一七年六月一日国土交通省令第六二号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成一七年六月一日国土交通省令第六二号-At_1" data-id="toggle-Sp_平成一七年六月一日国土交通省令第六二号-At_1" onclick="toggleClicked(this,'Sp_平成一七年六月一日国土交通省令第六二号-At_1', 'Sp_平成一七年六月一日国土交通省令第六二号-At_1')">
+                      <a class="title_text" href="#Sp_平成一七年六月一日国土交通省令第六二号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号" data-id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号" onclick="toggleClicked(this,'Sp_平成二七年七月一七日国土交通省令第五四号', 'Sp_平成二七年七月一七日国土交通省令第五四号')">
-                <a class="title_text" href="#Sp_平成二七年七月一七日国土交通省令第五四号">附　則（平成二七年七月一七日国土交通省令第五四号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二三年一二月二六日国土交通省令第一〇〇号" data-id="toggle-Sp_平成二三年一二月二六日国土交通省令第一〇〇号" onclick="toggleClicked(this,'Sp_平成二三年一二月二六日国土交通省令第一〇〇号', 'Sp_平成二三年一二月二六日国土交通省令第一〇〇号')">
+                  <a class="title_text" href="#Sp_平成二三年一二月二六日国土交通省令第一〇〇号">附　則（平成二三年一二月二六日国土交通省令第一〇〇号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent">
-                <div>
-                  <div class="table_line">
-                    <div class="table_arrow_dummy"></div>
-                    <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号-At_1" data-id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号-At_1" onclick="toggleClicked(this,'Sp_平成二七年七月一七日国土交通省令第五四号-At_1', 'Sp_平成二七年七月一七日国土交通省令第五四号-At_1')">
-                    <a class="title_text" href="#Sp_平成二七年七月一七日国土交通省令第五四号-At_1">第一条（施行期日）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二五年七月五日国土交通省令第五九号" data-id="toggle-Sp_平成二五年七月五日国土交通省令第五九号" onclick="toggleClicked(this,'Sp_平成二五年七月五日国土交通省令第五九号', 'Sp_平成二五年七月五日国土交通省令第五九号')">
+                  <a class="title_text" href="#Sp_平成二五年七月五日国土交通省令第五九号">附　則（平成二五年七月五日国土交通省令第五九号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二五年九月一三日国土交通省令第七六号" data-id="toggle-Sp_平成二五年九月一三日国土交通省令第七六号" onclick="toggleClicked(this,'Sp_平成二五年九月一三日国土交通省令第七六号', 'Sp_平成二五年九月一三日国土交通省令第七六号')">
+                  <a class="title_text" href="#Sp_平成二五年九月一三日国土交通省令第七六号">附　則（平成二五年九月一三日国土交通省令第七六号）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一月一六日国土交通省令第二号" data-id="toggle-Sp_平成二七年一月一六日国土交通省令第二号" onclick="toggleClicked(this,'Sp_平成二七年一月一六日国土交通省令第二号', 'Sp_平成二七年一月一六日国土交通省令第二号')">
+                  <a class="title_text" href="#Sp_平成二七年一月一六日国土交通省令第二号">附　則（平成二七年一月一六日国土交通省令第二号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年一月一六日国土交通省令第二号-At_1" data-id="toggle-Sp_平成二七年一月一六日国土交通省令第二号-At_1" onclick="toggleClicked(this,'Sp_平成二七年一月一六日国土交通省令第二号-At_1', 'Sp_平成二七年一月一六日国土交通省令第二号-At_1')">
+                      <a class="title_text" href="#Sp_平成二七年一月一六日国土交通省令第二号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
                   </div>
-                  <div class="table_indent"></div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年六月一四日国土交通省令第三六号" data-id="toggle-Sp_平成二九年六月一四日国土交通省令第三六号" onclick="toggleClicked(this,'Sp_平成二九年六月一四日国土交通省令第三六号', 'Sp_平成二九年六月一四日国土交通省令第三六号')">
-                <a class="title_text" href="#Sp_平成二九年六月一四日国土交通省令第三六号">附　則（平成二九年六月一四日国土交通省令第三六号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow" onclick="tableArrowClicked(this)">▼</div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号" data-id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号" onclick="toggleClicked(this,'Sp_平成二七年七月一七日国土交通省令第五四号', 'Sp_平成二七年七月一七日国土交通省令第五四号')">
+                  <a class="title_text" href="#Sp_平成二七年七月一七日国土交通省令第五四号">附　則（平成二七年七月一七日国土交通省令第五四号）</a>
+                </div>
+                <div class="table_indent">
+                  <div>
+                    <div class="table_line">
+                      <div class="table_arrow_dummy"></div>
+                      <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号-At_1" data-id="toggle-Sp_平成二七年七月一七日国土交通省令第五四号-At_1" onclick="toggleClicked(this,'Sp_平成二七年七月一七日国土交通省令第五四号-At_1', 'Sp_平成二七年七月一七日国土交通省令第五四号-At_1')">
+                      <a class="title_text" href="#Sp_平成二七年七月一七日国土交通省令第五四号-At_1">第一条（施行期日）</a>
+                    </div>
+                    <div class="table_indent"></div>
+                  </div>
+                </div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二三日国土交通省令第九八号" data-id="toggle-Sp_令和二年一二月二三日国土交通省令第九八号" onclick="toggleClicked(this,'Sp_令和二年一二月二三日国土交通省令第九八号', 'Sp_令和二年一二月二三日国土交通省令第九八号')">
-                <a class="title_text" href="#Sp_令和二年一二月二三日国土交通省令第九八号">附　則（令和二年一二月二三日国土交通省令第九八号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_平成二九年六月一四日国土交通省令第三六号" data-id="toggle-Sp_平成二九年六月一四日国土交通省令第三六号" onclick="toggleClicked(this,'Sp_平成二九年六月一四日国土交通省令第三六号', 'Sp_平成二九年六月一四日国土交通省令第三六号')">
+                  <a class="title_text" href="#Sp_平成二九年六月一四日国土交通省令第三六号">附　則（平成二九年六月一四日国土交通省令第三六号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和三年七月一四日国土交通省令第四八号" data-id="toggle-Sp_令和三年七月一四日国土交通省令第四八号" onclick="toggleClicked(this,'Sp_令和三年七月一四日国土交通省令第四八号', 'Sp_令和三年七月一四日国土交通省令第四八号')">
-                <a class="title_text" href="#Sp_令和三年七月一四日国土交通省令第四八号">附　則（令和三年七月一四日国土交通省令第四八号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和二年一二月二三日国土交通省令第九八号" data-id="toggle-Sp_令和二年一二月二三日国土交通省令第九八号" onclick="toggleClicked(this,'Sp_令和二年一二月二三日国土交通省令第九八号', 'Sp_令和二年一二月二三日国土交通省令第九八号')">
+                  <a class="title_text" href="#Sp_令和二年一二月二三日国土交通省令第九八号">附　則（令和二年一二月二三日国土交通省令第九八号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和三年一〇月二九日国土交通省令第六九号" data-id="toggle-Sp_令和三年一〇月二九日国土交通省令第六九号" onclick="toggleClicked(this,'Sp_令和三年一〇月二九日国土交通省令第六九号', 'Sp_令和三年一〇月二九日国土交通省令第六九号')">
-                <a class="title_text" href="#Sp_令和三年一〇月二九日国土交通省令第六九号">附　則（令和三年一〇月二九日国土交通省令第六九号）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和三年七月一四日国土交通省令第四八号" data-id="toggle-Sp_令和三年七月一四日国土交通省令第四八号" onclick="toggleClicked(this,'Sp_令和三年七月一四日国土交通省令第四八号', 'Sp_令和三年七月一四日国土交通省令第四八号')">
+                  <a class="title_text" href="#Sp_令和三年七月一四日国土交通省令第四八号">附　則（令和三年七月一四日国土交通省令第四八号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
-            </div>
-            <div>
-              <div class="table_line">
-                <div class="table_arrow_dummy"></div>
-                <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
-                <a class="title_text" href="#Aps">別記様式（第１９条の５関係）</a>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Sp_令和三年一〇月二九日国土交通省令第六九号" data-id="toggle-Sp_令和三年一〇月二九日国土交通省令第六九号" onclick="toggleClicked(this,'Sp_令和三年一〇月二九日国土交通省令第六九号', 'Sp_令和三年一〇月二九日国土交通省令第六九号')">
+                  <a class="title_text" href="#Sp_令和三年一〇月二九日国土交通省令第六九号">附　則（令和三年一〇月二九日国土交通省令第六九号）</a>
+                </div>
+                <div class="table_indent"></div>
               </div>
-              <div class="table_indent"></div>
+              <div>
+                <div class="table_line">
+                  <div class="table_arrow_dummy"></div>
+                  <input type="checkbox" class="table_line_toggle" id="toggle-Aps" data-id="toggle-Aps" onclick="toggleClicked(this,'Aps', 'Aps')">
+                  <a class="title_text" href="#Aps">別記様式（第１９条の５関係）</a>
+                </div>
+                <div class="table_indent"></div>
+              </div>
             </div>
           </div>
           <div class="body" id="body">
@@ -1476,6 +1480,7 @@
           </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>
