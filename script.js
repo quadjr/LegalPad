@@ -221,6 +221,7 @@ function loadFinished(){
                 }
             });
 
+            let str = "";
             for (let key of keys) {
                 el = document.getElementById(key);
                 if(el){
@@ -251,13 +252,10 @@ function loadFinished(){
                     for(let i = 0; i < replaces.length; i++){
                         title = title.replace(replaces[i][0], replaces[i][1]);
                     }
-                    let str = "";
                     str += "<div class='ref_line' id='ref_line_" + key + "'><div class='ref_title' id='ref_" + key + "'>"
                     str += "<div class='table_arrow' id='ref_arrow_" + key + "' onclick='refArrowClicked(\"" + key + "\")'>▶︎</div>\n" 
                     str += "<a href='#" + key + "' onclick='refArrowClicked(\"" + key + "\")'>" + title + "</a>（" + refs[key].length + "件）</div>";
 
-                    const ref_div = document.createElement("div");
-                    ref_div.id = "refs"
                     refs[key].sort(function (a, b) {
                         if(a[2] == b[2]){
                             return a[3] > b[3];
@@ -284,12 +282,14 @@ function loadFinished(){
                     });
                     str += "</div></div>"
 
-                    ref_div.innerHTML = str;
-                    side_panel.appendChild(ref_div);
-
                     el.insertBefore(div, el.firstChild);
                 }
             }
+            const ref_div = document.createElement("div");
+            ref_div.id = "refs"
+            ref_div.style.display = "none";
+            ref_div.innerHTML = str;
+            side_panel.appendChild(ref_div);
         })
         // 通信が失敗したとき
         .catch(function(error) {
