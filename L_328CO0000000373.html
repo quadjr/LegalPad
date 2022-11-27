@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1271,7 +1271,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">学校の種類</div>
                     </td>
                     <td>
@@ -1285,21 +1285,21 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">幼稚園</div>
                     </td>
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="16">
                       <div class="Sentence">学校の種類に応じ、球技その他の運動を行うのに必要と認められる面積で、文部科学大臣が財務大臣と協議して定めたもの</div>
                     </td>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence">学校の種類に応じ、居室、自習室その他の児童等を収容するのに必要と認められるものの面積で、文部科学大臣が財務大臣と協議して定めたもの</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">視覚障害者である幼児又は生徒に対する教育を行う特別支援学校</div>
                     </td>
                     <td>
@@ -1318,7 +1318,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">聴覚障害者である幼児又は生徒に対する教育を行う特別支援学校</div>
                     </td>
                     <td>
@@ -1337,7 +1337,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">知的障害者である幼児又は生徒に対する教育を行う特別支援学校</div>
                     </td>
                     <td>
@@ -1356,7 +1356,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">肢体不自由者である幼児又は生徒に対する教育を行う特別支援学校</div>
                     </td>
                     <td>
@@ -1375,7 +1375,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">病弱者である幼児又は生徒に対する教育を行う特別支援学校</div>
                     </td>
                     <td>
@@ -1394,7 +1394,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">高等学校（中等教育学校の後期課程を含む。）</div>
                     </td>
                     <td>
@@ -1421,7 +1421,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">高等専門学校</div>
                     </td>
                     <td>
@@ -1429,7 +1429,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">大学</div>
                     </td>
                     <td>
@@ -1437,7 +1437,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">小学校（義務教育学校の前期課程を含む。）及び中学校（義務教育学校の後期課程及び中等教育学校の前期課程を含む。）並びに特別支援学校の小学部及び中学部</div>
                     </td>
                     <td>
@@ -1467,7 +1467,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">幼稚園</div>
                     </td>
                     <td>
@@ -1502,7 +1502,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">小学校（義務教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -1545,7 +1545,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">中学校（義務教育学校の後期課程及び中等教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -1588,7 +1588,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">視覚障害者である児童及び生徒に対する教育を行う特別支援学校の小学部及び中学部</div>
                     </td>
                     <td>
@@ -1623,7 +1623,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">聴覚障害者である児童及び生徒に対する教育を行う特別支援学校の小学部及び中学部</div>
                     </td>
                     <td>
@@ -1658,7 +1658,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">知的障害者である児童及び生徒に対する教育を行う特別支援学校の小学部及び中学部</div>
                     </td>
                     <td>
@@ -1693,7 +1693,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">肢体不自由者である児童及び生徒に対する教育を行う特別支援学校の小学部及び中学部</div>
                     </td>
                     <td>
@@ -1728,7 +1728,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">病弱者である児童及び生徒に対する教育を行う特別支援学校の小学部及び中学部</div>
                     </td>
                     <td>
@@ -1781,7 +1781,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">小学校（義務教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -1808,7 +1808,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">中学校（義務教育学校の後期課程及び中等教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -1856,7 +1856,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">学校の種類</div>
                     </td>
                     <td>
@@ -1864,7 +1864,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">幼稚園</div>
                     </td>
                     <td>
@@ -1872,7 +1872,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">小学校（義務教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -1880,7 +1880,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">中学校（義務教育学校の後期課程及び中等教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -1888,7 +1888,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">視覚障害者である幼児等に対する教育を行う特別支援学校</div>
                     </td>
                     <td>
@@ -1896,7 +1896,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">聴覚障害者、知的障害者、肢体不自由者又は病弱者である幼児等に対する教育を行う特別支援学校</div>
                     </td>
                     <td>
@@ -1904,7 +1904,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">高等学校（中等教育学校の後期課程を含む。）</div>
                     </td>
                     <td>
@@ -1966,7 +1966,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">大学</div>
                     </td>
                     <td>
@@ -1993,7 +1993,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">小学校（義務教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -2044,7 +2044,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">中学校（義務教育学校の後期課程及び中等教育学校の前期課程を含む。）</div>
                     </td>
                     <td>
@@ -2095,7 +2095,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">特別支援学校</div>
                     </td>
                     <td>
@@ -2138,7 +2138,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">高等学校（中等教育学校の後期課程を含む。）</div>
                     </td>
                     <td>

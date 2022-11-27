@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -871,7 +871,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">プラグ・レンチについては、ジーゼル自動車のみの車庫には適用しない。</div>
                             <div class="Sentence" Num="2">括弧内のものは、有していることが望ましいものを示す。</div>
                           </td>
@@ -1428,94 +1428,94 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">点検時期</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">３月ごと</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">１２月ごと</div>
                       <div class="Sentence" Num="2">（３月ごとの点検に次の点検を加えたもの）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">点検箇所</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">かじ取り装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ハンドル</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">操作具合</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ギヤ・ボックス</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　油漏れ</div>
                       <div class="Sentence" Num="2">２　取付けの緩み</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロッド及びアーム類</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）　緩み、がた及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ボール・ジョイントのダスト・ブーツの<ruby>亀<rt>き</rt>
                         </ruby>裂及び損傷</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ナックル</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）　連結部のがた</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">かじ取り車輪</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホイール・アライメント</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">パワー・ステアリング装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">１　ベルトの緩み及び損傷</div>
                       <div class="Sentence" Num="2">（※２）２　油漏れ及び油量</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">取付けの緩み</div>
                     </td>
                   </tr>
@@ -1523,14 +1523,14 @@
                     <td>
                       <div class="Sentence" Num="1">制動装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ペダル</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">１　遊び及び踏み込んだときの床板とのすき間</div>
                       <div class="Sentence" Num="2">２　ブレーキの効き具合</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -1538,14 +1538,14 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">駐車ブレーキ機構</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">１　引きしろ</div>
                       <div class="Sentence" Num="2">２　ブレーキの効き具合</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -1553,13 +1553,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホース及びパイプ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">漏れ、損傷及び取付状態</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -1567,13 +1567,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">リザーバ・タンク</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">液量</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -1581,13 +1581,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">マスタ・シリンダ、ホイール・シリンダ及びディスク・キャリパ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">機能、摩耗及び損傷</div>
                     </td>
                   </tr>
@@ -1595,13 +1595,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・チャンバ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">ロッドのストローク</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">機能</div>
                     </td>
                   </tr>
@@ -1609,13 +1609,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・バルブ、クイック・レリーズ・バルブ及びリレー・バルブ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">機能</div>
                     </td>
                   </tr>
@@ -1623,13 +1623,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">倍力装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　エア・クリーナの詰まり</div>
                       <div class="Sentence" Num="2">２　機能</div>
                     </td>
@@ -1638,13 +1638,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・カム</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">摩耗</div>
                     </td>
                   </tr>
@@ -1652,7 +1652,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ドラム及びブレーキ・シュー</div>
                     </td>
                     <td>
@@ -1660,7 +1660,7 @@
                       <div class="Sentence" Num="2">（※２）２　シューの<ruby>摺<rt>しゆう</rt>
                         </ruby>動部分及びライニングの摩耗</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ドラムの摩耗及び損傷</div>
                     </td>
                   </tr>
@@ -1668,13 +1668,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バック・プレート</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バック・プレートの状態</div>
                     </td>
                   </tr>
@@ -1682,14 +1682,14 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ディスク及びパッド</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）１　ディスクとパッドとのすき間</div>
                       <div class="Sentence" Num="2">（※２）２　パッドの摩耗</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ディスクの摩耗及び損傷</div>
                     </td>
                   </tr>
@@ -1697,14 +1697,14 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">センタ・ブレーキ・ドラム及びライニング</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">１　ドラムの取付けの緩み</div>
                       <div class="Sentence" Num="2">２　ドラムとライニングとのすき間</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　ライニングの摩耗</div>
                       <div class="Sentence" Num="2">２　ドラムの摩耗及び損傷</div>
                     </td>
@@ -1713,13 +1713,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">二重安全ブレーキ機構</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">機能</div>
                     </td>
                   </tr>
@@ -1727,7 +1727,7 @@
                     <td>
                       <div class="Sentence" Num="1">走行装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホイール</div>
                     </td>
                     <td>
@@ -1735,40 +1735,40 @@
                       <div class="Sentence" Num="2">２　ホイール・ナット及びホイール・ボルトの緩み</div>
                       <div class="Sentence" Num="3">（※２）３　フロント・ホイール・ベアリングのがた</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">（※３）１　ホイール・ナット及びホイール・ボルトの損傷</div>
                       <div class="Sentence" Num="2">２　リム、サイド・リング及びディスク・ホイールの損傷</div>
                       <div class="Sentence" Num="3">３　リヤ・ホイール・ベアリングのがた</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">緩衝装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">リーフ・サスペンション</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">スプリングの損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">取付部及び連結部の緩み、がた及び損傷</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コイル・サスペンション</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　スプリングの損傷</div>
                       <div class="Sentence" Num="2">２　取付部及び連結部の緩み、がた及び損傷</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エア・サスペンション</div>
                     </td>
                     <td>
@@ -1776,26 +1776,26 @@
                       <div class="Sentence" Num="2">（※２）２　ベローズの損傷</div>
                       <div class="Sentence" Num="3">（※２）３　取付部及び連結部の緩み及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">レベリング・バルブの機能</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ショック・アブソーバ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">油漏れ及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">動力伝達装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">クラッチ</div>
                     </td>
                     <td>
@@ -1803,29 +1803,29 @@
                       <div class="Sentence" Num="2">２　作用</div>
                       <div class="Sentence" Num="3">３　液量</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">トランスミッション及びトランスファ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）　油漏れ及び油量</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">プロペラ・シャフト及びドライブ・シャフト</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）　連結部の緩み</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　自在継手部のダスト・ブーツの<ruby>亀<rt>き</rt>
                         </ruby>裂及び損傷</div>
                       <div class="Sentence" Num="2">２　継手部のがた</div>
@@ -1833,58 +1833,58 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">デファレンシャル</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）　油漏れ及び油量</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">電気装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">点火装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）（※４）１　点火プラグの状態</div>
                       <div class="Sentence" Num="2">２　点火時期</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ディストリビュータのキャップの状態</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バッテリ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">ターミナル部の接続状態</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気配線</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">接続部の緩み及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">原動機</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">本体</div>
                     </td>
                     <td>
@@ -1892,79 +1892,79 @@
                       <div class="Sentence" Num="2">２　低速及び加速の状態</div>
                       <div class="Sentence" Num="3">３　排気の状態</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">シリンダ・ヘッド及びマニホールド各部の締付状態</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">潤滑装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">油漏れ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">燃料漏れ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷却装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">ファン・ベルトの緩み及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">水漏れ</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">ばい煙、悪臭のあるガス、有害なガス等の発散防止装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブローバイ・ガス還元装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　メターリング・バルブの状態</div>
                       <div class="Sentence" Num="2">２　配管の損傷</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料蒸発ガス排出抑止装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　配管等の損傷</div>
                       <div class="Sentence" Num="2">２　チャコール・キャニスタの詰まり及び損傷</div>
                       <div class="Sentence" Num="3">３　チェック・バルブの機能</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一酸化炭素等発散防止装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　触媒反応方式等排出ガス減少装置の取付けの緩み及び損傷</div>
                       <div class="Sentence" Num="2">２　二次空気供給装置の機能</div>
                       <div class="Sentence" Num="3">３　排気ガス再循環装置の機能</div>
@@ -1973,51 +1973,51 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">警音器、窓拭き器、洗浄液噴射装置、デフロスタ及び施錠装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">作用</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エグゾースト・パイプ及びマフラ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（※２）　取付けの緩み及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">マフラの機能</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エア・コンプレッサ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">エア・タンクの凝水</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンプレッサ、プレッシャ・レギュレータ及びアンローダ・バルブの機能</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">高圧ガスを燃料とする燃料装置等</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">導管及び継手部のガス漏れ及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ガス容器取付部の緩み及び損傷</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">車枠及び車体</div>
                     </td>
                     <td>
@@ -2027,53 +2027,53 @@
                       <div class="Sentence" Num="4">（※３）４　スペアタイヤの取付状態</div>
                       <div class="Sentence" Num="5">（※３）５　ツールボックスの取付部の緩み及び損傷</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">連結装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１　カプラの機能及び損傷</div>
                       <div class="Sentence" Num="2">２　ピントル・フックの摩耗、<ruby>亀<rt>き</rt>
                         </ruby>裂及び損傷</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">座席</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">（※１）　座席ベルトの状態</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">開扉発車防止装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">機能</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">シャシ各部の給油脂状態</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">（※５）（※６）　車載式故障診断装置の診断の結果</div>
                     </td>
                   </tr>
@@ -2094,30 +2094,30 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">点検時期</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">３月ごと</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１２月ごと</div>
                       <div class="Sentence" Num="2">（３月ごとの点検に次の点検を加えたもの）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">点検箇所</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">制動装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ペダル</div>
                     </td>
                     <td>
@@ -2128,7 +2128,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">駐車ブレーキ機構</div>
                     </td>
                     <td>
@@ -2143,7 +2143,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホース及びパイプ</div>
                     </td>
                     <td>
@@ -2157,7 +2157,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・チャンバ</div>
                     </td>
                     <td>
@@ -2171,7 +2171,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">リレー・エマージェンシ・バルブ</div>
                     </td>
                     <td>
@@ -2185,7 +2185,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・カム</div>
                     </td>
                     <td>
@@ -2199,7 +2199,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ドラム及びブレーキ・シュー</div>
                     </td>
                     <td>
@@ -2215,7 +2215,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バック・プレート</div>
                     </td>
                     <td>
@@ -2229,7 +2229,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ディスク及びパッド</div>
                     </td>
                     <td>
@@ -2244,7 +2244,7 @@
                     <td>
                       <div class="Sentence" Num="1">走行装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホイール</div>
                     </td>
                     <td>
@@ -2261,7 +2261,7 @@
                     <td>
                       <div class="Sentence" Num="1">緩衝装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">リーフ・サスペンション</div>
                     </td>
                     <td>
@@ -2275,7 +2275,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エア・サスペンション</div>
                     </td>
                     <td>
@@ -2291,7 +2291,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ショック・アブソーバ</div>
                     </td>
                     <td>
@@ -2305,7 +2305,7 @@
                     <td>
                       <div class="Sentence" Num="1">電気装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気配線</div>
                     </td>
                     <td>
@@ -2316,7 +2316,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エア・コンプレッサ</div>
                     </td>
                     <td>
@@ -2327,7 +2327,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">車枠及び車体</div>
                     </td>
                     <td>
@@ -2341,7 +2341,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">連結装置</div>
                     </td>
                     <td>
@@ -2354,7 +2354,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他</div>
                     </td>
                     <td>
@@ -2377,30 +2377,30 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">点検時期</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６月ごと</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１２月ごと</div>
                       <div class="Sentence" Num="2">（６月ごとの点検に次の点検を加えたもの）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">点検箇所</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">かじ取り装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ハンドル</div>
                     </td>
                     <td>
@@ -2411,7 +2411,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ギヤ・ボックス</div>
                     </td>
                     <td>
@@ -2422,7 +2422,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロッド及びアーム類</div>
                     </td>
                     <td>
@@ -2435,7 +2435,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ナックル</div>
                     </td>
                     <td>
@@ -2446,7 +2446,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">かじ取り車輪</div>
                     </td>
                     <td>
@@ -2457,7 +2457,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">パワー・ステアリング装置</div>
                     </td>
                     <td>
@@ -2469,10 +2469,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence" Num="1">制動装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ペダル</div>
                     </td>
                     <td>
@@ -2485,7 +2485,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">駐車ブレーキ機構</div>
                     </td>
                     <td>
@@ -2498,7 +2498,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホース及びパイプ</div>
                     </td>
                     <td>
@@ -2509,7 +2509,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">リザーバ・タンク</div>
                     </td>
                     <td>
@@ -2520,7 +2520,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">マスタ・シリンダ、ホイール・シリンダ及びディスク・キャリパ</div>
                     </td>
                     <td>
@@ -2531,7 +2531,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・バルブ、クイック・レリーズ・バルブ及びリレー・バルブ</div>
                     </td>
                     <td>
@@ -2542,7 +2542,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">倍力装置</div>
                     </td>
                     <td>
@@ -2554,7 +2554,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ドラム及びブレーキ・シュー</div>
                     </td>
                     <td>
@@ -2567,7 +2567,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ディスク及びパッド</div>
                     </td>
                     <td>
@@ -2580,7 +2580,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">センタ・ブレーキ・ドラム及びライニング</div>
                     </td>
                     <td>
@@ -2594,7 +2594,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">二重安全ブレーキ機構</div>
                     </td>
                     <td>
@@ -2608,7 +2608,7 @@
                     <td>
                       <div class="Sentence" Num="1">走行装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホイール</div>
                     </td>
                     <td>
@@ -2621,10 +2621,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">緩衝装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">リーフ・サスペンション</div>
                     </td>
                     <td>
@@ -2636,7 +2636,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コイル・サスペンション</div>
                     </td>
                     <td>
@@ -2647,7 +2647,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ショック・アブソーバ</div>
                     </td>
                     <td>
@@ -2658,10 +2658,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">動力伝達装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">クラッチ</div>
                     </td>
                     <td>
@@ -2673,7 +2673,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">トランスミッション及びトランスファ</div>
                     </td>
                     <td>
@@ -2684,7 +2684,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">プロペラ・シャフト及びドライブ・シャフト</div>
                     </td>
                     <td>
@@ -2698,7 +2698,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">デファレンシャル</div>
                     </td>
                     <td>
@@ -2709,10 +2709,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">電気装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">点火装置</div>
                     </td>
                     <td>
@@ -2724,7 +2724,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バッテリ</div>
                     </td>
                     <td>
@@ -2735,7 +2735,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気配線</div>
                     </td>
                     <td>
@@ -2746,10 +2746,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">原動機</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">本体</div>
                     </td>
                     <td>
@@ -2762,7 +2762,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">潤滑装置</div>
                     </td>
                     <td>
@@ -2773,7 +2773,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料装置</div>
                     </td>
                     <td>
@@ -2784,7 +2784,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷却装置</div>
                     </td>
                     <td>
@@ -2795,10 +2795,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">ばい煙、悪臭のあるガス、有害なガス等の発散防止装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブローバイ・ガス還元装置</div>
                     </td>
                     <td>
@@ -2810,7 +2810,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料蒸発ガス排出抑止装置</div>
                     </td>
                     <td>
@@ -2823,7 +2823,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一酸化炭素等発散防止装置</div>
                     </td>
                     <td>
@@ -2838,7 +2838,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">警音器、窓拭き器、洗浄液噴射装置、デフロスタ及び施錠装置</div>
                     </td>
                     <td>
@@ -2849,7 +2849,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エグゾースト・パイプ及びマフラ</div>
                     </td>
                     <td>
@@ -2861,7 +2861,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エア・コンプレッサ</div>
                     </td>
                     <td>
@@ -2872,7 +2872,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">車枠及び車体</div>
                     </td>
                     <td>
@@ -2883,7 +2883,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">座席</div>
                     </td>
                     <td>
@@ -2894,7 +2894,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他</div>
                     </td>
                     <td>
@@ -2922,30 +2922,30 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">点検時期</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６月ごと</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１２月ごと</div>
                       <div class="Sentence" Num="2">（６月ごとの点検に次の点検を加えたもの）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">点検箇所</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">かじ取り装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ハンドル</div>
                     </td>
                     <td>
@@ -2956,7 +2956,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">フロント・フォーク</div>
                     </td>
                     <td>
@@ -2968,10 +2968,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">制動装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ペダル及びブレーキ・レバー</div>
                     </td>
                     <td>
@@ -2983,7 +2983,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロッド及びケーブル類</div>
                     </td>
                     <td>
@@ -2997,7 +2997,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホース及びパイプ</div>
                     </td>
                     <td>
@@ -3011,7 +3011,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">マスタ・シリンダ、ホイール・シリンダ及びディスク・キャリパ</div>
                     </td>
                     <td>
@@ -3025,7 +3025,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ドラム及びブレーキ・シュー</div>
                     </td>
                     <td>
@@ -3041,7 +3041,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ディスク及びパッド</div>
                     </td>
                     <td>
@@ -3056,7 +3056,7 @@
                     <td>
                       <div class="Sentence" Num="1">走行装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホイール</div>
                     </td>
                     <td>
@@ -3070,10 +3070,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">緩衝装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">サスペンション・アーム</div>
                     </td>
                     <td>
@@ -3084,7 +3084,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ショック・アブソーバ</div>
                     </td>
                     <td>
@@ -3095,10 +3095,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">動力伝達装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">クラッチ</div>
                     </td>
                     <td>
@@ -3109,7 +3109,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">トランスミッション</div>
                     </td>
                     <td>
@@ -3120,7 +3120,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">プロペラ・シャフト及びドライブ・シャフト</div>
                     </td>
                     <td>
@@ -3134,7 +3134,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">チェーン及びスプロケット</div>
                     </td>
                     <td>
@@ -3149,7 +3149,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ドライブ・ベルト</div>
                     </td>
                     <td>
@@ -3160,10 +3160,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電気装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">点火装置</div>
                     </td>
                     <td>
@@ -3175,7 +3175,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バッテリ</div>
                     </td>
                     <td>
@@ -3189,7 +3189,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気配線</div>
                     </td>
                     <td>
@@ -3203,7 +3203,7 @@
                     <td>
                       <div class="Sentence" Num="1">原動機</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">本体</div>
                     </td>
                     <td>
@@ -3219,7 +3219,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">潤滑装置</div>
                     </td>
                     <td>
@@ -3233,7 +3233,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料装置</div>
                     </td>
                     <td>
@@ -3249,7 +3249,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷却装置</div>
                     </td>
                     <td>
@@ -3260,10 +3260,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">ばい煙、悪臭のあるガス、有害なガス等の発散防止装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブローバイ・ガス還元装置</div>
                     </td>
                     <td>
@@ -3274,7 +3274,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料蒸発ガス排出抑止装置</div>
                     </td>
                     <td>
@@ -3287,7 +3287,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一酸化炭素等発散防止装置</div>
                     </td>
                     <td>
@@ -3299,7 +3299,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エグゾースト・パイプ及びマフラ</div>
                     </td>
                     <td>
@@ -3310,7 +3310,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">フレーム</div>
                     </td>
                     <td>
@@ -3321,7 +3321,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他</div>
                     </td>
                     <td>
@@ -3344,30 +3344,30 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">点検時期</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１年ごと</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">２年ごと</div>
                       <div class="Sentence" Num="2">（１年ごとの点検に次の点検を加えたもの）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">点検箇所</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">かじ取り装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ハンドル</div>
                     </td>
                     <td>
@@ -3378,7 +3378,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ギヤ・ボックス</div>
                     </td>
                     <td>
@@ -3389,7 +3389,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロッド及びアーム類</div>
                     </td>
                     <td>
@@ -3402,7 +3402,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">かじ取り車輪</div>
                     </td>
                     <td>
@@ -3413,7 +3413,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">パワー・ステアリング装置</div>
                     </td>
                     <td>
@@ -3428,7 +3428,7 @@
                     <td>
                       <div class="Sentence" Num="1">制動装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ペダル</div>
                     </td>
                     <td>
@@ -3443,7 +3443,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">駐車ブレーキ機構</div>
                     </td>
                     <td>
@@ -3458,7 +3458,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホース及びパイプ</div>
                     </td>
                     <td>
@@ -3472,7 +3472,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">マスタ・シリンダ、ホイール・シリンダ及びディスク・キャリパ</div>
                     </td>
                     <td>
@@ -3486,7 +3486,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ドラム及びブレーキ・シュー</div>
                     </td>
                     <td>
@@ -3502,7 +3502,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ディスク及びパッド</div>
                     </td>
                     <td>
@@ -3517,7 +3517,7 @@
                     <td>
                       <div class="Sentence" Num="1">走行装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホイール</div>
                     </td>
                     <td>
@@ -3530,10 +3530,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">緩衝装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">取付部及び連結部</div>
                     </td>
                     <td>
@@ -3544,7 +3544,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ショック・アブソーバ</div>
                     </td>
                     <td>
@@ -3555,10 +3555,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">動力伝達装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">クラッチ</div>
                     </td>
                     <td>
@@ -3569,7 +3569,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">トランスミッション及びトランスファ</div>
                     </td>
                     <td>
@@ -3580,7 +3580,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">プロペラ・シャフト及びドライブ・シャフト</div>
                     </td>
                     <td>
@@ -3592,7 +3592,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">デファレンシャル</div>
                     </td>
                     <td>
@@ -3606,7 +3606,7 @@
                     <td>
                       <div class="Sentence" Num="1">電気装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">点火装置</div>
                     </td>
                     <td>
@@ -3622,7 +3622,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バッテリ</div>
                     </td>
                     <td>
@@ -3636,7 +3636,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気配線</div>
                     </td>
                     <td>
@@ -3650,7 +3650,7 @@
                     <td>
                       <div class="Sentence" Num="1">原動機</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">本体</div>
                     </td>
                     <td>
@@ -3665,7 +3665,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">潤滑装置</div>
                     </td>
                     <td>
@@ -3679,7 +3679,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料装置</div>
                     </td>
                     <td>
@@ -3693,7 +3693,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷却装置</div>
                     </td>
                     <td>
@@ -3708,7 +3708,7 @@
                     <td>
                       <div class="Sentence" Num="1">ばい煙、悪臭のあるガス、有害なガス等の発散防止装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブローバイ・ガス還元装置</div>
                     </td>
                     <td>
@@ -3723,7 +3723,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料蒸発ガス排出抑止装置</div>
                     </td>
                     <td>
@@ -3739,7 +3739,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一酸化炭素等発散防止装置</div>
                     </td>
                     <td>
@@ -3754,7 +3754,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エグゾースト・パイプ及びマフラ</div>
                     </td>
                     <td>
@@ -3765,7 +3765,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">車枠及び車体</div>
                     </td>
                     <td>
@@ -3776,7 +3776,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他</div>
                     </td>
                     <td>
@@ -3801,30 +3801,30 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">点検時期</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１年ごと</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">２年ごと</div>
                       <div class="Sentence" Num="2">（１年ごとの点検に次の点検を加えたもの）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">点検箇所</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">かじ取り装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ハンドル</div>
                     </td>
                     <td>
@@ -3835,7 +3835,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">フロント・フォーク</div>
                     </td>
                     <td>
@@ -3850,7 +3850,7 @@
                     <td>
                       <div class="Sentence" Num="1">制動装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ペダル及びブレーキ・レバー</div>
                     </td>
                     <td>
@@ -3865,7 +3865,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロッド及びケーブル類</div>
                     </td>
                     <td>
@@ -3879,7 +3879,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホース及びパイプ</div>
                     </td>
                     <td>
@@ -3893,7 +3893,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">マスタ・シリンダ、ホイール・シリンダ及びディスク・キャリパ</div>
                     </td>
                     <td>
@@ -3907,7 +3907,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ドラム及びブレーキ・シュー</div>
                     </td>
                     <td>
@@ -3923,7 +3923,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブレーキ・ディスク及びパッド</div>
                     </td>
                     <td>
@@ -3938,7 +3938,7 @@
                     <td>
                       <div class="Sentence" Num="1">走行装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ホイール</div>
                     </td>
                     <td>
@@ -3952,10 +3952,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">緩衝装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">サスペンション・アーム</div>
                     </td>
                     <td>
@@ -3966,7 +3966,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ショック・アブソーバ</div>
                     </td>
                     <td>
@@ -3977,10 +3977,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">動力伝達装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">クラッチ</div>
                     </td>
                     <td>
@@ -3991,7 +3991,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">トランスミッション</div>
                     </td>
                     <td>
@@ -4002,7 +4002,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">プロペラ・シャフト及びドライブ・シャフト</div>
                     </td>
                     <td>
@@ -4016,7 +4016,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">チェーン及びスプロケット</div>
                     </td>
                     <td>
@@ -4031,7 +4031,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ドライブ・ベルト</div>
                     </td>
                     <td>
@@ -4045,7 +4045,7 @@
                     <td>
                       <div class="Sentence" Num="1">電気装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">点火装置</div>
                     </td>
                     <td>
@@ -4060,7 +4060,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">バッテリ</div>
                     </td>
                     <td>
@@ -4074,7 +4074,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気配線</div>
                     </td>
                     <td>
@@ -4088,7 +4088,7 @@
                     <td>
                       <div class="Sentence" Num="1">原動機</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">本体</div>
                     </td>
                     <td>
@@ -4104,7 +4104,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">潤滑装置</div>
                     </td>
                     <td>
@@ -4118,7 +4118,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料装置</div>
                     </td>
                     <td>
@@ -4134,7 +4134,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷却装置</div>
                     </td>
                     <td>
@@ -4145,10 +4145,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">ばい煙、悪臭のあるガス、有害なガス等の発散防止装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ブローバイ・ガス還元装置</div>
                     </td>
                     <td>
@@ -4159,7 +4159,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">燃料蒸発ガス排出抑止装置</div>
                     </td>
                     <td>
@@ -4172,7 +4172,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一酸化炭素等発散防止装置</div>
                     </td>
                     <td>
@@ -4184,7 +4184,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">エグゾースト・パイプ及びマフラ</div>
                     </td>
                     <td>
@@ -4195,7 +4195,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">フレーム</div>
                     </td>
                     <td>
@@ -4206,7 +4206,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他</div>
                     </td>
                     <td>

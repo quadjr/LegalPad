@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3586,18 +3586,18 @@
                           <td>
                             <div class="Sentence">区分</div>
                           </td>
-                          <td>
+                          <td colspan="5">
                             <div class="Sentence">柱石</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">盤石</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">下方盤石</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">種類</div>
                           </td>
                           <td>
@@ -3629,7 +3629,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">一等三角点標石</div>
                           </td>
                           <td>
@@ -3661,7 +3661,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">二等・三等三角点標石</div>
                           </td>
                           <td>
@@ -3693,7 +3693,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">四等三角点標石</div>
                           </td>
                           <td>
@@ -3725,7 +3725,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">一等・二等多角点標石</div>
                           </td>
                           <td>
@@ -3757,7 +3757,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">子午線標</div>
                           </td>
                           <td>
@@ -3789,7 +3789,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">図根点標石・方位標石</div>
                           </td>
                           <td>
@@ -3821,7 +3821,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">一等水準点標石</div>
                           </td>
                           <td>
@@ -3853,7 +3853,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">基準水準点標石・一等水準交差点標石</div>
                           </td>
                           <td>
@@ -3885,7 +3885,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">二等・三等水準点標石</div>
                           </td>
                           <td>
@@ -3917,7 +3917,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">基準・一等磁気点標石</div>
                           </td>
                           <td>
@@ -3949,7 +3949,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">二等磁気点標石</div>
                           </td>
                           <td>
@@ -4029,15 +4029,15 @@
                           <td>
                             <div class="Sentence">区分</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">コンクリート柱</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">コンクリート盤</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">種類</div>
                           </td>
                           <td>
@@ -4057,7 +4057,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">天測点標識</div>
                           </td>
                           <td>
@@ -4077,7 +4077,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">菱形基線測点標識</div>
                           </td>
                           <td>
@@ -4289,7 +4289,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="14" Valign="top">
                       <div class="Sentence">授業時数</div>
                     </td>
                     <td>
@@ -4365,13 +4365,13 @@
                     <td>
                       <div class="Sentence">三角測量</div>
                     </td>
-                    <td>
+                    <td rowspan="3" Valign="top">
                       <div class="Sentence">百二十</div>
                     </td>
-                    <td>
+                    <td rowspan="3" Valign="top">
                       <div class="Sentence">百二十</div>
                     </td>
-                    <td>
+                    <td rowspan="3" Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
@@ -4472,15 +4472,15 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2" Valign="top">
                       <div class="Sentence">総授業時数</div>
                     </td>
-                    <td>
+                    <td colspan="3" Valign="top">
                       <div class="Sentence">千二百</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5" Valign="top">
                       <div class="Sentence">備考　この表の授業時数の一単位時間は、五十分とする。ただし、授業の方<a class="reference_link" href="L_324AC0000000188.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び施設、設備その他の教育上の諸条件を考慮して、教育効果を十分に挙げられる場合は、四十五分とすることができる。</div>
                     </td>
                   </tr>
@@ -4492,7 +4492,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="13" Valign="top">
                       <div class="Sentence">授業時数</div>
                     </td>
                     <td>
@@ -4677,15 +4677,15 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2" Valign="top">
                       <div class="Sentence">総授業時数</div>
                     </td>
-                    <td>
+                    <td colspan="3" Valign="top">
                       <div class="Sentence">千二百</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5" Valign="top">
                       <div class="Sentence">備考　この表の授業時数の一単位時間は、五十分とする。ただし、授業の方<a class="reference_link" href="L_324AC0000000188.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び施設、設備その他の教育上の諸条件を考慮して、教育効果を十分に挙げられる場合は、四十五分とすることができる。</div>
                     </td>
                   </tr>
@@ -4711,7 +4711,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一</div>
                     </td>
                     <td>
@@ -4737,7 +4737,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">二</div>
                     </td>
                     <td>
@@ -4860,7 +4860,7 @@
                     <td>
                       <div class="Sentence">スキャナ</div>
                     </td>
-                    <td>
+                    <td rowspan="2" Valign="top">
                       <div class="Sentence">日本産業規格Ａ２の大きさの用紙を用いることができるもの</div>
                     </td>
                   </tr>

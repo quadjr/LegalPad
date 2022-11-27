@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2519,13 +2519,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">座標系の区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">座標系原点</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">適用区域</div>
                     </td>
                   </tr>
@@ -2833,7 +2833,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">座標系は、地点の座標値が次の条件に従つてガウスの等角投影<a class="reference_link" href="L_326AC0000000180.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>によつて表示されるように設けるものとする。</div>
                       <div class="Sentence">一　座標系のＸ軸は、座標系原点において子午線に一致する軸とし、真北に向う値を正とし、座標系のＹ軸は、座標系原点において座標系のＸ軸に直交する軸とし、真東に向う値を正とする。</div>
@@ -2851,13 +2851,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">水平位置の誤差</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">高さの誤差</div>
                     </td>
                   </tr>
@@ -2882,7 +2882,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">基準点</div>
                     </td>
                     <td>
@@ -2954,7 +2954,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">補助基準点</div>
                     </td>
                     <td>
@@ -3029,7 +3029,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="8">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　座標の誤差とは、既知点から算出した当該点の座標値の平均値の平均二乗誤差をいう。</div>
                       <div class="Sentence">二　角の閉合差とは、三角点にあつては三角形の閉合差を、多角点にあつては既知方向に対する方向の閉合差をいう。</div>
@@ -3046,10 +3046,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">水平位置の誤差</div>
                     </td>
                   </tr>
@@ -3095,7 +3095,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　座標の誤差とは、別表第二の備考に規定する座標の誤差をいう。</div>
                       <div class="Sentence">二　ｃｍは、センチメートルの略字とする。</div>
@@ -3109,16 +3109,16 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">精度区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">筆界点の位置誤差</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">筆界点間の図上距離又は計算距離と直接測定による距離との差異の公差</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">地積測定の公差</div>
                     </td>
                   </tr>
@@ -3233,7 +3233,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　精度区分とは、誤差の限度の区分をいい、その適用の基準は、国土交通大臣が定める。</div>
                       <div class="Sentence">二　筆界点の位置誤差とは、当該筆界点のこれを決定した与点に対する位置誤差をいう。</div>

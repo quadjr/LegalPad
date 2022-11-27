@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1461,24 +1461,24 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">環境要素の区分</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">環境の自然的構成要素の良好な状態の保持を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">生物の多様性の確保及び自然環境の体系的保全を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">人と自然との豊かな触れ合いの確保を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">大気環境</div>
                     </td>
                     <td>
@@ -1487,24 +1487,24 @@
                     <td>
                       <div class="Sentence">土壌に係る環境その他の環境</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">動物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">植物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">生態系</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">景観</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">人と自然との触れ合いの活動の場</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">影響要因の区分</div>
                     </td>
                     <td>
@@ -1556,7 +1556,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">主要な港湾施設又は埋立地の存在及び供用</div>
                     </td>
                     <td>
@@ -1574,26 +1574,26 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">○</div>
                     </td>
                     <td>
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">○</div>
                     </td>
                   </tr>
@@ -1613,7 +1613,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">○</div>
                     </td>
                   </tr>
@@ -1638,7 +1638,7 @@
                     <td>
                       <div class="Sentence">主要な水域施設又は係留施設の供用</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">○</div>
                     </td>
                     <td>
@@ -1759,13 +1759,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　○印は、各欄に掲げる環境要素が、影響要因の区分の項に掲げる各要因により影響を受けるおそれがあるものであることを示す。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">二　この表における「影響要因の区分」は、次に掲げる特性を有する港湾開発等の内容を踏まえて区分したものである。</div>
                       <div class="Sentence">イ　係留施設を設置すること。</div>
                       <div class="Sentence">ロ　必要に応じて、水域施設、外郭施設、旅客施設、荷さばき施設又は保管施設を設置すること。</div>
@@ -1775,27 +1775,27 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">三　この表において「重要な地形及び地質」、「重要な種」及び「重要な種及び群落」とは、それぞれ学術上又は希少性の観点から重要なものをいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">四　この表において「注目すべき生息地」とは、学術上若しくは希少性の観点から重要である生息地又は地域の象徴であることその他の理由により注目すべき生息地をいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">五　この表において「主要な眺望点」とは、不特定かつ多数の者が利用している景観資源を眺望する場所をいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">六　この表において「主要な眺望景観」とは、主要な眺望点から景観資源を眺望する場合の眺望される景観をいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">七　この表において「主要な人と自然との触れ合いの活動の場」とは、不特定かつ多数の者が利用している人と自然との触れ合いの活動の場をいう。</div>
                     </td>
                   </tr>
@@ -1807,10 +1807,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">参考項目</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">参考手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1832,10 +1832,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence">窒素酸化物</div>
                     </td>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence">主要な水域施設又は係留施設の供用、主要な旅客施設、荷さばき施設又は保管施設の供用及び主要な臨港交通施設の供用</div>
                     </td>
                     <td>
@@ -1890,7 +1890,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="Sentence">ロ　風の状況　<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">気象業務法施行規則</a>（<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十七年運輸省令第百一号</a>）<a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は同規則<a class="reference_link" href="#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <div class="Sentence">ロ　風の状況　<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">気象業務法施行規則</a>（<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十七年運輸省令第百一号</a>）<a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                        <a class="reference_link" href="L_409AC0000000081.html#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                     <td>
@@ -1951,10 +1952,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">騒音</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な臨港交通施設の供用</div>
                     </td>
                     <td>
@@ -2050,10 +2051,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">振動</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な臨港交通施設の供用</div>
                     </td>
                     <td>
@@ -2149,10 +2150,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">水の汚れ</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な水域施設の存在、主要な外郭施設の存在及び埋立地の存在</div>
                     </td>
                     <td>
@@ -2248,10 +2249,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">重要な地形及び地質</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な水域施設の存在、主要な外郭施設の存在及び埋立地の存在</div>
                     </td>
                     <td>
@@ -2349,10 +2350,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">重要な種及び注目すべき生息地</div>
                     </td>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">主要な水域施設の存在、主要な外郭施設の存在及び埋立地の存在</div>
                     </td>
                     <td>
@@ -2459,10 +2460,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">重要な種及び群落</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な水域施設の存在、主要な外郭施設の存在及び埋立地の存在</div>
                     </td>
                     <td>
@@ -2560,10 +2561,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">地域を特徴づける生態系</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な水域施設の存在、主要な外郭施設の存在及び埋立地の存在</div>
                     </td>
                     <td>
@@ -2661,10 +2662,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">主要な眺望点及び景観資源並びに主要な眺望景観</div>
                     </td>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">主要な外郭施設の存在及び埋立地の存在</div>
                     </td>
                     <td>
@@ -2772,10 +2773,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な人と自然との触れ合いの活動の場</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">主要な水域施設の存在、主要な外郭施設の存在及び埋立地の存在</div>
                     </td>
                     <td>
@@ -2873,32 +2874,32 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">備考　　　一　この表において「重要な地形及び地質」、「重要な種」及び「重要な種及び群落」とは、それぞれ学術上又は希少性の観点から重要なものをいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">二　この表において「注目すべき生息地」とは、学術上若しくは希少性の観点から重要である生息地又は地域の象徴であることその他の理由により注目すべき生息地をいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">三　この表において「注目種等」とは、地域を特徴づける生態系に関し、上位性、典型性及び特殊性の視点から注目される動植物の種又は生物群集をいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">四　この表において「主要な眺望点」とは、不特定かつ多数の者が利用している景観資源を眺望する場所をいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">五　この表において「主要な眺望景観」とは、主要な眺望点から景観資源を眺望する場合の眺望される景観をいう。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">六　この表において「主要な人と自然との触れ合いの活動の場」とは、不特定かつ多数の者が利用している人と自然との触れ合いの活動の場をいう。</div>
                     </td>
                   </tr>

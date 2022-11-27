@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -8878,7 +8878,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="#Mp-At_3_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条の三第一項</a>
                               </div>
@@ -9094,7 +9094,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="#Mp-At_3_12-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条の十二第二項</a>
                               </div>
@@ -9726,7 +9726,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条第一項</a>
                             </div>
@@ -9766,7 +9766,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_10-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第一項</a>
                             </div>
@@ -9801,7 +9801,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>
                             </div>
@@ -12305,7 +12305,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">二級小型船舶操縦士試験又は二級小型船舶操縦士（<a class="reference_link" href="#Mp-At_109-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>限定）試験</div>
                             </td>
                             <td>
@@ -12776,7 +12776,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="#Mp-At_3_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条の三第一項</a>
                               </div>
@@ -12992,7 +12992,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="#Mp-At_3_12-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条の十二第二項</a>
                               </div>
@@ -13656,7 +13656,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">海技試験の種別</div>
                           </td>
                           <td>
@@ -13664,10 +13664,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">一級海技士（航海）、二級海技士（航海）、一級海技士（機関）又は二級海技士（機関）の資格についての海技試験</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">身体検査</div>
                           </td>
                           <td>
@@ -13697,10 +13697,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">三級海技士（航海）又は三級海技士（機関）の資格についての海技試験</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">身体検査</div>
                           </td>
                           <td>
@@ -13734,10 +13734,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">四級海技士（航海）、五級海技士（航海）、四級海技士（機関）又は五級海技士（機関）の資格についての海技試験</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">身体検査</div>
                           </td>
                           <td>
@@ -13769,10 +13769,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">六級海技士（航海）又は六級海技士（機関）の資格についての海技試験</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">身体検査</div>
                           </td>
                           <td>
@@ -13807,10 +13807,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">一級海技士（通信）、一級海技士（電子通信）、二級海技士（電子通信）又は三級海技士（電子通信）の資格についての海技試験</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">身体検査</div>
                           </td>
                           <td>
@@ -13818,7 +13818,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">学科試験</div>
                           </td>
                           <td>
@@ -13830,7 +13830,7 @@
                           <td>
                             <div class="Sentence" Num="1">二級海技士（通信）試験</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">身体検査</div>
                           </td>
                           <td>
@@ -13841,7 +13841,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">学科試験</div>
                           </td>
                           <td>
@@ -13850,10 +13850,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">三級海技士（通信）又は四級海技士（電子通信）の資格についての海技試験</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">身体検査</div>
                           </td>
                           <td>
@@ -13861,7 +13861,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">学科試験</div>
                           </td>
                           <td>
@@ -13961,7 +13961,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">操縦試験の種別</div>
                           </td>
                           <td>
@@ -14140,7 +14140,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">講習の種別</div>
                           </td>
                           <td>
@@ -14148,7 +14148,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="6">
                             <div class="Sentence" Num="1">海技免許講習</div>
                           </td>
                           <td>
@@ -14210,7 +14210,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">操縦免許証更新講習</div>
                           </td>
                           <td>
@@ -14218,7 +14218,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">電子海図情報表示装置講習</div>
                           </td>
                           <td>
@@ -14270,7 +14270,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">操縦免許証失効再交付講習</div>
                           </td>
                           <td>
@@ -15234,7 +15234,7 @@
                 <div class="ParagraphNum"></div>
                 <div class="ParagraphSentence">
                   <div class="Sentence" Num="1">この省<a class="reference_link" href="L_358CO0000000013.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、公布の日から施行する。</div>
-                  <div class="Sentence" Num="2">ただし、第一条中船舶職員法施行規則第四十条に次の一項を加える改正規定並びに同<a class="reference_link" href="L_358CO0000000013.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三、別表第四及び別表第五の改正規定は、昭和五十年六月十五日から施行する。</div>
+                  <div class="Sentence" Num="2">ただし、第一条中船舶職員法施行規則第四十条に次の一項を加える改正規定並びに同令別表第三、別表第四及び別表第五の改正規定は、昭和五十年六月十五日から施行する。</div>
                 </div>
               </div>
             </div>
@@ -15286,7 +15286,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence" Num="1">五級海技士（機関）試験</div>
                       </td>
                       <td>
@@ -15831,7 +15831,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">一級海技士（航海）試験又は一級海技士（機関）試験</div>
                         </td>
                         <td>
@@ -16394,7 +16394,7 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">船舶</div>
                       </td>
                       <td>
@@ -16405,10 +16405,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence" Num="1">沿海区域を航行区域とする船舶</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence" Num="1">総トン数二百トン以上の船舶であつて出力七百五十キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -16427,10 +16427,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence" Num="1">近海区域を航行区域とする船舶</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence" Num="1">総トン数二百トン以上の船舶であつて出力七百五十キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -16449,7 +16449,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">総トン数五百トン以上の船舶であつて出力七百五十キロワット以上千五百キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -16476,7 +16476,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence" Num="1">総トン数二千トン以上の船舶であつて出力千五百キロワット以上三千キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -19039,7 +19039,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">総トン数千六百トン以上の船舶（平水区域を航行区域とする船舶を除く。）</div>
                     </td>
                     <td>
@@ -19079,7 +19079,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">出力七百五十キロワット以上三千キロワット未満の推進機関を有する船舶（平水区域又は沿海区域を航行区域とする船舶及び丙区域内において従業する漁船を除く。）</div>
                     </td>
                     <td>
@@ -19098,7 +19098,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">出力三千キロワット以上の推進機関を有する船舶（平水区域を航行区域とする船舶を除く。）</div>
                     </td>
                     <td>
@@ -19287,7 +19287,7 @@
                     <td>
                       <div class="Sentence" Num="1">一　上級航海失効講習</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">一　講義室</div>
                       <div class="Sentence" Num="2">二　次に掲げる事項を内容とした視聴覚教材</div>
                       <div class="Sentence" Num="3">イ　海上における事故及び災害の防止に関すること。</div>
@@ -19391,10 +19391,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -19430,7 +19430,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">五級海技士（航海）試験</div>
                     </td>
                     <td>
@@ -19461,10 +19461,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四級海技士（航海）試験</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">総トン数二百トン以上の平水区域を航行区域とする船舶、</div>
                       <div class="Sentence" Num="2">総トン数二十トン以上の沿海区域、近海区域若しくは遠洋区域を航行区域とする船舶又は</div>
                       <div class="Sentence" Num="3">総トン数二十トン以上の漁船</div>
@@ -19491,7 +19491,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">船橋当直三級海技士（航海）試験</div>
                     </td>
                     <td>
@@ -19543,7 +19543,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">三級海技士（航海）試験</div>
                     </td>
                     <td>
@@ -19609,7 +19609,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">二級海技士（航海）試験</div>
                     </td>
                     <td>
@@ -19643,10 +19643,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">一級海技士（航海）試験</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">総トン数五千トン以上の沿海区域を航行区域とする船舶、</div>
                       <div class="Sentence" Num="2">総トン数千六百トン以上の近海区域を航行区域とする船舶、</div>
                       <div class="Sentence" Num="3">総トン数五百トン以上の遠洋区域を航行区域とする船舶、</div>
@@ -19675,7 +19675,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">総トン数二百トン以上千六百トン未満の近海区域を航行区域とする船舶であつて海難救助の用に供するもの又は</div>
                       <div class="Sentence" Num="2">総トン数二百トン以上五百トン未満の遠洋区域を航行区域とする船舶であつて海難救助の用に供するもの</div>
                     </td>
@@ -19711,10 +19711,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -19750,7 +19750,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">五級海技士（機関）試験又は内燃機関五級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -19781,10 +19781,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四級海技士（機関）試験又は内燃機関四級海技士（機関）試験</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">出力七百五十キロワット以上の推進機関を有する平水区域を航行区域とする船舶、</div>
                       <div class="Sentence" Num="2">総トン数二十トン以上の沿海区域、近海区域若しくは遠洋区域を航行区域とする船舶又は</div>
                       <div class="Sentence" Num="3">総トン数二十トン以上の漁船</div>
@@ -19811,7 +19811,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">機関当直三級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -19863,7 +19863,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">三級海技士（機関）試験又は内燃機関三級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -19929,7 +19929,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">二級海技士（機関）試験又は内燃機関二級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -19963,10 +19963,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">一級海技士（機関）試験</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">出力六千キロワット以上の推進機関を有する沿海区域を航行区域とする船舶、</div>
                       <div class="Sentence" Num="2">出力三千キロワット以上の推進機関を有する近海区域を航行区域とする船舶、</div>
                       <div class="Sentence" Num="3">出力千五百キロワット以上の推進機関を有する遠洋区域を航行区域とする船舶、</div>
@@ -19995,7 +19995,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">出力七百五十キロワット以上三千キロワット未満の推進機関を有する近海区域を航行区域とする船舶であつて海難救助の用に供するもの又は</div>
                       <div class="Sentence" Num="2">出力七百五十キロワット以上千五百キロワット未満の推進機関を有する遠洋区域を航行区域とする船舶であつて海難救助の用に供するもの</div>
                     </td>
@@ -20030,10 +20030,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20115,10 +20115,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20197,7 +20197,7 @@
                     <td>
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20327,13 +20327,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20402,13 +20402,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20477,13 +20477,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20552,13 +20552,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20799,13 +20799,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20874,13 +20874,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -20991,13 +20991,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -21066,13 +21066,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -21121,13 +21121,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">海技試験の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">乗船履歴</div>
                     </td>
                   </tr>
@@ -21241,7 +21241,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四級海技士（航海）試験</div>
                     </td>
                     <td>
@@ -21260,7 +21260,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">五級海技士（航海）試験</div>
                     </td>
                     <td>
@@ -21323,7 +21323,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -21342,7 +21342,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">五級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -21372,7 +21372,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">機関当直三級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -21402,7 +21402,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">内燃機関四級海技士（機関）試験</div>
                     </td>
                     <td>
@@ -21429,7 +21429,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">内燃機関五級海技士（機関）試験</div>
                     </td>
                     <td>

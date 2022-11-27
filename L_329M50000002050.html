@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1412,10 +1412,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">自然地形分類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">定義</div>
                     </td>
                   </tr>
@@ -1428,7 +1428,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">山地丘陵地</div>
                     </td>
                     <td>
@@ -1463,7 +1463,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">台地</div>
                     </td>
                     <td>
@@ -1506,7 +1506,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">低地</div>
                     </td>
                     <td>
@@ -1591,7 +1591,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -1762,13 +1762,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">記号</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">記号の表示の方法</div>
                     </td>
                   </tr>
@@ -1938,16 +1938,16 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="5">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">地形分類図及び自然地形分類図の記号</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">地形分類予察図及び自然地分類予察図の記号</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">記号の表示の方法</div>
                     </td>
                   </tr>
@@ -1977,7 +1977,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">切土地</div>
                     </td>
                     <td>
@@ -2011,13 +2011,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">盛土地</div>
                     </td>
                     <td>
@@ -2051,13 +2051,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">切り盛り平坦地</div>
                     </td>
                     <td>
@@ -2091,13 +2091,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">埋立地</div>
                     </td>
                     <td>
@@ -2131,13 +2131,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">干拓地</div>
                     </td>
                     <td>
@@ -2171,13 +2171,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">その他の人工改変地</div>
                     </td>
                     <td>
@@ -2211,13 +2211,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">改変中の地域</div>
                     </td>
                     <td>
@@ -2265,7 +2265,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">山頂緩斜面</div>
                     </td>
                     <td>
@@ -2301,12 +2301,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">山腹緩斜面</div>
                     </td>
                     <td>
@@ -2344,7 +2344,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">山麓緩斜面</div>
                     </td>
                     <td>
@@ -2390,7 +2390,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">急斜面</div>
                     </td>
                     <td>
@@ -2421,7 +2421,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2435,7 +2435,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2467,7 +2467,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2481,7 +2481,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">谷密度が80以上の急斜面</div>
                     </td>
                     <td>
@@ -2515,7 +2515,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2529,7 +2529,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">谷密度が80未満の急斜面</div>
                     </td>
                     <td>
@@ -2563,7 +2563,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2577,7 +2577,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2609,13 +2609,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">岩石台地</div>
                     </td>
                     <td>
@@ -2647,7 +2647,7 @@
                     <td>
                       <div class="Sentence">橙</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
                         <div class="QuoteStruct">
 
@@ -2659,7 +2659,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">岩石台地</div>
                     </td>
                     <td>
@@ -2691,13 +2691,13 @@
                     <td>
                       <div class="Sentence">橙</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">岩石台地</div>
                     </td>
                     <td>
@@ -2733,12 +2733,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">右斜線は、橙色の線、横線は、赤色の線とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">岩石台地</div>
                     </td>
                     <td>
@@ -2772,13 +2772,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">岩石台地</div>
                     </td>
                     <td>
@@ -2816,12 +2816,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">右斜線は、橙色の線、左斜線は、黄色の線とし、横線は、赤色の線とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">岩石台地</div>
                     </td>
                     <td>
@@ -2857,12 +2857,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">右斜線は、橙色の線、左斜線は、黄色の線とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">砂礫台地</div>
                     </td>
                     <td>
@@ -2894,13 +2894,13 @@
                     <td>
                       <div class="Sentence">橙</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">砂礫台地</div>
                     </td>
                     <td>
@@ -2928,12 +2928,12 @@
                     <td>
                       <div class="Sentence">橙</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">砂礫台地</div>
                     </td>
                     <td>
@@ -2969,12 +2969,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">右斜線は、橙色の線、横線は、赤色の線とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">砂礫台地</div>
                     </td>
                     <td>
@@ -3008,13 +3008,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">砂礫台地</div>
                     </td>
                     <td>
@@ -3052,12 +3052,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">右斜線は、橙色の線、左斜線は、黄色の線とし、横線は、赤色の線とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">砂礫台地</div>
                     </td>
                     <td>
@@ -3093,12 +3093,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">右斜線は、橙色の線、左斜線は、黄色の線とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">石灰岩台地</div>
                     </td>
                     <td>
@@ -3130,13 +3130,13 @@
                     <td>
                       <div class="Sentence">橙</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">火山灰台地</div>
                     </td>
                     <td>
@@ -3170,7 +3170,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="FigStruct">
                 
 
@@ -3178,7 +3178,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">溶岩台地</div>
                     </td>
                     <td>
@@ -3209,12 +3209,12 @@
                     <td>
                       <div class="Sentence">赤</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">地形分類予察図及び自然地形分類予察図にあつては、その面全部を彩色する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">更新世段丘</div>
                     </td>
                     <td>
@@ -3248,13 +3248,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">完新世段丘</div>
                     </td>
                     <td>
@@ -3288,13 +3288,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">扇状地</div>
                     </td>
                     <td>
@@ -3325,7 +3325,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3339,7 +3339,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3371,7 +3371,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3385,7 +3385,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">通常は冠水しなかつた部分</div>
                     </td>
                     <td>
@@ -3413,7 +3413,7 @@
                     <td>
                       <div class="Sentence">黄</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
@@ -3426,7 +3426,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">異常の洪水時に冠水した部分</div>
                     </td>
                     <td>
@@ -3458,7 +3458,7 @@
                     <td>
                       <div class="Sentence">黄</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3472,7 +3472,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">季節的な増水時に冠水した部分</div>
                     </td>
                     <td>
@@ -3504,7 +3504,7 @@
                     <td>
                       <div class="Sentence">黄</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3518,7 +3518,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3550,13 +3550,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">谷底低地</div>
                     </td>
                     <td>
@@ -3587,7 +3587,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3601,7 +3601,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3633,7 +3633,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3647,7 +3647,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">通常は冠水しなかつた部分</div>
                     </td>
                     <td>
@@ -3675,7 +3675,7 @@
                     <td>
                       <div class="Sentence">緑</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
@@ -3688,7 +3688,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">異常の洪水時に冠水した部分</div>
                     </td>
                     <td>
@@ -3720,7 +3720,7 @@
                     <td>
                       <div class="Sentence">緑</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3734,7 +3734,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">季節的な増水時に冠水した部分</div>
                     </td>
                     <td>
@@ -3766,7 +3766,7 @@
                     <td>
                       <div class="Sentence">緑</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3780,7 +3780,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3812,13 +3812,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">氾濫原低地</div>
                     </td>
                     <td>
@@ -3849,7 +3849,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3863,7 +3863,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3895,7 +3895,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3909,7 +3909,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">通常は冠水しなかつた部分</div>
                     </td>
                     <td>
@@ -3937,7 +3937,7 @@
                     <td>
                       <div class="Sentence">黄緑</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
@@ -3950,7 +3950,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">異常の洪水時に冠水した部分</div>
                     </td>
                     <td>
@@ -3982,7 +3982,7 @@
                     <td>
                       <div class="Sentence">黄緑</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3996,7 +3996,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">季節的な増水時に冠水した部分</div>
                     </td>
                     <td>
@@ -4028,7 +4028,7 @@
                     <td>
                       <div class="Sentence">黄緑</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4042,7 +4042,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4074,13 +4074,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">三角州</div>
                     </td>
                     <td>
@@ -4111,7 +4111,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4125,7 +4125,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4157,7 +4157,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4171,7 +4171,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">通常は冠水しなかつた部分</div>
                     </td>
                     <td>
@@ -4199,7 +4199,7 @@
                     <td>
                       <div class="Sentence">灰</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
@@ -4212,7 +4212,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">異常の洪水時に冠水した部分</div>
                     </td>
                     <td>
@@ -4244,7 +4244,7 @@
                     <td>
                       <div class="Sentence">灰</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4258,7 +4258,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">季節的な増水時に冠水した部分</div>
                     </td>
                     <td>
@@ -4290,7 +4290,7 @@
                     <td>
                       <div class="Sentence">灰</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4304,7 +4304,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4336,13 +4336,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">自然堤防</div>
                     </td>
                     <td>
@@ -4373,7 +4373,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4387,7 +4387,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4419,7 +4419,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4433,7 +4433,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">通常は冠水しなかつた部分</div>
                     </td>
                     <td>
@@ -4461,7 +4461,7 @@
                     <td>
                       <div class="Sentence">桃</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
@@ -4474,7 +4474,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">異常の洪水時に冠水した部分</div>
                     </td>
                     <td>
@@ -4506,7 +4506,7 @@
                     <td>
                       <div class="Sentence">桃</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4520,7 +4520,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">季節的な増水時に冠水した部分</div>
                     </td>
                     <td>
@@ -4552,7 +4552,7 @@
                     <td>
                       <div class="Sentence">桃</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4566,7 +4566,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4598,13 +4598,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">旧河道</div>
                     </td>
                     <td>
@@ -4635,7 +4635,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4649,7 +4649,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4681,7 +4681,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4695,7 +4695,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">通常は冠水しなかつた部分</div>
                     </td>
                     <td>
@@ -4723,7 +4723,7 @@
                     <td>
                       <div class="Sentence">薄紫</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">その面全部を彩色する。</div>
                     </td>
                   </tr>
@@ -4736,7 +4736,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">異常の洪水時に冠水した部分</div>
                     </td>
                     <td>
@@ -4768,7 +4768,7 @@
                     <td>
                       <div class="Sentence">薄紫</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4782,7 +4782,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">季節的な増水時に冠水した部分</div>
                     </td>
                     <td>
@@ -4814,7 +4814,7 @@
                     <td>
                       <div class="Sentence">薄紫</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4828,7 +4828,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4860,13 +4860,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">干潟</div>
                     </td>
                     <td>
@@ -4900,13 +4900,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">河原</div>
                     </td>
                     <td>
@@ -4938,13 +4938,13 @@
                     <td>
                       <div class="Sentence">黄</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">磯</div>
                     </td>
                     <td>
@@ -4976,7 +4976,7 @@
                     <td>
                       <div class="Sentence">黄</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
                         <div class="QuoteStruct">
 
@@ -4987,7 +4987,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">浜</div>
                     </td>
                     <td>
@@ -5021,13 +5021,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">地すべり地</div>
                     </td>
                     <td>
@@ -5061,13 +5061,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">円弧形記号は、ひだの大きさ及び向きを示すよう赤色で彩色して表示する。ただし、ひだの長さ及び幅がそれぞれ10メートル以上のものを調査し、図上の幅が、0.2に満たない場合は、0.2として記入する。</div>
                       <div class="Sentence">地すべりの方向は、滑つたことがあるか、若しくは滑りつつあるものについて矢印で示すものとし、線色は、赤、線幅は、0.2とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">崩壊地</div>
                     </td>
                     <td>
@@ -5099,13 +5099,13 @@
                     <td>
                       <div class="Sentence">茶</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">崩壊地の大きさ及び方向を表示するように記入する。</div>
                       <div class="Sentence">ただし、崩壊の長さ及び幅がそれぞれ10メートル以上のものを調査し、図上の幅が、0.2に満たない場合は、0.2として記入する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">麓屑面</div>
                     </td>
                     <td>
@@ -5139,13 +5139,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">崖錐</div>
                     </td>
                     <td>
@@ -5179,12 +5179,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">崖錐の錐面の角度及び実形の大きさに応じた扇形を記入する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">火山泥流堆積地</div>
                     </td>
                     <td>
@@ -5218,12 +5218,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">泥流丘の部分は、その実形を記入するものとし、線色は、紫、線幅は、0.1とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">土石流堆積地</div>
                     </td>
                     <td>
@@ -5257,12 +5257,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">土石流堆積地の実形を記入する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">砂礫堆</div>
                     </td>
                     <td>
@@ -5296,12 +5296,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">砂礫堆の実形を記入する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">裸出砂丘</div>
                     </td>
                     <td>
@@ -5333,7 +5333,7 @@
                     <td>
                       <div class="Sentence">黄</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
                         <div class="QuoteStruct">
 
@@ -5344,7 +5344,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">被覆砂丘</div>
                     </td>
                     <td>
@@ -5376,7 +5376,7 @@
                     <td>
                       <div class="Sentence">黄</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
                         <div class="QuoteStruct">
 
@@ -5387,7 +5387,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">湿地</div>
                     </td>
                     <td>
@@ -5421,13 +5421,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">泥炭地</div>
                     </td>
                     <td>
@@ -5461,13 +5461,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">天井川</div>
                     </td>
                     <td>
@@ -5500,13 +5500,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">崖</div>
                     </td>
                     <td>
@@ -5538,12 +5538,12 @@
                     <td>
                       <div class="Sentence">青</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">崖の平面投影の実形を記入するものとし、その投影が0.3に満たない場合は、0.3として記入する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">凹地・浅い谷</div>
                     </td>
                     <td>
@@ -5577,13 +5577,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">岸欠壊</div>
                     </td>
                     <td>
@@ -5615,12 +5615,12 @@
                     <td>
                       <div class="Sentence">赤</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">実形を記入する。ただし、欠壊の長さ及び幅がそれぞれ10メートル以上のものを調査し、図上の幅が、0.2に満たない場合は、0.2として記入する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">異常高潮界</div>
                     </td>
                     <td>
@@ -5654,13 +5654,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">遷移点</div>
                     </td>
                     <td>
@@ -5694,12 +5694,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">谷の実形に応じて記入する。ただし、図上の幅が、2.0に満たない場合は、2.0として記入する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">傾斜変換線</div>
                     </td>
                     <td>
@@ -5733,13 +5733,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">火山地界</div>
                     </td>
                     <td>
@@ -5773,13 +5773,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">谷密度界</div>
                     </td>
                     <td>
@@ -5813,13 +5813,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">地形界</div>
                     </td>
                     <td>
@@ -5853,13 +5853,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">火山岩屑</div>
                     </td>
                     <td>
@@ -5891,13 +5891,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">ローム</div>
                     </td>
                     <td>
@@ -5929,13 +5929,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">角石</div>
                     </td>
                     <td>
@@ -5966,7 +5966,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="4" colspan="3">
                       <div class="Sentence">角石から円礫までの記号の大きさについては、ローマ字は、横1.5縦1.5とし、数字は、横1.0縦1.0として表示する。</div>
                     </td>
                   </tr>
@@ -5979,7 +5979,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6021,7 +6021,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径1,000以上</div>
                     </td>
                     <td>
@@ -6063,7 +6063,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径500以上1,000未満</div>
                     </td>
                     <td>
@@ -6105,7 +6105,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径100以上500未満</div>
                     </td>
                     <td>
@@ -6137,7 +6137,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6151,7 +6151,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径20以上100未満</div>
                     </td>
                     <td>
@@ -6183,7 +6183,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6197,7 +6197,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6229,13 +6229,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">円石</div>
                     </td>
                     <td>
@@ -6266,7 +6266,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6280,7 +6280,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6312,7 +6312,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6326,7 +6326,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径1,000以上</div>
                     </td>
                     <td>
@@ -6358,7 +6358,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6372,7 +6372,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径500以上1,000未満</div>
                     </td>
                     <td>
@@ -6404,7 +6404,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6418,7 +6418,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径100以上500未満</div>
                     </td>
                     <td>
@@ -6450,7 +6450,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6464,7 +6464,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">長径20以上100未満</div>
                     </td>
                     <td>
@@ -6496,7 +6496,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6510,7 +6510,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6542,13 +6542,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">角礫</div>
                     </td>
                     <td>
@@ -6580,13 +6580,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">円礫</div>
                     </td>
                     <td>
@@ -6618,13 +6618,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">土</div>
                     </td>
                     <td>
@@ -6655,7 +6655,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6669,7 +6669,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6701,7 +6701,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6715,7 +6715,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">砂</div>
                     </td>
                     <td>
@@ -6747,7 +6747,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6761,7 +6761,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">シルト</div>
                     </td>
                     <td>
@@ -6793,7 +6793,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6807,7 +6807,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">粘土</div>
                     </td>
                     <td>
@@ -6839,7 +6839,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6893,13 +6893,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">変化のあつた河身</div>
                     </td>
                     <td>
@@ -6942,12 +6942,12 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">流水部の幅が図上で0.4以上である場合は、上の記号を用い、0.4未満である場合は、下の記号を用いる。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6991,13 +6991,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -7037,7 +7037,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -7089,7 +7089,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -7097,7 +7097,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">表題</div>
                     </td>
                     <td>
@@ -7140,7 +7140,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">図名</div>
                     </td>
                     <td>
@@ -7183,7 +7183,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">調査年月</div>
                     </td>
                     <td>
@@ -7226,7 +7226,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">作成機関名</div>
                     </td>
                     <td>

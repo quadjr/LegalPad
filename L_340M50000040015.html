@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -936,7 +936,8 @@
                   <div class="ParagraphNum">３</div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">法人が、適格組織再編成により被合併法人等から<a class="reference_link" href="#Mp-At_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>本文に規定する資産の移転を受けた場合において、当該資産について<a class="reference_link" href="#Mp-At_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の規定の適用を受けるときは、当該資産の<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法人税法施行令</a>
-                      <a class="reference_link" href="L_340CO0000000097.html#Mp-At_48-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条第一項第一号</a>イ（１）若しくは<a class="reference_link" href="#Mp-At_3-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>ハ又は<a class="reference_link" href="#Mp-At_48_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条の二第一項第一号</a>イ（１）若しくは<a class="reference_link" href="#Mp-At_3-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>イ（２）若しくは<a class="reference_link" href="#Mp-At_3-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五項第一号</a>（減価償却資産の償却の方法）に規定する取得価額には、当該被合併法人等がした償却の額（当該資産につき同令<a class="reference_link" href="#Mp-At_48-Pr_5-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条第五項第三号</a>に規定する評価換え等が行われたことによりその帳簿価額が減額された場合には、当該帳簿価額が減額された金額を含む。）で当該被合併法人等の各事業年度の所得の金額の計算上損金の額に算入された金額を含まないものとする。</div>
+                      <a class="reference_link" href="L_340CO0000000097.html#Mp-At_48-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条第一項第一号</a>イ（１）若しくは<a class="reference_link" href="#Mp-At_3-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>ハ又は<a class="reference_link" href="#Mp-At_48_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条の二第一項第一号</a>イ（１）若しくは<a class="reference_link" href="#Mp-At_3-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>イ（２）若しくは<a class="reference_link" href="#Mp-At_3-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五項第一号</a>（減価償却資産の償却の方法）に規定する取得価額には、当該被合併法人等がした償却の額（当該資産につき<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_340CO0000000097.html#Mp-At_48-Pr_5-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条第五項第三号</a>に規定する評価換え等が行われたことによりその帳簿価額が減額された場合には、当該帳簿価額が減額された金額を含む。）で当該被合併法人等の各事業年度の所得の金額の計算上損金の額に算入された金額を含まないものとする。</div>
                   </div>
                 </div>
                 <div id="Mp-At_3-Pr_4" class="Paragraph" Num="4">
@@ -1188,7 +1189,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">鉄骨鉄筋コンクリート造、鉄筋コンクリート造又は石造の構築物</div>
                       </td>
                       <td>
@@ -1209,7 +1210,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">れんが造の構築物</div>
                       </td>
                       <td>
@@ -1230,7 +1231,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">コンクリート造、金属造又は土造の構築物</div>
                       </td>
                       <td>
@@ -1251,7 +1252,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">木造又は合成樹脂造の構築物</div>
                       </td>
                       <td>
@@ -1301,7 +1302,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">構築物</div>
                       </td>
                       <td>
@@ -1994,7 +1995,7 @@
                       <td>
                         <div class="Sentence">耐用年数</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">未償却割合</div>
                       </td>
                       <td>
@@ -3578,7 +3579,7 @@
                       <td>
                         <div class="Sentence">耐用年数</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">未償却割合</div>
                       </td>
                       <td>
@@ -5372,7 +5373,7 @@
                       <td>
                         <div class="Sentence">耐用年数</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">未償却割合</div>
                       </td>
                       <td>
@@ -7166,7 +7167,7 @@
                       <td>
                         <div class="Sentence">耐用年数</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">未償却割合</div>
                       </td>
                       <td>
@@ -8960,7 +8961,7 @@
                       <td>
                         <div class="Sentence">耐用年数</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">未償却割合</div>
                       </td>
                       <td>
@@ -10754,7 +10755,7 @@
                       <td>
                         <div class="Sentence">耐用年数</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">未償却割合</div>
                       </td>
                       <td>
@@ -11773,10 +11774,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence">建物</div>
                     </td>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造のもの</div>
                     </td>
                     <td>
@@ -11939,10 +11940,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="47">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">れんが造、石造又はブロック造のもの</div>
                     </td>
                     <td>
@@ -12057,7 +12058,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">金属造のもの（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -12172,7 +12173,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">金属造のもの（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -12255,7 +12256,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">金属造のもの（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -12347,7 +12348,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">木造又は合成樹脂造のもの</div>
                     </td>
                     <td>
@@ -12484,7 +12485,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">木骨モルタル造のもの</div>
                     </td>
                     <td>
@@ -13909,7 +13910,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">農林業用のもの</div>
                     </td>
                     <td>
@@ -14830,7 +14831,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">金属造のもの（前掲のものを除く。）</div>
                     </td>
                     <td>
@@ -18096,7 +18097,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">１１　前掲のもの以外のもの</div>
                     </td>
                     <td>
@@ -18811,7 +18812,7 @@
                     <td>
                       <div class="Sentence">１８</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">生産用機械器具（物の生産の用に供されるものをいう。）製造業用設備（<a class="reference_link" href="#Mp" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次号</a>及び<a class="reference_link" href="#Mp-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二一号</a>に掲げるものを除く。）</div>
                     </td>
                     <td>
@@ -19900,7 +19901,7 @@
                     <td>
                       <div class="Sentence">５５</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">前掲の機械及び装置以外のもの並びに前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -20784,7 +20785,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">構築物</div>
                     </td>
                     <td>
@@ -20825,7 +20826,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">機械及び装置</div>
                     </td>
                     <td>

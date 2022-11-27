@@ -26,8 +26,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1352,7 +1352,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">一級のへき地学校</div>
                       </td>
                       <td>
@@ -1403,7 +1403,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">二級のへき地学校</div>
                       </td>
                       <td>
@@ -1454,7 +1454,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">三級のへき地学校</div>
                       </td>
                       <td>
@@ -1505,7 +1505,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">四級のへき地学校</div>
                       </td>
                       <td>
@@ -1556,7 +1556,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">五級のへき地学校</div>
                       </td>
                       <td>
@@ -1615,7 +1615,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">へき地学校に準ずる学校又は共同調理場</div>
                       </td>
                       <td>
@@ -1666,7 +1666,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">法第五条の三の規定に基づき指定された学校等</div>
                       </td>
                       <td>
@@ -1895,10 +1895,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">要素</div>
                     </td>
-                    <td>
+                    <td colspan="25">
                       <div class="Sentence">点数</div>
                     </td>
                   </tr>
@@ -2060,7 +2060,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">旧総合病院までの距離</div>
                     </td>
                     <td>
@@ -2217,7 +2217,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">病院までの距離</div>
                     </td>
                     <td>
@@ -2374,7 +2374,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">診療所までの距離</div>
                     </td>
                     <td>
@@ -2531,7 +2531,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">高等学校までの距離</div>
                     </td>
                     <td>
@@ -2688,7 +2688,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">郵便局までの距離</div>
                     </td>
                     <td>
@@ -2845,7 +2845,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">市町村教育委員会までの距離</div>
                     </td>
                     <td>
@@ -3002,7 +3002,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">金融機関までの距離</div>
                     </td>
                     <td>
@@ -3159,7 +3159,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">スーパーマーケットまでの距離</div>
                     </td>
                     <td>
@@ -3316,7 +3316,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">市の中心地までの距離</div>
                     </td>
                     <td>
@@ -3473,7 +3473,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">県庁所在地又はこれに準ずる都市の中心地までの距離</div>
                     </td>
                     <td>
@@ -3637,15 +3637,15 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">要素</div>
                     </td>
-                    <td>
+                    <td colspan="18">
                       <div class="Sentence">点数</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">本土からの月間の定期航行の回数</div>
                     </td>
                     <td>
@@ -3768,7 +3768,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">本土からの海上の距離</div>
                     </td>
                     <td>
@@ -3895,7 +3895,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">船着場までの距離</div>
                     </td>
                     <td>
@@ -4075,26 +4075,26 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4" colspan="2">
                       <div class="Sentence">要素</div>
                     </td>
-                    <td>
+                    <td colspan="18">
                       <div class="Sentence">点数</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">島外に所在する場合</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">海上を交通する部分</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="14">
                       <div class="Sentence">陸上を交通する部分</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１日の定期航行の回数</div>
                     </td>
                   </tr>
@@ -4110,7 +4110,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">旧総合病院までの距離等</div>
                     </td>
                     <td>
@@ -4125,12 +4125,12 @@
                     <td>
                       <div class="Sentence">６点</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">病院までの距離等</div>
                     </td>
                     <td>
@@ -4145,12 +4145,12 @@
                     <td>
                       <div class="Sentence">６</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">診療所までの距離等</div>
                     </td>
                     <td>
@@ -4165,12 +4165,12 @@
                     <td>
                       <div class="Sentence">６</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">高等学校までの距離等</div>
                     </td>
                     <td>
@@ -4185,12 +4185,12 @@
                     <td>
                       <div class="Sentence">１２</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">郵便局までの距離等</div>
                     </td>
                     <td>
@@ -4205,12 +4205,12 @@
                     <td>
                       <div class="Sentence">６</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">市町村教育委員会までの距離等</div>
                     </td>
                     <td>
@@ -4225,12 +4225,12 @@
                     <td>
                       <div class="Sentence">１２</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">金融機関までの距離等</div>
                     </td>
                     <td>
@@ -4245,12 +4245,12 @@
                     <td>
                       <div class="Sentence">６</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">スーパーマーケットまでの距離等</div>
                     </td>
                     <td>
@@ -4265,12 +4265,12 @@
                     <td>
                       <div class="Sentence">６</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">市の中心地までの距離等</div>
                     </td>
                     <td>
@@ -4285,12 +4285,12 @@
                     <td>
                       <div class="Sentence">０</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">県庁所在地又はこれに準ずる都市の中心地までの距離等</div>
                     </td>
                     <td>
@@ -4305,7 +4305,7 @@
                     <td>
                       <div class="Sentence">０</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence">別表第一によって算定する。</div>
                     </td>
                   </tr>

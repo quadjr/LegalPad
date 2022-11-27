@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -283,7 +283,7 @@
                       <td>
                         <div class="Sentence">二千九十六番の一、二千二百二十二番の二及び二千三百八十三番の一</div>
                       </td>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">三万三千三百五・八六平方メートル</div>
                       </td>
                     </tr>
@@ -395,7 +395,7 @@
                       <td>
                         <div class="Sentence">二千九百四十三番の四</div>
                       </td>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">三万八千四百八十二・七八平方メートル</div>
                       </td>
                     </tr>
@@ -482,7 +482,7 @@
                       <td>
                         <div class="Sentence">千百五十六番の三、千百五十八番の四及び千百六十番の六</div>
                       </td>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">二万五千九百三十五・二一平方メートル</div>
                       </td>
                     </tr>
@@ -528,7 +528,7 @@
                       <td>
                         <div class="Sentence">七十六番の一、十四及び十五</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">六万八千二百九十三・〇七平方メートル</div>
                       </td>
                     </tr>
@@ -612,7 +612,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">茨城県石岡市大字石岡字木比提二千三百八十三番地の一</div>
                       </td>
                       <td>
@@ -648,7 +648,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">茨城県石岡市大字石岡字木比提二千二百二十二番地の二及び同大字字大橋道西二千五百十二番地の二</div>
                       </td>
                       <td>
@@ -792,7 +792,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">千葉県千葉市稲毛東四丁目五十四番地の四</div>
                       </td>
                       <td>
@@ -817,7 +817,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="18">
                         <div class="Sentence">千葉県千葉市稲毛東四丁目千二百九十一番地の一及び五並びに千三百二十五番地の六</div>
                       </td>
                       <td>
@@ -1018,7 +1018,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">千葉市中央港二丁目二番地</div>
                       </td>
                       <td>
@@ -1054,7 +1054,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">千葉県君津郡袖ケ浦町長浦字拓二号五百八十番地の十五</div>
                       </td>
                       <td>
@@ -1093,7 +1093,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">静岡県磐田市中泉字大乗院坂三千四十六番地の五</div>
                       </td>
                       <td>
@@ -1118,7 +1118,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="15">
                         <div class="Sentence">静岡県磐田市中泉字大乗院坂三千三十九番地の二、同市中泉字西新町二千九百四十三番地の四、同市天竜字蛭子森二番地の二及び同市天竜字イカリ五十三番地の一</div>
                       </td>
                       <td>
@@ -1286,7 +1286,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">静岡県志太郡大井川町飯渕字築留千六百五十八番地の千百四十六及び千百四十七</div>
                       </td>
                       <td>
@@ -1336,7 +1336,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">愛媛県北宇和郡広見町大字近永千四百十八番地の一</div>
                       </td>
                       <td>
@@ -1471,7 +1471,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">愛媛県宇和島市坂下津字向山甲五百九十九番地の二</div>
                       </td>
                       <td>
@@ -1496,7 +1496,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">熊本県菊池郡大津町大字大津字鍜治ノ上千二百八十六番地の一、千二百八十七番地の一、千二百八十八番地、千二百八十九番地、千二百九十一番地の一、千二百九十二番地及び千二百九十三番地</div>
                       </td>
                       <td>
@@ -1521,7 +1521,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="15">
                         <div class="Sentence">熊本県菊池郡大津町大字大津字前田千百五十六番地の三及び同大字字鍜治ノ上千二百九十六番地の三</div>
                       </td>
                       <td>
@@ -1689,7 +1689,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">鹿児島県出水市上鯖渕字西井手ノ原千四百七十二番地の二</div>
                       </td>
                       <td>
@@ -1714,7 +1714,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="21">
                         <div class="Sentence">鹿児島県出水市昭和町七十六番地の一及び百十四番地の一</div>
                       </td>
                       <td>
@@ -1948,7 +1948,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">熊本県水俣市月浦字前田五十四番地の八十六及び百二十一</div>
                       </td>
                       <td>
@@ -2006,7 +2006,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">鹿児島県鹿屋市新生町八千五百三十一番地の一</div>
                       </td>
                       <td>
@@ -2031,7 +2031,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="19">
                         <div class="Sentence">鹿児島県鹿屋市田崎町七百二十九番地、七百三十番地、七百三十一番地の二、七百三十二番地の二、七百三十三番地、七百四十番地の一、七百四十二番地、七百四十三番地、七百四十三番地の一及び七百四十六番地の一</div>
                       </td>
                       <td>
@@ -2243,7 +2243,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">鹿児島県鹿屋市古江町七千五百九十九番地の一</div>
                       </td>
                       <td>
@@ -2312,7 +2312,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">静岡県磐田市中泉字大乗院坂三千四十六番地の五</div>
                     </td>
                     <td>
@@ -2363,7 +2363,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">熊本県菊池郡大津町大字大津字鍜治ノ上千二百九十二番地</div>
                     </td>
                     <td>
@@ -2430,7 +2430,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="18">
                       <div class="Sentence">鹿児島県鹿屋市古江町七千五百九十九番地の一</div>
                     </td>
                     <td>
@@ -2577,7 +2577,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">鹿児島県鹿屋市大字田崎字船塚七百二十九番地</div>
                     </td>
                     <td>

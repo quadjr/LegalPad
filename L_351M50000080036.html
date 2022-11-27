@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -646,10 +646,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">２５</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">海洋漁業に関する科目群</div>
                       </td>
                       <td>
@@ -762,13 +762,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="14">
                         <div class="Sentence">１</div>
                       </td>
-                      <td>
+                      <td rowspan="14">
                         <div class="Sentence">情報基礎に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -786,7 +786,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">制御用機器</div>
                       </td>
                       <td>
@@ -832,7 +832,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -850,13 +850,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="29">
                         <div class="Sentence">２</div>
                       </td>
-                      <td>
+                      <td rowspan="29">
                         <div class="Sentence">情報応用に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -894,7 +894,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -917,7 +917,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -943,7 +943,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">通信用機器</div>
                       </td>
                       <td>
@@ -966,7 +966,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">電子機器</div>
                       </td>
                       <td>
@@ -1000,7 +1000,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -1018,7 +1018,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -1031,10 +1031,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="52">
                         <div class="Sentence">３</div>
                       </td>
-                      <td>
+                      <td rowspan="52">
                         <div class="Sentence">生物生産に関する科目群</div>
                       </td>
                       <td>
@@ -1045,7 +1045,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -1063,7 +1063,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -1124,7 +1124,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">整備用機器</div>
                       </td>
                       <td>
@@ -1137,7 +1137,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="8">
                         <div class="Sentence">飼育管理用機器</div>
                       </td>
                       <td>
@@ -1180,7 +1180,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">収納・調整用機器</div>
                       </td>
                       <td>
@@ -1208,7 +1208,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="11">
                         <div class="Sentence">栽培管理用機器</div>
                       </td>
                       <td>
@@ -1274,7 +1274,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">農業実験用機器</div>
                       </td>
                       <td>
@@ -1338,7 +1338,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -1351,13 +1351,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="37">
                         <div class="Sentence">４</div>
                       </td>
-                      <td>
+                      <td rowspan="37">
                         <div class="Sentence">林業に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -1375,7 +1375,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -1388,7 +1388,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -1406,7 +1406,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -1443,7 +1443,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">ボイラ</div>
                       </td>
                       <td>
@@ -1456,7 +1456,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="11">
                         <div class="Sentence">林業実験用機器</div>
                       </td>
                       <td>
@@ -1514,7 +1514,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">育苗・育林用機器</div>
                       </td>
                       <td>
@@ -1571,7 +1571,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -1584,10 +1584,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="62">
                         <div class="Sentence">５</div>
                       </td>
-                      <td>
+                      <td rowspan="62">
                         <div class="Sentence">食品科学に関する科目群</div>
                       </td>
                       <td>
@@ -1598,7 +1598,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -1631,7 +1631,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -1697,7 +1697,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="25">
                         <div class="Sentence">食品加工用機器</div>
                       </td>
                       <td>
@@ -1825,7 +1825,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="17">
                         <div class="Sentence">実験用機器</div>
                       </td>
                       <td>
@@ -1929,7 +1929,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -1942,13 +1942,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="24">
                         <div class="Sentence">６</div>
                       </td>
-                      <td>
+                      <td rowspan="24">
                         <div class="Sentence">工業基礎に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -1966,7 +1966,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -1979,7 +1979,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -2000,7 +2000,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -2021,7 +2021,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -2044,7 +2044,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">電気機器</div>
                       </td>
                       <td>
@@ -2098,10 +2098,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="29">
                         <div class="Sentence">７</div>
                       </td>
-                      <td>
+                      <td rowspan="29">
                         <div class="Sentence">電子基礎に関する科目群</div>
                       </td>
                       <td>
@@ -2112,7 +2112,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="8">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -2163,7 +2163,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">電源用機器</div>
                       </td>
                       <td>
@@ -2176,7 +2176,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">制御用機器</div>
                       </td>
                       <td>
@@ -2189,7 +2189,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">電子機器</div>
                       </td>
                       <td>
@@ -2285,10 +2285,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="43">
                         <div class="Sentence">８</div>
                       </td>
-                      <td>
+                      <td rowspan="43">
                         <div class="Sentence">機械に関する科目群</div>
                       </td>
                       <td>
@@ -2299,7 +2299,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -2317,7 +2317,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -2330,7 +2330,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -2348,7 +2348,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -2366,7 +2366,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -2432,7 +2432,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">鋳造用機器</div>
                       </td>
                       <td>
@@ -2474,7 +2474,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="10">
                         <div class="Sentence">電子機械実習用機器</div>
                       </td>
                       <td>
@@ -2543,7 +2543,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -2556,7 +2556,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -2569,13 +2569,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="29">
                         <div class="Sentence">９</div>
                       </td>
-                      <td>
+                      <td rowspan="29">
                         <div class="Sentence">自動車に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -2611,7 +2611,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -2637,7 +2637,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -2665,7 +2665,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">制御用機器</div>
                       </td>
                       <td>
@@ -2694,7 +2694,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">整備用機器</div>
                       </td>
                       <td>
@@ -2725,7 +2725,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">溶接用機器</div>
                       </td>
                       <td>
@@ -2762,10 +2762,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="59">
                         <div class="Sentence">１０</div>
                       </td>
-                      <td>
+                      <td rowspan="59">
                         <div class="Sentence">船舶に関する科目群</div>
                       </td>
                       <td>
@@ -2776,7 +2776,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="8">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -2819,7 +2819,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -2837,7 +2837,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -2860,7 +2860,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -2873,7 +2873,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -2891,7 +2891,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">電源用機器</div>
                       </td>
                       <td>
@@ -2909,7 +2909,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -2932,7 +2932,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">制御用機器</div>
                       </td>
                       <td>
@@ -2963,7 +2963,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">原動機</div>
                       </td>
                       <td>
@@ -2976,7 +2976,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">整備用機器</div>
                       </td>
                       <td>
@@ -3002,7 +3002,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">溶接用機器</div>
                       </td>
                       <td>
@@ -3015,7 +3015,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">推進装置</div>
                       </td>
                       <td>
@@ -3033,7 +3033,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">蒸気発生用機器</div>
                       </td>
                       <td>
@@ -3051,7 +3051,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">環境保全装置</div>
                       </td>
                       <td>
@@ -3072,7 +3072,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">補助機器</div>
                       </td>
                       <td>
@@ -3105,7 +3105,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -3126,10 +3126,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="47">
                         <div class="Sentence">１１</div>
                       </td>
-                      <td>
+                      <td rowspan="47">
                         <div class="Sentence">電気に関する科目群</div>
                       </td>
                       <td>
@@ -3140,7 +3140,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -3153,7 +3153,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -3166,7 +3166,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">電源用機器</div>
                       </td>
                       <td>
@@ -3192,7 +3192,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">通信用機器</div>
                       </td>
                       <td>
@@ -3215,7 +3215,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">発振器</div>
                       </td>
                       <td>
@@ -3228,7 +3228,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">電気機器</div>
                       </td>
                       <td>
@@ -3251,7 +3251,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">電気実験用機器</div>
                       </td>
                       <td>
@@ -3277,7 +3277,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="14">
                         <div class="Sentence">電気計測用機器</div>
                       </td>
                       <td>
@@ -3366,7 +3366,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">電子回路実習用機器</div>
                       </td>
                       <td>
@@ -3392,7 +3392,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -3405,7 +3405,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -3418,13 +3418,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="77">
                         <div class="Sentence">１２</div>
                       </td>
-                      <td>
+                      <td rowspan="77">
                         <div class="Sentence">電子応用に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -3442,7 +3442,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -3505,7 +3505,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -3551,7 +3551,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">電源用機器</div>
                       </td>
                       <td>
@@ -3574,7 +3574,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">制御用機器</div>
                       </td>
                       <td>
@@ -3637,7 +3637,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="11">
                         <div class="Sentence">通信用機器</div>
                       </td>
                       <td>
@@ -3695,7 +3695,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">電子機器</div>
                       </td>
                       <td>
@@ -3743,7 +3743,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">発振器</div>
                       </td>
                       <td>
@@ -3756,7 +3756,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">電磁機器</div>
                       </td>
                       <td>
@@ -3769,7 +3769,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="10">
                         <div class="Sentence">電気実験用機器</div>
                       </td>
                       <td>
@@ -3830,7 +3830,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -3851,10 +3851,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="38">
                         <div class="Sentence">１３</div>
                       </td>
-                      <td>
+                      <td rowspan="38">
                         <div class="Sentence">建築に関する科目群</div>
                       </td>
                       <td>
@@ -3865,7 +3865,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -3886,7 +3886,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -3899,7 +3899,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -3917,7 +3917,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -3943,7 +3943,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">施工用機器</div>
                       </td>
                       <td>
@@ -3966,7 +3966,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">構造実験用機器</div>
                       </td>
                       <td>
@@ -3989,7 +3989,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">音響測定用機器</div>
                       </td>
                       <td>
@@ -4002,7 +4002,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">空気調和実験用機器</div>
                       </td>
                       <td>
@@ -4015,7 +4015,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">材料試験用機器</div>
                       </td>
                       <td>
@@ -4080,7 +4080,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -4101,10 +4101,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="39">
                         <div class="Sentence">１４</div>
                       </td>
-                      <td>
+                      <td rowspan="39">
                         <div class="Sentence">設備工業に関する科目群</div>
                       </td>
                       <td>
@@ -4115,7 +4115,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -4156,7 +4156,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -4174,7 +4174,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -4208,7 +4208,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -4258,7 +4258,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">空気調和実験用機器</div>
                       </td>
                       <td>
@@ -4286,7 +4286,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">管工事用機器</div>
                       </td>
                       <td>
@@ -4317,7 +4317,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">給排水実験用機器</div>
                       </td>
                       <td>
@@ -4359,13 +4359,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="42">
                         <div class="Sentence">１５</div>
                       </td>
-                      <td>
+                      <td rowspan="42">
                         <div class="Sentence">土木・造園に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -4378,7 +4378,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -4399,7 +4399,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -4412,7 +4412,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -4425,7 +4425,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -4466,7 +4466,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -4520,7 +4520,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">測量用機器</div>
                       </td>
                       <td>
@@ -4533,7 +4533,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">施工用機器</div>
                       </td>
                       <td>
@@ -4566,7 +4566,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">庭園用設備</div>
                       </td>
                       <td>
@@ -4592,7 +4592,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -4610,7 +4610,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -4623,10 +4623,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="46">
                         <div class="Sentence">１６</div>
                       </td>
-                      <td>
+                      <td rowspan="46">
                         <div class="Sentence">化学工業に関する科目群</div>
                       </td>
                       <td>
@@ -4637,7 +4637,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="8">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -4680,7 +4680,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -4693,7 +4693,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -4711,7 +4711,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -4732,7 +4732,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -4784,7 +4784,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="8">
                         <div class="Sentence">化学実験用機器</div>
                       </td>
                       <td>
@@ -4843,7 +4843,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">分析用機器</div>
                       </td>
                       <td>
@@ -4864,7 +4864,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">単位操作用機器</div>
                       </td>
                       <td>
@@ -4906,7 +4906,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -4919,10 +4919,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="40">
                         <div class="Sentence">１７</div>
                       </td>
-                      <td>
+                      <td rowspan="40">
                         <div class="Sentence">材料技術に関する科目群</div>
                       </td>
                       <td>
@@ -4933,7 +4933,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -4961,7 +4961,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -4974,7 +4974,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -5010,7 +5010,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -5058,7 +5058,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">制御用機器</div>
                       </td>
                       <td>
@@ -5071,7 +5071,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">分析用機器</div>
                       </td>
                       <td>
@@ -5089,7 +5089,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">鋳造用機器</div>
                       </td>
                       <td>
@@ -5131,7 +5131,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">表面処理用機器</div>
                       </td>
                       <td>
@@ -5173,10 +5173,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="30">
                         <div class="Sentence">１８</div>
                       </td>
-                      <td>
+                      <td rowspan="30">
                         <div class="Sentence">セラミックに関する科目群</div>
                       </td>
                       <td>
@@ -5187,7 +5187,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -5205,7 +5205,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -5226,7 +5226,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="8">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -5269,7 +5269,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">化学実験用機器</div>
                       </td>
                       <td>
@@ -5287,7 +5287,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">プラント</div>
                       </td>
                       <td>
@@ -5300,7 +5300,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">分析用機器</div>
                       </td>
                       <td>
@@ -5326,7 +5326,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">加飾用機器</div>
                       </td>
                       <td>
@@ -5368,13 +5368,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="40">
                         <div class="Sentence">１９</div>
                       </td>
-                      <td>
+                      <td rowspan="40">
                         <div class="Sentence">繊維に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -5387,7 +5387,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -5423,7 +5423,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -5436,7 +5436,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -5459,7 +5459,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">制御用機器</div>
                       </td>
                       <td>
@@ -5488,7 +5488,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">化学実験用機器</div>
                       </td>
                       <td>
@@ -5506,7 +5506,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">繊維製品試験用機器</div>
                       </td>
                       <td>
@@ -5524,7 +5524,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">染色試験用機器</div>
                       </td>
                       <td>
@@ -5537,7 +5537,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">繊維製品製造・加工用機器</div>
                       </td>
                       <td>
@@ -5570,7 +5570,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">染色用機器</div>
                       </td>
                       <td>
@@ -5601,7 +5601,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -5622,13 +5622,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="31">
                         <div class="Sentence">２０</div>
                       </td>
-                      <td>
+                      <td rowspan="31">
                         <div class="Sentence">インテリアに関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -5641,7 +5641,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -5664,7 +5664,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -5677,7 +5677,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -5700,7 +5700,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -5718,7 +5718,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -5752,7 +5752,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">デザイン用機器</div>
                       </td>
                       <td>
@@ -5780,7 +5780,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">室内環境測定用機器</div>
                       </td>
                       <td>
@@ -5809,7 +5809,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -5822,13 +5822,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="26">
                         <div class="Sentence">２１</div>
                       </td>
-                      <td>
+                      <td rowspan="26">
                         <div class="Sentence">デザインに関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -5849,7 +5849,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">工作用機器</div>
                       </td>
                       <td>
@@ -5867,7 +5867,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">製図用機器</div>
                       </td>
                       <td>
@@ -5896,7 +5896,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">デザイン用機器</div>
                       </td>
                       <td>
@@ -5914,7 +5914,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">印刷用機器</div>
                       </td>
                       <td>
@@ -5927,7 +5927,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">写真用機器</div>
                       </td>
                       <td>
@@ -5964,7 +5964,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">縫製用機器</div>
                       </td>
                       <td>
@@ -5993,7 +5993,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -6006,13 +6006,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="36">
                         <div class="Sentence">２２</div>
                       </td>
-                      <td>
+                      <td rowspan="36">
                         <div class="Sentence">流通・経営に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -6040,7 +6040,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -6073,7 +6073,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -6094,7 +6094,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -6107,7 +6107,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">試験用機器</div>
                       </td>
                       <td>
@@ -6148,7 +6148,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">通信用機器</div>
                       </td>
                       <td>
@@ -6161,7 +6161,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">展示用機器</div>
                       </td>
                       <td>
@@ -6190,7 +6190,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -6218,7 +6218,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -6231,13 +6231,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="13">
                         <div class="Sentence">２３</div>
                       </td>
-                      <td>
+                      <td rowspan="13">
                         <div class="Sentence">国際経済に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="6">
                         <div class="Sentence">データ処理用機器</div>
                       </td>
                       <td>
@@ -6310,7 +6310,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -6323,10 +6323,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="40">
                         <div class="Sentence">２４</div>
                       </td>
-                      <td>
+                      <td rowspan="40">
                         <div class="Sentence">水産・海洋基礎に関する科目群</div>
                       </td>
                       <td>
@@ -6361,7 +6361,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">舟艇</div>
                       </td>
                       <td>
@@ -6398,7 +6398,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">潜水安全監視用機器</div>
                       </td>
                       <td>
@@ -6421,7 +6421,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">蘇生用機器</div>
                       </td>
                       <td>
@@ -6434,7 +6434,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">水中作業用機器</div>
                       </td>
                       <td>
@@ -6447,7 +6447,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">上架用機器</div>
                       </td>
                       <td>
@@ -6465,7 +6465,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">船舶属具</div>
                       </td>
                       <td>
@@ -6478,7 +6478,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="14">
                         <div class="Sentence">海洋実習用機器</div>
                       </td>
                       <td>
@@ -6551,7 +6551,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -6564,7 +6564,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -6577,10 +6577,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="44">
                         <div class="Sentence">２５</div>
                       </td>
-                      <td>
+                      <td rowspan="44">
                         <div class="Sentence">海洋漁業に関する科目群</div>
                       </td>
                       <td>
@@ -6591,7 +6591,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -6609,7 +6609,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -6627,7 +6627,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -6666,7 +6666,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">原動機</div>
                       </td>
                       <td>
@@ -6679,7 +6679,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">観測用機器</div>
                       </td>
                       <td>
@@ -6710,7 +6710,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">生物採集用器具</div>
                       </td>
                       <td>
@@ -6723,7 +6723,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">生物飼育装置</div>
                       </td>
                       <td>
@@ -6744,7 +6744,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="10">
                         <div class="Sentence">航海実習用機器</div>
                       </td>
                       <td>
@@ -6797,7 +6797,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">航海計器</div>
                       </td>
                       <td>
@@ -6825,7 +6825,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -6838,7 +6838,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -6851,10 +6851,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="38">
                         <div class="Sentence">２６</div>
                       </td>
-                      <td>
+                      <td rowspan="38">
                         <div class="Sentence">栽培漁業に関する科目群</div>
                       </td>
                       <td>
@@ -6865,7 +6865,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -6883,7 +6883,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">光学機器</div>
                       </td>
                       <td>
@@ -6928,7 +6928,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">観測用機器</div>
                       </td>
                       <td>
@@ -6946,7 +6946,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">飼育管理用機器</div>
                       </td>
                       <td>
@@ -6992,7 +6992,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="13">
                         <div class="Sentence">実験用機器</div>
                       </td>
                       <td>
@@ -7068,7 +7068,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">漁場造成用機器</div>
                       </td>
                       <td>
@@ -7089,10 +7089,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="19">
                         <div class="Sentence">２７</div>
                       </td>
-                      <td>
+                      <td rowspan="19">
                         <div class="Sentence">被服に関する科目群</div>
                       </td>
                       <td>
@@ -7103,7 +7103,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">計量・計測機器</div>
                       </td>
                       <td>
@@ -7140,7 +7140,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">被服製作用機器</div>
                       </td>
                       <td>
@@ -7153,7 +7153,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">被服実験用機器</div>
                       </td>
                       <td>
@@ -7166,7 +7166,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">環境構成用機器</div>
                       </td>
                       <td>
@@ -7179,7 +7179,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">手芸用機器</div>
                       </td>
                       <td>
@@ -7192,7 +7192,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -7210,7 +7210,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -7223,13 +7223,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="22">
                         <div class="Sentence">２８</div>
                       </td>
-                      <td>
+                      <td rowspan="22">
                         <div class="Sentence">食物・調理に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -7260,7 +7260,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">化学実験用機器</div>
                       </td>
                       <td>
@@ -7283,7 +7283,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">調理用機器</div>
                       </td>
                       <td>
@@ -7331,7 +7331,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -7344,7 +7344,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -7357,13 +7357,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="30">
                         <div class="Sentence">２９</div>
                       </td>
-                      <td>
+                      <td rowspan="30">
                         <div class="Sentence">保育・福祉に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -7386,7 +7386,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -7409,7 +7409,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">保育用機器</div>
                       </td>
                       <td>
@@ -7432,7 +7432,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="10">
                         <div class="Sentence">介護用機器</div>
                       </td>
                       <td>
@@ -7485,7 +7485,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">楽器</div>
                       </td>
                       <td>
@@ -7503,7 +7503,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">視聴覚教育用機器</div>
                       </td>
                       <td>
@@ -7521,7 +7521,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>
@@ -7534,13 +7534,13 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="38">
                         <div class="Sentence">３０</div>
                       </td>
-                      <td>
+                      <td rowspan="38">
                         <div class="Sentence">看護に関する科目群</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">計量・計測用機器</div>
                       </td>
                       <td>
@@ -7566,7 +7566,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="13">
                         <div class="Sentence">模型・標本</div>
                       </td>
                       <td>
@@ -7650,7 +7650,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="15">
                         <div class="Sentence">看護用機器</div>
                       </td>
                       <td>
@@ -7744,7 +7744,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">机・戸棚類</div>
                       </td>
                       <td>

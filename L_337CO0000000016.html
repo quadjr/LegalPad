@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -957,7 +957,7 @@
                       <div class="Sentence">
                         <a class="reference_link" href="L_336AC0000000191.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                         <a class="reference_link" href="L_336AC0000000191.html#Mp-At_8-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第一項</a>本文又は<a class="reference_link" href="#Mp-At_12-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一項</a>の規定による許可を受けなければならない宅地造成に関する工事により設置する擁壁で高さが二メートルを超えるもの（<a class="reference_link" href="#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条</a>の規定によるものを除く。）については、<a class="reference_link" href="L_325CO0000000338.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建築基準法施行令</a>
-                        <a class="reference_link" href="L_325CO0000000338.html#Mp-At_142" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十二条</a>（同令第七章の八の規定の準用に係る部分を除く。）の規定を準用する。</div>
+                        <a class="reference_link" href="L_325CO0000000338.html#Mp-At_142" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十二条</a>（<a class="reference_link" href="L_325CO0000000338.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>第七章の八の規定の準用に係る部分を除く。）の規定を準用する。</div>
                     </div>
                   </div>
                 </div>
@@ -1649,7 +1649,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">この政令は、地方自治法の一部を改正する法律（次条において「改正法」という。）の施行の日（平成二十八年四月一日）から施行する。</div>
-                    <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方自治法施行令</a>目次の改正規定、同令第二編第八章第三節の節名を削る改正規定及び同令第百七十四条の四十九の二十の改正規定、第十四条、第十七条、第十八条（指定都市、中核市又は特例市の指定があつた場合における必要な事項を定める政令第四条第一項の改正規定を除く。）、第二十一条から第二十五条まで、第二十七条、第二十九条、第三十二条、第三十三条、第三十六条及び第四十六条の規定並びに第四十七条中<a class="reference_link" href="L_412CO0000000246.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">総務省組織令</a>
+                    <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方自治法施行令</a>目次の改正規定、<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>第二編第八章第三節の節名を削る改正規定及び<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_322CO0000000016.html#Mp-At_174_49_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百七十四条の四十九の二十</a>の改正規定、第十四条、第十七条、第十八条（指定都市、中核市又は特例市の指定があつた場合における必要な事項を定める政令第四条第一項の改正規定を除く。）、第二十一条から第二十五条まで、第二十七条、第二十九条、第三十二条、第三十三条、第三十六条及び第四十六条の規定並びに第四十七条中<a class="reference_link" href="L_412CO0000000246.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">総務省組織令</a>
                       <a class="reference_link" href="L_412CO0000000246.html#Mp-At_47_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十七条の二第四号</a>の改正規定並びに次条から附則第十五条までの規定は、平成二十七年四月一日から施行する。</div>
                   </div>
                 </div>
@@ -1823,10 +1824,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">土質</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">擁壁</div>
                     </td>
                   </tr>
@@ -1842,13 +1843,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">第一種</div>
                     </td>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">岩、岩屑、砂利又は砂利混じり砂</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">七十度を超え七十五度以下</div>
                     </td>
                     <td>
@@ -1867,7 +1868,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">六十五度を超え七十度以下</div>
                     </td>
                     <td>
@@ -1894,7 +1895,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">六十五度以下</div>
                     </td>
                     <td>
@@ -1921,13 +1922,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">第二種</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">真砂土、関東ローム、硬質粘土その他これらに類するもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">七十度を超え七十五度以下</div>
                     </td>
                     <td>
@@ -1946,7 +1947,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">六十五度を超え七十度以下</div>
                     </td>
                     <td>
@@ -1973,7 +1974,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">六十五度以下</div>
                     </td>
                     <td>
@@ -2008,13 +2009,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">第三種</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">その他の土質</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">七十度を超え七十五度以下</div>
                     </td>
                     <td>
@@ -2033,7 +2034,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">六十五度を超え七十度以下</div>
                     </td>
                     <td>
@@ -2060,7 +2061,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">六十五度以下</div>
                     </td>
                     <td>

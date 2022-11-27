@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2829,7 +2829,7 @@
                     <div class="ItemTitle">三</div>
                     <div class="ItemSentence">
                       <div class="Sentence" Num="1">この省令による改正後の<a class="reference_link" href="L_429M60000080033.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">専門職大学設置基準</a>
-                        <a class="reference_link" href="L_429M60000080033.html#Mp-At_45-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十五条第一項</a>及び<a class="reference_link" href="L_429M60000080033.html#Mp-At_45-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>並びに同令中教員に関する規定</div>
+                        <a class="reference_link" href="L_429M60000080033.html#Mp-At_45-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十五条第一項</a>及び<a class="reference_link" href="L_429M60000080033.html#Mp-At_45-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>並びに<a class="reference_link" href="L_429M60000080033.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>中教員に関する規定</div>
                     </div>
                   </div>
                 </div>
@@ -2875,10 +2875,10 @@
                     <td>
                       <div class="Sentence" Num="1">学部の種類</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">一学科で組織する場合の基幹教員数</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">二以上の学科で組織する場合の一学科の収容定員並びに基幹教員数</div>
                     </td>
                   </tr>
@@ -3478,29 +3478,29 @@
                     <td>
                       <div class="Sentence" Num="1">収容定員</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">一〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">二〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">八〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">八〇一人以上の場合の面積（平方メートル）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">学部の種類</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">文学関係</div>
                     </td>
                     <td>
@@ -3528,7 +3528,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">教育学・保育学関係</div>
                     </td>
                     <td>
@@ -3556,7 +3556,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">法学関係</div>
                     </td>
                     <td>
@@ -3584,7 +3584,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">経済学関係</div>
                     </td>
                     <td>
@@ -3612,7 +3612,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">社会学・社会福祉学関係</div>
                     </td>
                     <td>
@@ -3640,7 +3640,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">理学関係</div>
                     </td>
                     <td>
@@ -3668,7 +3668,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">工学関係</div>
                     </td>
                     <td>
@@ -3696,7 +3696,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">農学関係</div>
                     </td>
                     <td>
@@ -3724,7 +3724,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">薬学関係</div>
                     </td>
                     <td>
@@ -3752,7 +3752,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">家政関係</div>
                     </td>
                     <td>
@@ -3780,7 +3780,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">美術関係</div>
                     </td>
                     <td>
@@ -3808,7 +3808,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">音楽関係</div>
                     </td>
                     <td>
@@ -3836,7 +3836,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">体育関係</div>
                     </td>
                     <td>
@@ -3864,7 +3864,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">保健衛生学関係（看護学関係）</div>
                     </td>
                     <td>
@@ -3892,7 +3892,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">保健衛生学関係（看護学関係を除く。）</div>
                     </td>
                     <td>
@@ -3978,47 +3978,47 @@
                     <td>
                       <div class="Sentence" Num="1">収容定員</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">一〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">二〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">六〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">八〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">一〇〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">一二〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">一四〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">一六〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">一八〇〇人までの場合の面積（平方メートル）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">二〇〇〇人までの場合の面積（平方メートル）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">学部の種類</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">文学関係</div>
                     </td>
                     <td>
@@ -4056,7 +4056,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">教育学・保育学関係</div>
                     </td>
                     <td>
@@ -4094,7 +4094,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">法学関係</div>
                     </td>
                     <td>
@@ -4132,7 +4132,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">経済学関係</div>
                     </td>
                     <td>
@@ -4170,7 +4170,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">社会学・社会福祉学関係</div>
                     </td>
                     <td>
@@ -4208,7 +4208,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">理学関係</div>
                     </td>
                     <td>
@@ -4246,7 +4246,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">工学関係</div>
                     </td>
                     <td>
@@ -4284,7 +4284,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">農学関係</div>
                     </td>
                     <td>
@@ -4322,7 +4322,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">薬学関係</div>
                     </td>
                     <td>
@@ -4360,7 +4360,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">家政関係</div>
                     </td>
                     <td>
@@ -4398,7 +4398,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">美術関係</div>
                     </td>
                     <td>
@@ -4436,7 +4436,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">音楽関係</div>
                     </td>
                     <td>
@@ -4474,7 +4474,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">体育関係</div>
                     </td>
                     <td>
@@ -4512,7 +4512,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">保健衛生学関係（看護学関係）</div>
                     </td>
                     <td>
@@ -4550,7 +4550,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">保健衛生学関係（看護学関係を除く。）</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -992,7 +992,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">路線名</div>
                     </td>
                     <td>
@@ -1001,12 +1001,12 @@
                     <td>
                       <div class="Sentence">終点</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">主たる経過地</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">北海道縦貫自動車道</div>
                     </td>
                     <td>
@@ -1015,24 +1015,24 @@
                     <td>
                       <div class="Sentence">稚内市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">室蘭市付近　札幌市　岩見沢市　旭川市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">北海道横断自動車道</div>
                     </td>
                     <td>
                       <div class="Sentence">根室線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">北海道寿都郡黒松内町</div>
                     </td>
                     <td>
                       <div class="Sentence">根室市</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">北海道虻田郡倶知安町付近　小樽市　札幌市　夕張市付近　帯広市付近　北海道足寄郡足寄町付近</div>
                     </td>
                     <td>
@@ -1051,19 +1051,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">東北縦貫自動車道</div>
                     </td>
                     <td>
                       <div class="Sentence">弘前線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">東京都</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">青森市</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">浦和市　館林市　宇都宮市　福島市　仙台市　盛岡市</div>
                     </td>
                     <td>
@@ -1079,7 +1079,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">東北横断自動車道</div>
                     </td>
                     <td>
@@ -1091,7 +1091,7 @@
                     <td>
                       <div class="Sentence">秋田市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">花巻市付近　北上市　横手市付近</div>
                     </td>
                   </tr>
@@ -1105,7 +1105,7 @@
                     <td>
                       <div class="Sentence">酒田市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">山形市付近　鶴岡市付近</div>
                     </td>
                   </tr>
@@ -1119,12 +1119,12 @@
                     <td>
                       <div class="Sentence">新潟市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">会津若松市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">日本海沿岸東北自動車道</div>
                     </td>
                     <td>
@@ -1133,12 +1133,12 @@
                     <td>
                       <div class="Sentence">青森市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">村上市付近　鶴岡市付近　酒田市付近　秋田市付近　能代市付近　大館市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">東北中央自動車道</div>
                     </td>
                     <td>
@@ -1147,24 +1147,24 @@
                     <td>
                       <div class="Sentence">横手市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">福島市付近　米沢市付近　山形市付近　新庄市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">関越自動車道</div>
                     </td>
                     <td>
                       <div class="Sentence">新潟線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">東京都</div>
                     </td>
                     <td>
                       <div class="Sentence">新潟市</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">川越市　本庄市</div>
                     </td>
                     <td>
@@ -1183,7 +1183,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">常磐自動車道</div>
                     </td>
                     <td>
@@ -1192,24 +1192,24 @@
                     <td>
                       <div class="Sentence">仙台市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">柏市　土浦市　水戸市　いわき市　相馬市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">東関東自動車道</div>
                     </td>
                     <td>
                       <div class="Sentence">館山線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">東京都</div>
                     </td>
                     <td>
                       <div class="Sentence">館山市</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">習志野市</div>
                     </td>
                     <td>
@@ -1228,7 +1228,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">北関東自動車道</div>
                     </td>
                     <td>
@@ -1237,24 +1237,24 @@
                     <td>
                       <div class="Sentence">那珂湊市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">前橋市付近　宇都宮市付近　水戸市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">中央自動車道</div>
                     </td>
                     <td>
                       <div class="Sentence">富士吉田線</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">東京都</div>
                     </td>
                     <td>
                       <div class="Sentence">富士吉田市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">神奈川県津久井郡相模湖町　大月市</div>
                     </td>
                   </tr>
@@ -1265,7 +1265,7 @@
                     <td>
                       <div class="Sentence">西宮市</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">神奈川県津久井郡相模湖町　大月市　甲府市　諏訪市</div>
                     </td>
                     <td>
@@ -1284,7 +1284,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">第一東海自動車道</div>
                     </td>
                     <td>
@@ -1293,12 +1293,12 @@
                     <td>
                       <div class="Sentence">小牧市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">横浜市　静岡市　浜松市　豊橋市　名古屋市</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">東海北陸自動車道</div>
                     </td>
                     <td>
@@ -1307,12 +1307,12 @@
                     <td>
                       <div class="Sentence">砺波市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">関市　岐阜県大野郡荘川村付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">第二東海自動車道</div>
                     </td>
                     <td>
@@ -1321,12 +1321,12 @@
                     <td>
                       <div class="Sentence">名古屋市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">厚木市付近　静岡市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">中部横断自動車道</div>
                     </td>
                     <td>
@@ -1335,12 +1335,12 @@
                     <td>
                       <div class="Sentence">佐久市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">山梨県中巨摩郡甲西町付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">北陸自動車道</div>
                     </td>
                     <td>
@@ -1349,24 +1349,24 @@
                     <td>
                       <div class="Sentence">滋賀県坂田郡米原町</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">上越市　富山市　金沢市　福井市　敦賀市</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">近畿自動車道</div>
                     </td>
                     <td>
                       <div class="Sentence">伊勢線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">名古屋市</div>
                     </td>
                     <td>
                       <div class="Sentence">伊勢市</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">四日市市</div>
                     </td>
                     <td>
@@ -1394,7 +1394,7 @@
                     <td>
                       <div class="Sentence">神戸市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四日市市付近　大津市付近　京都市付近　高槻市付近</div>
                     </td>
                   </tr>
@@ -1408,7 +1408,7 @@
                     <td>
                       <div class="Sentence">三重県多気郡勢和村</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">和歌山市　田辺市付近　新宮市付近　尾鷲市付近</div>
                     </td>
                   </tr>
@@ -1422,12 +1422,12 @@
                     <td>
                       <div class="Sentence">敦賀市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三田市付近　福知山市　舞鶴市　小浜市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">中国縦貫自動車道</div>
                     </td>
                     <td>
@@ -1436,12 +1436,12 @@
                     <td>
                       <div class="Sentence">下関市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">兵庫県加東郡滝野町　津山市　三次市　島根県鹿足郡六日市町　山口市</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">山陽自動車道</div>
                     </td>
                     <td>
@@ -1450,12 +1450,12 @@
                     <td>
                       <div class="Sentence">下関市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">神戸市付近　姫路市付近　岡山市付近　広島市　岩国市付近　山口市　宇部市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">中国横断自動車道</div>
                     </td>
                     <td>
@@ -1467,7 +1467,7 @@
                     <td>
                       <div class="Sentence">鳥取市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">兵庫県佐用郡佐用町付近</div>
                     </td>
                   </tr>
@@ -1481,7 +1481,7 @@
                     <td>
                       <div class="Sentence">境港市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">岡山県真庭郡落合町付近　米子市付近</div>
                     </td>
                   </tr>
@@ -1495,7 +1495,7 @@
                     <td>
                       <div class="Sentence">松江市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三次市付近</div>
                     </td>
                   </tr>
@@ -1509,12 +1509,12 @@
                     <td>
                       <div class="Sentence">浜田市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">広島県山県郡千代田町付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">山陰自動車道</div>
                     </td>
                     <td>
@@ -1523,12 +1523,12 @@
                     <td>
                       <div class="Sentence">美祢市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">米子市付近　松江市付近　浜田市付近　長門市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四国縦貫自動車道</div>
                     </td>
                     <td>
@@ -1537,12 +1537,12 @@
                     <td>
                       <div class="Sentence">大洲市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">徳島県三好郡池田町付近　松山市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四国横断自動車道</div>
                     </td>
                     <td>
@@ -1551,24 +1551,24 @@
                     <td>
                       <div class="Sentence">大洲市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">徳島市　高松市　川之江市付近　高知市付近　須崎市　中村市付近　宇和島市付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">九州縦貫自動車道</div>
                     </td>
                     <td>
                       <div class="Sentence">鹿児島線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">北九州市</div>
                     </td>
                     <td>
                       <div class="Sentence">鹿児島市</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">福岡市　鳥栖市　熊本市　えびの市</div>
                     </td>
                   </tr>
@@ -1581,7 +1581,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">九州横断自動車道</div>
                     </td>
                     <td>
@@ -1593,7 +1593,7 @@
                     <td>
                       <div class="Sentence">大分市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">佐賀市　鳥栖市　甘木市　日田市付近</div>
                     </td>
                   </tr>
@@ -1607,12 +1607,12 @@
                     <td>
                       <div class="Sentence">延岡市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">宮崎県西臼杵郡高千穂町付近</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">東九州自動車道</div>
                     </td>
                     <td>
@@ -1621,7 +1621,7 @@
                     <td>
                       <div class="Sentence">鹿児島市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">行橋市付近　大分市付近　延岡市付近　宮崎市付近　日南市付近　鹿屋市付近</div>
                     </td>
                   </tr>

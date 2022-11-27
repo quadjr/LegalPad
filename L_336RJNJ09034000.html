@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1195,7 +1195,7 @@
                     <td>
                       <div class="Sentence" Num="1">職員の区分</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence" Num="1">１項職員</div>
                     </td>
                     <td>
@@ -1206,7 +1206,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">期間の区分</div>
                     </td>
                     <td>
@@ -1232,7 +1232,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -1258,7 +1258,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１年未満</div>
                     </td>
                     <td>
@@ -1284,7 +1284,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１年以上２年未満</div>
                     </td>
                     <td>
@@ -1310,7 +1310,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２年以上３年未満</div>
                     </td>
                     <td>
@@ -1336,7 +1336,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３年以上４年未満</div>
                     </td>
                     <td>
@@ -1362,7 +1362,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４年以上５年未満</div>
                     </td>
                     <td>
@@ -1388,7 +1388,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">５年以上６年未満</div>
                     </td>
                     <td>
@@ -1414,7 +1414,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">６年以上７年未満</div>
                     </td>
                     <td>
@@ -1440,7 +1440,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７年以上８年未満</div>
                     </td>
                     <td>
@@ -1466,7 +1466,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">８年以上９年未満</div>
                     </td>
                     <td>
@@ -1492,7 +1492,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">９年以上１０年未満</div>
                     </td>
                     <td>
@@ -1518,7 +1518,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０年以上１１年未満</div>
                     </td>
                     <td>
@@ -1544,7 +1544,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１１年以上１２年未満</div>
                     </td>
                     <td>
@@ -1570,7 +1570,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１２年以上１３年未満</div>
                     </td>
                     <td>
@@ -1596,7 +1596,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１３年以上１４年未満</div>
                     </td>
                     <td>
@@ -1622,7 +1622,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１４年以上１５年未満</div>
                     </td>
                     <td>
@@ -1648,7 +1648,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１５年以上１６年未満</div>
                     </td>
                     <td>
@@ -1674,7 +1674,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１６年以上１７年未満</div>
                     </td>
                     <td>
@@ -1700,7 +1700,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１７年以上１８年未満</div>
                     </td>
                     <td>
@@ -1726,7 +1726,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１８年以上１９年未満</div>
                     </td>
                     <td>
@@ -1752,7 +1752,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１９年以上２０年未満</div>
                     </td>
                     <td>
@@ -1778,7 +1778,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２０年以上２１年未満</div>
                     </td>
                     <td>
@@ -1804,7 +1804,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２１年以上２２年未満</div>
                     </td>
                     <td>
@@ -1830,7 +1830,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２２年以上２３年未満</div>
                     </td>
                     <td>
@@ -1856,7 +1856,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２３年以上２４年未満</div>
                     </td>
                     <td>
@@ -1882,7 +1882,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２４年以上２５年未満</div>
                     </td>
                     <td>
@@ -1908,7 +1908,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２５年以上２６年未満</div>
                     </td>
                     <td>
@@ -1934,7 +1934,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２６年以上２７年未満</div>
                     </td>
                     <td>
@@ -1960,7 +1960,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２７年以上２８年未満</div>
                     </td>
                     <td>
@@ -1986,7 +1986,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２８年以上２９年未満</div>
                     </td>
                     <td>
@@ -2012,7 +2012,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２９年以上３０年未満</div>
                     </td>
                     <td>
@@ -2038,7 +2038,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３０年以上３１年未満</div>
                     </td>
                     <td>
@@ -2064,7 +2064,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３１年以上３２年未満</div>
                     </td>
                     <td>
@@ -2090,7 +2090,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３２年以上３３年未満</div>
                     </td>
                     <td>
@@ -2116,7 +2116,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３３年以上３４年未満</div>
                     </td>
                     <td>
@@ -2142,7 +2142,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３４年以上３５年未満</div>
                     </td>
                     <td>
@@ -2168,7 +2168,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="9">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">１　この表において期間の区分欄に掲げる年数は、採用の日又は第４条<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>の職員となつた日以後の期間を示す。</div>
                       <div class="Sentence" Num="3">２　この表において、「１項職員」とは第２条第１項の官職を占める職員を、「２項職員」とは<a class="reference_link" href="#Mp" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>第２項の官職を占める職員を、「３項職員」とは<a class="reference_link" href="#Mp" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>第３項の官職を占める職員をいう。</div>

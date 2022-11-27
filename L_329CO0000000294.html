@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -744,7 +744,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１　掘削機械</div>
                     </td>
                     <td>
@@ -763,7 +763,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">２　基礎工事用機械</div>
                     </td>
                     <td>
@@ -817,13 +817,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">３　トラクター類</div>
                     </td>
                     <td>
                       <div class="Sentence">トラクター</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">自重が三トン以上のもの</div>
                     </td>
                   </tr>
@@ -841,7 +841,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">４　運搬機械</div>
                     </td>
                     <td>
@@ -869,13 +869,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">５　起重機類</div>
                     </td>
                     <td>
                       <div class="Sentence">ジブクレーン</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">つり上げ能力が三トン以上のもの</div>
                     </td>
                   </tr>
@@ -915,7 +915,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">６　ボーリング機械</div>
                     </td>
                     <td>
@@ -945,7 +945,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">７　トンネル機械</div>
                     </td>
                     <td>
@@ -984,7 +984,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">８　整地・締め固め機械</div>
                     </td>
                     <td>
@@ -1016,7 +1016,7 @@
                     <td>
                       <div class="Sentence">ロードローラー</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">自重が八トン以上のもの</div>
                     </td>
                   </tr>
@@ -1035,7 +1035,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">９　砕石・選別機械</div>
                     </td>
                     <td>
@@ -1070,7 +1070,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１０　コンクリート機械</div>
                     </td>
                     <td>
@@ -1121,7 +1121,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１１　舗装機械</div>
                     </td>
                     <td>
@@ -1173,7 +1173,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１２　船舶</div>
                     </td>
                     <td>
@@ -1187,7 +1187,7 @@
                     <td>
                       <div class="Sentence">砕岩船</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">独航機能を有しないもの</div>
                     </td>
                   </tr>
@@ -1215,7 +1215,7 @@
                     <td>
                       <div class="Sentence">土運船</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">鋼製で、独航機能を有しないもの</div>
                     </td>
                   </tr>
@@ -1225,7 +1225,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">１３　その他</div>
                     </td>
                     <td>

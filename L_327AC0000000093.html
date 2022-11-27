@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1926,39 +1926,39 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence" Num="1">在外公館の種類</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">所在国又は所在地</div>
                       </td>
                       <td>
                         <div class="Sentence" Num="1">号別</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">公使</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">一号</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">二号</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">三号</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">四号</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">五号</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence" Num="1">六号</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">　</div>
                       </td>
                       <td>
@@ -1969,15 +1969,15 @@
                       <td>
                         <div class="Sentence" Num="1">　</div>
                       </td>
-                      <td>
+                      <td colspan="3">
                         <div class="Sentence" Num="1">　</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9" colspan="2">
                         <div class="Sentence" Num="1">公使館</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">ニカラグァ</div>
                       </td>
                       <td>
@@ -2003,7 +2003,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">ハイティ</div>
                       </td>
                       <td>
@@ -2029,7 +2029,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">エル・サルヴァドル</div>
                       </td>
                       <td>
@@ -2055,7 +2055,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">パナマ</div>
                       </td>
                       <td>
@@ -2081,7 +2081,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">フィンランド</div>
                       </td>
                       <td>
@@ -2107,7 +2107,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">ルクセンブルグ</div>
                       </td>
                       <td>
@@ -2133,7 +2133,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">ジョルダン</div>
                       </td>
                       <td>
@@ -2159,7 +2159,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">リビア</div>
                       </td>
                       <td>
@@ -2185,7 +2185,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">テュニジア</div>
                       </td>
                       <td>
@@ -2211,10 +2211,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2" colspan="2">
                         <div class="Sentence" Num="1">総領事館</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">プレトリア</div>
                       </td>
                       <td>
@@ -2240,7 +2240,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">ダマスカス</div>
                       </td>
                       <td>
@@ -2266,10 +2266,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">領事館</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence" Num="1">ダッカ</div>
                       </td>
                       <td>
@@ -2672,10 +2672,10 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">在外公館の名称</div>
                         </td>
-                        <td>
+                        <td colspan="12">
                           <div class="Sentence" Num="1">号別</div>
                         </td>
                       </tr>
@@ -2863,10 +2863,10 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">在外公館の名称</div>
                         </td>
-                        <td>
+                        <td colspan="6">
                           <div class="Sentence" Num="1">号別</div>
                         </td>
                       </tr>
@@ -3763,13 +3763,13 @@
                 <div class="TableStructTitle">一　大使館</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">地域</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">名称</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">位置</div>
                     </td>
                   </tr>
@@ -6517,13 +6517,13 @@
                 <div class="TableStructTitle">二　総領事館</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">地域</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">名称</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">位置</div>
                     </td>
                   </tr>
@@ -7479,13 +7479,13 @@
                 <div class="TableStructTitle">三　政府代表部</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">地域</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">名称</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">位置</div>
                     </td>
                   </tr>
@@ -7660,13 +7660,13 @@
                 <div class="TableStructTitle">一　大使館</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">地域</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">所在国</div>
                     </td>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence" Num="1">号別</div>
                     </td>
                   </tr>
@@ -16338,13 +16338,13 @@
                 <div class="TableStructTitle">二　総領事館</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">地域</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">所在地</div>
                     </td>
-                    <td>
+                    <td colspan="10">
                       <div class="Sentence" Num="1">号別</div>
                     </td>
                   </tr>
@@ -18970,13 +18970,13 @@
                 <div class="TableStructTitle">三　政府代表部</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">地域</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">所在地</div>
                     </td>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence" Num="1">号別</div>
                     </td>
                   </tr>

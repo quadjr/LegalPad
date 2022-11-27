@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -170,7 +170,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">算式</div>
                             <div class="Sentence">Ａ＋Ｂ</div>
                             <div class="Sentence">算式の符号</div>
@@ -178,7 +178,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">区分</div>
                           </td>
                           <td>
@@ -186,7 +186,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">水道事業に係るもの</div>
                           </td>
                           <td>
@@ -194,7 +194,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">簡易水道事業に係るもの</div>
                           </td>
                           <td>
@@ -202,7 +202,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">合流式の公共下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -210,7 +210,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">分流式の公共下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -253,7 +253,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">公共下水道事業以外の下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -261,7 +261,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">病院事業に係るもの</div>
                           </td>
                           <td>
@@ -269,7 +269,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">市場事業に係るもの</div>
                           </td>
                           <td>
@@ -277,7 +277,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">空港アクセス鉄道事業に係るもの</div>
                           </td>
                           <td>
@@ -285,12 +285,12 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">Ｂ　国の補助金等を受けて施行する公営企業等に係る施設の災害復旧事業の各事業費の額から当該事業に係る国の補助金等の額及び通常の公費負担額を除いた額の公営企業等ごとの合算額に次の表の左欄に掲げる区分に応じ、それぞれ右欄に掲げる率（平成二十三年度の一般会計補正予算（第３号）により交付される石油等安定供給対策事業費補助金を受けて施行するガス事業に係る施設の災害復旧事業については、三分の一）を乗じて得た額の合算額</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">区分</div>
                           </td>
                           <td>
@@ -298,7 +298,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">公営企業等の事業の規模に相当する額として総務大臣が調査した額（以下この表において「事業規模」という。）の百分の五十までに相当する部分</div>
                           </td>
                           <td>
@@ -306,7 +306,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">事業規模の百分の五十を超え百分の百までに相当する部分</div>
                           </td>
                           <td>
@@ -314,7 +314,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">事業規模の百分の百を超える部分に相当する部分</div>
                           </td>
                           <td>
@@ -332,7 +332,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">区分</div>
                           </td>
                           <td>
@@ -340,7 +340,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">水道事業に係るもの</div>
                           </td>
                           <td>
@@ -348,7 +348,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">簡易水道事業に係るもの</div>
                           </td>
                           <td>
@@ -356,7 +356,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">合流式の公共下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -364,7 +364,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">分流式の公共下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -407,7 +407,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">公共下水道事業以外の下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -415,7 +415,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">市場事業に係るもの</div>
                           </td>
                           <td>
@@ -475,7 +475,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">区分</div>
                           </td>
                           <td>
@@ -483,7 +483,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">水道事業に係るもの</div>
                           </td>
                           <td>
@@ -491,7 +491,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">簡易水道事業に係るもの</div>
                           </td>
                           <td>
@@ -499,7 +499,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">合流式の公共下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -507,7 +507,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">分流式の公共下水道事業のうち、雨水を排除するための事業（東日本大震災（平成二十三年三月十一日に発生した東北地方太平洋沖地震及びこれに伴う原子力発電所の事故による災害をいう。以下同じ。）による地盤沈下に伴い必要となった事業として総務大臣が調査した事業に限る。以下この表において「雨水排水対策事業」という。）に係るもの</div>
                           </td>
                           <td>
@@ -515,7 +515,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">分流式の公共下水道事業に係るもの（雨水排水対策事業を除く。）</div>
                           </td>
                           <td>
@@ -558,7 +558,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">公共下水道事業以外の下水道事業に係るもの</div>
                           </td>
                           <td>
@@ -566,7 +566,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">市場事業に係るもの</div>
                           </td>
                           <td>
@@ -620,7 +620,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">イ　道府県　東日本大震災について、総務大臣が調査した次の表の上欄に掲げる項目ごとの数値にそれぞれ下欄に掲げる額を乗じて得た額の合算額から平成二十三年度分の特別交付税及び震災復興特別交付税の額の算定の基礎に算入された額を控除した額</div>
                           </td>
                         </tr>
@@ -666,7 +666,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">ロ　市町村　東日本大震災について、総務大臣が調査した次の表の上欄に掲げる項目ごとの数値にそれぞれ下欄に掲げる額を乗じて得た額の合算額から平成二十三年度分の特別交付税及び震災復興特別交付税の額の算定の基礎に算入された額を控除した額</div>
                           </td>
                         </tr>

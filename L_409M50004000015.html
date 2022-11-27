@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2327,7 +2327,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">図書の種類</div>
                             </td>
                             <td>
@@ -2335,7 +2335,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">付近見取図</div>
                             </td>
                             <td>
@@ -2343,7 +2343,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">配置図</div>
                             </td>
                             <td>
@@ -2362,7 +2362,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">各階平面図</div>
                             </td>
                             <td>
@@ -2381,7 +2381,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">二面以上の立面図</div>
                             </td>
                             <td>
@@ -2400,7 +2400,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">木造建築物基準計算書</div>
                             </td>
                             <td>
@@ -2409,7 +2409,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">同意証書</div>
                             </td>
                             <td>
@@ -2699,13 +2699,13 @@
                                 <td>
                                   <div class="Sentence">地盤の種類</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">Ｒｇの表の地盤の種類の欄中（一）に掲げる地盤</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">Ｒｇの表の地盤の種類の欄中（二）に掲げる地盤</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">Ｒｇの表の地盤の種類の欄中（三）に掲げる地盤</div>
                                 </td>
                               </tr>
@@ -5971,7 +5971,7 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">図面の種類</div>
                               </td>
                               <td>
@@ -5982,7 +5982,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">防災施設建築物</div>
                               </td>
                               <td>
@@ -6021,7 +6021,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">公共施設</div>
                               </td>
                               <td>
@@ -6967,7 +6967,8 @@
                             <a class="reference_link" href="L_344M50004000054.html#Mp-At_32_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十二条の三</a>の規定は、<a class="reference_link" href="L_409CO0000000324.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
                             <a class="reference_link" href="L_409CO0000000324.html#Mp-At_38-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第一項</a>において準用する<a class="reference_link" href="L_344CO0000000232.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">都市再開発法施行令</a>
                             <a class="reference_link" href="L_344CO0000000232.html#Mp-At_34-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第二項</a>の規定により通知すべき事項について準用する。</div>
-                          <div class="Sentence" Num="2">この場合において、同規則<a class="reference_link" href="#Mp-At_32_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十二条の三</a>中「令第三十四条第二項」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行令第三十八条第一項において準用する令第三十四条第二項」と、「第三十二条第一項第一号から第四号まで」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行規則（平成九年建設省令第十五号）第百条第一項第一号から第四号まで」と、「令第二十五条各号」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行規則第九十条各号」と読み替えるものとする。</div>
+                          <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="L_344CO0000000232.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_344CO0000000232.html#Mp-At_32_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十二条の三</a>中「令第三十四条第二項」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行令第三十八条第一項において準用する令第三十四条第二項」と、「第三十二条第一項第一号から第四号まで」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行規則（平成九年建設省令第十五号）第百条第一項第一号から第四号まで」と、「令第二十五条各号」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行規則第九十条各号」と読み替えるものとする。</div>
                         </div>
                       </div>
                     </div>
@@ -6995,7 +6996,8 @@
                             <a class="reference_link" href="L_344M50004000054.html#Mp-At_34" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条</a>の規定は、<a class="reference_link" href="L_409CO0000000324.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
                             <a class="reference_link" href="L_409CO0000000324.html#Mp-At_38-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第二項</a>において準用する<a class="reference_link" href="L_344CO0000000232.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">都市再開発法施行令</a>
                             <a class="reference_link" href="L_344CO0000000232.html#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>の規定による通知について準用する。</div>
-                          <div class="Sentence" Num="2">この場合において、同規則<a class="reference_link" href="#Mp-At_34" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条</a>中「法第九十四条第五項」とあるのは「密集市街地における防災街区の整備の促進に関する法律（平成九年法律第四十九号）第二百二十七条において準用する法第九十四条第五項」と、「法第八十五条第三項」とあるのは「密集市街地における防災街区の整備の促進に関する法律第二百十八条第三項」と、「令第三十八条第三項」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行令（平成九年政令第三百二十四号）第三十八条第二項において準用する令第三十八条第三項」と読み替えるものとする。</div>
+                          <div class="Sentence" Num="2">この場合において、<a class="reference_link" href="L_344CO0000000232.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_344CO0000000232.html#Mp-At_34" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条</a>中「法第九十四条第五項」とあるのは「密集市街地における防災街区の整備の促進に関する法律（平成九年法律第四十九号）第二百二十七条において準用する法第九十四条第五項」と、「法第八十五条第三項」とあるのは「密集市街地における防災街区の整備の促進に関する法律第二百十八条第三項」と、「令第三十八条第三項」とあるのは「密集市街地における防災街区の整備の促進に関する法律施行令（平成九年政令第三百二十四号）第三十八条第二項において準用する令第三十八条第三項」と読み替えるものとする。</div>
                         </div>
                       </div>
                     </div>
@@ -7087,7 +7089,7 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">図面の種類</div>
                               </td>
                               <td>
@@ -7098,7 +7100,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">特定防災施設建築物</div>
                               </td>
                               <td>

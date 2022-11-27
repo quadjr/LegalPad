@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -19603,10 +19603,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">一</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">第一種低層住居専用地域、第二種低層住居専用地域、第一種中高層住居専用地域、第二種中高層住居専用地域若しくは田園住居地域内の建築物又は第一種住居地域、第二種住居地域若しくは準住居地域内の建築物（四の項に掲げる建築物を除く。）</div>
                     </td>
                     <td>
@@ -19615,7 +19615,7 @@
                     <td>
                       <div class="Sentence" Num="1">二十メートル</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">一・二五</div>
                     </td>
                   </tr>
@@ -19644,10 +19644,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">二</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">近隣商業地域又は商業地域内の建築物</div>
                     </td>
                     <td>
@@ -19656,7 +19656,7 @@
                     <td>
                       <div class="Sentence" Num="1">二十メートル</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">一・五</div>
                     </td>
                   </tr>
@@ -19709,10 +19709,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">三</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">準工業地域内の建築物（四の項に掲げる建築物を除く。）又は工業地域若しくは工業専用地域内の建築物</div>
                     </td>
                     <td>
@@ -19721,7 +19721,7 @@
                     <td>
                       <div class="Sentence" Num="1">二十メートル</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">一・五</div>
                     </td>
                   </tr>
@@ -19767,10 +19767,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">五</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">用途地域の指定のない区域内の建築物</div>
                     </td>
                     <td>
@@ -19779,7 +19779,7 @@
                     <td>
                       <div class="Sentence" Num="1">二十メートル</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">一・二五又は一・五のうち、特定行政庁が土地利用の状況等を考慮し当該区域を区分して都道府県都市計画審議会の議を経て定めるもの</div>
                     </td>
                   </tr>
@@ -19800,7 +19800,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　建築物がこの表（い）欄に掲げる地域、地区又は区域の二以上にわたる場合においては、同欄中「建築物」とあるのは、「建築物の部分」とする。</div>
                       <div class="Sentence" Num="3">二　建築物の敷地がこの表（い）欄に掲げる地域、地区又は区域の二以上にわたる場合における同表（は）欄に掲げる距離の適用に関し必要な事項は、政令で定める。</div>
@@ -19821,13 +19821,13 @@
                     <td>
                       <div class="Sentence" Num="1">（い）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">（ろ）</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">（は）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">（に）</div>
                     </td>
                   </tr>
@@ -19838,7 +19838,7 @@
                     <td>
                       <div class="Sentence" Num="1">地域又は区域</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">制限を受ける建築物</div>
                     </td>
                     <td>
@@ -19855,16 +19855,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">一</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一種低層住居専用地域、第二種低層住居専用地域又は田園住居地域</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">軒の高さが七メートルを超える建築物又は地階を除く階数が三以上の建築物</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">一・五メートル</div>
                     </td>
                     <td>
@@ -19900,16 +19900,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">二</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一種中高層住居専用地域又は第二種中高層住居専用地域</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">高さが十メートルを超える建築物</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">四メートル又は六・五メートル</div>
                     </td>
                     <td>
@@ -19945,16 +19945,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">三</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">第一種住居地域、第二種住居地域、準住居地域、近隣商業地域又は準工業地域</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">高さが十メートルを超える建築物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四メートル又は六・五メートル</div>
                     </td>
                     <td>
@@ -19979,19 +19979,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">四</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">用途地域の指定のない区域</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">イ</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">軒の高さが七メートルを超える建築物又は地階を除く階数が三以上の建築物</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">一・五メートル</div>
                     </td>
                     <td>
@@ -20027,13 +20027,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">ロ</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">高さが十メートルを超える建築物</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">四メートル</div>
                     </td>
                     <td>
@@ -20069,7 +20069,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="8">
                       <div class="Sentence" Num="1">　この表において、平均地盤面からの高さとは、当該建築物が周囲の地面と接する位置の平均の高さにおける水平面からの高さをいうものとする。</div>
                     </td>
                   </tr>

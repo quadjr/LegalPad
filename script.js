@@ -122,23 +122,29 @@ function toggleClicked(el, tag_id, tag_id_full) {
 var toolbar_mode = 'toc';
 
 function toolbarClick(mode, force = false){
-    var el_body = document.getElementById("side_panel");
+    var side_panel = document.getElementById("side_panel");
+    let icon_toc = document.getElementById("icon_toc");
+    let icon_refs = document.getElementById("icon_refs");
 
     if (mode == '' || (!force && mode == toolbar_mode)){
-        el_body.style.setProperty("display", "none");
+        side_panel.style.setProperty("display", "none");
+        icon_refs.style.removeProperty("background-color");
+        icon_toc.style.removeProperty("background-color");
         toolbar_mode = '';
     }else{
-        el_body.style.removeProperty("display");
+        side_panel.style.removeProperty("display");
+        let toc = document.getElementById("toc");
+        let refs = document.getElementById("refs");
         if(mode == 'toc'){
-            let toc = document.getElementById("toc");
             toc.style.removeProperty("display");
-            let refs = document.getElementById("refs");
+            icon_toc.style.setProperty("background-color", "lightgray");
             refs.style.setProperty("display", "none");
+            icon_refs.style.removeProperty("background-color");
         }else{
-            let toc = document.getElementById("toc");
             toc.style.setProperty("display", "none");
-            let refs = document.getElementById("refs");
+            icon_toc.style.removeProperty("background-color");
             refs.style.removeProperty("display");
+            icon_refs.style.setProperty("background-color", "lightgray");
         }
         toolbar_mode = mode;
     }
@@ -229,9 +235,10 @@ function loadFinished(){
                     div.className = "ref_box";
                     div.id = "ref_box_" + key;
                     div.href = "#ref_" + key;
+                    div.title = "被引用（" + refs[key].length + "件）";
                     div.onclick = function(){
                         if(refArrowClicked(key, true)){
-                            toolbarClick("link", true);
+                            toolbarClick("refs", true);
                         }
                     }
                     // div.innerHTML = refs[key].length;
@@ -383,5 +390,7 @@ function notscroll(event) {
 
 if(window == window.parent){
     document.addEventListener("wheel", notscroll, { passive: false });
+    let icon_toc = document.getElementById("icon_toc");
+    icon_toc.style.setProperty("background-color", "lightgray");
 }
 window.addEventListener('load', loadFinished);

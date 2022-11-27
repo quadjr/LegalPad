@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2485,7 +2485,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="4">
                               <div class="Sentence" Num="1">高圧ガスの種類</div>
                             </td>
                             <td>
@@ -2493,10 +2493,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">圧縮ガス</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">アセチレンガス</div>
                             </td>
                             <td>
@@ -2504,7 +2504,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">アセチレンガス以外のガス</div>
                             </td>
                             <td>
@@ -2512,7 +2512,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="4">
                               <div class="Sentence" Num="1">ＳＧ容器に充填するガス</div>
                             </td>
                             <td>
@@ -2520,7 +2520,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="4">
                               <div class="Sentence" Num="1">超低温容器、低温容器及び液化天然ガス自動車燃料装置用容器に充填する液化ガス</div>
                             </td>
                             <td>
@@ -2528,10 +2528,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="79">
                               <div class="Sentence" Num="1">液化ガス（超低温容器、低温容器及び液化天然ガス自動車燃料装置用容器に充填するものを除く。）</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化エチレン</div>
                             </td>
                             <td>
@@ -2539,7 +2539,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化フルオロカーボン十三</div>
                             </td>
                             <td>
@@ -2547,7 +2547,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化炭酸ガス</div>
                             </td>
                             <td>
@@ -2555,7 +2555,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化亜酸化窒素</div>
                             </td>
                             <td>
@@ -2563,7 +2563,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化エタン</div>
                             </td>
                             <td>
@@ -2571,7 +2571,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化六ふつ化硫黄</div>
                             </td>
                             <td>
@@ -2579,7 +2579,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化炭酸ガスに液化酸化エチレン又は液化亜酸化窒素を添加したもの</div>
                             </td>
                             <td>
@@ -2587,7 +2587,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化四ふつ化エチレン</div>
                             </td>
                             <td>
@@ -2606,7 +2606,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化キセノン</div>
                             </td>
                             <td>
@@ -2625,7 +2625,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化塩化水素</div>
                             </td>
                             <td>
@@ -2644,7 +2644,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化臭化水素</div>
                             </td>
                             <td>
@@ -2663,7 +2663,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化硫化水素</div>
                             </td>
                             <td>
@@ -2682,7 +2682,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">ＦＣ三類容器に充填するガス</div>
                             </td>
                             <td>
@@ -2693,7 +2693,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン十三Ｂ一</div>
                             </td>
                             <td>
@@ -2712,7 +2712,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">ＦＣ二類容器に充填するガス</div>
                             </td>
                             <td>
@@ -2723,7 +2723,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン五百二</div>
                             </td>
                             <td>
@@ -2742,7 +2742,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化プロピレン</div>
                             </td>
                             <td>
@@ -2761,7 +2761,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">ＦＣ一類容器に充填するガス</div>
                             </td>
                             <td>
@@ -2772,7 +2772,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化アンモニア</div>
                             </td>
                             <td>
@@ -2791,10 +2791,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6">
                               <div class="Sentence" Num="1">液化石油ガス</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">温度四十八度における圧力が一・五三メガパスカルを超え一・八二メガパスカル以下のもの</div>
                             </td>
                             <td>
@@ -2813,7 +2813,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">温度四十八度における圧力が〇・八八メガパスカルを超え一・五三メガパスカル以下のもの</div>
                             </td>
                             <td>
@@ -2832,7 +2832,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">温度四十八度における圧力が〇・八八メガパスカル以下のもの</div>
                             </td>
                             <td>
@@ -2851,7 +2851,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン二十二</div>
                             </td>
                             <td>
@@ -2870,7 +2870,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化プロパン</div>
                             </td>
                             <td>
@@ -2889,7 +2889,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン百十五</div>
                             </td>
                             <td>
@@ -2908,7 +2908,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化塩素</div>
                             </td>
                             <td>
@@ -2927,7 +2927,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン五百</div>
                             </td>
                             <td>
@@ -2946,7 +2946,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化シクロプロパン</div>
                             </td>
                             <td>
@@ -2965,7 +2965,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化メチルエーテル</div>
                             </td>
                             <td>
@@ -2984,7 +2984,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン十二</div>
                             </td>
                             <td>
@@ -3003,7 +3003,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン百五十二ａ</div>
                             </td>
                             <td>
@@ -3022,7 +3022,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化クロルメチル</div>
                             </td>
                             <td>
@@ -3041,7 +3041,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化亜硫酸ガス</div>
                             </td>
                             <td>
@@ -3060,7 +3060,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化塩化ビニル</div>
                             </td>
                             <td>
@@ -3079,7 +3079,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化モノメチルアミン</div>
                             </td>
                             <td>
@@ -3098,7 +3098,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化ブタジエン</div>
                             </td>
                             <td>
@@ -3117,7 +3117,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化酸化エチレン</div>
                             </td>
                             <td>
@@ -3136,7 +3136,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化ブタン</div>
                             </td>
                             <td>
@@ -3155,7 +3155,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボンＣ三百十八</div>
                             </td>
                             <td>
@@ -3174,7 +3174,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化ブチレン</div>
                             </td>
                             <td>
@@ -3193,7 +3193,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化トリメチルアミン</div>
                             </td>
                             <td>
@@ -3212,7 +3212,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化ジメチルアミン</div>
                             </td>
                             <td>
@@ -3231,7 +3231,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">液化フルオロカーボン百十四</div>
                             </td>
                             <td>
@@ -3250,7 +3250,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">液化シアン化水素</div>
                             </td>
                             <td>
@@ -3258,7 +3258,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">その他のガス</div>
                             </td>
                             <td>
@@ -3277,7 +3277,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="5">
                               <div class="Sentence" Num="1">備考</div>
                               <div class="Sentence" Num="2">Ａは、内容積が五百リットルを超える容器であつて、その外面を厚さ五十ミリメートル（内容積が四千リットルを超える容器については、百ミリメートル）以上のコルクで被覆してあるもの又はこれと同等以上の断熱の措置を講じてあるもの及び内容積が五百リットル以下の容器とし、Ｂは、その他の容器とする。</div>
                             </td>
@@ -8164,7 +8164,8 @@
                 <div class="ParagraphSentence">
                   <div class="Sentence" Num="1">この省令は、昭和四十二年十一月十五日から施行する。</div>
                   <div class="Sentence" Num="2">ただし、<a class="reference_link" href="L_341M50000400050.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">容器保安規則</a>
-                    <a class="reference_link" href="L_341M50000400050.html#Mp-At_40-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条第三号</a>の改正規定は昭和四十三年一月一日から、同規則第四十三条の改正規定は同年五月一日から施行する。</div>
+                    <a class="reference_link" href="L_341M50000400050.html#Mp-At_40-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条第三号</a>の改正規定は昭和四十三年一月一日から、<a class="reference_link" href="L_341M50000400050.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                    <a class="reference_link" href="L_341M50000400050.html#Mp-At_43" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条</a>の改正規定は同年五月一日から施行する。</div>
                 </div>
               </div>
             </div>
@@ -9272,10 +9273,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">製造する容器等の区分</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">容器等事業区分</div>
                     </td>
                   </tr>
@@ -9289,7 +9290,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">鋼製継目なし容器</div>
                     </td>
                     <td>
@@ -9316,7 +9317,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">アルミニウム合金製継目なし容器</div>
                     </td>
                     <td>

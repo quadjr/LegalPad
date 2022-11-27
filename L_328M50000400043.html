@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2538,13 +2538,13 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">武器の種類</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">工作のための設備</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">検査のための設備</div>
                         </td>
                       </tr>
@@ -2587,7 +2587,7 @@
                         <td>
                           <div class="Sentence">小銃</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">深孔ボール盤</div>
                           <div class="Sentence">銃身リーマ盤</div>
                           <div class="Sentence">銃身ライフル盤（切削により製造する場合に限る。）</div>
@@ -2604,7 +2604,7 @@
                           <div class="Sentence">立削盤</div>
                           <div class="Sentence">形削盤</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">かたさ試験機</div>
                           <div class="Sentence">衝撃値試験機</div>
                           <div class="Sentence">引張強さ試験機</div>
@@ -2639,7 +2639,7 @@
                           <div class="Sentence">砲身ホーニング盤又は銃身リーマ盤</div>
                           <div class="Sentence">砲身ライフル盤</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">旋盤</div>
                           <div class="Sentence">ボール盤</div>
                           <div class="Sentence">中ぐり盤</div>
@@ -2650,7 +2650,7 @@
                           <div class="Sentence">平削盤</div>
                           <div class="Sentence">溶接装置</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">金属顕微鏡</div>
                           <div class="Sentence">かたさ試験機</div>
                           <div class="Sentence">衝撃値試験機</div>
@@ -2666,7 +2666,7 @@
                         <td>
                           <div class="Sentence">中口径砲</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">砲身中ぐり盤</div>
                           <div class="Sentence">砲身ホーニング盤</div>
                           <div class="Sentence">砲身ライフル盤</div>
@@ -2765,7 +2765,7 @@
                         <td>
                           <div class="Sentence">爆薬用ひよう量機</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">化学分析装置</div>
                           <div class="Sentence">感度試験機</div>
                           <div class="Sentence">安定度試験機</div>
@@ -2806,7 +2806,7 @@
                         <td>
                           <div class="Sentence">爆薬用ひよう量機</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">化学分析装置</div>
                           <div class="Sentence">感度試験機</div>
                           <div class="Sentence">安定度試験機</div>
@@ -3013,7 +3013,7 @@
                           <div class="Sentence">銃身ライフル盤</div>
                           <div class="Sentence">銃身ラップ盤</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">旋盤</div>
                           <div class="Sentence">ボール盤</div>
                           <div class="Sentence">フライス盤</div>
@@ -3032,7 +3032,7 @@
                         <td>
                           <div class="Sentence">小銃の銃身</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">深孔ボール盤</div>
                           <div class="Sentence">銃身リーマ盤</div>
                           <div class="Sentence">銃身ライフル盤（切削により製造する場合に限る。）</div>
@@ -3040,7 +3040,7 @@
                           <div class="Sentence">銃身ラップ盤（切削により製造する場合に限る。）</div>
                           <div class="Sentence">冷間鍛造機（鍛造により製造する場合に限る。）</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">かたさ試験機</div>
                           <div class="Sentence">衝撃値試験機</div>
                           <div class="Sentence">引張強さ試験機</div>
@@ -3059,7 +3059,7 @@
                         <td>
                           <div class="Sentence">けん銃の機関部体</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">
                   </div>
                         </td>
@@ -3071,7 +3071,7 @@
                           <div class="Sentence">形削盤</div>
                           <div class="Sentence">陽極酸化被膜処理設備</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">かたさ試験機</div>
                           <div class="Sentence">衝撃値試験機</div>
                           <div class="Sentence">引張強さ試験機</div>
@@ -3146,7 +3146,7 @@
                           <div class="Sentence">立削盤</div>
                           <div class="Sentence">形削盤</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">金属顕微鏡</div>
                           <div class="Sentence">かたさ試験機</div>
                           <div class="Sentence">衝撃値試験機</div>
@@ -3161,13 +3161,13 @@
                         <td>
                           <div class="Sentence">中口径砲の砲身</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">砲身中ぐり盤</div>
                           <div class="Sentence">砲身ホーニング盤</div>
                           <div class="Sentence">砲身ライフル盤</div>
                           <div class="Sentence">砲身旋盤</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">旋盤</div>
                           <div class="Sentence">ボール盤</div>
                           <div class="Sentence">フライス盤</div>
@@ -3210,7 +3210,7 @@
                         <td>
                           <div class="Sentence">小口径砲の砲架</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">
                   </div>
                         </td>
@@ -3224,7 +3224,7 @@
                           <div class="Sentence">形削盤</div>
                           <div class="Sentence">溶接装置</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">金属顕微鏡</div>
                           <div class="Sentence">かたさ試験機</div>
                           <div class="Sentence">衝撃値試験機</div>
@@ -3238,7 +3238,7 @@
                         <td>
                           <div class="Sentence">中口径砲の砲架</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">旋盤</div>
                           <div class="Sentence">ボール盤</div>
                           <div class="Sentence">中ぐり盤</div>
@@ -3296,7 +3296,7 @@
                           <div class="Sentence">銅環締付け機</div>
                           <div class="Sentence">旋盤</div>
                         </td>
-                        <td>
+                        <td rowspan="6">
                           <div class="Sentence">かたさ試験機</div>
                           <div class="Sentence">衝撃値試験機</div>
                           <div class="Sentence">引張強さ試験機</div>
@@ -3309,10 +3309,10 @@
                         <td>
                           <div class="Sentence">小型搾出弾体</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">搾出プレス</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">加熱炉</div>
                           <div class="Sentence">機械プレス又は液圧プレス</div>
                           <div class="Sentence">熱処理設備</div>
@@ -3388,18 +3388,18 @@
                         <td>
                           <div class="Sentence">中型薬きよう</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">圧底プレス（金属製のものを製造する場合に限る。）</div>
                           <div class="Sentence">きよう口絞りプレス（金属製のものを製造する場合に限る。）</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">熱処理設備（金属製のものを製造する場合に限る。）</div>
                           <div class="Sentence">機械プレス又は液圧プレス（金属製のものを製造する場合に限る。）</div>
                           <div class="Sentence">きよう口焼鈍炉（金属製のものを製造する場合に限る。）</div>
                           <div class="Sentence">薬きよう旋盤（金属製のものを製造する場合に限る。）</div>
                           <div class="Sentence">圧搾装置（焼尽製のものを製造する場合に限る。）</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">かたさ試験機（金属製のものを製造する場合に限る。）</div>
                           <div class="Sentence">引張強さ試験機（金属製のものを製造する場合に限る。）</div>
                           <div class="Sentence">ブロックゲージ</div>

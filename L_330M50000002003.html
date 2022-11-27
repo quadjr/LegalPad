@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1333,7 +1333,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">備考　調査内容のうち、色についての調査は、国土交通大臣の定める色名帳による。</div>
                     </td>
                   </tr>
@@ -1348,7 +1348,7 @@
                     <td>
                       <div class="Sentence">調査事項</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">調査内容</div>
                     </td>
                   </tr>
@@ -1356,7 +1356,7 @@
                     <td>
                       <div class="Sentence">一　土地利用の状況</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（一）　田</div>
                       <div class="Sentence">作数区分（一毛作、二毛作又は多毛作）を、次の内容の下に括弧で記入する。</div>
                       <div class="Sentence">乾田</div>
@@ -1389,10 +1389,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">二　植生</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（一）　草地及び林地においては、断面調査箇所を中心として、十メートル四方の正方形を区画して、そのうちの高木階、従高木階、<ruby>灌<rt>かん</rt>
                         </ruby>木階、草本階（高径層及び低径層）、地表階（つる性植物及び着生植物等）に分け、種別に優占度を記載し、その他高木及び従高木にあつては、樹高及び直径を測定する。</div>
                       <div class="Sentence">（二）　優占度は、次の階級とし、出現の仕方に特徴がある場合には、群状、団状及び単位状等と付記する。</div>
@@ -1483,7 +1483,7 @@
                     <td>
                       <div class="Sentence">三　地形</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（一）　分類</div>
                       <div class="Sentence">１　山地丘陵地</div>
                       <div class="Sentence">山頂緩斜面</div>
@@ -1524,7 +1524,7 @@
                     <td>
                       <div class="Sentence">四　地質</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（一）　分類</div>
                       <div class="Sentence">固結堆積物</div>
                       <div class="Sentence">礫岩、砂岩、泥岩及び珪岩質岩石（角石、チヤート及び珪岩）</div>
@@ -1558,7 +1558,7 @@
                     <td>
                       <div class="Sentence">五　傾斜の角度及び方位</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（一）　最大傾斜の向き、角度及び同じ傾斜角をなす斜面の長さ</div>
                       <div class="Sentence">（二）　階段耕作の場合には、右のほか、法面の高さ、法面の状態（石垣、粘土又は草生等）及び耕地面の最大の幅並びに傾斜角度</div>
                     </td>
@@ -1567,7 +1567,7 @@
                     <td>
                       <div class="Sentence">六　付近見取図</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">調査地点を中心として周辺との高さの関係、傾斜の相違、近接する道路、水流及びかんがい水路との関係その他参考となるもの。</div>
                     </td>
                   </tr>
@@ -1575,7 +1575,7 @@
                     <td>
                       <div class="Sentence">七　その他必要な事項</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">天気については、調査当日又はそれまでの天気（たとえば、一週間晴天続き、三日前豪雨等）で土じように影響を及ぼしたと思われる天気の概況</div>
                     </td>
                   </tr>
@@ -1587,15 +1587,15 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">次の表のうち田、畑、草地及び林地について、○印を付したものをその調査地点の調査内容とする。ただし、田について裏作のある場合には、裏作の平年反当を調査項目に加える。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">調査地点</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">調査内容</div>
                     </td>
                   </tr>
@@ -1614,7 +1614,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="25">
                       <div class="Sentence">調査項目</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -5338,13 +5338,13 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">学校</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">免許の対象資格</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">無線通信に関する科目</div>
                           </td>
                         </tr>
@@ -5357,10 +5357,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="11">
                             <div class="Sentence">大学（短期大学を除く。）</div>
                           </td>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">第二級海上特殊無線技士</div>
                           </td>
                           <td>
@@ -5396,7 +5396,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">第三級海上特殊無線技士</div>
                           </td>
                           <td>
@@ -5424,7 +5424,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">第一級陸上特殊無線技士</div>
                           </td>
                           <td>
@@ -5460,10 +5460,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="11">
                             <div class="Sentence">短期大学（<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による専門職大学の前期課程を含む。）又は高等専門学校</div>
                           </td>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">第二級海上特殊無線技士</div>
                           </td>
                           <td>
@@ -5499,7 +5499,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">第三級海上特殊無線技士</div>
                           </td>
                           <td>
@@ -5527,7 +5527,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">第二級陸上特殊無線技士</div>
                           </td>
                           <td>
@@ -5563,10 +5563,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">高等学校又は中等教育学校</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">第二級海上特殊無線技士</div>
                           </td>
                           <td>
@@ -5588,7 +5588,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">第三級陸上特殊無線技士</div>
                           </td>
                           <td>
@@ -8657,7 +8657,9 @@
                 <div id="Sp_平成二年一一月二一日郵政省令第六二号-At_3-Pr_2" class="Paragraph" Num="2">
                   <div class="ParagraphNum">２</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">前項の場合において、<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">無線従事者規則</a>の全部を改正する省令（<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成二年郵政省令第十八号</a>）による改正前の従事者規則の規定により、昭和五十八年三月三十一日以前に実施した第一級無線通信士の国家試験に合格し、又はその本試験において電気通信術の試験に合格点を得た者（同日以前に同規則第二十一条の規定により第一級無線通信士の資格について認定を受けた学校等を卒業した者で同規則第九条の規定により第一級無線通信士の国家試験における電気通信術の試験を免除されたものを含む。）で第一級無線通信士の資格の国家試験に合格したものの免許証については、その記載事項中「、第一級無線電子証明書並びに航空移動業務及び航空移動衛星業務に関する第二級無線電信通信士証明書」とあるのは、「、第一級無線電信通信士証明書及び第一級無線電子証明書」とする。</div>
+                    <div class="Sentence">前項の場合において、<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">無線従事者規則</a>の全部を改正する省令（<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成二年郵政省令第十八号</a>）による改正前の従事者規則の規定により、昭和五十八年三月三十一日以前に実施した第一級無線通信士の国家試験に合格し、又はその本試験において電気通信術の試験に合格点を得た者（同日以前に<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                      <a class="reference_link" href="L_402M50001000018.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の規定により第一級無線通信士の資格について認定を受けた学校等を卒業した者で<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                      <a class="reference_link" href="L_402M50001000018.html#Mp-At_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条</a>の規定により第一級無線通信士の国家試験における電気通信術の試験を免除されたものを含む。）で第一級無線通信士の資格の国家試験に合格したものの免許証については、その記載事項中「、第一級無線電子証明書並びに航空移動業務及び航空移動衛星業務に関する第二級無線電信通信士証明書」とあるのは、「、第一級無線電信通信士証明書及び第一級無線電子証明書」とする。</div>
                   </div>
                 </div>
               </div>
@@ -8853,7 +8855,9 @@
               <div id="Sp_平成八年一二月一二日郵政省令第七七号-Pr_3" class="Paragraph" Num="3">
                 <div class="ParagraphNum">３</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">前項の場合において、<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">無線従事者規則</a>の全部を改正する省令（<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成二年郵政省令第十八号</a>）による改正前の従事者規則の規定により、昭和五十八年三月三十一日以前に実施した第一級無線通信士の国家試験に合格し、又はその本試験において電気通信術の試験に合格点を得た者（同日以前に同令第二十一条の規定により第一級無線通信士の資格について認定を受けた学校等を卒業した者で同令第九条の規定により第一級無線通信士の国家試験における電気通信術の試験を免除されたものを含む。）で第一級無線通信士の資格の国家試験に合格したものの免許証については、その記載事項中「、第一級無線電子証明書並びに航空移動業務及び航空移動衛星業務に関する第二級無線電信通信士証明書」とあるのは「、第一級無線電信通信士証明書及び第一級無線電子証明書」とする。</div>
+                  <div class="Sentence">前項の場合において、<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">無線従事者規則</a>の全部を改正する省令（<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成二年郵政省令第十八号</a>）による改正前の従事者規則の規定により、昭和五十八年三月三十一日以前に実施した第一級無線通信士の国家試験に合格し、又はその本試験において電気通信術の試験に合格点を得た者（同日以前に<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                    <a class="reference_link" href="L_402M50001000018.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の規定により第一級無線通信士の資格について認定を受けた学校等を卒業した者で<a class="reference_link" href="L_402M50001000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                    <a class="reference_link" href="L_402M50001000018.html#Mp-At_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条</a>の規定により第一級無線通信士の国家試験における電気通信術の試験を免除されたものを含む。）で第一級無線通信士の資格の国家試験に合格したものの免許証については、その記載事項中「、第一級無線電子証明書並びに航空移動業務及び航空移動衛星業務に関する第二級無線電信通信士証明書」とあるのは「、第一級無線電信通信士証明書及び第一級無線電子証明書」とする。</div>
                 </div>
               </div>
             </div>

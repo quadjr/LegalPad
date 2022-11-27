@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1360,7 +1360,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">主要部品の材料として銅合金を使用している水栓その他給水装置の末端に設置されている給水用具の浸出液に係る基準にあっては、この表鉛及びその化合物の項中「〇・〇〇一ｍｇ／ｌ」とあるのは「〇・〇〇七ｍｇ／ｌ」と、亜鉛及びその化合物の項中「〇・一ｍｇ／ｌ」とあるのは「〇・九七ｍｇ／ｌ」と、銅及びその化合物の項中「〇・一ｍｇ／ｌ」とあるのは「〇・九八ｍｇ／ｌ」とする。</div>
                     </td>
@@ -1417,7 +1417,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">１　浴槽に給水する給水装置（水受け部と吐水口が一体の構造であり、かつ、水受け部の越流面と吐水口の間が分離されていることにより水の逆流を防止する構造の給水用具（この表及び次表において「吐水口一体型給水用具」という。）を除く。）にあっては、この表下欄中「二五ミリメートル」とあり、又は「四〇ミリメートル」とあるのは、「五〇ミリメートル」とする。</div>
                       <div class="Sentence" Num="3">２　プール等の水面が特に波立ちやすい水槽並びに事業活動に伴い洗剤又は薬品を入れる水槽及び容器に給水する給水装置（吐水口一体型給水用具を除く。）にあっては、この表下欄中「二五ミリメートル」とあり、「四〇ミリメートル」とあり、又は「五〇ミリメートル」とあるのは、「二〇〇ミリメートル」とする。</div>
@@ -1431,88 +1431,88 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3" Valign="top">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">越流面から吐水口の最下端までの垂直距離</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3" Valign="top">
                       <div class="Sentence">近接壁の影響がない場合</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（１．７×ｄ＋５）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7" Valign="top">
                       <div class="Sentence">近接壁の影響がある場合</div>
                     </td>
-                    <td>
+                    <td rowspan="3" Valign="top">
                       <div class="Sentence">近接壁が一面の場合</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">壁からの離れが（３×Ｄ）ミリメートル以下のもの</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（３×ｄ）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">壁からの離れが（３×Ｄ）ミリメートルを超え（５×Ｄ）ミリメートル以下のもの</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（２×ｄ＋５）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">壁からの離れが（５×Ｄ）ミリメートルを超えるもの</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（１．７×ｄ＋５）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4" Valign="top">
                       <div class="Sentence">近接壁が二面の場合</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">壁からの離れが（４×Ｄ）ミリメートル以下のもの</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（３．５×ｄ）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">壁からの離れが（４×Ｄ）ミリメートルを超え（６×Ｄ）ミリメートル以下のもの</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（３×ｄ）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">壁からの離れが（６×Ｄ）ミリメートルを超え（７×Ｄ）ミリメートル以下のもの</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（２×ｄ＋５）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">壁からの離れが（７×Ｄ）ミリメートルを超えるもの</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">（１．７×ｄ＋５）ミリメートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4" Valign="top">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">１　Ｄ：吐水口の内径（単位　ミリメートル）</div>
                       <div class="Sentence">ｄ：有効開口の内径（単位　ミリメートル）</div>

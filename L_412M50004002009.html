@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -946,10 +946,10 @@
                     <td>
                       <div class="Sentence" Num="1">補助金等名</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">処分制限財産の名称等</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">処分制限期間（年）</div>
                     </td>
                   </tr>
@@ -963,21 +963,21 @@
                     <td>
                       <div class="Sentence" Num="1">財産名</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">構造規格等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">水防警報施設費補助金</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">水防警報活動拠点用</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">水防活動拠点施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨造</div>
                     </td>
                     <td>
@@ -988,7 +988,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -996,7 +996,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">雪寒地域道路事業費補助（建設機械整備費補助に限る。）</div>
                     </td>
                     <td>
@@ -1005,7 +1005,7 @@
                     <td>
                       <div class="Sentence" Num="1">除雪ドーザ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1019,7 +1019,7 @@
                     <td>
                       <div class="Sentence" Num="1">除雪グレーダ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1033,7 +1033,7 @@
                     <td>
                       <div class="Sentence" Num="1">除雪トラック</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1047,7 +1047,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロータリ式除雪車</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1061,7 +1061,7 @@
                     <td>
                       <div class="Sentence" Num="1">スノーローダ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1078,7 +1078,7 @@
                     <td>
                       <div class="Sentence" Num="1">スノープラウ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1095,7 +1095,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロータリ式除雪装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1112,7 +1112,7 @@
                     <td>
                       <div class="Sentence" Num="1">除雪機械の格納庫</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨造</div>
                     </td>
                     <td>
@@ -1129,7 +1129,7 @@
                     <td>
                       <div class="Sentence" Num="1">雪上車</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1146,7 +1146,7 @@
                     <td>
                       <div class="Sentence" Num="1">凍結防止剤散布機</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1154,7 +1154,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">下水道事業費補助</div>
                     </td>
                     <td>
@@ -1163,7 +1163,7 @@
                     <td>
                       <div class="Sentence" Num="1">管理棟（通常の環境）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート</div>
                     </td>
                     <td>
@@ -1177,7 +1177,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造</div>
                     </td>
                     <td>
@@ -1185,13 +1185,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">建物付属設備</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">電気設備（照明設備を含む）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1202,7 +1202,7 @@
                     <td>
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1219,7 +1219,7 @@
                     <td>
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1236,7 +1236,7 @@
                     <td>
                       <div class="Sentence" Num="1">昇降機設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1253,7 +1253,7 @@
                     <td>
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1270,7 +1270,7 @@
                     <td>
                       <div class="Sentence" Num="1">エスカレーター</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1287,7 +1287,7 @@
                     <td>
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -1304,7 +1304,7 @@
                     <td>
                       <div class="Sentence" Num="1">前掲以外</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -1321,7 +1321,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1338,7 +1338,7 @@
                     <td>
                       <div class="Sentence" Num="1">揚水施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1355,7 +1355,7 @@
                     <td>
                       <div class="Sentence" Num="1">除砂施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1372,7 +1372,7 @@
                     <td>
                       <div class="Sentence" Num="1">沈澱施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1389,7 +1389,7 @@
                     <td>
                       <div class="Sentence" Num="1">水処理施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1406,7 +1406,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥処理施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1423,7 +1423,7 @@
                     <td>
                       <div class="Sentence" Num="1">管渠</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1440,7 +1440,7 @@
                     <td>
                       <div class="Sentence" Num="1">桝</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1457,7 +1457,7 @@
                     <td>
                       <div class="Sentence" Num="1">取り付け管</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1474,7 +1474,7 @@
                     <td>
                       <div class="Sentence" Num="1">マンホール</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1491,7 +1491,7 @@
                     <td>
                       <div class="Sentence" Num="1">駆体</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1508,7 +1508,7 @@
                     <td>
                       <div class="Sentence" Num="1">蓋</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鋳鉄（車道部）</div>
                     </td>
                     <td>
@@ -1525,7 +1525,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鋳鉄（その他）</div>
                     </td>
                     <td>
@@ -1542,7 +1542,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄筋コンクリート</div>
                     </td>
                     <td>
@@ -1550,16 +1550,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">機械及び装置</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">沈砂池設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1570,7 +1570,7 @@
                     <td>
                       <div class="Sentence" Num="1">スクリーンかす設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1587,7 +1587,7 @@
                     <td>
                       <div class="Sentence" Num="1">沈砂設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1604,7 +1604,7 @@
                     <td>
                       <div class="Sentence" Num="1">ゲート設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1621,7 +1621,7 @@
                     <td>
                       <div class="Sentence" Num="1">ポンプ設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1638,7 +1638,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚水ポンプ設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1655,7 +1655,7 @@
                     <td>
                       <div class="Sentence" Num="1">雨水ポンプ設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1672,7 +1672,7 @@
                     <td>
                       <div class="Sentence" Num="1">調整池・滞水池設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1689,7 +1689,7 @@
                     <td>
                       <div class="Sentence" Num="1">水処理設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1706,7 +1706,7 @@
                     <td>
                       <div class="Sentence" Num="1">最初沈澱池設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1723,7 +1723,7 @@
                     <td>
                       <div class="Sentence" Num="1">反応タンク設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1740,7 +1740,7 @@
                     <td>
                       <div class="Sentence" Num="1">最終沈澱池設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1757,7 +1757,7 @@
                     <td>
                       <div class="Sentence" Num="1">消毒設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1774,7 +1774,7 @@
                     <td>
                       <div class="Sentence" Num="1">用水設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1791,7 +1791,7 @@
                     <td>
                       <div class="Sentence" Num="1">高度処理設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1808,7 +1808,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥処理設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1825,7 +1825,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥輸送・前処理設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1842,7 +1842,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥濃縮設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1859,7 +1859,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥消化タンク設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1876,7 +1876,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥洗浄タンク設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1893,7 +1893,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥貯留設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1910,7 +1910,7 @@
                     <td>
                       <div class="Sentence" Num="1">調質設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1927,7 +1927,7 @@
                     <td>
                       <div class="Sentence" Num="1">熱処理設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1944,7 +1944,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥脱水設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1961,7 +1961,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥乾燥設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1978,7 +1978,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥焼却・溶融設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -1995,7 +1995,7 @@
                     <td>
                       <div class="Sentence" Num="1">建設資材利用設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2012,7 +2012,7 @@
                     <td>
                       <div class="Sentence" Num="1">コンポスト設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2029,7 +2029,7 @@
                     <td>
                       <div class="Sentence" Num="1">付帯設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2046,7 +2046,7 @@
                     <td>
                       <div class="Sentence" Num="1">煙突</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2063,7 +2063,7 @@
                     <td>
                       <div class="Sentence" Num="1">ゲート・クレーン設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2080,7 +2080,7 @@
                     <td>
                       <div class="Sentence" Num="1">配管類</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2097,7 +2097,7 @@
                     <td>
                       <div class="Sentence" Num="1">脱臭設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2105,16 +2105,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電気計装設備</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">特高受変電設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2125,7 +2125,7 @@
                     <td>
                       <div class="Sentence" Num="1">受変電設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2142,7 +2142,7 @@
                     <td>
                       <div class="Sentence" Num="1">自家発電設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2159,7 +2159,7 @@
                     <td>
                       <div class="Sentence" Num="1">制御電源及び計装電源設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2176,7 +2176,7 @@
                     <td>
                       <div class="Sentence" Num="1">負荷設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2193,7 +2193,7 @@
                     <td>
                       <div class="Sentence" Num="1">計装設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2210,7 +2210,7 @@
                     <td>
                       <div class="Sentence" Num="1">監視制御設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2227,7 +2227,7 @@
                     <td>
                       <div class="Sentence" Num="1">ケーブル配管類</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2244,7 +2244,7 @@
                     <td>
                       <div class="Sentence" Num="1">汚泥脱水車、ポンプ車</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2252,7 +2252,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">公園事業費補助</div>
                     </td>
                     <td>
@@ -2261,7 +2261,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2275,7 +2275,7 @@
                     <td>
                       <div class="Sentence" Num="1">舗装路面</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンクリート敷、ブロック敷、れんが敷、石敷のもの</div>
                     </td>
                     <td>
@@ -2292,7 +2292,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">アスファルト敷又は木れんが敷</div>
                     </td>
                     <td>
@@ -2309,7 +2309,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ビチューマルス敷</div>
                     </td>
                     <td>
@@ -2326,7 +2326,7 @@
                     <td>
                       <div class="Sentence" Num="1">橋</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -2343,7 +2343,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として木製のもの</div>
                     </td>
                     <td>
@@ -2360,7 +2360,7 @@
                     <td>
                       <div class="Sentence" Num="1">つり橋</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -2377,7 +2377,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2394,7 +2394,7 @@
                     <td>
                       <div class="Sentence" Num="1">緑化施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -2411,7 +2411,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として木製のもの</div>
                     </td>
                     <td>
@@ -2428,7 +2428,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -2445,7 +2445,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2462,7 +2462,7 @@
                     <td>
                       <div class="Sentence" Num="1">休憩所、キャンプ場その他これらに類するもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -2479,7 +2479,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -2496,7 +2496,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -2513,7 +2513,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -2530,7 +2530,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -2547,7 +2547,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -2564,7 +2564,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -2581,7 +2581,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物付属設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気設備（照明設備を含む。）</div>
                     </td>
                     <td>
@@ -2598,7 +2598,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
                     <td>
@@ -2615,7 +2615,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -2632,7 +2632,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
                     <td>
@@ -2649,7 +2649,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
                     <td>
@@ -2666,7 +2666,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷暖房設備（冷凍機の出力が二十二キロワット以下のもの）</div>
                     </td>
                     <td>
@@ -2683,7 +2683,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -2700,7 +2700,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
                     <td>
@@ -2717,7 +2717,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
                     <td>
@@ -2734,7 +2734,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エヤーカーテン又はドアー自動開閉設備</div>
                     </td>
                     <td>
@@ -2751,7 +2751,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">前掲のもの以外のもの及び前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -2768,7 +2768,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -2785,7 +2785,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -2802,7 +2802,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2816,10 +2816,10 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ベンチ、野外卓その他これらに類するもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -2833,7 +2833,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として木製のもの</div>
                     </td>
                     <td>
@@ -2850,7 +2850,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -2867,7 +2867,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として木製のもの</div>
                     </td>
                     <td>
@@ -2884,7 +2884,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -2901,7 +2901,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -2918,7 +2918,7 @@
                     <td>
                       <div class="Sentence" Num="1">運動器具倉庫</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -2935,7 +2935,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -2952,7 +2952,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -2969,7 +2969,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -2986,7 +2986,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -3003,7 +3003,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -3020,7 +3020,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -3037,7 +3037,7 @@
                     <td>
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -3054,7 +3054,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -3071,7 +3071,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -3088,7 +3088,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -3105,7 +3105,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -3122,7 +3122,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -3139,7 +3139,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -3156,7 +3156,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物付属設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気設備（照明設備を含む。）</div>
                     </td>
                     <td>
@@ -3173,7 +3173,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
                     <td>
@@ -3190,7 +3190,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -3207,7 +3207,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
                     <td>
@@ -3224,7 +3224,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
                     <td>
@@ -3241,7 +3241,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷暖房設備（冷凍機の出力が二十二キロワット以下のもの）</div>
                     </td>
                     <td>
@@ -3258,7 +3258,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -3275,7 +3275,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
                     <td>
@@ -3292,7 +3292,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
                     <td>
@@ -3309,7 +3309,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エヤーカーテン又はドアー自動開閉設備</div>
                     </td>
                     <td>
@@ -3326,7 +3326,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">前掲のもの以外のもの及び前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -3343,7 +3343,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -3360,7 +3360,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -3377,7 +3377,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">水泳プール</div>
                     </td>
                     <td>
@@ -3394,7 +3394,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">プール用原動機</div>
                     </td>
                     <td>
@@ -3411,7 +3411,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">スタンド</div>
                     </td>
                     <td>
@@ -3428,7 +3428,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として鉄骨鉄筋コンクリート造又は鉄筋コンクリート造のもの</div>
                     </td>
                     <td>
@@ -3445,7 +3445,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として鉄骨造のもの</div>
                     </td>
                     <td>
@@ -3462,7 +3462,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として木造のもの</div>
                     </td>
                     <td>
@@ -3479,7 +3479,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ネット設備</div>
                     </td>
                     <td>
@@ -3496,7 +3496,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">野球場、陸上競技場、その他のスポーツ場の排水その他の土工施設</div>
                     </td>
                     <td>
@@ -3513,7 +3513,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -3530,7 +3530,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として木造のもの</div>
                     </td>
                     <td>
@@ -3547,7 +3547,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -3564,7 +3564,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -3581,7 +3581,7 @@
                     <td>
                       <div class="Sentence" Num="1">野外劇場、野外音楽堂その他これらに類するもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -3598,7 +3598,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -3615,7 +3615,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -3632,7 +3632,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -3649,7 +3649,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -3666,7 +3666,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -3683,7 +3683,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -3700,7 +3700,7 @@
                     <td>
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -3717,7 +3717,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -3734,7 +3734,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -3751,7 +3751,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -3768,7 +3768,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -3785,7 +3785,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -3802,7 +3802,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -3819,7 +3819,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物付属設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気設備（照明設備を含む。）</div>
                     </td>
                     <td>
@@ -3836,7 +3836,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
                     <td>
@@ -3853,7 +3853,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -3870,7 +3870,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
                     <td>
@@ -3887,7 +3887,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
                     <td>
@@ -3904,7 +3904,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷暖房設備（冷凍機の出力が二十二キロワット以下のもの）</div>
                     </td>
                     <td>
@@ -3921,7 +3921,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -3938,7 +3938,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
                     <td>
@@ -3955,7 +3955,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
                     <td>
@@ -3972,7 +3972,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エヤーカーテン又はドアー自動開閉設備</div>
                     </td>
                     <td>
@@ -3989,7 +3989,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">前掲のもの以外のもの及び前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -4006,7 +4006,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -4023,7 +4023,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -4040,7 +4040,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -4057,7 +4057,7 @@
                     <td>
                       <div class="Sentence" Num="1">スタンド</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として鉄骨鉄筋コンクリート造又は鉄筋コンクリート造のもの</div>
                     </td>
                     <td>
@@ -4074,7 +4074,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として鉄骨造のもの</div>
                     </td>
                     <td>
@@ -4091,7 +4091,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として木造のもの</div>
                     </td>
                     <td>
@@ -4108,7 +4108,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -4125,7 +4125,7 @@
                     <td>
                       <div class="Sentence" Num="1">便所</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -4142,7 +4142,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -4159,7 +4159,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -4176,7 +4176,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -4193,7 +4193,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -4210,7 +4210,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -4227,7 +4227,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -4244,7 +4244,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物付属設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気設備（照明設備を含む。）</div>
                     </td>
                     <td>
@@ -4261,7 +4261,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
                     <td>
@@ -4278,7 +4278,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -4295,7 +4295,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
                     <td>
@@ -4312,7 +4312,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
                     <td>
@@ -4329,7 +4329,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷暖房設備（冷凍機の出力が二十二キロワット以下のもの）</div>
                     </td>
                     <td>
@@ -4346,7 +4346,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -4363,7 +4363,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
                     <td>
@@ -4380,7 +4380,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
                     <td>
@@ -4397,7 +4397,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エヤーカーテン又はドアー自動開閉設備</div>
                     </td>
                     <td>
@@ -4414,7 +4414,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">前掲のもの以外のもの及び前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -4431,7 +4431,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -4448,7 +4448,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -4465,7 +4465,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -4482,7 +4482,7 @@
                     <td>
                       <div class="Sentence" Num="1">管理事務所その他これらに類するもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -4499,7 +4499,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -4516,7 +4516,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -4533,7 +4533,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -4550,7 +4550,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -4567,7 +4567,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -4584,7 +4584,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -4601,7 +4601,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物付属設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気設備（照明設備を含む。）</div>
                     </td>
                     <td>
@@ -4618,7 +4618,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
                     <td>
@@ -4635,7 +4635,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -4652,7 +4652,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
                     <td>
@@ -4669,7 +4669,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
                     <td>
@@ -4686,7 +4686,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷暖房設備（冷凍機の出力が二十二キロワット以下のもの）</div>
                     </td>
                     <td>
@@ -4703,7 +4703,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -4720,7 +4720,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
                     <td>
@@ -4737,7 +4737,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
                     <td>
@@ -4754,7 +4754,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エヤーカーテン又はドアー自動開閉設備</div>
                     </td>
                     <td>
@@ -4771,7 +4771,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">前掲のもの以外のもの及び前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -4788,7 +4788,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -4805,7 +4805,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -4822,7 +4822,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">送配管</div>
                     </td>
                     <td>
@@ -4839,7 +4839,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鋳鉄製</div>
                     </td>
                     <td>
@@ -4856,7 +4856,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鋼鉄製</div>
                     </td>
                     <td>
@@ -4873,7 +4873,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">打ち込み井戸（金属造）</div>
                     </td>
                     <td>
@@ -4890,7 +4890,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">配電用のもの</div>
                     </td>
                     <td>
@@ -4907,7 +4907,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄塔及び鉄柱</div>
                     </td>
                     <td>
@@ -4924,7 +4924,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄筋コンクリート柱</div>
                     </td>
                     <td>
@@ -4941,7 +4941,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木柱</div>
                     </td>
                     <td>
@@ -4958,7 +4958,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">配電線</div>
                     </td>
                     <td>
@@ -4975,7 +4975,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">引込線</div>
                     </td>
                     <td>
@@ -4992,7 +4992,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -5009,7 +5009,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -5026,7 +5026,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -5043,7 +5043,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -5060,7 +5060,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -5077,7 +5077,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -5094,7 +5094,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -5111,7 +5111,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物付属施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気設備（照明設備を含む。）</div>
                     </td>
                     <td>
@@ -5128,7 +5128,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
                     <td>
@@ -5145,7 +5145,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5162,7 +5162,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
                     <td>
@@ -5179,7 +5179,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
                     <td>
@@ -5196,7 +5196,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷暖房設備（冷凍機の出力が二十二キロワット以下のもの）</div>
                     </td>
                     <td>
@@ -5213,7 +5213,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5230,7 +5230,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
                     <td>
@@ -5247,7 +5247,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
                     <td>
@@ -5264,7 +5264,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エヤーカーテン又はドアー自動開閉設備</div>
                     </td>
                     <td>
@@ -5281,7 +5281,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">前掲のもの以外のもの及び前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -5298,7 +5298,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -5315,7 +5315,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5332,7 +5332,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -5349,7 +5349,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンクリート造又はコンクリートブロック造</div>
                     </td>
                     <td>
@@ -5366,7 +5366,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -5377,13 +5377,13 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">災害応急対策施設</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">建物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -5397,7 +5397,7 @@
                     <td>
                       <div class="Sentence" Num="1">備蓄倉庫</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -5414,7 +5414,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">れんが造、石造又はブロック造</div>
                     </td>
                     <td>
@@ -5431,7 +5431,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が四ミリメートルを超えるものに限る。）</div>
                     </td>
                     <td>
@@ -5448,7 +5448,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートルを超え四ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -5465,7 +5465,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">金属造（骨格材の肉厚が三ミリメートル以下のものに限る。）</div>
                     </td>
                     <td>
@@ -5482,7 +5482,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造又は合成樹脂</div>
                     </td>
                     <td>
@@ -5499,7 +5499,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木骨モルタル造</div>
                     </td>
                     <td>
@@ -5516,7 +5516,7 @@
                     <td>
                       <div class="Sentence" Num="1">建物付属設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気設備（照明設備を含む。）</div>
                     </td>
                     <td>
@@ -5533,7 +5533,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
                     <td>
@@ -5550,7 +5550,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5567,7 +5567,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給排水又は衛生設備及びガス設備</div>
                     </td>
                     <td>
@@ -5584,7 +5584,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷房、暖房、通風又はボイラー設備</div>
                     </td>
                     <td>
@@ -5601,7 +5601,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">冷暖房設備（冷凍機の出力が二十二キロワット以下のもの）</div>
                     </td>
                     <td>
@@ -5618,7 +5618,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5635,7 +5635,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エレベーター</div>
                     </td>
                     <td>
@@ -5652,7 +5652,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">消火、排煙又は災害報知設備及び格納式避難設備</div>
                     </td>
                     <td>
@@ -5669,7 +5669,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">エヤーカーテン又はドアー自動開閉設備</div>
                     </td>
                     <td>
@@ -5686,7 +5686,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">前掲のもの以外のもの及び前掲の区分によらないもの</div>
                     </td>
                     <td>
@@ -5703,7 +5703,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">主として金属製のもの</div>
                     </td>
                     <td>
@@ -5720,7 +5720,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5737,7 +5737,7 @@
                     <td>
                       <div class="Sentence" Num="1">構築物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -5754,7 +5754,7 @@
                     <td>
                       <div class="Sentence" Num="1">耐震性貯水槽</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -5771,7 +5771,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンクリート造又はコンクリートブロック造</div>
                     </td>
                     <td>
@@ -5788,7 +5788,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鋳鉄製のもの</div>
                     </td>
                     <td>
@@ -5805,7 +5805,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鋼鉄製のもの</div>
                     </td>
                     <td>
@@ -5822,7 +5822,7 @@
                     <td>
                       <div class="Sentence" Num="1">放送施設及び情報通信施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄塔及び鉄柱</div>
                     </td>
                     <td>
@@ -5839,7 +5839,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">円筒空中線式のもの</div>
                     </td>
                     <td>
@@ -5856,7 +5856,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5873,7 +5873,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄筋コンクリート柱</div>
                     </td>
                     <td>
@@ -5890,7 +5890,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木塔及び木柱</div>
                     </td>
                     <td>
@@ -5907,7 +5907,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">アンテナ</div>
                     </td>
                     <td>
@@ -5924,7 +5924,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">接地線及び放送用配線</div>
                     </td>
                     <td>
@@ -5941,7 +5941,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">通信ケーブル</div>
                     </td>
                     <td>
@@ -5958,7 +5958,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">光ファイバー製のもの</div>
                     </td>
                     <td>
@@ -5975,7 +5975,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -5992,7 +5992,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">地中電線路</div>
                     </td>
                     <td>
@@ -6009,7 +6009,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他の線路設備</div>
                     </td>
                     <td>
@@ -6026,7 +6026,7 @@
                     <td>
                       <div class="Sentence" Num="1">係留施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄骨鉄筋コンクリート造又は鉄筋コンクリート造</div>
                     </td>
                     <td>
@@ -6043,7 +6043,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンクリート造又はコンクリートブロック造</div>
                     </td>
                     <td>
@@ -6060,7 +6060,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">石造</div>
                     </td>
                     <td>
@@ -6077,7 +6077,7 @@
                     <td>
                       <div class="Sentence" Num="1">発電施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">配電用のもの</div>
                     </td>
                     <td>
@@ -6094,7 +6094,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄塔及び鉄柱</div>
                     </td>
                     <td>
@@ -6111,7 +6111,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄筋コンクリート柱</div>
                     </td>
                     <td>
@@ -6128,7 +6128,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木柱</div>
                     </td>
                     <td>
@@ -6145,7 +6145,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">配電線</div>
                     </td>
                     <td>
@@ -6162,7 +6162,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">引込線</div>
                     </td>
                     <td>
@@ -6170,7 +6170,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">河川総合開発事業費補助</div>
                       <div class="Sentence" Num="2">治水ダム等建設事業費補助</div>
                     </td>
@@ -6180,7 +6180,7 @@
                     <td>
                       <div class="Sentence" Num="1">管理事務所</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄筋コンクリート造（一―二階建）</div>
                     </td>
                     <td>
@@ -6194,7 +6194,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造モルタル（一―二階建）</div>
                     </td>
                     <td>
@@ -6208,7 +6208,7 @@
                     <td>
                       <div class="Sentence" Num="1">倉庫</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6222,7 +6222,7 @@
                     <td>
                       <div class="Sentence" Num="1">車庫</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6236,7 +6236,7 @@
                     <td>
                       <div class="Sentence" Num="1">予備電源室</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6250,7 +6250,7 @@
                     <td>
                       <div class="Sentence" Num="1">機械室</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6264,7 +6264,7 @@
                     <td>
                       <div class="Sentence" Num="1">無線室上家</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンクリートブロック</div>
                     </td>
                     <td>
@@ -6281,7 +6281,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6298,7 +6298,7 @@
                     <td>
                       <div class="Sentence" Num="1">観測施設上家</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンクリートブロック</div>
                     </td>
                     <td>
@@ -6315,7 +6315,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6332,7 +6332,7 @@
                     <td>
                       <div class="Sentence" Num="1">宿舎</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄筋コンクリート</div>
                     </td>
                     <td>
@@ -6349,7 +6349,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コンクリートブロック</div>
                     </td>
                     <td>
@@ -6366,7 +6366,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造モルタル</div>
                     </td>
                     <td>
@@ -6383,7 +6383,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6400,7 +6400,7 @@
                     <td>
                       <div class="Sentence" Num="1">合宿</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造モルタル</div>
                     </td>
                     <td>
@@ -6417,7 +6417,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">木造</div>
                     </td>
                     <td>
@@ -6434,7 +6434,7 @@
                     <td>
                       <div class="Sentence" Num="1">給水施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6451,7 +6451,7 @@
                     <td>
                       <div class="Sentence" Num="1">排水施設</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6468,7 +6468,7 @@
                     <td>
                       <div class="Sentence" Num="1">無線塔</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">鉄製</div>
                     </td>
                     <td>
@@ -6485,7 +6485,7 @@
                     <td>
                       <div class="Sentence" Num="1">無線器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">固定</div>
                     </td>
                     <td>
@@ -6502,7 +6502,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">移動</div>
                     </td>
                     <td>
@@ -6519,7 +6519,7 @@
                     <td>
                       <div class="Sentence" Num="1">電話設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6536,7 +6536,7 @@
                     <td>
                       <div class="Sentence" Num="1">符号変換器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6553,7 +6553,7 @@
                     <td>
                       <div class="Sentence" Num="1">通信線</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6570,7 +6570,7 @@
                     <td>
                       <div class="Sentence" Num="1">木塔及び木柱</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6587,7 +6587,7 @@
                     <td>
                       <div class="Sentence" Num="1">アンテナ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6604,7 +6604,7 @@
                     <td>
                       <div class="Sentence" Num="1">接地線</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6621,7 +6621,7 @@
                     <td>
                       <div class="Sentence" Num="1">鉄塔</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6638,7 +6638,7 @@
                     <td>
                       <div class="Sentence" Num="1">鉄筋コンクリート柱</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6655,7 +6655,7 @@
                     <td>
                       <div class="Sentence" Num="1">木柱</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6672,7 +6672,7 @@
                     <td>
                       <div class="Sentence" Num="1">配電線</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6689,7 +6689,7 @@
                     <td>
                       <div class="Sentence" Num="1">引込線</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6706,7 +6706,7 @@
                     <td>
                       <div class="Sentence" Num="1">添加電話線</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6723,7 +6723,7 @@
                     <td>
                       <div class="Sentence" Num="1">地中電線路</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6740,7 +6740,7 @@
                     <td>
                       <div class="Sentence" Num="1">雨量計</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6757,7 +6757,7 @@
                     <td>
                       <div class="Sentence" Num="1">水位計</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6774,7 +6774,7 @@
                     <td>
                       <div class="Sentence" Num="1">流速計</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6791,7 +6791,7 @@
                     <td>
                       <div class="Sentence" Num="1">その他の観測機器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6808,7 +6808,7 @@
                     <td>
                       <div class="Sentence" Num="1">内燃力発電設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6825,7 +6825,7 @@
                     <td>
                       <div class="Sentence" Num="1">蓄電池電源設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6842,7 +6842,7 @@
                     <td>
                       <div class="Sentence" Num="1">変圧器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6859,7 +6859,7 @@
                     <td>
                       <div class="Sentence" Num="1">配電盤及び開閉装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6876,7 +6876,7 @@
                     <td>
                       <div class="Sentence" Num="1">整流器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6893,7 +6893,7 @@
                     <td>
                       <div class="Sentence" Num="1">電圧調整器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6910,7 +6910,7 @@
                     <td>
                       <div class="Sentence" Num="1">鋼船</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6927,7 +6927,7 @@
                     <td>
                       <div class="Sentence" Num="1">軽金属船</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6944,7 +6944,7 @@
                     <td>
                       <div class="Sentence" Num="1">木船</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6961,7 +6961,7 @@
                     <td>
                       <div class="Sentence" Num="1">プラスチック船</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6978,7 +6978,7 @@
                     <td>
                       <div class="Sentence" Num="1">ジープその他の自動車</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -6995,7 +6995,7 @@
                     <td>
                       <div class="Sentence" Num="1">サイレン装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -7012,7 +7012,7 @@
                     <td>
                       <div class="Sentence" Num="1">拡声装置</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -7029,7 +7029,7 @@
                     <td>
                       <div class="Sentence" Num="1">警報制御器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -4065,7 +4065,11 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">この省令は、家畜伝染病予防法の一部を改正する法律の施行の日（令和二年七月一日）から施行する。</div>
                     <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">家畜伝染病予防法施行規則</a>
-                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の次に三条を加える改正規定（同令第二十一条の三第一項第三号及び第二十一条の四に係る部分に限る。）は<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>附則第一条第二号に掲げる規定の施行の日（令和三年四月一日）から、第一条中同令第十三条の改正規定（「第三十一条第二項」を「第三十一条第三項」に改める部分に限る。）、同令第十四条の改正規定、同令第四十条に一項を加える改正規定、同令別記様式第十号の改正規定（「第３１条第２項」を「第３１条第３項」に改める部分に限る。）及び同令別記様式第四十九号の改正規定（「第三十一条第一項」の下に「若しくは第二項」を加える部分に限る。）並びに第四条の規定は令和三年四月一日から施行する。</div>
+                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の次に三条を加える改正規定（<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_21_3-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の三第一項第三号</a>及び<a class="reference_link" href="L_326M50010000035.html#Mp-At_21_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の四</a>に係る部分に限る。）は<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>附則第一条第二号に掲げる規定の施行の日（令和三年四月一日）から、第一条中<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条</a>の改正規定（「第三十一条第二項」を「第三十一条第三項」に改める部分に限る。）、<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の改正規定、<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>に一項を加える改正規定、<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別記様式第十号の改正規定（「第３１条第２項」を「第３１条第３項」に改める部分に限る。）及び<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別記様式第四十九号の改正規定（「第三十一条第一項」の下に「若しくは第二項」を加える部分に限る。）並びに第四条の規定は令和三年四月一日から施行する。</div>
                   </div>
                 </div>
               </div>
@@ -4140,7 +4144,7 @@
                 <div class="TableStructTitle">放射線を放出する同位元素の数量及び濃度</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">第一欄</div>
                     </td>
                     <td>
@@ -4151,13 +4155,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">放射線を放出する同位元素の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">数量（Ｂｑ）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">濃度（Ｂｑ／ｇ）</div>
                     </td>
                   </tr>
@@ -15264,7 +15268,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他の同位元素</div>
                     </td>
                     <td>
@@ -15714,21 +15718,21 @@
                 <div class="TableStructTitle">放射性同位元素の種類が明らかで、かつ、一種類である場合の空気中の濃度限度等</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">第一欄</div>
                       <div class="Sentence">放射性同位元素の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第二欄</div>
                       <div class="Sentence">空気中濃度限度</div>
                       <div class="Sentence">（Ｂｑ／ｃｍ３）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第三欄</div>
                       <div class="Sentence">排液中又は排水中の濃度限度</div>
                       <div class="Sentence">（Ｂｑ／ｃｍ３）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第四欄</div>
                       <div class="Sentence">排気中又は空気中の濃度限度</div>
                       <div class="Sentence">（Ｂｑ／ｃｍ３）</div>
@@ -57337,19 +57341,19 @@
                 <div class="TableStructTitle">放射性同位元素の種類が明らかで、かつ、当該放射性同位元素の種類が別表第二にあげられていない場合の空気中濃度限度等</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">第一欄</div>
                       <div class="Sentence">放射性同位元素の区分</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第二欄</div>
                       <div class="Sentence">空気中濃度限度（Ｂｑ／ｃｍ３）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第三欄</div>
                       <div class="Sentence">排液中又は排水中の濃度限度（Ｂｑ／ｃｍ３）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第四欄</div>
                       <div class="Sentence">排気中又は空気中の濃度限度（Ｂｑ／ｃｍ３）</div>
                     </td>
@@ -57363,7 +57367,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">アルファ線を放出する放射性同位元素</div>
                     </td>
                     <td>
@@ -57422,7 +57426,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">アルファ線を放出しない放射性同位元素</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3721,10 +3721,10 @@
                 <div class="TableStructTitle">ゴム系絶縁電線類</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">品名</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">型式の区分</div>
                     </td>
                   </tr>
@@ -3737,7 +3737,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">ゴム絶縁電線</div>
                     </td>
                     <td>
@@ -3792,7 +3792,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">ケーブル（<a class="reference_link" href="L_337CO0000000324.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第一<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>（２）に掲げるものに限る。）</div>
                     </td>
                     <td>
@@ -3853,7 +3853,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">ケーブル（<a class="reference_link" href="L_337CO0000000324.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第二<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>（２）に掲げるものに限る。）</div>
                     </td>
                     <td>
@@ -3904,7 +3904,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１　単心ゴムコード</div>
                       <div class="Sentence">２　より合わせゴムコード</div>
                       <div class="Sentence">３　袋打ちゴムコード</div>
@@ -3969,7 +3969,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">キャブタイヤコード</div>
                     </td>
                     <td>
@@ -4031,7 +4031,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　ゴムキャブタイヤケーブル</div>
                       <div class="Sentence">２　ビニルキャブタイヤケーブル</div>
                     </td>
@@ -4124,7 +4124,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">電気温床線</div>
                     </td>
                     <td>
@@ -4180,7 +4180,7 @@
                 <div class="TableStructTitle">合成樹脂系絶縁電線類</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">合成樹脂絶縁電線</div>
                     </td>
                     <td>
@@ -4256,7 +4256,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">ネオン電線</div>
                     </td>
                     <td>
@@ -4286,7 +4286,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">ケーブル（<a class="reference_link" href="L_337CO0000000324.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第一<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>（２）に掲げるものに限る。）</div>
                     </td>
                     <td>
@@ -4368,7 +4368,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">ケーブル（<a class="reference_link" href="L_337CO0000000324.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第二<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>（２）に掲げるものに限る。）</div>
                     </td>
                     <td>
@@ -4422,7 +4422,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">１　単心ビニルコード</div>
                       <div class="Sentence">２　より合わせビニルコード</div>
                       <div class="Sentence">３　袋打ちビニルコード</div>
@@ -4456,7 +4456,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">１　単心ポリエチレンコード</div>
                       <div class="Sentence">２　その他のポリエチレンコード</div>
                     </td>
@@ -4488,7 +4488,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">１　単心ポリオレフィンコード</div>
                       <div class="Sentence">２　その他のポリオレフィンコード</div>
                     </td>
@@ -4520,7 +4520,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">キャブタイヤコード</div>
                     </td>
                     <td>
@@ -4591,7 +4591,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">金糸コード</div>
                     </td>
                     <td>
@@ -4638,7 +4638,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">ビニルキャブタイヤケーブル</div>
                     </td>
                     <td>
@@ -4715,7 +4715,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">耐燃性ポリオレフィンキャブタイヤケーブル</div>
                     </td>
                     <td>
@@ -4786,7 +4786,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">電気温床線</div>
                     </td>
                     <td>
@@ -4832,7 +4832,7 @@
                 <div class="TableStructTitle">金属製電線管類</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１　金属製の電線管</div>
                       <div class="Sentence">２　金属製のフロアダクト</div>
                       <div class="Sentence">３　一種金属製線<ruby>樋<rt>ぴ</rt>
@@ -4860,7 +4860,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１　一種金属製可撓電線管</div>
                       <div class="Sentence">２　二種金属製可撓電線管</div>
                       <div class="Sentence">３　その他の金属製可撓電線管</div>
@@ -4889,7 +4889,7 @@
                 <div class="TableStructTitle">金属製電線管類附属品</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１　金属製のカップリング</div>
                       <div class="Sentence">２　金属製のノーマルベンド</div>
                       <div class="Sentence">３　金属製のエルボー</div>
@@ -4957,7 +4957,7 @@
                 <div class="TableStructTitle">合成樹脂製等の電線管類</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">１　合成樹脂製電線管</div>
                       <div class="Sentence">２　合成樹脂製可撓管</div>
                       <div class="Sentence">３　ＣＤ管</div>
@@ -4996,7 +4996,7 @@
                 <div class="TableStructTitle">合成樹脂製等の電線管類附属品</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１　合成樹脂製等のカップリング</div>
                       <div class="Sentence">２　合成樹脂製等のノーマルベンド</div>
                       <div class="Sentence">３　合成樹脂製等のエルボー</div>
@@ -5032,7 +5032,7 @@
                 <div class="TableStructTitle">つめ付ヒューズ</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">つめ付ヒューズ</div>
                     </td>
                     <td>
@@ -5126,7 +5126,7 @@
                 <div class="TableStructTitle">包装ヒューズ類</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence">１　管形ヒューズ</div>
                       <div class="Sentence">２　その他の包装ヒューズ（筒形ヒューズ及び栓形ヒューズを除く。）</div>
                     </td>
@@ -5284,7 +5284,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">１　筒形ヒューズ</div>
                       <div class="Sentence">２　栓形ヒューズ</div>
                     </td>
@@ -5407,7 +5407,7 @@
                 <div class="TableStructTitle">温度ヒューズ</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">温度ヒューズ</div>
                     </td>
                     <td>
@@ -5504,7 +5504,7 @@
                 <div class="TableStructTitle">配線器具</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="15">
                       <div class="Sentence">１　タンブラースイッチ</div>
                       <div class="Sentence">２　ロータリースイッチ</div>
                       <div class="Sentence">３　押しボタンスイッチ</div>
@@ -5660,7 +5660,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">１　タイムスイッチ</div>
                       <div class="Sentence">２　街灯スイッチ</div>
                       <div class="Sentence">３　光電式自動点滅器</div>
@@ -5764,7 +5764,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">リモートコントロールリレー</div>
                     </td>
                     <td>
@@ -5813,7 +5813,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">１　カットアウトスイッチ</div>
                       <div class="Sentence">２　カバー付ナイフスイッチ</div>
                     </td>
@@ -5881,7 +5881,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">カットアウト</div>
                     </td>
                     <td>
@@ -5963,7 +5963,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence">箱開閉器</div>
                     </td>
                     <td>
@@ -6150,7 +6150,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">１　分電盤ユニットスイッチ</div>
                       <div class="Sentence">２　電磁開閉器</div>
                     </td>
@@ -6272,7 +6272,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">配線用遮断器</div>
                     </td>
                     <td>
@@ -6403,7 +6403,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">１　フロートスイッチ</div>
                       <div class="Sentence">２　圧力スイッチ</div>
                     </td>
@@ -6510,7 +6510,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">ミシン用コントローラー</div>
                     </td>
                     <td>
@@ -6602,7 +6602,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="22">
                       <div class="Sentence">漏電遮断器</div>
                     </td>
                     <td>
@@ -6836,7 +6836,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">差込みプラグ</div>
                     </td>
                     <td>
@@ -6952,7 +6952,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">１　コンセント</div>
                       <div class="Sentence">２　マルチタップ</div>
                       <div class="Sentence">３　コードコネクターボディ</div>
@@ -7133,7 +7133,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">延長コードセット</div>
                     </td>
                     <td>
@@ -7228,7 +7228,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">コードリール</div>
                     </td>
                     <td>
@@ -7331,7 +7331,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">ライティングダクト</div>
                     </td>
                     <td>
@@ -7390,7 +7390,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１　ライティングダクト用のカップリング</div>
                       <div class="Sentence">２　ライティングダクト用のエルボー</div>
                       <div class="Sentence">３　ライティングダクト用のティ</div>
@@ -7456,7 +7456,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　ねじ込みローゼット</div>
                       <div class="Sentence">２　引掛けローゼット</div>
                       <div class="Sentence">３　その他のローゼット</div>
@@ -7536,7 +7536,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　キーレスソケット</div>
                       <div class="Sentence">２　防水ソケット</div>
                       <div class="Sentence">３　キーソケット</div>
@@ -7623,7 +7623,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">分岐ソケット</div>
                     </td>
                     <td>
@@ -7700,7 +7700,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１　セパラブルプラグボディ</div>
                       <div class="Sentence">２　その他のねじ込み接続器</div>
                     </td>
@@ -7752,7 +7752,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">アダプター</div>
                     </td>
                     <td>
@@ -7823,7 +7823,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">ランプレセプタクル</div>
                     </td>
                     <td>
@@ -7923,7 +7923,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　蛍光灯用ソケット</div>
                       <div class="Sentence">２　蛍光灯用スターターソケット</div>
                     </td>
@@ -8009,7 +8009,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">ジョイントボックス</div>
                     </td>
                     <td>
@@ -8086,7 +8086,7 @@
                 <div class="TableStructTitle">電流制限器</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">１　アンペア制用電流制限器</div>
                       <div class="Sentence">２　定額制用電流制限器</div>
                     </td>
@@ -8228,7 +8228,7 @@
                 <div class="TableStructTitle">小形単相変圧器類</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="16">
                       <div class="Sentence">１　おもちや用変圧器</div>
                       <div class="Sentence">２　その他の家庭機器用変圧器（ベル用変圧器、表示器用変圧器及びリモートコントロールリレー用変圧器を除く。）</div>
                     </td>
@@ -8406,7 +8406,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">１　ベル用変圧器</div>
                       <div class="Sentence">２　表示器用変圧器</div>
                       <div class="Sentence">３　リモートコントロールリレー用変圧器</div>
@@ -8507,7 +8507,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">オゾン発生器用安定器</div>
                     </td>
                     <td>
@@ -8622,7 +8622,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">ネオン変圧器</div>
                     </td>
                     <td>
@@ -8716,7 +8716,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">電子応用機械器具用変圧器</div>
                     </td>
                     <td>
@@ -8791,7 +8791,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">燃焼器具用変圧器</div>
                     </td>
                     <td>
@@ -8876,7 +8876,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="19">
                       <div class="Sentence">１　蛍光灯用安定器</div>
                       <div class="Sentence">２　水銀灯用安定器その他の高圧放電灯用安定器</div>
                     </td>
@@ -9080,7 +9080,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="15">
                       <div class="Sentence">１　ナトリウム灯用安定器</div>
                       <div class="Sentence">２　殺菌灯用安定器</div>
                     </td>
@@ -9228,7 +9228,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">電圧調整器</div>
                     </td>
                     <td>
@@ -9292,7 +9292,7 @@
                 <div class="TableStructTitle">小形交流電動機</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">１　反発始動誘導電動機</div>
                       <div class="Sentence">２　分相始動誘導電動機</div>
                       <div class="Sentence">３　コンデンサー始動誘導電動機</div>
@@ -9389,7 +9389,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">かご形三相誘導電動機</div>
                     </td>
                     <td>
@@ -9457,7 +9457,7 @@
                 <div class="TableStructTitle">電熱器具</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="24">
                       <div class="Sentence">１　電気便座</div>
                       <div class="Sentence">２　観賞植物用ヒーター</div>
                     </td>
@@ -9755,7 +9755,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="26">
                       <div class="Sentence">１　電気温蔵庫</div>
                       <div class="Sentence">２　電熱式吸入器</div>
                     </td>
@@ -10068,7 +10068,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="21">
                       <div class="Sentence">１　水道凍結防止器</div>
                       <div class="Sentence">２　ガラス曇り防止器</div>
                       <div class="Sentence">３　その他の凍結又は凝結防止用電熱器具</div>
@@ -10335,7 +10335,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="22">
                       <div class="Sentence">電気温水器</div>
                     </td>
                     <td>
@@ -10611,7 +10611,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="22">
                       <div class="Sentence">家庭用温熱治療器</div>
                     </td>
                     <td>
@@ -10868,7 +10868,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="24">
                       <div class="Sentence">１　電気スチームバス</div>
                       <div class="Sentence">２　スチームバス用電熱器</div>
                       <div class="Sentence">３　電気サウナバス</div>
@@ -11174,7 +11174,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">観賞魚用ヒーター</div>
                     </td>
                     <td>
@@ -11314,7 +11314,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="21">
                       <div class="Sentence">電熱式おもちや</div>
                     </td>
                     <td>
@@ -11567,7 +11567,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">１　電気足温器</div>
                       <div class="Sentence">２　電気スリッパ</div>
                       <div class="Sentence">３　電気ひざ掛け</div>
@@ -11721,7 +11721,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">１　電気トースター</div>
                       <div class="Sentence">２　電気天火</div>
                       <div class="Sentence">３　電気魚焼き器</div>
@@ -11888,7 +11888,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">１　ひげそり用湯沸器</div>
                       <div class="Sentence">２　電気髪ごて</div>
                       <div class="Sentence">３　ヘアカーラー</div>
@@ -11994,7 +11994,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">１　電熱ナイフ</div>
                       <div class="Sentence">２　電気溶解器</div>
                       <div class="Sentence">３　電気焼成炉</div>
@@ -12141,7 +12141,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">１　タオル蒸し器</div>
                       <div class="Sentence">２　湿潤器</div>
                       <div class="Sentence">３　電気湯のし器</div>
@@ -12217,7 +12217,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１　投込み湯沸器</div>
                       <div class="Sentence">２　電気瞬間湯沸器</div>
                     </td>
@@ -12283,7 +12283,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">１　電熱ボード</div>
                       <div class="Sentence">２　電熱シート</div>
                       <div class="Sentence">３　電熱マット</div>
@@ -12435,7 +12435,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　電気香炉</div>
                       <div class="Sentence">２　電気くん蒸殺虫器</div>
                       <div class="Sentence">３　電気温きゆう器</div>
@@ -12524,7 +12524,7 @@
                 <div class="TableStructTitle">電動力応用機械器具</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence">１　電気ポンプ（電気井戸ポンプ及び電気噴水機を除く。以下この表において同じ。）</div>
                       <div class="Sentence">２　電気井戸ポンプ</div>
                     </td>
@@ -12745,7 +12745,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="30">
                       <div class="Sentence">１　冷蔵用のショーケース</div>
                       <div class="Sentence">２　冷凍用のショーケース</div>
                     </td>
@@ -13079,7 +13079,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="23">
                       <div class="Sentence">アイスクリームフリーザー</div>
                     </td>
                     <td>
@@ -13340,7 +13340,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">ディスポーザー</div>
                     </td>
                     <td>
@@ -13498,7 +13498,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="29">
                       <div class="Sentence">電気マッサージ器</div>
                     </td>
                     <td>
@@ -13856,7 +13856,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="29">
                       <div class="Sentence">自動洗浄乾燥式便器</div>
                     </td>
                     <td>
@@ -14195,7 +14195,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="37">
                       <div class="Sentence">自動販売機（電熱装置、冷却装置、放電灯又は液体収納装置を有するものに限る。）</div>
                     </td>
                     <td>
@@ -14610,7 +14610,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="24">
                       <div class="Sentence">１　浴槽用電気気泡発生器</div>
                       <div class="Sentence">２　観賞魚用電気気泡発生器</div>
                       <div class="Sentence">３　その他の電気気泡発生器</div>
@@ -14907,7 +14907,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="19">
                       <div class="Sentence">１　電動式おもちや（電気乗物及び電気遊戯盤を除く。）</div>
                       <div class="Sentence">２　電気乗物</div>
                       <div class="Sentence">３　その他の電動力応用遊戯器具</div>
@@ -15126,7 +15126,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１　ベルトコンベア</div>
                       <div class="Sentence">２　電気脱穀機</div>
                       <div class="Sentence">３　電動もみすり機</div>
@@ -15195,7 +15195,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">１　電気冷蔵庫</div>
                       <div class="Sentence">２　電気冷凍庫</div>
                       <div class="Sentence">３　電気製氷機</div>
@@ -15312,7 +15312,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　空気圧縮機</div>
                       <div class="Sentence">２　電気加湿機</div>
                       <div class="Sentence">３　電気噴水機</div>
@@ -15394,7 +15394,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　電動ミシン</div>
                       <div class="Sentence">２　電気ろくろ</div>
                       <div class="Sentence">３　電気鉛筆削り機</div>
@@ -15495,7 +15495,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">１　電気はさみ</div>
                       <div class="Sentence">２　電気缶切機</div>
                       <div class="Sentence">３　電気肉ひき機</div>
@@ -15599,7 +15599,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">電気捕虫機</div>
                     </td>
                     <td>
@@ -15667,7 +15667,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　ジューサー</div>
                       <div class="Sentence">２　ジュースミキサー</div>
                       <div class="Sentence">３　フッドミキサー</div>
@@ -15751,7 +15751,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">１　電気製めん機</div>
                       <div class="Sentence">２　電気もちつき機</div>
                     </td>
@@ -15819,7 +15819,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">１　野菜洗浄機</div>
                       <div class="Sentence">２　電気食器洗機</div>
                       <div class="Sentence">３　運動用具又は娯楽用具の洗浄機</div>
@@ -15929,7 +15929,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">ほうじ茶機</div>
                     </td>
                     <td>
@@ -15984,7 +15984,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１　電気置時計</div>
                       <div class="Sentence">２　電気掛時計</div>
                       <div class="Sentence">３　電気オルゴール</div>
@@ -16043,7 +16043,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">１　自動印画定着器</div>
                       <div class="Sentence">２　自動印画水洗機</div>
                     </td>
@@ -16112,7 +16112,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">謄写機</div>
                     </td>
                     <td>
@@ -16152,7 +16152,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">１　事務用印刷機</div>
                       <div class="Sentence">２　あて名印刷機</div>
                       <div class="Sentence">３　タイムレコーダー</div>
@@ -16226,7 +16226,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">１　ラミネーター</div>
                       <div class="Sentence">２　毛髪乾燥機</div>
                       <div class="Sentence">３　電気温風機</div>
@@ -16352,7 +16352,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１　洗濯物仕上機械</div>
                       <div class="Sentence">２　洗濯物折畳み機械</div>
                     </td>
@@ -16403,7 +16403,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　おしぼり巻機</div>
                       <div class="Sentence">２　おしぼり包装機</div>
                     </td>
@@ -16480,7 +16480,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">自動販売機（電熱装置、冷却装置、放電灯又は液体収納装置を有するものを除く。）</div>
                     </td>
                     <td>
@@ -16537,7 +16537,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">両替機</div>
                     </td>
                     <td>
@@ -16605,7 +16605,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">理髪いす</div>
                     </td>
                     <td>
@@ -16655,7 +16655,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　扇風機</div>
                       <div class="Sentence">２　サーキュレーター</div>
                       <div class="Sentence">３　換気扇</div>
@@ -16740,7 +16740,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">送風機</div>
                     </td>
                     <td>
@@ -16808,7 +16808,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence">１　電気冷房機</div>
                       <div class="Sentence">２　電気除湿機</div>
                     </td>
@@ -16970,7 +16970,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">温風暖房機</div>
                     </td>
                     <td>
@@ -17047,7 +17047,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">空気清浄機</div>
                     </td>
                     <td>
@@ -17125,7 +17125,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">１　電気掃除機</div>
                       <div class="Sentence">２　電気レコードクリーナー</div>
                       <div class="Sentence">３　電気黒板ふきクリーナー</div>
@@ -17198,7 +17198,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">電気楽器</div>
                     </td>
                     <td>
@@ -17267,7 +17267,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">１　ベル</div>
                       <div class="Sentence">２　ブザー</div>
                       <div class="Sentence">３　チャイム</div>
@@ -17308,7 +17308,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">サイレン</div>
                     </td>
                     <td>
@@ -17349,7 +17349,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">電動式吸入器</div>
                     </td>
                     <td>
@@ -17398,7 +17398,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１　指圧代用器</div>
                       <div class="Sentence">２　その他の家庭用電動力応用治療器</div>
                     </td>
@@ -17450,7 +17450,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">電気遊戯盤</div>
                     </td>
                     <td>
@@ -17534,7 +17534,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">浴槽用電気温水循環浄化器</div>
                     </td>
                     <td>
@@ -17648,7 +17648,7 @@
                 <div class="TableStructTitle">光源及び光源応用機械器具</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　写真焼付器</div>
                       <div class="Sentence">２　写真引伸機</div>
                       <div class="Sentence">３　写真引伸機用ランプハウス</div>
@@ -17726,7 +17726,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">１　マイクロフィルムリーダー</div>
                       <div class="Sentence">２　スライド映写機</div>
                       <div class="Sentence">３　オーバーヘッド映写機</div>
@@ -17860,7 +17860,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">ビューワー</div>
                     </td>
                     <td>
@@ -17946,7 +17946,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">エレクトロニックフラッシュ</div>
                     </td>
                     <td>
@@ -18030,7 +18030,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">白熱電球</div>
                     </td>
                     <td>
@@ -18051,7 +18051,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">蛍光ランプ</div>
                     </td>
                     <td>
@@ -18083,7 +18083,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">エル・イー・ディー・ランプ</div>
                     </td>
                     <td>
@@ -18104,7 +18104,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">１　電気スタンド</div>
                       <div class="Sentence">２　家庭用つり下げ型蛍光灯器具</div>
                     </td>
@@ -18191,7 +18191,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">ハンドランプ</div>
                     </td>
                     <td>
@@ -18259,7 +18259,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">庭園灯器具</div>
                     </td>
                     <td>
@@ -18319,7 +18319,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">装飾用電灯器具</div>
                     </td>
                     <td>
@@ -18397,7 +18397,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">１　その他の白熱電灯器具</div>
                       <div class="Sentence">２　その他の放電灯器具</div>
                       <div class="Sentence">３　エル・イー・ディー・電灯器具</div>
@@ -18499,7 +18499,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">検卵器</div>
                     </td>
                     <td>
@@ -18557,7 +18557,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">電気消毒器</div>
                     </td>
                     <td>
@@ -18596,7 +18596,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">家庭用光線治療器</div>
                     </td>
                     <td>
@@ -18654,7 +18654,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">充電式携帯電灯</div>
                     </td>
                     <td>
@@ -18693,7 +18693,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">複写機</div>
                     </td>
                     <td>
@@ -18803,7 +18803,7 @@
                 <div class="TableStructTitle">電子応用機械器具</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">高周波脱毛器</div>
                     </td>
                     <td>
@@ -18936,7 +18936,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１　電子時計</div>
                       <div class="Sentence">２　電子式卓上計算機</div>
                       <div class="Sentence">３　電子式金銭登録機</div>
@@ -18986,7 +18986,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">電子冷蔵庫</div>
                     </td>
                     <td>
@@ -19043,7 +19043,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">インターホン</div>
                     </td>
                     <td>
@@ -19100,7 +19100,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">電子楽器</div>
                     </td>
                     <td>
@@ -19148,7 +19148,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">１　ラジオ受信機</div>
                       <div class="Sentence">２　テープレコーダー</div>
                       <div class="Sentence">３　レコードプレーヤー</div>
@@ -19218,7 +19218,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">ビデオテープレコーダー</div>
                     </td>
                     <td>
@@ -19284,7 +19284,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">消磁器</div>
                     </td>
                     <td>
@@ -19332,7 +19332,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">テレビジョン受信機</div>
                     </td>
                     <td>
@@ -19411,7 +19411,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">テレビジョン受信機用ブースター</div>
                     </td>
                     <td>
@@ -19477,7 +19477,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">高周波ウエルダー</div>
                     </td>
                     <td>
@@ -19499,7 +19499,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">電子レンジ</div>
                     </td>
                     <td>
@@ -19558,7 +19558,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　超音波ねずみ駆除機</div>
                       <div class="Sentence">２　超音波加湿機</div>
                       <div class="Sentence">３　超音波洗浄機</div>
@@ -19635,7 +19635,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">電子応用遊戯器具</div>
                     </td>
                     <td>
@@ -19702,7 +19702,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１　家庭用低周波治療器</div>
                       <div class="Sentence">２　家庭用超音波治療器</div>
                       <div class="Sentence">３　家庭用超短波治療器</div>
@@ -19757,7 +19757,7 @@
                 <div class="TableStructTitle">交流用電気機械器具</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">磁気治療器</div>
                     </td>
                     <td>
@@ -19886,7 +19886,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="18">
                       <div class="Sentence">電撃殺虫器</div>
                     </td>
                     <td>
@@ -20067,7 +20067,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">電気浴器用電源装置</div>
                     </td>
                     <td>
@@ -20151,7 +20151,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="16">
                       <div class="Sentence">直流電源装置</div>
                     </td>
                     <td>
@@ -20322,7 +20322,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">１　電灯付家具</div>
                       <div class="Sentence">２　コンセント付家具</div>
                       <div class="Sentence">３　その他の電気機械器具付家具</div>
@@ -20408,7 +20408,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">調光器</div>
                     </td>
                     <td>
@@ -20483,7 +20483,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">電気ペンシル</div>
                     </td>
                     <td>
@@ -20513,7 +20513,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">漏電検知器</div>
                     </td>
                     <td>
@@ -20553,7 +20553,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">防犯警報器</div>
                     </td>
                     <td>
@@ -20593,7 +20593,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">アーク溶接機</div>
                     </td>
                     <td>
@@ -20646,7 +20646,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">雑音防止器</div>
                     </td>
                     <td>
@@ -20676,7 +20676,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">医療用物質生成器</div>
                     </td>
                     <td>
@@ -20744,7 +20744,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">家庭用電位治療器</div>
                     </td>
                     <td>
@@ -20783,7 +20783,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">電気冷蔵庫（吸収式のものに限る。）</div>
                     </td>
                     <td>
@@ -20813,7 +20813,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">電気さく用電源装置</div>
                     </td>
                     <td>
@@ -20849,7 +20849,7 @@
                 <div class="TableStructTitle">携帯発電機</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">携帯発電機</div>
                     </td>
                     <td>
@@ -20964,7 +20964,7 @@
                 <div class="TableStructTitle">リチウムイオン蓄電池</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">リチウムイオン蓄電池</div>
                     </td>
                     <td>
@@ -21054,10 +21054,10 @@
                   <div class="TableStructTitle">表１</div>
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="3">
                         <div class="Sentence">差し込みプラグ</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">寸法</div>
                       </td>
                     </tr>
@@ -21287,10 +21287,10 @@
                   <div class="TableStructTitle">表２</div>
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="3">
                         <div class="Sentence">コンセント又はコードコネクターボディ</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">寸法</div>
                       </td>
                     </tr>
@@ -21592,11 +21592,11 @@
                   <div class="TableStructTitle">表３</div>
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="3">
                         <div class="Sentence">マルチタップ、アダプターその他の差し込み接続器</div>
                         <div class="Sentence">（表１及び表２に掲げるものを除く。）</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">寸法</div>
                       </td>
                     </tr>
@@ -22199,7 +22199,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">特定電気用品</div>
                         </td>
                         <td>
@@ -22207,7 +22207,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">配線用遮断器</div>
                         </td>
                         <td>
@@ -22215,7 +22215,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">漏電遮断器</div>
                         </td>
                         <td>
@@ -22234,7 +22234,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">アンペア制用電流制限器</div>
                         </td>
                         <td>
@@ -22242,7 +22242,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">
                             <a class="reference_link" href="L_337CO0000000324.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第１第６号から第１０号までに掲げる機械器具であつて、温度過昇防止装置として用いる温度により動作する自動スイッチを有するもの</div>
                         </td>
@@ -22299,7 +22299,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">ゴム系絶縁電線類</div>
                     </td>
                     <td>
@@ -22343,7 +22343,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">合成樹脂系絶縁電線類</div>
                     </td>
                     <td>
@@ -22387,7 +22387,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">つめ付ヒューズ</div>
                     </td>
                     <td>
@@ -22406,7 +22406,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">包装ヒューズ類</div>
                     </td>
                     <td>
@@ -22433,7 +22433,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">温度ヒューズ</div>
                     </td>
                     <td>
@@ -22460,7 +22460,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">配線器具</div>
                     </td>
                     <td>
@@ -22488,7 +22488,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">電流制限器</div>
                     </td>
                     <td>
@@ -22532,7 +22532,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">小形単相変圧器類</div>
                     </td>
                     <td>
@@ -22576,7 +22576,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">電熱器具</div>
                     </td>
                     <td>
@@ -22612,7 +22612,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">電動力応用機械器具</div>
                     </td>
                     <td>
@@ -22656,7 +22656,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">電子応用機械器具</div>
                     </td>
                     <td>
@@ -22692,7 +22692,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">交流用電気機械器具</div>
                     </td>
                     <td>
@@ -22736,7 +22736,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">携帯発電機</div>
                     </td>
                     <td>
@@ -22921,7 +22921,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence"></div>
                     </td>
                   </tr>

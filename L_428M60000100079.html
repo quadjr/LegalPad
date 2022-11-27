@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1881,7 +1881,8 @@
                 <div id="Sp_平成二八年一一月一一日厚生労働省令第一六八号-At_2-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence" Num="1">第四条の規定による改正後の<a class="reference_link" href="L_428M60000100079.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">社会福祉法人会計基準</a>の規定は、平成二十九年四月一日以降に開始する会計年度に係る計算関係書類（同省令第二条に規定する計算関係書類をいう。）及び財産目録（同条に規定する財産目録をいう。）の作成について適用し、平成二十八年四月一日から平成二十九年三月三十一日までの間に開始する会計年度に係る計算書類等（第四条の規定による改正前の<a class="reference_link" href="L_428M60000100079.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">社会福祉法人会計基準</a>
+                    <div class="Sentence" Num="1">第四条の規定による改正後の<a class="reference_link" href="L_428M60000100079.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">社会福祉法人会計基準</a>の規定は、平成二十九年四月一日以降に開始する会計年度に係る計算関係書類（<a class="reference_link" href="L_428M60000100079.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同省令</a>
+                      <a class="reference_link" href="L_428M60000100079.html#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>に規定する計算関係書類をいう。）及び財産目録（<a class="reference_link" href="L_428M60000100079.html#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>に規定する財産目録をいう。）の作成について適用し、平成二十八年四月一日から平成二十九年三月三十一日までの間に開始する会計年度に係る計算書類等（第四条の規定による改正前の<a class="reference_link" href="L_428M60000100079.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">社会福祉法人会計基準</a>
                       <a class="reference_link" href="L_428M60000100079.html#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>に規定する計算書類等をいう。）の作成については、第四条の規定による改正前の<a class="reference_link" href="L_428M60000100079.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">社会福祉法人会計基準</a>の規定を適用する。</div>
                   </div>
                 </div>
@@ -1973,7 +1974,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">事業活動による収入</div>
                     </td>
                   </tr>
@@ -2201,7 +2202,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">介護予防・日常生活支援総合事業収入</div>
                     </td>
                     <td>
@@ -3581,7 +3582,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">流動資産評価益等による資金増加額</div>
                     </td>
                     <td>
@@ -3611,7 +3612,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">施設整備等による収入</div>
                     </td>
                   </tr>
@@ -3737,7 +3738,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他の活動による収入</div>
                     </td>
                   </tr>
@@ -3983,7 +3984,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">事業活動による支出</div>
                     </td>
                   </tr>
@@ -4715,7 +4716,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">流動資産評価損等による資金減少額</div>
                     </td>
                     <td>
@@ -4778,7 +4779,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">施設整備等による支出</div>
                     </td>
                   </tr>
@@ -4904,7 +4905,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他の活動による支出</div>
                     </td>
                   </tr>
@@ -5142,7 +5143,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">サービス活動増減による収益</div>
                     </td>
                   </tr>
@@ -5370,7 +5371,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">介護予防・日常生活支援総合事業収益</div>
                     </td>
                     <td>
@@ -6695,7 +6696,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">サービス活動外増減による収益</div>
                     </td>
                   </tr>
@@ -6876,7 +6877,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">特別増減による収益</div>
                     </td>
                   </tr>
@@ -7067,7 +7068,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">サービス活動増減による費用</div>
                     </td>
                   </tr>
@@ -7876,7 +7877,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">サービス活動外増減による費用</div>
                     </td>
                   </tr>
@@ -8035,7 +8036,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">特別増減による費用</div>
                     </td>
                   </tr>
@@ -8299,7 +8300,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">資産の部</div>
                     </td>
                   </tr>
@@ -9008,7 +9009,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">負債の部</div>
                     </td>
                   </tr>
@@ -9453,7 +9454,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">純資産の部</div>
                     </td>
                   </tr>

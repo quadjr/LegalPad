@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -474,7 +474,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">項</div>
                     </td>
                     <td>
@@ -517,7 +517,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一</div>
                     </td>
                     <td>
@@ -540,7 +540,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二</div>
                     </td>
                     <td>
@@ -563,7 +563,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三</div>
                     </td>
                     <td>
@@ -585,7 +585,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四</div>
                     </td>
                     <td>
@@ -605,7 +605,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">五</div>
                     </td>
                     <td>
@@ -626,7 +626,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">六</div>
                     </td>
                     <td>
@@ -647,7 +647,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">七</div>
                     </td>
                     <td>
@@ -667,7 +667,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">八</div>
                     </td>
                     <td>
@@ -701,7 +701,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">九</div>
                     </td>
                     <td>
@@ -721,7 +721,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十</div>
                     </td>
                     <td>
@@ -747,7 +747,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十一</div>
                     </td>
                     <td>
@@ -770,7 +770,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十二</div>
                     </td>
                     <td>
@@ -793,7 +793,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十三</div>
                     </td>
                     <td>
@@ -813,7 +813,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十四</div>
                     </td>
                     <td>
@@ -833,7 +833,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十五</div>
                     </td>
                     <td>
@@ -860,7 +860,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十六</div>
                     </td>
                     <td>
@@ -884,7 +884,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十七</div>
                     </td>
                     <td>
@@ -906,7 +906,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">十八</div>
                     </td>
                     <td>
@@ -926,12 +926,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="7">
                       <div class="Sentence">備考　この表に掲げる職員の属する機関の存続期間は、次のとおりである。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="7">
                       <div class="Sentence">一　第一欄に掲げる職員の属した機関</div>
                     </td>
                   </tr>
@@ -939,7 +939,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">イ　沖縄群島にあつた機関　昭和二十一年一月二十九日から同年四月二十三日まで</div>
                     </td>
                   </tr>
@@ -947,7 +947,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ロ　奄美群島にあつた機関　昭和二十一年一月二十九日から同年十月二日まで</div>
                     </td>
                   </tr>
@@ -955,12 +955,12 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ハ　宮古群島及び八重山群島にあつた機関　昭和二十一年一月二十九日から昭和二十二年三月三十一日まで</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="7">
                       <div class="Sentence">二　第二欄に掲げる職員の属した機関</div>
                     </td>
                   </tr>
@@ -968,7 +968,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">イ　沖縄民政府　昭和二十一年四月二十四日から昭和二十五年十一月三日まで</div>
                     </td>
                   </tr>
@@ -976,7 +976,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ロ　臨時北部南西諸島政庁　昭和二十一年十月三日から昭和二十五年十一月二十四日まで</div>
                     </td>
                   </tr>
@@ -984,12 +984,12 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ハ　宮古民政府及び八重山民政府　昭和二十二年四月一日から昭和二十五年十一月三日まで</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="7">
                       <div class="Sentence">三　第三欄に掲げる職員の属した機関</div>
                     </td>
                   </tr>
@@ -997,7 +997,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">イ　沖縄群島政府、宮古群島政府及び八重山群島政府　昭和二十五年十一月四日から昭和二十七年三月三十一日まで</div>
                     </td>
                   </tr>
@@ -1005,12 +1005,12 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ロ　奄美群島政府　昭和二十五年十一月二十五日から昭和二十七年三月三十一日まで</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="7">
                       <div class="Sentence">四　第四欄に掲げる職員の属した機関</div>
                     </td>
                   </tr>
@@ -1018,7 +1018,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">イ　琉球臨時中央政府　昭和二十六年四月一日から昭和二十七年三月三十一日まで</div>
                     </td>
                   </tr>
@@ -1026,12 +1026,12 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ロ　琉球政府　昭和二十七年四月一日から昭和二十八年十二月二十四日まで</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="7">
                       <div class="Sentence">五　第五欄に掲げる職員の属した機関</div>
                     </td>
                   </tr>
@@ -1039,7 +1039,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">イ　琉球貿易庁　昭和二十一年九月十八日から昭和二十七年三月三十一日まで</div>
                     </td>
                   </tr>
@@ -1047,7 +1047,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ロ　琉球農林省　昭和二十五年四月一日から昭和二十七年一月二十一日まで</div>
                     </td>
                   </tr>
@@ -1055,7 +1055,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ハ　琉球郵政庁　昭和二十五年四月一日から昭和二十六年十一月十二日まで</div>
                     </td>
                   </tr>
@@ -1063,7 +1063,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ニ　琉球気象台及びこれに所属する測候所　昭和二十五年一月一日から同年三月三十一日まで</div>
                     </td>
                   </tr>
@@ -1071,7 +1071,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ホ　簡易裁判所　昭和二十一年二月二十五日から同年九月三十日まで</div>
                     </td>
                   </tr>
@@ -1079,7 +1079,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">ヘ　琉球上訴裁判所　昭和二十五年七月十二日から昭和二十七年一月三日まで</div>
                     </td>
                   </tr>

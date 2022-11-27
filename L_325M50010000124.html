@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1386,10 +1386,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">区分</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">算式</div>
                             </td>
                           </tr>
@@ -1530,7 +1530,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6">
                               <div class="Sentence" Num="1">かつお釣漁船、まぐろはえなわ漁船</div>
                             </td>
                             <td>
@@ -1593,7 +1593,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence" Num="1">捕鯨船（母船式捕鯨業の用に供するものを除く。以下同じ）、突棒漁船</div>
                             </td>
                             <td>
@@ -1629,7 +1629,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence" Num="1">運搬漁船</div>
                             </td>
                             <td>
@@ -1672,7 +1672,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence" Num="1">その他の漁船</div>
                             </td>
                             <td>
@@ -1715,7 +1715,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">備考</div>
                               <div class="Sentence" Num="2">一　Ｌは船の長さ（メートル）とし、Ｐは推進機関の計画出力（キロワット）を〇・七三五五で除して得た数とする。</div>
                               <div class="Sentence" Num="3">二　コルトノズルを装備する漁船にあつては、この表の下欄の算式により算出した数値に〇・八七を乗じて得た数値とする。</div>
@@ -1733,10 +1733,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">区分</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">所要時間（秒）</div>
                             </td>
                           </tr>
@@ -1752,7 +1752,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence" Num="1">前進中後進の発令があつた場合において、その発令があつてから</div>
                             </td>
                             <td>
@@ -1811,7 +1811,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">後進中前進の発令があつた場合において、その発令があつてから</div>
                             </td>
                             <td>
@@ -1887,10 +1887,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">区分</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">操舵所要時間（秒）</div>
                             </td>
                           </tr>
@@ -1903,7 +1903,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence" Num="1">手動式操舵装置</div>
                             </td>
                             <td>
@@ -1952,13 +1952,13 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">区分</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">旋回に要する時間（秒）</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">旋回圏の直径（船の長さの倍数）</div>
                             </td>
                           </tr>
@@ -2028,7 +2028,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence" Num="1">流刺網漁船、底びき網漁船、かつお釣漁船、まぐろはえなわ漁船</div>
                             </td>
                             <td>
@@ -2073,7 +2073,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence" Num="1">捕鯨船、突棒漁船</div>
                             </td>
                             <td>
@@ -2132,7 +2132,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence" Num="1">その他の漁船</div>
                             </td>
                             <td>
@@ -2191,7 +2191,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="5">
                               <div class="Sentence" Num="1">備考　複数の漁船の種類に該当する漁船にあつては、主たる漁業活動に係るものと認められる漁船の種類の項の下欄の数値によることとする。</div>
                             </td>
                           </tr>
@@ -2347,7 +2347,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">備考</div>
                               <div class="Sentence" Num="2">一　Ｎは、規定回転数とする。</div>
                               <div class="Sentence" Num="3">二　この表の下欄の回転数まで回転数が上昇しない機関の過負荷試験にあつては、荷重を全負荷の一割増以内、かつ、出力が回転数の三乗に比例する回転数とすることができる。</div>
@@ -2363,10 +2363,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="3">
                               <div class="Sentence" Num="1">機関の種類</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">運転時間（時間）</div>
                             </td>
                           </tr>
@@ -2382,7 +2382,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence" Num="1">電気点火機関</div>
                             </td>
                             <td>
@@ -2413,10 +2413,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="5">
                               <div class="Sentence" Num="1">ディーゼル機関</div>
                             </td>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence" Num="1">計画制動平均有効圧力が一・〇八メガパスカル未満であつて、かつ、計画平均ピストン速度が毎秒八メートル未満のもの</div>
                             </td>
                             <td>
@@ -2475,7 +2475,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">計画制動平均有効圧力が一・〇八メガパスカル以上のもの又は計画平均ピストン速度が毎秒八メートル以上のもの</div>
                             </td>
                             <td>
@@ -2498,10 +2498,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">機関の種類</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">運転時間（時間）</div>
                             </td>
                           </tr>
@@ -2580,7 +2580,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1">備考　Ａは全負荷の四分の一の分力試験における一時間一キロワット当たりの燃料油消費量（グラム）とし、Ｂは全負荷の二分の一の分力試験におけるものとし、Ｃは全負荷の四分の三の分力試験におけるものとし、Ｄは全負荷試験におけるものとする。</div>
                             </td>
                           </tr>
@@ -2594,7 +2594,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="4">
                               <div class="Sentence" Num="1">機関の種類（計画出力）</div>
                             </td>
                             <td>
@@ -2602,7 +2602,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1">電気点火機関</div>
                             </td>
                             <td>
@@ -2613,7 +2613,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1"></div>
                             </td>
                             <td>
@@ -2624,7 +2624,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1"></div>
                             </td>
                             <td>
@@ -2635,7 +2635,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1"></div>
                             </td>
                             <td>
@@ -2646,7 +2646,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence" Num="1"></div>
                             </td>
                             <td>
@@ -2657,10 +2657,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="14">
                               <div class="Sentence" Num="1">ディーゼル機関</div>
                             </td>
-                            <td>
+                            <td rowspan="3" colspan="2">
                               <div class="Sentence" Num="1">シリンダ直径一五〇ミリメートル未満</div>
                             </td>
                             <td>
@@ -2687,7 +2687,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1"></div>
                             </td>
                             <td>
@@ -2698,7 +2698,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence" Num="1"></div>
                             </td>
                             <td>
@@ -2709,10 +2709,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="9">
                               <div class="Sentence" Num="1">シリンダ直径一五〇ミリメートル以上</div>
                             </td>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence" Num="1">行程とシリンダ直径との比が一・五未満</div>
                             </td>
                             <td>
@@ -2761,7 +2761,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence" Num="1">行程とシリンダ直径との比が一・五以上</div>
                             </td>
                             <td>
@@ -2796,7 +2796,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="5">
                               <div class="Sentence" Num="1">備考　減速歯車を有するもの及び流体継手を有するものについての燃料油消費率の値は、この表の下欄の燃料油消費率に対して、それぞれ五パーセント増とする。</div>
                             </td>
                           </tr>
@@ -3240,7 +3240,7 @@
                                 <div class="Sentence" Num="1">公称発振周波数</div>
                                 <div class="Sentence" Num="2">（キロヘルツ）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">発振周波数（キロヘルツ）の範囲</div>
                               </td>
                             </tr>
@@ -3729,7 +3729,7 @@
                                 <div class="Sentence" Num="1">公称発振周波数</div>
                                 <div class="Sentence" Num="2">（キロヘルツ）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">受信系帯域幅（キロヘルツ）の範囲</div>
                               </td>
                             </tr>
@@ -4188,7 +4188,7 @@
                                 <div class="Sentence" Num="1">公称発振周波数</div>
                                 <div class="Sentence" Num="2">（キロヘルツ）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">発振周波数（キロヘルツ）の範囲</div>
                               </td>
                             </tr>
@@ -5056,7 +5056,7 @@
                               <td>
                                 <div class="Sentence" Num="1">位置</div>
                               </td>
-                              <td>
+                              <td colspan="7">
                                 <div class="Sentence" Num="1">構成</div>
                               </td>
                             </tr>
@@ -5105,12 +5105,12 @@
                               <td>
                                 <div class="Sentence" Num="1">内張板</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">　</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="8">
                                 <div class="Sentence" Num="1">備考</div>
                                 <div class="Sentence" Num="2">防水紙は、断熱材の両側の全面に配置されていること。</div>
                               </td>
@@ -5127,10 +5127,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">区分</div>
                               </td>
-                              <td>
+                              <td colspan="5">
                                 <div class="Sentence" Num="1">断熱材の厚さ（ミリメートル）</div>
                               </td>
                             </tr>
@@ -5138,7 +5138,7 @@
                               <td>
                                 <div class="Sentence" Num="1">漁船の種類</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">魚そうの保冷温度（度）</div>
                               </td>
                               <td>
@@ -5158,7 +5158,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">総トン数二百トン以上の鋼製のかつお釣漁船及び冷蔵運搬漁船、トロール漁船</div>
                                 <div class="Sentence" Num="2">総トン数百トン以上の鋼製のまぐろはえなわ漁船及びさば釣漁船</div>
                                 <div class="Sentence" Num="3">操業日数が三十日以上の鋼製漁船</div>
@@ -5255,7 +5255,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">総トン数五十トン以上で一回の操業日数が三日を超え三十日以内の鋼製漁船</div>
                               </td>
                               <td>
@@ -5350,7 +5350,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">総トン数百五十トン以上の木製のかつお釣漁船</div>
                                 <div class="Sentence" Num="2">総トン数百トン以上の木製のまぐろはえなわ漁船、さば釣漁船及び冷蔵運搬漁船</div>
                               </td>
@@ -5423,7 +5423,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">総トン数五十トン以上で一回の操業日数が五日を超える木製漁船</div>
                               </td>
                               <td>
@@ -5472,7 +5472,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">その他の漁船</div>
                               </td>
                               <td>
@@ -5521,7 +5521,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="8">
                                 <div class="Sentence" Num="1">備考</div>
                                 <div class="Sentence" Num="2">一　断熱材の厚さは、炭化コルク板の厚さとし、炭化コルク板以外の断熱材の厚さは、熱伝導率及び熱容量についてこの表に掲げる厚さと同等以上の効力がある厚さとする。（以下この節において同様とする。）</div>
                                 <div class="Sentence" Num="3">二　魚そうの保冷温度がこの表と異るものについては、中間挿入<a class="reference_link" href="L_325AC1000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により算出するものとする。</div>
@@ -5594,27 +5594,27 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">区分</div>
                               </td>
-                              <td>
+                              <td colspan="4">
                                 <div class="Sentence" Num="1">内張板の厚さ（ミリメートル）</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">魚そうの種類</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">魚そうの深さ（メートル）</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">床</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">船側、隔壁</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">天井</div>
                               </td>
                             </tr>
@@ -5627,7 +5627,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">活魚そう、水漬そう、予冷そう、冷海水製造そう</div>
                               </td>
                               <td>
@@ -5681,7 +5681,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">凍結そう、凍結魚そう</div>
                               </td>
                               <td>
@@ -5735,7 +5735,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">その他の魚そう</div>
                               </td>
                               <td>
@@ -5789,7 +5789,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="6">
                                 <div class="Sentence" Num="1">備考</div>
                                 <div class="Sentence" Num="2">一　魚そうの深さとは、床の内張板の上面から天井の内張板の下面までの深さのうち最大のものをいう。</div>
                                 <div class="Sentence" Num="3">二　この表の内張板の厚さは、杉を用いる場合の厚さとし、それ以外の木材を用いる場合の内張板の厚さは、その強さがこの表に掲げる厚さの杉板と同等以上であり、かつ、その通水性が当該杉板と同等であるか又はこれより低い厚さとする。</div>
@@ -5856,18 +5856,18 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">魚そうの深さ（メートル）</div>
                               </td>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">下板の厚さ（ミリメートル）</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">床</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">その他の箇所</div>
                               </td>
                             </tr>
@@ -5889,7 +5889,7 @@
                               <td>
                                 <div class="Sentence" Num="1">一八</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">一六</div>
                               </td>
                             </tr>
@@ -5905,7 +5905,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="4">
                                 <div class="Sentence" Num="1">備考</div>
                                 <div class="Sentence" Num="2">この表の下板の厚さは、杉を用いる場合の厚さとし、それ以外の木材を用いる場合の下板の厚さは、その木材の強さがこの表に掲げる厚さの杉板と同等以上である厚さとする。</div>
                               </td>
@@ -6038,10 +6038,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">区分</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">使用材料</div>
                               </td>
                             </tr>
@@ -6054,7 +6054,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">圧縮機</div>
                               </td>
                               <td>
@@ -6100,7 +6100,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">凝縮器</div>
                               </td>
                               <td>
@@ -6119,7 +6119,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">冷却コイル及び低圧部の連絡管</div>
                               </td>
                               <td>
@@ -6127,7 +6127,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">高圧部の連絡管</div>
                               </td>
                               <td>
@@ -6135,7 +6135,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">備考　冷媒にフレオン又はメチルクロライドを使用する油分離器、液分離器、受液器及び凝縮器にあつては、ＪＩＳＨ三一〇〇号の銅板又はＪＩＳＨ三三〇〇号の継目無銅管でもよい。</div>
                               </td>
                             </tr>
@@ -6228,10 +6228,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">胴の内径（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">胴及び鏡板の厚さ（ミリメートル）</div>
                               </td>
                             </tr>
@@ -6299,7 +6299,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">備考　内径が四百ミリメートル未満のもので突合せ両面溶接されている胴にあつては、この表の値よりそれぞれ一ミリメートル以内を減じたものでよい。</div>
                               </td>
                             </tr>
@@ -6315,13 +6315,13 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">胴の内径（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">胴の厚さ（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">管板の厚さ（ミリメートル）</div>
                               </td>
                             </tr>
@@ -6349,10 +6349,10 @@
                               <td>
                                 <div class="Sentence" Num="1">三・六</div>
                               </td>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">二五</div>
                               </td>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">一九</div>
                               </td>
                             </tr>
@@ -6399,10 +6399,10 @@
                               <td>
                                 <div class="Sentence" Num="1">八・三</div>
                               </td>
-                              <td>
+                              <td rowspan="5">
                                 <div class="Sentence" Num="1">三二</div>
                               </td>
-                              <td>
+                              <td rowspan="5">
                                 <div class="Sentence" Num="1">二五</div>
                               </td>
                             </tr>
@@ -6451,7 +6451,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="5">
                                 <div class="Sentence" Num="1">備考</div>
                                 <div class="Sentence" Num="2">一　この表の管板の厚さは、横型円筒多管式鋼板製で管端が拡大して取り付けられた場合であつて、且つ、管の外径がアンモニアを使用するもので胴の内径六〇〇ミリメートル未満のものについては二九ミリメートルのもの、六〇〇ミリメートル以上のものについては五一ミリメートルのもの、フレオン又はメチルクロライドを使用するものについては、二〇ミリメートルのものの場合の値を示す。</div>
                                 <div class="Sentence" Num="3">二　内径が五〇〇ミリメートル未満のもので突合せ両面溶接されている胴にあつては、この表の値よりそれぞれ一ミリメートル以内を減じたものでよい。</div>
@@ -6468,10 +6468,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">管の外径（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">管の厚さ（ミリメートル）</div>
                               </td>
                             </tr>
@@ -6550,10 +6550,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">胴の内径（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">　胴及び鏡板の厚さ（ミリメートル）</div>
                               </td>
                             </tr>
@@ -6665,7 +6665,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">備考　内径が五〇〇ミリメートル未満のもので突合せ両面溶接されている胴にあつては、この表の値よりそれぞれ一ミリメートル以内を減じたものでよい。</div>
                               </td>
                             </tr>
@@ -6698,10 +6698,10 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence" Num="1">凍結能力（トン／二十四時間）</div>
                                 </td>
-                                <td>
+                                <td colspan="3">
                                   <div class="Sentence" Num="1">冷凍能力（日本標準冷凍トン）</div>
                                 </td>
                               </tr>
@@ -6759,7 +6759,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="4">
                                   <div class="Sentence" Num="1">備考　凍結能力がこの表と異なるものについては、中間挿入<a class="reference_link" href="L_325AC1000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により算出するものとする。</div>
                                 </td>
                               </tr>
@@ -6812,7 +6812,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence" Num="1">備考　一日の予冷量がこの表と異なるものについては、中間挿入<a class="reference_link" href="L_325AC1000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により算出するものとする。</div>
                                 </td>
                               </tr>
@@ -6833,13 +6833,13 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence" Num="1">一魚<ruby>そ<rt>ヽ</rt>
                                     </ruby>
                                     <ruby>う<rt>ヽ</rt>
                                     </ruby>当りの容積（立方メートル）</div>
                                 </td>
-                                <td>
+                                <td colspan="3">
                                   <div class="Sentence" Num="1">冷凍能力（日本標準冷凍トン）</div>
                                 </td>
                               </tr>
@@ -6990,7 +6990,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="4">
                                   <div class="Sentence" Num="1">備考　魚<ruby>そ<rt>ヽ</rt>
                                     </ruby>
                                     <ruby>う<rt>ヽ</rt>
@@ -7032,10 +7032,10 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence" Num="1">凍結能力（トン／二十四時間）</div>
                                 </td>
-                                <td>
+                                <td colspan="3">
                                   <div class="Sentence" Num="1">配管の長さ（メートル）</div>
                                 </td>
                               </tr>
@@ -7093,7 +7093,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="4">
                                   <div class="Sentence" Num="1">備考</div>
                                   <div class="Sentence" Num="2">一　この表の配管の長さは、アンモニアを使用する満液式の蒸発方<a class="reference_link" href="L_325AC1000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の場合であつて、且つ、空気冷却式の場合にあつては毎秒二メートルの通風装置、ブライン漬式の場合にあつては毎秒〇・四メートルのブライン循環装置を有する場合であつて冷却コイルの外径が四二・七ミリメートルのものの場合の値を示す。</div>
                                   <div class="Sentence" Num="3">二　凍結能力がこの表と異なるものについては、中間挿入<a class="reference_link" href="L_325AC1000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により算出するものとする。</div>
@@ -7156,7 +7156,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence" Num="1">備考</div>
                                   <div class="Sentence" Num="2">一　この表の配管比は、アンモニアを使用する満液式の蒸発方<a class="reference_link" href="L_325AC1000000178.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>で、且つ、毎秒〇・四メートルの冷海水循環装置を有する場合であつて、冷却コイルの外径が三四ミリメートルのものの場合の値を示す。</div>
                                   <div class="Sentence" Num="3">二　予冷<ruby>そ<rt>ヽ</rt>
@@ -7185,13 +7185,13 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence" Num="1">一魚<ruby>そ<rt>ヽ</rt>
                                     </ruby>
                                     <ruby>う<rt>ヽ</rt>
                                     </ruby>当りの容積（立方メートル）</div>
                                 </td>
-                                <td>
+                                <td colspan="3">
                                   <div class="Sentence" Num="1">配管比（メートル／立方メートル）</div>
                                 </td>
                               </tr>
@@ -7342,7 +7342,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="4">
                                   <div class="Sentence" Num="1">備考</div>
                                   <div class="Sentence" Num="2">一　この表の配管比は、アンモニアを使用するヘアピン型で、通風を行わない場合であつて、且つ、冷却コイルの外径が四二・七ミリメートルのものの場合の値を示す。</div>
                                   <div class="Sentence" Num="3">二　一魚<ruby>そ<rt>ヽ</rt>
@@ -7477,10 +7477,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">区分</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">水圧又は油圧（メガパスカル）</div>
                               </td>
                             </tr>
@@ -7528,10 +7528,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">区分</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">気圧（メガパスカル）</div>
                               </td>
                             </tr>
@@ -7698,10 +7698,10 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence" Num="1">区分</div>
                                 </td>
-                                <td>
+                                <td colspan="3">
                                   <div class="Sentence" Num="1">冷却温度（摂氏度）</div>
                                 </td>
                               </tr>
@@ -7906,12 +7906,12 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">備考　基準出力は、次の算式により算出される値とする。</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">
                                   <div class="ArithFormula">基準出力（キロワット）＝（キロワット定格×１，０００）／定格回転数</div>
                                 </div>
@@ -8093,12 +8093,12 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">備考　基準出力は、左の算式により算出される値とする。</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">
                                   <div class="ArithFormula">基準出力（キロワツト）＝（キロワツト定格×１，０００）／定格回転数</div>
                                 </div>
@@ -8115,13 +8115,13 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">電動機の種類</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">回転数</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">過速度</div>
                               </td>
                             </tr>
@@ -8183,7 +8183,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="4">
                                 <div class="Sentence" Num="1">備考　Ｎ及び<div class="ArithFormula">Ｎ<div class="Sub">０</div>
                                   </div>は、それぞれ定格回転数及び無負荷回転数を表わし、Ｖは、電動子の周辺速度を表わすものとする。</div>
                               </td>
@@ -8285,12 +8285,12 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">備考　基準出力は、次の算式により算出される値とする。</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">
                                   <div class="ArithFormula">基準出力（キロボルトアンペア）＝（キロボルトアンペア定格×１，０００）／定格回転数</div>
                                 </div>
@@ -8359,10 +8359,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">区分</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">電圧変動率（パーセント）</div>
                               </td>
                             </tr>
@@ -8375,7 +8375,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">自動電圧調整器のあるもの</div>
                               </td>
                               <td>
@@ -8394,7 +8394,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">自動電圧調整器のないもの</div>
                               </td>
                               <td>
@@ -8783,7 +8783,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">単相</div>
                               </td>
                               <td>
@@ -8810,7 +8810,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">三相</div>
                               </td>
                               <td>
@@ -8974,16 +8974,16 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">コンパスの型式</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">コンパスカードの標準直径（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">コンパスバウルの上面標準外径（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">スタンド</div>
                               </td>
                             </tr>
@@ -9137,24 +9137,24 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">コンパスの型式</div>
                               </td>
-                              <td>
+                              <td colspan="12">
                                 <div class="Sentence" Num="1">有効量</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">半円差修正用磁石</div>
                               </td>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">象限差修正具</div>
                               </td>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">フリンダースバー</div>
                               </td>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">傾船差修正用磁石</div>
                               </td>
                             </tr>
@@ -9203,37 +9203,37 @@
                               <td>
                                 <div class="Sentence" Num="1">四五度以上</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">〇・五度以下</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">〇・五度以下</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">一〇度以上</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">〇・五度以下</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">連続</div>
                               </td>
                               <td>
                                 <div class="Sentence" Num="1">七度以上</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">〇・五度以下</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">〇・五度以下</div>
                               </td>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">三〇マイクロテスラ以上</div>
                               </td>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">五マイクロテスラ以下</div>
                               </td>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">五マイクロテスラ以下</div>
                               </td>
                             </tr>
@@ -9333,22 +9333,22 @@
                               <td>
                                 <div class="Sentence" Num="1">甲型Ａ</div>
                               </td>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">一目盛の一〇パーセント以内</div>
                               </td>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">正負〇・二度以内</div>
                               </td>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">正負〇・五度以内</div>
                               </td>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence" Num="1">正負〇・五度以内</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">二七秒（許容誤差正負三秒以内）</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">一〇グラム（許容誤差正負一グラム以内）</div>
                               </td>
                             </tr>
@@ -9361,10 +9361,10 @@
                               <td>
                                 <div class="Sentence" Num="1">乙型Ａ</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">二〇秒（許容誤差正負三秒以内）</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">八グラム（許容誤差正負一・五グラム以内）</div>
                               </td>
                             </tr>
@@ -9447,13 +9447,13 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">六分儀の型式</div>
                               </td>
-                              <td>
+                              <td colspan="5">
                                 <div class="Sentence" Num="1">目盛</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">読取部分</div>
                               </td>
                             </tr>
@@ -9496,10 +9496,10 @@
                               <td>
                                 <div class="Sentence" Num="1">一〇</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">銀又はこれと同等若しくはそれ以上の効果を有するもの</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">自動緊定</div>
                               </td>
                               <td>
@@ -9563,10 +9563,10 @@
                               <td>
                                 <div class="Sentence" Num="1">動鏡</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">〇・五以下</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">検査品を通じてコリメーターの像を三〇倍の望遠鏡で検査し鮮明と認められる程度</div>
                               </td>
                               <td>
@@ -9628,10 +9628,10 @@
                               <td>
                                 <div class="Sentence" Num="1">それぞれ濃度の異なるもの四枚</div>
                               </td>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">〇・五以下</div>
                               </td>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence" Num="1">検査品を通じてコリメーター像を三倍の望遠鏡で検査し、鮮明と認められる程度</div>
                               </td>
                             </tr>
@@ -9822,13 +9822,13 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence" Num="1">文字板の目盛</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">指針</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence" Num="1">目安針</div>
                               </td>
                             </tr>

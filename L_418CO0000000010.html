@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1913,7 +1913,7 @@
                               <div class="Sentence">
                                 <a class="reference_link" href="L_211AC0000000070.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">健康保険法</a>（<a class="reference_link" href="L_211AC0000000070.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">大正十一年法律第七十号</a>）の規定による療養の給付並びに入院時食事療養費、入院時生活療養費、保険外併用療養費、療養費、訪問看護療養費、移送費、家族療養費、家族訪問看護療養費、家族移送費、特別療養費及び高額療養費</div>
                             </td>
-                            <td>
+                            <td rowspan="24">
                               <div class="Sentence">受けることができる給付</div>
                             </td>
                           </tr>
@@ -2060,7 +2060,7 @@
                               <div class="Sentence">
                                 <a class="reference_link" href="L_322AC0000000050.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">労働者災害補償保険法</a>の規定による介護補償給付、複数事業労働者介護給付及び介護給付</div>
                             </td>
-                            <td>
+                            <td rowspan="13">
                               <div class="Sentence">受けることができる給付（介護に要する費用を支出して介護を受けた部分に限る。）</div>
                             </td>
                           </tr>
@@ -2587,7 +2587,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第二項</a>
                                 </div>
@@ -2651,7 +2651,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第一項</a>
                                 </div>
@@ -3056,7 +3056,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_29-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第二項</a>
                                 </div>
@@ -3085,7 +3085,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_29-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第四項</a>
                                 </div>
@@ -3122,7 +3122,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_29-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第五項</a>
                                 </div>
@@ -3147,7 +3147,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_29-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第六項</a>
                                 </div>
@@ -3544,7 +3544,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項</a>
                                 </div>
@@ -3570,7 +3570,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第二号</a>
                                 </div>
@@ -3595,7 +3595,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第三号</a>
                                 </div>
@@ -3628,7 +3628,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                                 </div>
@@ -3657,7 +3657,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第八号</a>及び<a class="reference_link" href="#Mp-At_36-Pr_3-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九号</a>
                                 </div>
@@ -3689,7 +3689,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十号</a>
                                 </div>
@@ -3759,215 +3759,215 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の規定中読み替える規定</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替えられる字句</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替える字句</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_24_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_39-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条第一項</a>の指定障害者支援施設に係る<a class="reference_link" href="#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第一項</a>の指定の変更</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_24_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の申請</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_39-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条第一項</a>の指定障害者支援施設に係る<a class="reference_link" href="#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第一項</a>の指定の変更の申請</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_24_4-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>（療養介護に係る指定の申請にあっては、<a class="reference_link" href="#Mp-At_24_4-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>を除く。）</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_24_4-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第六号まで</a>又は<a class="reference_link" href="#Mp-At_24_4-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十三号まで</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第二号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第一項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_44-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十四条第一項</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第三号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_44-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十四条第二項</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービスの事業の設備及び運営に関する基準</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害者支援施設等の設備及び運営に関する基準</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害福祉サービス事業</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービス事業者の</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害者支援施設の</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定障害福祉サービス事業者</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定障害者支援施設の設置者</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第八号</a>及び<a class="reference_link" href="#Mp-At_36-Pr_3-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_46-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_47" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十七条</a>の規定による指定の辞退</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該事業の廃止</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定の辞退又は事業の廃止</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該届出</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該辞退又は届出</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_46-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_47" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十七条</a>の規定による指定の辞退</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該届出に係る</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該辞退若しくは届出に係る</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該事業の廃止</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定の辞退又は事業の廃止</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該届出の</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該辞退又は届出の</div>
                               </td>
                             </tr>
@@ -3987,27 +3987,27 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の規定中読み替える規定</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替えられる字句</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替える字句</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第一項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害福祉サービス事業を行う者</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービス事業者</div>
                               </td>
                             </tr>
@@ -4023,220 +4023,220 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の規定中読み替える規定</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替えられる字句</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替える字句</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第一項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">、障害者支援施設</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">、指定障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該障害者支援施設</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_25-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の申請</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_41-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一項</a>の指定障害者支援施設に係る<a class="reference_link" href="#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第一項</a>の指定の更新の申請</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_25-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>（療養介護に係る指定の申請にあっては、<a class="reference_link" href="#Mp-At_25-Pr_2-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>を除く。）</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_25-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第六号まで</a>又は<a class="reference_link" href="#Mp-At_25-Pr_2-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十三号まで</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第二号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第一項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_44-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十四条第一項</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第三号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_44-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十四条第二項</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービスの事業の設備及び運営に関する基準</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害者支援施設等の設備及び運営に関する基準</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害福祉サービス事業</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害者支援施設</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービス事業者の</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害者支援施設の</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定障害福祉サービス事業者</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定障害者支援施設の設置者</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第八号</a>及び<a class="reference_link" href="#Mp-At_36-Pr_3-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_46-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_47" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十七条</a>の規定による指定の辞退</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該事業の廃止</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定の辞退又は事業の廃止</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該届出</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該辞退又は届出</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_46-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_47" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十七条</a>の規定による指定の辞退</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該届出に係る</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該辞退若しくは届出に係る</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該事業の廃止</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定の辞退又は事業の廃止</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該届出の</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該辞退又は届出の</div>
                               </td>
                             </tr>
@@ -4269,7 +4269,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_48-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条第一項</a>
                                 </div>
@@ -4412,7 +4412,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_50-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項第一号</a>
                                 </div>
@@ -4450,7 +4450,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_50-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項第三号</a>
                                 </div>
@@ -4475,7 +4475,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_50-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項第四号</a>
                                 </div>
@@ -4521,7 +4521,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_50-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項第六号</a>
                                 </div>
@@ -4546,7 +4546,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_50-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項第七号</a>
                                 </div>
@@ -4693,7 +4693,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第二項</a>
                                 </div>
@@ -4795,7 +4795,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第二項</a>
                                 </div>
@@ -4947,7 +4947,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項</a>
                                 </div>
@@ -4973,7 +4973,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第二号</a>
                                 </div>
@@ -4996,7 +4996,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第三号</a>
                                 </div>
@@ -5019,7 +5019,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                                 </div>
@@ -5164,7 +5164,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項</a>
                                 </div>
@@ -5198,7 +5198,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第二号</a>
                                 </div>
@@ -5221,7 +5221,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第三号</a>
                                 </div>
@@ -5244,7 +5244,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                                 </div>
@@ -5360,173 +5360,173 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の規定中読み替える規定</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替えられる字句</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替える字句</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_41-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十一第一項</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の申請</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十一第一項</a>の指定の更新の申請</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>（療養介護に係る指定の申請にあっては、<a class="reference_link" href="#Mp-At_26_15-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>を除く。）</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第三号まで</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号から第九号まで</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号</a>又は<a class="reference_link" href="#Mp-At_26_15-Pr_1-It_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二号</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第二号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">一般相談支援事業所（<a class="reference_link" href="#Mp-At_51_19-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第一項</a>に規定する一般相談支援事業所をいう。以下この項において同じ。）</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第一項</a>の都道府県の条例</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_23-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十三第一項</a>の厚生労働省令</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第三号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第二項</a>の都道府県の条例で定める指定障害福祉サービスの事業の設備及び運営に関する基準</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_23-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十三第二項</a>の厚生労働省令で定める指定地域相談支援の事業の運営に関する基準</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害福祉サービス事業</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">一般相談支援事業</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">一般相談支援事業所</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービス事業者の</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定一般相談支援事業者（<a class="reference_link" href="#Mp-At_51_14-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十四第一項</a>に規定する指定一般相談支援事業者をいう。以下この項において同じ。）の</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定障害福祉サービス事業者</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定一般相談支援事業者</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第七号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービス事業者</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定一般相談支援事業者</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十一号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害福祉サービス</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">相談支援</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_19-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十九第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十二号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号から第六号まで</a>又は<a class="reference_link" href="#Mp-At_26_15-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から前号まで</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号から第六号まで</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九号</a>又は<a class="reference_link" href="#Mp-At_26_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>
                                 </div>
@@ -5545,194 +5545,194 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の規定中読み替える規定</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替えられる字句</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">読み替える字句</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_41-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第二項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十一第一項</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">都道府県知事は</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">市町村長は</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の申請</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十一第一項</a>の指定の更新の申請</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>（療養介護に係る指定の申請にあっては、<a class="reference_link" href="#Mp-At_26_15-Pr_2-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>を除く。）</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第三号まで</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_2-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号から第九号まで</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_2-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号</a>又は<a class="reference_link" href="#Mp-At_26_15-Pr_2-It_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二号</a>
                                 </div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第二号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">特定相談支援事業所（<a class="reference_link" href="#Mp-At_51_20-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第一項</a>に規定する特定相談支援事業所をいう。以下この項において同じ。）</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第一項</a>の都道府県の条例</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_24-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十四第一項</a>の厚生労働省令</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第三号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_43-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条第二項</a>の都道府県の条例で定める指定障害福祉サービスの事業の設備及び運営に関する基準</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_24-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十四第二項</a>の厚生労働省令で定める指定計画相談支援の事業の運営に関する基準</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害福祉サービス事業</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">特定相談支援事業</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3" Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">サービス事業所</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">特定相談支援事業所</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービス事業者の</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定特定相談支援事業者（<a class="reference_link" href="#Mp-At_51_17-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の十七第一項第一号</a>に規定する指定特定相談支援事業者をいう。以下この項において同じ。）の</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定障害福祉サービス事業者</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">当該指定特定相談支援事業者</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第七号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定障害福祉サービス事業者</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">指定特定相談支援事業者</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第九号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">都道府県知事</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">都道府県知事又は市町村長</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十一号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">障害福祉サービス</div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">相談支援</div>
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_51_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十第二項</a>において準用する<a class="reference_link" href="#Mp-At_36-Pr_3-It_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十二号</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_2-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号から第六号まで</a>又は<a class="reference_link" href="#Mp-At_26_15-Pr_2-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から前号まで</a>
                                 </div>
                               </td>
-                              <td>
+                              <td Valign="top">
                                 <div class="Sentence">
                                   <a class="reference_link" href="#Mp-At_26_15-Pr_2-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号から第六号まで</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_2-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号</a>、<a class="reference_link" href="#Mp-At_26_15-Pr_2-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九号</a>又は<a class="reference_link" href="#Mp-At_26_15-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>
                                 </div>
@@ -6095,227 +6095,227 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>の規定中読み替える規定</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">読み替えられる字句</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">読み替える字句</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_36-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項各号</a>列記以外の部分</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_37-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_59-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十九条第一項</a>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_37-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>（療養介護に係る指定の申請にあっては、<a class="reference_link" href="#Mp-At_37-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>を除く。）</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_37-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号から第六号まで</a>又は<a class="reference_link" href="#Mp-At_37-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十三号まで</a>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4" Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_36-Pr_3-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第六号</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_50-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項</a>（<a class="reference_link" href="#Mp-At_50-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>において準用する場合を含む。以下この項において同じ。）、<a class="reference_link" href="#Mp-At_51_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十九第一項</a>若しくは<a class="reference_link" href="#Mp-At_51_29-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>又は<a class="reference_link" href="#Mp-At_76_3-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十六条の三第六項</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">サービス事業所を管理する者その他の政令で定める使用人</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">医療機関の管理者</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">指定障害福祉サービス事業者の</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">指定自立支援医療機関（<a class="reference_link" href="#Mp-At_54-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十四条第二項</a>に規定する指定自立支援医療機関をいう。）の</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該指定障害福祉サービス事業者</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該指定自立支援医療機関の開設者</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4" Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_36-Pr_3-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第八号</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_50-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項</a>、<a class="reference_link" href="#Mp-At_51_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十九第一項</a>若しくは<a class="reference_link" href="#Mp-At_51_29-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>又は<a class="reference_link" href="#Mp-At_76_3-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十六条の三第六項</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_46-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第二項</a>又は<a class="reference_link" href="#Mp-At_51_25-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十五第二項</a>若しくは<a class="reference_link" href="#Mp-At_51_25-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>の規定による事業の廃止の届出</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">障害者の日常生活及び社会生活を総合的に支援するための法律施行令</a>
                                 <a class="reference_link" href="L_418CO0000000010.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>の規定による指定の辞退の申出</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該事業の廃止</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該指定の辞退</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該届出</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該申出</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="5" Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_36-Pr_3-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第九号</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_48-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十八条第一項</a>（<a class="reference_link" href="#Mp-At_48-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>において準用する場合を含む。）又は<a class="reference_link" href="#Mp-At_51_27-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十七第一項</a>若しくは<a class="reference_link" href="#Mp-At_51_27-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_66-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十六条第一項</a>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_50-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項</a>又は<a class="reference_link" href="#Mp-At_51_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十九第一項</a>若しくは<a class="reference_link" href="#Mp-At_51_29-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_46-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第二項</a>又は<a class="reference_link" href="#Mp-At_51_25-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十五第二項</a>若しくは<a class="reference_link" href="#Mp-At_51_25-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>の規定による事業の廃止の届出</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">障害者の日常生活及び社会生活を総合的に支援するための法律施行令</a>
                                 <a class="reference_link" href="L_418CO0000000010.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>の規定による指定の辞退の申出</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該事業の廃止</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該指定の辞退</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該届出</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該申出</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3" Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_36-Pr_3-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十号</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_46-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第二項</a>又は<a class="reference_link" href="#Mp-At_51_25-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条の二十五第二項</a>若しくは<a class="reference_link" href="#Mp-At_51_25-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四項</a>の規定による事業の廃止の届出</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">障害者の日常生活及び社会生活を総合的に支援するための法律施行令</a>
                                 <a class="reference_link" href="L_418CO0000000010.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>の規定による指定の辞退の申出</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該届出</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該申出</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該事業の廃止</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">当該指定の辞退</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_36-Pr_3-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条第三項第十一号</a>
                               </div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">障害福祉サービス</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">自立支援医療</div>
                             </td>
                           </tr>
@@ -6433,7 +6433,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_50-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項第十号</a>
                               </div>
@@ -6471,7 +6471,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_50-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第二項</a>
                               </div>
@@ -6568,7 +6568,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第三項第一号</a>
                               </div>
@@ -6589,7 +6589,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第三項第二号</a>及び<a class="reference_link" href="#Mp-At_58-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>
                               </div>
@@ -6610,7 +6610,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第四項</a>
                               </div>
@@ -6635,7 +6635,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="5">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第五項</a>
                               </div>
@@ -6680,7 +6680,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第六項</a>
                               </div>
@@ -6746,7 +6746,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_3-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第三項第一号</a>
                               </div>
@@ -6767,7 +6767,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第三項第二号</a>及び<a class="reference_link" href="#Mp-At_58-Pr_3-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>
                               </div>
@@ -6788,7 +6788,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="#Mp-At_58-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条第四項</a>
                               </div>
@@ -8339,7 +8339,8 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence">この政令による改正後の障害者自立支援<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>施行令及び<a class="reference_link" href="L_323CO0000000074.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">児童福祉法施行令</a>の規定は、この政令の施行の日以後に行われる障害者自立支援<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       <a class="reference_link" href="L_417AC0000000123.html#Mp-At_5-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第一項</a>に規定する障害福祉サービス及び<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
-                      <a class="reference_link" href="L_417AC0000000123.html#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第一項</a>に規定する指定障害福祉サービス等並びに障害者自立支援<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>施行令第十九条第一項に規定する居宅サービス等及び同令第四十二条の四第二項に規定する指定療養介護医療等並びに<a class="reference_link" href="L_322AC0000000164.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">児童福祉法</a>
+                      <a class="reference_link" href="L_417AC0000000123.html#Mp-At_29-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第一項</a>に規定する指定障害福祉サービス等並びに障害者自立支援<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>施行令第十九条第一項に規定する居宅サービス等及び<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_417AC0000000123.html#Mp-At_42_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十二条の四第二項</a>に規定する指定療養介護医療等並びに<a class="reference_link" href="L_322AC0000000164.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">児童福祉法</a>
                       <a class="reference_link" href="L_322AC0000000164.html#Mp-At_24_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条の二第一項</a>に規定する指定施設支援及び<a class="reference_link" href="L_322AC0000000164.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                       <a class="reference_link" href="L_322AC0000000164.html#Mp-At_24_20-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条の二十第一項</a>に規定する障害児施設医療（以下この条において「障害福祉サービス等」という。）について適用し、この政令の施行の日前に行われた障害福祉サービス等については、なお従前の例による。</div>
                   </div>
@@ -8568,7 +8569,11 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">第十条の規定による改正後の<a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">障害者の日常生活及び社会生活を総合的に支援するための法律施行令</a>
-                      <a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第一項第十号から第十二号まで</a>若しくは<a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_2-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項第九号</a>（<a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第一項第十号から第十二号まで</a>に係る部分に限る。）、<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条第一項第三号</a>（同令第二十二条第一項第十号から第十二号までに係る部分に限る。）若しくは<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項第二号</a>（同令第二十二条第一項第十号から第十二号までに係る部分に限る。）、<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条の十</a>（同令第二十二条第一項第十号から第十二号までに係る部分に限る。）又は<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26_16-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条の十六第一号</a>（同令第二十二条第一項第十号から第十二号までに係る部分に限る。）の規定は、施行日以後にした行為によりこれらの規定に規定する<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定により罰金の刑に処せられた者又は施行日以後にこれらの規定に規定する<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律若しくはこれらの規定に規定する<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律に基づく命令若しくは処分に違反する行為を行った者について適用する。</div>
+                      <a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第一項第十号から第十二号まで</a>若しくは<a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_2-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項第九号</a>（<a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第一項第十号から第十二号まで</a>に係る部分に限る。）、<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条第一項第三号</a>（<a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第一項第十号から第十二号まで</a>に係る部分に限る。）若しくは<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項第二号</a>（<a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第一項第十号から第十二号まで</a>に係る部分に限る。）、<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条の十</a>（<a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第一項第十号から第十二号まで</a>に係る部分に限る。）又は<a class="reference_link" href="L_418CO0000000010.html#Mp-At_26_16-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条の十六第一号</a>（<a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_418CO0000000010.html#Mp-At_22-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第一項第十号から第十二号まで</a>に係る部分に限る。）の規定は、施行日以後にした行為によりこれらの規定に規定する<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律の規定により罰金の刑に処せられた者又は施行日以後にこれらの規定に規定する<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律若しくはこれらの規定に規定する<a class="reference_link" href="L_417AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律に基づく命令若しくは処分に違反する行為を行った者について適用する。</div>
                   </div>
                 </div>
               </div>
@@ -8634,8 +8639,17 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence">第二条中<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">介護保険法施行令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第一号</a>の改正規定、同令第二十二条の二の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を同令第二十二条の二の二とする改正規定、同令第二十二条の次に一条を加える改正規定、同令第二十二条の三及び第二十五条第一号の改正規定、同令第二十九条の二の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を同令第二十九条の二の二とする改正規定、同令第二十九条の次に一条を加える改正規定並びに同令第二十九条の三第三項及び第三十三条の改正規定、第四条の規定（健康保険法等の一部を改正する法律附則第百三十条の二第一項の規定によりなおその効力を有するものとされた<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">介護保険法施行令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び同令第三十五条の二第十六号の改正規定を除く。）、第八条の規定、第十二条中<a class="reference_link" href="L_333CO0000000362.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国民健康保険法施行令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第一号</a>の改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二</a>の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二の二</a>とする改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条</a>の次に一条を加える改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の三</a>及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_25-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条第一号</a>の改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二</a>の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二の二</a>とする改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条</a>の次に一条を加える改正規定並びに<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の三第三項</a>及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_33" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条</a>の改正規定、第四条の規定（健康保険法等の一部を改正する法律附則第百三十条の二第一項の規定によりなおその効力を有するものとされた<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">介護保険法施行令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_35_2-Pr_1-It_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条の二第十六号</a>の改正規定を除く。）、第八条の規定、第十二条中<a class="reference_link" href="L_333CO0000000362.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国民健康保険法施行令</a>
                           <a class="reference_link" href="L_333CO0000000362.html#Mp-At_29_4_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の四の二第一項</a>の改正規定、第二十条中<a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">障害者の日常生活及び社会生活を総合的に支援するための法律施行令</a>
                           <a class="reference_link" href="L_418CO0000000010.html#Mp-At_43_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条の五第一項第三号</a>の改正規定並びに第二十一条中<a class="reference_link" href="L_419CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">高齢者の医療の確保に関する法律施行令</a>
                           <a class="reference_link" href="L_419CO0000000318.html#Mp-At_16_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条の二第一項第四号</a>及び<a class="reference_link" href="L_419CO0000000318.html#Mp-At_16_2-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>の改正規定並びに次条及び附則第五条から第十二条までの規定</div>

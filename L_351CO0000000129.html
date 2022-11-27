@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1366,7 +1366,8 @@
                           <div class="Sentence">
                             <a class="reference_link" href="L_329AC0000000051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">ガス事業法</a>（<a class="reference_link" href="L_329AC0000000051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年法律第五十一号</a>）<a class="reference_link" href="L_329AC0000000051.html#Mp-At_2-Pr_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第十三項</a>に規定するガス工作物又は<a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電気事業法</a>（<a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十九年法律第百七十号</a>）<a class="reference_link" href="L_339AC0000000170.html#Mp-At_2-Pr_1-It_17" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項第十七号</a>に規定する電気事業者に係る<a class="reference_link" href="L_339AC0000000170.html#Mp-At_2-Pr_1-It_18" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第十八号</a>に規定する電気工作物（<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">高圧ガス保安法施行令</a>（<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成九年政令第二十号</a>）<a class="reference_link" href="L_409CO0000000020.html#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二項</a>に規定する電気工作物に限る。）若しくは<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                             <a class="reference_link" href="L_409CO0000000020.html#Mp-At_47-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十七条第一項</a>の認可に係る<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
-                            <a class="reference_link" href="L_409CO0000000020.html#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>に規定する自家用電気工作物（同令<a class="reference_link" href="#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二項</a>に規定する電気工作物に限る。）において通常貯蔵し、又は一日に通常取り扱い、若しくは処理する高圧ガス以外の可燃性ガスの温度零度、圧力零パスカルの状態における容積の合計</div>
+                            <a class="reference_link" href="L_409CO0000000020.html#Mp-At_38-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第三項</a>に規定する自家用電気工作物（<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                            <a class="reference_link" href="L_409CO0000000020.html#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二項</a>に規定する電気工作物に限る。）において通常貯蔵し、又は一日に通常取り扱い、若しくは処理する高圧ガス以外の可燃性ガスの温度零度、圧力零パスカルの状態における容積の合計</div>
                         </div>
                       </div>
                     </div>
@@ -1696,10 +1697,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">浮きぶた付きの屋外貯蔵タンクのうち浮きぶたが屋根を兼ねるもの以外のもので総務省令で定めるもの</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">石油</div>
                             </td>
                             <td>
@@ -1718,10 +1719,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6">
                               <div class="Sentence">その他の屋外貯蔵タンク</div>
                             </td>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence">
                                 <a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法</a>別表第一に掲げる第一石油類又は第二石油類</div>
                             </td>
@@ -1757,7 +1758,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">
                                 <a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法</a>別表第一に掲げる第三石油類又は第四石油類</div>
                             </td>
@@ -3189,7 +3190,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">石油の貯蔵・取扱量又は高圧ガスの処理量をそれぞれ<a class="reference_link" href="L_350AC0000000084.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                               <a class="reference_link" href="L_350AC0000000084.html#Mp-At_2-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二号</a>イに規定する基準貯蔵・取扱量又は基準処理量で除して得た数値が共に五以上である事業所</div>
                           </td>
@@ -3217,7 +3218,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">その他の事業所</div>
                           </td>
                           <td>
@@ -3244,7 +3245,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">備考　この表の上欄に掲げる事業所について<a class="reference_link" href="L_414AC0000000151.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">情報通信技術を活用した行政の推進等に関する法律</a>（<a class="reference_link" href="L_414AC0000000151.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十四年法律第百五十一号</a>）<a class="reference_link" href="L_414AC0000000151.html#Mp-At_6-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項</a>の規定により<a class="reference_link" href="L_414AC0000000151.html#Mp-At_6-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する電子情報処理組織を使用して<a class="reference_link" href="L_350AC0000000084.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                               <a class="reference_link" href="L_350AC0000000084.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一項</a>の届出をする場合における手数料の額は、同表の下欄に定める額から百円を減じた額とする。</div>
                           </td>
@@ -3362,7 +3363,8 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence">第一条中<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">危険物の規制に関する政令</a>
-                          <a class="reference_link" href="L_334CO0000000306.html#Mp-At_30_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十条の三第三項</a>及び<a class="reference_link" href="L_334CO0000000306.html#Mp-At_31-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十一条第一項</a>の改正規定、同令第四十条第一項の表の（二）の項の改正規定（「一万円」を「一万五千円」に、「四万円」を「六万円」に改める部分に限る。）、同表の（十一）の項の改正規定並びに第三条の規定並びに附則第十八条及び附則第十九条の規定並びに附則第二十条の規定（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">石油コンビナート等災害防止法施行令</a>（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十一年政令第百二十九号</a>）<a class="reference_link" href="L_351CO0000000129.html#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条</a>及び<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第一項</a>の改正規定に限る。）</div>
+                          <a class="reference_link" href="L_334CO0000000306.html#Mp-At_30_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十条の三第三項</a>及び<a class="reference_link" href="L_334CO0000000306.html#Mp-At_31-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十一条第一項</a>の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_334CO0000000306.html#Mp-At_40-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条第一項</a>の表の（二）の項の改正規定（「一万円」を「一万五千円」に、「四万円」を「六万円」に改める部分に限る。）、同表の（十一）の項の改正規定並びに第三条の規定並びに附則第十八条及び附則第十九条の規定並びに附則第二十条の規定（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">石油コンビナート等災害防止法施行令</a>（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十一年政令第百二十九号</a>）<a class="reference_link" href="L_351CO0000000129.html#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条</a>及び<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第一項</a>の改正規定に限る。）</div>
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence">公布の日</div>

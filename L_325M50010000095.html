@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2795,7 +2795,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">検査事項の種類</div>
                           </td>
                           <td>
@@ -3115,7 +3115,7 @@
                           <td>
                             <div class="Sentence" Num="1">推進機関及び補機関（一台につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力八・八キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3129,7 +3129,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力八・八キロワツト以上四四キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3143,7 +3143,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力四四キロワツト以上八八キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3157,7 +3157,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力八八キロワツト以上一九一キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3171,7 +3171,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力一九一キロワツト以上三六八キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3185,7 +3185,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力三六八キロワツト以上七三六キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3199,7 +3199,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力七三六キロワツト以上一、一〇三キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3213,7 +3213,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力一、一〇三キロワツト以上二、二〇七キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3227,7 +3227,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">計画出力二、二〇七キロワツト以上のもの</div>
                           </td>
                           <td>
@@ -3241,7 +3241,7 @@
                           <td>
                             <div class="Sentence" Num="1">空気圧縮機（一台につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">原動機出力四・五キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3255,7 +3255,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">原動機出力四・五キロワツト以上七・五キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3269,7 +3269,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">原動機出力七・五キロワツト以上のもの</div>
                           </td>
                           <td>
@@ -3280,7 +3280,7 @@
                           <td>
                             <div class="Sentence" Num="1">四</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">魚群探知機（一台につき）</div>
                           </td>
                           <td>
@@ -3291,7 +3291,7 @@
                           <td>
                             <div class="Sentence" Num="1">五</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">うず巻ポンプ（一台につき）</div>
                           </td>
                           <td>
@@ -3302,7 +3302,7 @@
                           <td>
                             <div class="Sentence" Num="1">六</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">魚倉の防熱設備（一隻につき）</div>
                           </td>
                           <td>
@@ -3316,7 +3316,7 @@
                           <td>
                             <div class="Sentence" Num="1">冷凍設備（一式につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力五トン未満のもの</div>
                           </td>
                           <td>
@@ -3330,7 +3330,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力五トン以上二五トン未満のもの</div>
                           </td>
                           <td>
@@ -3344,7 +3344,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力二五トン以上五〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3358,7 +3358,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力五〇トン以上七五トン未満のもの</div>
                           </td>
                           <td>
@@ -3372,7 +3372,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力七五トン以上一〇〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3386,7 +3386,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力一〇〇トン以上一五〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3400,7 +3400,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力一五〇トン以上二〇〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3414,7 +3414,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">冷凍能力二〇〇トン以上のもの</div>
                           </td>
                           <td>
@@ -3428,7 +3428,7 @@
                           <td>
                             <div class="Sentence" Num="1">発電機（一台につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力五キロワツト未満又は六キロボルトアンペア未満のもの</div>
                           </td>
                           <td>
@@ -3442,7 +3442,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力五キロワツト以上二〇キロワツト未満又は六キロボルトアンペア以上二五キロボルトアンペア未満のもの</div>
                           </td>
                           <td>
@@ -3456,7 +3456,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力二〇キロワツト以上五〇キロワツト未満又は二五キロボルトアンペア以上六〇キロボルトアンペア未満のもの</div>
                           </td>
                           <td>
@@ -3470,7 +3470,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力五〇キロワツト以上一〇〇キロワツト未満又は六〇キロボルトアンペア以上一二五キロボルトアンペア未満のもの</div>
                           </td>
                           <td>
@@ -3484,7 +3484,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力一〇〇キロワツト以上又は一二五キロボルトアンペア以上のもの</div>
                           </td>
                           <td>
@@ -3498,7 +3498,7 @@
                           <td>
                             <div class="Sentence" Num="1">電動機（一台につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力三・七キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3512,7 +3512,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力三・七キロワツト以上一五キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3526,7 +3526,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力一五キロワツト以上五〇キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3540,7 +3540,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力五〇キロワツト以上一〇〇キロワツト未満のもの</div>
                           </td>
                           <td>
@@ -3554,7 +3554,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力一〇〇キロワツト以上のもの</div>
                           </td>
                           <td>
@@ -3568,7 +3568,7 @@
                           <td>
                             <div class="Sentence" Num="1">変圧器（一台につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力六キロボルトアンペア未満のもの</div>
                           </td>
                           <td>
@@ -3582,7 +3582,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力六キロボルトアンペア以上二五キロボルトアンペア未満のもの</div>
                           </td>
                           <td>
@@ -3596,7 +3596,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力二五キロボルトアンペア以上のもの</div>
                           </td>
                           <td>
@@ -3610,7 +3610,7 @@
                           <td>
                             <div class="Sentence" Num="1">配電盤（一台につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力一〇〇キロワツト未満又は一二五キロボルトアンペア未満のもの</div>
                           </td>
                           <td>
@@ -3624,7 +3624,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">定格出力一〇〇キロワツト以上又は一二五キロボルトアンペア以上のもの</div>
                           </td>
                           <td>
@@ -3638,7 +3638,7 @@
                           <td>
                             <div class="Sentence" Num="1">磁気コンパス（一台につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">甲型Ａ</div>
                           </td>
                           <td>
@@ -3652,7 +3652,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">甲型Ｂ</div>
                           </td>
                           <td>
@@ -3666,7 +3666,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">乙型Ａ</div>
                           </td>
                           <td>
@@ -3680,7 +3680,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">乙型Ｂ</div>
                           </td>
                           <td>
@@ -3691,7 +3691,7 @@
                           <td>
                             <div class="Sentence" Num="1">十三</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">舶用六分儀（一台につき）</div>
                           </td>
                           <td>
@@ -3702,7 +3702,7 @@
                           <td>
                             <div class="Sentence" Num="1">十四</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">舶用アネロイド気圧計（一台につき）</div>
                           </td>
                           <td>
@@ -3713,7 +3713,7 @@
                           <td>
                             <div class="Sentence" Num="1">十五</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">船内時計（一台につき）</div>
                           </td>
                           <td>
@@ -3727,7 +3727,7 @@
                           <td>
                             <div class="Sentence" Num="1">木船及びＦＲＰ製漁船の総合検査（一隻につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数二〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3741,7 +3741,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数二〇トン以上五〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3755,7 +3755,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数五〇トン以上一〇〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3769,7 +3769,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数一〇〇トン以上のもの</div>
                           </td>
                           <td>
@@ -3783,7 +3783,7 @@
                           <td>
                             <div class="Sentence" Num="1">鋼船の総合検査（一隻につき）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数一〇〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3797,7 +3797,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数一〇〇トン以上二〇〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3811,7 +3811,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数二〇〇トン以上五〇〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3825,7 +3825,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数五〇〇トン以上八〇〇トン未満のもの</div>
                           </td>
                           <td>
@@ -3839,7 +3839,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">総トン数八〇〇トン以上のもの</div>
                           </td>
                           <td>
@@ -3847,7 +3847,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="5">
                             <div class="Sentence" Num="1">備考　魚倉の防熱設備と船体との双方について検査を依頼した場合の検査手数料については、魚倉の防熱設備の手数料は、納付することを要しない。</div>
                           </td>
                         </tr>

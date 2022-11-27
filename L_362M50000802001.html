@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -361,7 +361,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考　この表の下欄に掲げる算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                               <div class="Sentence">Ｖ　貨物艙一艙当たりの容量を立方メートルで表した数値</div>
                               <div class="Sentence">ｒ　貨物艙一艙当たりのＸ類物質等の残留量を立方メートルで表した数値。ただし、Ｖが一〇〇以下であつて当該残留量が〇・〇四立方メートル未満である場合にあつては〇・〇四とし、Ｖが一〇〇を超え五〇〇未満であつて当該残留量が次の算式により算定した量未満である場合にあつては当該算式により算定した量とし、Ｖが五〇〇以上であつて当該残留量が〇・一立方メートル未満である場合にあつては〇・一とする。</div>
@@ -483,64 +483,64 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">物質の区分</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">取卸しを行う海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">貨物艙一艙当たりの洗浄水の量（立方メートル）</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">一　凝固性物質であるもの又は高粘性物質であるもの</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">全ての海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">１５ｒ<div class="Sup">０．８</div>＋５ｒ<div class="Sup">０．７</div>×Ｖ×１０<div class="Sup">－３</div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">二　非凝固性物質であつて低粘性物質であるもの（次の項に掲げるものを除く。）</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">全ての海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">０．５×（１５ｒ<div class="Sup">０．８</div>＋５ｒ<div class="Sup">０．７</div>×Ｖ×１０<div class="Sup">－３</div>）</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" Valign="top">
                               <div class="Sentence">三　特定残留性浮遊物質（残留性浮遊物質のうち、次のいずれにも該当するものをいう。以下同じ。）であるもの</div>
                               <div class="Sentence">イ　非凝固性物質であつて低粘性物質であること。</div>
                               <div class="Sentence">ロ　Ｙ類物質等であること。</div>
                               <div class="Sentence">ハ　温度二十度における粘度が五十ミリパスカル秒以上である物質又は融点が温度零度以上である物質であること。</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">北西ヨーロッパ海域、バルティック海海域、別表に掲げる西ヨーロッパ海域及び同表に掲げるノルウェー海域以外の海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">０．５×（１５ｒ<div class="Sup">０．８</div>＋５ｒ<div class="Sup">０．７</div>×Ｖ×１０<div class="Sup">－３</div>）</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">北西ヨーロッパ海域、バルティック海海域、別表に掲げる西ヨーロッパ海域及び同表に掲げるノルウェー海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">１５ｒ<div class="Sup">０．８</div>＋５ｒ<div class="Sup">０．７</div>×Ｖ×１０<div class="Sup">－３</div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3" Valign="top">
                               <div class="Sentence">備考　この表の下欄に掲げる算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                               <div class="Sentence">Ｖ　貨物艙一艙当たりの容量を立方メートルで表した数値</div>
                               <div class="Sentence">ｒ　貨物艙一艙当たりのＹ類物質等又はＺ類物質等の残留量を立方メートルで表した数値。ただし、Ｖが一〇〇以下であつて当該残留量が〇・〇四立方メートル未満である場合にあつては〇・〇四とし、Ｖが一〇〇を超え五〇〇未満であつて当該残留量が次の算式により算定した量未満である場合にあつては当該算式により算定した量とし、Ｖが五〇〇以上であつて当該残留量が〇・一立方メートル未満である場合にあつては〇・一とする。</div>
@@ -559,54 +559,54 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">物質の区分</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">取卸しを行う海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">サイクル数</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">一　凝固性物質であるもの</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">全ての海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">一</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">二　非凝固性物質であるもの（次の項に掲げるものを除く。）</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">全ての海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">二分の一</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" Valign="top">
                               <div class="Sentence">三　特定残留性浮遊物質であるもの</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">北西ヨーロッパ海域、バルティック海海域、別表に掲げる西ヨーロッパ海域及び同表に掲げるノルウェー海域以外の海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">二分の一</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">北西ヨーロッパ海域、バルティック海海域、別表に掲げる西ヨーロッパ海域及び同表に掲げるノルウェー海域</div>
                             </td>
-                            <td>
+                            <td Valign="top">
                               <div class="Sentence">一</div>
                             </td>
                           </tr>
@@ -753,26 +753,26 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">海域名</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">海域の範囲</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">西ヨーロッパ海域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">北緯五十八度三十分経度〇度の点から陸岸まで二七〇度に引いた線、同点、北緯六十二度経度〇度の点、北緯六十二度西経三度の点、北緯五十六度三十分西経十二度の点、北緯五十四度四十分四十秒・九西経十五度の点、北緯五十度五十六分四十五秒・三西経十五度の点、北緯四十八度二十七分西経六度二十五分の点、北緯四十八度二十七分西経八度の点、北緯四十四度五十二分西経三度十分の点、北緯四十四度五十二分西経十度の点、北緯四十四度十四分西経十一度三十四分の点、北緯四十二度五十五分西経十二度十八分の点、北緯四十一度五十分西経十一度三十四分の点、北緯三十七度西経九度四十九分の点、北緯三十六度二十分西経九度の点、北緯三十六度二十分西経七度四十七分の点及び北緯三十七度十分西経七度二十五分の点を順次結んだ線並びに北緯五十一度二十二分二十五秒東経三度二十一分五十二秒・五の点と英国東岸の北緯五十二度十二分の点を結んだ線並びに陸岸により囲まれた海域（北緯五十二度十・三分西経六度二十一・八分の点と北緯五十二度一・五二分西経五度四・一八分の点を結んだ線及び北緯五十四度五十一・四三分西経五度八・四七分の点と北緯五十四度四十・三九分西経五度三十四・三四分の点を結んだ線並びに陸岸により囲まれた海域を除く。）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">ノルウェー海域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence">北緯六十九度四十七・六九〇四分東経三十度四十九・〇五九分の点、北緯六十九度五十八・七五八分東経三十一度六・二五九八分の点、北緯七十度八・六二五分東経三十一度三十五・一三五四分の点、北緯七十度十六・四八二六分東経三十二度四・三八三六分の点、北緯七十三度二十三・〇六五二分東経三十六度二十八・五七三二分の点、北緯七十三度三十五・六五八六分東経三十五度二十七・三三七八分の点、北緯七十四度二・九七四八分東経三十三度十七・八五九六分の点、北緯七十四度二十・七〇八四分東経三十度三十三・五〇五二分の点、北緯七十四度二十九・七九七二分東経二十六度二十八・一八〇八分の点、北緯七十四度二十四・二四四八分東経二十二度五十五・〇二七二分の点、北緯七十四度十三・七二二六分東経二十度十五・九七六二分の点、北緯七十三度三十五・四三九分東経十六度三十六・四九七四分の点、北緯七十三度十四・八二五四分東経十四度九・四二六六分の点、北緯七十二度四十二・五四分東経十一度四十二・一三九二分の点、北緯七十一度五十八・二分東経九度五十四・九六分の点、北緯七十一度三十七・五六一二分東経八度四十三・八二二二分の点、北緯七十度四十三・一六一分東経六度三十六・〇六七二分の点、北緯六十九度三十六・六二四分東経四度四十七・三二二分の点、北緯六十八度五十八・三一六四分東経三度五十一・二一五四分の点、北緯六十八度十四・九八九二分東経三度十七・〇三二二分の点、北緯六十七度二十五・七九八二分東経三度十・二〇七八分の点、北緯六十六度四十九・七二九二分東経三度二十五・一三〇四分の点、北緯六十六度二十五・九三四四分東経三度十七・一一〇二分の点、北緯六十五度二十二・七二一四分東経一度二十四・五九二八分の点、北緯六十四度二十五・九六九二分西経〇度二十九・三二一四分の点、北緯六十三度五十三・二二四二分西経〇度二十九・四四二分の点、北緯六十二度五十三・四六五四分東経〇度三十八・三五五分の点、北緯六十二度東経一度二十二・二四九八分の点及び北緯六十二度東経四度五十二・三四六四分の点を順次結んだ線並びに陸岸により囲まれた海域</div>
                     </td>
                   </tr>

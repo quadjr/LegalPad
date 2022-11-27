@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1258,7 +1258,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_17_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条の十</a>
                           </div>
@@ -1460,7 +1460,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_17_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条の四</a>
                           </div>
@@ -2374,7 +2374,7 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">船舶</div>
                       </td>
                       <td>
@@ -2385,7 +2385,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">平水区域を航行区域とする船舶</div>
                       </td>
                       <td>
@@ -2410,7 +2410,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">総トン数千六百トン以上のもの</div>
                       </td>
                       <td>
@@ -2429,7 +2429,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">沿海区域を航行区域とする船舶及び丙区域内において従業する漁船</div>
                       </td>
                       <td>
@@ -2443,7 +2443,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">総トン数二百トン以上五百トン未満のもの</div>
                       </td>
                       <td>
@@ -2462,7 +2462,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">総トン数五百トン以上五千トン未満のもの</div>
                       </td>
                       <td>
@@ -2481,7 +2481,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">総トン数五千トン以上のもの</div>
                       </td>
                       <td>
@@ -2500,7 +2500,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">近海区域を航行区域とする船舶であつて国土交通省令で定める区域のみを航行するもの</div>
                       </td>
                       <td>
@@ -2514,7 +2514,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">総トン数二百トン以上五百トン未満のもの</div>
                       </td>
                       <td>
@@ -2533,7 +2533,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">総トン数五百トン以上五千トン未満のもの</div>
                       </td>
                       <td>
@@ -2560,7 +2560,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">総トン数五千トン以上のもの</div>
                       </td>
                       <td>
@@ -2587,7 +2587,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="14">
                         <div class="Sentence">近海区域を航行区域とする船舶及び乙区域内において従業する漁船</div>
                       </td>
                       <td>
@@ -2601,7 +2601,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">総トン数二百トン以上五百トン未満のもの</div>
                       </td>
                       <td>
@@ -2620,7 +2620,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">総トン数五百トン以上千六百トン未満のもの</div>
                       </td>
                       <td>
@@ -2647,7 +2647,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">総トン数千六百トン以上五千トン未満のもの</div>
                       </td>
                       <td>
@@ -2682,7 +2682,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">総トン数五千トン以上のもの</div>
                       </td>
                       <td>
@@ -2717,10 +2717,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="16">
                         <div class="Sentence">遠洋区域を航行区域とする船舶及び甲区域内において従業する漁船</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">総トン数二百トン未満のもの</div>
                       </td>
                       <td>
@@ -2739,7 +2739,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">総トン数二百トン以上五百トン未満のもの</div>
                       </td>
                       <td>
@@ -2766,7 +2766,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">総トン数五百トン以上千六百トン未満のもの</div>
                       </td>
                       <td>
@@ -2793,7 +2793,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">総トン数千六百トン以上五千トン未満のもの</div>
                       </td>
                       <td>
@@ -2828,7 +2828,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">総トン数五千トン以上のもの</div>
                       </td>
                       <td>
@@ -2873,7 +2873,7 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">船舶</div>
                       </td>
                       <td>
@@ -2884,7 +2884,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">平水区域を航行区域とする船舶</div>
                       </td>
                       <td>
@@ -2909,7 +2909,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">出力三千キロワット以上の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -2928,7 +2928,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="7">
                         <div class="Sentence">沿海区域を航行区域とする船舶及び丙区域内において従業する漁船</div>
                       </td>
                       <td>
@@ -2942,7 +2942,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">出力七百五十キロワット以上千五百キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -2961,7 +2961,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">出力千五百キロワット以上六千キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -2980,7 +2980,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">出力六千キロワット以上の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -2999,7 +2999,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">近海区域を航行区域とする船舶であつて国土交通省令で定める区域のみを航行するもの</div>
                       </td>
                       <td>
@@ -3013,7 +3013,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">出力七百五十キロワット以上千五百キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3032,7 +3032,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">出力千五百キロワット以上六千キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3059,7 +3059,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">出力六千キロワット以上の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3086,7 +3086,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="14">
                         <div class="Sentence">近海区域を航行区域とする船舶及び乙区域内において従業する漁船</div>
                       </td>
                       <td>
@@ -3100,7 +3100,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">出力七百五十キロワット以上千五百キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3119,7 +3119,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">出力千五百キロワット以上三千キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3146,7 +3146,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">出力三千キロワット以上六千キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3181,7 +3181,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">出力六千キロワット以上の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3216,10 +3216,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="16">
                         <div class="Sentence">遠洋区域を航行区域とする船舶及び甲区域内において従業する漁船</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">出力七百五十キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3238,7 +3238,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">出力七百五十キロワット以上千五百キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3265,7 +3265,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">出力千五百キロワット以上三千キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3292,7 +3292,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">出力三千キロワット以上六千キロワット未満の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3327,7 +3327,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">出力六千キロワット以上の推進機関を有するもの</div>
                       </td>
                       <td>
@@ -3391,7 +3391,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="8">
                           <div class="Sentence">
                             <a class="reference_link" href="L_326AC0000000149.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_326AC0000000149.html#Mp-At_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第三項</a>に規定する国土交通省令で定める基準に適合する船舶</div>
@@ -3592,7 +3592,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="7">
                           <div class="Sentence">
                             <a class="reference_link" href="L_326AC0000000149.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_326AC0000000149.html#Mp-At_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第三項</a>に規定する国土交通省令で定める基準に適合する船舶</div>
@@ -3835,7 +3835,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="6">
                           <div class="Sentence">
                             <a class="reference_link" href="L_326AC0000000149.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_326AC0000000149.html#Mp-At_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第三項</a>に規定する国土交通省令で定める基準に適合する船舶</div>
@@ -3995,7 +3995,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5">
                           <div class="Sentence">
                             <a class="reference_link" href="L_326AC0000000149.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_326AC0000000149.html#Mp-At_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第三項</a>に規定する国土交通省令で定める基準に適合する船舶</div>
@@ -4338,7 +4338,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">船舶</div>
                         </td>
                         <td>
@@ -4349,10 +4349,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence">国際航海に従事しない旅客船</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">平水区域又は沿海区域を航行区域とするもの</div>
                         </td>
                         <td>
@@ -4363,7 +4363,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">近海区域又は遠洋区域を航行区域とするもの</div>
                         </td>
                         <td>
@@ -4377,7 +4377,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">総トン数五百トン以上のもの</div>
                         </td>
                         <td>
@@ -4396,10 +4396,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="9">
                           <div class="Sentence">国際航海に従事する旅客船</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">沿海区域を航行区域とするもの</div>
                         </td>
                         <td>
@@ -4424,7 +4424,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="7">
                           <div class="Sentence">近海区域又は遠洋区域を航行区域とするもの</div>
                         </td>
                         <td>
@@ -4449,7 +4449,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">旅客定員が二百五十人以下の船舶であつて総トン数五百トン以上のもの</div>
                         </td>
                         <td>
@@ -4468,7 +4468,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">旅客定員が二百五十人を超えるもの</div>
                         </td>
                         <td>
@@ -4550,7 +4550,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">船舶</div>
                         </td>
                         <td>
@@ -4561,7 +4561,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">国際航海に従事しない船舶であつて旅客船及び漁船以外のもの</div>
                         </td>
                         <td>
@@ -4572,10 +4572,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence">国際航海に従事する船舶であつて旅客船及び漁船以外のもの</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">沿海区域を航行区域とするもの</div>
                         </td>
                         <td>
@@ -4586,7 +4586,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">近海区域を航行区域とするもの</div>
                         </td>
                         <td>
@@ -4611,7 +4611,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">遠洋区域を航行区域とするもの</div>
                         </td>
                         <td>
@@ -4632,7 +4632,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">船舶</div>
                         </td>
                         <td>
@@ -4643,7 +4643,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">総トン数五百トン未満の漁船</div>
                         </td>
                         <td>
@@ -4668,7 +4668,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">総トン数五百トン以上千六百トン未満の漁船</div>
                         </td>
                         <td>
@@ -4679,7 +4679,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">総トン数千六百トン以上の漁船</div>
                         </td>
                         <td>
@@ -4706,7 +4706,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">船舶</div>
                         </td>
                         <td>
@@ -4717,10 +4717,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">国際航海に従事しない旅客船</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">無線電信等の船上保守を行わないもの</div>
                         </td>
                         <td>
@@ -4731,7 +4731,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">無線電信等の船上保守を行うもの</div>
                         </td>
                         <td>
@@ -4742,10 +4742,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence">国際航海に従事する旅客船</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">Ａ１水域又はＡ２水域のみを航行するもの</div>
                         </td>
                         <td>
@@ -4770,7 +4770,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">Ａ３水域又はＡ４水域を航行するもの</div>
                         </td>
                         <td>
@@ -4853,7 +4853,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">船舶</div>
                         </td>
                         <td>
@@ -4864,7 +4864,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">インマルサット無線設備を有する漁船</div>
                         </td>
                         <td>
@@ -4900,7 +4900,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">インマルサット無線設備を有しない漁船</div>
                         </td>
                         <td>
@@ -5052,7 +5052,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">総トン数五千トン以上の船舶</div>
                         </td>
                         <td>

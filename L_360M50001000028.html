@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3740,33 +3740,33 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">免除する試験科目</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">ＡＩ第一種</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">ＡＩ第二種</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">ＡＩ第三種</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">ＤＤ第一種</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">ＤＤ第二種</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">ＤＤ第三種</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">ＡＩ・ＤＤ総合種</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">科目合格している試験科目</div>
                         </td>
                         <td>
@@ -3834,7 +3834,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">アナログ第一種</div>
                         </td>
                         <td>
@@ -4041,7 +4041,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">アナログ第二種</div>
                         </td>
                         <td>
@@ -4248,7 +4248,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">アナログ第三種</div>
                         </td>
                         <td>
@@ -4455,7 +4455,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">デジタル第一種</div>
                         </td>
                         <td>
@@ -4662,7 +4662,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">デジタル第二種</div>
                         </td>
                         <td>
@@ -4869,7 +4869,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">デジタル第三種</div>
                         </td>
                         <td>
@@ -5076,7 +5076,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">アナログ・デジタル総合種</div>
                         </td>
                         <td>
@@ -5397,13 +5397,13 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">交付を受けている資格者証の種類</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">受験する種類</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">免除する試験科目</div>
                         </td>
                       </tr>
@@ -5416,7 +5416,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="7">
                           <div class="Sentence">アナログ第一種</div>
                         </td>
                         <td>
@@ -5496,7 +5496,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="7">
                           <div class="Sentence">アナログ第二種</div>
                         </td>
                         <td>
@@ -5576,7 +5576,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">アナログ第三種</div>
                         </td>
                         <td>
@@ -5601,7 +5601,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="7">
                           <div class="Sentence">デジタル第一種</div>
                         </td>
                         <td>
@@ -5681,7 +5681,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="7">
                           <div class="Sentence">デジタル第二種</div>
                         </td>
                         <td>
@@ -5761,7 +5761,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">デジタル第三種</div>
                         </td>
                         <td>
@@ -5786,7 +5786,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="7">
                           <div class="Sentence">アナログ・デジタル総合種</div>
                         </td>
                         <td>
@@ -6156,1143 +6156,1143 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="2" Valign="top">
                           <div class="Sentence">免除する試験科目</div>
                         </td>
-                        <td>
+                        <td colspan="3" Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td colspan="3" Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td colspan="3" Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td colspan="3" Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td colspan="3" Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2" Valign="top">
                           <div class="Sentence">科目合格している試験科目</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Align="center">
                           <div class="Sentence">ＡＩ第一種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Align="center">
                           <div class="Sentence">ＡＩ第二種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Align="center">
                           <div class="Sentence">ＡＩ第三種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Align="center">
                           <div class="Sentence">ＤＤ第一種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Align="center">
                           <div class="Sentence">ＤＤ第二種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Align="center">
                           <div class="Sentence">ＤＤ第三種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Align="center">
                           <div class="Sentence">ＡＩ・ＤＤ総合種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">電気通信技術の基礎</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続のための技術及び理論</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
@@ -7432,13 +7432,13 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">交付を受けている工事担任者資格者証の種類</div>
                         </td>
-                        <td>
+                        <td rowspan="2" Align="center">
                           <div class="Sentence">受験する種類</div>
                         </td>
-                        <td>
+                        <td colspan="2" Align="center">
                           <div class="Sentence">免除する試験科目</div>
                         </td>
                       </tr>
@@ -7451,436 +7451,436 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4" Valign="top">
                           <div class="Sentence">ＡＩ第二種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4" Valign="top">
                           <div class="Sentence">ＤＤ第二種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5" Valign="top">
                           <div class="Sentence">アナログ第一種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">（注２）〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5" Valign="top">
                           <div class="Sentence">アナログ第二種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">アナログ第三種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5" Valign="top">
                           <div class="Sentence">デジタル第一種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">（注３）〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5" Valign="top">
                           <div class="Sentence">デジタル第二種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">デジタル第三種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5" Valign="top">
                           <div class="Sentence">アナログ・デジタル総合種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
-                        <td>
+                        <td Align="center">
                           <div class="Sentence">〇</div>
                         </td>
                       </tr>
@@ -7917,42 +7917,42 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">ＡＩ第一種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級アナログ通信</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">ＡＩ第三種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級アナログ通信</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">ＤＤ第一種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第一級デジタル通信</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">ＤＤ第三種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二級デジタル通信</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">ＡＩ・ＤＤ総合種</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">総合通信</div>
                         </td>
                       </tr>
@@ -8038,837 +8038,837 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2" Valign="middle">
                       <div class="Sentence">免除する試験科目</div>
                     </td>
-                    <td>
+                    <td colspan="3" Valign="middle">
                       <div class="Sentence">第一級アナログ通信</div>
                     </td>
-                    <td>
+                    <td colspan="3" Valign="middle">
                       <div class="Sentence">第二級アナログ通信</div>
                     </td>
-                    <td>
+                    <td colspan="3" Valign="middle">
                       <div class="Sentence">第一級デジタル通信</div>
                     </td>
-                    <td>
+                    <td colspan="3" Valign="middle">
                       <div class="Sentence">第二級デジタル通信</div>
                     </td>
-                    <td>
+                    <td colspan="3" Valign="middle">
                       <div class="Sentence">総合通信</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2" Valign="middle">
                       <div class="Sentence">科目合格している試験科目</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" Valign="middle">
                       <div class="Sentence">第一級アナログ通信</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" Valign="middle">
                       <div class="Sentence">第二級アナログ通信</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" Valign="middle">
                       <div class="Sentence">第一級デジタル通信</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" Valign="middle">
                       <div class="Sentence">第二級デジタル通信</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" Valign="middle">
                       <div class="Sentence">総合通信</div>
                     </td>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">電気通信技術の基礎</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続のための技術及び理論</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Valign="middle">
                       <div class="Sentence">端末設備の接続に関する<a class="reference_link" href="L_359AC0000000086.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="center" Valign="middle">
                       <div class="Sentence">○</div>
                     </td>
                   </tr>
@@ -8913,13 +8913,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">交付を受けている資格者証の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">受験する種別</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">免除する試験科目</div>
                     </td>
                   </tr>
@@ -8932,7 +8932,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第一級アナログ通信</div>
                     </td>
                     <td>
@@ -8982,7 +8982,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第一級デジタル通信</div>
                     </td>
                     <td>
@@ -9043,7 +9043,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">区別</div>
                     </td>
                     <td>
@@ -9051,10 +9051,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">受験する者が有する資格等</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">電気通信主任技術者資格</div>
                     </td>
                     <td>
@@ -9063,7 +9063,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">無線従事者資格</div>
                     </td>
                     <td>
@@ -9087,7 +9087,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建設業法</a>第２７条第１項の規定による技術検定のうち検定種目を電気通信工事施工管理とするものに合格した者（ただし、二級の第一次検定に必要な試験にのみ合格した者を除く。）</div>
                     </td>
@@ -9103,13 +9103,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">受験する種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">実務経歴</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">免除する試験科目</div>
                     </td>
                   </tr>
@@ -9122,7 +9122,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第一級アナログ通信</div>
                     </td>
                     <td>
@@ -9160,7 +9160,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第二級アナログ通信</div>
                       <div class="Sentence"></div>
                     </td>
@@ -9186,7 +9186,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第一級デジタル通信</div>
                     </td>
                     <td>
@@ -9224,7 +9224,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第二級デジタル通信</div>
                       <div class="Sentence"></div>
                     </td>
@@ -9250,7 +9250,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">総合通信</div>
                     </td>
                     <td>
@@ -9374,10 +9374,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">養成課程の種別</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">授業科目及び授業時間</div>
                     </td>
                   </tr>
@@ -9488,21 +9488,21 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">養成課程の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">担当する授業科目</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">講師が有すべき資格</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">工事担任者</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電気通信主任技術者資格者証の交付を受けている者</div>
                     </td>
                   </tr>
@@ -9518,7 +9518,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第一級アナログ通信の養成課程</div>
                     </td>
                     <td>
@@ -9575,7 +9575,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第二級アナログ通信の養成課程</div>
                     </td>
                     <td>
@@ -9631,7 +9631,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第一級デジタル通信の養成課程</div>
                     </td>
                     <td>
@@ -9688,7 +9688,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第二級デジタル通信の養成課程</div>
                     </td>
                     <td>
@@ -9744,7 +9744,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">総合通信の養成課程</div>
                     </td>
                     <td>
@@ -9861,22 +9861,22 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">免除する試験科目</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">アナログ第一種</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">アナログ第二種</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">アナログ第三種</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">デジタル第一種</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">デジタル第二種</div>
                     </td>
                   </tr>
@@ -9928,10 +9928,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="24">
                       <div class="Sentence">科目合格している試験科目</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">第一種及び第二種</div>
                     </td>
                     <td>
@@ -10184,7 +10184,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">第三種</div>
                     </td>
                     <td>
@@ -10387,7 +10387,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第四種</div>
                     </td>
                     <td>
@@ -10540,7 +10540,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">パケツト交換種</div>
                     </td>
                     <td>
@@ -10693,7 +10693,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">回線交換種</div>
                     </td>
                     <td>
@@ -10846,7 +10846,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">国際公衆データ伝送種</div>
                     </td>
                     <td>
@@ -10999,7 +10999,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">国際電信種</div>
                     </td>
                     <td>

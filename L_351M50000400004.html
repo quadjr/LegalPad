@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2591,7 +2591,7 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">一　突合せ両側溶接又はこれと同等以上とみなされる突合せ片側溶接継手</div>
                               </td>
                               <td>
@@ -2618,7 +2618,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">二　裏当て金を使用した突合せ片側溶接継手で、裏当て金を残すもの</div>
                               </td>
                               <td>
@@ -2710,7 +2710,7 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">一　突合せ両側溶接又はこれと同等以上とみなされる突合せ片側溶接継手</div>
                               </td>
                               <td>
@@ -2737,7 +2737,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">二　裏当て金を使用した突合せ片側溶接継手で、裏当て金を残すもの</div>
                               </td>
                               <td>
@@ -3232,10 +3232,10 @@
                         <div class="TableStructTitle">表一</div>
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">母材の最小引張強さ　σ（単位　ニュートン毎平方ミリメートル）</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">最小吸収エネルギー（単位　ジュール）</div>
                             </td>
                           </tr>
@@ -5003,16 +5003,16 @@
                     <td>
                       <div class="Sentence">塔及び反応器</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">一種　第一種特定設備</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">一類　耐震設計設備及び耐震設計設備以外のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">製造実績のある板厚の二倍以内</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一類　炭素鋼</div>
                     </td>
                   </tr>
@@ -5025,7 +5025,7 @@
                     <td>
                       <div class="Sentence">平底円筒形貯槽</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">二類　低合金鋼</div>
                     </td>
                   </tr>
@@ -5038,13 +5038,13 @@
                     <td>
                       <div class="Sentence">加熱炉</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">二種　第二種特定設備</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">二類　耐震設計設備以外のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">三類　高合金鋼</div>
                     </td>
                   </tr>
@@ -5057,7 +5057,7 @@
                     <td>
                       <div class="Sentence">バルク貯槽</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">四類　非鉄金属</div>
                     </td>
                   </tr>

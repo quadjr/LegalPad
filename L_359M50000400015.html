@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1871,11 +1871,11 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>の登録をしたとき。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">一　登録研修機関の氏名又は名称及び住所並びに<a class="reference_link" href="L_354AC0000000049.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人にあつては、その代表者の氏名</div>
                           <div class="Sentence">二　行うことのできる研修の業務の範囲</div>
                           <div class="Sentence">三　研修の業務を行う事務所の名称及び所在地</div>
@@ -1883,22 +1883,22 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条</a>の規定による届出があつたとき。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">一　登録研修機関の氏名又は名称及び住所</div>
                           <div class="Sentence">二　変更する事項</div>
                           <div class="Sentence">三　変更する年月日</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_18" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十八条</a>の規定による届出があつたとき。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">一　登録研修機関の氏名又は名称及び住所</div>
                           <div class="Sentence">二　休止し、又は廃止する研修の業務の範囲</div>
                           <div class="Sentence">三　研修の業務の全部若しくは一部を休止し、又は廃止する年月日</div>
@@ -1906,32 +1906,32 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_26" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条</a>の規定により登録を取り消し、又は研修の業務の全部若しくは一部の停止を命じたとき。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">一　登録研修機関の氏名又は名称及び住所</div>
                           <div class="Sentence">二　登録を取り消し、又は研修の業務の全部若しくは一部の停止を命じた年月日</div>
                           <div class="Sentence">三　研修の業務の全部又は一部の停止を命じた場合にあつては、停止を命じた研修の業務の範囲及びその期間</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_28-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第一項</a>の規定により経済産業大臣が研修の業務の全部又は一部を自ら行うこととするとき。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">一　研修の業務の全部又は一部を行うこととする年月日</div>
                           <div class="Sentence">二　行うこととする研修の業務の範囲及びその期間</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="#Mp-At_28-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第一項</a>の規定により経済産業大臣が自ら行つていた研修の業務の全部又は一部を行わないこととするとき。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">一　研修の業務の全部又は一部を行わないこととする年月日</div>
                           <div class="Sentence">二　行わないこととする研修の業務の範囲</div>
                         </td>
@@ -2918,7 +2918,7 @@
                     <td>
                       <div class="Sentence">研修区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">修了試験課目</div>
                     </td>
                     <td>
@@ -2929,10 +2929,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">必須基礎区分</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">エネルギー総合管理及び<a class="reference_link" href="L_354AC0000000049.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
                     <td>
@@ -2952,10 +2952,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">熱分野専門区分</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence">熱と流体の流れの基礎</div>
                     </td>
                     <td>
@@ -2982,7 +2982,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">燃料と燃焼</div>
                     </td>
                     <td>
@@ -3001,7 +3001,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5" colspan="2">
                       <div class="Sentence">熱利用設備及びその管理</div>
                     </td>
                     <td>
@@ -3044,10 +3044,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence">電気分野専門区分</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence">電気の基礎</div>
                     </td>
                     <td>
@@ -3074,10 +3074,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">電気設備及び機器</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">（工場配電）</div>
                     </td>
                     <td>
@@ -3104,7 +3104,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">（電気機器）</div>
                     </td>
                     <td>
@@ -3131,10 +3131,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">電力応用</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">（電動力応用）</div>
                     </td>
                     <td>
@@ -3161,7 +3161,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（電気加熱）</div>
                     </td>
                     <td>
@@ -3180,7 +3180,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（電気化学）</div>
                     </td>
                     <td>
@@ -3199,7 +3199,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（照明）</div>
                     </td>
                     <td>
@@ -3218,7 +3218,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（空気調和）</div>
                     </td>
                     <td>

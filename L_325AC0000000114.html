@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3543,16 +3543,16 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">日当（一日につき）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">宿泊料（一夜につき）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">食卓料（一夜につき）</div>
                     </td>
                   </tr>
@@ -3565,7 +3565,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">内閣総理大臣等</div>
                     </td>
                     <td>
@@ -3602,7 +3602,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">指定職の職務にある者</div>
                     </td>
                     <td>
@@ -3619,7 +3619,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">七級以上の職務にある者</div>
                     </td>
                     <td>
@@ -3636,7 +3636,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">六級以下三級以上の職務にある者</div>
                     </td>
                     <td>
@@ -3653,7 +3653,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二級以下の職務にある者</div>
                     </td>
                     <td>
@@ -3846,21 +3846,21 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td colspan="7">
                       <div class="Sentence">日当（一日につき）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">指定都市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">甲地方</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">乙地方</div>
                     </td>
                     <td>
@@ -3868,19 +3868,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">内閣総理大臣等</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">内閣総理大臣及び最高裁判所長官</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一三、一〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一一、一〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">八、九〇〇円</div>
                     </td>
                     <td>
@@ -3888,16 +3888,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">国務大臣等及び特命全権大使</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一〇、五〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">八、七〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">七、〇〇〇円</div>
                     </td>
                     <td>
@@ -3905,16 +3905,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">その他の者</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">九、四〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">七、九〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">六、三〇〇円</div>
                     </td>
                     <td>
@@ -3922,16 +3922,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">指定職の職務にある者</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">八、三〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">七、〇〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">五、六〇〇円</div>
                     </td>
                     <td>
@@ -3939,16 +3939,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">七級以上の職務にある者</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">七、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">六、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">五、〇〇〇円</div>
                     </td>
                     <td>
@@ -3956,16 +3956,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">六級以下三級以上の職務にある者</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">六、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">五、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四、二〇〇円</div>
                     </td>
                     <td>
@@ -3973,16 +3973,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">二級以下の職務にある者</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">五、三〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四、四〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三、六〇〇円</div>
                     </td>
                     <td>
@@ -3990,143 +3990,143 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="8">
                       <div class="Sentence">宿泊料（一夜につき）</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">食卓料（一夜につき）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">指定都市</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">甲地方</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">乙地方</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">丙地方</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四〇、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三三、五〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二六、九〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二四、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一〇、一〇〇円</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三二、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二六、八〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二一、五〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一九、三〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">八、六〇〇円</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二九、〇〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二四、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一九、四〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一七、四〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">八、〇〇〇円</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二五、七〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二一、五〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一七、二〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一五、五〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">七、七〇〇円</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二二、五〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一八、八〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一五、一〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一三、五〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">六、七〇〇円</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一九、三〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一六、一〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一二、九〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一一、六〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">五、八〇〇円</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一六、一〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一三、四〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一〇、八〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">九、七〇〇円</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">四、八〇〇円</div>
                     </td>
                   </tr>
@@ -4351,21 +4351,21 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">支度料</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">死亡手当</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">出張</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">赴任</div>
                     </td>
                   </tr>
@@ -4381,7 +4381,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">内閣総理大臣等</div>
                     </td>
                     <td>
@@ -4445,7 +4445,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">指定職の職務にある者</div>
                     </td>
                     <td>
@@ -4465,7 +4465,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">九級以上の職務にある者</div>
                     </td>
                     <td>
@@ -4485,7 +4485,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">八級又は七級の職務にある者</div>
                     </td>
                     <td>
@@ -4505,7 +4505,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">六級の職務にある者</div>
                     </td>
                     <td>
@@ -4525,7 +4525,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">五級又は四級の職務にある者</div>
                     </td>
                     <td>
@@ -4545,27 +4545,27 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三級の職務にある者</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">五三、九〇〇円</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">六五、四五〇円</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">七七、〇〇〇円</div>
                     </td>
                     <td>
                       <div class="Sentence">一二〇、〇〇〇円</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">四〇〇、〇〇〇円</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二級の職務にある者</div>
                     </td>
                     <td>
@@ -4573,7 +4573,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">一級の職務にある者</div>
                     </td>
                     <td>

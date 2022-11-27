@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -727,12 +727,12 @@
                     <td>
                       <div class="Sentence">調　　　査　　　項　　　目</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">調　　　　　　査　　　　　　事　　　　　　項</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">一　岩石の区分</div>
                     </td>
                     <td>
@@ -829,10 +829,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">二　岩石のかたさ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">（一）　岩片</div>
                       <div class="Sentence">１　はなはだやわらかい（未固結とも固結ともいえない程度の岩石で、たとえば、軟質泥岩、鮮新<ruby>洪<rt>こう</rt>
                         </ruby>積世の軟質砂岩等）</div>
@@ -848,7 +848,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">３　やややわらかい（岩片としてのかたさが（一）の３に相当する岩石で構成され、風化、割れ目等により岩体としてのかたさが弱められていないもの及び岩片としてのかたさが（一）の４以上の岩石で構成され、風化、割れ目等の影響により岩体としてのかたさが（一）の３と同程度に弱くなつているもので、弾性波伝播速度「縦波」がおよそ二・二Ｋｍ／Ｓｅｃ以上三・〇Ｋｍ／Ｓｅｃ未満のもの。）</div>
                       <div class="Sentence">４　ややかたい（岩片としてのかたさが（一）の４に相当する岩石で構成され、風化、割れ目等により岩体としてのかたさが弱められていないもの及び岩片としてのかたさが（一）の５以上の岩石で構成され、風化、割れ目等の影響により岩体としてのかたさが（一）の４と同程度に弱くなつているもので、弾性波伝播速度「縦波」がおよそ三・〇Ｋｍ／Ｓｅｃ以上四・〇Ｋｍ／Ｓｅｃ未満のもの。）</div>
                       <div class="Sentence">５　かたい（岩片としてのかたさが（一）の５に相当する岩石で構成され、風化、割れ目等により岩体としてのかたさが弱められていないもの及び岩石としてのかたさが（一）の５以上の岩石で構成され、風化、割れ目等の影響により岩体としてのかたさが（一）の５と同程度に弱くなつているもので、弾性波伝播速度「縦波」がおよそ四・〇Ｋｍ／Ｓｅｃ以上五・五Ｋｍ／Ｓｅｃ未満のもの。）</div>
@@ -859,7 +859,7 @@
                     <td>
                       <div class="Sentence">三　岩石の層理、片理及び著しい流理</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">走向、傾斜及び著しいものについて、その範囲</div>
                     </td>
                   </tr>
@@ -867,7 +867,7 @@
                     <td>
                       <div class="Sentence">四　岩石の割れ目及び節理</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">著しいものについて、その範囲</div>
                     </td>
                   </tr>
@@ -875,7 +875,7 @@
                     <td>
                       <div class="Sentence">五　岩石の孔隙及び空隙</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">火山岩類及び凝灰岩類の著しいものについて、その範囲</div>
                     </td>
                   </tr>
@@ -883,7 +883,7 @@
                     <td>
                       <div class="Sentence">六　岩石の風化及び変質</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">著しいものについて、左の<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に区分する。</div>
                       <div class="Sentence">１　まさ</div>
                       <div class="Sentence">２　変朽安山岩</div>
@@ -895,7 +895,7 @@
                     <td>
                       <div class="Sentence">七　破砕部及び破砕帯</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">範囲</div>
                     </td>
                   </tr>
@@ -903,7 +903,7 @@
                     <td>
                       <div class="Sentence">八　断層</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">幅及び充<ruby>て<rt>ヽ</rt>
                         </ruby>
                         <ruby>ん<rt>ヽ</rt>
@@ -915,7 +915,7 @@
                       <div class="Sentence">九　<ruby>褶<rt>しゆう</rt>
                         </ruby>曲軸</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">位置</div>
                     </td>
                   </tr>
@@ -923,7 +923,7 @@
                     <td>
                       <div class="Sentence">十　火口</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">範囲</div>
                     </td>
                   </tr>
@@ -931,7 +931,7 @@
                     <td>
                       <div class="Sentence">十一　地すべり及び崩壊</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">範囲</div>
                     </td>
                   </tr>
@@ -939,7 +939,7 @@
                     <td>
                       <div class="Sentence">十二　時代</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">堆積岩については、原則として左の時代に区別する。但し、時代を正確に判定できないものは、便宜的に左の時代のいずれかに属させその旨を附記する。</div>
                       <div class="Sentence">古生代</div>
                       <div class="Sentence">中生代</div>
@@ -955,7 +955,7 @@
                     <td>
                       <div class="Sentence">十三　鉱山</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">位置</div>
                     </td>
                   </tr>
@@ -963,13 +963,13 @@
                     <td>
                       <div class="Sentence">十四　温泉硫気孔及び鉱泉</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">地点及び温泉並びに鉱泉については<ruby>湧<rt>ゆう</rt>
                         </ruby>出量及び泉質等、但し、温泉については、単純泉、アルカリ泉、アルカリ塩類泉及び酸性泉を区別する。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　Ｋｇ／Ｃｍ２とは、重量キログラム毎平方センチメートルを表示する。</div>
                       <div class="Sentence">二　Ｋｍ／Ｓｅｃ　とは、キロメートル毎秒を表示する。</div>
@@ -984,16 +984,16 @@
                 <div class="TableStructTitle">第１部　記号</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">区分</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">印刷における記号</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">現地作業及び整理作業における記号</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">記号の表示の方法又は図例</div>
                     </td>
                   </tr>
@@ -3005,27 +3005,27 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">破砕部及び破砕体</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">図（略）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">赤０．２</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">図（略）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">赤０．２</div>
                     </td>
                     <td>
@@ -3380,7 +3380,7 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">字体はゴシックとし、字高は２．０とする。</div>
                     </td>
                   </tr>
@@ -3858,7 +3858,7 @@
                 <div class="TableStructTitle">第２部　整飾</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -3869,7 +3869,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">色</div>
                     </td>
                     <td>
@@ -3880,7 +3880,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">表題</div>
                     </td>
                     <td>
@@ -3892,7 +3892,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3944,7 +3944,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">図名</div>
                     </td>
                     <td>
@@ -3955,22 +3955,22 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">調査年月</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">
               </div>
                     </td>
                     <td>
                       <div class="Sentence">書体</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">基図の調査年月のものと同じ様式とする。</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3998,22 +3998,22 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">作成機関名</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">
               </div>
                     </td>
                     <td>
                       <div class="Sentence">書体</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">基図の調査年月のものと同じ様式とする。</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4041,22 +4041,22 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">作成者氏名</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">
               </div>
                     </td>
                     <td>
                       <div class="Sentence">書体</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">基図の国土地理院のものと同じ様式とし、左横書とする。</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -4084,7 +4084,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">記号及びその説明</div>
                     </td>
                     <td>
@@ -4095,7 +4095,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">地質断面図の位置</div>
                     </td>
                     <td>
@@ -4107,7 +4107,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">柱状断面図の位置</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -677,7 +677,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項</a>
                           </div>
@@ -712,7 +712,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="#Mp-At_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第一項</a>
                           </div>
@@ -746,7 +746,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="#Mp-At_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第三項</a>
                           </div>
@@ -779,7 +779,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="#Mp-At_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条</a>
                           </div>
@@ -813,7 +813,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="#Mp-At_6-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第二項</a>
                           </div>
@@ -849,7 +849,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="#Mp-At_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条</a>
                           </div>
@@ -1056,15 +1056,15 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">教育内容</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">単位数</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">基礎分野</div>
                     </td>
                     <td>
@@ -1101,13 +1101,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">専門基礎分野</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">人体の構造と機能</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">四</div>
                     </td>
                   </tr>
@@ -1115,7 +1115,7 @@
                     <td>
                       <div class="Sentence" Num="1">疾患の成り立ちと回復の過程</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">四</div>
                     </td>
                   </tr>
@@ -1123,18 +1123,18 @@
                     <td>
                       <div class="Sentence" Num="1">健康と社会保障</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">二</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">専門分野</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">救急医学概論</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">六</div>
                     </td>
                   </tr>
@@ -1142,7 +1142,7 @@
                     <td>
                       <div class="Sentence" Num="1">救急症候・病態生理学</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">八</div>
                     </td>
                   </tr>
@@ -1150,7 +1150,7 @@
                     <td>
                       <div class="Sentence" Num="1">疾病救急医学</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">八</div>
                     </td>
                   </tr>
@@ -1158,7 +1158,7 @@
                     <td>
                       <div class="Sentence" Num="1">外傷救急医学</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">四</div>
                     </td>
                   </tr>
@@ -1166,7 +1166,7 @@
                     <td>
                       <div class="Sentence" Num="1">環境障害・急性中毒学</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一</div>
                     </td>
                   </tr>
@@ -1174,15 +1174,15 @@
                     <td>
                       <div class="Sentence" Num="1">臨地実習（シミュレーション、臨床実習及び救急用自動車同乗実習を含む。）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">二十五</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">合計</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">七十</div>
                     </td>
                   </tr>
@@ -1218,7 +1218,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">教育内容</div>
                     </td>
                     <td>
@@ -1226,7 +1226,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">専門基礎分野</div>
                     </td>
                     <td>
@@ -1253,7 +1253,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">専門分野</div>
                     </td>
                     <td>
@@ -1304,7 +1304,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">合計</div>
                     </td>
                     <td>
@@ -1352,7 +1352,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">教育内容</div>
                     </td>
                     <td>
@@ -1360,7 +1360,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">専門基礎分野</div>
                     </td>
                     <td>
@@ -1387,7 +1387,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">専門分野</div>
                     </td>
                     <td>
@@ -1438,7 +1438,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">合計</div>
                     </td>
                     <td>

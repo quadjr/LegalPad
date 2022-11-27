@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -6564,7 +6564,7 @@
                           <td>
                             <div class="Sentence" Num="1">箇所</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">標識の種類及び様式</div>
                           </td>
                         </tr>
@@ -6623,7 +6623,7 @@
                           <td>
                             <div class="Sentence" Num="1">都道府県知事の定める箇所（牛及び水牛にあつては、耳を除く。）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">都道府県知事の定める標識</div>
                           </td>
                         </tr>
@@ -7409,8 +7409,8 @@
                     <div class="ParagraphNum">５</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence" Num="1">
-                        <a class="reference_link" href="#Mp-At_50-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の表<a class="reference_link" href="#Mp-At_50-Pr_5-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>の動物であつて<a class="reference_link" href="L_329M50010000055.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">競馬法施行規則</a>（<a class="reference_link" href="L_329M50010000055.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年農林省令第五十五号</a>）<a class="reference_link" href="L_329M50010000055.html#Mp-At_57-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十七条第一項</a>に規定する競走（同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                        <a class="reference_link" href="L_328CO0000000235.html#Mp-At_58" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条</a>の規定により準用する場合を含む。）又は国際競技大会に出場するため輸入されたものを輸出する場合における<a class="reference_link" href="#Mp-At_50-Pr_5-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>の係留期間は、家畜防疫官が当該動物の輸入から輸出までの間における飼養管理の状況により適当と認めたときは、これを一日以内であつて家畜防疫官が必要と認める時間に短縮することができる。</div>
+                        <a class="reference_link" href="#Mp-At_50-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>の表<a class="reference_link" href="#Mp-At_50-Pr_5-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>の動物であつて<a class="reference_link" href="L_329M50010000055.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">競馬法施行規則</a>（<a class="reference_link" href="L_329M50010000055.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年農林省令第五十五号</a>）<a class="reference_link" href="L_329M50010000055.html#Mp-At_57-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十七条第一項</a>に規定する競走（<a class="reference_link" href="L_329M50010000055.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_329M50010000055.html#Mp-At_58" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十八条</a>の規定により準用する場合を含む。）又は国際競技大会に出場するため輸入されたものを輸出する場合における<a class="reference_link" href="#Mp-At_50-Pr_5-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>の係留期間は、家畜防疫官が当該動物の輸入から輸出までの間における飼養管理の状況により適当と認めたときは、これを一日以内であつて家畜防疫官が必要と認める時間に短縮することができる。</div>
                       <div class="Sentence" Num="2">ただし、輸入国政府がその輸入に当たり当該時間以上の係留期間を必要としている場合は、この限りでない。</div>
                     </div>
                   </div>
@@ -9810,7 +9810,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence" Num="1">備考</div>
                                 <div class="Sentence" Num="2">一　この表において「条件一」とは、容器を零下十八度以下の温度の下に二十四時間（ドライアイスを入れる場合にあつては、四時間と当該ドライアイスが全て気化するまでの時間とのいずれか長い時間）以上置くことをいう。</div>
                                 <div class="Sentence" Num="3">二　この表において「条件二」とは、容器を少なくとも一時間当たりの水量が約五十ミリメートルの降水に一時間以上さらすことをいう。</div>
@@ -10679,8 +10679,8 @@
                     <div id="Mp-At_56_34-Pr_1-It_4" class="Item" Num="4">
                       <div class="ItemTitle">四</div>
                       <div class="ItemSentence">
-                        <div class="Sentence" Num="1">生物学的製剤（<a class="reference_link" href="L_416M60000200107.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">動物用医薬品等取締規則</a>（<a class="reference_link" href="L_416M60000200107.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年農林水産省令第百七号</a>）<a class="reference_link" href="L_416M60000200107.html#Mp-At_213-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百十三条第一項第四号</a>の生物学的製剤に限る。）又は再生医療等製品（同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_328CO0000000235.html#Mp-At_214-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百十四条第一項各号</a>の再生医療等製品に限る。）に含まれている病原体</div>
+                        <div class="Sentence" Num="1">生物学的製剤（<a class="reference_link" href="L_416M60000200107.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">動物用医薬品等取締規則</a>（<a class="reference_link" href="L_416M60000200107.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年農林水産省令第百七号</a>）<a class="reference_link" href="L_416M60000200107.html#Mp-At_213-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百十三条第一項第四号</a>の生物学的製剤に限る。）又は再生医療等製品（<a class="reference_link" href="L_416M60000200107.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_416M60000200107.html#Mp-At_214-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二百十四条第一項各号</a>の再生医療等製品に限る。）に含まれている病原体</div>
                       </div>
                     </div>
                     <div id="Mp-At_56_34-Pr_1-It_5" class="Item" Num="5">
@@ -13600,11 +13600,11 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">この省<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、家畜伝染病予防法の一部を改正する法律の施行の日（<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>和二年七月一日）から施行する。</div>
                     <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">家畜伝染病予防法施行規則</a>
-                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の次に三条を加える改正規定（同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_328CO0000000235.html#Mp-At_21_3-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の三第一項第三号</a>及び<a class="reference_link" href="L_328CO0000000235.html#Mp-At_21_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の四</a>に係る部分に限る。）は<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>附則第一条第二号に掲げる規定の施行の日（<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>和三年四月一日）から、第一条中同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_328CO0000000235.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条</a>の改正規定（「第三十一条第二項」を「第三十一条第三項」に改める部分に限る。）、同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_328CO0000000235.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の改正規定、同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_328CO0000000235.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>に一項を加える改正規定、同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別記様式第十号の改正規定（「第３１条第２項」を「第３１条第３項」に改める部分に限る。）及び同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別記様式第四十九号の改正規定（「第三十一条第一項」の下に「若しくは第二項」を加える部分に限る。）並びに第四条の規定は<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>和三年四月一日から施行する。</div>
+                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の次に三条を加える改正規定（<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_326M50010000035.html#Mp-At_21_3-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の三第一項第三号</a>及び<a class="reference_link" href="L_326M50010000035.html#Mp-At_21_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の四</a>に係る部分に限る。）は<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>附則第一条第二号に掲げる規定の施行の日（<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>和三年四月一日）から、第一条中<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_328CO0000000235.html#Mp-At_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条</a>の改正規定（「第三十一条第二項」を「第三十一条第三項」に改める部分に限る。）、<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_328CO0000000235.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の改正規定、<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_328CO0000000235.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>に一項を加える改正規定、<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別記様式第十号の改正規定（「第３１条第２項」を「第３１条第３項」に改める部分に限る。）及び<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別記様式第四十九号の改正規定（「第三十一条第一項」の下に「若しくは第二項」を加える部分に限る。）並びに第四条の規定は<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>和三年四月一日から施行する。</div>
                   </div>
                 </div>
               </div>
@@ -13677,7 +13677,7 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence" Num="1">第一条のうち<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">家畜伝染病予防法施行規則</a>
-                          <a class="reference_link" href="L_326M50010000035.html#Mp-At_21_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の五</a>の改正規定、同<a class="reference_link" href="L_328CO0000000235.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第二の一の項の改正規定中３に係る部分、同表第二の三の項の改正規定中３に係る部分及び同表第二の四の項の改正規定中３に係る部分の規定</div>
+                          <a class="reference_link" href="L_326M50010000035.html#Mp-At_21_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の五</a>の改正規定、<a class="reference_link" href="L_326M50010000035.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別表第二の一の項の改正規定中３に係る部分、同表第二の三の項の改正規定中３に係る部分及び同表第二の四の項の改正規定中３に係る部分の規定</div>
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence" Num="1">

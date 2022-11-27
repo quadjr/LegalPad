@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -500,12 +500,12 @@
                         <td>
                           <div class="Sentence">種類</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">区分</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">散弾銃射撃場</div>
                         </td>
                         <td>
@@ -532,7 +532,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">ライフル射撃場</div>
                         </td>
                         <td>
@@ -559,7 +559,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">けん銃射撃場</div>
                         </td>
                         <td>
@@ -586,7 +586,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">空気銃射撃場</div>
                         </td>
                         <td>
@@ -636,7 +636,7 @@
                           <td>
                             <div class="Sentence">射撃場</div>
                           </td>
-                          <td>
+                          <td rowspan="1" colspan="2">
                             <div class="Sentence">距離</div>
                           </td>
                         </tr>
@@ -654,7 +654,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">ライフル（覆道式）射撃場</div>
                           </td>
                           <td>
@@ -673,7 +673,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">ライフル（バッフル式）射撃場</div>
                             <div class="Sentence">ライフル（自然式）射撃場</div>
                           </td>
@@ -693,7 +693,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">拳銃（覆道式）射撃場</div>
                           </td>
                           <td>
@@ -712,7 +712,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">拳銃（バッフル式）射撃場</div>
                             <div class="Sentence">拳銃（自然式）射撃場</div>
                           </td>
@@ -1279,11 +1279,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">トラツプ射撃場</div>
                       <div class="Sentence">散弾銃（移動標的）射撃場</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">下図に示すAB、AC、A′B′及びA′C′をそれぞれ一〇〇メートルとして求められる甲及び乙の区域</div>
                     </td>
                     <td>
@@ -1302,14 +1302,14 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">ライフル（自然式）射撃場</div>
                       <div class="Sentence">けん銃（自然式）射撃場</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">下図に示すAB、AC、A′B′及びA′C′をそれぞれ使用する実包の最大到達距離として求められる甲及び乙の区域</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ACDEE′D′C′A′の区域は、危険区域</div>
                     </td>
                   </tr>
@@ -1330,19 +1330,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">空気銃（自然式）射撃場</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">下図に示すAB、AC、A′B′及びA′C′をそれぞれ五〇メートルとして求められる甲及び乙の区域</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="FigStruct">
                 ./pict/S37F03101000046_2105131405_001.jpg
 
@@ -1350,7 +1350,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">
               </div>
                     </td>
@@ -1363,12 +1363,12 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">トラツプ射撃場</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -1376,7 +1376,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">射座</div>
                     </td>
                     <td>
@@ -1388,7 +1388,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">トラツプ（クレー放出器）</div>
                     </td>
                     <td>
@@ -1399,7 +1399,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">固定標的</div>
                     </td>
                     <td>
@@ -1421,7 +1421,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -1449,7 +1449,7 @@
                 <div class="TableStructTitle">別表第２の別図（平面図）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="FigStruct">
                 ./pict/S37F03101000046_2105131405_002.jpg
 
@@ -1513,7 +1513,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">射撃場の危険区域は、図に示す要領により求められた各射台の危険区域のすべてを包括し、その他の区域を含まない区域とする。</div>
                     </td>
                   </tr>
@@ -1525,12 +1525,12 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">スキート射撃場</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -1566,7 +1566,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">固定標的</div>
                     </td>
                     <td>
@@ -1588,7 +1588,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -1616,7 +1616,7 @@
                 <div class="TableStructTitle">別表第３の別図１（平面図　単位：ｍ）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="FigStruct">
                 ./pict/S37F03101000046_2105131405_003.jpg
 
@@ -1706,7 +1706,7 @@
                 <div class="TableStructTitle">別表第３の別図３（平面図）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="FigStruct">
                 ./pict/S37F03101000046_2105131405_005.jpg
 
@@ -1777,7 +1777,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">散弾銃（移動標的）射撃場</div>
                     </td>
                   </tr>
@@ -1879,7 +1879,7 @@
                 <div class="TableStructTitle">別表第３の２の別図（平面図）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="FigStruct">
                 ./pict/S37F03101000046_2105131405_006.jpg
 
@@ -1943,7 +1943,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">射撃場の危険区域は、図に示す要領により求められた各射台の危険区域のすべてを包括し、その他の区域を含まない区域とする。</div>
                     </td>
                   </tr>
@@ -1955,13 +1955,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">ライフル（覆道式）射撃場</div>
                       <div class="Sentence">（注）　括弧内の数字は、公称口径二十二のへり打ちのライフル銃又は空気銃のみを使用する射撃場についてのものである。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -2002,7 +2002,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">標的</div>
                     </td>
                     <td>
@@ -2012,7 +2012,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">えん体</div>
                     </td>
                     <td>
@@ -2021,7 +2021,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ランニングボア標的の台車等を覆う施設</div>
                     </td>
                     <td>
@@ -2029,7 +2029,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">バックストップ</div>
                     </td>
                     <td>
@@ -2039,7 +2039,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -2080,13 +2080,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">ライフル（バッフル式）射撃場</div>
                       <div class="Sentence">（注）　括弧内の数字は、公称口径二十二のへり打ちのライフル銃又は空気銃のみを使用する射撃場についてのものである。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -2125,7 +2125,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">射撃線と標的の間</div>
                     </td>
                     <td>
@@ -2163,7 +2163,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">標的</div>
                     </td>
                     <td>
@@ -2173,7 +2173,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">えん体</div>
                     </td>
                     <td>
@@ -2182,7 +2182,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ランニングボア標的の台車等を覆う施設</div>
                     </td>
                     <td>
@@ -2190,7 +2190,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">バックストップ</div>
                     </td>
                     <td>
@@ -2202,7 +2202,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -2375,13 +2375,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">ライフル（自然式）射撃場</div>
                       <div class="Sentence">（注）　括弧内の数字は、公称口径二十二のへり打ちのライフル銃又は空気銃のみを使用する射撃場についてのものである。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -2404,7 +2404,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">射撃線と標的の間</div>
                     </td>
                     <td>
@@ -2423,7 +2423,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">標的</div>
                     </td>
                     <td>
@@ -2432,7 +2432,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">えん体</div>
                     </td>
                     <td>
@@ -2441,7 +2441,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ランニングボア標的の台車等を覆う施設</div>
                     </td>
                     <td>
@@ -2449,7 +2449,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">バックストップ</div>
                     </td>
                     <td>
@@ -2470,7 +2470,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -2497,7 +2497,7 @@
                 <div class="TableStructTitle">別表第６の別図（平面図）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="FigStruct">
                 ./pict/S37F03101000046_2105131405_018.jpg
 
@@ -2553,7 +2553,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">射撃場の危険区域は、図に示す要領により求められた各射台の危険区域のすべてを包括してその他の区域を含まない区域とする。</div>
                     </td>
                   </tr>
@@ -2565,13 +2565,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">けん銃（覆道式）射撃場</div>
                       <div class="Sentence">（注）　括弧内の数字は、公称口径二十二のへり打ちのけん銃のみを使用する射撃場についてのものである。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -2612,7 +2612,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">バツクストツプ及びその周辺</div>
                     </td>
                     <td>
@@ -2644,7 +2644,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -2672,13 +2672,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">けん銃（バツフル式）射撃場</div>
                       <div class="Sentence">（注）　括弧内の数字は、公称口径二十二のへり打ちのけん銃のみを使用する射撃場についてのものである。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -2717,7 +2717,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">射撃線と標的の間</div>
                     </td>
                     <td>
@@ -2754,7 +2754,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">バツクストツプ及びその周辺</div>
                     </td>
                     <td>
@@ -2788,7 +2788,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -2816,12 +2816,12 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">けん銃（自然式）射撃場</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -2844,7 +2844,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">射撃線と標的の間</div>
                     </td>
                     <td>
@@ -2863,7 +2863,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">バツクストツプ及びその周辺</div>
                     </td>
                     <td>
@@ -2905,7 +2905,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -2934,12 +2934,12 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">空気銃（覆道式）射撃場</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -2976,7 +2976,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">標的及びバツクストツプ</div>
                     </td>
                     <td>
@@ -3000,7 +3000,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -3028,12 +3028,12 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">空気銃（バツフル式）射撃場</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -3071,7 +3071,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">射撃線と標的の間</div>
                     </td>
                     <td>
@@ -3104,7 +3104,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">標的及びバツクストツプ</div>
                     </td>
                     <td>
@@ -3127,7 +3127,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -3168,12 +3168,12 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">空気銃（自然式）射撃場</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">区分</div>
                     </td>
                     <td>
@@ -3196,7 +3196,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">射撃線と標的の間</div>
                     </td>
                     <td>
@@ -3215,7 +3215,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">標的及びバツクストツプ</div>
                     </td>
                     <td>
@@ -3248,7 +3248,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">その他</div>
                     </td>
                     <td>
@@ -3275,7 +3275,7 @@
                 <div class="TableStructTitle">別表第１２の別図（平面図）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="FigStruct">
                 ./pict/S37F03101000046_2105131405_020.jpg
 
@@ -3323,7 +3323,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">射撃場の危険区域は、図に示す要領により求められた各射台の危険区域のすべてを包括し、その他の区域を含まない区域とする。</div>
                     </td>
                   </tr>

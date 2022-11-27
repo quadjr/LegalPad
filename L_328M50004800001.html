@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -483,13 +483,13 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">級別</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">乗用自動車</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">乗合型自動車貨物自動車</div>
                           </td>
                         </tr>
@@ -1052,22 +1052,22 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td Align="right">
                             <div class="Sentence">級別</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">１級</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">２級</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">３級</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">４級</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">５級</div>
                           </td>
                         </tr>
@@ -1430,7 +1430,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">級別</div>
                           </td>
                           <td>
@@ -1450,7 +1450,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">曲線長</div>
                             <div class="Sentence">（メートル）</div>
                           </td>
@@ -1520,7 +1520,7 @@
                           <td>
                             <div class="Sentence">級別</div>
                           </td>
-                          <td>
+                          <td colspan="7">
                             <div class="Sentence">曲線半径（メートル）</div>
                           </td>
                         </tr>
@@ -1798,7 +1798,7 @@
                           <td>
                             <div class="Sentence">級別</div>
                           </td>
-                          <td>
+                          <td colspan="7">
                             <div class="Sentence">曲線半径（メートル）</div>
                           </td>
                         </tr>
@@ -2142,10 +2142,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">１１以上</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">１</div>
                           </td>
                           <td>
@@ -2177,7 +2177,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">２</div>
                           </td>
                           <td>
@@ -2209,7 +2209,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">３</div>
                           </td>
                           <td>
@@ -2241,7 +2241,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">４</div>
                           </td>
                           <td>
@@ -2273,10 +2273,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">７以上</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">１</div>
                           </td>
                           <td>
@@ -2308,7 +2308,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">２</div>
                           </td>
                           <td>
@@ -2340,7 +2340,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">３</div>
                           </td>
                           <td>
@@ -2372,7 +2372,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">４</div>
                           </td>
                           <td>
@@ -2404,10 +2404,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">４．５以上</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">１</div>
                           </td>
                           <td>
@@ -2439,7 +2439,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">２</div>
                           </td>
                           <td>
@@ -2471,7 +2471,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">３</div>
                           </td>
                           <td>
@@ -2503,7 +2503,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">４</div>
                           </td>
                           <td>
@@ -2572,7 +2572,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">級別</div>
                           </td>
                           <td>

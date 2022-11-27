@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2711,22 +2711,22 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">影響要因の区分</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">環境要素の区分</div>
                     </td>
-                    <td>
+                    <td colspan="9">
                       <div class="Sentence">環境の自然的構成要素の良好な状態の保持を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">生物の多様性の確保及び自然環境の体系的保全を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">人と自然との豊かな触れ合いの確保を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">環境への負荷の量の程度により予測及び評価されるべき環境要素</div>
                     </td>
                     <td>
@@ -2738,37 +2738,37 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">大気環境</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">水環境</div>
                     </td>
                     <td>
                       <div class="Sentence">土壌に係る環境その他の環境</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">動物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">植物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">生態系</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">景観</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">人と自然との触れ合いの活動の場</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">廃棄物等</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">温室効果ガス等</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">放射線の量</div>
                     </td>
                     <td>
@@ -2777,7 +2777,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">大気質</div>
                     </td>
                     <td>
@@ -2786,7 +2786,7 @@
                     <td>
                       <div class="Sentence">振動</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">水質</div>
                     </td>
                     <td>
@@ -2855,7 +2855,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">工事の実施</div>
                     </td>
                     <td>
@@ -3152,7 +3152,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">土地又は工作物の存在及び供用</div>
                     </td>
                     <td>
@@ -3373,7 +3373,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="20">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　○印は、各欄に掲げる環境要素が、影響要因の区分の項に掲げる各要因により影響を受けるおそれがあるものであることを示す。ただし、※が付されているものは、放射性物質が相当程度拡散・流出する恐れがある場合に適用する。</div>
                       <div class="Sentence">二　この表における「影響要因の区分」は、次に掲げる特性を有する宅地の造成の事業の内容を踏まえて区分したものである。</div>
@@ -3398,10 +3398,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">参考項目</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">参考手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -3438,7 +3438,8 @@
                       <div class="Sentence">文献その他の資料及び現地調査による情報（次に掲げる情報については、それぞれ次に定める方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>を用いられたものとする。）の収集並びに当該情報の整理及び解析</div>
                       <div class="Sentence">イ　二酸化窒素の濃度の状況　二酸化窒素に係る環境基準に規定する二酸化窒素の濃度の判定の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
-                      <div class="Sentence">ロ　風の状況　<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">気象業務法施行規則</a>（<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十七年運輸省令第百一号</a>）<a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は同規則<a class="reference_link" href="#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                      <div class="Sentence">ロ　風の状況　<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">気象業務法施行規則</a>（<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十七年運輸省令第百一号</a>）<a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                        <a class="reference_link" href="L_409AC0000000081.html#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">三　調査地域</div>
                       <div class="Sentence">二酸化窒素の拡散の特性を踏まえて二酸化窒素に係る環境影響を受けるおそれがあると認められる地域</div>
@@ -3476,7 +3477,8 @@
                       <div class="Sentence">イ　二酸化硫黄の濃度の状況　大気の汚染に係る環境基準に規定する二酸化硫黄の濃度の測定の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">ロ　風の状況　<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">気象業務法施行規則</a>
-                        <a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は同規則<a class="reference_link" href="#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                        <a class="reference_link" href="L_409AC0000000081.html#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">三　調査地域</div>
                       <div class="Sentence">二酸化硫黄の拡散の特性を踏まえて二酸化硫黄に係る環境影響を受けるおそれがあると認められる地域</div>
@@ -3514,7 +3516,8 @@
                       <div class="Sentence">イ　浮遊粒子状物質の濃度の状況　大気の汚染に係る環境基準に規定する浮遊粒子状物質の測定の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">ロ　風の状況　<a class="reference_link" href="L_327M50000800101.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">気象業務法施行規則</a>
-                        <a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は同規則<a class="reference_link" href="#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <a class="reference_link" href="L_327M50000800101.html#Mp-At_1_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の二</a>の表<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>トに規定する風の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>（気象庁が観測した場合に限る。）又は<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                        <a class="reference_link" href="L_409AC0000000081.html#Mp-At_1_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条の三</a>の表<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>イに規定する風向の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>及び<a class="reference_link" href="L_409AC0000000081.html#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>ロに規定する風速の観測の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">三　調査地域</div>
                       <div class="Sentence">浮遊粒子状物質の拡散の特性を踏まえて浮遊粒子状物質に係る環境影響を受けるおそれがあると認められる地域</div>
@@ -3536,7 +3539,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">粉じん等</div>
                     </td>
                     <td>
@@ -3597,7 +3600,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">騒音</div>
                     </td>
                     <td>
@@ -3661,7 +3664,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">振動</div>
                     </td>
                     <td>
@@ -3908,13 +3911,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">主要な眺望点及び景観資源並びに主要な眺望景観</div>
                     </td>
                     <td>
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一　調査すべき情報</div>
                       <div class="Sentence">イ　主要な眺望点の状況</div>
                       <div class="Sentence">ロ　景観資源の状況</div>
@@ -3929,7 +3932,7 @@
                       <div class="Sentence">五　調査期間等</div>
                       <div class="Sentence">景観の特性を踏まえて調査地域における主要な眺望点及び景観資源並びに主要な眺望景観に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">主要な眺望点及び景観資源についての分布の改変の程度を踏まえた事例の引用又は解析並びに主要な眺望景観についての完成予想図、フォトモンタージュ<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>その他の視覚的な表現方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
@@ -3946,13 +3949,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">主要な人と自然との触れ合いの活動の場</div>
                     </td>
                     <td>
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一　調査すべき情報</div>
                       <div class="Sentence">イ　人と自然との触れ合いの活動の場の概況</div>
                       <div class="Sentence">ロ　主要な人と自然との触れ合いの活動の場の分布、利用の状況及び利用環境の状況</div>
@@ -3966,7 +3969,7 @@
                       <div class="Sentence">五　調査期間等</div>
                       <div class="Sentence">人と自然との触れ合いの活動の場の特性を踏まえて調査地域における主要な人と自然との触れ合いの活動の場に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">主要な人と自然との触れ合いの活動の場について、分布又は利用環境の改変の程度を踏まえた事例の引用又は解析</div>
@@ -4003,17 +4006,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">二酸化炭素</div>
                     </td>
                     <td>
                       <div class="Sentence">建設機械の稼働</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">一　調査すべき情報</div>
                       <div class="Sentence">建設機械、車両及び工場等のエネルギー消費効率</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                       <div class="Sentence">建設機械、車両及び工場等の稼働に伴い発生する二酸化炭素の排出に関する計算</div>
@@ -4034,7 +4037,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">放射線の量（粉じん等の発生に伴うもの）</div>
                     </td>
                     <td>
@@ -4150,7 +4153,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　この表において「粉じん等」とは、粉じん、ばいじん及び自動車の運行又は建設機械の稼働に伴い発生する粒子状物質をいう。</div>
                       <div class="Sentence">二　この表において「重要な地形及び地質」、「重要な種」及び「重要な種及び群落」とは、それぞれ学術上又は希少性の観点から重要なものをいう。</div>

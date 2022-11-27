@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -4443,10 +4443,10 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">二千万円</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                         </tr>
@@ -4457,7 +4457,7 @@
                           <td>
                             <div class="Sentence" Num="1">　　　</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">次の表の上欄に掲げる会社の資本金の額又は出資の金額の区分に応じ、それぞれ同表の下欄に掲げる額</div>
                           </td>
                         </tr>
@@ -4471,7 +4471,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>
@@ -4479,16 +4479,16 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>
                             <div class="Sentence" Num="1">五十億円以上</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">三千万円</div>
                           </td>
                           <td>
@@ -4499,7 +4499,7 @@
                           <td>
                             <div class="Sentence" Num="1">十億円以上五十億円未満</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">千五百万円</div>
                           </td>
                           <td>
@@ -4510,7 +4510,7 @@
                           <td>
                             <div class="Sentence" Num="1">十億円未満</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">七百五十万円</div>
                           </td>
                           <td>
@@ -4524,7 +4524,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">次の表の上欄に掲げる労働組合の組合員又は職員団体の構成員（<a class="reference_link" href="#Mp-At_21_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次項</a>において「組合員等」という。）の数の区分に応じ、それぞれ同表の下欄に掲げる額</div>
                           </td>
                         </tr>
@@ -4538,7 +4538,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>
@@ -4546,16 +4546,16 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>
                             <div class="Sentence" Num="1">十万人以上</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">三千万円</div>
                           </td>
                           <td>
@@ -4566,7 +4566,7 @@
                           <td>
                             <div class="Sentence" Num="1">五万人以上十万人未満</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">千五百万円</div>
                           </td>
                           <td>
@@ -4577,7 +4577,7 @@
                           <td>
                             <div class="Sentence" Num="1">五万人未満</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">七百五十万円</div>
                           </td>
                           <td>
@@ -4591,7 +4591,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">次の表の上欄に掲げる団体の前年における年間の経費の額の区分に応じ、それぞれ同表の下欄に掲げる額</div>
                           </td>
                         </tr>
@@ -4605,7 +4605,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>
@@ -4613,16 +4613,16 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>
                             <div class="Sentence" Num="1">六千万円以上</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">三千万円</div>
                           </td>
                           <td>
@@ -4633,7 +4633,7 @@
                           <td>
                             <div class="Sentence" Num="1">二千万円以上六千万円未満</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">千五百万円</div>
                           </td>
                           <td>
@@ -4644,7 +4644,7 @@
                           <td>
                             <div class="Sentence" Num="1">二千万円未満</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">七百五十万円</div>
                           </td>
                           <td>
@@ -4661,7 +4661,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>

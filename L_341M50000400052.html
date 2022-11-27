@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3734,26 +3734,26 @@
                                   <td>
                                     <div class="Sentence">Ｘ</div>
                                   </td>
-                                  <td>
+                                  <td rowspan="2">
                                     <div class="Sentence">０≦Ｘ＜１００００</div>
                                   </td>
-                                  <td>
+                                  <td rowspan="2">
                                     <div class="Sentence">１００００≦Ｘ＜５２５００</div>
                                   </td>
-                                  <td>
+                                  <td rowspan="2">
                                     <div class="Sentence">５２５００≦Ｘ＜９９００００</div>
                                   </td>
-                                  <td>
+                                  <td rowspan="2">
                                     <div class="Sentence">９９００００≦Ｘ</div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">Ｌ</div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">Ｌ１</div>
                                   </td>
                                   <td>
@@ -3770,7 +3770,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">Ｌ２</div>
                                   </td>
                                   <td>
@@ -3787,7 +3787,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">Ｌ３</div>
                                   </td>
                                   <td>
@@ -3804,7 +3804,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">Ｌ４</div>
                                   </td>
                                   <td>
@@ -3821,7 +3821,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">Ｌ５</div>
                                   </td>
                                   <td>
@@ -3838,7 +3838,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">Ｌ６</div>
                                   </td>
                                   <td>
@@ -3913,23 +3913,23 @@
                                   <td>
                                     <div class="Sentence">x</div>
                                   </td>
-                                  <td>
+                                  <td rowspan="2">
                                     <div class="Sentence">０≦x＜８</div>
                                   </td>
-                                  <td>
+                                  <td rowspan="2">
                                     <div class="Sentence">８≦x＜２５</div>
                                   </td>
-                                  <td>
+                                  <td rowspan="2">
                                     <div class="Sentence">２５≦x</div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">l</div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">l１</div>
                                   </td>
                                   <td>
@@ -3943,7 +3943,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">l２</div>
                                   </td>
                                   <td>
@@ -3957,7 +3957,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">l３</div>
                                   </td>
                                   <td>
@@ -3971,7 +3971,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td colspan="2">
                                     <div class="Sentence">l４</div>
                                   </td>
                                   <td>
@@ -4321,7 +4321,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="3">
                                 <div class="Sentence">備考　Ｌ<div class="Sub">１</div>、Ｌ<div class="Sub">２</div>、Ｌ<div class="Sub">３</div>、Ｌ<div class="Sub">４</div>、Ｌ<div class="Sub">５</div>及びＬ<div class="Sub">６</div>は、それぞれ第二条第一項第十六号に規定するＬ<div class="Sub">１</div>、Ｌ<div class="Sub">２</div>、Ｌ<div class="Sub">３</div>、Ｌ<div class="Sub">４</div>、Ｌ<div class="Sub">５</div>及びＬ<div class="Sub">６</div>を表すものとする。</div>
                               </td>
                             </tr>
@@ -4644,7 +4644,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="3">
                                   <div class="Sentence">備考　ｌ<div class="Sub">１</div>、ｌ<div class="Sub">２</div>、ｌ<div class="Sub">３</div>及びｌ<div class="Sub">４</div>は、それぞれ第二条第一項第十八号に規定するｌ<div class="Sub">１</div>、ｌ<div class="Sub">２</div>、ｌ<div class="Sub">３</div>及びｌ<div class="Sub">４</div>を表すものとする。</div>
                                 </td>
                               </tr>
@@ -5489,8 +5489,8 @@
                         <div class="Subitem1" Num="3">
                           <div class="Subitem1Title">ハ</div>
                           <div class="Subitem1Sentence">
-                            <div class="Sentence">特定設備（<a class="reference_link" href="L_351M50000400004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定設備検査規則</a>の施行前に製造された設備であつて、同<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                              <a class="reference_link" href="L_409CO0000000020.html#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>に規定する特定設備に相当するものを含む。）の変更（保安上特段の支障がないものとして認められたものへの変更に限る。）の工事であつて、当該設備の処理能力及び位置の変更を伴わないもの（イ、ロ及び<a class="reference_link" href="#Mp-At_16-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>に該当するものを除く。）</div>
+                            <div class="Sentence">特定設備（<a class="reference_link" href="L_351M50000400004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定設備検査規則</a>の施行前に製造された設備であつて、<a class="reference_link" href="L_351M50000400004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                              <a class="reference_link" href="L_351M50000400004.html#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>に規定する特定設備に相当するものを含む。）の変更（保安上特段の支障がないものとして認められたものへの変更に限る。）の工事であつて、当該設備の処理能力及び位置の変更を伴わないもの（イ、ロ及び<a class="reference_link" href="#Mp-At_16-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>に該当するものを除く。）</div>
                           </div>
                         </div>
                         <div class="Subitem1" Num="4">
@@ -10365,12 +10365,12 @@
                     <div class="Sentence">
                       <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">改正液石則</a>
                       <a class="reference_link" href="L_341M50000400052.html#Mp-At_20-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第一項</a>及び<a class="reference_link" href="L_341M50000400052.html#Mp-At_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>、改正一般則第二十一条第一項及び第二項並びに改正コンビ則第二十八条第一項及び第二項の規定は、平成五年四月一日以後に改正前の<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">液化石油ガス保安規則</a>
-                      <a class="reference_link" href="L_341M50000400052.html#Mp-At_20-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第一項</a>及び<a class="reference_link" href="L_341M50000400052.html#Mp-At_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>及び同<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_409CO0000000020.html#Mp-At_20-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第三項</a>、改正前の<a class="reference_link" href="L_341M50000400053.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">一般高圧ガス保安規則</a>
-                      <a class="reference_link" href="L_341M50000400053.html#Mp-At_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第一項</a>及び<a class="reference_link" href="L_341M50000400053.html#Mp-At_21-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>及び同<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_409CO0000000020.html#Mp-At_21-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第三項</a>並びに改正前の<a class="reference_link" href="L_361M50000400088.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">コンビナート等保安規則</a>
-                      <a class="reference_link" href="L_361M50000400088.html#Mp-At_28-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第一項</a>及び<a class="reference_link" href="L_361M50000400088.html#Mp-At_28-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>及び同<a class="reference_link" href="L_409CO0000000020.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_409CO0000000020.html#Mp-At_28-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第三項</a>に規定する講習を受けた保安係員、保安主任者及び保安企画推進員に適用する。</div>
+                      <a class="reference_link" href="L_341M50000400052.html#Mp-At_20-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第一項</a>及び<a class="reference_link" href="L_341M50000400052.html#Mp-At_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>及び<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_341M50000400052.html#Mp-At_20-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第三項</a>、改正前の<a class="reference_link" href="L_341M50000400053.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">一般高圧ガス保安規則</a>
+                      <a class="reference_link" href="L_341M50000400053.html#Mp-At_21-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第一項</a>及び<a class="reference_link" href="L_341M50000400053.html#Mp-At_21-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>及び<a class="reference_link" href="L_341M50000400053.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_341M50000400053.html#Mp-At_21-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条第三項</a>並びに改正前の<a class="reference_link" href="L_361M50000400088.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">コンビナート等保安規則</a>
+                      <a class="reference_link" href="L_361M50000400088.html#Mp-At_28-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第一項</a>及び<a class="reference_link" href="L_361M50000400088.html#Mp-At_28-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>及び<a class="reference_link" href="L_361M50000400088.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_361M50000400088.html#Mp-At_28-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十八条第三項</a>に規定する講習を受けた保安係員、保安主任者及び保安企画推進員に適用する。</div>
                   </div>
                 </div>
               </div>
@@ -10456,7 +10456,8 @@
                         <td>
                           <div class="Sentence">
                             <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新規則</a>
-                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第十六号</a>（同規則第八条第一項で準用する場合を含む。）</div>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第十六号</a>（<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_8-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条第一項</a>で準用する場合を含む。）</div>
                         </td>
                       </tr>
                       <tr>
@@ -10466,7 +10467,9 @@
                         <td>
                           <div class="Sentence">
                             <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新規則</a>
-                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号</a>の規定のうち同規則第六条第一項第十六号に係る部分（同規則第十二条第三号で準用する場合を含む。）</div>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号</a>の規定のうち<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第十六号</a>に係る部分（<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_12-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第三号</a>で準用する場合を含む。）</div>
                         </td>
                       </tr>
                       <tr>
@@ -10487,7 +10490,8 @@
                         <td>
                           <div class="Sentence">
                             <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新規則</a>
-                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_23-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条第一項</a>の規定のうち同規則第六条第一項第十六号に係る部分</div>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_23-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条第一項</a>の規定のうち<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第十六号</a>に係る部分</div>
                         </td>
                       </tr>
                       <tr>
@@ -10497,7 +10501,8 @@
                         <td>
                           <div class="Sentence">
                             <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新規則</a>
-                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_27-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条第一号</a>の規定のうち同規則第六条第一項第十六号に係る部分</div>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_27-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条第一号</a>の規定のうち<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第十六号</a>に係る部分</div>
                         </td>
                       </tr>
                       <tr>
@@ -10545,7 +10550,8 @@
                       <div class="Column" Num="2">
                         <div class="Sentence">
                           <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新規則</a>
-                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号</a>の規定のうち同規則第六条第一項第二十号に係る部分</div>
+                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_12-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第一号</a>の規定のうち<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第二十号</a>に係る部分</div>
                       </div>
                     </div>
                   </div>
@@ -10558,7 +10564,8 @@
                       <div class="Column" Num="2">
                         <div class="Sentence">
                           <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新規則</a>
-                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_23" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条</a>の規定のうち同規則第六条第一項第二十号に係る部分</div>
+                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_23" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条</a>の規定のうち<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第二十号</a>に係る部分</div>
                       </div>
                     </div>
                   </div>
@@ -10571,7 +10578,10 @@
                       <div class="Column" Num="2">
                         <div class="Sentence">
                           <a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新規則</a>
-                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_26-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条第一号</a>で引用する同規則第二十三条の規定のうち同規則第六条第一項第二十号</div>
+                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_26-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条第一号</a>で引用する<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_23" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条</a>の規定のうち<a class="reference_link" href="L_341M50000400052.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                          <a class="reference_link" href="L_341M50000400052.html#Mp-At_6-Pr_1-It_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第二十号</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -12088,7 +12098,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　<a class="reference_link" href="#Mp-At_6-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第二号</a>若しくは<a class="reference_link" href="#Mp-At_6-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号</a>、又は<a class="reference_link" href="#Mp-At_97" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九十七条</a>の規定により経済産業大臣が認めた基準に係る完成検査の方<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>については、この表の<a class="reference_link" href="#Mp-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項から第四項まで</a>の規定にかかわらず、当該基準に応じて適切であると経済産業大臣が認めたものをもつて完成検査の方<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>とする。</div>
                       <div class="Sentence">二　移設等に係る高圧ガス設備であつて、当該高圧ガス設備の使用の経歴及び保管状態の記録が確認できる場合にあつては、当該使用の経歴及び保管状態の記録の検査をもつて、この表の<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に規定する記録による検査とすることができる。</div>
@@ -12175,7 +12185,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　<a class="reference_link" href="#Mp-At_23" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条</a>で準用する<a class="reference_link" href="#Mp-At_6-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項第二号</a>若しくは<a class="reference_link" href="#Mp-At_6-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一号</a>、又は<a class="reference_link" href="#Mp-At_97" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九十七条</a>の規定により経済産業大臣が認めた基準に係る完成検査の方<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>については、この表の<a class="reference_link" href="#Mp-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項から第四項まで</a>の規定にかかわらず、当該基準に応じて適切であると経済産業大臣が認めたものをもつて完成検査の方<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>とする。</div>
                       <div class="Sentence">二　移設等に係る貯蔵設備であつて、当該貯蔵設備の使用の経歴及び保管状態の記録が確認できる場合にあつては、当該使用の経歴及び保管状態の記録の検査をもつて、この表の<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に規定する記録による検査とすることができる。</div>
@@ -12288,7 +12298,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">備考　上欄一ロの項下欄<a class="reference_link" href="#Mp-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>及び上欄三ハの項下欄<a class="reference_link" href="#Mp-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>に規定する本社には、出資、人事、資金、技術、取引等の関係を通じて認定完成検査実施者の財務及び事業の方針に係る決定を支配し、又はそれらに対して重要な影響を与えることができる<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人であつて、当該認定完成検査実施者に対して適切な監査及び検査管理を行うことができるものを含めることができる。</div>
                     </td>
                   </tr>
@@ -12403,7 +12413,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　特定施設の運転を停止して行う保安検査のみに限定して認定保安検査実施者の申請をしようとする者にあつては、本基準中上欄三イの項目については適用しないものとする。</div>
                       <div class="Sentence">二　上欄一ロの項下欄<a class="reference_link" href="#Mp-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>及び上欄三ニの項下欄<a class="reference_link" href="#Mp-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四号</a>に規定する本社には、出資、人事、資金、技術、取引等の関係を通じて認定保安検査実施者の財務及び事業の方針に係る決定を支配し、又はそれらに対して重要な影響を与えることができる<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人であつて、当該認定保安検査実施者に対して適切な監査及び検査管理を行うことができるものを含めることができる。</div>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1781,7 +1781,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">特例高等学校等（専攻科及び別科を除く。）</div>
                           </td>
                           <td>
@@ -1907,7 +1907,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">合計</div>
                           </td>
                           <td>
@@ -1915,10 +1915,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">特例高等学校等の専攻科（修業年限が二年以上のものに限る。）</div>
                           </td>
-                          <td>
+                          <td rowspan="9">
                             <div class="Sentence" Num="1">　</div>
                           </td>
                           <td>
@@ -2014,7 +2014,7 @@
                           <td>
                             <div class="Sentence" Num="1">　</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">合計</div>
                           </td>
                           <td>
@@ -2022,7 +2022,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">備考</div>
                             <div class="Sentence" Num="2">一　各科目の単位数は、一単位時間を五十分とし、三十五単位時間の授業を一単位として計算することを標準とする。ただし、通信制の課程における介護実習以外の科目の単位数については、添削指導三回及び面接指導二単位時間（一単位時間を五十分とする。）を一単位として計算することを標準とする。</div>
                             <div class="Sentence" Num="3">二　医療的ケアについては、講義及び演習により行うものとし、講義の時間数は少なくとも五十時間以上とし、演習は面接指導とするものとする。</div>
@@ -2511,7 +2511,7 @@
                     <td>
                       <div class="Sentence" Num="1">科目</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">時間数</div>
                     </td>
                   </tr>
@@ -2849,7 +2849,7 @@
                     <td>
                       <div class="Sentence" Num="1">科目</div>
                     </td>
-                    <td>
+                    <td colspan="8">
                       <div class="Sentence" Num="1">時間数</div>
                     </td>
                   </tr>
@@ -2857,10 +2857,10 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">社会福祉士短期養成学校</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence" Num="1">社会福祉士一般養成学校</div>
                     </td>
                   </tr>
@@ -2880,7 +2880,7 @@
                     <td>
                       <div class="Sentence" Num="1">印刷教材による授業</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">面接授業</div>
                     </td>
                     <td>
@@ -2903,7 +2903,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -2926,7 +2926,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -2949,7 +2949,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -2972,7 +2972,7 @@
                     <td>
                       <div class="Sentence" Num="1">一八〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -2995,7 +2995,7 @@
                     <td>
                       <div class="Sentence" Num="1">一八〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3018,7 +3018,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3041,7 +3041,7 @@
                     <td>
                       <div class="Sentence" Num="1">一八〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3064,7 +3064,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3087,7 +3087,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3110,7 +3110,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3133,7 +3133,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3156,7 +3156,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3179,7 +3179,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3202,7 +3202,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3225,7 +3225,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3249,7 +3249,7 @@
                     <td>
                       <div class="Sentence" Num="1">一八〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3272,7 +3272,7 @@
                     <td>
                       <div class="Sentence" Num="1">一八〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3295,7 +3295,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3318,7 +3318,7 @@
                     <td>
                       <div class="Sentence" Num="1">九〇</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3457,7 +3457,7 @@
                     <td>
                       <div class="Sentence" Num="1">二四三</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二七</div>
                     </td>
                     <td>
@@ -3480,7 +3480,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -3503,7 +3503,7 @@
                     <td>
                       <div class="Sentence" Num="1">二、八〇八</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">七二</div>
                     </td>
                     <td>
@@ -3528,7 +3528,7 @@
                     <td>
                       <div class="Sentence" Num="1">教育内容</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">時間数</div>
                     </td>
                   </tr>
@@ -3740,7 +3740,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">こころとからだのしくみ</div>
                     </td>
                     <td>
@@ -3822,7 +3822,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">合計</div>
                     </td>
                     <td>
@@ -4053,7 +4053,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">高等学校等（専攻科及び別科を除く。）</div>
                     </td>
                     <td>
@@ -4179,7 +4179,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">合計</div>
                     </td>
                     <td>
@@ -4187,10 +4187,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">高等学校等の専攻科（修業年限が二年以上のものに限る。）</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -4286,7 +4286,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">合計</div>
                     </td>
                     <td>

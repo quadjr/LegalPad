@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -9849,7 +9849,7 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">改正法附則第三条第六項の規定によりなおその効力を有するものとされる改正法第二条の規定による改正前の<a class="reference_link" href="L_325AC0000000218.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">港湾法</a>
-                      <a class="reference_link" href="L_325AC0000000218.html#Mp-At_55_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十五条の八</a>の規定及び港湾法施行令の一部を改正する政令（平成二十三年政令第三百四十三号）附則第二条の規定によりなおその効力を有するものとされる同<a class="reference_link" href="L_326CO0000000004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>による改正前の<a class="reference_link" href="L_326CO0000000004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">港湾法施行令</a>（<a class="reference_link" href="L_326CO0000000004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十六年政令第四号</a>）<a class="reference_link" href="L_326CO0000000004.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>の規定の適用については、第一条の規定による改正前の<a class="reference_link" href="L_326M50000800098.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">港湾法施行規則</a>
+                      <a class="reference_link" href="L_325AC0000000218.html#Mp-At_55_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十五条の八</a>の規定及び港湾法施行令の一部を改正する政令（平成二十三年政令第三百四十三号）附則第二条の規定によりなおその効力を有するものとされる同令による改正前の<a class="reference_link" href="L_326CO0000000004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">港湾法施行令</a>（<a class="reference_link" href="L_326CO0000000004.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十六年政令第四号</a>）<a class="reference_link" href="L_326CO0000000004.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>の規定の適用については、第一条の規定による改正前の<a class="reference_link" href="L_326M50000800098.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">港湾法施行規則</a>
                       <a class="reference_link" href="L_326M50000800098.html#Mp-At_27_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条の二</a>及び<a class="reference_link" href="L_326M50000800098.html#Mp-At_27_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条の三</a>の規定は、なおその効力を有する。</div>
                   </div>
                 </div>
@@ -10230,7 +10230,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">確認対象施設の種類</div>
                     </td>
                     <td>
@@ -10238,10 +10238,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">外郭施設</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">防波堤、防砂堤、防潮堤、導流堤、護岸、堤防、突堤及び胸壁</div>
                     </td>
                     <td>
@@ -10261,7 +10261,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">水門及び<ruby>閘<rt>こう</rt>
                         </ruby>門</div>
                     </td>
@@ -10281,7 +10281,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">係留施設</div>
                     </td>
                     <td>
@@ -10301,10 +10301,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">道路</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">トンネル構造を有する施設</div>
                     </td>
                     <td>
@@ -10323,7 +10323,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他の施設</div>
                     </td>
                     <td>
@@ -10331,7 +10331,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">橋梁</div>
                     </td>
                     <td>
@@ -10350,7 +10350,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">固定式荷役機械及び軌道走行式荷役機械</div>
                     </td>
                     <td>
@@ -10358,7 +10358,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">廃棄物埋立護岸</div>
                     </td>
                     <td>
@@ -10377,7 +10377,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">海浜</div>
                     </td>
                     <td>
@@ -10385,7 +10385,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">緑地及び広場</div>
                     </td>
                     <td>

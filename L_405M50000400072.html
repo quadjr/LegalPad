@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2789,13 +2789,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">特定計量器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">検査設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">定期検査又は計量証明検査を実施する者</div>
                     </td>
                   </tr>
@@ -2824,7 +2824,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">少なくとも一般計量士一名以上を置くものとし、その他の者については、次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　一般計量士</div>
                       <div class="Sentence" Num="3">二　研究所の「短期計量教習」以上を修了した者で、指定に係る実務経験が一年以上の者</div>
@@ -2858,12 +2858,12 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">少なくとも環境計量士（騒音・振動関係）一名以上を置くものとし、その他の者については、次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　環境計量士（騒音・振動関係）</div>
                       <div class="Sentence" Num="3">二　研究所の「短期計量教習」以上を修了した者で、指定に係る実務経験が一年以上の者</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">二名</div>
                     </td>
                   </tr>
@@ -2899,7 +2899,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">二名</div>
                     </td>
                   </tr>
@@ -2926,7 +2926,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ジルコニア式酸素濃度計、溶液導電率式二酸化硫黄濃度計、磁気式酸素濃度計、紫外線式二酸化硫黄濃度計、紫外線式窒素酸化物濃度計、非分散型赤外線式二酸化硫黄濃度計、非分散型赤外線式窒素酸化物濃度計、非分散型赤外線式一酸化炭素濃度計及び化学発光式窒素酸化物濃度計</div>
                     </td>
                     <td>
@@ -2937,12 +2937,12 @@
                         <a class="reference_link" href="L_405M50000400070.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定計量器検定検査規則</a>
                         <a class="reference_link" href="L_405M50000400070.html#Mp-At_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条</a>に規定するもの</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">少なくとも環境計量士（濃度関係）一名以上を置くものとし、その他の者については、次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　環境計量士（濃度関係）</div>
                       <div class="Sentence" Num="3">二　研究所の「短期計量教習」以上を修了した者で、指定に係る実務経験が一年以上の者</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">二名</div>
                     </td>
                   </tr>
@@ -3021,7 +3021,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">備考　この表において、地域ブロックの区分は、<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に定める都道府県の区分とする。</div>
                       <div class="Sentence" Num="2">一　北海道・東北ブロック　北海道、青森県、秋田県、山形県、岩手県、宮城県及び福島県</div>
                       <div class="Sentence" Num="3">二　関東・甲信越ブロック　新潟県、長野県、栃木県、群馬県、茨城県、埼玉県、千葉県、東京都、神奈川県及び山梨県</div>
@@ -3039,13 +3039,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">指定の区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">検定設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">検定を実施する者</div>
                     </td>
                   </tr>
@@ -3064,7 +3064,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">非自動はかり</div>
                     </td>
                     <td>
@@ -3074,14 +3074,14 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、質量計の検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を終了した者で、計量の実務に一年以上従事した者</div>
                       <div class="Sentence" Num="4">三　一般計量士</div>
                       <div class="Sentence" Num="5">四　一又は二に掲げる者と同等以上の能力を有していると研究所理事長が認めた者</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">一般計量士を三名以上含む六名</div>
                     </td>
                   </tr>
@@ -3126,7 +3126,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">ガラス製温度計（ガラス製体温計を除く。）</div>
                     </td>
                     <td>
@@ -3135,14 +3135,14 @@
                     <td>
                       <div class="Sentence" Num="1">計ることができる温度が零下三十度から三百六十度までのうち一定の範囲のものであって、目量が〇・五度以下のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="21">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、温度計の検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を修了した者で、計量の実務に一年以上従事した者</div>
                       <div class="Sentence" Num="4">三　一般計量士</div>
                       <div class="Sentence" Num="5">四　一又は二に掲げる者と同等以上の能力を有していると研究所理事長が認めた者</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">二名</div>
                     </td>
                   </tr>
@@ -3179,7 +3179,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">ガラス製体温計</div>
                     </td>
                     <td>
@@ -3188,7 +3188,7 @@
                     <td>
                       <div class="Sentence" Num="1">計ることができる温度が三十度から四十三度までの範囲のものであって、目量が〇・〇五度以下のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">二名</div>
                     </td>
                   </tr>
@@ -3233,7 +3233,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence" Num="1">抵抗体温計</div>
                     </td>
                     <td>
@@ -3242,7 +3242,7 @@
                     <td>
                       <div class="Sentence" Num="1">計ることができる温度が三十度から四十三度までの範囲のものであって、目量が〇・〇五度以下のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence" Num="1">二名</div>
                     </td>
                   </tr>
@@ -3328,14 +3328,14 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、圧力計の検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を修了した者で、計量の実務に一年以上従事した者</div>
                       <div class="Sentence" Num="4">三　一般計量士</div>
                       <div class="Sentence" Num="5">四　一又は二に掲げる者と同等以上の能力を有していると研究所理事長が認めた者</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">二名</div>
                     </td>
                   </tr>
@@ -3388,7 +3388,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="34">
                       <div class="Sentence" Num="1">最大需要電力計</div>
                     </td>
                     <td>
@@ -3397,11 +3397,11 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="34">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_339M50000400159.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本電気計器検定所の検定等を行う者の資格を定める省令</a>（<a class="reference_link" href="L_339M50000400159.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十九年通商産業省令第百五十九号</a>。）<a class="reference_link" href="L_339M50000400159.html#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第三号まで</a>のいずれかに該当する者</div>
                     </td>
-                    <td>
+                    <td rowspan="34">
                       <div class="Sentence" Num="1">三十名</div>
                     </td>
                   </tr>
@@ -3670,7 +3670,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="40">
                       <div class="Sentence" Num="1">電力量計</div>
                     </td>
                     <td>
@@ -3681,10 +3681,10 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="40">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="40">
                       <div class="Sentence" Num="1">百二十九名</div>
                     </td>
                   </tr>
@@ -4001,7 +4001,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="37">
                       <div class="Sentence" Num="1">無効電力量計</div>
                     </td>
                     <td>
@@ -4010,10 +4010,10 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="37">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="37">
                       <div class="Sentence" Num="1">二十七名</div>
                     </td>
                   </tr>
@@ -4306,7 +4306,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">照度計</div>
                     </td>
                     <td>
@@ -4315,13 +4315,13 @@
                     <td>
                       <div class="Sentence" Num="1">分布温度が二千八百四十六ケルビンから二千八百六十六ケルビンまでの範囲のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、照度計の検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を修了した者で、計量の実務に一年以上従事した者</div>
                       <div class="Sentence" Num="4">三　<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前各号</a>に掲げる者と同等以上の能力を有していると研究所理事長が認めた者</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">三名</div>
                     </td>
                   </tr>
@@ -4359,7 +4359,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、騒音計の検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を修了した者で、計量の実務に一年以上従事した者</div>
@@ -4421,7 +4421,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、振動レベル計の検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を修了した者で、計量の実務に一年以上従事した者</div>
@@ -4465,7 +4465,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ジルコニア式酸素濃度計、溶液導電率式二酸化硫黄濃度計、磁気式酸素濃度計、紫外線式二酸化硫黄濃度計、紫外線式窒素酸化物濃度計、非分散型赤外線式二酸化硫黄濃度計、非分散型赤外線式窒素酸化物濃度計、非分散型赤外線式一酸化炭素濃度計及び化学発光式窒素酸化物濃度計</div>
                     </td>
                     <td>
@@ -4476,7 +4476,7 @@
                         <a class="reference_link" href="L_405M50000400070.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定計量器検定検査規則</a>
                         <a class="reference_link" href="L_405M50000400070.html#Mp-At_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条</a>に規定するもの</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、濃度計の検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を修了した者で、計量の実務に一年以上従事した者</div>
@@ -4510,7 +4510,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">ガラス電極式水素イオン濃度検出器及びガラス電極式水素イオン濃度指示計</div>
                     </td>
                     <td>
@@ -4566,10 +4566,10 @@
                     <td>
                       <div class="Sentence" Num="1">指定の区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">検定設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">検定を実施する者</div>
                     </td>
                   </tr>
@@ -4623,7 +4623,7 @@
                     <td>
                       <div class="Sentence" Num="1">日本産業規格Ｂ七六〇三に規定する試験ができるもの</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">次のいずれかに該当すること。</div>
                       <div class="Sentence" Num="2">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>による大学、旧大学令による大学又は旧専門学校令による専門学校において理学又は工学の課程を修めて卒業した者（当該課程を修めて同法による専門職大学の前期課程を修了した者を含む。）で、自動はかりの検査に一年以上従事した者</div>
                       <div class="Sentence" Num="3">二　研究所の「一般計量教習」以上を修了した者で、計量の実務に一年以上従事した者</div>

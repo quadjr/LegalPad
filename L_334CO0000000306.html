@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3686,10 +3686,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">区分</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">空地の幅</div>
                               </td>
                             </tr>
@@ -3997,7 +3997,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">一　<a class="reference_link" href="L_350AC0000000084.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">石油コンビナート等災害防止法</a>（<a class="reference_link" href="L_350AC0000000084.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十年法律第八十四号</a>）<a class="reference_link" href="L_350AC0000000084.html#Mp-At_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第四号</a>に規定する第一種事業所（<a class="reference_link" href="#Mp-At_11-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七項</a>において「第一種事業所」という。）又は<a class="reference_link" href="L_350AC0000000084.html#Mp-At_2-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五号</a>に規定する第二種事業所（<a class="reference_link" href="#Mp-At_11-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七項</a>において「第二種事業所」という。）に存する屋外タンク貯蔵所の屋外貯蔵タンクで、その容量が千キロリットル以上のもの</div>
                               </td>
                               <td>
@@ -4024,7 +4024,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="3">
                                 <div class="Sentence">二　<a class="reference_link" href="#Mp-At_11-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前号</a>に掲げる屋外貯蔵タンク以外の屋外貯蔵タンク</div>
                               </td>
                               <td>
@@ -5349,7 +5349,7 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">固定給油設備の区分</div>
                                 </td>
                                 <td>
@@ -5357,7 +5357,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">懸垂式の固定給油設備</div>
                                 </td>
                                 <td>
@@ -5365,7 +5365,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td rowspan="3">
                                   <div class="Sentence">その他の固定給油設備</div>
                                 </td>
                                 <td>
@@ -5436,7 +5436,7 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">固定給油設備の区分</div>
                                 </td>
                                 <td>
@@ -5444,7 +5444,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">懸垂式の固定給油設備</div>
                                 </td>
                                 <td>
@@ -5452,7 +5452,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td rowspan="3">
                                   <div class="Sentence">その他の固定給油設備</div>
                                 </td>
                                 <td>
@@ -5494,7 +5494,7 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">固定注油設備の区分</div>
                                 </td>
                                 <td>
@@ -5502,7 +5502,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">懸垂式の固定注油設備</div>
                                 </td>
                                 <td>
@@ -5510,7 +5510,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td rowspan="3">
                                   <div class="Sentence">その他の固定注油設備</div>
                                 </td>
                                 <td>
@@ -6085,7 +6085,8 @@
                       <div class="ParagraphNum"></div>
                       <div class="ParagraphSentence">
                         <div class="Sentence">消火設備若しくは警報設備又はこれらの部分である機械器具（以下この条において「消火設備等」という。）で<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>
-                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第一号から第六号まで</a>若しくは<a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>又は同令<a class="reference_link" href="#Mp-At_41-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一号から第四号まで</a>に掲げるものに該当するものは、これらの消火設備等について定められた<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第一号から第六号まで</a>若しくは<a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>又は<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_41-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一号から第四号まで</a>に掲げるものに該当するものは、これらの消火設備等について定められた<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                           <a class="reference_link" href="L_323AC1000000186.html#Mp-At_21_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の二第二項</a>又は<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                           <a class="reference_link" href="L_323AC1000000186.html#Mp-At_21_16_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の十六の三第一項</a>の技術上の規格に適合するものでなければならない。</div>
                       </div>
@@ -6098,10 +6099,12 @@
                           <a class="reference_link" href="L_323AC1000000186.html#Mp-At_21_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の二第二項</a>又は<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                           <a class="reference_link" href="L_323AC1000000186.html#Mp-At_21_16_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条の十六の三第一項</a>の規定に基づく技術上の規格に関する総務省令の規定の施行又は適用の際、現に存する製造所等における消火設備等又は現に<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                           <a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一項</a>の規定による許可に係る設置若しくは変更の工事中の製造所等に係る消火設備等のうち<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>
-                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第一号から第六号まで</a>若しくは<a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>又は同令<a class="reference_link" href="#Mp-At_41-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一号から第四号まで</a>に掲げるものに該当するもので当該技術上の規格に関する総務省令の規定に適合しないものに係る技術上の基準については、総務省令で、一定の期間を限つて、<a class="reference_link" href="#Mp-At_22-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の特例を定めることができる。</div>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第一号から第六号まで</a>若しくは<a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>又は<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_41-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一号から第四号まで</a>に掲げるものに該当するもので当該技術上の規格に関する総務省令の規定に適合しないものに係る技術上の基準については、総務省令で、一定の期間を限つて、<a class="reference_link" href="#Mp-At_22-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>の特例を定めることができる。</div>
                         <div class="Sentence" Num="2">当該技術上の規格に関する総務省令の規定の施行又は適用の日から当該規定による技術上の規格に適合する消火設備等を供用することができる日として総務大臣が定める日の前日までの間において<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                           <a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一項</a>の規定による許可に係る設置又は変更の工事が開始された製造所等に係る消火設備等のうち<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>
-                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第一号から第六号まで</a>若しくは<a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>又は同令<a class="reference_link" href="#Mp-At_41-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一号から第四号まで</a>に掲げるものに該当するもので当該技術上の規格に関する総務省令の規定に適合しないものについても、同様とする。</div>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第一号から第六号まで</a>若しくは<a class="reference_link" href="L_336CO0000000037.html#Mp-At_37-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八号から第十号まで</a>又は<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_41-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一号から第四号まで</a>に掲げるものに該当するもので当該技術上の規格に関する総務省令の規定に適合しないものについても、同様とする。</div>
                       </div>
                     </div>
                   </div>
@@ -7397,7 +7400,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">手数料を納付すべき者</div>
                           </td>
                           <td>
@@ -7408,10 +7411,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">（一）</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">
                               <a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                               <a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一項</a>前段の規定による移送取扱所の設置の許可を受けようとする者</div>
@@ -7440,10 +7443,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">（二）</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">
                               <a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                               <a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一項</a>後段の規定による移送取扱所の変更の許可を受けようとする者</div>
@@ -7472,10 +7475,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">（三）</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">移送取扱所の設置の完成検査を受けようとする者</div>
                           </td>
                           <td>
@@ -7502,10 +7505,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">（四）</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">移送取扱所の変更の完成検査を受けようとする者</div>
                           </td>
                           <td>
@@ -7548,10 +7551,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">（六）</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                               <a class="reference_link" href="L_323AC1000000186.html#Mp-At_14_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条の三第一項</a>の規定による移送取扱所の保安に関する検査を受けようとする者</div>
@@ -7572,7 +7575,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence">備考　この表の上欄に掲げる者が、<a class="reference_link" href="L_414AC0000000151.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">情報通信技術を活用した行政の推進等に関する法律</a>（<a class="reference_link" href="L_414AC0000000151.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十四年法律第百五十一号</a>）<a class="reference_link" href="L_414AC0000000151.html#Mp-At_6-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条第一項</a>の規定により<a class="reference_link" href="L_414AC0000000151.html#Mp-At_6-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する電子情報処理組織を使用して<a class="reference_link" href="L_414AC0000000151.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                               <a class="reference_link" href="L_414AC0000000151.html#Mp-At_3-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第八号</a>に規定する申請等をする場合における手数料の額は、同表の下欄に定める額から百円を減じた額とする。</div>
                           </td>
@@ -7974,7 +7977,8 @@
                 <div class="ParagraphSentence">
                   <div class="Sentence" Num="1">この政令は、昭和五十二年二月十五日から施行する。</div>
                   <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">危険物の規制に関する政令</a>
-                    <a class="reference_link" href="L_334CO0000000306.html#Mp-At_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条</a>の改正規定及び附則第四項の規定は同年三月一日から、第一条中同令第四十条の表の（六）の項から（十）の項までの改正規定は同年四月一日から、第二条の規定は公布の日から施行する。</div>
+                    <a class="reference_link" href="L_334CO0000000306.html#Mp-At_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条</a>の改正規定及び附則第四項の規定は同年三月一日から、第一条中<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                    <a class="reference_link" href="L_334CO0000000306.html#Mp-At_40" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条</a>の表の（六）の項から（十）の項までの改正規定は同年四月一日から、第二条の規定は公布の日から施行する。</div>
                 </div>
               </div>
               <div id="Sp_昭和五二年二月一日政令第一〇号-Pr_2" class="Paragraph" Num="2">
@@ -8032,7 +8036,8 @@
                 <div id="Sp_昭和五二年二月一日政令第一〇号-Pr_3-It_2" class="Item" Num="2">
                   <div class="ItemTitle">二</div>
                   <div class="ItemSentence">
-                    <div class="Sentence">当該特定屋外タンク貯蔵所の屋外貯蔵タンクは、総務省令で定めるところにより、厚さ三・二ミリメートル以上の鋼板で気密に造るとともに、圧力タンクを除くタンクにあつては水張試験において、圧力タンクにあつては最大常用圧力の一・五倍の圧力で十分間行う水圧試験（<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">高圧ガス保安法</a>（<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十六年法律第二百四号</a>）<a class="reference_link" href="L_326AC0000000204.html#Mp-At_20-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第一項</a>若しくは<a class="reference_link" href="L_326AC0000000204.html#Mp-At_20-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>の規定の適用を受ける高圧ガスの製造のための施設、<a class="reference_link" href="L_347CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">労働安全衛生法施行令</a>（<a class="reference_link" href="L_347CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十七年政令第三百十八号</a>）<a class="reference_link" href="L_347CO0000000318.html#Mp-At_12-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第二号</a>に掲げる機械等又は同令第十三条第八号若しくは第二十四号に掲げる機械等である圧力タンクにあつては、総務省令で定めるところにより行う水圧試験）において、それぞれ漏れ、又は変形しないものであること。</div>
+                    <div class="Sentence">当該特定屋外タンク貯蔵所の屋外貯蔵タンクは、総務省令で定めるところにより、厚さ三・二ミリメートル以上の鋼板で気密に造るとともに、圧力タンクを除くタンクにあつては水張試験において、圧力タンクにあつては最大常用圧力の一・五倍の圧力で十分間行う水圧試験（<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">高圧ガス保安法</a>（<a class="reference_link" href="L_326AC0000000204.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十六年法律第二百四号</a>）<a class="reference_link" href="L_326AC0000000204.html#Mp-At_20-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第一項</a>若しくは<a class="reference_link" href="L_326AC0000000204.html#Mp-At_20-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>の規定の適用を受ける高圧ガスの製造のための施設、<a class="reference_link" href="L_347CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">労働安全衛生法施行令</a>（<a class="reference_link" href="L_347CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十七年政令第三百十八号</a>）<a class="reference_link" href="L_347CO0000000318.html#Mp-At_12-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条第二号</a>に掲げる機械等又は<a class="reference_link" href="L_347CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_347CO0000000318.html#Mp-At_13-Pr_1-It_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三条第八号</a>若しくは<a class="reference_link" href="L_347CO0000000318.html#Mp-At_13-Pr_1-It_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四号</a>に掲げる機械等である圧力タンクにあつては、総務省令で定めるところにより行う水圧試験）において、それぞれ漏れ、又は変形しないものであること。</div>
                   </div>
                 </div>
               </div>
@@ -8197,7 +8202,8 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence">第一条中<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">危険物の規制に関する政令</a>
-                          <a class="reference_link" href="L_334CO0000000306.html#Mp-At_30_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十条の三第三項</a>及び<a class="reference_link" href="L_334CO0000000306.html#Mp-At_31-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十一条第一項</a>の改正規定、同令第四十条第一項の表の（二）の項の改正規定（「一万円」を「一万五千円」に、「四万円」を「六万円」に改める部分に限る。）、同表の（十一）の項の改正規定並びに第三条の規定並びに附則第十八条及び附則第十九条の規定並びに附則第二十条の規定（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">石油コンビナート等災害防止法施行令</a>（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十一年政令第百二十九号</a>）<a class="reference_link" href="L_351CO0000000129.html#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条</a>及び<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第一項</a>の改正規定に限る。）</div>
+                          <a class="reference_link" href="L_334CO0000000306.html#Mp-At_30_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十条の三第三項</a>及び<a class="reference_link" href="L_334CO0000000306.html#Mp-At_31-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十一条第一項</a>の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_334CO0000000306.html#Mp-At_40-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条第一項</a>の表の（二）の項の改正規定（「一万円」を「一万五千円」に、「四万円」を「六万円」に改める部分に限る。）、同表の（十一）の項の改正規定並びに第三条の規定並びに附則第十八条及び附則第十九条の規定並びに附則第二十条の規定（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">石油コンビナート等災害防止法施行令</a>（<a class="reference_link" href="L_351CO0000000129.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十一年政令第百二十九号</a>）<a class="reference_link" href="L_351CO0000000129.html#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条</a>及び<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第一項</a>の改正規定に限る。）</div>
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence">公布の日</div>
@@ -8207,7 +8213,18 @@
                   <div id="Sp_昭和六三年一二月二七日政令第三五八号-At_1-Pr_1-It_2" class="Item" Num="2">
                     <div class="ItemTitle">二</div>
                     <div class="ItemSentence">
-                      <div class="Sentence">第一条中<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">危険物の規制に関する政令</a>目次の改正規定、同令第三条第一号の改正規定（「詰め替える」を「詰め替え、又は車両に固定された容量二千リットル以下のタンクに注入する」に改める部分に限る。）、同令第八条の二第三項第二号の改正規定、<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第四号</a>の改正規定（「第十七条第一項第六号」の下に「若しくは第二項第二号」を加える部分に限る。）、<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項</a>の改正規定（「第十七条第一項第六号」の下に「若しくは第二項第二号」を加える部分に限る。）、同令第九条各号列記以外の部分の改正規定、同令第十四条第九号の改正規定、同令第十七条第一項の改正規定（<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_5-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第六号</a>及び<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_5-It_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四号</a>の改正規定を除く。）、<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第二項</a>の改正規定、同令第三章第四節の節名の改正規定、同令第二十条第一項第一号の改正規定（「屋外貯蔵所又は」を「屋外貯蔵所、給油取扱所及び」に改める部分に限る。）、<a class="reference_link" href="L_351CO0000000129.html#Mp-At_35-Pr_2-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第二号</a>の改正規定（「別表」を「別表第五」に改める部分を除く。）、同令第二十一条の次に一条を加える改正規定、同令第二十二条第一項の改正規定、同令第二十四条第四号の次に一号を加える改正規定、同令第二十七条第六項第一号の改正規定（「給油取扱所における」を「給油取扱所（航空機給油取扱所、船舶給油取扱所及び鉄道給油取扱所を除く。）における」に改める部分を除く。）及び同令第四十条第一項の表の（二）の項の改正規定（「<div class="QuoteStruct">
+                      <div class="Sentence">第一条中<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">危険物の規制に関する政令</a>目次の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第一号</a>の改正規定（「詰め替える」を「詰め替え、又は車両に固定された容量二千リットル以下のタンクに注入する」に改める部分に限る。）、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_8_2-Pr_3-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条の二第三項第二号</a>の改正規定、<a class="reference_link" href="L_334CO0000000306.html#Mp-At_8_2-Pr_3-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第四号</a>の改正規定（「第十七条第一項第六号」の下に「若しくは第二項第二号」を加える部分に限る。）、<a class="reference_link" href="L_334CO0000000306.html#Mp-At_8_2-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項</a>の改正規定（「第十七条第一項第六号」の下に「若しくは第二項第二号」を加える部分に限る。）、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_9-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条各号</a>列記以外の部分の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_14-Pr_1-It_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第九号</a>の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_17-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条第一項</a>の改正規定（<a class="reference_link" href="L_334CO0000000306.html#Mp-At_17-Pr_1-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第六号</a>及び<a class="reference_link" href="L_334CO0000000306.html#Mp-At_17-Pr_1-It_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四号</a>の改正規定を除く。）、<a class="reference_link" href="L_334CO0000000306.html#Mp-At_17-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第二項</a>の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>第三章第四節の節名の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_20-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第一項第一号</a>の改正規定（「屋外貯蔵所又は」を「屋外貯蔵所、給油取扱所及び」に改める部分に限る。）、<a class="reference_link" href="L_334CO0000000306.html#Mp-At_20-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第二号</a>の改正規定（「別表」を「別表第五」に改める部分を除く。）、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の次に一条を加える改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_22-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第一項</a>の改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_24-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条第四号</a>の次に一号を加える改正規定、<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_27-Pr_6-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条第六項第一号</a>の改正規定（「給油取扱所における」を「給油取扱所（航空機給油取扱所、船舶給油取扱所及び鉄道給油取扱所を除く。）における」に改める部分を除く。）及び<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_334CO0000000306.html#Mp-At_40-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条第一項</a>の表の（二）の項の改正規定（「<div class="QuoteStruct">
                           <table>
                             <tr>
                               <td>
@@ -8246,7 +8263,8 @@
                       <div class="Column" Num="1">
                         <div class="Sentence">第一条中<a class="reference_link" href="L_334CO0000000306.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">危険物の規制に関する政令</a>
                           <a class="reference_link" href="L_334CO0000000306.html#Mp-At_40-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条第一項</a>の表の（七）の項から（九）の項までの改正規定並びに第二条中<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>
-                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_36_4-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条の四第四号</a>の改正規定及び同令第三十六条の七第一項の表の改正規定</div>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_36_4-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条の四第四号</a>の改正規定及び<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_336CO0000000037.html#Mp-At_36_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十六条の七第一項</a>の表の改正規定</div>
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence">昭和六十四年四月一日</div>
@@ -9820,7 +9838,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">改正法附則第一条第一号に掲げる規定の施行の際、現に存する防火対象物若しくはその部分又は現に新築、増築、改築、移転、修繕若しくは模様替えの工事中の防火対象物若しくはその部分のうち、同号に掲げる規定の施行の日の前日において現に<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法</a>
-                      <a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一項</a>の規定により許可を受けている製造所、貯蔵所又は取扱所で、改正法による<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法</a>別表備考第十六号及び第十七号の規定の改正により新たに<a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の規定による許可を受けることを要しないこととなるものに係るものについては、<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>（<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十六年政令第三十七号</a>）<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条から第二十六条まで</a>の規定は平成十五年五月三十一日までの間、同令第十一条から第十三条まで、第十九条から第二十一条の二まで、第二十三条及び第二十七条から第二十九条の三までの規定は平成十六年五月三十一日までの間は、適用しない。</div>
+                      <a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条第一項</a>の規定により許可を受けている製造所、貯蔵所又は取扱所で、改正法による<a class="reference_link" href="L_323AC1000000186.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法</a>別表備考第十六号及び第十七号の規定の改正により新たに<a class="reference_link" href="L_323AC1000000186.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>の規定による許可を受けることを要しないこととなるものに係るものについては、<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消防法施行令</a>（<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十六年政令第三十七号</a>）<a class="reference_link" href="L_336CO0000000037.html#Mp-At_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十四条から第二十六条まで</a>の規定は平成十五年五月三十一日までの間、<a class="reference_link" href="L_336CO0000000037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_336CO0000000037.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条から第十三条まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_19" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条から第二十一条の二まで</a>、<a class="reference_link" href="L_336CO0000000037.html#Mp-At_23" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条</a>及び<a class="reference_link" href="L_336CO0000000037.html#Mp-At_27" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条から第二十九条の三まで</a>の規定は平成十六年五月三十一日までの間は、適用しない。</div>
                   </div>
                 </div>
                 <div id="Sp_平成一三年九月一四日政令第三〇〇号-At_10-Pr_2" class="Paragraph" Num="2">
@@ -11557,7 +11576,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第一類</div>
                     </td>
                     <td>
@@ -11594,7 +11613,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">第二類</div>
                     </td>
                     <td>
@@ -11675,7 +11694,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">第三類</div>
                     </td>
                     <td>
@@ -11767,7 +11786,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">第四類</div>
                     </td>
                     <td>
@@ -11782,7 +11801,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第一石油類</div>
                     </td>
                     <td>
@@ -11812,7 +11831,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第二石油類</div>
                     </td>
                     <td>
@@ -11831,7 +11850,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第三石油類</div>
                     </td>
                     <td>
@@ -11872,7 +11891,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第五類</div>
                     </td>
                     <td>
@@ -12022,7 +12041,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">品名</div>
                     </td>
                     <td>
@@ -12030,7 +12049,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">綿花類</div>
                     </td>
                     <td>
@@ -12039,7 +12058,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">木毛及びかんなくず</div>
                     </td>
                     <td>
@@ -12047,7 +12066,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ぼろ及び紙くず</div>
                     </td>
                     <td>
@@ -12055,7 +12074,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">糸類</div>
                     </td>
                     <td>
@@ -12063,7 +12082,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">わら類</div>
                     </td>
                     <td>
@@ -12071,7 +12090,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">再生資源燃料</div>
                     </td>
                     <td>
@@ -12079,7 +12098,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">可燃性固体類</div>
                     </td>
                     <td>
@@ -12087,7 +12106,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">石炭・木炭類</div>
                     </td>
                     <td>
@@ -12095,7 +12114,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">可燃性液体類</div>
                     </td>
                     <td>
@@ -12104,7 +12123,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">木材加工品及び木くず</div>
                     </td>
                     <td>
@@ -12112,7 +12131,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">合成樹脂類</div>
                     </td>
                     <td>
@@ -12221,36 +12240,36 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence">消火設備の区分</div>
                     </td>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence">対象物の区分</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">建築物その他の工作物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電気設備</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">第一類の危険物</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">第二類の危険物</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">第三類の危険物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第四類の危険物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第五類の危険物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">第六類の危険物</div>
                     </td>
                   </tr>
@@ -12281,7 +12300,7 @@
                     <td>
                       <div class="Sentence">第一種</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">屋内消火栓設備又は屋外消火栓設備</div>
                     </td>
                     <td>
@@ -12325,7 +12344,7 @@
                     <td>
                       <div class="Sentence">第二種</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">スプリンクラー設備</div>
                     </td>
                     <td>
@@ -12366,10 +12385,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">第三種</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">水蒸気消火設備又は水噴霧消火設備</div>
                     </td>
                     <td>
@@ -12410,7 +12429,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">泡消火設備</div>
                     </td>
                     <td>
@@ -12451,7 +12470,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">不活性ガス消火設備</div>
                     </td>
                     <td>
@@ -12492,7 +12511,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ハロゲン化物消火設備</div>
                     </td>
                     <td>
@@ -12533,7 +12552,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">粉末消火設備</div>
                     </td>
                     <td>
@@ -12659,10 +12678,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">第四種又は第五種</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">棒状の水を放射する消火器</div>
                     </td>
                     <td>
@@ -12703,7 +12722,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">霧状の水を放射する消火器</div>
                     </td>
                     <td>
@@ -12744,7 +12763,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">棒状の強化液を放射する消火器</div>
                     </td>
                     <td>
@@ -12785,7 +12804,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">霧状の強化液を放射する消火器</div>
                     </td>
                     <td>
@@ -12826,7 +12845,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">泡を放射する消火器</div>
                     </td>
                     <td>
@@ -12867,7 +12886,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二酸化炭素を放射する消火器</div>
                     </td>
                     <td>
@@ -12908,7 +12927,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ハロゲン化物を放射する消火器</div>
                     </td>
                     <td>
@@ -12949,7 +12968,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">消火粉末を放射する消火器</div>
                     </td>
                     <td>
@@ -13075,10 +13094,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">第五種</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">水バケツ又は水槽</div>
                     </td>
                     <td>
@@ -13119,7 +13138,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">乾燥砂</div>
                     </td>
                     <td>
@@ -13160,7 +13179,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">膨張ひる石又は膨張真珠岩</div>
                     </td>
                     <td>

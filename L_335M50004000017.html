@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1150,9 +1150,9 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">当分の間、第二十四条及び第二十五条の規定による改正後の<a class="reference_link" href="L_335M50004000017.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">施工技術検定規則</a>
-                      <a class="reference_link" href="L_335M50004000017.html#Mp-At_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第二項</a>及び<a class="reference_link" href="L_335M50004000017.html#Mp-At_10-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第三項</a>の規定の適用については、同<a class="reference_link" href="L_331CO0000000273.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_331CO0000000273.html#Mp-At_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第二項</a>中「のうち住民票コード（同法第七条第十三号に規定する住民票コードをいう。以下同じ。）以外のものについて」とあるのは「について」と、同<a class="reference_link" href="L_331CO0000000273.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_331CO0000000273.html#Mp-At_10-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第三項</a>中「のうち住民票コード以外のものについて」とあるのは「について」とする。</div>
+                      <a class="reference_link" href="L_335M50004000017.html#Mp-At_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第二項</a>及び<a class="reference_link" href="L_335M50004000017.html#Mp-At_10-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第三項</a>の規定の適用については、<a class="reference_link" href="L_335M50004000017.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_335M50004000017.html#Mp-At_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第二項</a>中「のうち住民票コード（同法第七条第十三号に規定する住民票コードをいう。以下同じ。）以外のものについて」とあるのは「について」と、<a class="reference_link" href="L_335M50004000017.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_335M50004000017.html#Mp-At_10-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第三項</a>中「のうち住民票コード以外のものについて」とあるのは「について」とする。</div>
                   </div>
                 </div>
               </div>
@@ -1265,7 +1265,7 @@
                     <td>
                       <div class="Sentence" Num="1">検定区分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">検定科目</div>
                     </td>
                     <td>
@@ -1273,13 +1273,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">建設機械施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">土木工学</div>
                     </td>
                     <td>
@@ -1288,7 +1288,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建設機械原動機</div>
                     </td>
                     <td>
@@ -1298,7 +1298,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">石油燃料</div>
                     </td>
                     <td>
@@ -1306,7 +1306,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">潤滑剤</div>
                     </td>
                     <td>
@@ -1314,7 +1314,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建設機械</div>
                     </td>
                     <td>
@@ -1324,7 +1324,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建設機械施工<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1344,7 +1344,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1360,7 +1360,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
@@ -1370,13 +1370,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">下欄に掲げる科目のうち二科目</div>
                     </td>
                     <td>
@@ -1451,7 +1451,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建設機械施工<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1469,7 +1469,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1485,7 +1485,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建設機械組合せ施工<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1494,13 +1494,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">土木施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">土木工学等</div>
                     </td>
                     <td>
@@ -1509,7 +1509,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1519,7 +1519,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
@@ -1532,7 +1532,7 @@
                     <td>
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1543,13 +1543,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">建築施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建築学等</div>
                     </td>
                     <td>
@@ -1558,7 +1558,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1568,7 +1568,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
@@ -1581,7 +1581,7 @@
                     <td>
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1592,13 +1592,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">電気工事施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気工学等</div>
                     </td>
                     <td>
@@ -1608,7 +1608,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1618,7 +1618,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
@@ -1631,7 +1631,7 @@
                     <td>
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1641,13 +1641,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">管工事施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">機械工学等</div>
                     </td>
                     <td>
@@ -1657,7 +1657,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1667,7 +1667,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
@@ -1680,7 +1680,7 @@
                     <td>
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1690,13 +1690,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">電気通信工事施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気通信工学等</div>
                     </td>
                     <td>
@@ -1706,7 +1706,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1716,7 +1716,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
@@ -1729,7 +1729,7 @@
                     <td>
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1739,13 +1739,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">造園施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">土木工学等</div>
                     </td>
                     <td>
@@ -1754,7 +1754,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1764,7 +1764,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>規</div>
                     </td>
@@ -1777,7 +1777,7 @@
                     <td>
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">施工管理<a class="reference_link" href="L_324AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -1812,7 +1812,7 @@
                     <td>
                       <div class="Sentence" Num="1">建設機械施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="16">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
                     <td>
@@ -2062,7 +2062,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
                     <td>
@@ -2165,10 +2165,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">土木施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
                     <td>
@@ -2220,7 +2220,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
                     <td>
@@ -2256,10 +2256,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">建築施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
                     <td>
@@ -2291,7 +2291,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第二次検定</div>
                     </td>
                     <td>
@@ -2327,10 +2327,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">電気工事施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
                     <td>
@@ -2376,10 +2376,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">管工事施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
                     <td>
@@ -2425,10 +2425,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">電気通信工事施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
                     <td>
@@ -2474,10 +2474,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">造園施工管理</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">第一次検定</div>
                     </td>
                     <td>

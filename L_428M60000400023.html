@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -4983,7 +4983,8 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">第六条の規定による改正後の算定規則第二十条、第三十五条及び第三十七条の二の規定は、改正法附則第十八条第一項又は同附則第十六条第四項の規定によりなおその効力を有するものとして読み替えて適用される改正法第一条の規定による改正前の<a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電気事業法</a>（以下この条において「旧法」という。）<a class="reference_link" href="L_339AC0000000170.html#Mp-At_19-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条第三項</a>の規定により改正法附則第十八条第三項の規定により<a class="reference_link" href="L_339AC0000000170.html#Mp-At_19-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第一項</a>の認可を受けたものとみなされた特定小売供給約款（<a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧法</a>
                       <a class="reference_link" href="L_339AC0000000170.html#Mp-At_19-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条第四項</a>又は<a class="reference_link" href="L_339AC0000000170.html#Mp-At_19-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七項</a>の規定による変更の届出があったときは、その変更後のもの）で設定する料金を変更しようとするみなし小売電気事業者（電気事業法施行規則等の一部を改正する等の省令（令和四年経済産業省令第二十四号）第十二条の規定による改正前の<a class="reference_link" href="L_428M60000400023.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">みなし小売電気事業者特定小売供給約款料金算定規則</a>
-                      <a class="reference_link" href="L_428M60000400023.html#Mp-At_19-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条第二号</a>（同令第三十九条第一項及び第二項の規定により準用する場合を含む。）の規定により送配電関連費を算定したみなし小売電気事業者を除く。）が、送配電関連費に相当する費用の変動額を基に変更しようとする特定小売供給約款で設定する料金を算定する場合に準用する。</div>
+                      <a class="reference_link" href="L_428M60000400023.html#Mp-At_19-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条第二号</a>（<a class="reference_link" href="L_428M60000400023.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_428M60000400023.html#Mp-At_39-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条第一項</a>及び<a class="reference_link" href="L_428M60000400023.html#Mp-At_39-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の規定により準用する場合を含む。）の規定により送配電関連費を算定したみなし小売電気事業者を除く。）が、送配電関連費に相当する費用の変動額を基に変更しようとする特定小売供給約款で設定する料金を算定する場合に準用する。</div>
                     <div class="Sentence" Num="2">この場合において、算定規則第二十条（算定規則第三十七条の二の規定により準用する場合を含む。）中「第十六条第二号の規定により算定された送配電関連費」とあるのは「送配電関連費に相当する費用」と読み替えるものとする。</div>
                   </div>
                 </div>
@@ -5340,7 +5341,7 @@
                     <td>
                       <div class="Sentence" Num="1">期間原価等項目</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">内訳及び明細項目</div>
                     </td>
                     <td>
@@ -5351,7 +5352,7 @@
                     <td>
                       <div class="Sentence" Num="1">役員給与</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">役員給与</div>
                     </td>
                     <td>
@@ -5362,7 +5363,7 @@
                     <td>
                       <div class="Sentence" Num="1">給料手当</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">基準賃金</div>
                     </td>
                     <td>
@@ -5373,7 +5374,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">基準外賃金</div>
                     </td>
                     <td>
@@ -5384,7 +5385,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">諸給与金</div>
                     </td>
                     <td>
@@ -5395,7 +5396,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">控除口（貸方）</div>
                     </td>
                     <td>
@@ -5406,7 +5407,7 @@
                     <td>
                       <div class="Sentence" Num="1">給料手当振替額（貸方）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">給与手当振替額（貸方）</div>
                     </td>
                     <td>
@@ -5417,7 +5418,7 @@
                     <td>
                       <div class="Sentence" Num="1">退職給与金</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">引当金増加額</div>
                     </td>
                     <td>
@@ -5428,7 +5429,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">実払額</div>
                     </td>
                     <td>
@@ -5439,7 +5440,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">年金保険料</div>
                     </td>
                     <td>
@@ -5450,7 +5451,7 @@
                     <td>
                       <div class="Sentence" Num="1">厚生費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>定厚生費</div>
                     </td>
@@ -5462,7 +5463,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一般厚生費</div>
                     </td>
                     <td>
@@ -5473,7 +5474,7 @@
                     <td>
                       <div class="Sentence" Num="1">委託検針費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">委託検針費</div>
                     </td>
                     <td>
@@ -5484,7 +5485,7 @@
                     <td>
                       <div class="Sentence" Num="1">委託集金費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">委託集金費</div>
                     </td>
                     <td>
@@ -5495,7 +5496,7 @@
                     <td>
                       <div class="Sentence" Num="1">雑給</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">雑給</div>
                     </td>
                     <td>
@@ -5646,7 +5647,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">新エネルギー等燃料費</div>
                     </td>
                     <td>
@@ -5713,7 +5714,7 @@
                     <td>
                       <div class="Sentence" Num="1">使用済燃料再処理等拠出金発電費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用済燃料再処理等拠出金発電費</div>
                     </td>
                     <td>
@@ -5724,7 +5725,7 @@
                     <td>
                       <div class="Sentence" Num="1">廃棄物処理費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">火力廃棄物処理費</div>
                     </td>
                     <td>
@@ -5763,7 +5764,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">新エネルギー等廃棄物処理費</div>
                     </td>
                     <td>
@@ -5774,7 +5775,7 @@
                     <td>
                       <div class="Sentence" Num="1">特定放射性廃棄物処分費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">特定放射性廃棄物処分費拠出金（各年の発電対応分）</div>
                     </td>
                     <td>
@@ -5786,7 +5787,7 @@
                     <td>
                       <div class="Sentence" Num="1">消耗品費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">潤滑油脂費</div>
                     </td>
                     <td>
@@ -5797,7 +5798,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">雑消耗品費</div>
                     </td>
                     <td>
@@ -5808,7 +5809,7 @@
                     <td>
                       <div class="Sentence" Num="1">修繕費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通修繕費</div>
                     </td>
                     <td>
@@ -5819,7 +5820,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">取替修繕費</div>
                     </td>
                     <td>
@@ -5830,7 +5831,7 @@
                     <td>
                       <div class="Sentence" Num="1">水利使用料</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">水利使用料</div>
                     </td>
                     <td>
@@ -5841,7 +5842,7 @@
                     <td>
                       <div class="Sentence" Num="1">補償費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">定期的補償費</div>
                     </td>
                     <td>
@@ -5852,7 +5853,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">臨時的補償費</div>
                     </td>
                     <td>
@@ -5863,7 +5864,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">損害賠償費</div>
                     </td>
                     <td>
@@ -5874,7 +5875,7 @@
                     <td>
                       <div class="Sentence" Num="1">賃借料</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">借地借家料</div>
                     </td>
                     <td>
@@ -5885,7 +5886,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">道路占用料</div>
                     </td>
                     <td>
@@ -5896,7 +5897,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">水面使用料</div>
                     </td>
                     <td>
@@ -5907,7 +5908,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">線路使用料</div>
                     </td>
                     <td>
@@ -5918,7 +5919,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">設備賃借料</div>
                     </td>
                     <td>
@@ -5929,7 +5930,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電柱敷地料</div>
                     </td>
                     <td>
@@ -5940,7 +5941,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">線下補償料</div>
                     </td>
                     <td>
@@ -5951,7 +5952,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">機械賃借料</div>
                     </td>
                     <td>
@@ -5962,7 +5963,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">雑賃借料</div>
                     </td>
                     <td>
@@ -5973,7 +5974,7 @@
                     <td>
                       <div class="Sentence" Num="1">委託費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">委託運転費</div>
                     </td>
                     <td>
@@ -5984,7 +5985,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">雑委託費</div>
                     </td>
                     <td>
@@ -5995,7 +5996,7 @@
                     <td>
                       <div class="Sentence" Num="1">損害保険料</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>定保険料</div>
                     </td>
@@ -6008,7 +6009,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他保険料</div>
                     </td>
                     <td>
@@ -6019,7 +6020,7 @@
                     <td>
                       <div class="Sentence" Num="1">原子力損害賠償資金補助<a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>一般負担金</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">原子力損害賠償資金補助<a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>一般負担金</div>
                     </td>
                     <td>
@@ -6031,7 +6032,7 @@
                     <td>
                       <div class="Sentence" Num="1">原賠・廃炉等支援機構一般負担金</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">原賠・廃炉等支援機構一般負担金</div>
                     </td>
                     <td>
@@ -6043,7 +6044,7 @@
                     <td>
                       <div class="Sentence" Num="1">普及開発関係費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">販売関係普及開発関係費</div>
                     </td>
                     <td>
@@ -6054,7 +6055,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一般普及開発関係費</div>
                     </td>
                     <td>
@@ -6065,7 +6066,7 @@
                     <td>
                       <div class="Sentence" Num="1">養成費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">研修施設運営費</div>
                     </td>
                     <td>
@@ -6076,7 +6077,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他養成費</div>
                     </td>
                     <td>
@@ -6087,7 +6088,7 @@
                     <td>
                       <div class="Sentence" Num="1">研究費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">社内研究費</div>
                     </td>
                     <td>
@@ -6098,7 +6099,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">委託研究費</div>
                     </td>
                     <td>
@@ -6109,7 +6110,7 @@
                     <td>
                       <div class="Sentence" Num="1">諸費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">通信運搬費</div>
                     </td>
                     <td>
@@ -6120,7 +6121,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">旅費</div>
                     </td>
                     <td>
@@ -6131,7 +6132,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">寄付金</div>
                     </td>
                     <td>
@@ -6142,7 +6143,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">団体費</div>
                     </td>
                     <td>
@@ -6153,7 +6154,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他諸費</div>
                     </td>
                     <td>
@@ -6164,7 +6165,7 @@
                     <td>
                       <div class="Sentence" Num="1">貸倒損</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">貸倒損引当額</div>
                     </td>
                     <td>
@@ -6175,7 +6176,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">貸倒損発生額</div>
                     </td>
                     <td>
@@ -6186,7 +6187,7 @@
                     <td>
                       <div class="Sentence" Num="1">固定資産税</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">固定資産税</div>
                     </td>
                     <td>
@@ -6197,7 +6198,7 @@
                     <td>
                       <div class="Sentence" Num="1">雑税</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">雑税</div>
                     </td>
                     <td>
@@ -6208,7 +6209,7 @@
                     <td>
                       <div class="Sentence" Num="1">減価償却費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通償却費</div>
                     </td>
                     <td>
@@ -6219,7 +6220,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">特別償却費</div>
                     </td>
                     <td>
@@ -6231,7 +6232,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">試運転償却費</div>
                     </td>
                     <td>
@@ -6242,7 +6243,7 @@
                     <td>
                       <div class="Sentence" Num="1">固定資産除却費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">除却損</div>
                     </td>
                     <td>
@@ -6253,7 +6254,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">除却費用</div>
                     </td>
                     <td>
@@ -6261,10 +6262,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">原子力発電施設解体費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">解体費</div>
                     </td>
                     <td>
@@ -6272,7 +6273,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">資産除去債務計上</div>
                     </td>
                     <td>
@@ -6283,7 +6284,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">資産除去債務取崩し（貸方）</div>
                     </td>
                     <td>
@@ -6294,7 +6295,7 @@
                     <td>
                       <div class="Sentence" Num="1">共有設備費等分担額</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">共有設備費等分担額</div>
                     </td>
                     <td>
@@ -6305,7 +6306,7 @@
                     <td>
                       <div class="Sentence" Num="1">共有設備費等分担額（貸方）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">共有設備費等分担額（貸方）</div>
                     </td>
                     <td>
@@ -6316,7 +6317,7 @@
                     <td>
                       <div class="Sentence" Num="1">他社購入電力料</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">他社購入電源費</div>
                     </td>
                     <td>
@@ -6327,7 +6328,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">非化石証書購入費</div>
                     </td>
                     <td>
@@ -6338,7 +6339,7 @@
                     <td>
                       <div class="Sentence" Num="1">建設分担関連費振替額（貸方）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建設分担関連費振替額（貸方）</div>
                     </td>
                     <td>
@@ -6349,7 +6350,7 @@
                     <td>
                       <div class="Sentence" Num="1">附帯事業営業費用分担関連費振替額（貸方）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">附帯事業営業費用分担関連費振替額（貸方）</div>
                     </td>
                     <td>
@@ -6360,7 +6361,7 @@
                     <td>
                       <div class="Sentence" Num="1">原子力廃止関連仮勘定償却費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">原子力廃止関連仮勘定償却費</div>
                     </td>
                     <td>
@@ -6371,7 +6372,7 @@
                     <td>
                       <div class="Sentence" Num="1">電源開発促進税</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電源開発促進税</div>
                     </td>
                     <td>
@@ -6382,7 +6383,7 @@
                     <td>
                       <div class="Sentence" Num="1">事業税</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">事業税</div>
                     </td>
                     <td>
@@ -6393,7 +6394,7 @@
                     <td>
                       <div class="Sentence" Num="1">開発費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">開発費</div>
                     </td>
                     <td>
@@ -6404,7 +6405,7 @@
                     <td>
                       <div class="Sentence" Num="1">開発費償却</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">開発費償却</div>
                     </td>
                     <td>
@@ -6412,10 +6413,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電力費振替勘定（貸方）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">建設工事用</div>
                     </td>
                     <td>
@@ -6423,7 +6424,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">附帯事業用</div>
                     </td>
                     <td>
@@ -6434,7 +6435,7 @@
                     <td>
                       <div class="Sentence" Num="1">株式交付費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">株式交付費</div>
                     </td>
                     <td>
@@ -6445,7 +6446,7 @@
                     <td>
                       <div class="Sentence" Num="1">株式交付費償却</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">株式交付費償却</div>
                     </td>
                     <td>
@@ -6456,7 +6457,7 @@
                     <td>
                       <div class="Sentence" Num="1">社債発行費</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">社債発行費</div>
                     </td>
                     <td>
@@ -6467,7 +6468,7 @@
                     <td>
                       <div class="Sentence" Num="1">社債発行費償却</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">社債発行費償却</div>
                     </td>
                     <td>
@@ -6479,7 +6480,7 @@
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人税等</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人税</div>
                     </td>
@@ -6491,7 +6492,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="L_339AC0000000170.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人税割</div>
                     </td>
@@ -6503,7 +6504,7 @@
                     <td>
                       <div class="Sentence" Num="1">電気事業報酬</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">電気事業報酬</div>
                     </td>
                     <td>
@@ -6514,7 +6515,7 @@
                     <td>
                       <div class="Sentence" Num="1">他社販売電力料</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">他社販売電源料</div>
                     </td>
                     <td>
@@ -6525,7 +6526,7 @@
                     <td>
                       <div class="Sentence" Num="1">託送収益</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他託送収益</div>
                     </td>
                     <td>
@@ -6536,7 +6537,7 @@
                     <td>
                       <div class="Sentence" Num="1">賠償負担金相当収益</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">賠償負担金相当収益</div>
                     </td>
                     <td>
@@ -6547,7 +6548,7 @@
                     <td>
                       <div class="Sentence" Num="1">廃炉円滑化負担金相当収益</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">廃炉円滑化負担金相当収益</div>
                     </td>
                     <td>
@@ -6558,7 +6559,7 @@
                     <td>
                       <div class="Sentence" Num="1">電気事業雑収益</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">契約超過金</div>
                     </td>
                     <td>
@@ -6569,7 +6570,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">違約金</div>
                     </td>
                     <td>
@@ -6580,7 +6581,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">諸貸付料</div>
                     </td>
                     <td>
@@ -6591,7 +6592,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">受託運転益</div>
                     </td>
                     <td>
@@ -6602,7 +6603,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">器具販売益</div>
                     </td>
                     <td>
@@ -6613,7 +6614,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">受託工事益</div>
                     </td>
                     <td>
@@ -6624,7 +6625,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">広告料</div>
                     </td>
                     <td>
@@ -6635,7 +6636,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">供給雑収</div>
                     </td>
                     <td>
@@ -6646,7 +6647,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">雑口</div>
                     </td>
                     <td>
@@ -6657,7 +6658,7 @@
                     <td>
                       <div class="Sentence" Num="1">預金利息</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">預金利息</div>
                     </td>
                     <td>
@@ -7002,14 +7003,14 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一般管理費等</div>
                       <div class="Sentence" Num="2">（第１表１．（２）関係）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">販売費並びに給電費、需要家費及び一般販売費</div>
                       <div class="Sentence" Num="2">（第１表３．（２）及び４．（２）関係）</div>
                     </td>
@@ -7622,14 +7623,14 @@
                 <div class="TableStructTitle">活動帰属基準、配賦基準分類表</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">水力・火力・新エネルギー等発電費</div>
                       <div class="Sentence" Num="2">（第３表１．（２）関係）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">販売費</div>
                       <div class="Sentence" Num="2">（第１表２．（２）関係）</div>
                     </td>

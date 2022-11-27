@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -16854,7 +16854,7 @@
               <div id="Sp_昭和六一年四月二五日法律第三五号-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence" Num="1">郵政大臣は、この法律の施行日前においても、この法律による改正後の<a class="reference_link" href="L_325AC0000000131.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電波法</a>（以下「新法」という。）<a class="reference_link" href="L_325AC0000000131.html#Mp-At_37-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第四号</a>の規定に基づく郵政省令を定め、同令により新たにその型式について郵政大臣の行う検定に合格したものでなければ施設してはならないこととされた無線設備の機器（以下「新たな検定対象機器」という。）について、型式検定を行うことができる。</div>
+                  <div class="Sentence" Num="1">郵政大臣は、この法律の施行日前においても、この法律による改正後の<a class="reference_link" href="L_325AC0000000131.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">電波法</a>（以下「新法」という。）<a class="reference_link" href="L_325AC0000000131.html#Mp-At_37-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条第四号</a>の規定に基づく郵政省令を定め、<a class="reference_link" href="L_325AC0000000131.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>により新たにその型式について郵政大臣の行う検定に合格したものでなければ施設してはならないこととされた無線設備の機器（以下「新たな検定対象機器」という。）について、型式検定を行うことができる。</div>
                 </div>
               </div>
               <div id="Sp_昭和六一年四月二五日法律第三五号-Pr_3" class="Paragraph" Num="3">
@@ -18885,7 +18885,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence" Num="1">無線局の区分</div>
                         </td>
                         <td>
@@ -18896,7 +18896,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence" Num="1">デジタル信号による送信をするもの</div>
                         </td>
                         <td>
@@ -18907,10 +18907,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">その他のものであって、三百メガヘルツ以下の周波数の電波を使用するもの</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">空中線電力が〇・一ワット未満のもの</div>
                         </td>
                         <td>
@@ -18921,7 +18921,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -18932,7 +18932,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -18946,7 +18946,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">空中線電力が〇・一ワット以上十キロワット未満のもの</div>
                         </td>
                         <td>
@@ -18960,7 +18960,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -18974,7 +18974,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -18988,10 +18988,10 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">空中線電力が十キロワット以上五十キロワット未満のもの</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">設置場所が特定地域以外の区域内にあるもの又は<a class="reference_link" href="L_414AC0000000156.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">放送大学学園法</a>（<a class="reference_link" href="L_414AC0000000156.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十四年法律第百五十六号</a>）<a class="reference_link" href="L_414AC0000000156.html#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項</a>に規定する放送大学における教育に必要な放送の用に供するもの</div>
                         </td>
                         <td>
@@ -19078,7 +19078,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">空中線電力が五十キロワット以上のもの</div>
                         </td>
                         <td>
@@ -19092,7 +19092,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -19106,7 +19106,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -19117,10 +19117,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">その他のものであって、三百メガヘルツを超える周波数の電波を使用するもの</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">空中線電力が〇・二ワット未満のもの</div>
                         </td>
                         <td>
@@ -19131,7 +19131,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -19142,7 +19142,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -19156,7 +19156,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">空中線電力が〇・二ワット以上二十キロワット未満のもの</div>
                         </td>
                         <td>
@@ -19170,7 +19170,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -19184,7 +19184,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -19198,10 +19198,10 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">空中線電力が二十キロワット以上百キロワット未満のもの</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">設置場所が特定地域以外の区域内にあるもの又は<a class="reference_link" href="L_414AC0000000156.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">放送大学学園法</a>
                             <a class="reference_link" href="L_414AC0000000156.html#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項</a>に規定する放送大学における教育に必要な放送の用に供するもの</div>
                         </td>
@@ -19289,7 +19289,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">空中線電力が百キロワット以上のもの</div>
                         </td>
                         <td>
@@ -19303,7 +19303,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -19317,7 +19317,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -21119,7 +21119,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence" Num="1">無線局の区分</div>
                     </td>
                     <td>
@@ -21127,13 +21127,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">一　移動する無線局（三の項から五の項まで及び八の項に掲げる無線局を除く。二の項において同じ。）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四百七十メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">航空機局又は船舶局</div>
                     </td>
                     <td>
@@ -21141,7 +21141,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -21149,10 +21149,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">四百七十メガヘルツを超え三千六百メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">航空機局若しくは船舶局又はこれらの無線局が使用する電波の周波数と同一の周波数の電波のみを使用するもの</div>
                     </td>
                     <td>
@@ -21163,7 +21163,7 @@
                     <td>
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が六メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21174,7 +21174,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が六メガヘルツを超え十五メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21231,7 +21231,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が十五メガヘルツを超え三十メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21288,7 +21288,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三十メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -21339,10 +21339,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">三千六百メガヘルツを超え六千メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が百メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21353,7 +21353,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が百メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -21364,7 +21364,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">六千メガヘルツを超える周波数の電波を使用するもの</div>
                     </td>
                     <td>
@@ -21372,13 +21372,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">二　移動しない無線局であつて、移動する無線局又は携帯して使用するための受信設備と通信を行うために陸上に開設するもの（六の項及び八の項に掲げる無線局を除く。）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">四百七十メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">空中線電力が〇・〇一ワット以下のもの</div>
                     </td>
                     <td>
@@ -21386,7 +21386,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">空中線電力が〇・〇一ワットを超えるもの</div>
                     </td>
                     <td>
@@ -21394,10 +21394,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">四百七十メガヘルツを超え三千六百メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が六メガヘルツを超えるものであつて、電波を発射しようとする場合において当該電波と周波数を同じくする電波を受信することにより一定の時間当該周波数の電波を発射しないことを確保する機能を有するもの</div>
                     </td>
                     <td>
@@ -21427,7 +21427,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21441,7 +21441,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -21458,7 +21458,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21472,10 +21472,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">三千六百メガヘルツを超え六千メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">空中線電力が〇・〇一ワット以下のもの</div>
                     </td>
                     <td>
@@ -21486,7 +21486,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">空中線電力が〇・〇一ワットを超えるもの</div>
                     </td>
                     <td>
@@ -21497,7 +21497,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">六千メガヘルツを超える周波数の電波を使用するもの</div>
                     </td>
                     <td>
@@ -21505,10 +21505,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">三　人工衛星局（八の項に掲げる無線局を除く。）</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">四百七十メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
                     <td>
@@ -21522,7 +21522,7 @@
                     <td>
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツ以下のもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">人工衛星（地球の赤道を含む平面上の円形の軌道を地球の自転と同一方向に同一周期で回るものを除く。）に開設されるもの（以下この項において「非静止衛星局」という。）であつて、その通信の相手方である無線局又は受信設備との間の通信を行うことができない位置にある間は、当該非静止衛星局と免許人、通信の相手方、周波数及び空中線電力を同じくする他の非静止衛星局が当該通信の相手方である無線局又は受信設備との間の通信を行うこととされているもの</div>
                     </td>
                     <td>
@@ -21539,7 +21539,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -21553,7 +21553,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -21564,10 +21564,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">三千六百メガヘルツを超え六千メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21578,7 +21578,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツを超え二百メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21589,7 +21589,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が二百メガヘルツを超え五百メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21603,7 +21603,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が五百メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -21614,7 +21614,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">六千メガヘルツを超える周波数の電波を使用するもの</div>
                     </td>
                     <td>
@@ -21622,13 +21622,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">四　人工衛星局の中継により無線通信を行う無線局（五の項及び八の項に掲げる無線局を除く。）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">六千メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21639,7 +21639,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21653,7 +21653,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21667,7 +21667,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21684,7 +21684,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツを超え五十メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21701,7 +21701,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21718,7 +21718,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21735,7 +21735,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21752,7 +21752,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が五十メガヘルツを超え百メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -21769,7 +21769,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21786,7 +21786,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21803,7 +21803,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21820,7 +21820,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が百メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -21837,7 +21837,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21854,7 +21854,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21871,7 +21871,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -21885,7 +21885,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">六千メガヘルツを超える周波数の電波を使用するもの</div>
                     </td>
                     <td>
@@ -21893,7 +21893,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence" Num="1">五　自動車、船舶その他の移動するものに開設し、又は携帯して使用するために開設する無線局であつて、人工衛星局の中継により無線通信を行うもの（八の項に掲げる無線局を除く。）</div>
                     </td>
                     <td>
@@ -21901,16 +21901,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">六　基幹放送局（三の項、七の項及び八の項に掲げる無線局を除く。）</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">六千メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">テレビジョン放送をするもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">空中線電力が〇・〇二ワット未満のもの</div>
                     </td>
                     <td>
@@ -21918,7 +21918,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">空中線電力が〇・〇二ワット以上二キロワット未満のもの</div>
                     </td>
                     <td>
@@ -21929,7 +21929,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">空中線電力が二キロワット以上十キロワット未満のもの</div>
                     </td>
                     <td>
@@ -21963,7 +21963,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">空中線電力が十キロワット以上のもの</div>
                     </td>
                     <td>
@@ -21980,7 +21980,7 @@
                     <td>
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が百キロヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -22037,7 +22037,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が百キロヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -22088,7 +22088,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">六千メガヘルツを超える周波数の電波を使用するもの</div>
                     </td>
                     <td>
@@ -22096,10 +22096,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">七　<a class="reference_link" href="#Mp-At_5-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第五項</a>に規定する受信障害対策中継放送をする無線局、多重放送をする無線局及び基幹放送以外の放送をする無線局（三の項及び八の項に掲げる無線局を除く。）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="#Mp-At_5-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第五項</a>に規定する受信障害対策中継放送をするもの及び多重放送をするもの</div>
                     </td>
@@ -22108,7 +22108,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -22116,7 +22116,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence" Num="1">八　実験等無線局及びアマチュア無線局</div>
                     </td>
                     <td>
@@ -22130,11 +22130,11 @@
                     <td>
                       <div class="Sentence" Num="1">四百七十メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">
                         <a class="reference_link" href="#Mp-At_103_2-Pr_15-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三条の二第十五項第二号</a>に掲げるものであつて、五十四メガヘルツを超え七十メガヘルツ以下の周波数の電波を使用するもの（当該無線局の免許人が市町村（特別区を含む。）であるものに限る。）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">住民に対して災害情報等を直接伝達するために無線通信を行うものであつて、専ら一の特定の無線局（<a class="reference_link" href="#Mp-At_103_2-Pr_15-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三条の二第十五項第二号</a>に掲げるものであつて、五十四メガヘルツを超え七十メガヘルツ以下の周波数の電波を使用するものに限る。）のみを通信の相手方とするもの</div>
                     </td>
                     <td>
@@ -22148,7 +22148,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -22162,7 +22162,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -22173,10 +22173,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">四百七十メガヘルツを超え三千六百メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">多重放送の業務の用に供するもの</div>
                     </td>
                     <td>
@@ -22190,7 +22190,7 @@
                     <td>
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -22204,7 +22204,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -22272,13 +22272,13 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">三千六百メガヘルツを超え六千メガヘルツ以下の周波数の電波を使用するもの</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">放送の業務の用に供するもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">設置場所が第一地域の区域内にあるもの</div>
                     </td>
                     <td>
@@ -22292,7 +22292,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">設置場所が第二地域の区域内にあるもの</div>
                     </td>
                     <td>
@@ -22306,7 +22306,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">設置場所が第三地域の区域内にあるもの</div>
                     </td>
                     <td>
@@ -22323,7 +22323,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">設置場所が第四地域の区域内にあるもの</div>
                     </td>
                     <td>
@@ -22340,7 +22340,7 @@
                     <td>
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -22357,7 +22357,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三メガヘルツを超え三十メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -22434,7 +22434,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三十メガヘルツを超え三百メガヘルツ以下のもの</div>
                     </td>
                     <td>
@@ -22511,7 +22511,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">使用する電波の周波数の幅が三百メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -22582,7 +22582,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">六千メガヘルツを超える周波数の電波を使用するもの</div>
                     </td>
                     <td>
@@ -22590,7 +22590,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　この表において「設置場所」とは、無線局の無線設備の設置場所をいう。</div>
                       <div class="Sentence" Num="3">二　この表において「第一地域」とは、東京都の区域（第四地域を除く。）をいう。</div>
@@ -22755,7 +22755,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">備考　別表第六備考<a class="reference_link" href="#Mp-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>に規定する第四地域及び電波の利用の程度が<a class="reference_link" href="#Mp-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>に規定する第四地域と同等であると認められる区域として総務省令で定めるものに開設される広域開設無線局のみに使用させる広域使用電波に係るこの表の下欄に掲げる係数は、同欄に掲げる数値の十分の一に相当する数値とする。</div>
                     </td>
                   </tr>
@@ -22767,7 +22767,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">広域使用電波の区分</div>
                     </td>
                     <td>
@@ -22775,13 +22775,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">別表第六の一の項又は二の項に掲げる無線局に係る広域使用電波</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電気通信業務を行うことを目的とする無線局に係るもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">三千六百メガヘルツ以下の周波数のもの</div>
                     </td>
                     <td>
@@ -22823,7 +22823,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">三千六百メガヘルツを超える周波数のもの</div>
                     </td>
                     <td>
@@ -22834,7 +22834,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">その他のもの</div>
                     </td>
                     <td>
@@ -22842,7 +22842,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">別表第六の四の項又は五の項に掲げる無線局に係る広域使用電波</div>
                     </td>
                     <td>
@@ -22850,7 +22850,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">別表第六の六の項に掲げる無線局に係る広域使用電波</div>
                     </td>
                     <td>
@@ -22858,7 +22858,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence" Num="1">備考　広域使用電波のうち、広域開設無線局及び広域開設無線局以外の無線局のいずれにも使用させるものとして総務大臣が指定するものに係るこの表の下欄に掲げる金額は、同欄に掲げる金額にかかわらず、同欄に掲げる金額の二分の一に相当する金額とする。</div>
                     </td>
                   </tr>
@@ -22870,7 +22870,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">無線局の区分</div>
                     </td>
                     <td>
@@ -22878,7 +22878,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">一　三千六百メガヘルツ以下の周波数の電波を使用する無線局のうち使用する電波の周波数の幅が六メガヘルツを超えるもの</div>
                     </td>
                     <td>
@@ -22984,7 +22984,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二　一の項に掲げる無線局以外の無線局</div>
                     </td>
                     <td>
@@ -22992,7 +22992,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">備考　この表において「設置場所」、「第一地域」、「第二地域」、「第三地域」又は「第四地域」とは、それぞれ別表第六備考<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第五号まで</a>に規定する設置場所、第一地域、第二地域、第三地域又は第四地域をいう。</div>
                     </td>
                   </tr>

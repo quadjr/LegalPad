@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1751,7 +1751,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">火薬類</div>
                             </td>
                             <td>
@@ -1759,7 +1759,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">火薬</div>
                             </td>
                             <td>
@@ -1767,7 +1767,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="7">
                               <div class="Sentence">火工品（弾薬を含む。以下この表において同じ。）</div>
                             </td>
                             <td>
@@ -1826,7 +1826,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">爆薬、火薬及び火工品以外の物資で爆発性を有するもの</div>
                             </td>
                             <td>
@@ -2619,7 +2619,7 @@
                           <td>
                             <div class="Sentence">港又は水域の名称</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">運航しようとする船舶</div>
                           </td>
                           <td>
@@ -2630,21 +2630,21 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">東京湾区、伊勢三河湾区、大阪湾区、備讃瀬戸区及び来島区</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン未満の船舶（危険物積載船を除く。）</div>
                           </td>
                           <td>
                             <div class="Sentence">総トン数一万トン以上の船舶</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">二十四回</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン以上の船舶（危険物積載船を除く。）</div>
                           </td>
                           <td>
@@ -2652,18 +2652,18 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン未満の危険物積載船</div>
                           </td>
                           <td>
                             <div class="Sentence">総トン数一万トン以上の船舶</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">四十八回</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン以上五万トン未満の危険物積載船</div>
                           </td>
                           <td>
@@ -2671,7 +2671,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数五万トン以上の危険物積載船</div>
                           </td>
                           <td>
@@ -2679,10 +2679,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="10">
                             <div class="Sentence">関門区</div>
                           </td>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">
                               <a class="reference_link" href="L_323AC0000000174.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">港則法</a>
                               <a class="reference_link" href="L_323AC0000000174.html#Mp-At_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一条</a>の規定により国土交通省<a class="reference_link" href="L_339CO0000000354.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>で定める航路の区域（以下「関門港航路区域」という。）のみを航行し関門区の区域を通過する船舶</div>
@@ -2693,7 +2693,7 @@
                           <td>
                             <div class="Sentence">総トン数一万トン以上の船舶</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">二十四回（関門港航路区域のみを航行し関門区の区域を通過した場合に限る。）</div>
                           </td>
                         </tr>
@@ -2712,7 +2712,7 @@
                           <td>
                             <div class="Sentence">総トン数一万トン以上の船舶</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">四十八回（関門港航路区域のみを航行し関門区の区域を通過した場合に限る。）</div>
                           </td>
                         </tr>
@@ -2733,7 +2733,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">関門港航路区域のみを航行し関門区の区域を通過する船舶以外の船舶</div>
                           </td>
                           <td>
@@ -2744,7 +2744,7 @@
                             <div class="Sentence">一　<a class="reference_link" href="#Mp-At_22_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の六</a>に規定する区域を航行した船舶</div>
                             <div class="Sentence">二　危険物積載船</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">三十六回（関門港航路区域のみを航行し関門区の区域を通過した場合を除く。）</div>
                           </td>
                         </tr>
@@ -2765,7 +2765,7 @@
                             <div class="Sentence">一　<a class="reference_link" href="#Mp-At_22_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の六</a>に規定する区域を航行した船舶</div>
                             <div class="Sentence">二　危険物積載船</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">四十八回（関門港航路区域のみを航行し関門区の区域を通過した場合を除く。）</div>
                           </td>
                         </tr>
@@ -2786,22 +2786,22 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">横浜川崎区</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン未満の船舶（危険物積載船を除く。）</div>
                           </td>
                           <td>
                             <div class="Sentence">総トン数三千トン以上の船舶（総トン数一万トン未満の船舶にあつては、<a class="reference_link" href="L_339CO0000000354.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
                               <a class="reference_link" href="L_339CO0000000354.html#Mp-At_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条</a>の表横浜川崎区の項に規定する海面及び<a class="reference_link" href="#Mp-At_35-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>に規定する運河水面を航行するものに限る。以下この項において同じ。）又は総トン数三百トン以上の危険物積載船</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">二十四回</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン以上の船舶（危険物積載船を除く。）</div>
                           </td>
                           <td>
@@ -2809,18 +2809,18 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン未満の危険物積載船</div>
                           </td>
                           <td>
                             <div class="Sentence">総トン数三千トン以上の船舶又は総トン数三百トン以上の危険物積載船</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">四十八回</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン以上五万トン未満の危険物積載船</div>
                           </td>
                           <td>
@@ -2828,7 +2828,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数五万トン以上の危険物積載船</div>
                           </td>
                           <td>
@@ -2836,21 +2836,21 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">横須賀区、佐世保区及び那覇区</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン未満の船舶（危険物積載船を除く。）</div>
                           </td>
                           <td>
                             <div class="Sentence">総トン数三百トン以上の船舶</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">二十四回</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン以上の船舶（危険物積載船を除く。）</div>
                           </td>
                           <td>
@@ -2858,18 +2858,18 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン未満の危険物積載船</div>
                           </td>
                           <td>
                             <div class="Sentence">総トン数三百トン以上の船舶</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">四十八回</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数二万トン以上五万トン未満の危険物積載船</div>
                           </td>
                           <td>
@@ -2877,7 +2877,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">総トン数五万トン以上の危険物積載船</div>
                           </td>
                           <td>
@@ -4386,7 +4386,7 @@
                 <div class="ParagraphSentence">
                   <div class="Sentence" Num="1">この省<a class="reference_link" href="L_339CO0000000354.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>は、昭和五十一年七月二十日から施行する。</div>
                   <div class="Sentence" Num="2">ただし、第一条の規定中<a class="reference_link" href="L_323M40000800029.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">港則法施行規則</a>
-                    <a class="reference_link" href="L_323M40000800029.html#Mp-At_29_2-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二第五項</a>の改正規定、同<a class="reference_link" href="L_339CO0000000354.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>第二章第四節の二の次に一節を加える改正規定、同<a class="reference_link" href="L_339CO0000000354.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第四の改正規定、同<a class="reference_link" href="L_339CO0000000354.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第五の改正規定（同表関門の部を改める部分を除く。）は、公布の日から施行する。</div>
+                    <a class="reference_link" href="L_323M40000800029.html#Mp-At_29_2-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二第五項</a>の改正規定、<a class="reference_link" href="L_323M40000800029.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>第二章第四節の二の次に一節を加える改正規定、<a class="reference_link" href="L_323M40000800029.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別表第四の改正規定、<a class="reference_link" href="L_323M40000800029.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別表第五の改正規定（同表関門の部を改める部分を除く。）は、公布の日から施行する。</div>
                 </div>
               </div>
               <div id="Sp_昭和五一年七月九日運輸省令第二八号-Pr_2" class="Paragraph" Num="2">

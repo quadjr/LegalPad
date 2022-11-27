@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1166,14 +1166,14 @@
                     <td>
                       <div class="Sentence">６　濁度</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">濁度標準溶液</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">暗箱</div>
                       <div class="Sentence">比色管</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">試水１００ｍｌを比色管にとり、その濁りを、特定の濁度標準溶液と比べる。</div>
                     </td>
                   </tr>
@@ -1321,14 +1321,14 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">５　懸濁物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
@@ -1922,7 +1922,7 @@
                     <td>
                       <div class="Sentence">２５　その他の項目</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">適宜の方法によつて実施してさしつかえない。ただし、方法を水質表の記事欄に明示すること。</div>
                     </td>
                   </tr>
@@ -1967,7 +1967,7 @@
                     <td>
                       <div class="Sentence">溶液名</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">溶液の作り方</div>
                     </td>
                     <td>
@@ -1975,13 +1975,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１　電導度</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　０．１００規定塩化カリウム（ＫＣｌ）標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">３．７２８ｇの塩化カリウムを炭酸ガスを含まない蒸留水に溶かして５００ｍｌとする。</div>
                     </td>
                     <td>
@@ -1992,7 +1992,7 @@
                     <td>
                       <div class="Sentence">（２）　０．０１００規定及び０．００１００規定塩化カリウム標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．１００規定塩化カリウム標準溶液を１０倍及び１００倍にうすめる。</div>
                     </td>
                     <td>
@@ -2007,7 +2007,7 @@
                     <td>
                       <div class="Sentence">濁度標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">特定の白陶土１ｇを蒸留水１ｌに懸濁し、これを１０倍にうすめる。</div>
                     </td>
                     <td>
@@ -2015,13 +2015,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">３　溶存酸素ガス</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　０．１００規定ヨウ素酸水素カリウム（ＫＨ（ＩＯ３）２）標準溶液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">１．６２５ｇのヨウ素酸水素カリウムを蒸留水に溶かして５００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2034,10 +2034,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（２）　０．１００規定ヨウ素酸カリウム（ＫＩＯ３）標準溶液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">１．７８３ｇのヨウ素酸カリウムを蒸留水に溶かして５００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2050,10 +2050,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（３）　０．０２００規定チオ硫酸ナトリウム滴定液（Ｎａ２Ｓ２Ｏ３・５Ｈ２Ｏ）</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">約５ｇのチオ硫酸ナトリウムを蒸留水に溶かして１ｌとする。この濃度は０．１００規定ヨウ素酸水素カリウム標準溶液又はヨウ素酸カリウム標準溶液で定める。</div>
                     </td>
                     <td>
@@ -2066,13 +2066,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">４　ＥＤＴＡ硬度</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　０．０５００規定カルシウムイオン標準溶液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">２．５０２ｇの炭酸カルシウム　（ＣａＣＯ３）を酸性にして蒸留水に溶かし５００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2085,10 +2085,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（２）　０．０１００ｍｏｌＥＤＴＡ滴定液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">４．０ｇのＥＤＴＡ及び０．１０ｇの塩化マグネシウム（ＭｇＣｌ２・６Ｈ２Ｏ）を８００ｍｌの蒸留水に溶かし、０．０５００規定カルシウムイオン標準溶液で濃度を測定し、適当にうすめて０．０１００ｍｏｌとする。</div>
                     </td>
                     <td>
@@ -2101,13 +2101,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">５　カルシウムイオン</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　０．０１００規定過マンガン酸カリウム（ＫＭｎＯ４）滴定液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">約１．６ｇの過マンガン酸カリウムを蒸留水に溶かして５００ｍｌとして貯蔵し、これを１０倍にうすめて０．０１００規定溶液をつくる。この濃度は次のシユウ酸ナトリウム標準溶液で定める。</div>
                     </td>
                     <td>
@@ -2120,10 +2120,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（２）　０．１００規定シユウ酸ナトリウム（Ｎａ２Ｃ２Ｏ４）標準溶液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">３．３５００ｇのシユウ酸ナトリウムを蒸留水に溶かして５００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2139,7 +2139,7 @@
                     <td>
                       <div class="Sentence">（３）　０．０１００規定シユウ酸ナトリウム標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．１００規定液を１０倍にうすめる。</div>
                     </td>
                     <td>
@@ -2151,14 +2151,14 @@
                     <td>
                       <div class="Sentence">６　マグネシウムイオン</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">ＥＤＴＡ硬度の場合に同じ。</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2175,7 +2175,7 @@
                     <td>
                       <div class="Sentence">使用マグネシウム比色標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．０２規定塩化マグネシウム滴定液（８のＩＩ参照）を使用に際し適当にうすめる。たとえば、１ｍｌを１００ｍｌにうすめるとＭｇ２．４３ｍｇ／ｌとなる。</div>
                     </td>
                     <td>
@@ -2189,7 +2189,7 @@
                     <td>
                       <div class="Sentence">（１）　０．０２００規定塩化ナトリウム（ＮａＣｌ）標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１．１６９ｇの塩化ナトリウムを蒸留水に溶かして１ｌとする。</div>
                     </td>
                     <td>
@@ -2203,7 +2203,7 @@
                     <td>
                       <div class="Sentence">（２）　０．０２００規定硝酸銀（ＡｇＮＯ３）滴定液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">３．４ｇの硝酸銀を蒸留水に溶かして１ｌとする。この濃度は０．０２００規定塩化ナトリウム標準溶液で定める。</div>
                     </td>
                     <td>
@@ -2211,13 +2211,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">ＩＩ　比色法</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　貯蔵塩素イオン比色標準溶液（Ｃｌ－１００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．２１０３ｇの塩化カリウム（ＫＣｌ）　を蒸留水に溶かして１ｌとする。</div>
                     </td>
                     <td>
@@ -2228,7 +2228,7 @@
                     <td>
                       <div class="Sentence">（２）　使用塩素イオン比色標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（１）を使用に際して適宜うすめて標準溶液とする。</div>
                     </td>
                     <td>
@@ -2240,7 +2240,7 @@
                     <td>
                       <div class="Sentence">（３）　チオシアン酸水銀（Ｈｇ（ＣＮＳ）２）０．３％アルコール溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">５ｇの硝酸第二水銀（ＨｇＮＯ３）を０．５規定硝酸２００ｍｌに溶かし、鉄ミヨウバンの飽和溶液（１規定硝酸酸性）３ｍｌを加えてじゆうぶんかくはんしながら、溶液がかすかに着色するまでチオシアン酸カリウム（ＫＣＮＳ）４％溶液で滴定する。生じた沈殿をガラスフイルターでロ過し、蒸留水で洗浄して風乾する。これを０．３ｇとりアルコール（９５％）１００ｍｌにとかし、かつ色ビン中で冷暗所に保存する。</div>
                     </td>
                     <td>
@@ -2252,7 +2252,7 @@
                     <td>
                       <div class="Sentence">（４）　鉄ミヨウバン（ＮＨ４Ｆｅ（ＳＯ４）２・１２Ｈ２Ｏ）６％溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">６ｇの鉄ミヨウバンを６規定硝酸１００ｍｌに溶かす。</div>
                     </td>
                     <td>
@@ -2266,7 +2266,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence"></div>
                     </td>
                     <td>
@@ -2274,13 +2274,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">Ｉ　比濁法</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　使用硫酸比濁標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．０２規定硫酸滴定液（９参照）を使用に際して適当にうすめる。たとえば、１ｍｌを５０ｍｌにうすめるとＳＯ４２－１９．２ｍｇ／ｌとなる。</div>
                     </td>
                     <td>
@@ -2291,7 +2291,7 @@
                     <td>
                       <div class="Sentence">（２）　塩化バリウム（ＢａＣｌ２・２Ｈ２Ｏ）ゼラチン溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">３ｇのゼラチンを３００ｍｌのあたたかい蒸留水に溶かし、陽イオン及び陰イオン交換樹脂に通じて灰分を除去し、この通過液と塩化バリウム溶液（３０ｇのＢａＣｌ２・２Ｈ２Ｏ　を蒸留水に溶かして２００ｍｌとしたもの）とを混じ、キシロールを加えて殺菌しておく。</div>
                     </td>
                     <td>
@@ -2299,13 +2299,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">ＩＩ　ＥＤＴＡ法</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　０．０２００規定塩化マグネシウム（ＭｇＣｌ２・６Ｈ２Ｏ）滴定液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">約２．１ｇの塩化マグネシウムを蒸留水に溶かして１ｌとする。この濃度は０．０１００ｍｏｌＥＤＴＡで定める。</div>
                     </td>
                     <td>
@@ -2321,7 +2321,7 @@
                     <td>
                       <div class="Sentence">（２）　０．０２００規定塩化バリウム（ＢａＣｌ２・２Ｈ２Ｏ）溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">約２．５ｇの塩化バリウムを蒸留水に溶かして１ｌとする。この濃度は０．０１００ｍｏｌ　ＥＤＴＡで定める。</div>
                     </td>
                     <td>
@@ -2330,13 +2330,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">ＩＩＩ　比色法</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　貯蔵硫酸イオン比色標準溶液（ＳＯ４２―１０００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１．８１５ｇの硫酸カリウム（Ｋ２ＳＯ４）を蒸留水に溶かして１ｌとする。</div>
                     </td>
                     <td>
@@ -2347,7 +2347,7 @@
                     <td>
                       <div class="Sentence">（２）　使用硫酸イオン比色標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">使用に際しては（１）を１０倍ないし１００倍にうすめて標準溶液とする。</div>
                     </td>
                     <td>
@@ -2359,7 +2359,7 @@
                     <td>
                       <div class="Sentence">（３）　精製クロム酸バリウム（ＢａＣｒＯ４）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">クロム酸カリウム（Ｋ２ＣｒＯ４）１％の熱溶液８００ｍｌに塩化バリウム（ＢａＣｌ２・２Ｈ２Ｏ）１０％の熱溶液を、徐々に上澄液の黄色がわずかになるまで滴下（約１００ｍｌ）して、クロム酸バリウムの沈殿をつくる。次に沈殿をじゆうぶん洗浄して２規定塩酸１００ｍｌに溶解し、蒸留水でうすめて７００ｍｌとする。この溶液を熱し、２規定アンモニア水を溶液が完全に黄色になるまで加えて再沈殿を行う。生じた沈殿をじゆうぶん洗浄してガラスフイルターでロ過し、１０５℃で乾燥後、メノウ製乳はちで細かく砕き、貯蔵する。</div>
                     </td>
                     <td>
@@ -2371,7 +2371,7 @@
                     <td>
                       <div class="Sentence">（４）　クロム酸バリウム酢酸懸濁液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（３）のクロム酸バリウム２．５ｇを０．５００規定酢酸２００ｍｌに加え、じゆうぶん振とうして懸濁させる。</div>
                     </td>
                     <td>
@@ -2383,7 +2383,7 @@
                     <td>
                       <div class="Sentence">（５）　ジフエニルカルバジツド１％アルコール溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１ｇのジフエニルカルバジツド（Ｃ１３Ｈ１４Ｎ４Ｏ）を無水アルコール（Ｃ２Ｈ５ＯＨ）１００ｍｌに溶解し、安定剤として１規定塩酸１．０ｍｌを加え、かつ色ビン中に保存する。（この試薬は２ないし３週間安定）</div>
                     </td>
                     <td>
@@ -2394,7 +2394,7 @@
                     <td>
                       <div class="Sentence">（６）　アンモニア性カルシウム溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．３７ｇの塩化カルシウム（ＣａＣｌ２・２Ｈ２Ｏ）を６規定アンモニア水（ＮＨ４ＯＨ）１００ｍｌを溶解し、密センして保存する。</div>
                     </td>
                     <td>
@@ -2402,13 +2402,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">９　アルカリ度</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　０．２００規定炭酸ナトリウム（Ｎａ２ＣＯ３）標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">５．３００ｇの炭酸ナトリウムを蒸留水に溶かして５００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2416,10 +2416,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（２）　０．２００規定硫酸（Ｈ２ＳＯ４）貯蔵溶液</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">濃硫酸６ｍｌを蒸留水に溶かして１ｌとする。この濃度は０．２００規定炭酸ナトリウム標準溶液で定める。</div>
                     </td>
                     <td>
@@ -2435,7 +2435,7 @@
                     <td>
                       <div class="Sentence">（３）　０．０２００規定硫酸滴定液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（２）の０．２００規定硫酸溶液を１０倍にうすめる。</div>
                     </td>
                     <td>
@@ -2444,13 +2444,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１０　酸度</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　０．２００規定水酸化ナトリウム（カセイソーダＮａＯＨ）貯蔵溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">炭酸イオンを含まない濃水酸化ナトリウム溶液を適当にうすめる。この濃度は０．２００規定硫酸貯蔵溶液で定める。</div>
                     </td>
                     <td>
@@ -2461,7 +2461,7 @@
                     <td>
                       <div class="Sentence">（２）　０．０２００規定水酸化ナトリウム（カセイソーダ）滴定液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．２００規定水酸化ナトリウム溶液を１０倍にうすめる。</div>
                     </td>
                     <td>
@@ -2473,10 +2473,10 @@
                     <td>
                       <div class="Sentence">１１　ケイ酸</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　クロム酸カリウム（Ｋ２ＣｒＯ４）代用比色標準溶液（ＳｉＯ２５０ｍｇ／ｌ相当）</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">０．２６５ｇのクロム酸カリウムと約１０ｇのホウ砂（Ｎａ２Ｂ４Ｏ７・１０Ｈ２Ｏ）を蒸留水に溶解して１ｌとする。</div>
                     </td>
                     <td>
@@ -2492,14 +2492,14 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                     <td>
                       <div class="Sentence">（２）　ケイフツ化ナトリウム　（Ｎａ２ＳｉＦ６）比色標準溶液（ＳｉＯ２１００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．３１３ｇのケイフツ化ナトリウムを蒸留水に溶かして１ｌとする。</div>
                     </td>
                     <td>
@@ -2510,7 +2510,7 @@
                     <td>
                       <div class="Sentence">（３）　ケイ酸（ＳｉＯ２）比色標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．５００ｇの精製した無水ケイ酸を炭酸ナトリウム（Ｎａ２ＣＯ３）で融解し、蒸留水に溶かして１ｌとし、ポリエチレンビン中に保存する。この場合、中和あるいは酸性としないよう注意しなければならない。使用に際しては、これを適当にうすめて標準溶液とする。</div>
                     </td>
                     <td>
@@ -2522,7 +2522,7 @@
                     <td>
                       <div class="Sentence">（４）　モリブデン酸アンモニウム（５（ＮＨ４）２Ｏ・１２ＭｏＯ３・７Ｈ２Ｏ）１０％溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１０ｇのモリブデン酸アンモニウムを蒸留水に溶かして１００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2536,7 +2536,7 @@
                     <td>
                       <div class="Sentence">（１）　貯蔵鉄（Ｆｅ）比色標準溶液　（Ｆｅ２００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．２００ｇの純鉄（たとえば、電解鉄又はピアノ線）を２０ｍｌの硫酸（１＋５）に溶かし、さらに蒸留水を加えて１ｌとする。</div>
                     </td>
                     <td>
@@ -2550,7 +2550,7 @@
                     <td>
                       <div class="Sentence">（２）　使用鉄比色標準溶液（Ｆｅ１ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">貯蔵鉄標準溶液を蒸留水で２００倍にうすめる。</div>
                     </td>
                     <td>
@@ -2566,7 +2566,7 @@
                     <td>
                       <div class="Sentence">（３）　オルソフエナンスロリン（Ｃ１２Ｈ８Ｎ２・Ｈ２Ｏ）０．１％溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．１ｇのオルソフェナンスロリンを蒸留水に溶かして１００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2581,7 +2581,7 @@
                     <td>
                       <div class="Sentence">（４）　塩酸ヒドロキシルアミン（ＮＨ２ＯＨ・ＨＣｌ）１０％溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１０ｇの塩酸ヒドロキシルアミンを蒸留水に溶かして１００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2596,7 +2596,7 @@
                     <td>
                       <div class="Sentence">（５）　酢酸ナトリウム、酢酸緩衝溶液（ｐＨ４．６）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１規定酢酸（ＣＨ３ＣＯＯＨ）を５００ｍｌ（２８．６ｍｌの氷酢酸を蒸留水に溶かして５００ｍｌとしたもの）と１規定酢酸ナトリウム（ＣＨ３ＣＯＯＮａ）５００ｍｌ（６８．０４ｇ酢酸ナトリウムを蒸留水に溶かして５００ｍｌとしたもの）とを混合する。</div>
                     </td>
                     <td>
@@ -2608,10 +2608,10 @@
                     <td>
                       <div class="Sentence">１３　リン</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　貯蔵リン比色標準溶液（Ｐ１００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">０．４３９ｇのリン酸二水素カリウム（ＫＨ２ＰＯ４）を蒸留水に溶かして１ｌとする。この際、キシロールを加えて殺菌しておく。</div>
                     </td>
                     <td>
@@ -2634,7 +2634,7 @@
                     <td>
                       <div class="Sentence">（２）　使用リン比色標準溶液（Ｐｌｍｇ～０．１ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（１）を使用に際して１００倍ないし１０００倍にうすめる。</div>
                     </td>
                     <td>
@@ -2650,7 +2650,7 @@
                     <td>
                       <div class="Sentence">（３）　モリブデン酸アンモニウム硫酸混液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１０ｇのモリブデン酸アンモニウムを蒸留水に溶かして９０ｍｌにしたものと硫酸（１＋１）を正確に１：３の割合にまぜる。</div>
                     </td>
                     <td>
@@ -2663,13 +2663,13 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（４）　塩化第一スズ（ＳｎＣｌ２・２Ｈ２Ｏ）　０．５％溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．５ｇの塩化第一スズを濃塩酸１０ｍｌに熱しながら時間をかけて溶かし、後で蒸留水で　１００ｍｌにうすめる。</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">ＳｎＣｌ２・２Ｈ２Ｏ　分子量＝２２５．６５</div>
                     </td>
                   </tr>
@@ -2678,18 +2678,18 @@
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">なお、貯蔵にあたつては、スズの金属片を入れておく。貯蔵液に黒い沈殿が生じた場合は、ロ過して使用しなければならない。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１４　亜硝酸イオン</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　貯蔵亜硝酸比色標準溶液（ＮＯ２―Ｎ１００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">０．４９３ｇの亜硝酸ナトリウム　（ＮａＮＯ２）　を蒸留水に溶かして　１ｌとする。この際、クロロホルムを加えて殺菌しておく。あるいは亜硝酸ナトリウムの代りに０．６０７５ｇの亜硝酸カリウム（ＫＮＯ２）を用いてもよい。</div>
                     </td>
                     <td>
@@ -2705,7 +2705,7 @@
                     <td>
                       <div class="Sentence">（２）　使用亜硝酸比色標準溶液（ＮＯ２―Ｎ１ｍｇ～０．１ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（１）を使用に際して１００ないし１０００倍にうすめる。</div>
                     </td>
                     <td>
@@ -2714,10 +2714,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（３）　グリースロミイン試薬</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">８９ｇの酒石酸（（ＣＨＯＨ・ＣＯＯＨ）２）を乳ばちで細かくすり、これに１０ｇのスルフアニル酸（ＮＨ２Ｃ６Ｈ４・ＨＳＯ３）及び１ｇのαナフチルアミン（Ｃ１０Ｈ７・ＮＨ２）を混じてじゆうぶんにすりあわせ、かつ色の共センビンに貯える。</div>
                     </td>
                     <td>
@@ -2737,7 +2737,7 @@
                     <td>
                       <div class="Sentence">（１）　貯蔵硝酸比色標準溶液（ＮＯ３―Ｎ１００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．７２２ｇの硝酸カリウム（ＫＮＯ３）を蒸留水に溶かして１ｌとする。</div>
                     </td>
                     <td>
@@ -2751,7 +2751,7 @@
                     <td>
                       <div class="Sentence">（２）　使用硝酸比色標準溶液（ＮＯ３―Ｎ１ｍｇ～０．１ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（１）を使用に際して１００ないし１０００倍にうすめる。</div>
                     </td>
                     <td>
@@ -2767,7 +2767,7 @@
                     <td>
                       <div class="Sentence">（３）　ジフエニルアミン硫酸溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">０．０８５ｇのジフエニルアミン（（Ｃ６Ｈ５）２ＮＨ）に硫酸（１＋３）　１９０ｍｌを加え、さらに濃硫酸を注ぎ、全量を５００ｍｌにする。</div>
                     </td>
                     <td>
@@ -2775,13 +2775,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">ＩＩ　フエノールジスルホン酸法</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　フエノールジスルホン酸硫酸溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">２５ｇの純フエノール（Ｃ６Ｈ５ＯＨ）を冷却しながら、濃硫酸（９５％以上）　１５０ｍｌに溶かし、さらに発煙硫酸（ＳＯ３１５％以上）７５ｍｌを加えて２時間加熱する。</div>
                     </td>
                     <td>
@@ -2792,7 +2792,7 @@
                     <td>
                       <div class="Sentence">（２）　硫酸銀（Ａｇ２ＳＯ４）溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">４．３９７ｇの硫酸銀を蒸留水に溶かして１ｌとする。（この溶液１ｍｌは　Ｃｌ－１ｍｇに相当する。）</div>
                     </td>
                     <td>
@@ -2803,7 +2803,7 @@
                     <td>
                       <div class="Sentence">（３）　１２規定水酸化カリウム（ＫＯＨ）溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">６７．３ｇの水酸化カリウムを蒸留水に溶かして　１００ｍｌとする。</div>
                     </td>
                     <td>
@@ -2814,7 +2814,7 @@
                     <td>
                       <div class="Sentence">（４）　水酸化アルミニウム（Ａｌ（ＯＨ）３）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１０ｇのミヨウバン（ＫＡｌ（ＳＯ４）２・１２Ｈ２Ｏ）を蒸留水２００ｍｌ　に溶かし、アンモニア水を加えて水酸化アルミニウムを沈殿させ、これをじゆうぶんに洗浄する。</div>
                     </td>
                     <td>
@@ -2822,13 +2822,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">ＩＩＩ　アニリン法</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　酢酸アニリン溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">精製アニリン（Ｃ６Ｈ５ＮＨ２）３ｍｌに氷酢酸３ｍｌを加え、蒸留水でうすめて　１００ｍｌとする。この際、濁りがあればロ過する。</div>
                     </td>
                     <td>
@@ -2839,7 +2839,7 @@
                     <td>
                       <div class="Sentence">（２）　αナフチルアミン（Ｃ１０Ｈ７ＮＨ２）溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">２ｇのαナフチルアミンを粉末にし、氷酢酸２０ｍｌを加え、蒸留水でうすめて１００ｍｌとする。この際、黒い沈殿があればロ過する。（この溶液の保存期間は１週間）</div>
                     </td>
                     <td>
@@ -2850,7 +2850,7 @@
                     <td>
                       <div class="Sentence">（３）　粉末亜鉛（Ｚｎ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">粉末亜鉛を稀塩酸（あるいは稀酢酸）でよく洗い、次に塩素イオンの反応がなくなるまで蒸留水で洗浄する。</div>
                     </td>
                     <td>
@@ -2861,7 +2861,7 @@
                     <td>
                       <div class="Sentence">（４）　塩酸・酢酸混液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">６規定塩酸と６規定酢酸とを等容量混合する。</div>
                     </td>
                     <td>
@@ -2870,13 +2870,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="25">
                       <div class="Sentence">１６　アンモニウムイオン</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（１）　貯蔵アンモニウム比色標準溶液（ＮＨ４Ｎ１００ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">０．３８１９ｇの塩化アンモニウム（ＮＨ４Ｃｌ）に０．１ｇの昇コウを加え、蒸留水に溶かして１ｌとする。あるいは０．４７１７ｇの硫酸アンモニウム（（ＮＨ４）２ＳＯ４）に０．１ｇの昇コウを加え、蒸留水に溶かして１ｌとする。</div>
                     </td>
                     <td>
@@ -2892,7 +2892,7 @@
                     <td>
                       <div class="Sentence">（２）　使用アンモニウム比色標準溶液（ＮＨ４―Ｎ１ｍｇ～０．１ｍｇ／ｌ）</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">（１）を使用に際して１００ないし１０００倍にうすめる。</div>
                     </td>
                     <td>
@@ -2901,10 +2901,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">（３）　ネスラー試薬</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">１．０ｇのヨウ化水銀（ＨｇＩ２）と５．０ｇの臭化カリウム（ＫＢｒ）及び２．５ｇの水酸化ナトリウム（カセイソーダ）を２５ｍｌの蒸留水に溶かし、さらに蒸留水を加えて　１００ｍｌ　とする。約一昼夜放置後、上澄水をかつ色ビンに移し、密センして暗所に保管する。</div>
                     </td>
                     <td>
@@ -2917,23 +2917,23 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence">（４）　代用比色標準溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">次の２種の溶液を次の表に従つて混合する。</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">Ｋ２ＰｔＣｌ６分子量＝４８６．１６</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１　塩化白金カリウム標準溶液（塩化白金カリウム（Ｋ２ＰｔＣｌ６）２ｇを約３００ｍｌの蒸留水に溶かし、これに　１００ｍｌの濃塩酸を加えてさらに蒸留水でうすめて１ｌとしたもの。）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">２　酸化コバルト標準溶液（塩化コバルト（ＣｏＣｌ２・６Ｈ２Ｏ）１２ｇを　２００ｍｌの水に溶かし、これに　１００ｍｌの濃塩酸を加え、さらに蒸留水でうすめて１ｌとしたもの。）</div>
                     </td>
                     <td>
@@ -2941,13 +2941,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">ＮＨ４―Ｎｍｇ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">１と２とあわせて蒸留水で　５０ｍｌにする</div>
                     </td>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3132,7 +3132,7 @@
                     <td>
                       <div class="Sentence">カルシウムイオンの場合に同じ。</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3142,27 +3142,27 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">１８　生物化学的酸素消費量</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">（１）　希釈水</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">貯蔵溶液Ａ１０ｍｌ、貯蔵溶液Ｂ１．２５ｍｌをとり、これにあらかじめ、ばく気して放置してある蒸留水を加えて１ｌとする。</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">貯蔵溶液Ａ（３．０ｇの純無水塩化カルシウム（ＣａＣｌ２）、３．０ｇの硫酸マグネシウム（ＭｇＳＯ４・７Ｈ２Ｏ）、１ｍｌの１％塩化鉄（ＦｅＣｌ３、６Ｈ２Ｏ）溶液を　蒸留水に溶かして１ｌとしたもの。）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">貯蔵溶液Ｂ（３４．０ｇのリン酸二水素カリウムを蒸留水約５００ｍｌに溶かし、これに１規定水酸化ナトリウム液を加えてｐＨを７．２にする。次に１．５ｇの硫酸アンモニウムを加えた後蒸留水を加えて１ｌとしたもの。）</div>
                     </td>
                   </tr>
@@ -3170,7 +3170,7 @@
                     <td>
                       <div class="Sentence">（２）　酒石酸カリウム・ナトリウム溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">３５０ｇのロツシエル塩及び１００ｇの水酸化ナトリウムを蒸留水に溶かして１ｌとする。</div>
                     </td>
                     <td>
@@ -3182,7 +3182,7 @@
                     <td>
                       <div class="Sentence">（３）　硫酸第一鉄アンモニウム溶液</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１０．７５ｇのモール塩（（ＮＨ４）２Ｆｅ（ＳＯ４）２・６Ｈ２Ｏ）及び１０ｍｌの硫酸（９５％以上）を蒸留水に溶かして１ｌとし、酸素ガスを排除した蒸留水を加えて２倍にうすめる。この溶液の力価はあらかじめばく気した蒸留水を用いて検定する。</div>
                     </td>
                     <td>
@@ -3194,13 +3194,13 @@
                     <td>
                       <div class="Sentence">１９　バクテリア類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">普通寒天培地</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">普通ブイヨン１ｌに寒天２５ないし３０ｇを加え、加熱溶解し、ｐＨ６．４ないし　７．０に修正して清澄にする。</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
@@ -3211,13 +3211,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">１９－２　大腸菌群</div>
                     </td>
                     <td>
                       <div class="Sentence">（１）　乳糖ブイヨン培地</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">普通ブイヨンに乳糖を０．５％の割合に加えた後、培地１ｌに対してＢＴＢ溶液（０．２％）を約１２ｍｌを加え、発酵管に分注して減菌する。</div>
                     </td>
                     <td>
@@ -3229,7 +3229,7 @@
                     <td>
                       <div class="Sentence">（２）　ＢＧＬＢ培地</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１０ｇのペプトン及び１０ｇの乳糖を蒸留水　５００ｍｌに溶かし、新鮮牛胆汁２００ｍｌ（又は乾燥牛胆汁２０ｇを蒸留水２００ｍｌに溶かしたものｐＨ７ないし７．５）を加え、さらに蒸留水を加えて約　９７５ｍｌとし、ｐＨ７．４に修正する。次にブリリアントグリーン溶液（０．１％）１３．３ｍｌ　を加え全量を１ｌとし、発酵管に分注減菌する。（ｐＨ７．１～７．４）</div>
                     </td>
                     <td>
@@ -3241,7 +3241,7 @@
                     <td>
                       <div class="Sentence">（３）　ＥＭＢ平板培地</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１０ｇのペプトン、２ｇのリン酸二水素カリウム及び２５ないし３０ｇの寒天に蒸留水約　９００ｍｌを加え、煮沸溶解する、これに１０ｇの乳糖、エオヂン黄溶液（２％）２０ｍｌ及びメチレンブルウ溶液（０．５％）１３ｍｌを加え、さらに蒸留水を加えて１ｌとして減菌する。</div>
                     </td>
                     <td>
@@ -3256,7 +3256,7 @@
                     <td>
                       <div class="Sentence">中性ホルマリン</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">１ｇの酸化マグネシウム（ＭｇＯ）を５００ｍｌの局方ホルマリンに溶かし上澄液あるいはロ過液をとる。</div>
                     </td>
                     <td>
@@ -4046,10 +4046,10 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">水質平均値表の項目番号</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">項目</div>
                       </td>
                       <td>
@@ -4115,22 +4115,22 @@
                         <div class="Sentence">
                 </div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">｝４．３以下</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">４．４～５．５</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">５．６～６．５</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">６．６～７．５</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">７．６～８．３</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">８．４以上</div>
                       </td>
                     </tr>
@@ -4273,22 +4273,22 @@
                       <td>
                         <div class="Sentence">ｍｇ／ｌ</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">｝４０以下</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">４１～８０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">８１～１６０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">１６１～３２０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">３２１～６４０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">６４１以上</div>
                       </td>
                     </tr>
@@ -4342,22 +4342,22 @@
                       <td>
                         <div class="Sentence">ｍｅ／ｌ</div>
                       </td>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">｝０．１０以上</div>
                       </td>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">０．１１～０．２０</div>
                       </td>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">０．２１～０．４０</div>
                       </td>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">０．４１～０．８０</div>
                       </td>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">０．８１～１．６０</div>
                       </td>
-                      <td>
+                      <td rowspan="12">
                         <div class="Sentence">１．６１以下</div>
                       </td>
                     </tr>
@@ -4431,10 +4431,10 @@
                       <td>
                         <div class="Sentence">（（２１））</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">アルカリ度</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">ｍｅ／ｌ</div>
                       </td>
                     </tr>
@@ -4447,10 +4447,10 @@
                       <td>
                         <div class="Sentence">（（２４））</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">酸度</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">ｍｅ／ｌ</div>
                       </td>
                     </tr>
@@ -4480,22 +4480,22 @@
                       <td>
                         <div class="Sentence">ｍｅ／ｌ</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">｝０．４０以下</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">０．４１～０．８０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">０．８１～１．６０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">１．６１～３．２０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">３．２１～６．４０</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">６．４１以上</div>
                       </td>
                     </tr>
@@ -4549,22 +4549,22 @@
                       <td>
                         <div class="Sentence">ｍｇ／ｌ</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">｝０．０１０以下</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">０．０１１～０．０３０</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">０．０３１～０．０９０</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">０．０９１～０．２７</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">０．２８～０．８０</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">０．８１以上</div>
                       </td>
                     </tr>
@@ -4679,24 +4679,24 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">区分</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">記号</div>
                         </td>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence">記号の表示の方法</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">形状及び大きさ</div>
                         </td>
                         <td>
                           <div class="Sentence">線色</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">彩色</div>
                         </td>
                       </tr>
@@ -4718,7 +4718,7 @@
                         <td>
                           <div class="Sentence">青</div>
                         </td>
-                        <td>
+                        <td rowspan="6">
                           <div class="Sentence">採水地点の位置に表示し、円の中心を地点上の位置に一致させる。</div>
                         </td>
                       </tr>
@@ -4797,7 +4797,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5">
                           <div class="Sentence">地点番号</div>
                         </td>
                         <td>
@@ -4806,11 +4806,11 @@
                         <td>
                           <div class="Sentence">赤</div>
                         </td>
-                        <td>
+                        <td rowspan="5">
                           <div class="Sentence">
                   </div>
                         </td>
-                        <td>
+                        <td rowspan="5">
                           <div class="Sentence">濃度の階級を表示する記号から右へ２．０　ミリメートル離して記入する。</div>
                         </td>
                       </tr>
@@ -4875,7 +4875,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">区分</div>
                         </td>
                         <td>
@@ -4886,7 +4886,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="6">
                           <div class="Sentence">色</div>
                         </td>
                         <td>
@@ -4962,7 +4962,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">図名</div>
                         </td>
                         <td>
@@ -4974,7 +4974,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence">調査期間</div>
                         </td>
                         <td>
@@ -5025,7 +5025,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence">実施機関名</div>
                         </td>
                         <td>
@@ -5076,7 +5076,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence">作成機関名又は作成者氏名</div>
                         </td>
                         <td>
@@ -5127,7 +5127,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">記号及びその説明</div>
                         </td>
                         <td>

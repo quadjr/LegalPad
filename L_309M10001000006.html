@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -6396,13 +6396,13 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">航行区域</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">航行予定時間</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">単位面積（平方米）</div>
                               </td>
                             </tr>
@@ -6429,7 +6429,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence">沿海及平水</div>
                               </td>
                               <td>
@@ -6476,7 +6476,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td colspan="4">
                                 <div class="Sentence">備考</div>
                                 <div class="Sentence">近海ノ航行区域ヲ有スルモ沿海区域ヲ除ク近海区域ノ航行予定時間ガ一・五時間ニ満タザル船舶ノ坐席ノ収容数ニ付テハ管海官庁ニ於テ差支ナシト認ムルトキハ沿海区域及平水区域ニ対スル単位面積ニ依リ算定スルコトヲ得</div>
                               </td>
@@ -6581,10 +6581,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">区域</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">単位面積（平方米）</div>
                             </td>
                           </tr>
@@ -6710,7 +6710,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">沿海及平水</div>
                             </td>
                             <td>
@@ -7688,10 +7688,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">区分</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">寝台の寸法（センチメートル）</div>
                               </td>
                             </tr>
@@ -8751,7 +8751,8 @@
                         <div class="ItemSentence">
                           <div class="Sentence">
                             <a class="reference_link" href="L_340M50000800037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶消防設備規則</a>
-                            <a class="reference_link" href="L_340M50000800037.html#Mp-At_5-Pr_1-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第十三号</a>の消防員装具を備え付ける場所（同令<a class="reference_link" href="#Mp-At_49" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十九条</a>の規定により備え付けなければならないこととされている場合に限る。）</div>
+                            <a class="reference_link" href="L_340M50000800037.html#Mp-At_5-Pr_1-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五条第十三号</a>の消防員装具を備え付ける場所（<a class="reference_link" href="L_340M50000800037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                            <a class="reference_link" href="L_340M50000800037.html#Mp-At_49" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十九条</a>の規定により備え付けなければならないこととされている場合に限る。）</div>
                         </div>
                       </div>
                       <div id="Mp-At_122_13-Pr_1-It_6" class="Item" Num="6">
@@ -10144,7 +10145,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">区分</div>
                             </td>
                             <td>
@@ -10152,7 +10153,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">金属構造部</div>
                             </td>
                             <td>
@@ -10171,7 +10172,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">木構造部</div>
                             </td>
                             <td>
@@ -10179,7 +10180,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">ワイヤロープ</div>
                             </td>
                             <td>
@@ -10774,7 +10775,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">直流方式</div>
                             </td>
                             <td>
@@ -10801,7 +10802,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">交流方式</div>
                             </td>
                             <td>
@@ -10996,16 +10997,16 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">種別</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">定格電圧（ボルト）</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">空げき（ミリメートル）</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">沿面距離（ミリメートル）</div>
                             </td>
                           </tr>
@@ -11030,7 +11031,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">自動しや断器及び刃形開閉器</div>
                             </td>
                             <td>
@@ -11102,16 +11103,16 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">回転機械、制御器（定格電流一〇アンペア以下のものを除く。）並びに自動しや断器及び刃形開閉器以外の配電盤用器具</div>
                             </td>
                             <td>
                               <div class="Sentence">一二五以下のもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">六</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">九</div>
                             </td>
                           </tr>
@@ -11119,10 +11120,10 @@
                             <td>
                               <div class="Sentence">一二五をこえ二五〇以下のもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">八</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一一</div>
                             </td>
                           </tr>
@@ -11130,24 +11131,24 @@
                             <td>
                               <div class="Sentence">二五〇をこえるもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一〇</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一三</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="4">
                               <div class="Sentence">小形電気器具及び定格電流一〇アンペア以下の制御器</div>
                             </td>
                             <td>
                               <div class="Sentence">二五以下のもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">三</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">四</div>
                             </td>
                           </tr>
@@ -11155,10 +11156,10 @@
                             <td>
                               <div class="Sentence">二五をこえ一二五以下のもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">五</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">六</div>
                             </td>
                           </tr>
@@ -11166,10 +11167,10 @@
                             <td>
                               <div class="Sentence">一二五をこえ二五〇以下のもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">七</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">八</div>
                             </td>
                           </tr>
@@ -11177,24 +11178,24 @@
                             <td>
                               <div class="Sentence">二五〇をこえるもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">九</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一〇</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">配電盤上の充電部</div>
                             </td>
                             <td>
                               <div class="Sentence">一二五以下のもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一三</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一三</div>
                             </td>
                           </tr>
@@ -11202,10 +11203,10 @@
                             <td>
                               <div class="Sentence">一二五をこえ二五〇以下のもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一六</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">一三</div>
                             </td>
                           </tr>
@@ -11213,10 +11214,10 @@
                             <td>
                               <div class="Sentence">二五〇をこえるもの</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">二三</div>
                             </td>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">二三</div>
                             </td>
                           </tr>
@@ -11868,13 +11869,13 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">変圧器の部分</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">温度測定方法</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">温度上昇限度（摂氏・度）</div>
                               </td>
                             </tr>
@@ -11887,7 +11888,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">乾式自冷式巻線</div>
                               </td>
                               <td>
@@ -11929,13 +11930,13 @@
                               <td>
                                 <div class="Sentence">油入自冷式巻線</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">抵抗法</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">五五</div>
                               </td>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">―</div>
                               </td>
                             </tr>
@@ -11951,7 +11952,7 @@
                               <td>
                                 <div class="Sentence">温度計法</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">五〇</div>
                               </td>
                             </tr>
@@ -11962,7 +11963,7 @@
                               <td>
                                 <div class="Sentence">温度計法</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">近接した絶縁物の温度上昇限度に同じ。</div>
                               </td>
                             </tr>
@@ -12205,13 +12206,13 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td rowspan="2" colspan="2">
                                   <div class="Sentence">発電機の種別</div>
                                 </td>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">計器</div>
                                 </td>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">制御用の器具</div>
                                 </td>
                               </tr>
@@ -12230,22 +12231,22 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">直流二線式発電機</div>
                                 </td>
                                 <td>
                                   <div class="Sentence">分巻式のもの</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">電圧計　一</div>
                                   <div class="Sentence">電流計　一</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">母線用電圧計　一</div>
                                   <div class="Sentence">各発電機共通の電圧計及びその切換開閉器　一</div>
                                   <div class="Sentence">各発電機ごとに電流計　一</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">正負二極に過負荷引きはずし装置を有する連動二極自動しや断器　一</div>
                                 </td>
                                 <td>
@@ -12262,26 +12263,26 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">直流三線式発電機</div>
                                 </td>
                                 <td>
                                   <div class="Sentence">分巻式のもの</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">電圧計　一</div>
                                   <div class="Sentence">電流計　一</div>
                                   <div class="Sentence">母線の中性線と正極又は負極の間に電圧計　一</div>
                                   <div class="Sentence">中性線電流計　一</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">母線用電圧計　一</div>
                                   <div class="Sentence">各発電機共通の電圧計及びその切換開閉器　一</div>
                                   <div class="Sentence">各発電機ごとに電流計　一</div>
                                   <div class="Sentence">各発電機ごとに中性線電流計　一</div>
                                   <div class="Sentence">母線の中性線と正極又は負極間に各発電機共通の電圧計及びその切換開閉器　一</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">正負二極に過負荷引きはずし装置を有する連動二極自動しや断器　一</div>
                                   <div class="Sentence">中性線開閉器　一</div>
                                 </td>
@@ -12301,7 +12302,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td colspan="2">
                                   <div class="Sentence">交流単相発電機</div>
                                 </td>
                                 <td>
@@ -12325,19 +12326,19 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">交流三相発電機</div>
                                 </td>
                                 <td>
                                   <div class="Sentence">三線式のもの</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">電圧計　一</div>
                                   <div class="Sentence">各相ごとに電流計一又は各相共通の電流計及びその切換開閉器　一</div>
                                   <div class="Sentence">周波数計　一</div>
                                   <div class="Sentence">電力計　一</div>
                                 </td>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">母線用電圧計　一</div>
                                   <div class="Sentence">各発電機共通の電圧計及びその切換開閉器　一</div>
                                   <div class="Sentence">各発電機各相ごとに電流計一又は発電機ごとに各相共通の電流計及びその切換開閉器　一</div>
@@ -13034,10 +13035,10 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="2">
                                 <div class="Sentence">ケーブルの外径（ミリメートル）</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">帯金の間隔（センチメートル）</div>
                               </td>
                             </tr>
@@ -13620,7 +13621,7 @@
                               <td>
                                 <div class="Sentence">種類</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">回転数</div>
                               </td>
                             </tr>
@@ -13628,7 +13629,7 @@
                               <td>
                                 <div class="Sentence">直巻電動機</div>
                               </td>
-                              <td>
+                              <td colspan="2">
                                 <div class="Sentence">定格回転数の二・〇倍</div>
                               </td>
                             </tr>
@@ -13639,7 +13640,7 @@
                               <td>
                                 <div class="Sentence">定格回転数</div>
                               </td>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence">それぞれの一・二五倍</div>
                               </td>
                             </tr>
@@ -16004,7 +16005,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">国際航海旅客船等以外の船舶であって総トン数一〇〇トン未満のものには、ＭＦ無線電話及びＶＨＦ無線電話を備えることを要しない。</div>
                             </td>
@@ -16054,7 +16055,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　国際航海旅客船等以外の船舶であって次に掲げるものには、ＭＦ無線電話を備えることを要しない。</div>
                               <div class="Sentence">イ　総トン数一〇〇トン未満の船舶</div>
@@ -16093,7 +16094,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　ＭＦ無線電話が常に直接陸上との間で船舶の運航に関する連絡を行うことができるものでない場合には、ＨＦ直接印刷電信、ＨＦ無線電話、インマルサット等直接印刷電信、インマルサット等無線電話、ＭＦ直接印刷電信（常に直接陸上との間で船舶の運航に関する連絡を行うことができるものに限る。）又は告示で定める無線電信等であって常に直接陸上との間で船舶の運航に関する連絡を行うことができるもの（以下「一般通信用無線電信等」という。）（国際航海旅客船等にあっては、ＨＦ直接印刷電信、ＨＦ無線電話、インマルサット等直接印刷電信、インマルサット等無線電話又はＭＦ直接印刷電信に限る。）を備えなければならない。</div>
                               <div class="Sentence">二　一般通信用無線電信等を備える国際航海旅客船等以外の船舶であって次に掲げるものには、ＭＦ無線電話を備えることを要しない。</div>
@@ -16133,7 +16134,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　ＶＨＦ無線電話が常に直接陸上との間で船舶の運航に関する連絡を行うことができるものでない場合には、一般通信用無線電信等を備えなければならない。</div>
                               <div class="Sentence">二　一般通信用無線電信等を備える国際航海旅客船等以外の船舶であって次に掲げるものには、ＶＨＦ無線電話を備えることを要しない。</div>
@@ -16921,7 +16922,8 @@
                 <div class="ParagraphCaption">（経過措置）</div>
                 <div class="ParagraphNum">６</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence">この省令の施行前に建造され、又は建造に着手された船舶にこの省令の施行の際現に備え付けられている揚貨装置（この省令の施行の際建造又は改造中の船舶に備え付けられる予定のものを含む。）であつて、第二条の規定による改正前の<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶設備規程</a>第五編第一章の規定の適用を受けない揚貨装置に該当し、かつ、同条の規定による改正後の同章の規定の適用を受けることとなるものについては、同令第百六十九条の五の規定は、当該船舶に備え付けられている間、適用しない。</div>
+                  <div class="Sentence">この省令の施行前に建造され、又は建造に着手された船舶にこの省令の施行の際現に備え付けられている揚貨装置（この省令の施行の際建造又は改造中の船舶に備え付けられる予定のものを含む。）であつて、第二条の規定による改正前の<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶設備規程</a>第五編第一章の規定の適用を受けない揚貨装置に該当し、かつ、同条の規定による改正後の同章の規定の適用を受けることとなるものについては、<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                    <a class="reference_link" href="L_309M10001000006.html#Mp-At_169_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百六十九条の五</a>の規定は、当該船舶に備え付けられている間、適用しない。</div>
                 </div>
               </div>
               <div id="Sp_昭和四九年八月二日運輸省令第三四号-Pr_7" class="Paragraph" Num="7">
@@ -17172,16 +17174,16 @@
                     <div class="Sentence" Num="2">ただし、第一条中目次の改正規定（「／第七編　昇降設備／第八編　コンテナ設備／」を改める部分に限る。）、第七編の編名を改める改正規定、第七編中第三百三条の前に章名を付する改正規定、第八編の編名を削る改正規定、第三百十一条の次に章名を付する改正規定及び第七編に一章を加える改正規定、第十一条中目次の改正規定及び第十一章を第十二章とし、第十章の次に一章を加える改正規定、第十二条中別表第一の改正規定（「<div class="QuoteStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence"></div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">コンテナ</div>
                             </td>
                             <td>
                               <div class="Sentence">フラツトラツク型のもの</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">１個につき１１，０００円</div>
                             </td>
                           </tr>
@@ -17189,7 +17191,7 @@
                             <td>
                               <div class="Sentence">その他の型のもの</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">１個につき１５，０００円</div>
                             </td>
                           </tr>
@@ -17197,10 +17199,10 @@
                             <td>
                               <div class="Sentence"></div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence"></div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence"></div>
                             </td>
                             <td>
@@ -17211,10 +17213,10 @@
                       </div>」を改める部分に限る。）並びに第十三条中別表の改正規定（「<div class="QuoteStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence"></div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">コンテナ</div>
                             </td>
                             <td>
@@ -17226,7 +17228,7 @@
                             <td>
                               <div class="Sentence">１箇につき</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">２，２００</div>
                             </td>
                           </tr>
@@ -17240,7 +17242,7 @@
                             <td>
                               <div class="Sentence">〃</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">２，８００</div>
                             </td>
                           </tr>
@@ -17248,7 +17250,7 @@
                             <td>
                               <div class="Sentence"></div>
                             </td>
-                            <td>
+                            <td colspan="6">
                               <div class="Sentence"></div>
                             </td>
                             <td>
@@ -17535,7 +17537,8 @@
                   <div class="Sentence" Num="1">この省令は、昭和五十九年一月一日から施行する。</div>
                   <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶安全法施行規則</a>
                     <a class="reference_link" href="L_338M50000800041.html#Mp-At_19_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の三</a>、<a class="reference_link" href="L_338M50000800041.html#Mp-At_32-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十二条第一項</a>、<a class="reference_link" href="L_338M50000800041.html#Mp-At_32-Pr_1-It_22_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二号の四</a>様式及び第二十二号の五様式の改正規定並びに第三条中<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶設備規程</a>
-                    <a class="reference_link" href="L_309M10001000006.html#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>及び<a class="reference_link" href="L_309M10001000006.html#Mp-At_169_26" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百六十九条の二十六</a>の改正規定並びに同令第十三号表の改正規定（「床」を「床（タンクコンテナの床を除く。）」に改める部分以外の部分に限る。）は公布の日から施行する。</div>
+                    <a class="reference_link" href="L_309M10001000006.html#Mp-At_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条</a>及び<a class="reference_link" href="L_309M10001000006.html#Mp-At_169_26" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百六十九条の二十六</a>の改正規定並びに<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                    <a class="reference_link" href="L_309M10001000006.html#Mp-It_13" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十三号</a>表の改正規定（「床」を「床（タンクコンテナの床を除く。）」に改める部分以外の部分に限る。）は公布の日から施行する。</div>
                 </div>
               </div>
             </div>
@@ -18281,7 +18284,8 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">この省令は、船舶安全法及び船舶職員法の一部を改正する法律（平成三年法律第七十五号。以下「改正法」という。）の施行の日（平成四年二月一日。以下「施行日」という。）から施行する。</div>
                     <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶設備規程</a>
-                      <a class="reference_link" href="L_309M10001000006.html#Mp-At_146_10_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十六条の十の三</a>の次に次の見出し及び二条を加える改正規定（第百四十六条の十の五に係る部分に限る。）及び同令第百八十七条の改正規定、第三条中<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶安全法施行規則</a>別表第一及び別表第二の改正規定並びに第八条中<a class="reference_link" href="L_348M50000800050.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶等型式承認規則</a>別表第一及び別表第二の改正規定は公布の日から施行する。</div>
+                      <a class="reference_link" href="L_309M10001000006.html#Mp-At_146_10_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十六条の十の三</a>の次に次の見出し及び二条を加える改正規定（第百四十六条の十の五に係る部分に限る。）及び<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_309M10001000006.html#Mp-At_187" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百八十七条</a>の改正規定、第三条中<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶安全法施行規則</a>別表第一及び別表第二の改正規定並びに第八条中<a class="reference_link" href="L_348M50000800050.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶等型式承認規則</a>別表第一及び別表第二の改正規定は公布の日から施行する。</div>
                   </div>
                 </div>
               </div>
@@ -19345,7 +19349,9 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">この省令は、平成十六年七月一日（以下「施行日」という。）から施行する。</div>
                     <div class="Sentence" Num="2">ただし、第一条の規定（<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶安全法施行規則</a>
-                      <a class="reference_link" href="L_338M50000800041.html#Mp-At_1-Pr_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第十四項</a>の改正規定、同令第四十六条第四項の次に二項を加える改正規定（第五項に係る部分に限る。）及び同令第六十五条の五を第六十五条の六とし、第六十五条の四を第六十五条の五とし、第六十五条の三の次に一条を加える改正規定を除く。）、附則第二条第二項及び第三項の規定並びに附則第三条の規定は、公布の日から施行する。</div>
+                      <a class="reference_link" href="L_338M50000800041.html#Mp-At_1-Pr_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条第十四項</a>の改正規定、<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_338M50000800041.html#Mp-At_46-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第四項</a>の次に二項を加える改正規定（第五項に係る部分に限る。）及び<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_338M50000800041.html#Mp-At_65_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の五</a>を第六十五条の六とし、第六十五条の四を第六十五条の五とし、第六十五条の三の次に一条を加える改正規定を除く。）、附則第二条第二項及び第三項の規定並びに附則第三条の規定は、公布の日から施行する。</div>
                   </div>
                 </div>
               </div>
@@ -19446,7 +19452,9 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence">第一条のうち<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶設備規程</a>
-                          <a class="reference_link" href="L_309M10001000006.html#Mp-At_131" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十一条</a>の次に一条を加える改正規定、同令第百四十六条の二の改正規定及び同令第百四十六条の四十八の次に一条を加える改正規定、第三条のうち<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶安全法施行規則</a>
+                          <a class="reference_link" href="L_309M10001000006.html#Mp-At_131" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十一条</a>の次に一条を加える改正規定、<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_309M10001000006.html#Mp-At_146_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十六条の二</a>の改正規定及び<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_309M10001000006.html#Mp-At_146_48" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十六条の四十八</a>の次に一条を加える改正規定、第三条のうち<a class="reference_link" href="L_338M50000800041.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶安全法施行規則</a>
                           <a class="reference_link" href="L_338M50000800041.html#Mp-At_55_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十五条の二</a>の次に一条を加える改正規定並びに次条第三項から第五項まで及び附則第四条の規定</div>
                       </div>
                       <div class="Column" Num="2">
@@ -19686,9 +19694,15 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">この省令は、平成二十二年七月一日（以下「施行日」という。）から施行する。</div>
                     <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶設備規程</a>
-                      <a class="reference_link" href="L_309M10001000006.html#Mp-At_122_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二十二条の三第二項</a>の改正規定、同令第百二十二条の四第一項及び第三項の改正規定並びに同令第百二十二条の九第一項の改正規定、第三条中<a class="reference_link" href="L_340M50000800037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶消防設備規則</a>
-                      <a class="reference_link" href="L_340M50000800037.html#Mp-At_49-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十九条第一項</a>及び<a class="reference_link" href="L_340M50000800037.html#Mp-At_49-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の改正規定、同令第五十条第一項の改正規定（「旅客定員が三十六人を超える第一種船」を「旅客定員が三十六人を超える第一種船等（限定近海船を除く。）」に改める部分に限る。）、<a class="reference_link" href="L_340M50000800037.html#Mp-At_49-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「第一種船（旅客定員が三十六人以下のものに限る。）」を「旅客定員が三十六人以下の第一種船等（限定近海船を除く。）」に改める部分に限る。）、<a class="reference_link" href="L_340M50000800037.html#Mp-At_49-Pr_5-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第二号</a>の改正規定並びに同令第五十一条第二項第十二号の改正規定並びに第四条中<a class="reference_link" href="L_355M50000800011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶防火構造規則</a>
-                      <a class="reference_link" href="L_355M50000800011.html#Mp-At_25-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条第一項</a>の改正規定、同令第二十六条第一項の改正規定及び同令第二十七条第一項の改正規定は、平成二十四年一月一日から施行する。</div>
+                      <a class="reference_link" href="L_309M10001000006.html#Mp-At_122_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二十二条の三第二項</a>の改正規定、<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_309M10001000006.html#Mp-At_122_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二十二条の四第一項</a>及び<a class="reference_link" href="L_309M10001000006.html#Mp-At_122_4-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三項</a>の改正規定並びに<a class="reference_link" href="L_309M10001000006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_309M10001000006.html#Mp-At_122_9-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百二十二条の九第一項</a>の改正規定、第三条中<a class="reference_link" href="L_340M50000800037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶消防設備規則</a>
+                      <a class="reference_link" href="L_340M50000800037.html#Mp-At_49-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十九条第一項</a>及び<a class="reference_link" href="L_340M50000800037.html#Mp-At_49-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項</a>の改正規定、<a class="reference_link" href="L_340M50000800037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_340M50000800037.html#Mp-At_50-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十条第一項</a>の改正規定（「旅客定員が三十六人を超える第一種船」を「旅客定員が三十六人を超える第一種船等（限定近海船を除く。）」に改める部分に限る。）、<a class="reference_link" href="L_340M50000800037.html#Mp-At_50-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「第一種船（旅客定員が三十六人以下のものに限る。）」を「旅客定員が三十六人以下の第一種船等（限定近海船を除く。）」に改める部分に限る。）、<a class="reference_link" href="L_340M50000800037.html#Mp-At_50-Pr_5-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項第二号</a>の改正規定並びに<a class="reference_link" href="L_340M50000800037.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_340M50000800037.html#Mp-At_51-Pr_2-It_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条第二項第十二号</a>の改正規定並びに第四条中<a class="reference_link" href="L_355M50000800011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶防火構造規則</a>
+                      <a class="reference_link" href="L_355M50000800011.html#Mp-At_25-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条第一項</a>の改正規定、<a class="reference_link" href="L_355M50000800011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_355M50000800011.html#Mp-At_26-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十六条第一項</a>の改正規定及び<a class="reference_link" href="L_355M50000800011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_355M50000800011.html#Mp-At_27-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十七条第一項</a>の改正規定は、平成二十四年一月一日から施行する。</div>
                   </div>
                 </div>
               </div>
@@ -20746,21 +20760,21 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence">機器の部分</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">型式</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">温度上昇限度（摂氏・度）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">Ａ種絶縁のもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">Ｂ種絶縁のもの</div>
                     </td>
                   </tr>
@@ -20779,7 +20793,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">交流機回転子巻線</div>
                     </td>
                     <td>
@@ -20816,7 +20830,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">整流子をもつ電機子の巻線</div>
                     </td>
                     <td>
@@ -20853,7 +20867,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">絶縁を施した回転子巻線</div>
                     </td>
                     <td>
@@ -20890,10 +20904,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">直流を通じる界磁巻線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一般のもの</div>
                     </td>
                     <td>
@@ -20930,7 +20944,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">露出した平打巻</div>
                     </td>
                     <td>
@@ -20967,7 +20981,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">円筒回転子形交流タービン発電機</div>
                     </td>
                     <td>
@@ -20984,7 +20998,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">鉄心その他の部分で絶縁巻線に近接した部分</div>
                     </td>
                     <td>
@@ -21021,15 +21035,15 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">絶縁されない短絡巻線、鉄心その他の機械的部分で絶縁巻線に近接しない部分、ブラシ及びブラシ保持器</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">機械的に支障なく、かつ、附近の絶縁物に損傷を起さない温度</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">整流子及び集電環</div>
                     </td>
                     <td>
@@ -21068,7 +21082,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">機器の部分</div>
                     </td>
                     <td>
@@ -21076,21 +21090,21 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">直流機及び交流機の電機子巻線</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一キロワツト以上のもの　２Ｅ＋１０００　（ただし、最低一五〇〇）</div>
                       <div class="Sentence">一キロワツト未満のもの　定格電圧が五〇ボルト未満のものは五〇〇、定格電圧が五〇ボルト以上二五〇ボルト未満のものは一〇〇〇、二五〇ボルト以上のものは　２Ｅ＋５００</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">直流機界磁巻線</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">電動機として起動しない同期機の界磁巻線</div>
                     </td>
                     <td>
@@ -21098,7 +21112,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電動機として起動する同期機の界磁巻線</div>
                     </td>
                     <td>
@@ -21117,7 +21131,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">絶縁した起動用回転子巻線</div>
                     </td>
                     <td>
@@ -21125,7 +21139,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">誘導機一次巻線</div>
                     </td>
                     <td>
@@ -21134,7 +21148,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">巻線形誘導機二次巻線</div>
                     </td>
                     <td>
@@ -21183,10 +21197,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">機器の部分</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">温度上昇限度（温度計法による。摂氏・度）</div>
                     </td>
                   </tr>
@@ -21199,7 +21213,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">電圧コイル</div>
                     </td>
                     <td>
@@ -21235,7 +21249,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">電流コイル</div>
                     </td>
                     <td>
@@ -21271,7 +21285,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">裸コイル</div>
                     </td>
                     <td>
@@ -21282,7 +21296,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">接触片</div>
                     </td>
                     <td>
@@ -21329,7 +21343,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">母線及び接続導体</div>
                     </td>
                     <td>
@@ -21340,7 +21354,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">端子</div>
                     </td>
                     <td>
@@ -21365,7 +21379,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">裸抵抗体</div>
                     </td>
                     <td>
@@ -21390,7 +21404,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">埋込抵抗体</div>
                     </td>
                     <td>
@@ -21401,7 +21415,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">抵抗器</div>
                     </td>
                     <td>
@@ -21442,10 +21456,10 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">荷重を負荷する箇所</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">荷重を負荷する方向</div>
                       </td>
                       <td>
@@ -21456,10 +21470,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">上部すみ金具によりつり上げる場合</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">上部すみ金具</div>
                       </td>
                       <td>
@@ -21468,10 +21482,10 @@
                       <td>
                         <div class="Sentence">水平面に対し六〇度上方向</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">鉛直方向の分力が最大総重量の二倍（上部すみ金具一個あたりの鉛直分力は、最大総重量の二分の一）となる大きさ</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">一　荷重を静かに負荷し、つり上げ後五分間静止させること。</div>
                         <div class="Sentence">二　床への荷重は、床全体に均等に負荷すること。</div>
                       </td>
@@ -21488,7 +21502,7 @@
                       <td>
                         <div class="Sentence">床</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">鉛直下方向</div>
                       </td>
                       <td>
@@ -21496,10 +21510,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">下部すみ金具によりつり上げる場合</div>
                       </td>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">下部すみ金具</div>
                       </td>
                       <td>
@@ -21508,10 +21522,10 @@
                       <td>
                         <div class="Sentence">水平面に対し六〇度上方向</div>
                       </td>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">鉛直方向の分力が最大総重量の二倍（下部すみ金具一個あたりの鉛直分力は、最大総重量の二分の一）となる大きさ</div>
                       </td>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">一　荷重を静かに負荷し、つり上げ後五分間静止させること。</div>
                         <div class="Sentence">二　床への荷重は、床全体に均等に負荷すること。</div>
                       </td>
@@ -21544,7 +21558,7 @@
                       <td>
                         <div class="Sentence">床</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">鉛直下方向</div>
                       </td>
                       <td>
@@ -21552,19 +21566,19 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">フオークポケツトにより持ち上げる場合</div>
                       </td>
                       <td>
                         <div class="Sentence">フオークポケツト</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">鉛直上方向</div>
                       </td>
                       <td>
                         <div class="Sentence">最大総重量の一・二五倍（一ポケツトあたりの荷重は、最大総重量の〇・六二五倍）の大きさ</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">一　使用されるフオークと同じ幅を有する硬質の棒を、各フオークポケツトに、フオークポケツトの長さの四分の三まで水平に差し込みコンテナを持ち上げることにより、フオークポケツトに荷重を負荷すること。</div>
                         <div class="Sentence">二　荷重を静かに負荷し、持ち上げ後五分間静止させること。</div>
                         <div class="Sentence">三　床への荷重は、床全体に均等に負荷すること。</div>
@@ -21574,7 +21588,7 @@
                       <td>
                         <div class="Sentence">床</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">鉛直下方向</div>
                       </td>
                       <td>
@@ -21585,7 +21599,7 @@
                       <td>
                         <div class="Sentence">右記以外のものによる場合</div>
                       </td>
-                      <td>
+                      <td colspan="5">
                         <div class="Sentence">管海官庁の適当と認めたところによること。</div>
                       </td>
                     </tr>
@@ -21623,7 +21637,7 @@
                       <td>
                         <div class="Sentence">最大積重ね荷重の一・八倍の大きさ</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">一　水平で硬質の平面上にコンテナを置くこと。</div>
                         <div class="Sentence">二　外部より荷重を負荷する平面は、当該荷重が負荷される上部隅金具上の平面と同一寸法とすること。</div>
                         <div class="Sentence">三　荷重を負荷する平面は、当該荷重が負荷される上部隅金具上の平面から、それぞれ、長手方向に三八ミリメートル、横手方向に二五ミリメートル平行移動した四平面とすること。</div>
@@ -21796,7 +21810,7 @@
                       <td>
                         <div class="Sentence">最大総重量の二倍（下部すみ金具一個あたりの荷重は、最大総重量）の大きさ</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">一　コンテナを、荷重を負荷する下部すみ金具がある端面と反対側の端面にある二個の下部すみ金具により鉛直方向及び水平方向に緊締すること。</div>
                         <div class="Sentence">二　コンテナに圧縮荷重及び引張荷重を個別に負荷すること。</div>
                         <div class="Sentence">三　床への荷重は、床全体に均等に負荷すること。</div>

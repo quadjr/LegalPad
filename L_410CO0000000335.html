@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -848,7 +848,7 @@
                     <td>
                       <div class="Sentence">一億二千五百四十万円</div>
                     </td>
-                    <td>
+                    <td rowspan="35">
                       <div class="Sentence">平成十年十月二十二日</div>
                     </td>
                   </tr>
@@ -1131,7 +1131,7 @@
                     <td>
                       <div class="Sentence">九億四百六十万円</div>
                     </td>
-                    <td>
+                    <td rowspan="28">
                       <div class="Sentence">平成十年十一月二十日</div>
                     </td>
                   </tr>
@@ -1358,7 +1358,7 @@
                     <td>
                       <div class="Sentence">三十億千七百三十七万千円</div>
                     </td>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence">平成十年十二月二十一日</div>
                     </td>
                   </tr>
@@ -1465,7 +1465,7 @@
                     <td>
                       <div class="Sentence">二百三十六億三千四百万円</div>
                     </td>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">平成十一年二月二十二日</div>
                     </td>
                   </tr>
@@ -1585,7 +1585,7 @@
                         <a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第四千五百号まで</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">平成十年十月二十二日</div>
                     </td>
                   </tr>
@@ -1654,7 +1654,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第百十一回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -1676,7 +1676,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第百十二回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -1698,7 +1698,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第百十三回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -1731,7 +1731,7 @@
                         <a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第千五百号まで</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence">平成十年十一月二十日</div>
                     </td>
                   </tr>
@@ -1902,7 +1902,7 @@
                         <a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第二千五百号まで</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence">平成十年十二月二十一日</div>
                     </td>
                   </tr>
@@ -1933,7 +1933,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第三十三回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -1994,7 +1994,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第三十七回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2043,7 +2043,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第五十一回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2066,7 +2066,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第五十二回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2112,12 +2112,12 @@
                         <a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第三千号まで</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="15">
                       <div class="Sentence">平成十一年一月二十九日</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第六十一回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2139,7 +2139,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第六十二回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2299,7 +2299,7 @@
                         <a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第五百号まで</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="25">
                       <div class="Sentence">平成十一年二月二十二日</div>
                     </td>
                   </tr>
@@ -2406,7 +2406,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第七十六回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2493,7 +2493,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第八十二回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2516,7 +2516,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第八十三回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2551,7 +2551,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第九十三回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2574,7 +2574,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第九十八回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2608,12 +2608,12 @@
                         <a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号から第七千号まで</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="15">
                       <div class="Sentence">平成十一年三月二十三日</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第二十四回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2635,7 +2635,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第二十五回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2658,7 +2658,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第八十四回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2717,7 +2717,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第百七回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>
@@ -2752,7 +2752,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">政府保証特別第百十回日本国有鉄道清算事業団債券</div>
                     </td>
                     <td>

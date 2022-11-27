@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1422,7 +1422,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">試合に係る合致割合又は競技会に係る合致割合</div>
                     </td>
                     <td>
@@ -1430,7 +1430,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一等</div>
                     </td>
                     <td>
@@ -1440,7 +1440,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二等</div>
                     </td>
                     <td>
@@ -1450,12 +1450,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">備考</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">一　この表における算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                     </td>
                   </tr>
@@ -1466,7 +1466,7 @@
                     <td>
                       <div class="Sentence" Num="1">イ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ａ　スポーツ振興投票券の売上金額</div>
                     </td>
                   </tr>
@@ -1477,7 +1477,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｂ　政令で定める率</div>
                     </td>
                   </tr>
@@ -1488,7 +1488,7 @@
                     <td>
                       <div class="Sentence" Num="1">ハ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｃ　<a class="reference_link" href="L_410AC1000000063.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                         <a class="reference_link" href="L_410AC1000000063.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定による各試合に係る合致割合に係る加算金</div>
                     </td>
@@ -1500,7 +1500,7 @@
                     <td>
                       <div class="Sentence" Num="1">ニ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｆ　二分の一から五分の四の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1511,12 +1511,12 @@
                     <td>
                       <div class="Sentence" Num="1">ホ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｇ　ｆとの合計が一となるよう五分の一から二分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">二　それぞれの試合に係る合致割合又は競技会に係る合致割合において、この表の下欄に掲げる算式による配分金額（この号において「算式配分金額」という。）を各合致投票券にあん分した金額がスポーツ振興投票券の券面金額に満たない場合には、センターは、別に文部科学大臣の定めるところにより、それぞれの試合に係る合致割合又は競技会に係る合致割合について算式配分金額の調整を行うことができる。</div>
                     </td>
                   </tr>
@@ -1528,7 +1528,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">試合に係る合致割合又は競技会に係る合致割合</div>
                     </td>
                     <td>
@@ -1536,7 +1536,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一等</div>
                     </td>
                     <td>
@@ -1546,7 +1546,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">備考　この表における算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                     </td>
                   </tr>
@@ -1557,7 +1557,7 @@
                     <td>
                       <div class="Sentence" Num="1">イ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ａ　スポーツ振興投票券の売上金額</div>
                     </td>
                   </tr>
@@ -1568,7 +1568,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｂ　政令で定める率</div>
                     </td>
                   </tr>
@@ -1579,7 +1579,7 @@
                     <td>
                       <div class="Sentence" Num="1">ハ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｃ　<a class="reference_link" href="L_410AC1000000063.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                         <a class="reference_link" href="L_410AC1000000063.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定による試合に係る合致割合に係る加算金</div>
                     </td>
@@ -1592,7 +1592,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">試合に係る合致割合又は競技会に係る合致割合</div>
                     </td>
                     <td>
@@ -1600,7 +1600,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一等</div>
                     </td>
                     <td>
@@ -1610,7 +1610,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二等</div>
                     </td>
                     <td>
@@ -1620,7 +1620,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">三等</div>
                     </td>
                     <td>
@@ -1630,12 +1630,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">備考</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">一　この表における算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                     </td>
                   </tr>
@@ -1646,7 +1646,7 @@
                     <td>
                       <div class="Sentence" Num="1">イ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ａ　スポーツ振興投票券の売上金額</div>
                     </td>
                   </tr>
@@ -1657,7 +1657,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｂ　政令で定める率</div>
                     </td>
                   </tr>
@@ -1668,7 +1668,7 @@
                     <td>
                       <div class="Sentence" Num="1">ハ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｃ　<a class="reference_link" href="L_410AC1000000063.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                         <a class="reference_link" href="L_410AC1000000063.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定による各試合に係る合致割合に係る加算金</div>
                     </td>
@@ -1680,7 +1680,7 @@
                     <td>
                       <div class="Sentence" Num="1">ニ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｆ　三分の一から五分の四の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1691,7 +1691,7 @@
                     <td>
                       <div class="Sentence" Num="1">ホ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｇ　十分の一から三分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1702,12 +1702,12 @@
                     <td>
                       <div class="Sentence" Num="1">ヘ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｈ　ｆ及びｇとの合計が一となるよう十分の一から三分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">二　それぞれの試合に係る合致割合又は競技会に係る合致割合において、この表の下欄に掲げる算式による配分金額（この号において「算式配分金額」という。）を各合致投票券にあん分した金額がスポーツ振興投票券の券面金額に満たない場合には、センターは、別に文部科学大臣の定めるところにより、それぞれの試合に係る合致割合又は競技会に係る合致割合について算式配分金額の調整を行うことができる。</div>
                     </td>
                   </tr>
@@ -1719,7 +1719,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">試合に係る合致割合又は競技会に係る合致割合</div>
                     </td>
                     <td>
@@ -1727,7 +1727,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一等</div>
                     </td>
                     <td>
@@ -1737,7 +1737,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二等</div>
                     </td>
                     <td>
@@ -1747,7 +1747,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">三等</div>
                     </td>
                     <td>
@@ -1757,7 +1757,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">四等</div>
                     </td>
                     <td>
@@ -1767,7 +1767,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　この表における算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                     </td>
@@ -1779,7 +1779,7 @@
                     <td>
                       <div class="Sentence" Num="1">イ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ａ　スポーツ振興投票券の売上金額</div>
                     </td>
                   </tr>
@@ -1790,7 +1790,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｂ　政令で定める率</div>
                     </td>
                   </tr>
@@ -1801,7 +1801,7 @@
                     <td>
                       <div class="Sentence" Num="1">ハ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｃ　<a class="reference_link" href="L_410AC1000000063.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                         <a class="reference_link" href="L_410AC1000000063.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定による各試合に係る合致割合に係る加算金</div>
                     </td>
@@ -1813,7 +1813,7 @@
                     <td>
                       <div class="Sentence" Num="1">ニ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｆ　四分の一から五分の四の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1824,7 +1824,7 @@
                     <td>
                       <div class="Sentence" Num="1">ホ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｇ　十分の一から四分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1835,7 +1835,7 @@
                     <td>
                       <div class="Sentence" Num="1">ヘ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｈ　二十分の一から四分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1846,12 +1846,12 @@
                     <td>
                       <div class="Sentence" Num="1">ト</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｉ　ｆ、ｇ及びｈとの合計が一となるよう二十分の一から四分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">二　それぞれの試合に係る合致割合又は競技会に係る合致割合において、この表の下欄に掲げる算式による配分金額（この号において「算式配分金額」という。）を各合致投票券にあん分した金額がスポーツ振興投票券の券面金額に満たない場合には、センターは、別に文部科学大臣の定めるところにより、それぞれの試合に係る合致割合又は競技会に係る合致割合について算式配分金額の調整を行うことができる。</div>
                     </td>
                   </tr>
@@ -1863,7 +1863,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">試合に係る合致割合又は競技会に係る合致割合</div>
                     </td>
                     <td>
@@ -1871,7 +1871,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一等</div>
                     </td>
                     <td>
@@ -1881,7 +1881,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二等</div>
                     </td>
                     <td>
@@ -1891,7 +1891,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">三等</div>
                     </td>
                     <td>
@@ -1901,7 +1901,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">四等</div>
                     </td>
                     <td>
@@ -1911,7 +1911,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">五等</div>
                     </td>
                     <td>
@@ -1921,7 +1921,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　この表における算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                     </td>
@@ -1933,7 +1933,7 @@
                     <td>
                       <div class="Sentence" Num="1">イ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ａ　スポーツ振興投票券の売上金額</div>
                     </td>
                   </tr>
@@ -1944,7 +1944,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｂ　政令で定める率</div>
                     </td>
                   </tr>
@@ -1955,7 +1955,7 @@
                     <td>
                       <div class="Sentence" Num="1">ハ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｃ　<a class="reference_link" href="L_410AC1000000063.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                         <a class="reference_link" href="L_410AC1000000063.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定による各試合に係る合致割合に係る加算金</div>
                     </td>
@@ -1967,7 +1967,7 @@
                     <td>
                       <div class="Sentence" Num="1">ニ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｈ　五分の一から五分の四の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1978,7 +1978,7 @@
                     <td>
                       <div class="Sentence" Num="1">ホ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｉ　十分の一から五分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -1989,7 +1989,7 @@
                     <td>
                       <div class="Sentence" Num="1">ヘ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｊ　二十五分の一から五分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -2000,7 +2000,7 @@
                     <td>
                       <div class="Sentence" Num="1">ト</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｋ　二十五分の一から五分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -2011,12 +2011,12 @@
                     <td>
                       <div class="Sentence" Num="1">チ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｌ　ｈ、ｉ、ｊ及びｋとの合計が一となるよう二十五分の一から五分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">二　それぞれの試合に係る合致割合又は競技会に係る合致割合において、この表の下欄に掲げる算式による配分金額（この号において「算式配分金額」という。）を各合致投票券にあん分した金額がスポーツ振興投票券の券面金額に満たない場合には、センターは、別に文部科学大臣の定めるところにより、それぞれの試合に係る合致割合又は競技会に係る合致割合について算式配分金額の調整を行うことができる。</div>
                     </td>
                   </tr>
@@ -2028,7 +2028,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">試合に係る合致割合又は競技会に係る合致割合</div>
                     </td>
                     <td>
@@ -2036,7 +2036,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一等</div>
                     </td>
                     <td>
@@ -2046,7 +2046,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二等</div>
                     </td>
                     <td>
@@ -2056,7 +2056,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">三等</div>
                     </td>
                     <td>
@@ -2066,7 +2066,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">四等</div>
                     </td>
                     <td>
@@ -2076,7 +2076,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">五等</div>
                     </td>
                     <td>
@@ -2086,7 +2086,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">六等</div>
                     </td>
                     <td>
@@ -2096,7 +2096,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　この表における算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                     </td>
@@ -2108,7 +2108,7 @@
                     <td>
                       <div class="Sentence" Num="1">イ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ａ　スポーツ振興投票券の売上金額</div>
                     </td>
                   </tr>
@@ -2119,7 +2119,7 @@
                     <td>
                       <div class="Sentence" Num="1">ロ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｂ　政令で定める率</div>
                     </td>
                   </tr>
@@ -2130,7 +2130,7 @@
                     <td>
                       <div class="Sentence" Num="1">ハ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">Ｃ　<a class="reference_link" href="L_410AC1000000063.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                         <a class="reference_link" href="L_410AC1000000063.html#Mp-At_14" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条</a>の規定による各試合に係る合致割合に係る加算金</div>
                     </td>
@@ -2142,7 +2142,7 @@
                     <td>
                       <div class="Sentence" Num="1">ニ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｊ　六分の一から五分の四の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -2153,7 +2153,7 @@
                     <td>
                       <div class="Sentence" Num="1">ホ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｋ　五十分の三から六分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -2164,7 +2164,7 @@
                     <td>
                       <div class="Sentence" Num="1">ヘ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｌ　五十分の一から六分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -2175,7 +2175,7 @@
                     <td>
                       <div class="Sentence" Num="1">ト</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｍ　五十分の一から六分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -2186,7 +2186,7 @@
                     <td>
                       <div class="Sentence" Num="1">チ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｎ　五十分の一から六分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
@@ -2197,12 +2197,12 @@
                     <td>
                       <div class="Sentence" Num="1">リ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ｏ　ｊ、ｋ、ｌ、ｍ及びｎとの合計が一となるよう二十五分の一から六分の一の範囲内においてセンターが定める率</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">二　それぞれの試合に係る合致割合又は競技会に係る合致割合において、この表の下欄に掲げる算式による配分金額（この号において「算式配分金額」という。）を各合致投票券にあん分した金額がスポーツ振興投票券の券面金額に満たない場合には、センターは、別に文部科学大臣の定めるところにより、それぞれの試合に係る合致割合又は競技会に係る合致割合について算式配分金額の調整を行うことができる。</div>
                     </td>
                   </tr>

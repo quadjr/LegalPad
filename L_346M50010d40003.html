@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2820,10 +2820,10 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">公害防止管理者の種類</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">学歴及び実務の経験</div>
                     </td>
                   </tr>
@@ -2839,13 +2839,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">大気関係第二種公害防止管理者、大気関係第三種公害防止管理者及び大気関係第四種公害防止管理者</div>
                     </td>
                     <td>
                       <div class="Sentence">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>に基づく大学（短期大学を除く。）又は旧大学令（大正七年勅令第三百八十八号）に基づく大学において薬学、工学又は化学の課程を修めて卒業したこと。</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">ばい煙発生施設又はばい煙を処理するための施設の維持及び管理</div>
                     </td>
                     <td>
@@ -2877,13 +2877,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">水質関係第二種公害防止管理者、水質関係第三種公害防止管理者及び水質関係第四種公害防止管理者</div>
                     </td>
                     <td>
                       <div class="Sentence">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>に基づく大学（短期大学を除く。）又は旧大学令に基づく大学において薬学、工学、化学又は農学（水産学を含み、農業経済学を除く。以下同じ。）の課程を修めて卒業したこと。</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">汚水等排出施設又は汚水等を処理するための施設の維持及び管理</div>
                     </td>
                     <td>
@@ -2915,13 +2915,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">騒音・振動関係公害防止管理者</div>
                     </td>
                     <td>
                       <div class="Sentence">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>に基づく大学（短期大学を除く。）又は旧大学令に基づく大学において薬学、工学又は化学の課程を修めて卒業したこと。</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">騒音発生施設若しくは騒音を防止するための施設又は振動発生施設若しくは振動を防止するための施設の維持及び管理</div>
                     </td>
                     <td>
@@ -2953,13 +2953,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">特定粉じん関係公害防止管理者及び一般粉じん関係公害防止管理者</div>
                     </td>
                     <td>
                       <div class="Sentence">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>に基づく大学（短期大学を除く。）又は旧大学令に基づく大学において薬学、工学又は化学の課程を修めて卒業したこと。</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">特定粉じん発生施設若しくは特定粉じんを処理するための施設又は一般粉じん発生施設若しくは一般粉じんを処理するための施設の維持及び管理</div>
                     </td>
                     <td>
@@ -2991,13 +2991,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">ダイオキシン類関係公害防止管理者</div>
                     </td>
                     <td>
                       <div class="Sentence">一　<a class="reference_link" href="L_322AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">学校教育法</a>に基づく大学（短期大学を除く。）又は旧大学令に基づく大学において薬学、工学又は化学の課程を修めて卒業したこと。</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">ダイオキシン類発生施設又はダイオキシン類を処理するための施設の維持及び管理</div>
                     </td>
                     <td>
@@ -3094,7 +3094,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
                         <a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三の一の項の下欄<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>
                       </div>
@@ -3124,7 +3124,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">
                         <a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三の三の項の下欄<a class="reference_link" href="#Mp-It_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六号</a>
                       </div>
@@ -3178,7 +3178,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">
                         <a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三の五の項の下欄<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>
                       </div>
@@ -3216,7 +3216,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">
                         <a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三の七の項の下欄<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>
                       </div>
@@ -3270,7 +3270,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
                         <a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三の九の項の下欄<a class="reference_link" href="#Mp-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二号</a>
                       </div>
@@ -3302,7 +3302,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
                         <a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三の十の項の下欄<a class="reference_link" href="#Mp-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>
                       </div>
@@ -3332,7 +3332,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
                         <a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第三の十二の項の下欄<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一号</a>
                       </div>
@@ -3525,7 +3525,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">大気関係第一種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3534,7 +3534,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">二時間</div>
                     </td>
                   </tr>
@@ -3579,7 +3579,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">大気関係第二種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3588,7 +3588,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">一時間三十分</div>
                     </td>
                   </tr>
@@ -3625,7 +3625,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">大気関係第三種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3634,7 +3634,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">二時間</div>
                     </td>
                   </tr>
@@ -3671,7 +3671,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">大気関係第四種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3680,7 +3680,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">一時間</div>
                     </td>
                   </tr>
@@ -3709,7 +3709,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">水質関係第一種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3718,7 +3718,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">二時間</div>
                     </td>
                   </tr>
@@ -3755,7 +3755,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">水質関係第二種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3764,7 +3764,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">一時間三十分</div>
                     </td>
                   </tr>
@@ -3793,7 +3793,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">水質関係第三種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3802,7 +3802,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">二時間</div>
                     </td>
                   </tr>
@@ -3831,7 +3831,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">水質関係第四種公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3840,7 +3840,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">一時間</div>
                     </td>
                   </tr>
@@ -3861,7 +3861,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">騒音・振動関係公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3870,7 +3870,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">二時間</div>
                     </td>
                   </tr>
@@ -3891,7 +3891,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">特定粉じん関係公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3900,7 +3900,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">一時間</div>
                     </td>
                   </tr>
@@ -3921,7 +3921,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">一般粉じん関係公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3930,7 +3930,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">一時間</div>
                     </td>
                   </tr>
@@ -3951,7 +3951,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">ダイオキシン類関係公害防止管理者講習</div>
                     </td>
                     <td>
@@ -3960,7 +3960,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">一時間三十分</div>
                     </td>
                   </tr>
@@ -3981,7 +3981,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">公害防止主任管理者講習</div>
                     </td>
                     <td>
@@ -3990,7 +3990,7 @@
                     <td>
                       <div class="Sentence">三時間</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">二時間三十分</div>
                     </td>
                   </tr>

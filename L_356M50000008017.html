@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1789,27 +1789,27 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">種別</div>
                           </td>
-                          <td>
+                          <td colspan="5">
                             <div class="Sentence">作動試験</div>
                           </td>
-                          <td>
+                          <td colspan="5">
                             <div class="Sentence">不作動試験</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">階段上昇</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">直線上昇</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">階段上昇</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">直線上昇</div>
                           </td>
                         </tr>
@@ -1855,13 +1855,13 @@
                           <td>
                             <div class="Sentence">七〇</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">三〇</div>
                           </td>
                           <td>
                             <div class="Sentence">一〇</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">四・五</div>
                           </td>
                           <td>
@@ -1870,13 +1870,13 @@
                           <td>
                             <div class="Sentence">五〇</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">一</div>
                           </td>
                           <td>
                             <div class="Sentence">二</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">一五</div>
                           </td>
                         </tr>
@@ -2057,10 +2057,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">種別</div>
                             </td>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">室温</div>
                             </td>
                           </tr>
@@ -2079,7 +2079,7 @@
                             <td>
                               <div class="Sentence">四〇秒</div>
                             </td>
-                            <td>
+                            <td rowspan="3">
                               <div class="Sentence">室温θｒ（度）のときの作動時間ｔ（秒）は、次の式より算出する。</div>
                               <div class="Sentence">
                                 <div class="ArithFormula">
@@ -2160,27 +2160,27 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">種別</div>
                           </td>
-                          <td>
+                          <td colspan="5">
                             <div class="Sentence">作動試験</div>
                           </td>
-                          <td>
+                          <td colspan="5">
                             <div class="Sentence">不作動試験</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">階段上昇</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">直線上昇</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">階段上昇</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">直線上昇</div>
                           </td>
                         </tr>
@@ -2226,13 +2226,13 @@
                           <td>
                             <div class="Sentence">七〇</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">三〇</div>
                           </td>
                           <td>
                             <div class="Sentence">一〇</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">四・五</div>
                           </td>
                           <td>
@@ -2241,13 +2241,13 @@
                           <td>
                             <div class="Sentence">五〇</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">一</div>
                           </td>
                           <td>
                             <div class="Sentence">二</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">一〇</div>
                           </td>
                         </tr>
@@ -2382,13 +2382,13 @@
                           <td>
                             <div class="Sentence">〇・一九</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">二〇以上四〇以下</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">三〇</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">五</div>
                           </td>
                         </tr>
@@ -2479,13 +2479,13 @@
                           <td>
                             <div class="Sentence">五</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">二〇以上四〇以下</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">三〇</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">五</div>
                           </td>
                         </tr>
@@ -2579,7 +2579,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">一種</div>
                           </td>
                           <td>
@@ -2588,13 +2588,13 @@
                           <td>
                             <div class="Sentence">〇・八×Ｌ１＋二九</div>
                           </td>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">〇・三×Ｌ２</div>
                           </td>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">三〇</div>
                           </td>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence">二</div>
                           </td>
                         </tr>
@@ -2607,7 +2607,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">二種</div>
                           </td>
                           <td>
@@ -2746,10 +2746,10 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">区分</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">公称感知濃度範囲</div>
                           </td>
                         </tr>

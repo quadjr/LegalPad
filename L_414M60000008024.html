@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1471,7 +1471,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">対象火気設備等</div>
                           </td>
                           <td>
@@ -1479,7 +1479,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">火花を生ずる設備</div>
                           </td>
                           <td>
@@ -1490,7 +1490,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">放電加工機</div>
                           </td>
                           <td>
@@ -1501,7 +1501,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">変電設備</div>
                           </td>
                           <td>
@@ -1512,7 +1512,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">内燃機関を原動力とする発電設備</div>
                           </td>
                           <td>
@@ -1538,7 +1538,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">蓄電池設備</div>
                           </td>
                           <td>
@@ -1549,7 +1549,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">ネオン管灯設備</div>
                           </td>
                           <td>
@@ -1560,7 +1560,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">舞台装置等の電気設備</div>
                           </td>
                           <td>
@@ -1571,7 +1571,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">急速充電設備</div>
                           </td>
                           <td>
@@ -1773,14 +1773,14 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="7">
                       <div class="Sentence">対象火気設備等又は対象火気器具等の種別</div>
                     </td>
                     <td>
                       <div class="Sentence">
               </div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">離隔距離（ｃｍ）</div>
                     </td>
                   </tr>
@@ -1805,10 +1805,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6" colspan="3">
                       <div class="Sentence">炉</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence">開放炉</div>
                     </td>
                     <td>
@@ -1829,7 +1829,7 @@
                     <td>
                       <div class="Sentence">２００</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">
               </div>
                     </td>
@@ -1875,7 +1875,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence">開放炉以外</div>
                     </td>
                     <td>
@@ -1938,19 +1938,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence">ふろがま</div>
                     </td>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">浴室内設置</div>
                     </td>
                     <td>
@@ -1971,7 +1971,7 @@
                     <td>
                       <div class="Sentence">１５</div>
                     </td>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence">注：浴槽との離隔距離は０ｃｍとするが、合成樹脂浴槽（ポリプロピレン浴槽等）の場合は２ｃｍとする。</div>
                     </td>
                   </tr>
@@ -1996,7 +1996,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence">浴室外設置</div>
                     </td>
                     <td>
@@ -2059,7 +2059,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">密閉式</div>
                     </td>
                     <td>
@@ -2079,7 +2079,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">屋外用</div>
                     </td>
                     <td>
@@ -2099,13 +2099,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">浴室内設置</div>
                     </td>
                     <td>
@@ -2148,7 +2148,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence">浴室外設置</div>
                     </td>
                     <td>
@@ -2211,7 +2211,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">密閉式</div>
                     </td>
                     <td>
@@ -2231,7 +2231,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">屋外用</div>
                     </td>
                     <td>
@@ -2251,10 +2251,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
@@ -2274,7 +2274,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
@@ -2294,7 +2294,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">上記に分類されないもの</div>
                     </td>
                     <td>
@@ -2314,7 +2314,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">温風暖房機</div>
                     </td>
                     <td>
@@ -2351,25 +2351,25 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence">注１：風道を使用するものにあっては１５ｃｍとする。</div>
                       <div class="Sentence">注２：ダクト接続型以外の場合にあっては１００ｃｍとする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="4" colspan="2">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">強制対流型</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">温風を前方向に吹き出すもの</div>
                     </td>
                     <td>
@@ -2446,7 +2446,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">密閉式</div>
                     </td>
                     <td>
@@ -2469,13 +2469,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">強制対流型</div>
                     </td>
                     <td>
@@ -2538,7 +2538,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">密閉式</div>
                     </td>
                     <td>
@@ -2561,7 +2561,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">上記に分類されないもの</div>
                     </td>
                     <td>
@@ -2581,16 +2581,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">厨房設備</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">開放式</div>
                     </td>
                     <td>
@@ -2611,7 +2611,7 @@
                     <td>
                       <div class="Sentence">１５　注</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">注：機器本体上方の側方又は後方の離隔距離を示す。</div>
                     </td>
                   </tr>
@@ -2636,10 +2636,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">開放式</div>
                     </td>
                     <td>
@@ -2682,10 +2682,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3" colspan="4">
                       <div class="Sentence">上記に分類されないもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">使用温度が８００℃以上のもの</div>
                     </td>
                     <td>
@@ -2705,7 +2705,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">使用温度が３００℃以上８００℃未満のもの</div>
                     </td>
                     <td>
@@ -2725,7 +2725,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">使用温度が３００℃未満のもの</div>
                     </td>
                     <td>
@@ -2745,16 +2745,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="19">
                       <div class="Sentence">ボイラー</div>
                     </td>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">開放式</div>
                     </td>
                     <td>
@@ -2775,7 +2775,7 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="19">
                       <div class="Sentence">
               </div>
                     </td>
@@ -2801,7 +2801,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="4">
                       <div class="Sentence">半密閉式</div>
                     </td>
                     <td>
@@ -2838,7 +2838,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">密閉式</div>
                     </td>
                     <td>
@@ -2858,7 +2858,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">屋外用</div>
                     </td>
                     <td>
@@ -2901,10 +2901,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">開放式</div>
                     </td>
                     <td>
@@ -2947,7 +2947,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">半密閉式</div>
                     </td>
                     <td>
@@ -2967,7 +2967,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">密閉式</div>
                     </td>
                     <td>
@@ -2987,7 +2987,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">屋外用</div>
                     </td>
                     <td>
@@ -3030,10 +3030,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="5">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
@@ -3070,7 +3070,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="5">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
@@ -3107,7 +3107,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="6">
                       <div class="Sentence">上記に分類されないもの</div>
                     </td>
                     <td>
@@ -3144,19 +3144,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">ストーブ</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">バーナーが露出</div>
                     </td>
                     <td>
@@ -3177,7 +3177,7 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence">注：熱対流方向が一方向に集中する場合にあっては６０ｃｍとする。</div>
                     </td>
                   </tr>
@@ -3188,7 +3188,7 @@
                     <td>
                       <div class="Sentence">バーナーが隠ぺい</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -3208,13 +3208,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">バーナーが露出</div>
                     </td>
                     <td>
@@ -3243,7 +3243,7 @@
                     <td>
                       <div class="Sentence">バーナーが隠ぺい</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -3263,16 +3263,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -3315,13 +3315,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -3364,7 +3364,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">上記に分類されないもの</div>
                     </td>
                     <td>
@@ -3384,16 +3384,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">乾燥設備</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">気体燃料</div>
                     </td>
                     <td>
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">開放式</div>
                     </td>
                     <td>
@@ -3419,7 +3419,7 @@
                     <td>
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">開放式</div>
                     </td>
                     <td>
@@ -3442,10 +3442,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="4">
                       <div class="Sentence">上記に分類されないもの</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">内部容積が１立方メートル以上のもの</div>
                     </td>
                     <td>
@@ -3465,7 +3465,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">内部容積が１立方メートル未満のもの</div>
                     </td>
                     <td>
@@ -3485,22 +3485,22 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="22">
                       <div class="Sentence">簡易湯沸設備</div>
                     </td>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -3518,13 +3518,13 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="22">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -3544,10 +3544,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -3567,7 +3567,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -3587,7 +3587,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">半密閉式</div>
                     </td>
                     <td>
@@ -3607,10 +3607,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">密閉式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
                     <td>
@@ -3630,10 +3630,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">調理台型</div>
                     </td>
                     <td>
@@ -3653,7 +3653,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">壁掛け型、据置型</div>
                     </td>
                     <td>
@@ -3673,10 +3673,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">屋外用</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -3696,7 +3696,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -3716,16 +3716,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -3745,7 +3745,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -3765,10 +3765,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -3788,7 +3788,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -3808,7 +3808,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">半密閉式</div>
                     </td>
                     <td>
@@ -3828,10 +3828,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">密閉式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
                     <td>
@@ -3851,10 +3851,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">調理台型</div>
                     </td>
                     <td>
@@ -3874,7 +3874,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">壁掛け型、据置型</div>
                     </td>
                     <td>
@@ -3894,10 +3894,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">屋外用</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -3917,7 +3917,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -3937,10 +3937,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
@@ -3960,7 +3960,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
@@ -3980,19 +3980,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="21">
                       <div class="Sentence">給湯湯沸設備</div>
                     </td>
-                    <td>
+                    <td rowspan="18">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
                     <td>
@@ -4010,13 +4010,13 @@
                     <td>
                       <div class="Sentence">１５</div>
                     </td>
-                    <td>
+                    <td rowspan="21">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">瞬間型</div>
                     </td>
                     <td>
@@ -4036,10 +4036,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">密閉式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
                     <td>
@@ -4059,10 +4059,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">調理台型</div>
                     </td>
                     <td>
@@ -4082,7 +4082,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">壁掛け型、据置型</div>
                     </td>
                     <td>
@@ -4102,13 +4102,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">屋外用</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -4128,7 +4128,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -4148,10 +4148,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -4171,7 +4171,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -4191,13 +4191,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">半密閉式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
                     <td>
@@ -4217,7 +4217,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">瞬間型</div>
                     </td>
                     <td>
@@ -4237,10 +4237,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">密閉式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
                     <td>
@@ -4260,10 +4260,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">調理台型</div>
                     </td>
                     <td>
@@ -4283,7 +4283,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">壁掛け型、据置型</div>
                     </td>
                     <td>
@@ -4303,13 +4303,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">屋外用</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">常圧貯蔵型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -4329,7 +4329,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -4349,10 +4349,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">瞬間型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付けない場合</div>
                     </td>
                     <td>
@@ -4372,7 +4372,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フードを付ける場合</div>
                     </td>
                     <td>
@@ -4392,10 +4392,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
@@ -4415,7 +4415,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
@@ -4435,7 +4435,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">上記に分類されないもの</div>
                     </td>
                     <td>
@@ -4455,22 +4455,22 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="21">
                       <div class="Sentence">移動式ストーブ</div>
                     </td>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">バーナーが露出</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">前方放射型</div>
                     </td>
                     <td>
@@ -4488,13 +4488,13 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="21">
                       <div class="Sentence">注１：熱対流方向が一方向に集中する場合にあっては６０ｃｍとする。</div>
                       <div class="Sentence">注２：方向性を有するものにあっては１００ｃｍとする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">全周放射型</div>
                     </td>
                     <td>
@@ -4514,10 +4514,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">バーナーが隠ぺい</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -4537,7 +4537,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">強制対流型</div>
                     </td>
                     <td>
@@ -4557,16 +4557,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">バーナーが露出</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">前方放射型</div>
                     </td>
                     <td>
@@ -4586,7 +4586,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">全周放射型</div>
                     </td>
                     <td>
@@ -4606,10 +4606,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">バーナーが隠ぺい</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -4629,7 +4629,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">強制対流型</div>
                     </td>
                     <td>
@@ -4649,16 +4649,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">放射型</div>
                     </td>
                     <td>
@@ -4678,7 +4678,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -4715,10 +4715,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">強制対流型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">温風を前方向に吹き出すもの</div>
                     </td>
                     <td>
@@ -4738,7 +4738,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">温風を全周方向に吹き出すもの</div>
                     </td>
                     <td>
@@ -4775,13 +4775,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">放射型</div>
                     </td>
                     <td>
@@ -4801,7 +4801,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -4838,10 +4838,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">強制対流型</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">温風を前方向に吹き出すもの</div>
                     </td>
                     <td>
@@ -4861,7 +4861,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">温風を全周方向に吹き出すもの</div>
                     </td>
                     <td>
@@ -4898,7 +4898,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">固体燃料</div>
                     </td>
                     <td>
@@ -4918,19 +4918,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">調理用器具</div>
                     </td>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">気体燃料</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">バーナーが露出</div>
                     </td>
                     <td>
@@ -4951,7 +4951,7 @@
                     <td>
                       <div class="Sentence">１５</div>
                     </td>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">注：機器本体上方の側方又は後方の離隔距離を示す。</div>
                     </td>
                   </tr>
@@ -4976,7 +4976,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">バーナーが隠ぺい</div>
                     </td>
                     <td>
@@ -5002,7 +5002,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">加熱部が隠ぺい</div>
                     </td>
                     <td>
@@ -5085,13 +5085,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence">開放式</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence">バーナーが露出</div>
                     </td>
                     <td>
@@ -5134,7 +5134,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">バーナーが隠ぺい</div>
                     </td>
                     <td>
@@ -5160,7 +5160,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">加熱部が隠ぺい</div>
                     </td>
                     <td>
@@ -5243,13 +5243,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">移動式こんろ</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">液体燃料</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
@@ -5267,13 +5267,13 @@
                     <td>
                       <div class="Sentence">１５</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
@@ -5293,7 +5293,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence">固体燃料</div>
                     </td>
                     <td>
@@ -5341,13 +5341,13 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="4">
                       <div class="Sentence">対象火気設備等又は対象火気器具等の種別</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">入力</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">離隔距離（ｃｍ）</div>
                     </td>
                   </tr>
@@ -5369,10 +5369,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電気温風機</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
@@ -5390,12 +5390,12 @@
                     <td>
                       <div class="Sentence">４．５　注</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">注：温風の吹き出し方向にあっては６０ｃｍとする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
@@ -5415,19 +5415,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">電気調理用機器</div>
                     </td>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">電気こんろ、電気レンジ、電磁誘導加熱式調理器（こんろ形態のものに限る。）</div>
                     </td>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">こんろ部分の全部又は一部が電磁誘導加熱式調理器でないもの</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">４．８ｋＷ以下（１口当たり２ｋＷを超え３ｋＷ以下）</div>
                     </td>
                     <td>
@@ -5442,7 +5442,7 @@
                     <td>
                       <div class="Sentence">２</div>
                     </td>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">注１：機器本体上方の側方又は後方の離隔距離（こんろ部分が電磁誘導加熱式調理器でない場合における発熱体の外周からの距離）を示す。</div>
                       <div class="Sentence">注２：機器本体上方の側方又は後方の離隔距離（こんろ部分が電磁誘導加熱式調理器の場合における発熱体の外周からの距離）を示す。</div>
                     </td>
@@ -5476,7 +5476,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">４．８ｋＷ以下（１口当たり１ｋＷを超え２ｋＷ以下）</div>
                     </td>
                     <td>
@@ -5521,7 +5521,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">４．８ｋＷ以下（１口当たり１ｋＷ以下）</div>
                     </td>
                     <td>
@@ -5552,10 +5552,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">こんろ部分の全部が電磁誘導加熱式調理器のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">５．８ｋＷ以下（１口当たり３．３ｋＷ以下）</div>
                     </td>
                     <td>
@@ -5586,16 +5586,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">電気こんろ、電気レンジ、電磁誘導加熱式調理器（こんろ形態のものに限る。）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">こんろ部分の全部又は一部が電磁誘導加熱式調理器でないもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">４．８ｋＷ以下（１口当たり３ｋＷ以下）</div>
                     </td>
                     <td>
@@ -5626,10 +5626,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">こんろ部分の全部が電磁誘導加熱式調理器のもの</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">５．８ｋＷ以下（１口当たり３．３ｋＷ以下）</div>
                     </td>
                     <td>
@@ -5660,10 +5660,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電気天火</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">不燃以外</div>
                     </td>
                     <td>
@@ -5681,12 +5681,12 @@
                     <td>
                       <div class="Sentence">４．５　注</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">注：排気口面にあっては１０ｃｍとする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">不燃</div>
                     </td>
                     <td>
@@ -5706,13 +5706,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電子レンジ</div>
                     </td>
                     <td>
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">電熱装置を有するもの</div>
                     </td>
                     <td>
@@ -5730,7 +5730,7 @@
                     <td>
                       <div class="Sentence">４．５　注</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">注：排気口面にあっては１０ｃｍとする。</div>
                     </td>
                   </tr>
@@ -5738,7 +5738,7 @@
                     <td>
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">電熱装置を有するもの</div>
                     </td>
                     <td>
@@ -5758,13 +5758,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">電気ストーブ（壁取付式及び天井取付式のものを除く。）</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">前方放射型</div>
                     </td>
                     <td>
@@ -5782,13 +5782,13 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence">
               </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">全周放射型</div>
                     </td>
                     <td>
@@ -5808,7 +5808,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -5828,10 +5828,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">前方放射型</div>
                     </td>
                     <td>
@@ -5851,7 +5851,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">全周放射型</div>
                     </td>
                     <td>
@@ -5871,7 +5871,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">自然対流型</div>
                     </td>
                     <td>
@@ -5891,13 +5891,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電気乾燥器</div>
                     </td>
                     <td>
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">食器乾燥器</div>
                     </td>
                     <td>
@@ -5915,7 +5915,7 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
@@ -5924,7 +5924,7 @@
                     <td>
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">食器乾燥器</div>
                     </td>
                     <td>
@@ -5944,13 +5944,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電気乾燥機</div>
                     </td>
                     <td>
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">衣類乾燥機、食器乾燥機、食器洗い乾燥機</div>
                     </td>
                     <td>
@@ -5968,7 +5968,7 @@
                     <td>
                       <div class="Sentence">４．５</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">注１：前面に排気口を有する機器にあっては０ｃｍとする。</div>
                       <div class="Sentence">注２：排気口面にあっては４．５ｃｍとする。</div>
                     </td>
@@ -5977,7 +5977,7 @@
                     <td>
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">衣類乾燥機、食器乾燥機、食器洗い乾燥機</div>
                     </td>
                     <td>
@@ -5997,13 +5997,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">電気温水器</div>
                     </td>
                     <td>
                       <div class="Sentence">不燃以外</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">温度過昇防止装置を有するもの</div>
                     </td>
                     <td>
@@ -6021,7 +6021,7 @@
                     <td>
                       <div class="Sentence">０</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">
               </div>
                     </td>
@@ -6030,7 +6030,7 @@
                     <td>
                       <div class="Sentence">不燃</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">温度過昇防止装置を有するもの</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -656,40 +656,40 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">避難指示が行われた時に当該避難指示の対象となつた区域に存する住宅に居住していた者であつて、当該避難指示に基づく避難のための立退きによつて生じた特定原子力損害を受けた被害者であるもの</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">避難指示に基づく避難のための立退きの実施状況その他の事情を考慮して、被害者一人当たりに支払う金額を定めていること。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">五十万円</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">避難指示が行われた時に当該避難指示の対象となつた区域内に本店又は主たる事務所を有していた中小企業者等であつて、当該避難指示に基づく避難のための立退きによつて生じた特定原子力損害を受けた被害者であるもの</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">避難指示があつた日から当該避難指示に係る特定原子力損害賠償仮払金の支払の請求があつた日又は当該避難指示が解除される日のいずれか早い日までの期間における逸失利益等相当金額の全部又は一部を支払うものであること。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">中欄に規定する逸失利益等相当金額の二分の一の金額又は二百五十万円のいずれか低い金額</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">制限指示が行われた時に当該制限指示の対象となつた事業活動を行つていた中小企業者等であつて、当該制限指示に基づく事業活動の制限によつて生じた特定原子力損害を受けた被害者であるもの（<a class="reference_link" href="#Mp-At_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">前項</a>に該当する者を除く。）</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">制限指示があつた日から当該制限指示に係る特定原子力損害賠償仮払金の支払の請求があつた日又は当該制限指示が解除される日のいずれか早い日までの期間における逸失利益等相当金額の全部又は一部を支払うものであること。</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">中欄に規定する逸失利益等相当金額の二分の一の金額又は二百五十万円のいずれか低い金額</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="3" Valign="top">
                           <div class="Sentence">備考</div>
                           <div class="Sentence">この表において、<a class="reference_link" href="#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次の各号</a>に掲げる用語の意義は、それぞれ当該<a class="reference_link" href="#Mp-At_3-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定めるところによる。</div>
                           <div class="Sentence">一　避難指示　<a class="reference_link" href="L_411AC0000000156.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">原子力災害対策特別措置法</a>（<a class="reference_link" href="L_411AC0000000156.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十一年法律第百五十六号</a>）<a class="reference_link" href="L_411AC0000000156.html#Mp-At_15-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第三項</a>又は<a class="reference_link" href="L_411AC0000000156.html#Mp-At_20-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第二項</a>の規定により内閣総理大臣又は原子力災害対策本部長（<a class="reference_link" href="L_411AC0000000156.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
@@ -900,7 +900,8 @@
                 <div class="ParagraphSentence">
                   <div class="Sentence" Num="1">この政令は、原子力損害の賠償に関する法律の一部を改正する法律（平成十一年法律第三十七号）の施行の日（平成十二年一月一日）から施行する。</div>
                   <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_337CO0000000044.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">原子力損害の賠償に関する法律施行令</a>
-                    <a class="reference_link" href="L_337CO0000000044.html#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>の改正規定、同令第二条の表第八号の次に一号を加える改正規定、同表第十号の改正規定（「使用済燃料」を「前条第六号ロに掲げる物」に改める部分に限る。）、同表第十二号の改正規定（「核燃料物質の使用」の下に「、使用済燃料の貯蔵」を加える部分に限る。）、同表第十三号の改正規定（「核燃料物質の使用」の下に「、使用済燃料の貯蔵」を加える部分及び「使用済燃料、使用済燃料」を「同条第六号ロに掲げる物、同号ロに掲げる物」に、「第八号」を「第八号の二」に改める部分に限る。）、同表第十三号の次に二号を加える改正規定及び同表第十四号の改正規定（「核燃料物質の使用」の下に「、使用済燃料の貯蔵」を加える部分に限る。）並びに第二条の規定は、核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を改正する法律（平成十一年法律第七十五号）附則第一条第一号に掲げる規定の施行の日（平成十二年六月十六日）から施行する。</div>
+                    <a class="reference_link" href="L_337CO0000000044.html#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>の改正規定、<a class="reference_link" href="L_337CO0000000044.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                    <a class="reference_link" href="L_337CO0000000044.html#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>の表第八号の次に一号を加える改正規定、同表第十号の改正規定（「使用済燃料」を「前条第六号ロに掲げる物」に改める部分に限る。）、同表第十二号の改正規定（「核燃料物質の使用」の下に「、使用済燃料の貯蔵」を加える部分に限る。）、同表第十三号の改正規定（「核燃料物質の使用」の下に「、使用済燃料の貯蔵」を加える部分及び「使用済燃料、使用済燃料」を「同条第六号ロに掲げる物、同号ロに掲げる物」に、「第八号」を「第八号の二」に改める部分に限る。）、同表第十三号の次に二号を加える改正規定及び同表第十四号の改正規定（「核燃料物質の使用」の下に「、使用済燃料の貯蔵」を加える部分に限る。）並びに第二条の規定は、核原料物質、核燃料物質及び原子炉の規制に関する法律の一部を改正する法律（平成十一年法律第七十五号）附則第一条第一号に掲げる規定の施行の日（平成十二年六月十六日）から施行する。</div>
                 </div>
               </div>
             </div>

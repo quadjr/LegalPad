@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -4468,7 +4468,7 @@
                           <td>
                             <div class="Sentence" Num="1">自動車の種類</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">車体の大きさ等</div>
                           </td>
                         </tr>
@@ -4476,7 +4476,7 @@
                           <td>
                             <div class="Sentence" Num="1">大型自動車</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">大型特殊自動車、大型自動二輪車、普通自動二輪車及び小型特殊自動車以外の自動車で、車両総重量が一一、〇〇〇キログラム以上のもの、最大積載量が六、五〇〇キログラム以上のもの又は乗車定員が三〇人以上のもの</div>
                           </td>
                         </tr>
@@ -4484,7 +4484,7 @@
                           <td>
                             <div class="Sentence" Num="1">中型自動車</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">大型自動車、大型特殊自動車、大型自動二輪車、普通自動二輪車及び小型特殊自動車以外の自動車で、車両総重量が七、五〇〇キログラム以上一一、〇〇〇キログラム未満のもの、最大積載量が四、五〇〇キログラム以上六、五〇〇キログラム未満のもの又は乗車定員が一一人以上二九人以下のもの</div>
                           </td>
                         </tr>
@@ -4492,7 +4492,7 @@
                           <td>
                             <div class="Sentence" Num="1">準中型自動車</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">大型自動車、中型自動車、大型特殊自動車、大型自動二輪車、普通自動二輪車及び小型特殊自動車以外の自動車で、車両総重量が三、五〇〇キログラム以上七、五〇〇キログラム未満のもの又は最大積載量が二、〇〇〇キログラム以上四、五〇〇キログラム未満のもの</div>
                           </td>
                         </tr>
@@ -4500,7 +4500,7 @@
                           <td>
                             <div class="Sentence" Num="1">普通自動車</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">車体の大きさ等が、大型自動車、中型自動車、準中型自動車、大型特殊自動車、大型自動二輪車、普通自動二輪車又は小型特殊自動車について定められた車体の大きさ等のいずれにも該当しない自動車</div>
                           </td>
                         </tr>
@@ -4508,7 +4508,7 @@
                           <td>
                             <div class="Sentence" Num="1">大型特殊自動車</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">カタピラを有する自動車（内閣総理大臣が指定するものを除く。）、ロード・ローラ、タイヤ・ローラ、ロード・スタビライザ、タイヤ・ドーザ、グレーダ、スクレーパ、ショベル・ローダ、ダンパ、モータ・スイーパ、フォーク・リフト、ホイール・クレーン、ストラドル・キャリヤ、アスファルト・フィニッシャ、ホイール・ハンマ、ホイール・ブレーカ、フォーク・ローダ、農耕作業用自動車、ロータリ除雪車、ターレット式構内運搬車、自動車の車台が屈折して操向する構造の自動車及び内閣総理大臣が指定する特殊な構造を有する自動車（この表の小型特殊自動車の項において「特殊自動車」という。）で、小型特殊自動車以外のもの</div>
                           </td>
                         </tr>
@@ -4516,7 +4516,7 @@
                           <td>
                             <div class="Sentence" Num="1">大型自動二輪車</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">総排気量が〇・四〇〇リットルを超え、又は定格出力が二〇・〇〇キロワットを超える原動機を有する二輪の自動車（側車付きのものを含む。）で、大型特殊自動車及び小型特殊自動車以外のもの</div>
                           </td>
                         </tr>
@@ -4524,18 +4524,18 @@
                           <td>
                             <div class="Sentence" Num="1">普通自動二輪車</div>
                           </td>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">二輪の自動車（側車付きのものを含む。）で、大型特殊自動車、大型自動二輪車及び小型特殊自動車以外のもの</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">小型特殊自動車</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">特殊自動車で、車体の大きさが下欄に該当するもののうち、一五キロメートル毎時を超える速度を出すことができない構造のもの</div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">車体の大きさ</div>
                           </td>
                         </tr>
@@ -4562,7 +4562,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="5">
                             <div class="Sentence" Num="1">備考　車体の構造上その運転に係る走行の特性が二輪の自動車の運転に係る走行の特性に類似するものとして内閣総理大臣が指定する三輪の自動車については、二輪の自動車とみなして、この表を適用する。</div>
                           </td>
                         </tr>
@@ -6964,7 +6964,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">大型自動車免許（以下「大型免許」という。）</div>
                           </td>
                           <td>
@@ -6985,7 +6985,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">中型自動車免許（以下「中型免許」という。）</div>
                           </td>
                           <td>
@@ -7006,7 +7006,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">準中型自動車免許（以下「準中型免許」という。）</div>
                           </td>
                           <td>
@@ -7027,7 +7027,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">普通自動車免許（以下「普通免許」という。）</div>
                           </td>
                           <td>
@@ -7048,7 +7048,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">大型自動二輪車免許（以下「大型二輪免許」という。）</div>
                           </td>
                           <td>
@@ -7069,7 +7069,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">普通自動二輪車免許（以下「普通二輪免許」という。）</div>
                           </td>
                           <td>
@@ -7102,7 +7102,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">大型自動車第二種免許（以下「大型第二種免許」という。）</div>
                           </td>
                           <td>
@@ -7123,7 +7123,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">中型自動車第二種免許（以下「中型第二種免許」という。）</div>
                           </td>
                           <td>
@@ -7144,7 +7144,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">普通自動車第二種免許（以下「普通第二種免許」という。）</div>
                           </td>
                           <td>
@@ -13339,7 +13339,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="L_335AC0000000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_335CO0000000270.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>教習についての知識</div>
@@ -13401,7 +13401,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">構造教習についての知識</div>
                         </td>
                         <td>
@@ -13454,7 +13454,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">学科教習（<a class="reference_link" href="L_335AC0000000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_335CO0000000270.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>教習及び構造教習を除く。）についての知識</div>
                         </td>
@@ -17864,7 +17864,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">信号機の構造及び灯器の高さ</div>
                     </td>
                     <td>
@@ -17881,7 +17881,7 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　道路の状況により必要があるとき又は主として歩行者のために設ける信号機（以下この表において「歩行者専用信号機」という。）若しくは可搬式の信号機を設けるときは、二・五メートル以上の高さとすることができる。</div>
                       <div class="Sentence" Num="3">二　上記の図示の長さの単位は、メートルとする。</div>
@@ -17920,7 +17920,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">横型</div>
                     </td>
                     <td>
@@ -17933,10 +17933,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">灯器の構造</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">縦型</div>
                     </td>
                     <td>
@@ -17950,7 +17950,7 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　信号表示面が円形となつている信号機の当該信号表示面の直径は、二〇センチメートルから四五センチメートルまでとする。ただし、歩行者専用信号機又は可搬式の信号機にあつては、一五センチメートルとすることができる。</div>
                       <div class="Sentence" Num="3">二　信号表示面が正方形となつている信号機は、歩行者専用信号機のみに用いるものとし、当該信号表示面の一辺の長さは、二〇センチメートルから二五センチメートルまでとする。</div>
@@ -17971,7 +17971,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">横型</div>
                     </td>
                     <td>
@@ -18000,7 +18000,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">点滅型</div>
                     </td>
                     <td>
@@ -18069,7 +18069,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">備考　灯火の矢印の形状については、道路の形状により特別の必要がある場合にあつては、当該道路の形状に応じたものとすることができる。</div>
                     </td>
                   </tr>
@@ -18819,7 +18819,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">備考　大型免許、中型免許、大型第二種免許又は中型第二種免許に係る教習については、曲線コース（中型免許に係る教習に用いる曲線コースにあつては、大型免許又は大型第二種免許に係る教習に用いるコースの形状及び構造に関する基準（以下「コースの基準」という。）を満たしている曲線コースであつて、二の表の備考の二の規定により中型免許に係る教習に用いることができるものに限り、中型第二種免許に係る教習に用いる曲線コースにあつては、大型免許又は大型第二種免許に係る教習に用いるコースの基準を満たしている曲線コースであつて、二の表の備考の三の規定により中型第二種免許に係る教習に用いることができるものに限る。）に障害物を設けたものを走行することにより屈折コースを走行するのと同等の教習効果があると公安委員会が認める場合には、屈折コースを設けないことができる。</div>
                     </td>
                   </tr>
@@ -18832,7 +18832,7 @@
                     <td>
                       <div class="Sentence" Num="1">コースの種類</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">基準</div>
                     </td>
                   </tr>
@@ -18840,7 +18840,7 @@
                     <td>
                       <div class="Sentence" Num="1">周回コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　おおむね長円形で、八〇メートル（大型二輪免許又は普通二輪免許に係る教習に用いるコースにあつては、六〇メートル）以上の距離を直線走行することができる部分を有し、幅八メートル（大型二輪免許又は普通二輪免許に係る教習に用いるコースにあつては、七メートル）以上であること。</div>
                       <div class="Sentence" Num="2">二　総延長の二分の一以上に相当する部分が舗装されていること。</div>
                     </td>
@@ -18849,7 +18849,7 @@
                     <td>
                       <div class="Sentence" Num="1">幹線コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　おおむね直線で、周回コースと連絡し、幅七メートル以上であるコースが相互に十字形に交差するものであること。</div>
                       <div class="Sentence" Num="2">二　一以上のコースが舗装されていること。</div>
                     </td>
@@ -18858,7 +18858,7 @@
                     <td>
                       <div class="Sentence" Num="1">坂道コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　二以上の坂道を有すること。</div>
                       <div class="Sentence" Num="2">二　幅は、七メートル以上であること。</div>
                       <div class="Sentence" Num="3">三　こう配の起点から頂上までの高さは、一・五メートル（大型二輪免許又は普通二輪免許に係る教習に用いるコースにあつては、一メートル）以上であること。</div>
@@ -18868,10 +18868,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence" Num="1">屈折コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　教習に係る免許の種類に応じ、次の表に掲げる基準を満たしているものであること。</div>
                     </td>
                   </tr>
@@ -18879,7 +18879,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -18887,10 +18887,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">
                         <div class="QuoteStruct">
                   ./pict/3JH00000217782.jpg
@@ -18898,7 +18898,7 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -18907,37 +18907,37 @@
                     <td>
                       <div class="Sentence" Num="1">教習に係る免許の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">大型免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">大型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">中型免許及び中型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">準中型免許、普通免許及び普通第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">大型二輪免許及び普通二輪免許</div>
                     </td>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">図示の記号</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">幅</div>
                     </td>
                     <td>
@@ -18946,13 +18946,13 @@
                     <td>
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">四・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">四・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">三・五メートル</div>
                     </td>
                     <td>
@@ -18960,7 +18960,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">曲角間の長さ</div>
                     </td>
                     <td>
@@ -18969,13 +18969,13 @@
                     <td>
                       <div class="Sentence" Num="1">二〇メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一二メートル</div>
                     </td>
                     <td>
@@ -18983,7 +18983,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">出入口部の長さ</div>
                     </td>
                     <td>
@@ -18992,13 +18992,13 @@
                     <td>
                       <div class="Sentence" Num="1">六メートル以上</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">六メートル以上</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">六メートル以上</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">四メートル以上</div>
                     </td>
                     <td>
@@ -19006,7 +19006,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">すみ切り半径</div>
                     </td>
                     <td>
@@ -19015,13 +19015,13 @@
                     <td>
                       <div class="Sentence" Num="1">二・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一メートル</div>
                     </td>
                     <td>
@@ -19029,7 +19029,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　すみ切り半径とは、曲角部の内側を円形に切つた場合の、その円の半径をいう。</div>
                       <div class="Sentence" Num="3">二　大型二輪免許又は普通二輪免許に係る教習に用いるコースにあつては、立体障害物をコースの内側に接して一メートル間隔に二十四個設けているものであること。</div>
@@ -19037,15 +19037,15 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">二　舗装されていること。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence" Num="1">曲線コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　教習に係る免許の種類に応じ、次の表に掲げる基準を満たしているものであること。</div>
                     </td>
                   </tr>
@@ -19053,7 +19053,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19061,10 +19061,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">
                         <div class="QuoteStruct">
                   ./pict/3JH00000217783.jpg
@@ -19072,7 +19072,7 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19081,107 +19081,107 @@
                     <td>
                       <div class="Sentence" Num="1">教習に係る免許の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">大型免許及び大型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">中型免許及び中型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">準中型免許、普通免許及び普通第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許及び普通二輪免許</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">図示の記号</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">幅</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ａ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">四メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">三・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">二メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">半径</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ｂ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一二・二五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一〇メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">七・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">五・五メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">弧の長さ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ｃ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">円周の八分の三</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">円周の八分の三</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">円周の八分の三</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">円周の八分の三</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">備考　半径は、図示のＣを円周の一部とする円の半径をいい、弧の長さは、その円の円周の八分の三の長さとする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">二　舗装されていること。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence" Num="1">方向変換コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　教習に係る免許の種類に応じ、次の表に掲げる基準を満たしているものであること。</div>
                     </td>
                   </tr>
@@ -19189,7 +19189,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19197,10 +19197,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">
                         <div class="QuoteStruct">
                   ./pict/3JH00000217784.jpg
@@ -19208,7 +19208,7 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19217,49 +19217,49 @@
                     <td>
                       <div class="Sentence" Num="1">教習に係る免許の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">大型免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">大型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">中型免許及び中型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="2">
                       <div class="Sentence" Num="1">準中型免許、普通免許及び普通第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">図示の記号</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">幅</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ａ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">六メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">三・五メートル</div>
                     </td>
                   </tr>
@@ -19267,81 +19267,81 @@
                     <td>
                       <div class="Sentence" Num="1">Ｂ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">三・五メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">奥行</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ｃ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一〇メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一〇メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">八メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">出入口部の長さ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ｄ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一〇メートル以上</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一〇メートル以上</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">八メートル以上</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">五メートル以上</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">すみ切り半径</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ｅ</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">二・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">二・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">一メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　すみ切り半径とは、曲角部を円形に切つた場合の、その円の半径をいう。</div>
                       <div class="Sentence" Num="3">二　図の上側及び下側のいずれの出入口部からも進入することができるものであること。ただし、上側の出入口部からだけ進入することができるコースと下側の出入口部からだけ進入することができるコースの双方を設けることにより、これに代えることができる。</div>
@@ -19349,15 +19349,15 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">二　舗装されていること。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">直線狭路コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">次の表に掲げる基準を満たしているものであること。</div>
                     </td>
                   </tr>
@@ -19365,7 +19365,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19373,10 +19373,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">
                         <div class="QuoteStruct">
                   ./pict/3JH00000217785.jpg
@@ -19384,78 +19384,78 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">区分</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">図示の記号</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">寸<a class="reference_link" href="L_335AC0000000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">幅</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ａ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・三メートル以上</div>
                       <div class="Sentence" Num="2">〇・四メートル以下</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">高さ</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｂ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・〇三メートル以上</div>
                       <div class="Sentence" Num="2">〇・〇五メートル以下</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">平たん部分の長さ</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｃ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">一三メートル以上</div>
                       <div class="Sentence" Num="2">一五メートル以下</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">傾斜部の長さ</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｄ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・三メートル以上</div>
                       <div class="Sentence" Num="2">〇・四メートル以下</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">連続進路転換コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　次の表に掲げる基準を満たしているものであること。</div>
                     </td>
                   </tr>
@@ -19463,7 +19463,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19471,10 +19471,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">
                         <div class="QuoteStruct">
                   ./pict/3JH00000217786.jpg
@@ -19482,68 +19482,68 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">区分</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">図示の記号</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">寸<a class="reference_link" href="L_335AC0000000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">入口及び出口の幅</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ａ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">二メートル以上</div>
                       <div class="Sentence" Num="2">三メートル以下</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence" Num="1">立体障害物間の距離</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｂ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">四メートル以上</div>
                       <div class="Sentence" Num="2">六メートル以下</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｃ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">二六メートル以上</div>
                       <div class="Sentence" Num="2">二八メートル以下</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">備考　コース中央に高さがおおむね〇・七メートルの立体障害物を五個設け、コースの入口及び出口に高さがおおむね〇・四五メートルの立体障害物をそれぞれ二個設けているものであること。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">二　舗装されていること。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="15">
                       <div class="Sentence" Num="1">波状路コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　次の表に掲げる基準を満たしているものであること。</div>
                     </td>
                   </tr>
@@ -19551,7 +19551,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19559,10 +19559,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence" Num="1">
                         <div class="QuoteStruct">
                   ./pict/3JH00000217787.jpg
@@ -19576,145 +19576,145 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">区分</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">図示の記号</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">寸<a class="reference_link" href="L_335AC0000000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">長さ</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ａ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">九・五メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">幅</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｂ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・七メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">突起部の間隔</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｃ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">一・三メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">突起部の間隔</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｄ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">一・〇メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">突起部の間隔</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｅ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">一・一五メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">突起部の幅</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｆ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・一四メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">突起部上部の幅</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｇ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・〇六メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">突起部の高さ</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｈ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・〇五メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">傾斜部までの高さ</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｉ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">〇・〇一メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">傾斜部の角度</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">Ｊ</div>
                     </td>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">四十五度</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">備考　コースの側端は、白色の線又は金属製の枠により表示されているものであること。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">二　舗装されていること。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence" Num="1">鋭角コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">一　教習に係る免許の種類に応じ、次の表に掲げる基準を満たしているものであること。</div>
                     </td>
                   </tr>
@@ -19722,7 +19722,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19730,10 +19730,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">
                         <div class="QuoteStruct">
                   ./pict/3JH00000217789.jpg
@@ -19741,7 +19741,7 @@
                 </div>
                       </div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
@@ -19750,89 +19750,89 @@
                     <td>
                       <div class="Sentence" Num="1">教習に係る免許の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">大型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="4">
                       <div class="Sentence" Num="1">中型第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="3" colspan="3">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">図示の記号</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">幅</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ａ</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">三・五メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">切取線の長さ</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ｂ</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">一メートル</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">〇・五メートル</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">〇・一メートル</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">角度</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">Ｃ</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">六十度</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence" Num="1">六十度</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">六十度</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="14">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　切取線の長さとは、コースの内側の曲角部を直線に切つた時に生じる切取線の長さをいう。</div>
                       <div class="Sentence" Num="3">二　コースの外側の曲角部については、教習に使用する自動車の構造及び性能に応じ、コースの内側の曲角部の切取線と平行に切ることができる。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">二　舗装されていること。</div>
                     </td>
                   </tr>
@@ -19840,7 +19840,7 @@
                     <td>
                       <div class="Sentence" Num="1">大型特殊自動車コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">教習に使用する大型特殊自動車の構造及び性能に応じた形状を有すること。</div>
                     </td>
                   </tr>
@@ -19850,7 +19850,7 @@
                         <ruby>牽<rt>けん</rt>
                         </ruby>引コース</div>
                     </td>
-                    <td>
+                    <td colspan="16">
                       <div class="Sentence" Num="1">教習に使用する<ruby>牽<rt>けん</rt>
                         </ruby>引自動車（法第五十一条の四第一項の重被<ruby>牽<rt>けん</rt>
                         </ruby>引車を<ruby>牽<rt>けん</rt>
@@ -19858,7 +19858,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="17">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">一　大型第二種免許に係る教習を行う場合におけるコースの基準については、障害物の設置その他これに類する措置を講じたコースを走行することにより当該コースの基準を満たすコースを走行することによるのと同等の教習効果があると公安委員会が認める場合には、方向変換コースに係るコースの基準は、大型免許に係る教習のコースの基準によるものとする。</div>
                       <div class="Sentence" Num="3">二　一の規定は、中型免許に係る教習のコースの基準について準用する。この場合において「大型第二種免許」とあるのは「中型免許」と、「方向変換コース」とあるのは「屈折コース又は曲線コース若しくは方向変換コース」と、「大型免許」とあるのは「それぞれ大型第二種免許又は大型免許若しくは大型第二種免許」と読み替えるものとする。</div>
@@ -19875,18 +19875,18 @@
                 <div class="TableStructTitle">一　技能教習の教習時間の基準</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">教習に係る免許の種類</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">現に受けている免許の有無及び種類</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">教習時間（時限数）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -19903,7 +19903,7 @@
                     <td>
                       <div class="Sentence" Num="1">大型免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -20080,7 +20080,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -20137,7 +20137,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -20154,7 +20154,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">中型第二種免許</div>
                     </td>
                     <td>
@@ -20271,7 +20271,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
                     <td>
@@ -20328,7 +20328,7 @@
                     <td>
                       <div class="Sentence" Num="1">中型免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -20445,7 +20445,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -20502,7 +20502,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -20519,7 +20519,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
                     <td>
@@ -20576,7 +20576,7 @@
                     <td>
                       <div class="Sentence" Num="1">準中型免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -20633,7 +20633,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -20690,7 +20690,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -20707,7 +20707,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
                     <td>
@@ -20761,10 +20761,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">普通免許（ＡＴ限定普通免許を除く。）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -20778,7 +20778,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -20832,7 +20832,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -20846,10 +20846,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ＡＴ限定普通免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -20863,7 +20863,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -20920,7 +20920,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -20934,10 +20934,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">大型特殊免許（カタピラ限定大型特殊免許を除く。）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -20951,7 +20951,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -20968,7 +20968,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -20982,13 +20982,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">カタピラ限定大型特殊免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０</div>
                     </td>
                     <td>
@@ -20996,10 +20996,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">５</div>
                     </td>
                     <td>
@@ -21010,10 +21010,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">８</div>
                     </td>
                     <td>
@@ -21021,10 +21021,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">大型二輪免許（ＡＴ限定大型二輪免許を除く。）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -21038,7 +21038,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -21055,7 +21055,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -21112,7 +21112,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通二輪免許</div>
                     </td>
                     <td>
@@ -21206,10 +21206,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ＡＴ限定大型二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -21223,7 +21223,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -21240,7 +21240,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -21297,7 +21297,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通二輪免許</div>
                     </td>
                     <td>
@@ -21391,10 +21391,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">普通二輪免許（ＡＴ限定普通二輪免許、小型限定普通二輪免許及びＡＴ小型限定普通二輪免許を除く。）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -21408,7 +21408,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -21422,7 +21422,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -21470,10 +21470,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ＡＴ限定普通二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -21487,7 +21487,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -21504,7 +21504,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -21558,10 +21558,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">小型限定普通二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -21575,7 +21575,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -21592,7 +21592,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -21646,10 +21646,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ＡＴ小型限定普通二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -21663,7 +21663,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -21680,7 +21680,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -21739,7 +21739,7 @@
                         <ruby>牽<rt>けん</rt>
                         </ruby>引免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型特殊免許、大型第二種免許、中型第二種免許、普通第二種免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -21753,7 +21753,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">大型第二種免許</div>
                     </td>
                     <td>
@@ -21953,7 +21953,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -22010,7 +22010,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">中型第二種免許</div>
                     </td>
                     <td>
@@ -22127,7 +22127,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
                     <td>
@@ -22181,10 +22181,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">中型第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許</div>
                     </td>
                     <td>
@@ -22358,7 +22358,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -22415,7 +22415,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
                     <td>
@@ -22469,10 +22469,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">普通第二種免許（ＡＴ限定普通第二種免許を除く。）</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許</div>
                     </td>
                     <td>
@@ -22643,7 +22643,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -22697,10 +22697,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">ＡＴ限定普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許</div>
                     </td>
                     <td>
@@ -22854,7 +22854,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許又は大型特殊第二種免許</div>
                     </td>
                     <td>
@@ -22908,7 +22908,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">１　この表において、教習時間は、１教習時限につき５０分とする。</div>
                       <div class="Sentence" Num="3">２　この表に定める教習時間の時限数は、教習を受ける者の技能の修得状況に応じ延長するものとする。</div>
@@ -22933,18 +22933,18 @@
                 <div class="TableStructTitle">二　学科教習の教習時間の基準</div>
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">教習に係る免許の種類</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">現に受けている免許の有無及び種類</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">教習時間（時限数）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1"></div>
                     </td>
                     <td>
@@ -22961,7 +22961,7 @@
                     <td>
                       <div class="Sentence" Num="1">大型免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -22978,10 +22978,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">中型免許、準中型免許（準中型車（５ｔ）限定準中型免許及びＡＴ準中型車（５ｔ）限定準中型免許を除く。）、中型第二種免許又は普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -22992,7 +22992,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">準中型車（５ｔ）限定準中型免許、ＡＴ準中型車（５ｔ）限定準中型免許、普通免許、大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -23009,7 +23009,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許、大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23027,7 +23027,7 @@
                     <td>
                       <div class="Sentence" Num="1">中型免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -23044,10 +23044,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">準中型免許（準中型車（５ｔ）限定準中型免許及びＡＴ準中型車（５ｔ）限定準中型免許を除く。）又は普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -23058,7 +23058,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">準中型車（５ｔ）限定準中型免許、ＡＴ準中型車（５ｔ）限定準中型免許、普通免許、大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -23075,7 +23075,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許、大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23093,7 +23093,7 @@
                     <td>
                       <div class="Sentence" Num="1">準中型免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -23110,7 +23110,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通免許</div>
                     </td>
                     <td>
@@ -23127,7 +23127,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許、大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23145,7 +23145,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -23162,10 +23162,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -23176,7 +23176,7 @@
                     <td>
                       <div class="Sentence" Num="1">普通免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -23193,7 +23193,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許、大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23211,7 +23211,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型二輪免許又は普通二輪免許</div>
                     </td>
                     <td>
@@ -23254,7 +23254,7 @@
                     <td>
                       <div class="Sentence" Num="1">カタピラ限定大型特殊免許に係る教習の場合</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">２２</div>
                     </td>
                     <td>
@@ -23265,11 +23265,11 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型二輪免許、普通二輪免許、大型第二種免許、中型第二種免許、普通第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -23280,7 +23280,7 @@
                     <td>
                       <div class="Sentence" Num="1">大型二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -23297,7 +23297,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -23314,7 +23314,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許、大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23332,10 +23332,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -23346,7 +23346,7 @@
                     <td>
                       <div class="Sentence" Num="1">普通二輪免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">なし</div>
                     </td>
                     <td>
@@ -23363,7 +23363,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型第二種免許、中型第二種免許又は普通第二種免許</div>
                     </td>
                     <td>
@@ -23380,7 +23380,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許、大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23400,10 +23400,10 @@
                         <ruby>牽<rt>けん</rt>
                         </ruby>引免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許、普通免許、大型特殊免許、大型第二種免許、中型第二種免許、普通第二種免許又は大型特殊第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -23411,10 +23411,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">大型第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許又は普通免許</div>
                     </td>
                     <td>
@@ -23428,7 +23428,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許</div>
                     </td>
                     <td>
@@ -23445,10 +23445,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">中型第二種免許又は普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -23459,7 +23459,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23474,10 +23474,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">中型第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許又は普通免許</div>
                     </td>
                     <td>
@@ -23491,7 +23491,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許</div>
                     </td>
                     <td>
@@ -23508,10 +23508,10 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">０</div>
                     </td>
                     <td>
@@ -23522,7 +23522,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23537,10 +23537,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">普通第二種免許</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型免許、中型免許、準中型免許又は普通免許</div>
                     </td>
                     <td>
@@ -23554,7 +23554,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊免許</div>
                     </td>
                     <td>
@@ -23571,7 +23571,7 @@
                     <td>
                       <div class="Sentence" Num="1"></div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">大型特殊第二種免許又は<ruby>牽<rt>けん</rt>
                         </ruby>引第二種免許</div>
                     </td>
@@ -23586,7 +23586,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="6">
                       <div class="Sentence" Num="1">備考</div>
                       <div class="Sentence" Num="2">１　この表において、教習時間は、１教習時限につき５０分とする。</div>
                       <div class="Sentence" Num="3">２　この表において、なしとは、教習に係る免許の種類に応じ現に受けている免許の有無及び種類の項に掲げる免許のいずれをも現に受けていないことをいう。</div>

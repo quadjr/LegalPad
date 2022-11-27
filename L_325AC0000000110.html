@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1949,7 +1949,7 @@
                     <div id="Mp-At_3-Pr_1-It_4" class="Item" Num="4">
                       <div class="ItemTitle">四</div>
                       <div class="ItemSentence">
-                        <div class="Sentence" Num="1">昭和二十八年一月一日後<a class="reference_link" href="L_324CO0000000291.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧日本占領地域に本店を有する会社の本邦内にある財産の整理に関する政令</a>（<a class="reference_link" href="L_324CO0000000291.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十四年政令第二百九十一号</a>）に規定する決定整理計画書の定めるところにより在外会社（同令に規定する在外会社をいう。以下同じ。）から資産の出資又は譲渡を受ける新会社（同令に規定する新会社をいう。以下同じ。）の当該出資又は譲渡を受ける資産については、その出資又は譲渡を受ける日</div>
+                        <div class="Sentence" Num="1">昭和二十八年一月一日後<a class="reference_link" href="L_324CO0000000291.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧日本占領地域に本店を有する会社の本邦内にある財産の整理に関する政令</a>（<a class="reference_link" href="L_324CO0000000291.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十四年政令第二百九十一号</a>）に規定する決定整理計画書の定めるところにより在外会社（<a class="reference_link" href="L_324CO0000000291.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>に規定する在外会社をいう。以下同じ。）から資産の出資又は譲渡を受ける新会社（<a class="reference_link" href="L_324CO0000000291.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>に規定する新会社をいう。以下同じ。）の当該出資又は譲渡を受ける資産については、その出資又は譲渡を受ける日</div>
                       </div>
                     </div>
                     <div id="Mp-At_3-Pr_1-It_5" class="Item" Num="5">
@@ -5754,50 +5754,50 @@
                 <div class="TableStructTitle">有形減価償却資産及び非事業用家屋についての再評価倍数表（再評価日が昭和２８年中である場合）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">耐用年数</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">２年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">３年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">４年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">７年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">８年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">９年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１１年</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３３年以前</div>
                     </td>
                     <td>
@@ -5832,7 +5832,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３４年</div>
                     </td>
                     <td>
@@ -5867,7 +5867,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３５年</div>
                     </td>
                     <td>
@@ -5902,7 +5902,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３６年</div>
                     </td>
                     <td>
@@ -5937,7 +5937,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３７年</div>
                     </td>
                     <td>
@@ -5972,7 +5972,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３８年</div>
                     </td>
                     <td>
@@ -6007,7 +6007,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３９年</div>
                     </td>
                     <td>
@@ -6042,7 +6042,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４０年</div>
                     </td>
                     <td>
@@ -6077,7 +6077,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４１年</div>
                     </td>
                     <td>
@@ -6112,7 +6112,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４２年</div>
                     </td>
                     <td>
@@ -6147,7 +6147,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４３年</div>
                     </td>
                     <td>
@@ -6182,7 +6182,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４４年</div>
                     </td>
                     <td>
@@ -6217,7 +6217,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４５年</div>
                       <div class="Sentence" Num="2">大正元年</div>
                     </td>
@@ -6253,7 +6253,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正２年</div>
                     </td>
                     <td>
@@ -6288,7 +6288,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正３年</div>
                     </td>
                     <td>
@@ -6323,7 +6323,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正４年</div>
                     </td>
                     <td>
@@ -6358,7 +6358,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正５年</div>
                     </td>
                     <td>
@@ -6393,7 +6393,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正６年</div>
                     </td>
                     <td>
@@ -6428,7 +6428,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正７年</div>
                     </td>
                     <td>
@@ -6463,7 +6463,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正８年</div>
                     </td>
                     <td>
@@ -6498,7 +6498,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正９年</div>
                     </td>
                     <td>
@@ -6533,7 +6533,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１０年</div>
                     </td>
                     <td>
@@ -6568,7 +6568,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１１年</div>
                     </td>
                     <td>
@@ -6603,7 +6603,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１２年</div>
                     </td>
                     <td>
@@ -6638,7 +6638,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１３年</div>
                     </td>
                     <td>
@@ -6673,7 +6673,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１４年</div>
                     </td>
                     <td>
@@ -6708,7 +6708,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１５年</div>
                       <div class="Sentence" Num="2">昭和元年</div>
                     </td>
@@ -6744,7 +6744,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２年</div>
                     </td>
                     <td>
@@ -6779,7 +6779,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和３年</div>
                     </td>
                     <td>
@@ -6814,7 +6814,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和４年</div>
                     </td>
                     <td>
@@ -6849,7 +6849,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和５年</div>
                     </td>
                     <td>
@@ -6884,7 +6884,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和６年</div>
                     </td>
                     <td>
@@ -6919,7 +6919,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和７年</div>
                     </td>
                     <td>
@@ -6954,7 +6954,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和８年</div>
                     </td>
                     <td>
@@ -6989,7 +6989,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和９年</div>
                     </td>
                     <td>
@@ -7024,7 +7024,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１０年</div>
                     </td>
                     <td>
@@ -7059,7 +7059,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１１年</div>
                     </td>
                     <td>
@@ -7094,7 +7094,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１２年</div>
                     </td>
                     <td>
@@ -7129,7 +7129,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                     <td>
@@ -7164,7 +7164,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                     <td>
@@ -7199,7 +7199,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                     <td>
@@ -7234,7 +7234,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                     <td>
@@ -7269,7 +7269,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                     <td>
@@ -7304,7 +7304,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                     <td>
@@ -7339,7 +7339,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                     <td>
@@ -7374,10 +7374,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -7412,7 +7412,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -7447,7 +7447,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -7482,7 +7482,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -7517,10 +7517,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―２月</div>
                     </td>
                     <td>
@@ -7555,7 +7555,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３月</div>
                     </td>
                     <td>
@@ -7590,7 +7590,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -7625,7 +7625,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -7660,7 +7660,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -7695,10 +7695,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -7733,7 +7733,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -7768,7 +7768,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -7803,7 +7803,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -7838,10 +7838,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -7876,7 +7876,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -7911,7 +7911,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -7946,7 +7946,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -7981,10 +7981,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -8019,7 +8019,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -8054,7 +8054,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -8089,7 +8089,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -8124,10 +8124,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -8162,7 +8162,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -8197,7 +8197,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -8232,7 +8232,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -8267,10 +8267,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -8305,7 +8305,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -8340,7 +8340,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -8375,7 +8375,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -8410,7 +8410,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
                     <td>
@@ -8445,7 +8445,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="13">
                       <div class="Sentence" Num="1">上記の表に該当する耐用年数がない資産についての倍数は、その取得の時期及び耐用年数に応じて下記の算式により計算した数による。</div>
                       <div class="Sentence" Num="2">
                         <div class="ArithFormula">（１－償却率）<div class="Sup">ｎ</div>×取得の時期に応ずる別表第三の倍数</div>
@@ -11352,7 +11352,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -14249,7 +14249,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -14258,45 +14258,45 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">４６年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５７年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６１年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">７０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">７５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">８０年</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">耐用年数</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                   </tr>
@@ -14331,7 +14331,7 @@
                     <td>
                       <div class="Sentence" Num="1">１２８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３３年以前</div>
                     </td>
                   </tr>
@@ -14366,7 +14366,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３４年</div>
                     </td>
                   </tr>
@@ -14401,7 +14401,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５０</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３５年</div>
                     </td>
                   </tr>
@@ -14436,7 +14436,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３６年</div>
                     </td>
                   </tr>
@@ -14471,7 +14471,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３７年</div>
                     </td>
                   </tr>
@@ -14506,7 +14506,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３８年</div>
                     </td>
                   </tr>
@@ -14541,7 +14541,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３９年</div>
                     </td>
                   </tr>
@@ -14576,7 +14576,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３０</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４０年</div>
                     </td>
                   </tr>
@@ -14611,7 +14611,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４１年</div>
                     </td>
                   </tr>
@@ -14646,7 +14646,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５０</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４２年</div>
                     </td>
                   </tr>
@@ -14681,7 +14681,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４３年</div>
                     </td>
                   </tr>
@@ -14716,7 +14716,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４４年</div>
                     </td>
                   </tr>
@@ -14751,7 +14751,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４５年</div>
                       <div class="Sentence" Num="2">大正元年</div>
                     </td>
@@ -14787,7 +14787,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正２年</div>
                     </td>
                   </tr>
@@ -14822,7 +14822,7 @@
                     <td>
                       <div class="Sentence" Num="1">１６２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正３年</div>
                     </td>
                   </tr>
@@ -14857,7 +14857,7 @@
                     <td>
                       <div class="Sentence" Num="1">１６５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正４年</div>
                     </td>
                   </tr>
@@ -14892,7 +14892,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４０</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正５年</div>
                     </td>
                   </tr>
@@ -14927,7 +14927,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正６年</div>
                     </td>
                   </tr>
@@ -14962,7 +14962,7 @@
                     <td>
                       <div class="Sentence" Num="1">９０</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正７年</div>
                     </td>
                   </tr>
@@ -14997,7 +14997,7 @@
                     <td>
                       <div class="Sentence" Num="1">７５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正８年</div>
                     </td>
                   </tr>
@@ -15032,7 +15032,7 @@
                     <td>
                       <div class="Sentence" Num="1">７１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正９年</div>
                     </td>
                   </tr>
@@ -15067,7 +15067,7 @@
                     <td>
                       <div class="Sentence" Num="1">９４</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１０年</div>
                     </td>
                   </tr>
@@ -15102,7 +15102,7 @@
                     <td>
                       <div class="Sentence" Num="1">９９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１１年</div>
                     </td>
                   </tr>
@@ -15137,7 +15137,7 @@
                     <td>
                       <div class="Sentence" Num="1">１００</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１２年</div>
                     </td>
                   </tr>
@@ -15172,7 +15172,7 @@
                     <td>
                       <div class="Sentence" Num="1">１００</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１３年</div>
                     </td>
                   </tr>
@@ -15207,7 +15207,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１４年</div>
                     </td>
                   </tr>
@@ -15242,7 +15242,7 @@
                     <td>
                       <div class="Sentence" Num="1">１２２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１５年</div>
                       <div class="Sentence" Num="2">昭和元年</div>
                     </td>
@@ -15278,7 +15278,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２年</div>
                     </td>
                   </tr>
@@ -15313,7 +15313,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和３年</div>
                     </td>
                   </tr>
@@ -15348,7 +15348,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和４年</div>
                     </td>
                   </tr>
@@ -15383,7 +15383,7 @@
                     <td>
                       <div class="Sentence" Num="1">１７９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和５年</div>
                     </td>
                   </tr>
@@ -15418,7 +15418,7 @@
                     <td>
                       <div class="Sentence" Num="1">２１７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和６年</div>
                     </td>
                   </tr>
@@ -15453,7 +15453,7 @@
                     <td>
                       <div class="Sentence" Num="1">２０２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和７年</div>
                     </td>
                   </tr>
@@ -15488,7 +15488,7 @@
                     <td>
                       <div class="Sentence" Num="1">１８１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和８年</div>
                     </td>
                   </tr>
@@ -15523,7 +15523,7 @@
                     <td>
                       <div class="Sentence" Num="1">１８３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和９年</div>
                     </td>
                   </tr>
@@ -15558,7 +15558,7 @@
                     <td>
                       <div class="Sentence" Num="1">１８３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１０年</div>
                     </td>
                   </tr>
@@ -15593,7 +15593,7 @@
                     <td>
                       <div class="Sentence" Num="1">１８１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１１年</div>
                     </td>
                   </tr>
@@ -15628,7 +15628,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１２年</div>
                     </td>
                   </tr>
@@ -15663,7 +15663,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                   </tr>
@@ -15698,7 +15698,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                   </tr>
@@ -15733,7 +15733,7 @@
                     <td>
                       <div class="Sentence" Num="1">１２８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                   </tr>
@@ -15768,7 +15768,7 @@
                     <td>
                       <div class="Sentence" Num="1">１２３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                   </tr>
@@ -15803,7 +15803,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                   </tr>
@@ -15838,7 +15838,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                   </tr>
@@ -15873,7 +15873,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                   </tr>
@@ -15908,10 +15908,10 @@
                     <td>
                       <div class="Sentence" Num="1">８５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
                   </tr>
@@ -15946,7 +15946,7 @@
                     <td>
                       <div class="Sentence" Num="1">７７</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -15981,7 +15981,7 @@
                     <td>
                       <div class="Sentence" Num="1">７１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月－９月</div>
                     </td>
                   </tr>
@@ -16016,7 +16016,7 @@
                     <td>
                       <div class="Sentence" Num="1">５１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -16051,10 +16051,10 @@
                     <td>
                       <div class="Sentence" Num="1">３０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―２月</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
                   </tr>
@@ -16089,7 +16089,7 @@
                     <td>
                       <div class="Sentence" Num="1">２０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３月</div>
                     </td>
                   </tr>
@@ -16124,7 +16124,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -16159,7 +16159,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -16194,7 +16194,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -16229,10 +16229,10 @@
                     <td>
                       <div class="Sentence" Num="1">１０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
                   </tr>
@@ -16267,7 +16267,7 @@
                     <td>
                       <div class="Sentence" Num="1">８．１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -16302,7 +16302,7 @@
                     <td>
                       <div class="Sentence" Num="1">４．４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -16337,7 +16337,7 @@
                     <td>
                       <div class="Sentence" Num="1">３．３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -16372,10 +16372,10 @@
                     <td>
                       <div class="Sentence" Num="1">３．０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
                   </tr>
@@ -16410,7 +16410,7 @@
                     <td>
                       <div class="Sentence" Num="1">２．９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -16445,7 +16445,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．７</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -16480,7 +16480,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -16515,10 +16515,10 @@
                     <td>
                       <div class="Sentence" Num="1">１．３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
                   </tr>
@@ -16553,7 +16553,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -16588,7 +16588,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -16623,7 +16623,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -16658,10 +16658,10 @@
                     <td>
                       <div class="Sentence" Num="1">１．２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
                   </tr>
@@ -16696,7 +16696,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -16731,7 +16731,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -16766,7 +16766,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -16801,10 +16801,10 @@
                     <td>
                       <div class="Sentence" Num="1">０．９４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
                   </tr>
@@ -16839,7 +16839,7 @@
                     <td>
                       <div class="Sentence" Num="1">０．９５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -16874,7 +16874,7 @@
                     <td>
                       <div class="Sentence" Num="1">０．９５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -16909,7 +16909,7 @@
                     <td>
                       <div class="Sentence" Num="1">０．９６</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -16944,12 +16944,12 @@
                     <td>
                       <div class="Sentence" Num="1">０．９７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="13">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -16962,50 +16962,50 @@
                 <div class="TableStructTitle">有形減価償却資産及び非事業用家屋についての再評価倍数表（再評価日が昭和２９年以後である場合）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">耐用年数</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">２年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">３年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">４年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">７年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">８年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">９年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１１年</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３３年以前</div>
                     </td>
                     <td>
@@ -17040,7 +17040,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３４年</div>
                     </td>
                     <td>
@@ -17075,7 +17075,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３５年</div>
                     </td>
                     <td>
@@ -17110,7 +17110,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３６年</div>
                     </td>
                     <td>
@@ -17145,7 +17145,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３７年</div>
                     </td>
                     <td>
@@ -17180,7 +17180,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３８年</div>
                     </td>
                     <td>
@@ -17215,7 +17215,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３９年</div>
                     </td>
                     <td>
@@ -17250,7 +17250,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４０年</div>
                     </td>
                     <td>
@@ -17285,7 +17285,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４１年</div>
                     </td>
                     <td>
@@ -17320,7 +17320,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４２年</div>
                     </td>
                     <td>
@@ -17355,7 +17355,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４３年</div>
                     </td>
                     <td>
@@ -17390,7 +17390,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４４年</div>
                     </td>
                     <td>
@@ -17425,7 +17425,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４５年</div>
                       <div class="Sentence" Num="2">大正元年</div>
                     </td>
@@ -17461,7 +17461,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正２年</div>
                     </td>
                     <td>
@@ -17496,7 +17496,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正３年</div>
                     </td>
                     <td>
@@ -17531,7 +17531,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正４年</div>
                     </td>
                     <td>
@@ -17566,7 +17566,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正５年</div>
                     </td>
                     <td>
@@ -17601,7 +17601,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正６年</div>
                     </td>
                     <td>
@@ -17636,7 +17636,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正７年</div>
                     </td>
                     <td>
@@ -17671,7 +17671,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正８年</div>
                     </td>
                     <td>
@@ -17706,7 +17706,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正９年</div>
                     </td>
                     <td>
@@ -17741,7 +17741,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１０年</div>
                     </td>
                     <td>
@@ -17776,7 +17776,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１１年</div>
                     </td>
                     <td>
@@ -17811,7 +17811,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１２年</div>
                     </td>
                     <td>
@@ -17846,7 +17846,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１３年</div>
                     </td>
                     <td>
@@ -17881,7 +17881,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１４年</div>
                     </td>
                     <td>
@@ -17916,7 +17916,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１５年</div>
                       <div class="Sentence" Num="2">昭和元年</div>
                     </td>
@@ -17952,7 +17952,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２年</div>
                     </td>
                     <td>
@@ -17987,7 +17987,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和３年</div>
                     </td>
                     <td>
@@ -18022,7 +18022,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和４年</div>
                     </td>
                     <td>
@@ -18057,7 +18057,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和５年</div>
                     </td>
                     <td>
@@ -18092,7 +18092,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和６年</div>
                     </td>
                     <td>
@@ -18127,7 +18127,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和７年</div>
                     </td>
                     <td>
@@ -18162,7 +18162,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和８年</div>
                     </td>
                     <td>
@@ -18197,7 +18197,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和９年</div>
                     </td>
                     <td>
@@ -18232,7 +18232,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１０年</div>
                     </td>
                     <td>
@@ -18267,7 +18267,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１１年</div>
                     </td>
                     <td>
@@ -18302,7 +18302,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１２年</div>
                     </td>
                     <td>
@@ -18337,7 +18337,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                     <td>
@@ -18372,7 +18372,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                     <td>
@@ -18407,7 +18407,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                     <td>
@@ -18442,7 +18442,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                     <td>
@@ -18477,7 +18477,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                     <td>
@@ -18512,7 +18512,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                     <td>
@@ -18547,7 +18547,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                     <td>
@@ -18582,10 +18582,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -18620,7 +18620,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -18655,7 +18655,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -18690,7 +18690,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -18725,10 +18725,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―２月</div>
                     </td>
                     <td>
@@ -18763,7 +18763,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３月</div>
                     </td>
                     <td>
@@ -18798,7 +18798,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -18833,7 +18833,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -18868,7 +18868,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -18903,10 +18903,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -18941,7 +18941,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -18976,7 +18976,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -19011,7 +19011,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -19046,10 +19046,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -19084,7 +19084,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -19119,7 +19119,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -19154,7 +19154,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -19189,10 +19189,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -19227,7 +19227,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -19262,7 +19262,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -19297,7 +19297,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -19332,10 +19332,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -19370,7 +19370,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -19405,7 +19405,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -19440,7 +19440,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -19475,10 +19475,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -19513,7 +19513,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -19548,7 +19548,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -19583,7 +19583,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -19618,7 +19618,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
                     <td>
@@ -19653,7 +19653,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="13">
                       <div class="Sentence" Num="1">上記の表に該当する耐用年数がない資産についての倍数は、その取得の時期及び耐用年数に応じて下記の算式により計算した数による。</div>
                       <div class="Sentence" Num="2">
                         <div class="ArithFormula">（１－償却率）<div class="Sup">ｎ</div>×取得の時期に応ずる別表第三の倍数</div>
@@ -22560,7 +22560,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -25457,7 +25457,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="12">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -25466,45 +25466,45 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">４６年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">５７年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６１年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">６５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">７０年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">７５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">８０年</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">耐用年数</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                   </tr>
@@ -25539,7 +25539,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３４</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３３年以前</div>
                     </td>
                   </tr>
@@ -25574,7 +25574,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４４</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３４年</div>
                     </td>
                   </tr>
@@ -25609,7 +25609,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３５年</div>
                     </td>
                   </tr>
@@ -25644,7 +25644,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３６年</div>
                     </td>
                   </tr>
@@ -25679,7 +25679,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３７年</div>
                     </td>
                   </tr>
@@ -25714,7 +25714,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３８年</div>
                     </td>
                   </tr>
@@ -25749,7 +25749,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治３９年</div>
                     </td>
                   </tr>
@@ -25784,7 +25784,7 @@
                     <td>
                       <div class="Sentence" Num="1">１２６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４０年</div>
                     </td>
                   </tr>
@@ -25819,7 +25819,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４１年</div>
                     </td>
                   </tr>
@@ -25854,7 +25854,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４２年</div>
                     </td>
                   </tr>
@@ -25889,7 +25889,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４３年</div>
                     </td>
                   </tr>
@@ -25924,7 +25924,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４４年</div>
                     </td>
                   </tr>
@@ -25959,7 +25959,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">明治４５年</div>
                       <div class="Sentence" Num="2">大正元年</div>
                     </td>
@@ -25995,7 +25995,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正２年</div>
                     </td>
                   </tr>
@@ -26030,7 +26030,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正３年</div>
                     </td>
                   </tr>
@@ -26065,7 +26065,7 @@
                     <td>
                       <div class="Sentence" Num="1">１６０</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正４年</div>
                     </td>
                   </tr>
@@ -26100,7 +26100,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正５年</div>
                     </td>
                   </tr>
@@ -26135,7 +26135,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正６年</div>
                     </td>
                   </tr>
@@ -26170,7 +26170,7 @@
                     <td>
                       <div class="Sentence" Num="1">８７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正７年</div>
                     </td>
                   </tr>
@@ -26205,7 +26205,7 @@
                     <td>
                       <div class="Sentence" Num="1">７３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正８年</div>
                     </td>
                   </tr>
@@ -26240,7 +26240,7 @@
                     <td>
                       <div class="Sentence" Num="1">６９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正９年</div>
                     </td>
                   </tr>
@@ -26275,7 +26275,7 @@
                     <td>
                       <div class="Sentence" Num="1">９２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１０年</div>
                     </td>
                   </tr>
@@ -26310,7 +26310,7 @@
                     <td>
                       <div class="Sentence" Num="1">９６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１１年</div>
                     </td>
                   </tr>
@@ -26345,7 +26345,7 @@
                     <td>
                       <div class="Sentence" Num="1">９７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１２年</div>
                     </td>
                   </tr>
@@ -26380,7 +26380,7 @@
                     <td>
                       <div class="Sentence" Num="1">９７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１３年</div>
                     </td>
                   </tr>
@@ -26415,7 +26415,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０２</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１４年</div>
                     </td>
                   </tr>
@@ -26450,7 +26450,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１５年</div>
                       <div class="Sentence" Num="2">昭和元年</div>
                     </td>
@@ -26486,7 +26486,7 @@
                     <td>
                       <div class="Sentence" Num="1">１２８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２年</div>
                     </td>
                   </tr>
@@ -26521,7 +26521,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和３年</div>
                     </td>
                   </tr>
@@ -26556,7 +26556,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和４年</div>
                     </td>
                   </tr>
@@ -26591,7 +26591,7 @@
                     <td>
                       <div class="Sentence" Num="1">１７４</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和５年</div>
                     </td>
                   </tr>
@@ -26626,7 +26626,7 @@
                     <td>
                       <div class="Sentence" Num="1">２１１</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和６年</div>
                     </td>
                   </tr>
@@ -26661,7 +26661,7 @@
                     <td>
                       <div class="Sentence" Num="1">１９６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和７年</div>
                     </td>
                   </tr>
@@ -26696,7 +26696,7 @@
                     <td>
                       <div class="Sentence" Num="1">１７６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和８年</div>
                     </td>
                   </tr>
@@ -26731,7 +26731,7 @@
                     <td>
                       <div class="Sentence" Num="1">１７７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和９年</div>
                     </td>
                   </tr>
@@ -26766,7 +26766,7 @@
                     <td>
                       <div class="Sentence" Num="1">１７８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１０年</div>
                     </td>
                   </tr>
@@ -26801,7 +26801,7 @@
                     <td>
                       <div class="Sentence" Num="1">１７６</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１１年</div>
                     </td>
                   </tr>
@@ -26836,7 +26836,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１２年</div>
                     </td>
                   </tr>
@@ -26871,7 +26871,7 @@
                     <td>
                       <div class="Sentence" Num="1">１４５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                   </tr>
@@ -26906,7 +26906,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３５</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                   </tr>
@@ -26941,7 +26941,7 @@
                     <td>
                       <div class="Sentence" Num="1">１２４</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                   </tr>
@@ -26976,7 +26976,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１９</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                   </tr>
@@ -27011,7 +27011,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１３</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                   </tr>
@@ -27046,7 +27046,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                   </tr>
@@ -27081,7 +27081,7 @@
                     <td>
                       <div class="Sentence" Num="1">９８</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                   </tr>
@@ -27116,10 +27116,10 @@
                     <td>
                       <div class="Sentence" Num="1">８３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
                   </tr>
@@ -27154,7 +27154,7 @@
                     <td>
                       <div class="Sentence" Num="1">７５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -27189,7 +27189,7 @@
                     <td>
                       <div class="Sentence" Num="1">６９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -27224,7 +27224,7 @@
                     <td>
                       <div class="Sentence" Num="1">４９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -27259,10 +27259,10 @@
                     <td>
                       <div class="Sentence" Num="1">２９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―２月</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
                   </tr>
@@ -27297,7 +27297,7 @@
                     <td>
                       <div class="Sentence" Num="1">２０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３月</div>
                     </td>
                   </tr>
@@ -27332,7 +27332,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -27367,7 +27367,7 @@
                     <td>
                       <div class="Sentence" Num="1">１３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -27402,7 +27402,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -27437,10 +27437,10 @@
                     <td>
                       <div class="Sentence" Num="1">１０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
                   </tr>
@@ -27475,7 +27475,7 @@
                     <td>
                       <div class="Sentence" Num="1">７．９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -27510,7 +27510,7 @@
                     <td>
                       <div class="Sentence" Num="1">４．３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -27545,7 +27545,7 @@
                     <td>
                       <div class="Sentence" Num="1">３．２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -27580,10 +27580,10 @@
                     <td>
                       <div class="Sentence" Num="1">２．９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
                   </tr>
@@ -27618,7 +27618,7 @@
                     <td>
                       <div class="Sentence" Num="1">２．８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -27653,7 +27653,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．６</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -27688,7 +27688,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -27723,10 +27723,10 @@
                     <td>
                       <div class="Sentence" Num="1">１．３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
                   </tr>
@@ -27761,7 +27761,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -27796,7 +27796,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -27831,7 +27831,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -27866,10 +27866,10 @@
                     <td>
                       <div class="Sentence" Num="1">１．１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
                   </tr>
@@ -27904,7 +27904,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -27939,7 +27939,7 @@
                     <td>
                       <div class="Sentence" Num="1">１．０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -27974,7 +27974,7 @@
                     <td>
                       <div class="Sentence" Num="1">０．９９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -28009,10 +28009,10 @@
                     <td>
                       <div class="Sentence" Num="1">０．９１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
                   </tr>
@@ -28047,7 +28047,7 @@
                     <td>
                       <div class="Sentence" Num="1">０．９２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                   </tr>
@@ -28082,7 +28082,7 @@
                     <td>
                       <div class="Sentence" Num="1">０．９３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                   </tr>
@@ -28117,7 +28117,7 @@
                     <td>
                       <div class="Sentence" Num="1">０．９３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                   </tr>
@@ -28152,12 +28152,12 @@
                     <td>
                       <div class="Sentence" Num="1">０．９４</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="13">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                   </tr>
@@ -28176,7 +28176,7 @@
                     <td>
                       <div class="Sentence" Num="1">倍数</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                     <td>
@@ -28190,7 +28190,7 @@
                     <td>
                       <div class="Sentence" Num="1">６２２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                     <td>
@@ -28204,7 +28204,7 @@
                     <td>
                       <div class="Sentence" Num="1">６４９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                     <td>
@@ -28218,7 +28218,7 @@
                     <td>
                       <div class="Sentence" Num="1">６４２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                     <td>
@@ -28232,7 +28232,7 @@
                     <td>
                       <div class="Sentence" Num="1">６０４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                     <td>
@@ -28246,7 +28246,7 @@
                     <td>
                       <div class="Sentence" Num="1">５７４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                     <td>
@@ -28260,7 +28260,7 @@
                     <td>
                       <div class="Sentence" Num="1">５３５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                     <td>
@@ -28274,7 +28274,7 @@
                     <td>
                       <div class="Sentence" Num="1">５１９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                     <td>
@@ -28288,7 +28288,7 @@
                     <td>
                       <div class="Sentence" Num="1">４８１</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
                     <td>
@@ -28347,13 +28347,13 @@
                     <td>
                       <div class="Sentence" Num="1">４９９</div>
                     </td>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１月―２月</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">３６</div>
                     </td>
                   </tr>
@@ -28361,7 +28361,7 @@
                     <td>
                       <div class="Sentence" Num="1">明治４５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">４７１</div>
                     </td>
                   </tr>
@@ -28369,10 +28369,10 @@
                     <td>
                       <div class="Sentence" Num="1">大正元年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">３月</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">２５</div>
                     </td>
                   </tr>
@@ -28433,7 +28433,7 @@
                     <td>
                       <div class="Sentence" Num="1">３２０</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
                     <td>
@@ -28492,7 +28492,7 @@
                     <td>
                       <div class="Sentence" Num="1">２３５</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
                     <td>
@@ -28551,7 +28551,7 @@
                     <td>
                       <div class="Sentence" Num="1">２３３</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
                     <td>
@@ -28565,7 +28565,7 @@
                     <td>
                       <div class="Sentence" Num="1">大正１５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">２６３</div>
                     </td>
                     <td>
@@ -28607,7 +28607,7 @@
                     <td>
                       <div class="Sentence" Num="1">２７５</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
                     <td>
@@ -28666,7 +28666,7 @@
                     <td>
                       <div class="Sentence" Num="1">３６７</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
                     <td>
@@ -28725,10 +28725,10 @@
                     <td>
                       <div class="Sentence" Num="1">２９４</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１．０</div>
                     </td>
                   </tr>
@@ -28749,59 +28749,59 @@
                 <div class="TableStructTitle">無形減価償却資産についての再評価倍数表（再評価日が昭和２８年中である場合）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">実用新案権及び意匠権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">漁業権、特許権及び営業権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電気ガス供給施設利用権及び商標権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">水利権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">専用側線利用権及び鉄道軌道連絡通行施設利用権</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">実用新案権及び意匠権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">漁業権、特許権及び営業権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電気ガス供給施設利用権及び商標権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">水利権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">専用側線利用権及び鉄道軌道連絡通行施設利用権</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１３年</div>
                     </td>
                     <td>
@@ -28819,10 +28819,10 @@
                     <td>
                       <div class="Sentence" Num="1">３．１</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―２月</div>
                     </td>
                     <td>
@@ -28842,7 +28842,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１４年</div>
                     </td>
                     <td>
@@ -28860,7 +28860,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３月</div>
                     </td>
                     <td>
@@ -28880,25 +28880,25 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">２１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -28918,10 +28918,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和元年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -28941,7 +28941,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２年</div>
                     </td>
                     <td>
@@ -28959,7 +28959,7 @@
                     <td>
                       <div class="Sentence" Num="1">３２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -28979,7 +28979,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和３年</div>
                     </td>
                     <td>
@@ -28997,10 +28997,10 @@
                     <td>
                       <div class="Sentence" Num="1">４１</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -29020,7 +29020,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和４年</div>
                     </td>
                     <td>
@@ -29038,7 +29038,7 @@
                     <td>
                       <div class="Sentence" Num="1">５２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -29058,7 +29058,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和５年</div>
                     </td>
                     <td>
@@ -29076,7 +29076,7 @@
                     <td>
                       <div class="Sentence" Num="1">７５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -29096,7 +29096,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和６年</div>
                     </td>
                     <td>
@@ -29114,7 +29114,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -29134,7 +29134,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和７年</div>
                     </td>
                     <td>
@@ -29152,10 +29152,10 @@
                     <td>
                       <div class="Sentence" Num="1">１０４</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -29175,7 +29175,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和８年</div>
                     </td>
                     <td>
@@ -29193,7 +29193,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -29213,7 +29213,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和９年</div>
                     </td>
                     <td>
@@ -29231,7 +29231,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -29251,7 +29251,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１０年</div>
                     </td>
                     <td>
@@ -29269,7 +29269,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -29289,7 +29289,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１１年</div>
                     </td>
                     <td>
@@ -29307,10 +29307,10 @@
                     <td>
                       <div class="Sentence" Num="1">１２４</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -29330,7 +29330,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１２年</div>
                     </td>
                     <td>
@@ -29348,7 +29348,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１０</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -29368,7 +29368,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                     <td>
@@ -29386,7 +29386,7 @@
                     <td>
                       <div class="Sentence" Num="1">１１２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -29406,7 +29406,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                     <td>
@@ -29424,7 +29424,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -29444,7 +29444,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                     <td>
@@ -29462,10 +29462,10 @@
                     <td>
                       <div class="Sentence" Num="1">１０３</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -29485,7 +29485,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                     <td>
@@ -29503,7 +29503,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -29523,7 +29523,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                     <td>
@@ -29541,7 +29541,7 @@
                     <td>
                       <div class="Sentence" Num="1">９９</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -29561,7 +29561,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                     <td>
@@ -29579,7 +29579,7 @@
                     <td>
                       <div class="Sentence" Num="1">９８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -29599,7 +29599,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                     <td>
@@ -29617,10 +29617,10 @@
                     <td>
                       <div class="Sentence" Num="1">９１</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -29640,10 +29640,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -29661,7 +29661,7 @@
                     <td>
                       <div class="Sentence" Num="1">７８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -29681,7 +29681,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -29699,7 +29699,7 @@
                     <td>
                       <div class="Sentence" Num="1">７１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -29719,7 +29719,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -29737,7 +29737,7 @@
                     <td>
                       <div class="Sentence" Num="1">６６</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -29757,7 +29757,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -29775,7 +29775,7 @@
                     <td>
                       <div class="Sentence" Num="1">４７</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
                     <td>
@@ -29803,59 +29803,59 @@
                 <div class="TableStructTitle">無形減価償却資産についての再評価倍数表（再評価日が昭和２９年以後である場合）</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">実用新案権及び意匠権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">漁業権、特許権及び営業権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電気ガス供給施設利用権及び商標権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">水利権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">専用側線利用権及び鉄道軌道連絡通行施設利用権</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
                     <td>
                       <div class="Sentence" Num="1">種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">実用新案権及び意匠権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">漁業権、特許権及び営業権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">電気ガス供給施設利用権及び商標権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">水利権</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">専用側線利用権及び鉄道軌道連絡通行施設利用権</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１４年</div>
                     </td>
                     <td>
@@ -29873,10 +29873,10 @@
                     <td>
                       <div class="Sentence" Num="1">３．２</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">３月</div>
                     </td>
                     <td>
@@ -29896,25 +29896,25 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">大正１５年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -29934,10 +29934,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和元年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -29957,7 +29957,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和２年</div>
                     </td>
                     <td>
@@ -29975,7 +29975,7 @@
                     <td>
                       <div class="Sentence" Num="1">２２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -29995,7 +29995,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和３年</div>
                     </td>
                     <td>
@@ -30013,10 +30013,10 @@
                     <td>
                       <div class="Sentence" Num="1">３１</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -30036,7 +30036,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和４年</div>
                     </td>
                     <td>
@@ -30054,7 +30054,7 @@
                     <td>
                       <div class="Sentence" Num="1">４２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -30074,7 +30074,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和５年</div>
                     </td>
                     <td>
@@ -30092,7 +30092,7 @@
                     <td>
                       <div class="Sentence" Num="1">６３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -30112,7 +30112,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和６年</div>
                     </td>
                     <td>
@@ -30130,7 +30130,7 @@
                     <td>
                       <div class="Sentence" Num="1">８８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -30150,7 +30150,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和７年</div>
                     </td>
                     <td>
@@ -30168,10 +30168,10 @@
                     <td>
                       <div class="Sentence" Num="1">９２</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -30191,7 +30191,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和８年</div>
                     </td>
                     <td>
@@ -30209,7 +30209,7 @@
                     <td>
                       <div class="Sentence" Num="1">９１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -30229,7 +30229,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和９年</div>
                     </td>
                     <td>
@@ -30247,7 +30247,7 @@
                     <td>
                       <div class="Sentence" Num="1">１００</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -30267,7 +30267,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１０年</div>
                     </td>
                     <td>
@@ -30285,7 +30285,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -30305,7 +30305,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１１年</div>
                     </td>
                     <td>
@@ -30323,10 +30323,10 @@
                     <td>
                       <div class="Sentence" Num="1">１１４</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -30346,7 +30346,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１２年</div>
                     </td>
                     <td>
@@ -30364,7 +30364,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -30384,7 +30384,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                     <td>
@@ -30402,7 +30402,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -30422,7 +30422,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                     <td>
@@ -30440,7 +30440,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０１</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -30460,7 +30460,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                     <td>
@@ -30478,10 +30478,10 @@
                     <td>
                       <div class="Sentence" Num="1">９７</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -30501,7 +30501,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                     <td>
@@ -30519,7 +30519,7 @@
                     <td>
                       <div class="Sentence" Num="1">９６</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -30539,7 +30539,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                     <td>
@@ -30557,7 +30557,7 @@
                     <td>
                       <div class="Sentence" Num="1">９４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -30577,7 +30577,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                     <td>
@@ -30595,7 +30595,7 @@
                     <td>
                       <div class="Sentence" Num="1">９３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -30615,7 +30615,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                     <td>
@@ -30633,10 +30633,10 @@
                     <td>
                       <div class="Sentence" Num="1">８６</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -30656,10 +30656,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―３月</div>
                     </td>
                     <td>
@@ -30677,7 +30677,7 @@
                     <td>
                       <div class="Sentence" Num="1">７４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -30697,7 +30697,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">４月―６月</div>
                     </td>
                     <td>
@@ -30715,7 +30715,7 @@
                     <td>
                       <div class="Sentence" Num="1">６８</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -30735,7 +30735,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">７月―９月</div>
                     </td>
                     <td>
@@ -30753,7 +30753,7 @@
                     <td>
                       <div class="Sentence" Num="1">６３</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -30773,7 +30773,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１０月―１２月</div>
                     </td>
                     <td>
@@ -30791,7 +30791,7 @@
                     <td>
                       <div class="Sentence" Num="1">４５</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="3">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
                     <td>
@@ -30814,7 +30814,7 @@
                     <td>
                       <div class="Sentence" Num="1">　</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">１月―２月</div>
                     </td>
                     <td>
@@ -30857,7 +30857,7 @@
                 <div class="TableStructTitle">その他の事業用資産（個人）及び非事業用資産（土地及び家屋を除く。）についての再評価倍数表</div>
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                     <td>
@@ -30865,7 +30865,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
                     <td>
@@ -30900,7 +30900,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
                     <td>
@@ -30935,7 +30935,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
                     <td>
@@ -30970,7 +30970,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
                     <td>
@@ -31005,7 +31005,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
                     <td>
@@ -31040,7 +31040,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
                     <td>
@@ -31075,7 +31075,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
                     <td>
@@ -31097,7 +31097,7 @@
                     <td>
                       <div class="Sentence" Num="1">倍数</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">取得の時期</div>
                     </td>
                     <td>
@@ -31111,7 +31111,7 @@
                     <td>
                       <div class="Sentence" Num="1">２８５</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１３年</div>
                     </td>
                     <td>
@@ -31125,7 +31125,7 @@
                     <td>
                       <div class="Sentence" Num="1">２９７</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１４年</div>
                     </td>
                     <td>
@@ -31139,7 +31139,7 @@
                     <td>
                       <div class="Sentence" Num="1">２９４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１５年</div>
                     </td>
                     <td>
@@ -31153,7 +31153,7 @@
                     <td>
                       <div class="Sentence" Num="1">２７６</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１６年</div>
                     </td>
                     <td>
@@ -31167,7 +31167,7 @@
                     <td>
                       <div class="Sentence" Num="1">２６２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１７年</div>
                     </td>
                     <td>
@@ -31181,7 +31181,7 @@
                     <td>
                       <div class="Sentence" Num="1">２４４</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１８年</div>
                     </td>
                     <td>
@@ -31195,7 +31195,7 @@
                     <td>
                       <div class="Sentence" Num="1">２３７</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">昭和１９年</div>
                     </td>
                     <td>
@@ -31209,7 +31209,7 @@
                     <td>
                       <div class="Sentence" Num="1">２２０</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２０年</div>
                     </td>
                     <td>
@@ -31268,7 +31268,7 @@
                     <td>
                       <div class="Sentence" Num="1">２２８</div>
                     </td>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">昭和２１年</div>
                     </td>
                     <td>
@@ -31342,7 +31342,7 @@
                     <td>
                       <div class="Sentence" Num="1">２４６</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２２年</div>
                     </td>
                     <td>
@@ -31401,7 +31401,7 @@
                     <td>
                       <div class="Sentence" Num="1">９６</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２３年</div>
                     </td>
                     <td>
@@ -31460,7 +31460,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０３</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２４年</div>
                     </td>
                     <td>
@@ -31520,7 +31520,7 @@
                     <td>
                       <div class="Sentence" Num="1">１０７</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２５年</div>
                     </td>
                     <td>
@@ -31579,7 +31579,7 @@
                     <td>
                       <div class="Sentence" Num="1">１５０</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">昭和２６年</div>
                     </td>
                     <td>
@@ -31638,10 +31638,10 @@
                     <td>
                       <div class="Sentence" Num="1">１３３</div>
                     </td>
-                    <td>
+                    <td rowspan="2" colspan="2">
                       <div class="Sentence" Num="1">昭和２７年</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence" Num="1">１．０</div>
                     </td>
                   </tr>

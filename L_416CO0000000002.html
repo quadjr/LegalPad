@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -607,7 +607,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="4">
                           <div class="Sentence" Num="1">区分</div>
                         </td>
                         <td>
@@ -618,7 +618,7 @@
                         <td>
                           <div class="Sentence" Num="1">大学</div>
                         </td>
-                        <td>
+                        <td rowspan="2" colspan="2">
                           <div class="Sentence" Num="1">地方公共団体、国立大学法人（<a class="reference_link" href="L_415AC0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国立大学法人法</a>（<a class="reference_link" href="L_415AC0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十五年法律第百十二号</a>）<a class="reference_link" href="L_415AC0000000112.html#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項</a>に規定する国立大学法人をいう。以下同じ。）又は公立大学法人（<a class="reference_link" href="L_415AC0000000118.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方独立行政法人法</a>（<a class="reference_link" href="L_415AC0000000118.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十五年法律第百十八号</a>）<a class="reference_link" href="L_415AC0000000118.html#Mp-At_68-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条第一項</a>に規定する公立大学法人をいう。以下同じ。）が設置する大学</div>
                         </td>
                         <td>
@@ -711,7 +711,7 @@
                         <td>
                           <div class="Sentence" Num="1">大学院</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence" Num="1">修士課程及び専門職大学院の課程</div>
                         </td>
                         <td>
@@ -722,7 +722,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence" Num="1">博士課程</div>
                         </td>
                         <td>
@@ -869,7 +869,7 @@
                         <td>
                           <div class="Sentence" Num="1">専修学校</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">国、地方公共団体、独立行政法人（<a class="reference_link" href="L_411AC0000000103.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">独立行政法人通則法</a>（<a class="reference_link" href="L_411AC0000000103.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十一年法律第百三号</a>）<a class="reference_link" href="L_411AC0000000103.html#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項</a>に規定する独立行政法人をいう。<a class="reference_link" href="#Mp-At_8_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条の二第一項第一号</a>の表及び<a class="reference_link" href="#Mp-At_1-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項第一号</a>の表において同じ。）、国立大学法人又は地方独立行政法人（<a class="reference_link" href="L_415AC0000000118.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方独立行政法人法</a>
                             <a class="reference_link" href="L_415AC0000000118.html#Mp-At_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項</a>に規定する地方独立行政法人をいう。<a class="reference_link" href="#Mp-At_8_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条の二第一項第一号</a>の表及び<a class="reference_link" href="#Mp-At_1-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二項第一号</a>の表において同じ。）が設置する専修学校（専門課程に限る。附則第十一条<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一項</a>を除き、以下同じ。）</div>
                         </td>
@@ -884,7 +884,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -898,7 +898,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">私立の専修学校</div>
                         </td>
                         <td>
@@ -912,7 +912,7 @@
                         <td>
                           <div class="Sentence" Num="1">　</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence" Num="1">　</div>
                         </td>
                         <td>
@@ -923,7 +923,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="5">
                           <div class="Sentence" Num="1">備考</div>
                           <div class="Sentence" Num="2">一　「大学」には、別科（機械又は装置の修理、保守又は操作、製造、加工、建設、医療、栄養の指導、保育、経理その他これらに類する職業に必要な技術の教授を目的とするもので文部科学省令で定めるもの（<a class="reference_link" href="#Mp-At_1-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">次号</a>において「特定別科」という。）を除く。）を含まない（<a class="reference_link" href="#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条</a>及び<a class="reference_link" href="#Mp-At_8_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第八条の二</a>を除き、以下同じ。）。</div>
                           <div class="Sentence" Num="3">二　「学部」には、専攻科及び特定別科を含む。</div>
@@ -1097,7 +1097,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence" Num="1">備考　この表の下欄に掲げる算式中次に掲げる記号の意義は、それぞれ次に定めるとおりとする。</div>
                           <div class="Sentence" Num="2">Ａ　私立の大学の医学又は歯学を履修する課程及び薬学又は獣医学を履修する課程にあっては一二〇、〇〇〇円、法科大学院の法学を履修する課程にあっては一五〇、〇〇〇円</div>
                           <div class="Sentence" Num="3">Ｂ　この表の中欄の機構の定める額（その額が二以上あるときは、そのうち貸与を受ける学生が選択した額）</div>
@@ -1316,7 +1316,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence" Num="1">区分</div>
                           </td>
                           <td>
@@ -1327,7 +1327,7 @@
                           <td>
                             <div class="Sentence" Num="1">大学</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">地方公共団体、国立大学法人又は公立大学法人が設置する大学</div>
                           </td>
                           <td>
@@ -1377,10 +1377,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">高等専門学校</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">地方公共団体、独立行政法人国立高等専門学校機構又は公立大学法人が設置する高等専門学校（第四学年及び第五学年に限る。以下この条において同じ。）</div>
                           </td>
                           <td>
@@ -1391,10 +1391,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">自宅外通学のとき</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">三四、二〇〇円</div>
                           </td>
                         </tr>
@@ -1435,7 +1435,7 @@
                           <td>
                             <div class="Sentence" Num="1">専修学校</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">国、地方公共団体、独立行政法人、国立大学法人又は地方独立行政法人が設置する専修学校</div>
                           </td>
                           <td>
@@ -1485,7 +1485,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence" Num="1">備考</div>
                             <div class="Sentence" Num="2">一　「大学」には、専攻科（支援法<a class="reference_link" href="#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二項</a>に規定する短期大学の専攻科を除く。）及び別科を含まない（以下この条において同じ。）。</div>
                             <div class="Sentence" Num="3">二　「第四学年及び第五学年」には、支援法<a class="reference_link" href="#Mp-At_2-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第二項</a>に規定する高等専門学校の専攻科を含む。</div>
@@ -1539,7 +1539,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence" Num="1">区分</div>
                           </td>
                           <td>

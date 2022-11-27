@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -4358,10 +4358,10 @@
                       <td>
                         <div class="Sentence">測度の種類</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">新規測度又は全部改測</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">一部改測</div>
                       </td>
                     </tr>
@@ -4377,7 +4377,7 @@
                       <td>
                         <div class="Sentence">43,200円</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">27,600円</div>
                       </td>
                     </tr>
@@ -4396,7 +4396,7 @@
                       <td>
                         <div class="Sentence">96,700円</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">42,800円</div>
                       </td>
                     </tr>
@@ -4415,7 +4415,7 @@
                       <td>
                         <div class="Sentence">181,400円</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">63,900円</div>
                       </td>
                     </tr>
@@ -4434,7 +4434,7 @@
                       <td>
                         <div class="Sentence">297,300円</div>
                       </td>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">91,600円</div>
                       </td>
                     </tr>
@@ -4509,7 +4509,7 @@
                       <td>
                         <div class="Sentence">1,360,300円</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">157,200円</div>
                       </td>
                     </tr>
@@ -4556,10 +4556,10 @@
                       <td>
                         <div class="Sentence">測度の種類</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">新規測度又は全部改測</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">一部改測</div>
                       </td>
                     </tr>
@@ -4575,7 +4575,7 @@
                       <td>
                         <div class="Sentence">120,100円</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">75,100円</div>
                       </td>
                     </tr>
@@ -4594,7 +4594,7 @@
                       <td>
                         <div class="Sentence">260,400円</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">120,100円</div>
                       </td>
                     </tr>
@@ -4613,7 +4613,7 @@
                       <td>
                         <div class="Sentence">490,700円</div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">170,200円</div>
                       </td>
                     </tr>
@@ -4632,7 +4632,7 @@
                       <td>
                         <div class="Sentence">811,200円</div>
                       </td>
-                      <td>
+                      <td rowspan="9">
                         <div class="Sentence">250,300円</div>
                       </td>
                     </tr>
@@ -4707,7 +4707,7 @@
                       <td>
                         <div class="Sentence">3,705,900円</div>
                       </td>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">430,600円</div>
                       </td>
                     </tr>
@@ -5430,7 +5430,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence">
-                      <a class="reference_link" href="L_417CO0000000011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶登記令</a>（<a class="reference_link" href="L_417CO0000000011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十七年政令第十一号</a>）附則第五条第一項において準用する<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>（<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年法律第百二十三号</a>）附則第六条第三項の規定により読み替えて適用される同令第三十五条第一項において準用する<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
+                      <a class="reference_link" href="L_417CO0000000011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶登記令</a>（<a class="reference_link" href="L_417CO0000000011.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十七年政令第十一号</a>）附則第五条第一項において準用する<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">不動産登記法</a>（<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十六年法律第百二十三号</a>）附則第六条第三項の規定により読み替えて適用される<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_416AC0000000123.html#Mp-At_35-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条第一項</a>において準用する<a class="reference_link" href="L_416AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                       <a class="reference_link" href="L_416AC0000000123.html#Mp-At_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十一条</a>の規定により交付された登記済証については、この省令による改正前の<a class="reference_link" href="L_132M10001000024.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶法施行細則</a>
                       <a class="reference_link" href="L_132M10001000024.html#Mp-At_25" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条</a>の規定は、この省令の施行後も、なおその効力を有する。</div>
                   </div>
@@ -5535,10 +5536,10 @@
                     <td>
                       <div class="Sentence">測度の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">新規測度又は全部改測</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一部改測</div>
                     </td>
                   </tr>
@@ -5554,7 +5555,7 @@
                     <td>
                       <div class="Sentence">37,400円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">24,200円</div>
                     </td>
                   </tr>
@@ -5573,7 +5574,7 @@
                     <td>
                       <div class="Sentence">87,200円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">39,300円</div>
                     </td>
                   </tr>
@@ -5592,7 +5593,7 @@
                     <td>
                       <div class="Sentence">159,800円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">58,400円</div>
                     </td>
                   </tr>
@@ -5611,7 +5612,7 @@
                     <td>
                       <div class="Sentence">258,400円</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">65,000円</div>
                     </td>
                   </tr>
@@ -5686,7 +5687,7 @@
                     <td>
                       <div class="Sentence">949,300円</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">99,900円</div>
                     </td>
                   </tr>
@@ -5732,10 +5733,10 @@
                     <td>
                       <div class="Sentence">測度の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">新規測度又は全部改測</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一部改測</div>
                     </td>
                   </tr>
@@ -5751,7 +5752,7 @@
                     <td>
                       <div class="Sentence">37,400円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">24,200円</div>
                     </td>
                   </tr>
@@ -5770,7 +5771,7 @@
                     <td>
                       <div class="Sentence">87,100円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">39,300円</div>
                     </td>
                   </tr>
@@ -5789,7 +5790,7 @@
                     <td>
                       <div class="Sentence">159,700円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">58,300円</div>
                     </td>
                   </tr>
@@ -5808,7 +5809,7 @@
                     <td>
                       <div class="Sentence">258,100円</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">64,900円</div>
                     </td>
                   </tr>
@@ -5883,7 +5884,7 @@
                     <td>
                       <div class="Sentence">948,200円</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">99,800円</div>
                     </td>
                   </tr>
@@ -5929,10 +5930,10 @@
                     <td>
                       <div class="Sentence">測度の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">新規測度又は全部改測</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一部改測</div>
                     </td>
                   </tr>
@@ -5948,7 +5949,7 @@
                     <td>
                       <div class="Sentence">48,700円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">31,500円</div>
                     </td>
                   </tr>
@@ -5967,7 +5968,7 @@
                     <td>
                       <div class="Sentence">113,400円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">51,100円</div>
                     </td>
                   </tr>
@@ -5986,7 +5987,7 @@
                     <td>
                       <div class="Sentence">207,800円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">75,900円</div>
                     </td>
                   </tr>
@@ -6005,7 +6006,7 @@
                     <td>
                       <div class="Sentence">335,900円</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">84,500円</div>
                     </td>
                   </tr>
@@ -6080,7 +6081,7 @@
                     <td>
                       <div class="Sentence">1,233,900円</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">129,800円</div>
                     </td>
                   </tr>
@@ -6126,10 +6127,10 @@
                     <td>
                       <div class="Sentence">測度の種類</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">新規測度又は全部改測</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">一部改測</div>
                     </td>
                   </tr>
@@ -6145,7 +6146,7 @@
                     <td>
                       <div class="Sentence">48,600円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">31,500円</div>
                     </td>
                   </tr>
@@ -6164,7 +6165,7 @@
                     <td>
                       <div class="Sentence">113,300円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">51,000円</div>
                     </td>
                   </tr>
@@ -6183,7 +6184,7 @@
                     <td>
                       <div class="Sentence">207,500円</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">75,800円</div>
                     </td>
                   </tr>
@@ -6202,7 +6203,7 @@
                     <td>
                       <div class="Sentence">335,400円</div>
                     </td>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence">84,300円</div>
                     </td>
                   </tr>
@@ -6277,7 +6278,7 @@
                     <td>
                       <div class="Sentence">1,232,200円</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">129,700円</div>
                     </td>
                   </tr>

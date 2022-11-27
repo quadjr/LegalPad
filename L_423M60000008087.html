@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -4725,7 +4725,7 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">
                 </div>
                       </td>
@@ -4740,7 +4740,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">伝送主シンボル</div>
                       </td>
                       <td>
@@ -4754,7 +4754,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">上記以外</div>
                       </td>
                       <td>
@@ -4768,7 +4768,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">（内訳）</div>
                       </td>
                       <td>
@@ -4827,7 +4827,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">計</div>
                       </td>
                       <td>
@@ -5091,10 +5091,10 @@
                           <div class="TableStruct">
                             <table>
                               <tr>
-                                <td>
+                                <td rowspan="2">
                                   <div class="Sentence">キャリア変調マッピング</div>
                                 </td>
-                                <td>
+                                <td colspan="3">
                                   <div class="Sentence">遅延補正量（ビット数）</div>
                                 </td>
                               </tr>
@@ -5395,61 +5395,61 @@
                             <td>
                               <div class="Sentence">入力</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｃ１</div>
                               <div class="Sentence">Ｃ０</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ１</div>
                               <div class="Sentence">Ｙ１</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ２</div>
                               <div class="Sentence">Ｙ２</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ３</div>
                               <div class="Sentence">Ｙ３</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ４</div>
                               <div class="Sentence">Ｙ４</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ５</div>
                               <div class="Sentence">Ｙ５</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ６</div>
                               <div class="Sentence">Ｙ６</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ７</div>
                               <div class="Sentence">Ｙ７</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ８</div>
                               <div class="Sentence">Ｙ８</div>
                             </td>
-                            <td>
+                            <td rowspan="2" colspan="1">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">Ｘ９</div>
@@ -5466,7 +5466,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence">１／２</div>
                             </td>
                             <td>
@@ -5531,36 +5531,36 @@
                             <td>
                               <div class="Sentence">Ｐｎ</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="9">
                               <div class="Sentence">Ｘ１　Ｙ１　…</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence">２／３</div>
                             </td>
                             <td>
                               <div class="Sentence">パンクチャドパターン</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="2">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×</div>
                               <div class="Sentence">○○</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="2">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×</div>
                               <div class="Sentence">○○</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="2">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×</div>
                               <div class="Sentence">○○</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="2">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×</div>
@@ -5577,30 +5577,30 @@
                             <td>
                               <div class="Sentence">Ｐｎ</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="9">
                               <div class="Sentence">Ｘ１　Ｙ１　Ｙ２　…</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence">３／４</div>
                             </td>
                             <td>
                               <div class="Sentence">パンクチャドパターン</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="3">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×○</div>
                               <div class="Sentence">○○×</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="3">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×○</div>
                               <div class="Sentence">○○×</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="3">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×○</div>
@@ -5611,24 +5611,24 @@
                             <td>
                               <div class="Sentence">Ｐｎ</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="9">
                               <div class="Sentence">Ｘ１　Ｙ１　Ｙ２　Ｘ３　…</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence">５／６</div>
                             </td>
                             <td>
                               <div class="Sentence">パンクチャドパターン</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="5">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×○×○</div>
                               <div class="Sentence">○○×○×</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="4">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×○×</div>
@@ -5639,24 +5639,24 @@
                             <td>
                               <div class="Sentence">Ｐｎ</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="9">
                               <div class="Sentence">Ｘ１　Ｙ１　Ｙ２　Ｘ３　Ｙ４　Ｘ５　…</div>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2" colspan="2">
                               <div class="Sentence">７／８</div>
                             </td>
                             <td>
                               <div class="Sentence">パンクチャドパターン</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="7">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×××○×○</div>
                               <div class="Sentence">○○○○×○×</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="2">
                               <div class="Sentence">
                       </div>
                               <div class="Sentence">○×</div>
@@ -5667,7 +5667,7 @@
                             <td>
                               <div class="Sentence">Ｐｎ</div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="9">
                               <div class="Sentence">Ｘ１　Ｙ１　Ｙ２　Ｙ３　Ｙ４　Ｘ５　Ｙ６　Ｘ７　…</div>
                             </td>
                           </tr>
@@ -6296,14 +6296,14 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">
                 </div>
                       </td>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">モード</div>
                       </td>
-                      <td>
+                      <td colspan="4">
                         <div class="Sentence">１多重フレームに含まれるＴＳパケット数</div>
                       </td>
                     </tr>
@@ -6322,7 +6322,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">１セグメント形式</div>
                       </td>
                       <td>
@@ -6376,7 +6376,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">３セグメント形式</div>
                       </td>
                       <td>
@@ -6430,7 +6430,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">１３セグメント形式</div>
                       </td>
                       <td>
@@ -6583,13 +6583,13 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">キャリア変調マッピング</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence">畳込み符号</div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">遅延補正量（ＴＳパケット数）</div>
                         </td>
                       </tr>
@@ -6605,7 +6605,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5">
                           <div class="Sentence">４分のπシフト差動４相位相変調</div>
                           <div class="Sentence">４相位相変調</div>
                         </td>
@@ -6679,7 +6679,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5">
                           <div class="Sentence">１６値直交振幅変調</div>
                         </td>
                         <td>
@@ -6752,7 +6752,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="5">
                           <div class="Sentence">６４値直交振幅変調</div>
                         </td>
                         <td>
@@ -7101,7 +7101,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">走査線数</div>
                     </td>
                     <td>
@@ -7118,7 +7118,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">有効走査線数</div>
                     </td>
                     <td>
@@ -7135,7 +7135,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">走査方式</div>
                     </td>
                     <td>
@@ -7152,7 +7152,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フレーム周波数</div>
                     </td>
                     <td>
@@ -7169,7 +7169,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フィールド周波数</div>
                     </td>
                     <td>
@@ -7188,7 +7188,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">画面の横と縦の比</div>
                     </td>
                     <td>
@@ -7205,7 +7205,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">水平走査の繰返し周波数ｆＨ</div>
                     </td>
                     <td>
@@ -7222,7 +7222,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">標本化周波数</div>
                     </td>
                     <td>
@@ -7259,7 +7259,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１走査線当たりの標本化数</div>
                     </td>
                     <td>
@@ -7296,7 +7296,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１走査線当たりの有効標本化数</div>
                     </td>
                     <td>
@@ -7333,7 +7333,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ろ波特性</div>
                     </td>
                     <td>
@@ -7342,15 +7342,15 @@
                     <td>
                       <div class="Sentence">別記２</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">別記３</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">水平同期信号</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">別記４</div>
                     </td>
                     <td>
@@ -7361,7 +7361,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">垂直同期信号</div>
                     </td>
                     <td>
@@ -7441,13 +7441,13 @@
                       <div class="TableStructTitle">水平同期信号のタイミング及びレベル</div>
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">記号</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">項目</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">規定値</div>
                           </td>
                         </tr>
@@ -7564,7 +7564,7 @@
                           <td>
                             <div class="Sentence">負極性パルス振幅（ｍＶ）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">３００</div>
                           </td>
                         </tr>
@@ -7575,7 +7575,7 @@
                           <td>
                             <div class="Sentence">映像信号振幅（ｍＶ）</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">７００</div>
                           </td>
                         </tr>
@@ -8202,7 +8202,7 @@
                           <td>
                             <div class="Sentence">記号</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">項目</div>
                           </td>
                           <td>
@@ -8213,7 +8213,7 @@
                           <td>
                             <div class="Sentence">Ｈ</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">１ライン期間（Ｔ）</div>
                           </td>
                           <td>
@@ -8224,7 +8224,7 @@
                           <td>
                             <div class="Sentence">ｇ</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">１／２ライン期間（Ｔ）</div>
                           </td>
                           <td>
@@ -8235,7 +8235,7 @@
                           <td>
                             <div class="Sentence">ｈ</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">垂直同期パルス幅（Ｔ）</div>
                           </td>
                           <td>
@@ -8243,11 +8243,11 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                     </div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">画面の最上部のライン</div>
                           </td>
                           <td>
@@ -8266,11 +8266,11 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                     </div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">画面の最下部のライン</div>
                           </td>
                           <td>
@@ -8289,11 +8289,11 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                     </div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">垂直ブランキング期間</div>
                           </td>
                           <td>
@@ -8312,11 +8312,11 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                     </div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">フィールドの開始</div>
                           </td>
                           <td>
@@ -9551,7 +9551,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3" colspan="1">
                             <div class="Sentence">１０２４</div>
                           </td>
                           <td>
@@ -9578,7 +9578,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2" colspan="1">
                             <div class="Sentence">２０４８</div>
                           </td>
                           <td>
@@ -9597,7 +9597,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2" colspan="1">
                             <div class="Sentence">４０９６</div>
                           </td>
                           <td>
@@ -9618,7 +9618,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2" colspan="1">
                             <div class="Sentence">８１９２</div>
                           </td>
                           <td>
@@ -9663,7 +9663,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Subitem1" Num="2">
                               <div class="Subitem1Title">２</div>
                               <div class="Subitem1Sentence">
@@ -9754,7 +9754,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">シンボル番号ｊのスロット番号ｍ（ｍ＝１，２，…，７）に割り当てられるインターレース番号ｎｍ，ｊは、次式により与えられる。</div>
                             <div class="Sentence">ｎｍ，ｊ＝（ｎ０，ｊ＋Ｄ［（ｍ－１－（２×ｊ）ｍｏｄ７）ｍｏｄ７］）ｍｏｄ８</div>
                             <div class="Sentence">ただし、Ｄ［ｘ］は、ｘにより以下のとおりとする。</div>
@@ -9829,7 +9829,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Subitem1" Num="3">
                               <div class="Subitem1Title">３</div>
                               <div class="Subitem1Sentence">
@@ -9850,7 +9850,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2" colspan="1">
                             <div class="Sentence">１０２４</div>
                           </td>
                           <td>
@@ -9869,7 +9869,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="4" colspan="1">
                             <div class="Sentence">２０４８</div>
                           </td>
                           <td>
@@ -9909,7 +9909,7 @@
                           <td>
                             <div class="Sentence">４０９６／８１９２</div>
                           </td>
-                          <td>
+                          <td rowspan="1" colspan="2">
                             <div class="Sentence">マッピング１によるインターレース割当てのうちシンボル番号３のものと同一とする。</div>
                           </td>
                         </tr>
@@ -10762,7 +10762,7 @@
                               <div class="Sentence">
                       </div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="3">
                               <div class="Sentence">符号化率</div>
                             </td>
                           </tr>
@@ -10786,7 +10786,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6" colspan="1">
                               <div class="Sentence">入力</div>
                             </td>
                             <td>
@@ -10914,7 +10914,7 @@
                               <div class="Sentence">
                       </div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="3">
                               <div class="Sentence">符号化率</div>
                             </td>
                           </tr>
@@ -10938,7 +10938,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6" colspan="1">
                               <div class="Sentence">入力</div>
                             </td>
                             <td>
@@ -11047,7 +11047,7 @@
                               <div class="Sentence">
                       </div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="8">
                               <div class="Sentence">符号化率</div>
                             </td>
                           </tr>
@@ -11086,7 +11086,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6" colspan="1">
                               <div class="Sentence">入力</div>
                             </td>
                             <td>
@@ -11281,7 +11281,7 @@
                               <div class="Sentence">
                       </div>
                             </td>
-                            <td>
+                            <td rowspan="1" colspan="8">
                               <div class="Sentence">符号化率</div>
                             </td>
                           </tr>
@@ -11320,7 +11320,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6" colspan="1">
                               <div class="Sentence">入力</div>
                             </td>
                             <td>
@@ -11537,7 +11537,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6" colspan="1">
                               <div class="Sentence">入力</div>
                             </td>
                             <td>
@@ -11624,7 +11624,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="6" colspan="1">
                               <div class="Sentence">入力</div>
                             </td>
                             <td>
@@ -12401,7 +12401,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">二相位相変調</div>
                     </td>
                     <td>
@@ -12420,7 +12420,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">四相位相変調</div>
                     </td>
                     <td>
@@ -12455,7 +12455,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence">八相位相変調</div>
                     </td>
                     <td>
@@ -12859,61 +12859,61 @@
                       <td>
                         <div class="Sentence">入力</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｃ１</div>
                         <div class="Sentence">Ｃ０</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ１</div>
                         <div class="Sentence">Ｙ１</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ２</div>
                         <div class="Sentence">Ｙ２</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ３</div>
                         <div class="Sentence">Ｙ３</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ４</div>
                         <div class="Sentence">Ｙ４</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ５</div>
                         <div class="Sentence">Ｙ５</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ６</div>
                         <div class="Sentence">Ｙ６</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ７</div>
                         <div class="Sentence">Ｙ７</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ８</div>
                         <div class="Sentence">Ｙ８</div>
                       </td>
-                      <td>
+                      <td rowspan="2" colspan="1">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">Ｘ９</div>
@@ -12930,7 +12930,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2" colspan="2">
                         <div class="Sentence">１／２</div>
                       </td>
                       <td>
@@ -13054,31 +13054,31 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2" colspan="2">
                         <div class="Sentence">２／３</div>
                       </td>
                       <td>
                         <div class="Sentence">パンクチャドパターン</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="2">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○</div>
                         <div class="Sentence">○×</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="2">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○</div>
                         <div class="Sentence">○×</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="2">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○</div>
                         <div class="Sentence">○×</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="2">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○×</div>
@@ -13150,25 +13150,25 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2" colspan="2">
                         <div class="Sentence">３／４</div>
                       </td>
                       <td>
                         <div class="Sentence">パンクチャドパターン</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="3">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○×</div>
                         <div class="Sentence">○×○</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="3">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○×</div>
                         <div class="Sentence">○×○</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="3">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○×</div>
@@ -13232,19 +13232,19 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2" colspan="2">
                         <div class="Sentence">５／６</div>
                       </td>
                       <td>
                         <div class="Sentence">パンクチャドパターン</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="5">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○×○×</div>
                         <div class="Sentence">○×○×○</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="4">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○×○</div>
@@ -13308,19 +13308,19 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2" colspan="2">
                         <div class="Sentence">７／８</div>
                       </td>
                       <td>
                         <div class="Sentence">パンクチャドパターン</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="7">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○○○×○×</div>
                         <div class="Sentence">○×××○×○</div>
                       </td>
-                      <td>
+                      <td rowspan="1" colspan="2">
                         <div class="Sentence">
                 </div>
                         <div class="Sentence">○○</div>
@@ -13733,7 +13733,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="8" colspan="1">
                         <div class="Sentence">八相位相変調</div>
                       </td>
                       <td>
@@ -15728,10 +15728,10 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">変調方式</div>
                       </td>
-                      <td>
+                      <td colspan="3">
                         <div class="Sentence">スロット割当単位</div>
                       </td>
                     </tr>
@@ -21399,7 +21399,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">有効走査線数</div>
                     </td>
                     <td>
@@ -21416,7 +21416,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">走査方式</div>
                     </td>
                     <td>
@@ -21433,7 +21433,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フレーム周波数</div>
                     </td>
                     <td>
@@ -21458,7 +21458,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フィールド周波数</div>
                     </td>
                     <td>
@@ -21478,7 +21478,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">画面の横と縦の比</div>
                     </td>
                     <td>
@@ -21495,7 +21495,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１走査線当たりの有効標本化数</div>
                     </td>
                     <td>
@@ -21539,7 +21539,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">有効走査線数</div>
                     </td>
                     <td>
@@ -21553,7 +21553,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">走査方式</div>
                     </td>
                     <td>
@@ -21567,7 +21567,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フレーム周波数</div>
                     </td>
                     <td>
@@ -21586,7 +21586,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">フィールド周波数</div>
                     </td>
                     <td>
@@ -21602,7 +21602,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">画面の横と縦の比</div>
                     </td>
                     <td>
@@ -21616,7 +21616,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">１走査線当たりの有効標本化数</div>
                     </td>
                     <td>

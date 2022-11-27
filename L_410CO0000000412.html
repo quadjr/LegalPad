@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3720,7 +3720,7 @@
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_314AC0000000073.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船員保険法</a>（<a class="reference_link" href="L_314AC0000000073.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和十四年法律第七十三号</a>）の規定による療養の給付（<a class="reference_link" href="L_322AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船員法</a>（<a class="reference_link" href="L_322AC0000000100.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十二年法律第百号</a>）の規定による療養補償に相当するものに限る。）</div>
                             </td>
-                            <td>
+                            <td rowspan="20">
                               <div class="Sentence" Num="1">受けることができる給付</div>
                             </td>
                           </tr>
@@ -3843,7 +3843,7 @@
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_322AC0000000050.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">労働者災害補償保険法</a>の規定による介護補償給付、複数事業労働者介護給付及び介護給付</div>
                             </td>
-                            <td>
+                            <td rowspan="13">
                               <div class="Sentence" Num="1">受けることができる給付（介護に要する費用を支出して介護を受けた部分に限る。）</div>
                             </td>
                           </tr>
@@ -7005,7 +7005,8 @@
                             <div class="Column" Num="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_215IO0000000243.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">健康保険法施行令</a>
-                                <a class="reference_link" href="L_215IO0000000243.html#Mp-At_44-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十四条第二項</a>において準用する同令<a class="reference_link" href="#Mp-At_43_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条の二第一項第一号</a>、<a class="reference_link" href="#Mp-At_43_2-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>及び<a class="reference_link" href="#Mp-At_43_2-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>に掲げる額の合算額</div>
+                                <a class="reference_link" href="L_215IO0000000243.html#Mp-At_44-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十四条第二項</a>において準用する<a class="reference_link" href="L_215IO0000000243.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                                <a class="reference_link" href="L_215IO0000000243.html#Mp-At_43_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条の二第一項第一号</a>、<a class="reference_link" href="L_215IO0000000243.html#Mp-At_43_2-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三号</a>及び<a class="reference_link" href="L_215IO0000000243.html#Mp-At_43_2-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>に掲げる額の合算額</div>
                             </div>
                           </div>
                         </div>
@@ -10438,7 +10439,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="#Mp-At_78_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十八条の十一</a>
                               </div>
@@ -10900,7 +10901,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="#Mp-At_78_2-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十八条の二第九項</a>
                               </div>
@@ -11022,7 +11023,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="#Mp-At_78_2-Pr_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七十八条の二第十一項</a>
                               </div>
@@ -11597,7 +11598,8 @@
                         <div class="ItemSentence">
                           <div class="Sentence" Num="1">
                             <a class="reference_link" href="L_325AC0100000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">精神保健及び精神障害者福祉に関する法律</a>の規定（<a class="reference_link" href="L_325AC0100000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
-                            <a class="reference_link" href="L_325AC0100000123.html#Mp-At_19_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の五</a>、<a class="reference_link" href="L_325AC0100000123.html#Mp-At_19_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の十</a>及び<a class="reference_link" href="L_325AC0100000123.html#Mp-At_29-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第四項</a>に限る。）及び<a class="reference_link" href="L_325CO0000000155.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">精神保健及び精神障害者福祉に関する法律施行令</a>（<a class="reference_link" href="L_325CO0000000155.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年政令第百五十五号</a>）の規定（同令<a class="reference_link" href="#Mp-At_2_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条の三第一項</a>に限る。）</div>
+                            <a class="reference_link" href="L_325AC0100000123.html#Mp-At_19_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の五</a>、<a class="reference_link" href="L_325AC0100000123.html#Mp-At_19_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十九条の十</a>及び<a class="reference_link" href="L_325AC0100000123.html#Mp-At_29-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条第四項</a>に限る。）及び<a class="reference_link" href="L_325CO0000000155.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">精神保健及び精神障害者福祉に関する法律施行令</a>（<a class="reference_link" href="L_325CO0000000155.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年政令第百五十五号</a>）の規定（<a class="reference_link" href="L_325CO0000000155.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                            <a class="reference_link" href="L_325CO0000000155.html#Mp-At_2_3-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条の三第一項</a>に限る。）</div>
                         </div>
                       </div>
                       <div id="Mp-At_37-Pr_1-It_8" class="Item" Num="8">
@@ -11778,7 +11780,8 @@
                         <div class="ItemTitle">三十二</div>
                         <div class="ItemSentence">
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_412CO0000000252.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">厚生労働省組織令</a>（<a class="reference_link" href="L_412CO0000000252.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十二年政令第二百五十二号</a>）の規定（同令<a class="reference_link" href="#Mp-At_4-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第五号</a>、<a class="reference_link" href="#Mp-At_33-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第四号</a>、<a class="reference_link" href="#Mp-At_33-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>及び<a class="reference_link" href="#Mp-At_33-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>並びに<a class="reference_link" href="#Mp-At_34-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第二号</a>に限る。）</div>
+                            <a class="reference_link" href="L_412CO0000000252.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">厚生労働省組織令</a>（<a class="reference_link" href="L_412CO0000000252.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十二年政令第二百五十二号</a>）の規定（<a class="reference_link" href="L_412CO0000000252.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                            <a class="reference_link" href="L_412CO0000000252.html#Mp-At_4-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第五号</a>、<a class="reference_link" href="L_412CO0000000252.html#Mp-At_33-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条第四号</a>、<a class="reference_link" href="L_412CO0000000252.html#Mp-At_33-Pr_1-It_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五号</a>及び<a class="reference_link" href="L_412CO0000000252.html#Mp-At_33-Pr_1-It_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七号</a>並びに<a class="reference_link" href="L_412CO0000000252.html#Mp-At_34-Pr_1-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条第二号</a>に限る。）</div>
                         </div>
                       </div>
                       <div id="Mp-At_37-Pr_1-It_33" class="Item" Num="33">
@@ -11799,7 +11802,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_325AC0000000201.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建築基準法</a>（<a class="reference_link" href="L_325AC0000000201.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年法律第二百一号</a>）及び<a class="reference_link" href="L_325CO0000000338.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">建築基準法施行令</a>（<a class="reference_link" href="L_325CO0000000338.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十五年政令第三百三十八号</a>）</div>
                             </td>
@@ -11831,7 +11834,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_342AC0000000110.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公共用飛行場周辺における航空機騒音による障害の防止等に関する法律</a>（<a class="reference_link" href="L_342AC0000000110.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十二年法律第百十号</a>）及び<a class="reference_link" href="L_342CO0000000284.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公共用飛行場周辺における航空機騒音による障害の防止等に関する法律施行令</a>（<a class="reference_link" href="L_342CO0000000284.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十二年政令第二百八十四号</a>）</div>
                             </td>
@@ -11851,7 +11854,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_353AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定空港周辺航空機騒音対策特別措置法</a>（<a class="reference_link" href="L_353AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十三年法律第二十六号</a>）及び<a class="reference_link" href="L_353CO0000000355.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定空港周辺航空機騒音対策特別措置法施行令</a>（<a class="reference_link" href="L_353CO0000000355.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十三年政令第三百五十五号</a>）</div>
                             </td>
@@ -12091,7 +12094,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_342AC0000000110.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公共用飛行場周辺における航空機騒音による障害の防止等に関する法律</a>及び<a class="reference_link" href="L_342CO0000000284.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">公共用飛行場周辺における航空機騒音による障害の防止等に関する法律施行令</a>
                               </div>
@@ -12112,7 +12115,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">
                                 <a class="reference_link" href="L_353AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定空港周辺航空機騒音対策特別措置法</a>及び<a class="reference_link" href="L_353CO0000000355.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定空港周辺航空機騒音対策特別措置法施行令</a>
                               </div>
@@ -12209,7 +12212,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence" Num="1">勅令及び政令以外の命令であって、当該命令の規定において「病院」又は「診療所」とあるのは、介護医療院を含むものとされているもの</div>
                             </td>
                             <td>
@@ -15346,7 +15349,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -15376,7 +15379,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -15409,7 +15412,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -15442,7 +15445,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -15503,7 +15506,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -15613,7 +15616,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第六項</a>
                             </div>
@@ -15690,7 +15693,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -15746,7 +15749,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第一項</a>
                             </div>
@@ -15801,7 +15804,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第三項</a>
                             </div>
@@ -15891,7 +15894,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -15932,7 +15935,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第二項</a>
                             </div>
@@ -15957,7 +15960,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -15983,7 +15986,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -16009,7 +16012,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -16057,7 +16060,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -16173,7 +16176,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -16221,7 +16224,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第二項</a>
                             </div>
@@ -16284,7 +16287,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_140-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十条第一項</a>
                             </div>
@@ -16346,7 +16349,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_140-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十条第四項</a>
                             </div>
@@ -16419,7 +16422,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -16451,7 +16454,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -16486,7 +16489,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -16521,7 +16524,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -16586,7 +16589,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -16704,7 +16707,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第六項</a>
                             </div>
@@ -16787,7 +16790,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -16847,7 +16850,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第一項</a>
                             </div>
@@ -16906,7 +16909,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第三項</a>
                             </div>
@@ -16988,7 +16991,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -17029,7 +17032,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第二項</a>
                             </div>
@@ -17054,7 +17057,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -17080,7 +17083,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -17106,7 +17109,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -17154,7 +17157,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -17270,7 +17273,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -17318,7 +17321,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第二項</a>
                             </div>
@@ -17381,7 +17384,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_140-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十条第一項</a>
                             </div>
@@ -17443,7 +17446,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_140-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百四十条第四項</a>
                             </div>
@@ -17516,7 +17519,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -17548,7 +17551,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -17583,7 +17586,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -17618,7 +17621,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -17683,7 +17686,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -17801,7 +17804,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第六項</a>
                             </div>
@@ -17884,7 +17887,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -17944,7 +17947,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第一項</a>
                             </div>
@@ -18003,7 +18006,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第三項</a>
                             </div>
@@ -18087,7 +18090,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -18136,7 +18139,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -18161,7 +18164,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -18187,7 +18190,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -18235,7 +18238,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -18305,7 +18308,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第六項</a>
                             </div>
@@ -18367,7 +18370,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -18397,7 +18400,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第一項</a>
                             </div>
@@ -18423,7 +18426,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第二項</a>
                             </div>
@@ -18450,7 +18453,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第三項</a>
                             </div>
@@ -18514,7 +18517,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -18563,7 +18566,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -18588,7 +18591,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -18614,7 +18617,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -18662,7 +18665,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -18732,7 +18735,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第六項</a>
                             </div>
@@ -18794,7 +18797,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -18824,7 +18827,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第一項</a>
                             </div>
@@ -18850,7 +18853,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第二項</a>
                             </div>
@@ -18877,7 +18880,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第三項</a>
                             </div>
@@ -18941,7 +18944,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="4">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第一項</a>
                             </div>
@@ -18990,7 +18993,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第三項</a>
                             </div>
@@ -19015,7 +19018,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第四項から第六項まで</a>
                             </div>
@@ -19041,7 +19044,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_136-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十六条第七項</a>
                             </div>
@@ -19089,7 +19092,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第一項</a>
                             </div>
@@ -19159,7 +19162,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第六項</a>
                             </div>
@@ -19221,7 +19224,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_137-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十七条第九項</a>
                             </div>
@@ -19251,7 +19254,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第一項</a>
                             </div>
@@ -19277,7 +19280,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第二項</a>
                             </div>
@@ -19304,7 +19307,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence" Num="1">
                               <a class="reference_link" href="#Mp-At_138-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百三十八条第三項</a>
                             </div>
@@ -20191,8 +20194,8 @@
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">前項の規定により市町村が特例標準割合を定めた場合において、要保護者であって、その者が課される保険料額について特例標準割合を適用されたならば保護を必要としない状態となる第一号被保険者（第三十八条第一項第一号イ（（１）に係る部分を除く。）、第四号ロ又は第五号ロに該当する者を除く。）に課される保険料額については、特例標準割合を適用することができる。</div>
                     <div class="Sentence" Num="2">この場合における同条第一項の規定（他の<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
-                      <a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>において引用する場合を含む。）及び中国残留邦人等の円滑な帰国の促進及び永住帰国後の自立の支援に関する<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律施行<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>（<a class="reference_link" href="L_408CO0000000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成八年政令第十八号</a>）<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22-Pr_1-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十一号</a>の規定の適用については、第三十八条第一項第一号ハ、第二号ロ又は第三号ロ中「又は第五号ロに該当する者」とあるのは「若しくは第五号ロに該当する者又は附則第九条第二項に規定する第一号被保険者」と、同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22-Pr_1-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十一号</a>イ中「並びに第三十九条第一項」とあるのは「、第三十九条第一項並びに附則第九条第二項」とする。</div>
+                      <a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>において引用する場合を含む。）及び中国残留邦人等の円滑な帰国の促進及び永住帰国後の自立の支援に関する<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律施行<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>（<a class="reference_link" href="L_408CO0000000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成八年政令第十八号</a>）<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22-Pr_1-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十一号</a>の規定の適用については、第三十八条第一項第一号ハ、第二号ロ又は第三号ロ中「又は第五号ロに該当する者」とあるのは「若しくは第五号ロに該当する者又は附則第九条第二項に規定する第一号被保険者」と、<a class="reference_link" href="L_408CO0000000018.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_408CO0000000018.html#Mp-At_22-Pr_1-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十一号</a>イ中「並びに第三十九条第一項」とあるのは「、第三十九条第一項並びに附則第九条第二項」とする。</div>
                   </div>
                 </div>
                 <div id="Sp-At_9-Pr_3" class="Paragraph" Num="3">
@@ -20239,7 +20242,7 @@
                     <div class="Sentence" Num="1">前項の規定により市町村が特例割合を定めた場合において、要保護者であって、その者が課される保険料額について特例割合を適用されたならば保護を必要としない状態となる第一号被保険者（第三十九条第一項第一号イ（（１）に係る部分を除く。）、第四号ロ、第五号ロ又は第六号ロに該当する者を除く。）に課される保険料額については、特例割合を適用することができる。</div>
                     <div class="Sentence" Num="2">この場合における同条第一項の規定（他の<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       <a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>において引用する場合を含む。）及び中国残留邦人等の円滑な帰国の促進及び永住帰国後の自立の支援に関する<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律施行<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22-Pr_1-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十一号</a>の規定の適用については、第三十九条第一項第一号ハ、第二号ロ又は第三号ロ中「又は第六号ロに該当する者」とあるのは「若しくは第六号ロに該当する者又は附則第十条第二項に規定する第一号被保険者」と、同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                      <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22-Pr_1-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十一号</a>の規定の適用については、第三十九条第一項第一号ハ、第二号ロ又は第三号ロ中「又は第六号ロに該当する者」とあるのは「若しくは第六号ロに該当する者又は附則第十条第二項に規定する第一号被保険者」と、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
                       <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22-Pr_1-It_21" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十一号</a>イ中「並びに第三十九条第一項」とあるのは「、第三十九条第一項並びに附則第十条第二項」とする。</div>
                   </div>
                 </div>
@@ -21139,7 +21142,7 @@
                         </td>
                         <td>
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_215IO0000000243.html#Mp-At_43_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>附則第二十一条第一項若しくは第二項</div>
+                            <a class="reference_link" href="L_215IO0000000243.html#Mp-At_43_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は<a class="reference_link" href="L_215IO0000000243.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>附則第二十一条第一項若しくは第二項</div>
                         </td>
                       </tr>
                       <tr>
@@ -21156,7 +21159,7 @@
                         </td>
                         <td>
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_327CO0000000368.html#Mp-At_17_6_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>附則第二十一条第一項若しくは第二項</div>
+                            <a class="reference_link" href="L_327CO0000000368.html#Mp-At_17_6_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は<a class="reference_link" href="L_327CO0000000368.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>附則第二十一条第一項若しくは第二項</div>
                         </td>
                       </tr>
                       <tr>
@@ -21173,7 +21176,7 @@
                         </td>
                         <td>
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_328CO0000000240.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>附則第二十一条第一項若しくは第二項</div>
+                            <a class="reference_link" href="L_328CO0000000240.html#Mp-At_11-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は<a class="reference_link" href="L_328CO0000000240.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>附則第二十一条第一項若しくは第二項</div>
                         </td>
                       </tr>
                       <tr>
@@ -21190,7 +21193,7 @@
                         </td>
                         <td>
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_333CO0000000362.html#Mp-At_29_4_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>附則第二十一条第一項若しくは第二項</div>
+                            <a class="reference_link" href="L_333CO0000000362.html#Mp-At_29_4_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は<a class="reference_link" href="L_333CO0000000362.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>附則第二十一条第一項若しくは第二項</div>
                         </td>
                       </tr>
                       <tr>
@@ -21207,7 +21210,7 @@
                         </td>
                         <td>
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_333CO0000000207.html#Mp-At_11_3_6_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>附則第二十一条第一項若しくは第二項</div>
+                            <a class="reference_link" href="L_333CO0000000207.html#Mp-At_11_3_6_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は<a class="reference_link" href="L_333CO0000000207.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>附則第二十一条第一項若しくは第二項</div>
                         </td>
                       </tr>
                       <tr>
@@ -21224,7 +21227,7 @@
                         </td>
                         <td>
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_337CO0000000352.html#Mp-At_23_3_6-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>附則第二十一条第一項若しくは第二項</div>
+                            <a class="reference_link" href="L_337CO0000000352.html#Mp-At_23_3_6-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は<a class="reference_link" href="L_337CO0000000352.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>附則第二十一条第一項若しくは第二項</div>
                         </td>
                       </tr>
                       <tr>
@@ -21241,7 +21244,7 @@
                         </td>
                         <td>
                           <div class="Sentence" Num="1">
-                            <a class="reference_link" href="L_419CO0000000318.html#Mp-At_16_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>附則第二十一条第一項若しくは第二項</div>
+                            <a class="reference_link" href="L_419CO0000000318.html#Mp-At_16_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同項</a>又は<a class="reference_link" href="L_419CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>附則第二十一条第一項若しくは第二項</div>
                         </td>
                       </tr>
                     </table>
@@ -22465,7 +22468,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十四条第七項</div>
                         </td>
                         <td>
@@ -22496,7 +22499,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十四条第八項</div>
                         </td>
                         <td>
@@ -22517,7 +22520,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十四条第九項</div>
                         </td>
                         <td>
@@ -22536,7 +22539,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十四条第十項</div>
                         </td>
                         <td>
@@ -22555,7 +22558,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十四条第十一項</div>
                         </td>
                         <td>
@@ -22647,7 +22650,7 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence" Num="1">第百三十五条第五項</div>
                         </td>
                         <td>
@@ -22694,7 +22697,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十六条第一項</div>
                         </td>
                         <td>
@@ -22722,7 +22725,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十六条第三項</div>
                         </td>
                         <td>
@@ -22750,7 +22753,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十六条第四項</div>
                         </td>
                         <td>
@@ -22777,7 +22780,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十六条第五項</div>
                         </td>
                         <td>
@@ -22804,7 +22807,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十六条第六項</div>
                         </td>
                         <td>
@@ -22831,7 +22834,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence" Num="1">第百三十七条第一項</div>
                         </td>
                         <td>
@@ -22912,7 +22915,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十七条第六項</div>
                         </td>
                         <td>
@@ -22931,7 +22934,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十七条第七項</div>
                         </td>
                         <td>
@@ -22950,7 +22953,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十八条第一項</div>
                         </td>
                         <td>
@@ -22980,7 +22983,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十八条第三項</div>
                         </td>
                         <td>
@@ -23000,7 +23003,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十八条第四項</div>
                         </td>
                         <td>
@@ -23019,7 +23022,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十九条第一項</div>
                         </td>
                         <td>
@@ -23049,7 +23052,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十九条第二項</div>
                         </td>
                         <td>
@@ -23068,7 +23071,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="4">
                           <div class="Sentence" Num="1">第百三十九条第三項</div>
                         </td>
                         <td>
@@ -23107,7 +23110,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百四十一条第一項</div>
                         </td>
                         <td>
@@ -23169,7 +23172,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十六条第四項</div>
                         </td>
                         <td>
@@ -23188,7 +23191,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十六条第五項</div>
                         </td>
                         <td>
@@ -23215,7 +23218,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十六条第六項</div>
                         </td>
                         <td>
@@ -23257,7 +23260,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十六条第四項</div>
                         </td>
                         <td>
@@ -23276,7 +23279,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第百三十六条第五項</div>
                         </td>
                         <td>
@@ -23303,7 +23306,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第百三十六条第六項</div>
                         </td>
                         <td>
@@ -23386,7 +23389,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">第二十二条の三第二項第七号ロ（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_3-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項</a>及び<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新介護保険法施行令</a>
                             <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の三第二項</a>において準用する場合を含む。）</div>
                         </td>
@@ -23404,7 +23407,8 @@
                       </tr>
                       <tr>
                         <td>
-                          <div class="Sentence" Num="1">同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                          <div class="Sentence" Num="1">
+                            <a class="reference_link" href="L_215IO0000000243.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
                           </div>
                         </td>
                         <td>
@@ -23522,7 +23526,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第二十二条の三第六項（<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新介護保険法施行令</a>
                             <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の三第二項</a>において準用する場合を含む。）</div>
                         </td>
@@ -23583,7 +23587,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3">
                           <div class="Sentence" Num="1">第二十二条の三第七項（<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">新介護保険法施行令</a>
                             <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の三第二項</a>において準用する場合を含む。）</div>
                         </td>
@@ -24149,16 +24153,16 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence" Num="1">第二条中<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">介護保険法施行令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第一号</a>の改正規定、同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二</a>の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二の二</a>とする改正規定、同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条</a>の次に一条を加える改正規定、同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の三</a>及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_25-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条第一号</a>の改正規定、同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二</a>の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二の二</a>とする改正規定、同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条</a>の次に一条を加える改正規定並びに同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_16-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十六条第一号</a>の改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二</a>の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二の二</a>とする改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条</a>の次に一条を加える改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の三</a>及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_25-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条第一号</a>の改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二</a>の改正規定（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）を除く。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条</a>を<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_2_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の二の二</a>とする改正規定、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条</a>の次に一条を加える改正規定並びに<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
                           <a class="reference_link" href="L_410CO0000000412.html#Mp-At_29_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の三第三項</a>及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_33" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十三条</a>の改正規定、第四条の規定（健康保険法等の一部を改正する法律附則第百三十条の二第一項の規定によりなおその効力を有するものとされた<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">介護保険法施行令</a>
-                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
+                          <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_5-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二第五項第一号</a>の改正規定（「六月」を「七月」に改める部分に限る。）、<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第七項</a>の改正規定（「六月」を「七月」に改める部分に限る。）及び<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
                           <a class="reference_link" href="L_410CO0000000412.html#Mp-At_35_2-Pr_1-It_16" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条の二第十六号</a>の改正規定を除く。）、第八条の規定、第十二条中<a class="reference_link" href="L_333CO0000000362.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国民健康保険法施行令</a>
                           <a class="reference_link" href="L_333CO0000000362.html#Mp-At_29_4_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十九条の四の二第一項</a>の改正規定、第二十条中<a class="reference_link" href="L_418CO0000000010.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">障害者の日常生活及び社会生活を総合的に支援するための法律施行令</a>
                           <a class="reference_link" href="L_418CO0000000010.html#Mp-At_43_5-Pr_1-It_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十三条の五第一項第三号</a>の改正規定並びに第二十一条中<a class="reference_link" href="L_419CO0000000318.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">高齢者の医療の確保に関する法律施行令</a>
@@ -24564,8 +24568,8 @@
                       <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2_2-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二の二第五項</a>（第一号に係る部分に限る。）の規定は、<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">介護保険法施行令</a>
                       <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_2_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の二の二第一項</a>に規定する居宅サービス等のあった月が平成二十九年八月以後の場合における<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">介護保険法</a>
                       <a class="reference_link" href="L_409AC0000000123.html#Mp-At_41-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十一条第一項</a>に規定する要介護被保険者の属する世帯に属する<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
-                      <a class="reference_link" href="L_409AC0000000123.html#Mp-At_9-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条第一号</a>に規定する第一号被保険者の所得並びに同<a class="reference_link" href="L_410CO0000000412.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>
-                      <a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の三第二項第一号</a>に規定する基準日（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第九項</a>の規定により基準日とみなされる日を含む。以下この項において「基準日」という。）の属する月が同月以後の場合における<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第二項</a>（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項</a>において準用する場合を含む。）の医療合算算定基準額及び<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>（<a class="reference_link" href="L_410CO0000000412.html#Mp-At_22_3-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項</a>において準用する場合を含む。）の七十歳以上医療合算算定基準額について適用し、当該居宅サービス等のあった月が同年七月以前の場合における当該所得並びに基準日の属する月が同月以前の場合における当該医療合算算定基準額及び当該七十歳以上医療合算算定基準額については、なお従前の例による。</div>
+                      <a class="reference_link" href="L_409AC0000000123.html#Mp-At_9-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条第一号</a>に規定する第一号被保険者の所得並びに<a class="reference_link" href="L_409AC0000000123.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_409AC0000000123.html#Mp-At_22_3-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条の三第二項第一号</a>に規定する基準日（<a class="reference_link" href="L_409AC0000000123.html#Mp-At_22_3-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第九項</a>の規定により基準日とみなされる日を含む。以下この項において「基準日」という。）の属する月が同月以後の場合における<a class="reference_link" href="L_409AC0000000123.html#Mp-At_22_3-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第二項</a>（<a class="reference_link" href="L_409AC0000000123.html#Mp-At_22_3-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項</a>において準用する場合を含む。）の医療合算算定基準額及び<a class="reference_link" href="L_409AC0000000123.html#Mp-At_22_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>（<a class="reference_link" href="L_409AC0000000123.html#Mp-At_22_3-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第五項</a>において準用する場合を含む。）の七十歳以上医療合算算定基準額について適用し、当該居宅サービス等のあった月が同年七月以前の場合における当該所得並びに基準日の属する月が同月以前の場合における当該医療合算算定基準額及び当該七十歳以上医療合算算定基準額については、なお従前の例による。</div>
                   </div>
                 </div>
               </div>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3668,7 +3668,7 @@
                     <td>
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">検査の実施の方<a class="reference_link" href="L_326AC0000000185.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
@@ -3677,7 +3677,7 @@
                     <td>
                       <div class="Sentence">一　構造に関する検査</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">イ　次に掲げる事項が当該自動車検査証、登録識別情報等通知書（登録識別情報その他の自動車登録ファイルに記録されている事項を記載した書面をいう。以下同じ。）又は自動車検査証返納証明書の記載事項と同一であるかどうかを視認その他適切な方<a class="reference_link" href="L_326AC0000000185.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により検査するものとする。</div>
                       <div class="Sentence">（１）　長さ幅及び高さ</div>
                       <div class="Sentence">（２）　車両重量及び車両総重量</div>
@@ -3688,10 +3688,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence">二　装置に関する検査（その１）</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">次の表の左欄に掲げる事項について、同表の右欄に掲げる器具を用いて検査するものとする。この場合において、（１）、（２）、（１０）及び（１１）に掲げる事項については、当該器具を用いて検査することが困難であるときに限り走行その他の適切な方<a class="reference_link" href="L_326AC0000000185.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により、（３）、（６）、（８）及び（９）に掲げる事項については、<a class="reference_link" href="L_326M50000800067.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">道路運送車両の保安基準</a>（昭和２６年運輸省令第６７号）に適合するかどうかを視認等により容易に判定することができるときに限り視認等により、それぞれ検査することができる。</div>
                     </td>
                   </tr>
@@ -3710,7 +3710,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence"></div>
                     </td>
                     <td>
@@ -3719,7 +3719,7 @@
                     <td>
                       <div class="Sentence">サイドスリップ・テスタ</div>
                     </td>
-                    <td>
+                    <td rowspan="11">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
@@ -3821,7 +3821,7 @@
                     <td>
                       <div class="Sentence">三　装置に関する検査（その２）</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">次に掲げる装置について、<ruby>亀<rt>き</rt>
                         </ruby>裂、がた、取付けの緩みの有無等を検査用ハンマ等を用いて検査するものとする。この場合において、道路運送車両の保安基準に適合するかどうかを視認等により容易に判定することができるときに限り、視認等により検査することができる。</div>
                       <div class="Sentence">（１）　動力伝達装置</div>
@@ -3840,7 +3840,7 @@
                     <td>
                       <div class="Sentence">四　装置に関する検査（その３）</div>
                     </td>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">次に掲げる装置について、視認その他適切な方<a class="reference_link" href="L_326AC0000000185.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により検査するものとする。</div>
                       <div class="Sentence">（１）　原動機</div>
                       <div class="Sentence">（２）　電気装置</div>
@@ -3866,7 +3866,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">点検箇所</div>
                     </td>
                     <td>
@@ -3874,7 +3874,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">かじ取り装置</div>
                     </td>
                     <td>
@@ -3904,7 +3904,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">動力伝達装置</div>
                     </td>
                     <td>
@@ -3923,7 +3923,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">原動機</div>
                     </td>
                     <td>
@@ -3938,7 +3938,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">点検箇所</div>
                     </td>
                     <td>
@@ -3946,7 +3946,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">かじ取り装置</div>
                     </td>
                     <td>
@@ -3998,7 +3998,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">原動機</div>
                     </td>
                     <td>
@@ -4013,7 +4013,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">点検箇所</div>
                     </td>
                     <td>
@@ -4021,7 +4021,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">かじ取り装置</div>
                     </td>
                     <td>
@@ -4073,7 +4073,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">動力伝達装置</div>
                     </td>
                     <td>
@@ -4092,7 +4092,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">原動機</div>
                     </td>
                     <td>
@@ -4107,7 +4107,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">点検箇所</div>
                     </td>
                     <td>
@@ -4148,7 +4148,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">原動機</div>
                     </td>
                     <td>
@@ -4169,12 +4169,12 @@
                     <td>
                       <div class="Sentence">校正用機器</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">測定器及び設備</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">サイドスリップ・テスタ</div>
                     </td>
                     <td>
@@ -4199,7 +4199,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">ブレーキ・テスタ</div>
                     </td>
                     <td>
@@ -4236,10 +4236,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">前照灯試験機</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">前照灯試験機校正器</div>
                     </td>
                     <td>
@@ -4267,10 +4267,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">音量計</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">音量計校正器</div>
                     </td>
                     <td>
@@ -4293,10 +4293,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">速度計試験機</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">速度計試験機校正器</div>
                     </td>
                     <td>
@@ -4344,10 +4344,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">黒煙測定器</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">校正用標準紙</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -6219,10 +6219,10 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">三千キロリットル未満</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">千二百万キロワット時未満</div>
                         </td>
                         <td>
@@ -6278,7 +6278,7 @@
                         <td>
                           <div class="Sentence" Num="1">旧熱講習修了者及び旧電気講習修了者</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">旧熱管理士及び旧電気管理士</div>
                         </td>
                       </tr>
@@ -6322,10 +6322,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">三千キロリットル以上</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">千二百万キロワット時未満</div>
                         </td>
                         <td>
@@ -6344,10 +6344,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">三千キロリットル未満</div>
                         </td>
-                        <td>
+                        <td rowspan="2">
                           <div class="Sentence" Num="1">千二百万キロワット時以上</div>
                         </td>
                         <td>
@@ -6572,7 +6572,7 @@
               <div id="Sp_平成二二年三月一九日経済産業省令第一一号-Pr_2" class="Paragraph" Num="2">
                 <div class="ParagraphNum">２</div>
                 <div class="ParagraphSentence">
-                  <div class="Sentence" Num="1">この省<a class="reference_link" href="L_354CO0000000267.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>による改正後のエネルギーの使用の合理化に関する法律施行規則の規定にかかわらず、同<a class="reference_link" href="L_354CO0000000267.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>別表第五第四号の下欄については、平成二十三年三月三十一日までの間、なお従前の例によることができる。</div>
+                  <div class="Sentence" Num="1">この省<a class="reference_link" href="L_354CO0000000267.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">令</a>による改正後のエネルギーの使用の合理化に関する法律施行規則の規定にかかわらず、<a class="reference_link" href="L_354CO0000000267.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別表第五第四号の下欄については、平成二十三年三月三十一日までの間、なお従前の例によることができる。</div>
                 </div>
               </div>
             </div>
@@ -6962,7 +6962,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">原油　一キロリットル</div>
                     </td>
                     <td>
@@ -6992,7 +6992,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">揮発油　一キロリットル</div>
                     </td>
                     <td>
@@ -7000,7 +7000,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ナフサ　一キロリットル</div>
                     </td>
                     <td>
@@ -7008,7 +7008,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ジェット燃料油　一キロリットル</div>
                     </td>
                     <td>
@@ -7016,7 +7016,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">灯油　一キロリットル</div>
                     </td>
                     <td>
@@ -7024,7 +7024,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">軽油　一キロリットル</div>
                     </td>
                     <td>
@@ -7032,7 +7032,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">重油</div>
                     </td>
                     <td>
@@ -7040,7 +7040,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">イ　Ａ重油　一キロリットル</div>
                     </td>
                     <td>
@@ -7048,7 +7048,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロ　Ｂ・Ｃ重油　一キロリットル</div>
                     </td>
                     <td>
@@ -7056,7 +7056,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">石油アスファルト　一トン</div>
                     </td>
                     <td>
@@ -7064,7 +7064,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">石油コークス　一トン</div>
                     </td>
                     <td>
@@ -7072,7 +7072,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">石油ガス</div>
                     </td>
                     <td>
@@ -7080,7 +7080,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">イ　液化石油ガス（ＬＰＧ）　一トン</div>
                     </td>
                     <td>
@@ -7088,7 +7088,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロ　石油系炭化水素ガス　千立方メートル</div>
                     </td>
                     <td>
@@ -7096,7 +7096,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">可燃性天然ガス</div>
                     </td>
                     <td>
@@ -7104,7 +7104,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">イ　液化天然ガス（ＬＮＧ）（窒素、水分その他の不純物を分離して液化したものをいう。）　一トン</div>
                     </td>
                     <td>
@@ -7112,7 +7112,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロ　その他可燃性天然ガス　千立方メートル</div>
                     </td>
                     <td>
@@ -7120,7 +7120,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">石炭　一トン</div>
                     </td>
                     <td>
@@ -7128,7 +7128,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">イ　原料炭</div>
                     </td>
                     <td>
@@ -7136,7 +7136,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ロ　一般炭</div>
                     </td>
                     <td>
@@ -7144,7 +7144,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">ハ　無煙炭</div>
                     </td>
                     <td>
@@ -7152,7 +7152,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">石炭コークス　一トン</div>
                     </td>
                     <td>
@@ -7160,7 +7160,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コールタール　一トン</div>
                     </td>
                     <td>
@@ -7168,7 +7168,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">コークス炉ガス　千立方メートル</div>
                     </td>
                     <td>
@@ -7176,7 +7176,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">高炉ガス　千立方メートル</div>
                     </td>
                     <td>
@@ -7184,7 +7184,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence" Num="1">転炉ガス　千立方メートル</div>
                     </td>
                     <td>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -159,7 +159,7 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">名称</div>
                       </td>
                       <td>
@@ -167,7 +167,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">冬・夏帽</div>
                       </td>
                       <td>
@@ -198,7 +198,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">盛夏帽</div>
                       </td>
                       <td>
@@ -225,7 +225,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">冬服上衣</div>
                       </td>
                       <td>
@@ -249,7 +249,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">冬服ズボン</div>
                       </td>
                       <td>
@@ -270,7 +270,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">合服上衣</div>
                       </td>
                       <td>
@@ -289,7 +289,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">合服ズボン</div>
                       </td>
                       <td>
@@ -330,7 +330,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">外とう</div>
                       </td>
                       <td>
@@ -353,7 +353,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">雨衣上衣</div>
                       </td>
                       <td>
@@ -375,7 +375,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">雨衣ズボン</div>
                       </td>
                       <td>
@@ -407,7 +407,7 @@
                 <div class="TableStruct">
                   <table>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">名称</div>
                       </td>
                       <td>
@@ -415,7 +415,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">冬・夏帽</div>
                       </td>
                       <td>
@@ -444,7 +444,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="3">
                         <div class="Sentence">盛夏帽</div>
                       </td>
                       <td>
@@ -471,7 +471,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">冬服上衣</div>
                       </td>
                       <td>
@@ -495,7 +495,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">冬服スカート</div>
                       </td>
                       <td>
@@ -517,7 +517,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">冬服ズボン</div>
                       </td>
                       <td>
@@ -536,7 +536,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">冬服ベスト</div>
                       </td>
                       <td>
@@ -558,7 +558,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">合服上衣</div>
                       </td>
                       <td>
@@ -577,7 +577,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">合服スカート</div>
                       </td>
                       <td>
@@ -596,7 +596,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">合服ズボン</div>
                       </td>
                       <td>
@@ -615,7 +615,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">合服ベスト</div>
                       </td>
                       <td>
@@ -634,7 +634,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">盛夏上衣</div>
                       </td>
                       <td>
@@ -656,7 +656,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">キュロットスカート</div>
                       </td>
                       <td>
@@ -678,7 +678,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">外とう</div>
                       </td>
                       <td>
@@ -697,7 +697,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">雨衣</div>
                       </td>
                       <td>
@@ -733,18 +733,18 @@
                       <td>
                         <div class="Sentence">名称</div>
                       </td>
-                      <td>
+                      <td colspan="3">
                         <div class="Sentence">摘要</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="2">
                         <div class="Sentence">入国審査官章</div>
                       </td>
                       <td>
                         <div class="Sentence">材質</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">金属製とする。</div>
                       </td>
                     </tr>
@@ -752,23 +752,23 @@
                       <td>
                         <div class="Sentence">製式</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">紺色台地に金色で「ＩＭＭＩＧＲＡＴＩＯＮ」の文字を配したはとの下に、銀色台地に紺色で縁どりした金色線に黒色で「ＩＮＳＰＥＣＴＯＲ」の文字を配したもの。</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="5">
                         <div class="Sentence">入国警備官章</div>
                       </td>
                       <td>
                         <div class="Sentence">材質</div>
                       </td>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">金属製とする。</div>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td rowspan="4">
                         <div class="Sentence">製式</div>
                       </td>
                       <td>
@@ -803,7 +803,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="4">
                         <div class="Sentence">形状は図のとおりとし、冬服上衣、合服上衣及び盛夏上衣には、左胸ポケット上部に付ける。</div>
                       </td>
                     </tr>

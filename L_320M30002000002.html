@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -95,10 +95,10 @@
                     <div class="TableStructTitle">用紙適宜</div>
                     <table>
                       <tr>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td colspan="3">
                           <div class="Sentence">生還者届</div>
                         </td>
                       </tr>
@@ -106,10 +106,10 @@
                         <td>
                           <div class="Sentence">一</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">氏名</div>
                         </td>
-                        <td>
+                        <td rowspan="10" colspan="2">
                           <div class="Sentence"></div>
                         </td>
                       </tr>
@@ -117,7 +117,7 @@
                         <td>
                           <div class="Sentence">二</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">本籍地</div>
                         </td>
                       </tr>
@@ -125,7 +125,7 @@
                         <td>
                           <div class="Sentence">三</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">現住地</div>
                         </td>
                       </tr>
@@ -133,7 +133,7 @@
                         <td>
                           <div class="Sentence">四</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">戸主及戸主トノ続柄</div>
                         </td>
                       </tr>
@@ -141,7 +141,7 @@
                         <td>
                           <div class="Sentence">五</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">役種、兵種、徴集（任官）年、官等級</div>
                         </td>
                       </tr>
@@ -149,7 +149,7 @@
                         <td>
                           <div class="Sentence">六</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">所属部隊名</div>
                         </td>
                       </tr>
@@ -157,7 +157,7 @@
                         <td>
                           <div class="Sentence">七</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">所属部隊長ノ官等級氏名</div>
                         </td>
                       </tr>
@@ -165,7 +165,7 @@
                         <td>
                           <div class="Sentence">八</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">公報記載ノ死亡年月日</div>
                         </td>
                       </tr>
@@ -173,7 +173,7 @@
                         <td>
                           <div class="Sentence">九</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">内地上陸年月日</div>
                         </td>
                       </tr>
@@ -181,22 +181,22 @@
                         <td>
                           <div class="Sentence">十</div>
                         </td>
-                        <td>
+                        <td colspan="2">
                           <div class="Sentence">内地上陸地名</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="5">
                           <div class="Sentence">右及届出候也</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="5">
                           <div class="Sentence">　　年　月　日</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="4">
                           <div class="Sentence"></div>
                         </td>
                         <td>
@@ -204,7 +204,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="4">
                           <div class="Sentence"></div>
                         </td>
                         <td>
@@ -212,23 +212,23 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="4">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="right">
                           <div class="Sentence">留守担当者　　　　（印）</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="4">
                           <div class="Sentence"></div>
                         </td>
-                        <td>
+                        <td Align="right">
                           <div class="Sentence">生還者　　　　（印）</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td colspan="5">
                           <div class="Sentence">　　　何地方世話部長　　殿</div>
                         </td>
                       </tr>
@@ -284,7 +284,7 @@
                       <div class="TableStructTitle">用紙適宜</div>
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence">発翰番号</div>
                             <div class="Sentence">　　　死亡報告取消通知</div>
                           </td>
@@ -293,38 +293,38 @@
                           <td>
                             <div class="Sentence"></div>
                           </td>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">本籍地</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence"></div>
                           </td>
                           <td>
                             <div class="Sentence">戸主及戸主トノ続柄</div>
                           </td>
-                          <td>
+                          <td Align="center">
                             <div class="Sentence">氏　　　　名</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence">右ノ者昭和何年何月何日戦死（死亡）ノ旨死亡報告致置候処今回生存者ナルコト判明シタルニ付右死亡報告ハ之ヲ取消候条此段及通知候</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence">　　　年　月　日</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="4" Align="right">
                             <div class="Sentence">何地方世話部長　何某 [職印]</div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="4">
                             <div class="Sentence">　　　　市区町村長　　殿</div>
                           </td>
                         </tr>

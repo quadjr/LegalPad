@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1053,7 +1053,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条</a>
                             </div>
@@ -1194,7 +1194,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_9-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条第一項第十号</a>及び<a class="reference_link" href="#Mp-At_9-Pr_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十項</a>
                             </div>
@@ -1237,7 +1237,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_9-Pr_1-It_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条第一項第十号</a>
                             </div>
@@ -1268,7 +1268,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_9-Pr_1-It_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第九条第一項第十一号</a>
                             </div>
@@ -1506,7 +1506,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_32-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十二条第一項</a>
                             </div>
@@ -1527,7 +1527,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_35" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十五条</a>
                             </div>
@@ -1599,7 +1599,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_38-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条第一項</a>
                             </div>
@@ -1684,7 +1684,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="5">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_40-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十条第一項</a>
                             </div>
@@ -1738,7 +1738,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_42-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十二条第一項</a>
                             </div>
@@ -1804,7 +1804,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_46-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十六条第一項第一号</a>
                             </div>
@@ -1863,7 +1863,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_51-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十一条第五項</a>
                             </div>
@@ -1884,7 +1884,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_54-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十四条第一項</a>前段</div>
                           </td>
@@ -1901,12 +1901,13 @@
                               <a class="reference_link" href="L_332AC0000000079.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">高速自動車国道法</a>（<a class="reference_link" href="#Mp-At_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条</a>を除く。）並びにこれらの<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>律</div>
                           </td>
                           <td>
-                            <div class="Sentence">同<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                            <div class="Sentence">
+                              <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_55" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十五条</a>
                             </div>
@@ -2063,7 +2064,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_20-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第三項</a>
                             </div>
@@ -2084,7 +2085,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_20-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第四項</a>
                             </div>
@@ -2113,7 +2114,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_20-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条第五項</a>
                             </div>
@@ -2216,7 +2217,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">
                               <a class="reference_link" href="#Mp-At_31-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十一条第三項</a>
                             </div>
@@ -2403,7 +2404,8 @@
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">会社が<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
-                        <a class="reference_link" href="L_416AC0000000102.html#Mp-At_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項</a>の規定により承継した<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十二年法律第二十六号</a>）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_62_3-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十二条の三第二項第一号</a>イに規定する土地等については、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法施行令</a>（<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十二年政令第四十三号</a>）<a class="reference_link" href="L_332CO0000000043.html#Mp-At_38_4-Pr_39-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条の四第三十九項第一号</a>中「適格現物出資」とあるのは「適格現物出資（日本道路公団等民営化関係法施行法（平成十六年法律第百二号）第十五条第一項に規定する承継計画において定めるところに従つて行う同法第七条の規定による出資を含む。）」と、同令<a class="reference_link" href="#Mp-At_38_5-Pr_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条の五第二十四項</a>中「前条第三十九項の」とあるのは「前条第三十九項（日本道路公団等の民営化に伴う経過措置及び関係政令の整備等に関する政令（平成十七年政令第二百三号）第九条第二項の規定により読み替えて適用される場合を含む。）の」としてこれらの規定を適用する。</div>
+                        <a class="reference_link" href="L_416AC0000000102.html#Mp-At_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項</a>の規定により承継した<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十二年法律第二十六号</a>）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_62_3-Pr_2-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十二条の三第二項第一号</a>イに規定する土地等については、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法施行令</a>（<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十二年政令第四十三号</a>）<a class="reference_link" href="L_332CO0000000043.html#Mp-At_38_4-Pr_39-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条の四第三十九項第一号</a>中「適格現物出資」とあるのは「適格現物出資（日本道路公団等民営化関係法施行法（平成十六年法律第百二号）第十五条第一項に規定する承継計画において定めるところに従つて行う同法第七条の規定による出資を含む。）」と、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                        <a class="reference_link" href="L_332CO0000000043.html#Mp-At_38_5-Pr_24" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条の五第二十四項</a>中「前条第三十九項の」とあるのは「前条第三十九項（日本道路公団等の民営化に伴う経過措置及び関係政令の整備等に関する政令（平成十七年政令第二百三号）第九条第二項の規定により読み替えて適用される場合を含む。）の」としてこれらの規定を適用する。</div>
                     </div>
                   </div>
                   <div id="Mp-At_9-Pr_3" class="Paragraph" Num="3">
@@ -3389,7 +3391,8 @@
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_2-Pr_4" class="Paragraph" Num="4">
                   <div class="ParagraphNum">４</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">第二項の請求に係る還付金は、<a class="reference_link" href="L_329CO0000000051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税収納金整理資金に関する法律施行令</a>（<a class="reference_link" href="L_329CO0000000051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年政令第五十一号</a>）の規定の適用については、同令第二条第一号に掲げる還付金とみなす。</div>
+                    <div class="Sentence">第二項の請求に係る還付金は、<a class="reference_link" href="L_329CO0000000051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税収納金整理資金に関する法律施行令</a>（<a class="reference_link" href="L_329CO0000000051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和二十九年政令第五十一号</a>）の規定の適用については、<a class="reference_link" href="L_329CO0000000051.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_329CO0000000051.html#Mp-At_2-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一号</a>に掲げる還付金とみなす。</div>
                   </div>
                 </div>
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_2-Pr_5" class="Paragraph" Num="5">
@@ -3609,80 +3612,80 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第十八条の五第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第五十一条第十六項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_37_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条の三</a>の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第二十四条の四第一項及び第二十五条の四第十五項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定、</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_37_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条の四</a>の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第二十五条の六第一項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_37_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条の四</a>の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第二十五条の六第二項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_37" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十七条</a>の規定</div>
                         </td>
@@ -4211,64 +4214,64 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十三項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第三項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第八十四条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この条において「旧効力連結措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第三項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第十五項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（第三十九条の百六第九項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（租税特別措置法施行令等の一部を改正する政令（平成二十九年政令第百十四号）附則第二十九条第二項の規定によりなおその効力を有するものとされる同令第一条の規定による改正前の<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法施行令</a>（以下この条において「旧効力連結措置法施行令」という。）<a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_106-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の百六第九項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">事業年度（第三十九条の百六第九項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">事業年度（<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_106-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の百六第九項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第三十九条の百六第十二項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_106-Pr_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の百六第十二項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十二項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第四項</a>
@@ -4276,13 +4279,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十三項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第六十八条の七十八第八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第八項</a>
@@ -4290,16 +4293,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十四項ただし書</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第八項</a>
@@ -4307,16 +4310,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第三十四項第二号及び第四号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
@@ -4324,28 +4327,28 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十七項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
@@ -4353,26 +4356,26 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第三十八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は第六十八条の七十九第五項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
@@ -4380,13 +4383,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
@@ -4394,64 +4397,64 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第四十三項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する買換資産</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する買換資産</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第四十四項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第六十八条の七十九第五項の</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>の</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する買換資産</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する買換資産</div>
@@ -4468,40 +4471,40 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の九第一項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第六十九条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の九</a>の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の九第二項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>において準用する場合を含む。）若しくは<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
@@ -4510,42 +4513,42 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の二十八第二項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>において準用する場合を含む。）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の二十八第二項第三号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第九項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第八項</a>において準用する場合を含む。）の規定</div>
@@ -4624,64 +4627,64 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十三項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第三項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第八十四条第十一項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この条において「旧効力連結措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第三項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第十五項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（第三十九条の百六第九項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（租税特別措置法施行令等の一部を改正する政令（平成二十九年政令第百十四号）附則第二十九条第七項の規定によりなおその効力を有するものとされる同令第一条の規定による改正前の<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法施行令</a>（以下この条において「旧効力連結措置法施行令」という。）<a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_106-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の百六第九項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">事業年度（第三十九条の百六第九項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">事業年度（<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_106-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の百六第九項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第三十九条の百六第十二項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_106-Pr_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の百六第十二項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十二項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第四項</a>
@@ -4689,13 +4692,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十三項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第六十八条の七十八第八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第八項</a>
@@ -4703,16 +4706,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十四項ただし書</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第八項</a>
@@ -4720,16 +4723,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第三十四項第二号及び第四号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
@@ -4737,28 +4740,28 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十七項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>に規定する</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
@@ -4766,26 +4769,26 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第三十八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は第六十八条の七十九第五項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第五項</a>
@@ -4793,13 +4796,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力連結措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>
@@ -4818,41 +4821,41 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第二項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第六十九条第十一項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この条において「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>において準用する場合を含む。）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第二項第三号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第九項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第八項</a>において準用する場合を含む。）の規定</div>
@@ -4864,79 +4867,81 @@
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_23-Pr_10" class="Paragraph" Num="10">
                   <div class="ParagraphNum">１０</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第六十九条第九項又は第十一項の規定の適用がある場合における<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法人税法施行令</a>（<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十年政令第九十七号</a>）の規定の適用については、次の表の上欄に掲げる同令の規定中同表の中欄に掲げる字句は、同表の下欄に掲げる字句とする。</div>
+                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第六十九条第九項又は第十一項の規定の適用がある場合における<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法人税法施行令</a>（<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十年政令第九十七号</a>）の規定の適用については、次の表の上欄に掲げる<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>の規定中同表の中欄に掲げる字句は、同表の下欄に掲げる字句とする。</div>
                   </div>
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第百二十二条の十四第三項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）若しくは所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第六十九条第九項若しくは第十一項（<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人の資産の譲渡の場合の課税の特例に関する経過措置）の規定によりなおその効力を有するものとされる<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条</a>の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七から第六十五条の九まで</a>（特定の資産の買換えの場合の課税の特例等）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <div class="Sentence">同<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <td Valign="top">
+                          <div class="Sentence">
+                            <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第百二十三条の八第九項第四号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十一項又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十一項若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）に規定する</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_10" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第十項</a>若しくは<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十一項</a>（特定の資産の譲渡に伴い特別勘定を設けた場合の課税の特例）に規定する</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第百二十三条の八第十一項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七から第六十五条の九まで</a>（特定の資産の買換えの場合の課税の特例等）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <div class="Sentence">同<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <td Valign="top">
+                          <div class="Sentence">
+                            <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>
                           </div>
@@ -4948,7 +4953,8 @@
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_23-Pr_11" class="Paragraph" Num="11">
                   <div class="ParagraphNum">１１</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第六十九条第九項の規定の適用がある場合における<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">東日本大震災の被災者等に係る国税関係法律の臨時特例に関する法律施行令</a>（<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成二十三年政令第百十二号</a>）の規定の適用については、同令第十八条の八第二項中「）又は」とあるのは「）若しくは」と、「の規定」とあるのは「又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第六十九条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この項において「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七</a>の規定」と、「又は第六十六条の二第十四項第二号イ」とあるのは「若しくは第六十六条の二第十四項第二号イ又は旧効力措置法第六十五条の七第十六項第一号イ」とする。</div>
+                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第六十九条第九項の規定の適用がある場合における<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">東日本大震災の被災者等に係る国税関係法律の臨時特例に関する法律施行令</a>（<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成二十三年政令第百十二号</a>）の規定の適用については、<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_423CO0000000112.html#Mp-At_18_8-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十八条の八第二項</a>中「）又は」とあるのは「）若しくは」と、「の規定」とあるのは「又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第六十九条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この項において「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七</a>の規定」と、「又は第六十六条の二第十四項第二号イ」とあるのは「若しくは第六十六条の二第十四項第二号イ又は旧効力措置法第六十五条の七第十六項第一号イ」とする。</div>
                   </div>
                 </div>
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_23-Pr_12" class="Paragraph" Num="12">
@@ -5265,64 +5271,64 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第七項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第三項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第六十九条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この条において「旧効力単体措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第三項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第九項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（第三十九条の七第十五項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（租税特別措置法施行令等の一部を改正する政令（平成二十九年政令第百十四号）附則第二十三条第三項の規定によりなおその効力を有するものとされる同令第一条の規定による改正前の<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法施行令</a>（以下この条において「旧効力単体措置法施行令」という。）<a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_7-Pr_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の七第十五項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">連結事業年度（第三十九条の七第十五項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">連結事業年度（<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_7-Pr_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の七第十五項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十二項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第三十九条の七第十八項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_7-Pr_18" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の七第十八項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十六項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第四項</a>
@@ -5330,13 +5336,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十七項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第六十五条の七第八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第八項</a>
@@ -5344,16 +5350,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十八項ただし書</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第八項</a>
@@ -5361,16 +5367,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十八項第二号及び第四号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
@@ -5378,28 +5384,28 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十一項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
@@ -5407,26 +5413,26 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第三十二項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は第六十五条の八第四項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
@@ -5434,13 +5440,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
@@ -5448,64 +5454,64 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十六項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する買換資産</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する買換資産</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第三十七項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第六十五条の八第四項の</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>の</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">、<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する買換資産</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する買換資産</div>
@@ -5522,40 +5528,40 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の百八第一項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第八十四条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_80" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の八十</a>の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の百八第二項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>において準用する場合を含む。）若しくは<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
@@ -5564,42 +5570,42 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の百二十四第二項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>において準用する場合を含む。）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十九条の百二十四第二項第三号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第九項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第九項</a>において準用する場合を含む。）の規定</div>
@@ -5676,64 +5682,64 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第七項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第三項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第六十九条第十一項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この条において「旧効力単体措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第三項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第九項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（第三十九条の七第十五項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">とき（租税特別措置法施行令等の一部を改正する政令（平成二十九年政令第百十四号）附則第二十三条第八項の規定によりなおその効力を有するものとされる同令第一条の規定による改正前の<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法施行令</a>（以下この条において「旧効力単体措置法施行令」という。）<a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_7-Pr_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の七第十五項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">連結事業年度（第三十九条の七第十五項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">連結事業年度（<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_7-Pr_15" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の七第十五項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十二項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第三十九条の七第十八項前段</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法施行令</a>
                             <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_7-Pr_18" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の七第十八項</a>前段</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十六項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第四項</a>
@@ -5741,13 +5747,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十七項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第六十五条の七第八項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第八項</a>
@@ -5755,16 +5761,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十八項ただし書</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第八項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第八項</a>
@@ -5772,16 +5778,16 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第二十八項第二号及び第四号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
@@ -5789,28 +5795,28 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第三十一項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_7-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の七第一項</a>に規定する</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
@@ -5818,26 +5824,26 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第三十二項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は第六十五条の八第四項</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第四項</a>
@@ -5845,13 +5851,13 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力単体措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_65_8-Pr_7" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十五条の八第七項</a>
@@ -5870,41 +5876,41 @@
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第二項第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第八十四条第十一項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この条において「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第一項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_8" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第八項</a>において準用する場合を含む。）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第二項第三号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">）若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八第九項</a>（<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_9" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第九項</a>において準用する場合を含む。）の規定</div>
@@ -5916,87 +5922,89 @@
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_29-Pr_9" class="Paragraph" Num="9">
                   <div class="ParagraphNum">９</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第八十四条第九項又は第十一項の規定の適用がある場合における<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法人税法施行令</a>の規定の適用については、次の表の上欄に掲げる同令の規定中同表の中欄に掲げる字句は、同表の下欄に掲げる字句とする。</div>
+                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第八十四条第九項又は第十一項の規定の適用がある場合における<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法人税法施行令</a>の規定の適用については、次の表の上欄に掲げる<a class="reference_link" href="L_340CO0000000097.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>の規定中同表の中欄に掲げる字句は、同表の下欄に掲げる字句とする。</div>
                   </div>
                   <div class="TableStruct">
                     <table>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第百五十五条の四</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">まで又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">まで若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第八十四条第九項若しくは第十一項（連結<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>人の資産の譲渡の場合の課税の特例に関する経過措置）の規定によりなおその効力を有するものとされる<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                             <a class="reference_link" href="L_416AC0000000102.html#Mp-At_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二条</a>の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八から第六十八条の八十まで</a>（特定の資産の買換えの場合の課税の特例等）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <div class="Sentence">同<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <td Valign="top">
+                          <div class="Sentence">
+                            <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="2" Valign="top">
                           <div class="Sentence">第百五十五条の五第二号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十二項又は</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">第十二項若しくは</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">益金算入）に規定する</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">益金算入）又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_11" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十九第十一項</a>若しくは<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_79-Pr_12" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十二項</a>（特定の資産の譲渡に伴い特別勘定を設けた場合の課税の特例）に規定する</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td rowspan="3" Valign="top">
                           <div class="Sentence">第百五十五条の五第三号</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">又は第六十八条の七十八</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">若しくは第六十八条の七十八</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）の規定</div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">特例等）又は<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">旧効力措置法</a>
                             <a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八から第六十八条の八十まで</a>（特定の資産の買換えの場合の課税の特例等）の規定</div>
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <div class="Sentence">同<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
+                        <td Valign="top">
+                          <div class="Sentence">
+                            <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同法</a>
                           </div>
                         </td>
-                        <td>
+                        <td Valign="top">
                           <div class="Sentence">
                             <a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>
                           </div>
@@ -6008,7 +6016,8 @@
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_29-Pr_10" class="Paragraph" Num="10">
                   <div class="ParagraphNum">１０</div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第八十四条第九項の規定の適用がある場合における<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">東日本大震災の被災者等に係る国税関係法律の臨時特例に関する法律施行令</a>の規定の適用については、同令第二十三条の八第二項中「）又は」とあるのは「）若しくは」と、「の規定」とあるのは「又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第八十四条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この項において「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八</a>の規定」と、「又は第六十八条の八十五第十四項第二号イ」とあるのは「若しくは第六十八条の八十五第十四項第二号イ又は旧効力措置法第六十八条の七十八第十六項第一号イ」とする。</div>
+                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第八十四条第九項の規定の適用がある場合における<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">東日本大震災の被災者等に係る国税関係法律の臨時特例に関する法律施行令</a>の規定の適用については、<a class="reference_link" href="L_423CO0000000112.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_423CO0000000112.html#Mp-At_23_8-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十三条の八第二項</a>中「）又は」とあるのは「）若しくは」と、「の規定」とあるのは「又は所得税法等の一部を改正する等の法律（平成二十九年法律第四号）附則第八十四条第九項の規定によりなおその効力を有するものとされる同法第十二条の規定による改正前の<a class="reference_link" href="L_332AC0000000026.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法</a>（以下この項において「旧効力措置法」という。）<a class="reference_link" href="L_332AC0000000026.html#Mp-At_68_78" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六十八条の七十八</a>の規定」と、「又は第六十八条の八十五第十四項第二号イ」とあるのは「若しくは第六十八条の八十五第十四項第二号イ又は旧効力措置法第六十八条の七十八第十六項第一号イ」とする。</div>
                   </div>
                 </div>
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_29-Pr_11" class="Paragraph" Num="11">
@@ -6204,7 +6213,8 @@
                 <div id="Sp_平成二九年三月三一日政令第一一四号-At_32-Pr_1" class="Paragraph" Num="1">
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
-                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第九十条第二項に規定する政令で定める者は、同項に規定する特定非常災害に係る<a class="reference_link" href="L_337CO0000000135.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法施行令</a>（<a class="reference_link" href="L_337CO0000000135.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十七年政令第百三十五号</a>）<a class="reference_link" href="L_337CO0000000135.html#Mp-At_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第三項</a>の規定の適用を受けた<a class="reference_link" href="L_363AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消費税法</a>（<a class="reference_link" href="L_363AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和六十三年法律第百八号</a>）<a class="reference_link" href="L_363AC0000000108.html#Mp-At_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項第四号</a>に規定する事業者（当該特定非常災害について、改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第九十条第一項の規定の適用を受けた者を除く。）とし、改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第九十条第二項に規定する政令で定める日は、同令第三条第三項の規定により指定された期日とする。</div>
+                    <div class="Sentence">改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第九十条第二項に規定する政令で定める者は、同項に規定する特定非常災害に係る<a class="reference_link" href="L_337CO0000000135.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">国税通則法施行令</a>（<a class="reference_link" href="L_337CO0000000135.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十七年政令第百三十五号</a>）<a class="reference_link" href="L_337CO0000000135.html#Mp-At_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第三項</a>の規定の適用を受けた<a class="reference_link" href="L_363AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">消費税法</a>（<a class="reference_link" href="L_363AC0000000108.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和六十三年法律第百八号</a>）<a class="reference_link" href="L_363AC0000000108.html#Mp-At_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条第一項第四号</a>に規定する事業者（当該特定非常災害について、改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第九十条第一項の規定の適用を受けた者を除く。）とし、改正<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>附則第九十条第二項に規定する政令で定める日は、<a class="reference_link" href="L_416AC0000000102.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_416AC0000000102.html#Mp-At_3-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第三項</a>の規定により指定された期日とする。</div>
                   </div>
                 </div>
               </div>
@@ -6286,7 +6296,15 @@
                     <div class="ItemSentence">
                       <div class="Column" Num="1">
                         <div class="Sentence">第一条中<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">租税特別措置法施行令</a>
-                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_20_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条の二</a>の改正規定（<a class="reference_link" href="L_332CO0000000043.html#Mp-At_20_2-Pr_11-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第十一項第二号</a>ロに係る部分を除く。）、同令第二十二条第二十項第二号の改正規定、同令第二十五条の四第二項の改正規定、<a class="reference_link" href="L_332CO0000000043.html#Mp-At_20_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>の改正規定、同令第三十八条の四の改正規定（<a class="reference_link" href="L_332CO0000000043.html#Mp-At_20_2-Pr_20-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第二十項第二号</a>ロに係る部分を除く。）、同令第三十八条の五の改正規定、同令第三十九条第十七項第二号の改正規定、同令第三十九条の九十七の改正規定、同令第四十四条の二第一項の改正規定及び同令第五十五条第一項の改正規定並びに附則第四条第一項、第二十三条第一項、第四十二条（租税特別措置法施行令等の一部を改正する政令（平成三十年政令第百四十五号）附則第二十七条の改正規定に限る。）、第四十四条及び第四十六条の規定</div>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_20_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十条の二</a>の改正規定（<a class="reference_link" href="L_332CO0000000043.html#Mp-At_20_2-Pr_11-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第十一項第二号</a>ロに係る部分を除く。）、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_22-Pr_20-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十二条第二十項第二号</a>の改正規定、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_25_4-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二十五条の四第二項</a>の改正規定、<a class="reference_link" href="L_332CO0000000043.html#Mp-At_25_4-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第三項</a>の改正規定、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_38_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条の四</a>の改正規定（<a class="reference_link" href="L_332CO0000000043.html#Mp-At_38_4-Pr_20-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同条第二十項第二号</a>ロに係る部分を除く。）、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_38_5" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条の五</a>の改正規定、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39-Pr_17-It_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条第十七項第二号</a>の改正規定、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_39_97" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十九条の九十七</a>の改正規定、<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_44_2-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十四条の二第一項</a>の改正規定及び<a class="reference_link" href="L_332CO0000000043.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                          <a class="reference_link" href="L_332CO0000000043.html#Mp-At_55-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第五十五条第一項</a>の改正規定並びに附則第四条第一項、第二十三条第一項、第四十二条（租税特別措置法施行令等の一部を改正する政令（平成三十年政令第百四十五号）附則第二十七条の改正規定に限る。）、第四十四条及び第四十六条の規定</div>
                       </div>
                       <div class="Column" Num="2">
                         <div class="Sentence">令和元年六月一日</div>

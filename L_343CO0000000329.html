@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2442,7 +2442,7 @@
                 <div class="ParagraphSentence">
                   <div class="Sentence" Num="1">この政令は、<a class="reference_link" href="L_411AC0100000105.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">ダイオキシン類対策特別措置法</a>の施行の日（平成十二年一月十五日）から施行する。</div>
                   <div class="Sentence" Num="2">ただし、第一条の規定は同日から起算して一年を経過した日から、第四条中<a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">特定工場における公害防止組織の整備に関する法律施行令</a>
-                    <a class="reference_link" href="L_346CO0000000264.html#Mp-At_14-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第一号</a>の改正規定及び同令別表第二の改正規定は平成十三年七月十六日から施行する。</div>
+                    <a class="reference_link" href="L_346CO0000000264.html#Mp-At_14-Pr_1-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十四条第一号</a>の改正規定及び<a class="reference_link" href="L_346CO0000000264.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>別表第二の改正規定は平成十三年七月十六日から施行する。</div>
                 </div>
               </div>
               <div id="Sp_平成一一年一二月二七日政令第四三四号-Pr_2" class="Paragraph" Num="2">
@@ -2768,7 +2768,8 @@
                   <div class="ParagraphNum"></div>
                   <div class="ParagraphSentence">
                     <div class="Sentence" Num="1">この政令は、地方自治法の一部を改正する法律（次条において「改正法」という。）の施行の日（平成二十八年四月一日）から施行する。</div>
-                    <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方自治法施行令</a>目次の改正規定、同令第二編第八章第三節の節名を削る改正規定及び同令第百七十四条の四十九の二十の改正規定、第十四条、第十七条、第十八条（指定都市、中核市又は特例市の指定があつた場合における必要な事項を定める政令第四条第一項の改正規定を除く。）、第二十一条から第二十五条まで、第二十七条、第二十九条、第三十二条、第三十三条、第三十六条及び第四十六条の規定並びに第四十七条中<a class="reference_link" href="L_412CO0000000246.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">総務省組織令</a>
+                    <div class="Sentence" Num="2">ただし、第一条中<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">地方自治法施行令</a>目次の改正規定、<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>第二編第八章第三節の節名を削る改正規定及び<a class="reference_link" href="L_322CO0000000016.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同令</a>
+                      <a class="reference_link" href="L_322CO0000000016.html#Mp-At_174_49_20" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第百七十四条の四十九の二十</a>の改正規定、第十四条、第十七条、第十八条（指定都市、中核市又は特例市の指定があつた場合における必要な事項を定める政令第四条第一項の改正規定を除く。）、第二十一条から第二十五条まで、第二十七条、第二十九条、第三十二条、第三十三条、第三十六条及び第四十六条の規定並びに第四十七条中<a class="reference_link" href="L_412CO0000000246.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">総務省組織令</a>
                       <a class="reference_link" href="L_412CO0000000246.html#Mp-At_47_2-Pr_1-It_4" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四十七条の二第四号</a>の改正規定並びに次条から附則第十五条までの規定は、平成二十七年四月一日から施行する。</div>
                   </div>
                 </div>
@@ -2932,7 +2933,7 @@
                         </ruby>焼炉、焼結炉（ペレット焼成炉を含む。）及び<ruby>煆<rt>か</rt>
                         </ruby>焼炉（一四の項に掲げるものを除く。）</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">原料の処理能力が一時間当たり一トン以上であること。</div>
                     </td>
                   </tr>
@@ -2951,7 +2952,7 @@
                     <td>
                       <div class="Sentence">金属の精製又は鋳造の用に供する溶解炉（こしき炉並びに一四の項及び二四の項から二六の項までに掲げるものを除く。）</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">火<ruby>格<rt>ごう</rt>
                         </ruby>子面積（火<ruby>格<rt>ごう</rt>
                         </ruby>子の水平投影面積をいう。以下同じ。）が一平方メートル以上であるか、羽口面断面積（羽口の最下端の高さにおける炉の内壁で囲まれた部分の水平断面積をいう。以下同じ。）が〇・五平方メートル以上であるか、バーナーの燃料の燃焼能力が重油換算一時間当たり五〇リットル以上であるか、又は変圧器の定格容量が二〇〇キロボルトアンペア以上であること。</div>
@@ -3002,7 +3003,7 @@
                     <td>
                       <div class="Sentence">窯業製品の製造の用に供する焼成炉及び溶融炉</div>
                     </td>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence">火<ruby>格<rt>ごう</rt>
                         </ruby>子面積が一平方メートル以上であるか、バーナーの燃料の燃焼能力が重油換算一時間当たり五〇リットル以上であるか、又は変圧器の定格容量が二〇〇キロボルトアンペア以上であること。</div>
                     </td>
@@ -3077,7 +3078,7 @@
                     <td>
                       <div class="Sentence">塩素化エチレンの製造の用に供する塩素急速冷却施設</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">原料として使用する塩素（塩化水素にあつては塩素換算量）の処理能力が一時間当たり五〇キログラム以上であること。</div>
                     </td>
                   </tr>
@@ -3231,7 +3232,7 @@
                     <td>
                       <div class="Sentence">ガスタービン</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">燃料の燃焼能力が重油換算一時間当たり五〇リットル以上であること。</div>
                     </td>
                   </tr>
@@ -3250,7 +3251,7 @@
                     <td>
                       <div class="Sentence">ガス機関</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">燃料の燃焼能力が重油換算一時間当たり三五リットル以上であること。</div>
                     </td>
                   </tr>
@@ -3540,7 +3541,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考　この表の中欄に掲げる施設は、石綿を含有する製品の製造の用に供する施設に限り、湿式のもの及び密閉式のものを除く。</div>
                     </td>
                   </tr>
@@ -3849,7 +3850,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考　この表に規定する一時間値の算定に関し必要な事項並びに浮遊粒子状物質及びオキシダントの範囲は、環境省令で定める。</div>
                     </td>
                   </tr>

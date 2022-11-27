@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1378,7 +1378,7 @@
                           <td>
                             <div class="Sentence">船橋楼</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">一　船首楼の項に掲げる要件</div>
                             <div class="Sentence">二　隔壁の開口が閉じられたときに乗組員が最上層の暴露甲板又はそれより上方の場所から船楼内にある機関区域その他の作業区域に行くためにいつでも使用することができる別の通路を設けていること。</div>
                           </td>
@@ -1427,7 +1427,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">低船尾楼</div>
                           </td>
                           <td>
@@ -1454,7 +1454,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">低船尾楼以外の船楼</div>
                           </td>
                           <td>
@@ -1481,7 +1481,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">備考</div>
                             <div class="Sentence">船の長さが表に掲げるものの中間にあるときは、一次補間法により船楼の標準の高さを算定する。</div>
                           </td>
@@ -1848,7 +1848,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">
                     </div>
                             <div class="Sentence">備考</div>
@@ -1856,7 +1856,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">
                     </div>
                           </td>
@@ -1875,10 +1875,10 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">分長点の位置</div>
                           </td>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">係数</div>
                           </td>
                         </tr>
@@ -1974,7 +1974,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">
                     </div>
                             <div class="Sentence">備考</div>
@@ -1982,7 +1982,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td colspan="3">
                             <div class="Sentence">
                     </div>
                           </td>
@@ -2397,7 +2397,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">夏期満載喫水線</div>
                             </td>
                             <td>
@@ -2406,7 +2406,7 @@
                             <td>
                               <div class="Sentence">通年</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">夏期乾舷</div>
                             </td>
                           </tr>
@@ -2447,7 +2447,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">熱帯満載喫水線</div>
                             </td>
                             <td>
@@ -2456,7 +2456,7 @@
                             <td>
                               <div class="Sentence">通年</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">熱帯乾舷</div>
                             </td>
                           </tr>
@@ -2710,7 +2710,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="48">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　船の長さがこの表に掲げるものの中間にあるときは、一次補間法により乾舷の増加を算定する。</div>
                               <div class="Sentence">二　船の長さが二百メートルをこえる船舶については、管海官庁が定めるところによる。</div>
@@ -3640,7 +3640,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">船の長さがこの表に掲げるものの中間にあるときは、一次補間法により減少幅を算定する。</div>
                             </td>
@@ -3735,7 +3735,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="12">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　Lは、船の長さ</div>
                               <div class="Sentence">二　船楼の有効長さとトランクの有効長さとの和がこの表に掲げるものの中間にあるときは、一次補間法により百分率を算定する。</div>
@@ -4114,7 +4114,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">夏期木材満載喫水線</div>
                             </td>
                             <td>
@@ -4123,7 +4123,7 @@
                             <td>
                               <div class="Sentence">通年</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">夏期木材乾舷</div>
                             </td>
                           </tr>
@@ -4164,7 +4164,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">熱帯木材満載喫水線</div>
                             </td>
                             <td>
@@ -4173,7 +4173,7 @@
                             <td>
                               <div class="Sentence">通年</div>
                             </td>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">熱帯木材乾舷</div>
                             </td>
                           </tr>
@@ -4336,7 +4336,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="12">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　Lは、船の長さ</div>
                               <div class="Sentence">二　船楼の有効長さの合計がこの表に掲げるものの中間にあるときは、一次補間法により百分率を算定する。</div>
@@ -4554,7 +4554,7 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">Ｌが五十メートル未満の船舶</div>
                             </td>
                             <td>
@@ -4573,7 +4573,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="2">
                               <div class="Sentence">Ｌが五十メートル以上の船舶</div>
                             </td>
                             <td>
@@ -4592,7 +4592,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="3">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">Ｌは、船の長さ（メートル）</div>
                             </td>
@@ -4789,7 +4789,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="5">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　船の長さがこの表に掲げるものの中間にあるときは、一次補間法により減少幅を算定する。</div>
                               <div class="Sentence">二　船の長さが百三十メートルを超える場合は、管海官庁が定めるところによる。</div>
@@ -4838,7 +4838,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　Lは、船の長さ（メートル）</div>
                               <div class="Sentence">二　dlは、最小の型深さの八十五パーセントの位置における喫水（メートル）</div>
@@ -5022,7 +5022,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td colspan="2">
                               <div class="Sentence">備考</div>
                               <div class="Sentence">一　D1は、船の中央におけるキールの上面から乾舷甲板のビームの船側における上面までの船の深さ（メートル）</div>
                               <div class="Sentence">二　vは、乾舷甲板上の構造物で、その暴露部に通ずる出入口に風雨密の閉鎖装置を備えるものの容積（立方メートル）と次の算式で算定した値との和</div>
@@ -5108,7 +5108,7 @@
                 <div class="ParagraphNum">６</div>
                 <div class="ParagraphSentence">
                   <div class="Sentence">
-                    <a class="reference_link" href="L_331M50000800076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶復原性規則</a>の一部を改正する省令（昭和四十三年運輸省令第三十七号）の施行の際現に、同省令による改正前の<a class="reference_link" href="L_331M50000800076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶復原性規則</a>（<a class="reference_link" href="L_331M50000800076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十一年運輸省令第七十六号</a>）<a class="reference_link" href="L_331M50000800076.html#Mp-At_17_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条の二第三項</a>の規定により標示されている乾舷の位置を示す標示（第三十二条に規定する船舶に係るものに限る。）は、当該船舶について昭和四十七年八月一日以後最初に行なわれる定期検査又は中間検査が開始される時までは、この省令の規定により標示された満載喫水線の標示とみなす。</div>
+                    <a class="reference_link" href="L_331M50000800076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶復原性規則</a>の一部を改正する省令（昭和四十三年運輸省令第三十七号）の施行の際現に、<a class="reference_link" href="L_331M50000800076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同省令</a>による改正前の<a class="reference_link" href="L_331M50000800076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">船舶復原性規則</a>（<a class="reference_link" href="L_331M50000800076.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和三十一年運輸省令第七十六号</a>）<a class="reference_link" href="L_331M50000800076.html#Mp-At_17_2-Pr_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十七条の二第三項</a>の規定により標示されている乾舷の位置を示す標示（第三十二条に規定する船舶に係るものに限る。）は、当該船舶について昭和四十七年八月一日以後最初に行なわれる定期検査又は中間検査が開始される時までは、この省令の規定により標示された満載喫水線の標示とみなす。</div>
                 </div>
               </div>
             </div>
@@ -5423,7 +5423,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence">７　季節熱帯区域</div>
                     </td>
                     <td>
@@ -5542,7 +5542,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence">８　船の長さが百メートル以下の船舶に適用される季節冬期区域</div>
                     </td>
                     <td>
@@ -5609,7 +5609,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">（１）　シェットランド諸島は、北大西洋季節冬期帯域Ｉと北大西洋季節冬期帯域ＩＩとの限界線上にあるものとみなす。</div>
                       <div class="Sentence">（２）　ホーチミン、アデン及びベルベラは、熱帯域と季節熱帯区域との限界線上にあるものとみなす。</div>
@@ -5689,7 +5689,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">（１）　両船側の外板に点刻する等恒久的な方法で標示するものとする。</div>
                       <div class="Sentence">（２）　色は、識別しやすく、かつ、同一のものとする。</div>
@@ -5704,7 +5704,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="80">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　船の長さがこの表に掲げるものの中間にあるときは、一次補間法により表定乾舷を算定する。</div>
                       <div class="Sentence">二　船の長さが三百六十五メートルをこえる船舶については、管海官庁が定めるところによる。</div>
@@ -8382,7 +8382,7 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="80">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　船の長さがこの表に掲げるものの中間にあるときは、一次補間法により表定乾舷を算定する。</div>
                       <div class="Sentence">二　船の長さが三百六十五メートルをこえる船舶については、管海官庁が定めるところによる。</div>
@@ -11231,7 +11231,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">（１）　両船側の外板に点刻する等恒久的な方法で標示するものとする。</div>
                       <div class="Sentence">（２）　色は、識別しやすく、かつ、同一のものとする。</div>
@@ -11301,7 +11301,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">（1）　両船側の外板に点刻する等恒久的な方法で標示するものとする。</div>
                       <div class="Sentence">（2）　色は、識別しやすく、かつ、同一のものとする。</div>
@@ -11371,7 +11371,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">（1）　両船側の外板に点刻する等恒久的な方法で標示するものとする。</div>
                       <div class="Sentence">（2）　色は、識別しやすく、かつ、同一のものとする。</div>

@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -3011,19 +3011,19 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td rowspan="4" colspan="2">
                       <div class="Sentence">影響要因の区分</div>
                     </td>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">環境要素の区分</div>
                     </td>
-                    <td>
+                    <td colspan="5">
                       <div class="Sentence">環境の自然的構成要素の良好な状態の保持を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">生物の多様性の確保及び自然環境の体系的保全を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">人と自然との豊かな触れ合いの確保を旨として調査、予測及び評価されるべき環境要素</div>
                     </td>
                     <td>
@@ -3034,7 +3034,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">大気環境</div>
                     </td>
                     <td>
@@ -3043,25 +3043,25 @@
                     <td>
                       <div class="Sentence">土壌に係る環境その他の環境</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">動物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">植物</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">生態系</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">景観</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">人と自然との触れ合いの活動の場</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">廃棄物等</div>
                     </td>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">放射線の量</div>
                     </td>
                   </tr>
@@ -3121,10 +3121,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence">工事の実施</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">雨水の排水</div>
                     </td>
                     <td>
@@ -3165,7 +3165,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">造成工事</div>
                     </td>
                     <td>
@@ -3206,7 +3206,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">建設機械の稼働</div>
                     </td>
                     <td>
@@ -3247,7 +3247,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行</div>
                     </td>
                     <td>
@@ -3288,10 +3288,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="2">
                       <div class="Sentence">土地又は工作物の存在及び供用</div>
                     </td>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
                     <td>
@@ -3332,7 +3332,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">構造物の存在</div>
                     </td>
                     <td>
@@ -3373,7 +3373,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="15">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　○印は、各欄に掲げる環境要素が、影響要因の区分の項に掲げる各要因により影響を受けるおそれがあるものであることを示す。ただし、※が付されているものは、放射性物質が相当程度拡散・流出するおそれがある場合に適用する。</div>
                       <div class="Sentence">二　この表における「影響要因の区分」は、次に掲げる特性を有する流通業務団地造成事業の内容を踏まえて区分したものである。</div>
@@ -3398,1622 +3398,1622 @@
               <div class="TableStruct">
                 <table>
                   <tr>
-                    <td>
+                    <td colspan="2" Align="left" Valign="top">
                       <div class="Sentence">参考項目</div>
                     </td>
-                    <td>
+                    <td colspan="2" Align="left" Valign="top">
                       <div class="Sentence">参考手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">環境要素の区分</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">影響要因の区分</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査の手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">予測の手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">粉じん等</div>
                     </td>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">気象の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、粉じん等の拡散の特性を踏まえて粉じん等に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて粉じん等に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて予測地域における粉じん等に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における粉じん等に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働による粉じん等に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における粉じん等に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">気象の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、粉じん等の拡散の特性を踏まえて粉じん等に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて粉じん等に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて予測地域における粉じん等に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における粉じん等に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行による粉じん等に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における粉じん等に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">騒音</div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　騒音の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬理論に基づく予測式による計算</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　地表面の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、音の伝搬の特性を踏まえて騒音に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報（騒音の状況については、<a class="reference_link" href="L_343AC0000000098.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">騒音規制法</a>
                         <a class="reference_link" href="L_343AC0000000098.html#Mp-At_15-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十五条第一項</a>の規定により定められた特定建設作業に伴って発生する騒音の規制に関する基準に規定する騒音の測定の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>を用いられたものとする。）の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて予測地域における騒音に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて騒音に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働による騒音に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて調査地域における騒音に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて調査地域における騒音に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　騒音の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬理論に基づく予測式による計算</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　資材及び機械の運搬に用いる車両の運行が予想される道路の沿道の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、音の伝搬の特性を踏まえて騒音に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報（騒音の状況については、騒音に係る環境基準に規定する騒音の測定の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>を用いられたものとする。）の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて予測地域における騒音に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて騒音に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行による騒音に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて調査地域における騒音に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">音の伝搬の特性を踏まえて調査地域における騒音に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">振動</div>
                     </td>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">地盤の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、振動の伝搬の特性を踏まえて振動に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて振動に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて予測地域における振動に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて調査地域における振動に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働による振動に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて調査地域における振動に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間及び時期</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　振動の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動レベルの八十パーセントレンジの上端値を予測するための式を用いた計算</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　地盤の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、振動の伝搬の特性を踏まえて振動に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報（振動の状況については、<a class="reference_link" href="L_351M50000002058.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">振動規制法施行規則</a>（<a class="reference_link" href="L_351M50000002058.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和五十一年総理府令第五十八号</a>）別表第二備考４及び７に規定する振動の測定の方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>を用いられたものとする。）の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて予測地域における振動に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて振動に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行による振動に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて調査地域における振動に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">振動の伝搬の特性を踏まえて調査地域における振動に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8" Align="left" Valign="top">
                       <div class="Sentence">水の濁り</div>
                     </td>
-                    <td>
+                    <td rowspan="8" Align="left" Valign="top">
                       <div class="Sentence">雨水の排水</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">国又は関係する地方公共団体による水質に係る規制等の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">原単位<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>により浮遊物質量を計算</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料による情報の収集及び当該情報の整理</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する公共用水域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する公共用水域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">工事による水の濁りに係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">重要な地形及び地質</div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　地形及び地質の概況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">重要な地形及び地質について、分布又は成立環境の改変の程度を踏まえた事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　重要な地形及び地質の分布、状態及び特性</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、地形及び地質の特性を踏まえて重要な地形及び地質に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">地形及び地質の特性を踏まえて重要な地形及び地質に係る環境影響を的確に把握できる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">対象流通業務団地造成事業実施区域及びその周辺の区域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">地形及び地質の特性を踏まえて調査地域における重要な地形及び地質に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">地形及び地質の特性を踏まえて調査地域における重要な地形及び地質に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる時期</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12" Align="left" Valign="top">
                       <div class="Sentence">重要な種及び注目すべき生息地</div>
                     </td>
-                    <td>
+                    <td rowspan="12" Align="left" Valign="top">
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　脊椎動物、昆虫類その他主な動物に係る動物相の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">動物の重要な種及び注目すべき生息地について、分布又は生息環境の改変の程度を踏まえた事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　動物の重要な種の分布、生息の状況及び生息環境の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ハ　注目すべき生息地の分布並びに当該生息地が注目される理由である動物の種の生息の状況及び生息環境の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、動物の生息の特性を踏まえて重要な種及び注目すべき生息地に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">動物の生息の特性を踏まえて重要な種及び注目すべき生息地に係る環境影響を的確に把握できる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">対象流通業務団地造成事業実施区域及びその周辺の区域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">動物の生息の特性を踏まえて調査地域における重要な種及び注目すべき生息地に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点又は経路</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">動物の生息の特性を踏まえて調査地域における重要な種及び注目すべき生息地に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">重要な種及び群落</div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　種子植物その他主な植物に係る植物相及び植生の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">植物の重要な種及び群落について、分布又は生育環境の改変の程度を踏まえた事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　植物の重要な種及び群落の分布、生育の状況及び生育環境の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、植物の生育及び植生の特性を踏まえて重要な種及び群落に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">植物の生育及び植生の特性を踏まえて重要な種及び群落に係る環境影響を的確に把握できる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">対象流通業務団地造成事業実施区域及びその周辺の区域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">植物の生育及び植生の特性を踏まえて調査地域における重要な種及び群落に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点又は経路</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">植物の生育及び植生の特性を踏まえて調査地域における重要な種及び群落に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">地域を特徴づける生態系</div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　動植物その他の自然環境に係る概況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">注目種等について、分布、生息環境又は生育環境の改変の程度を踏まえた事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　複数の注目種等の生態、他の動植物との関係又は生息環境若しくは生育環境の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、動植物その他の自然環境の特性及び注目種等の特性を踏まえて注目種等に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">動植物その他の自然環境の特性及び注目種等の特性を踏まえて注目種等に係る環境影響を的確に把握できる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">対象流通業務団地造成事業実施区域及びその周辺の区域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">動植物その他の自然環境の特性及び注目種等の特性を踏まえて調査地域における注目種等に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点又は経路</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">動植物その他の自然環境の特性及び注目種等の特性を踏まえて調査地域における注目種等に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">主要な眺望点及び景観資源並びに主要な眺望景観</div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　主要な眺望点の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">主要な眺望点及び景観資源についての分布の改変の程度を踏まえた事例の引用又は解析並びに主要な眺望景観についての完成予想図、フォトモンタージュ<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>その他の視覚的な表現方<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　景観資源の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ハ　主要な眺望景観の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、景観の特性を踏まえて主要な眺望点及び景観資源並びに主要な眺望景観に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">景観の特性を踏まえて主要な眺望点及び景観資源並びに主要な眺望景観に係る環境影響を的確に把握できる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">主要な眺望点の状況、景観資源の状況及び主要な眺望景観の状況を適切に把握できる地域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">景観の特性を踏まえて調査地域における主要な眺望点及び景観資源並びに主要な眺望景観に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">構造物の存在</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">景観の特性を踏まえて調査地域における主要な眺望点及び景観資源並びに主要な眺望景観に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">主要な人と自然との触れ合いの活動の場</div>
                     </td>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">敷地の存在（土地の改変）</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　人と自然との触れ合いの活動の場の概況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">主要な人と自然との触れ合いの活動の場について、分布又は利用環境の改変の程度を踏まえた事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　主要な人と自然との触れ合いの活動の場の分布、利用の状況及び利用環境の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、人と自然との触れ合いの活動の場の特性を踏まえて主要な人と自然との触れ合いの活動の場に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">人と自然との触れ合いの活動の場の特性を踏まえて主要な人と自然との触れ合いの活動の場に係る環境影響を的確に把握できる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">対象流通業務団地造成事業実施区域及びその周辺の区域</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">人と自然との触れ合いの活動の場の特性を踏まえて調査地域における主要な人と自然との触れ合いの活動の場に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">構造物の存在</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">人と自然との触れ合いの活動の場の特性を踏まえて調査地域における主要な人と自然との触れ合いの活動の場に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6" Align="left" Valign="top">
                       <div class="Sentence">建設工事に伴う副産物</div>
                     </td>
-                    <td>
+                    <td rowspan="6" Align="left" Valign="top">
                       <div class="Sentence">造成工事</div>
                     </td>
-                    <td>
+                    <td rowspan="6" Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">建設工事に伴う副産物の種類ごとの発生及び処分の状況の把握</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">対象流通業務団地造成事業実施区域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">工事期間</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">放射線の量（粉じん等の発生に伴うもの）</div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　放射線の量の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　気象の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、粉じん等の拡散の特性を踏まえて放射線に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて予測地域における放射線に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて放射線に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">建設機械の稼働による放射線に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における放射線に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における放射線に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td rowspan="11" Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">イ　放射線の量の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">ロ　気象の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">調査地域のうち、粉じん等の拡散の特性を踏まえて放射線に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて予測地域における放射線に係る環境影響を的確に把握できる地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて放射線に係る環境影響を受けるおそれがあると認められる地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">資材及び機械の運搬に用いる車両の運行による放射線に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における放射線に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる地点</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">粉じん等の拡散の特性を踏まえて調査地域における放射線に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間、時期及び時間帯</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">放射線の量（水の濁りの発生に伴うもの）</div>
                     </td>
-                    <td>
+                    <td rowspan="10" Align="left" Valign="top">
                       <div class="Sentence">雨水の排水</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　調査すべき情報</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">放射線の量の状況</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">事例の引用又は解析</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　調査の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">文献その他の資料及び現地調査による情報の収集並びに当該情報の整理及び解析</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する公共用水域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　調査地域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する公共用水域</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する地点</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　調査地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">四　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水を排水する地点</div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">工事による放射線に係る環境影響が最大となる時期</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">五　調査期間等</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">雨水の排水による放射線に係る環境影響を予測し、及び評価するために必要な情報を適切かつ効果的に把握できる期間及び時期</div>
                     </td>
-                    <td>
+                    <td Valign="top">
                       <div class="Sentence"></div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6" Align="left" Valign="top">
                       <div class="Sentence">放射線の量（建設工事に伴う副産物に係るもの）</div>
                     </td>
-                    <td>
+                    <td rowspan="6" Align="left" Valign="top">
                       <div class="Sentence">造成工事</div>
                     </td>
-                    <td>
+                    <td rowspan="6" Align="left" Valign="top">
                       <div class="Sentence"></div>
                     </td>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">一　予測の基本的な手<a class="reference_link" href="L_409AC0000000081.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">法</a>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">建設工事に伴う放射性物質を含む副産物の種類ごとの発生及び処分の状況の把握</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">二　予測地域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">対象流通業務団地造成事業実施区域</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">三　予測対象時期等</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td Align="left" Valign="top">
                       <div class="Sentence">工事期間</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="4">
                       <div class="Sentence">備考</div>
                       <div class="Sentence">一　この表において「粉じん等」とは、粉じん、ばいじん及び自動車の運行又は建設機械の稼働に伴い発生する粒子状物質をいう。</div>
                       <div class="Sentence">二　この表において「重要な地形及び地質」、「重要な種」及び「重要な種及び群落」とは、それぞれ学術上又は希少性の観点から重要なものをいう。</div>

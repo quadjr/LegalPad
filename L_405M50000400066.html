@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -577,7 +577,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">二以上の表示機構を有するものにあっては、表示機構が一増すごとに、イからハまでに掲げる金額の五割の額を加算するものとする。</div>
                       </td>
                     </tr>
@@ -742,7 +742,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <div class="Sentence">端子を三以上有するものにあっては、端子が二を超えて一増すごとに、三割の額を加算するものとする。</div>
                       </td>
                     </tr>
@@ -1093,7 +1093,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">
                         <a class="reference_link" href="#Mp-At_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第一項</a>に定める場合であって、中欄１から中欄５までに掲げる試験の結果の証明書及び中欄６に掲げる試験のうち、<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同号</a>に基づく必要な試験の結果の証明書が添えられた型式にあっては、その試験に係る金額については、四十五万五千八百円に、手数料令別表第四の備考の<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に掲げる試験のうち、必要な試験に係る当該<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める金額を合算した金額とする。</div>
                       <div class="Sentence">
@@ -1103,7 +1103,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">二　燃料油メーターのうち、充塡機構その他<a class="reference_link" href="#Mp-At_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第六条</a>で定める器具、機械又は装置と構造上一体となっているもの</div>
                       <div class="Sentence">
                         <a class="reference_link" href="#Mp-At_4-Pr_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第四条第一項</a>に定める場合であって、試験の結果の証明書が添えられた型式にあっては、その試験に係る金額については、三十三万六千八百円に、手数料令別表第四の備考の<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に掲げる試験のうち、必要な試験に係る当該<a class="reference_link" href="#Mp-It_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">各号</a>に定める金額を合算したものとする。</div>
@@ -1447,12 +1447,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ニに掲げる濃度計とホに掲げる濃度計とが構造上一体となっているものにあっては、ニに掲げる金額とホに掲げる金額とを合算して得た額から十二万千百円を減額するものとする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">ニからトまでに掲げる濃度計で四以上の表示機構を有するものにあっては、表示機構が三を超えて一増すごとに、ニからトまでに掲げる金額に一万千円を加算するものとする。</div>
                     </td>
                   </tr>
@@ -1560,7 +1560,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄３及び中欄７に掲げる試験を行う必要がない型式にあっては、十五万三千百円とする。</div>
                     </td>
                   </tr>
@@ -1686,7 +1686,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄２及び中欄３に掲げる試験を行う必要がない型式にあっては、二十一万六千七百円とする。</div>
                       <div class="Sentence">中欄２及び中欄４に掲げる試験を行う必要がない型式にあっては、二十二万七千百円とする。</div>
                     </td>
@@ -1791,7 +1791,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄４に掲げる試験を行う必要がない型式にあっては、四十二万六百円とする。</div>
                     </td>
                   </tr>
@@ -1873,7 +1873,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄５に掲げる試験を行う必要がない型式にあっては、十八万五千三百円とする。</div>
                     </td>
                   </tr>
@@ -1955,7 +1955,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄４に掲げる試験を行う必要がない型式にあっては、十三万九千円とする。</div>
                     </td>
                   </tr>
@@ -2004,7 +2004,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄４に掲げる試験を行う必要がない型式にあっては、二十三万八千九百円とする。</div>
                     </td>
                   </tr>
@@ -2042,7 +2042,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄３に掲げる試験を行う必要がない型式にあっては、十六万四千二百円とする。</div>
                     </td>
                   </tr>
@@ -2091,7 +2091,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄４に掲げる試験を行う必要がない型式にあっては、二十三万八千九百円とする。</div>
                     </td>
                   </tr>
@@ -2162,7 +2162,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄５に掲げる試験を行う必要がない型式にあっては、二十六万五千七百円とする。</div>
                     </td>
                   </tr>
@@ -2244,7 +2244,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="3">
                       <div class="Sentence">中欄１及び中欄４に掲げる試験を行う必要がない型式にあっては、五十一万四千九百円とする。</div>
                       <div class="Sentence">中欄１及び中欄５に掲げる試験を行う必要がない型式にあっては、四十五万五千四百円とする。</div>
                     </td>
@@ -2289,7 +2289,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二以上の表示機構を有するものにあっては、表示機構が一増すごとに、五割の額を加算するものとする。</div>
                     </td>
                   </tr>
@@ -2694,12 +2694,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二以上のゲージグラスを有する基準タンクにあっては、ゲージグラスが一増すごとに、ニに掲げる金額の五割の額を加算するものとする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">油用の基準タンク又は基準体積管について使用中の油により検査を行うときは、ニ又はホに掲げる金額の二倍の額とする。</div>
                     </td>
                   </tr>
@@ -2744,7 +2744,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二以上の表示機構を有するものにあっては、表示機構が一増すごとに、五割の額を加算するものとする。</div>
                     </td>
                   </tr>
@@ -2837,12 +2837,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三相のものにあっては、二倍の額とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">イからハまで又はホに掲げる電気基準器で端子を三以上有するものにあっては、端子が二を超えて一増すごとに、イからハまで又はホに掲げる金額の三割の額を加算するものとする。</div>
                     </td>
                   </tr>
@@ -2942,7 +2942,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二以上の表示機構を有するものにあっては、表示機構が一増すごとに、五割の額を加算するものとする。</div>
                     </td>
                   </tr>
@@ -3139,7 +3139,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">二以上の表示機構を有するものにあっては、表示機構が一増すごとに、五割の額を加算するものとする。</div>
                     </td>
                   </tr>
@@ -3232,12 +3232,12 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">三相のものにあっては、二倍の額とする。</div>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td colspan="2">
                       <div class="Sentence">イからハまで又はホに掲げる電気基準器で端子を三以上有するものにあっては、端子が二を超えて一増すごとに、イからハまで又はホに掲げる金額の三割の額を加算するものとする。</div>
                     </td>
                   </tr>

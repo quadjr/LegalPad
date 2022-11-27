@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1307,7 +1307,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="43">
                       <div class="Sentence" Num="1">北海道</div>
                     </td>
                     <td>
@@ -1654,7 +1654,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="17">
                       <div class="Sentence" Num="1">青森県</div>
                     </td>
                     <td>
@@ -1793,7 +1793,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">岩手県</div>
                     </td>
                     <td>
@@ -1860,7 +1860,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">宮城県</div>
                     </td>
                     <td>
@@ -1927,7 +1927,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">秋田県</div>
                     </td>
                     <td>
@@ -1994,7 +1994,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">山形県</div>
                     </td>
                     <td>
@@ -2029,7 +2029,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">福島県</div>
                     </td>
                     <td>
@@ -2072,7 +2072,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="8">
                       <div class="Sentence" Num="1">茨城県</div>
                     </td>
                     <td>
@@ -2151,7 +2151,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">千葉県</div>
                     </td>
                     <td>
@@ -2194,7 +2194,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="7">
                       <div class="Sentence" Num="1">東京都</div>
                     </td>
                     <td>
@@ -2265,7 +2265,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">神奈川県</div>
                     </td>
                     <td>
@@ -2292,7 +2292,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence" Num="1">新潟県</div>
                     </td>
                     <td>
@@ -2375,7 +2375,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">富山県</div>
                     </td>
                     <td>
@@ -2403,7 +2403,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence" Num="1">石川県</div>
                     </td>
                     <td>
@@ -2478,7 +2478,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">福井県</div>
                     </td>
                     <td>
@@ -2521,7 +2521,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="20">
                       <div class="Sentence" Num="1">静岡県</div>
                     </td>
                     <td>
@@ -2684,7 +2684,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence" Num="1">愛知県</div>
                     </td>
                     <td>
@@ -2800,7 +2800,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence" Num="1">三重県</div>
                     </td>
                     <td>
@@ -2915,7 +2915,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence" Num="1">京都府</div>
                     </td>
                     <td>
@@ -2998,7 +2998,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="3">
                       <div class="Sentence" Num="1">大阪府</div>
                     </td>
                     <td>
@@ -3037,7 +3037,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="19">
                       <div class="Sentence" Num="1">兵庫県</div>
                     </td>
                     <td>
@@ -3194,7 +3194,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence" Num="1">和歌山県</div>
                     </td>
                     <td>
@@ -3293,7 +3293,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="5">
                       <div class="Sentence" Num="1">鳥取県</div>
                     </td>
                     <td>
@@ -3348,7 +3348,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="15">
                       <div class="Sentence" Num="1">島根県</div>
                     </td>
                     <td>
@@ -3471,7 +3471,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence" Num="1">岡山県</div>
                     </td>
                     <td>
@@ -3586,7 +3586,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="18">
                       <div class="Sentence" Num="1">広島県</div>
                     </td>
                     <td>
@@ -3733,7 +3733,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="25">
                       <div class="Sentence" Num="1">山口県</div>
                     </td>
                     <td>
@@ -3949,7 +3949,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="10">
                       <div class="Sentence" Num="1">徳島県</div>
                     </td>
                     <td>
@@ -4034,7 +4034,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="18">
                       <div class="Sentence" Num="1">香川県</div>
                     </td>
                     <td>
@@ -4181,7 +4181,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="23">
                       <div class="Sentence" Num="1">愛媛県</div>
                     </td>
                     <td>
@@ -4368,7 +4368,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="14">
                       <div class="Sentence" Num="1">高知県</div>
                     </td>
                     <td>
@@ -4483,7 +4483,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence" Num="1">福岡県</div>
                     </td>
                     <td>
@@ -4558,7 +4558,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="4">
                       <div class="Sentence" Num="1">佐賀県</div>
                     </td>
                     <td>
@@ -4605,7 +4605,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="38">
                       <div class="Sentence" Num="1">長崎県</div>
                     </td>
                     <td>
@@ -4912,7 +4912,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="13">
                       <div class="Sentence" Num="1">熊本県</div>
                     </td>
                     <td>
@@ -5031,7 +5031,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="12">
                       <div class="Sentence" Num="1">大分県</div>
                     </td>
                     <td>
@@ -5130,7 +5130,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="9">
                       <div class="Sentence" Num="1">宮崎県</div>
                     </td>
                     <td>
@@ -5205,7 +5205,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="25">
                       <div class="Sentence" Num="1">鹿児島県</div>
                     </td>
                     <td>
@@ -5408,7 +5408,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td rowspan="6">
                       <div class="Sentence" Num="1">沖縄県</div>
                     </td>
                     <td>

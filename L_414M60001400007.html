@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -2298,10 +2298,10 @@
                       <div class="TableStruct">
                         <table>
                           <tr>
-                            <td>
+                            <td rowspan="23">
                               <div class="Sentence">自動車破砕残さ</div>
                             </td>
-                            <td>
+                            <td rowspan="16">
                               <div class="Sentence">再資源化等契約を締結しない場合</div>
                             </td>
                             <td>
@@ -2384,7 +2384,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="7">
                               <div class="Sentence">再資源化等契約を締結する場合</div>
                             </td>
                             <td>
@@ -2422,10 +2422,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="19">
                               <div class="Sentence">ガス発生器</div>
                             </td>
-                            <td>
+                            <td rowspan="12">
                               <div class="Sentence">再資源化等契約を締結しない場合</div>
                             </td>
                             <td>
@@ -2488,7 +2488,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="7">
                               <div class="Sentence">再資源化等契約を締結する場合</div>
                             </td>
                             <td>
@@ -2526,10 +2526,10 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="18">
                               <div class="Sentence">フロン類</div>
                             </td>
-                            <td>
+                            <td rowspan="11">
                               <div class="Sentence">再資源化等契約を締結しない場合</div>
                             </td>
                             <td>
@@ -2587,7 +2587,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td rowspan="7">
                               <div class="Sentence">再資源化等契約を締結する場合</div>
                             </td>
                             <td>
@@ -6415,7 +6415,7 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="15">
                                 <div class="Sentence">一　自動車破砕残さ</div>
                               </td>
                               <td>
@@ -6493,7 +6493,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="15">
                                 <div class="Sentence">二　ガス発生器</div>
                               </td>
                               <td>
@@ -6571,7 +6571,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="15">
                                 <div class="Sentence">三　フロン類</div>
                               </td>
                               <td>
@@ -6664,7 +6664,7 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="5">
                                 <div class="Sentence">一　自動車破砕残さ</div>
                               </td>
                               <td>
@@ -6692,7 +6692,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="5">
                                 <div class="Sentence">二　ガス発生器</div>
                               </td>
                               <td>
@@ -6720,7 +6720,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="5">
                                 <div class="Sentence">三　フロン類</div>
                               </td>
                               <td>
@@ -6785,7 +6785,7 @@
                         <div class="TableStruct">
                           <table>
                             <tr>
-                              <td>
+                              <td rowspan="10">
                                 <div class="Sentence">一　解体自動車</div>
                               </td>
                               <td>
@@ -6838,7 +6838,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence">二　自動車破砕残さ</div>
                               </td>
                               <td>
@@ -6861,7 +6861,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence">三　ガス発生器</div>
                               </td>
                               <td>
@@ -6884,7 +6884,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>
+                              <td rowspan="4">
                                 <div class="Sentence">四　フロン類</div>
                               </td>
                               <td>

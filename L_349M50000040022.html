@@ -18,8 +18,8 @@
         </div>
         <div class="main_body">
           <div class="toolbar">
-            <div class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
-            <div class="link icon" onclick="toolbarClick(&quot;link&quot;)"></div>
+            <div id="icon_toc" title="目次" class="table_of_contents_icon icon" onclick="toolbarClick(&quot;toc&quot;)"></div>
+            <div id="icon_refs" title="被引用" class="refs icon" onclick="toolbarClick(&quot;refs&quot;)"></div>
           </div>
           <div class="side_panel" id="side_panel">
             <div class="table_of_contents" id="toc">
@@ -1467,7 +1467,8 @@
                         </div>
                         <div class="Column" Num="2">
                           <div class="Sentence">
-                            <a class="reference_link" href="L_349M50000040042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">財政融資資金の管理及び運用の手続に関する規則</a>（<a class="reference_link" href="L_349M50000040042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十九年大蔵省令第四十二号</a>。以下「管理運用規則」という。）第二章及び第四章に規定する日本銀行本店並びに同規則<a class="reference_link" href="#Mp-At_38" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条</a>に規定する指定店をいう。</div>
+                            <a class="reference_link" href="L_349M50000040042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">財政融資資金の管理及び運用の手続に関する規則</a>（<a class="reference_link" href="L_349M50000040042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">昭和四十九年大蔵省令第四十二号</a>。以下「管理運用規則」という。）第二章及び第四章に規定する日本銀行本店並びに<a class="reference_link" href="L_349M50000040042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                            <a class="reference_link" href="L_349M50000040042.html#Mp-At_38" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十八条</a>に規定する指定店をいう。</div>
                         </div>
                       </div>
                     </div>
@@ -1602,13 +1603,13 @@
                           <td>
                             <div class="Sentence">当該有価証券の元金に相当する部分</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">日本銀行</div>
                           </td>
                           <td>
                             <div class="Sentence">財政融資資金・財政融資資金有価証券</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">財政融資資金・財政融資資金運用資金</div>
                           </td>
                         </tr>
@@ -1642,7 +1643,7 @@
                     <div class="TableStruct">
                       <table>
                         <tr>
-                          <td>
+                          <td colspan="2">
                             <div class="Sentence">区分</div>
                           </td>
                           <td>
@@ -1656,16 +1657,16 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">国債の応募又は引受け</div>
                           </td>
                           <td>
                             <div class="Sentence">国債が<a class="reference_link" href="L_411M50000040006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">政府資金調達事務取扱規則</a>（<a class="reference_link" href="L_411M50000040006.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十一年大蔵省令第六号</a>）<a class="reference_link" href="L_411M50000040006.html#Mp-At_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第二条</a>に規定する政府短期証券又は<a class="reference_link" href="L_414M60000040067.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">政府短期証券及び割引短期国庫債券の取扱いに関する省令</a>（<a class="reference_link" href="L_414M60000040067.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">平成十四年財務省令第六十七号</a>）<a class="reference_link" href="L_414M60000040067.html#Mp-At_1" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第一条</a>に規定する割引短期国庫債券である場合</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">財務省</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">応募又は引受代金のうち元金に相当する部分にあつては「財政融資資金・財政融資資金有価証券」、経過利子に相当する部分にあつては「財政融資資金・財政融資資金購入証券経過利子」</div>
                           </td>
                           <td>
@@ -1683,7 +1684,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">有価証券の買入れ</div>
                           </td>
                           <td>
@@ -1692,7 +1693,7 @@
                           <td>
                             <div class="Sentence">日本銀行</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">買入代金のうち元金に相当する部分にあつては「財政融資資金・財政融資資金有価証券」、経過利子に相当する部分にあつては「財政融資資金・財政融資資金購入証券経過利子」</div>
                           </td>
                           <td>
@@ -1770,7 +1771,7 @@
                           <td>
                             <div class="Sentence">財務省</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">財政融資資金・財政融資資金貸付金</div>
                           </td>
                           <td>
@@ -1846,7 +1847,8 @@
                     <div class="ParagraphNum"></div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">理財局長は、<a class="reference_link" href="#Mp-At_7_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条の三</a>の規定により貸付けをしようとする場合において、<a class="reference_link" href="L_349M50000040042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">管理運用規則</a>
-                        <a class="reference_link" href="L_349M50000040042.html#Mp-At_30" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十条</a>前段又は同規則<a class="reference_link" href="#Mp-At_34" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条</a>前段に規定する普通地方長期資金等貸付額又は地方短期資金貸付額が既に貸し付けている起債前貸等又は地方短期資金の全部又は一部の額の借換えに係るものであり、かつ、当該普通地方長期資金等貸付額又は地方短期資金貸付額が既に貸し付けている起債前貸等又は地方短期資金の額を超えている場合には、<a class="reference_link" href="#Mp-At_7_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条の三</a>の規定にかかわらず、その超えている額について支払指図書を作成し、これを日本銀行本店に交付し、又は送信するものとする。</div>
+                        <a class="reference_link" href="L_349M50000040042.html#Mp-At_30" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十条</a>前段又は<a class="reference_link" href="L_349M50000040042.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                        <a class="reference_link" href="L_349M50000040042.html#Mp-At_34" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三十四条</a>前段に規定する普通地方長期資金等貸付額又は地方短期資金貸付額が既に貸し付けている起債前貸等又は地方短期資金の全部又は一部の額の借換えに係るものであり、かつ、当該普通地方長期資金等貸付額又は地方短期資金貸付額が既に貸し付けている起債前貸等又は地方短期資金の額を超えている場合には、<a class="reference_link" href="#Mp-At_7_3" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第七条の三</a>の規定にかかわらず、その超えている額について支払指図書を作成し、これを日本銀行本店に交付し、又は送信するものとする。</div>
                     </div>
                   </div>
                 </div>
@@ -2017,10 +2019,10 @@
                           <td>
                             <div class="Sentence">「財政融資資金・財政融資資金有価証券」に振り替えるべき金額について発する国庫金振替書</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">財務省理財局</div>
                           </td>
-                          <td>
+                          <td rowspan="3">
                             <div class="Sentence">財政融資資金・財政融資資金未整理</div>
                           </td>
                           <td>
@@ -2260,7 +2262,8 @@
                     <div class="ParagraphNum">２</div>
                     <div class="ParagraphSentence">
                       <div class="Sentence">理財局長は、<a class="reference_link" href="L_349M50000040023.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">日本銀行出納規則</a>
-                        <a class="reference_link" href="L_349M50000040023.html#Mp-At_3-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第六項</a>又は同規則<a class="reference_link" href="#Mp-At_10-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第二項</a>の規定により指定店から振替済書の送付又は送信を受けた場合には、直ちに当該振替済書その他の関係書類により、受入年月日、受入済額その他必要な事項を財政融資資金所有有価証券元利金受入内訳書に登記するものとする。</div>
+                        <a class="reference_link" href="L_349M50000040023.html#Mp-At_3-Pr_6" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第三条第六項</a>又は<a class="reference_link" href="L_349M50000040023.html" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">同規則</a>
+                        <a class="reference_link" href="L_349M50000040023.html#Mp-At_10-Pr_2" onmouseover="linkMouseOver(this)" onmouseout="linkMouseOut(this)">第十条第二項</a>の規定により指定店から振替済書の送付又は送信を受けた場合には、直ちに当該振替済書その他の関係書類により、受入年月日、受入済額その他必要な事項を財政融資資金所有有価証券元利金受入内訳書に登記するものとする。</div>
                     </div>
                   </div>
                 </div>
@@ -2556,7 +2559,7 @@
                           <td>
                             <div class="Sentence">財務省理財局</div>
                           </td>
-                          <td>
+                          <td rowspan="2">
                             <div class="Sentence">何年度財政投融資特別会計財政融資資金勘定・歳出外・繰替</div>
                           </td>
                           <td>
